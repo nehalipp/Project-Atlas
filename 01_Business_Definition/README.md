@@ -1,4 +1,4 @@
-# Project Atlas — Business Definition
+# Project Atlas — Enterprise Decision Intelligence Platform
 
 ## 1. Project Overview
 
