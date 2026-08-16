@@ -270,23 +270,7 @@ Date + Product + Location
 
 ---
 
-## 6. Machine Date Relationship
-
-Machines also reference the date dimension for their installation date:
-
-```text
-dim_date 1 ───────< dim_machine
-```
-
-Foreign key:
-
-```text
-installation_date_key → dim_date.date_key
-```
-
----
-
-## 7. Conformed Dimensions
+## 6. Conformed Dimensions
 
 The main conformed dimensions are:
 
@@ -304,7 +288,7 @@ The main conformed dimensions are:
 
 ---
 
-## 8. Cross-Domain Analysis
+## 7. Cross-Domain Analysis
 
 Facts represent different business processes and therefore must not be joined directly at incompatible grains.
 
@@ -341,7 +325,7 @@ This prevents fan-out and double counting.
 
 ---
 
-## 9. Key Rules
+## 8. Key Rules
 
 * Dimension surrogate keys are used as warehouse primary keys.
 * Facts reference dimension surrogate keys.
@@ -353,7 +337,7 @@ This prevents fan-out and double counting.
 
 ---
 
-## 10. Approved Model
+## 9. Approved Model
 
 ### Dimensions
 
@@ -386,13 +370,13 @@ This is the Phase 2 warehouse baseline.
 
 ---
 
-## 11. Status
+## 10. Status
 
 > **Phase 2 — Data Model**
 >
-> **Detailed specification: Complete**
+> **Detailed specification:** Complete
 >
-> **Next step: ERD generation and validation**
+> **Next step:** ERD generation and validation
 
 ---
 
