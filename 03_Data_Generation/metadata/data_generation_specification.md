@@ -4,7 +4,7 @@
 
 This document defines how the synthetic source data for Project Atlas will be generated.
 
-The data will support the approved Phase 2 data model and provide realistic operational data for the Data Quality, ETL, Warehouse, Analytics, Power BI, and Tableau phases.
+The data supports the approved Phase 2 data model and provides realistic operational data for the Data Quality, ETL, Warehouse, Analytics, Power BI, and Tableau phases.
 
 All data is synthetic and intended for portfolio and demonstration purposes only.
 
@@ -25,9 +25,21 @@ The generation process will be:
 - Relationship-aware
 - Configurable
 - Realistic
-- Designed with controlled data-quality issues
+- Easy to reproduce and explain
 
-A fixed random seed will be used so the same configuration can reproduce the dataset.
+A fixed random seed will be used so the same configuration can reproduce the baseline datasets.
+
+The generation workflow is:
+
+```text
+Reference Data
+      ↓
+Clean Business Data
+      ↓
+Controlled Quality Issues
+      ↓
+Imperfect Source Data
+````
 
 ---
 
@@ -45,7 +57,7 @@ suppliers
 locations
 employees
 machines
-````
+```
 
 ### Business Process Data
 
@@ -61,13 +73,13 @@ waste
 inventory
 ```
 
-These source datasets will later flow through the Atlas data-quality and ETL processes.
+These datasets represent the operational source layer and will later flow through the Data Quality and ETL phases.
 
 ---
 
 ## 4. Initial Data Volumes
 
-The following volumes are the approved generation targets for the initial implementation.
+The approved generation targets are:
 
 | Dataset                | Target Records |
 | ---------------------- | -------------: |
@@ -88,26 +100,32 @@ The following volumes are the approved generation targets for the initial implem
 | Waste                  |        100,000 |
 | Inventory              |        500,000 |
 
-These are generation targets rather than final data-quality counts. The final record counts will be measured after generation.
+These are generation targets. Final record counts after controlled quality-issue injection will be measured during the Data Quality phase.
 
 ---
 
 ## 5. Date Range
 
-The initial datasets will use:
+The business-process datasets will use:
 
 ```text
 Start: 2019-01-01
 End:   2025-12-31
 ```
 
-The date range is centralized in the generation configuration so it can be changed without modifying individual generation scripts.
+The date range is centralized in:
+
+```text
+03_Data_Generation/config/generation_config.py
+```
+
+so it can be changed without modifying individual generation scripts.
 
 ---
 
 ## 6. Business Relationships
 
-The generator will create data in dependency order so that relationships remain realistic.
+Generation follows the dependency structure established in the approved Phase 2 data model.
 
 ### Account and Customer
 
@@ -117,7 +135,7 @@ Account
 Customer
 ```
 
-Each customer belongs to an account.
+Each customer belongs to one account.
 
 ### Supplier and Product
 
@@ -127,7 +145,7 @@ Supplier
 Product
 ```
 
-Each product has a primary supplier.
+Each product has one primary supplier.
 
 ### Location, Employee and Machine
 
@@ -141,7 +159,7 @@ Employees and machines are associated with operational locations.
 
 ### Sales
 
-Sales will reference:
+Sales reference:
 
 ```text
 Date
@@ -153,7 +171,7 @@ Location
 
 ### Production
 
-Production will reference:
+Production references:
 
 ```text
 Date
@@ -165,7 +183,7 @@ Employee
 
 ### Maintenance
 
-Maintenance will reference:
+Maintenance references:
 
 ```text
 Date
@@ -174,9 +192,9 @@ Machine
 Employee
 ```
 
-### Financial and Budget
+### Financial Transactions and Budget
 
-These datasets will reference:
+These reference:
 
 ```text
 Date
@@ -185,7 +203,7 @@ Location
 
 ### Energy, Emissions and Waste
 
-These datasets will reference:
+These reference:
 
 ```text
 Date
@@ -194,7 +212,7 @@ Location
 
 ### Inventory
 
-Inventory will reference:
+Inventory references:
 
 ```text
 Date
@@ -206,7 +224,34 @@ The generation process must preserve the relationships defined in the approved P
 
 ---
 
-## 7. Realistic Data Behavior
+## 7. Fact Grain
+
+The generated business data must respect the approved fact grains.
+
+| Dataset                | Grain                                 |
+| ---------------------- | ------------------------------------- |
+| Sales                  | One row per sales transaction line    |
+| Production             | One row per production activity       |
+| Maintenance            | One row per maintenance event         |
+| Financial Transactions | One row per financial transaction     |
+| Budget                 | One row per budget record             |
+| Energy                 | One row per energy measurement        |
+| Emissions              | One row per emissions record          |
+| Waste                  | One row per waste record              |
+| Inventory              | One row per Product + Location + Date |
+
+Inventory is a periodic snapshot dataset.
+
+```text
+Inventory Grain:
+Date + Product + Location
+```
+
+No generated dataset should create a new fact grain that differs from the approved Phase 2 model.
+
+---
+
+## 8. Realistic Data Behavior
 
 Generated data should contain believable:
 
@@ -214,7 +259,7 @@ Generated data should contain believable:
 * Dates
 * Product categories
 * Supplier relationships
-* Customer attributes
+* Customer activity
 * Locations
 * Employee assignments
 * Machine assignments
@@ -229,15 +274,158 @@ Generated data should contain believable:
 * Emissions
 * Waste
 
-Relationships and values should reflect the commercial/manufacturing scenario rather than being generated as completely independent random values.
+Values should vary by entity and business activity rather than being uniformly random.
+
+For example:
+
+* Some customers should generate more sales activity than others.
+* Some products should have higher demand.
+* Some locations should have higher operational activity.
+* Machines should have different levels of production and maintenance activity.
+* Energy, emissions, waste, and inventory should vary by location and time.
 
 ---
 
-## 8. Controlled Data-Quality Issues
+## 9. Business-Process Generation Rules
 
-The source data will intentionally contain realistic quality problems so that Phase 4 can demonstrate profiling and remediation.
+### Sales
 
-Issues may include:
+Sales should use valid customers, accounts, products, and locations.
+
+Revenue should be mathematically consistent with quantity, unit price, and discount in the clean baseline.
+
+### Production
+
+Production should use valid products, machines, employees, and locations.
+
+Production activity should vary by product, machine, location, and date.
+
+### Maintenance
+
+Maintenance should be associated with valid machines and their operational locations.
+
+Maintenance types should include a realistic mixture of preventive, corrective, inspection, and emergency activity.
+
+### Financial Transactions
+
+Financial activity should include realistic revenue and expense categories.
+
+Examples include:
+
+```text
+Revenue
+Materials
+Labor
+Maintenance
+Utilities
+Transportation
+Operating Expense
+Other Expense
+```
+
+### Budget
+
+Budget records should support budget-versus-actual analysis.
+
+Budget categories should align with relevant financial categories.
+
+### Energy
+
+Energy records should represent realistic consumption by location and energy type.
+
+Examples:
+
+```text
+Electricity
+Natural Gas
+Fuel
+Steam
+```
+
+### Emissions
+
+Emissions should represent realistic operational sources.
+
+Examples:
+
+```text
+Electricity
+Natural Gas
+Fuel
+Transportation
+Process
+```
+
+### Waste
+
+Waste should represent realistic waste types and disposal methods.
+
+Examples:
+
+```text
+Metal
+Plastic
+Paper
+Chemical
+General
+Organic
+```
+
+### Inventory
+
+Inventory should represent product stock at each location over time.
+
+The clean baseline should maintain:
+
+```text
+Closing Quantity
+=
+Opening Quantity
++ Received Quantity
+- Issued Quantity
+```
+
+---
+
+## 10. Cross-Domain Consistency
+
+The generated datasets should support meaningful cross-domain analysis.
+
+Examples include:
+
+```text
+Sales + Production + Inventory
+Production + Machine + Maintenance
+Production + Energy + Emissions
+Revenue + Financial Transactions + Budget
+```
+
+Facts must not be directly joined at incompatible grains.
+
+Cross-domain comparisons will be performed by aggregating facts to compatible business grains.
+
+This prevents fan-out and double counting.
+
+---
+
+## 11. Controlled Data-Quality Issues
+
+The clean baseline generated by:
+
+```text
+generate_reference_data.py
+generate_business_data.py
+```
+
+should remain internally consistent.
+
+Controlled quality issues will then be introduced by:
+
+```text
+inject_quality_issues.py
+```
+
+Potential issues include:
 
 * Missing values
 * Duplicate records
@@ -249,110 +437,148 @@ Issues may include:
 * Referential-integrity issues
 * Business-rule violations
 
-Quality issues will be introduced deliberately and documented.
+Quality issues must be deliberate, documented, and limited enough to keep the source data believable.
 
-They should be large enough to be detected during profiling but limited enough that the underlying datasets remain believable.
-
-The generator must not rely on uncontrolled random corruption.
+The quality-injection process must not introduce uncontrolled random corruption.
 
 ---
 
-## 9. Reproducibility
+## 12. Reproducibility
 
-A centralized configuration will contain:
+The centralized configuration contains:
 
 ```text
 Random seed
 Date range
 Dataset record counts
+Generation parameters
 Quality-issue parameters
 ```
 
-The initial random seed will be:
+The initial random seed is:
 
 ```text
 42
 ```
 
-The same configuration and generator version should produce reproducible source data.
+The same configuration and generator version should produce the same baseline data.
 
 ---
 
-## 10. Generation Order
+## 13. Generation Order
 
-The generation process will follow the dependency structure:
+The complete generation workflow follows:
 
 ```text
-Reference Data
-      ↓
-Business Process Data
-      ↓
-Controlled Quality Issues
-      ↓
-Generated Source Data
+1. Reference Data
+2. Business Process Data
+3. Controlled Quality Issues
+4. Final Raw Source Data
 ```
 
-Reference data will be generated before dependent business-process data.
+Reference data must exist before dependent business-process data is generated.
 
-This allows downstream records to use valid source identifiers and realistic relationships.
+Business-process datasets must use valid identifiers from the reference datasets.
+
+Quality issues are applied only after the clean baseline has been generated.
 
 ---
 
-## 11. Output
+## 14. Output
 
-Generated datasets will be stored separately from the generation code.
-
-Expected output:
+Generated datasets are stored under:
 
 ```text
 data/
 └── raw/
-    ├── accounts.csv
-    ├── customers.csv
-    ├── products.csv
-    ├── suppliers.csv
-    ├── locations.csv
-    ├── employees.csv
-    ├── machines.csv
-    ├── sales.csv
-    ├── production.csv
-    ├── maintenance.csv
-    ├── financial_transactions.csv
-    ├── budget.csv
-    ├── energy.csv
-    ├── emissions.csv
-    ├── waste.csv
-    └── inventory.csv
 ```
 
-The generated files represent the imperfect source layer and will not be treated as trusted warehouse data.
+Expected files:
+
+```text
+accounts.csv
+customers.csv
+products.csv
+suppliers.csv
+locations.csv
+employees.csv
+machines.csv
+sales.csv
+production.csv
+maintenance.csv
+financial_transactions.csv
+budget.csv
+energy.csv
+emissions.csv
+waste.csv
+inventory.csv
+```
+
+The generated files represent the operational source layer.
+
+They are not trusted warehouse data.
 
 ---
 
-## 12. Generation Rules
+## 15. Implementation Rules
 
-The generator must:
+The generation code must:
 
-* Use the approved Phase 2 model as the structural reference.
-* Preserve required business relationships.
+* Follow the approved Phase 2 model.
+* Preserve business relationships.
+* Respect fact grain.
+* Use the centralized configuration.
 * Use reproducible random generation.
 * Keep all data synthetic.
-* Introduce controlled quality issues.
-* Avoid real companies, people, financial results, or business relationships.
-* Keep the implementation understandable and maintainable.
+* Avoid real companies, people, customers, employees, or financial results.
+* Remain understandable and maintainable.
 * Avoid unnecessary technologies or complexity.
 
-No additional domains or warehouse entities will be introduced during data generation without revisiting the approved Phase 2 model.
+No additional domains, facts, dimensions, or relationships will be introduced during Phase 3 without revisiting the approved Phase 2 model.
 
 ---
 
-## 13. Status
+## 16. Phase 3 Scripts
+
+The Phase 3 implementation uses four scripts:
+
+```text
+generate_reference_data.py
+    ↓
+generate_business_data.py
+    ↓
+inject_quality_issues.py
+    ↓
+generate_all_data.py
+```
+
+### `generate_reference_data.py`
+
+Creates the seven reference datasets.
+
+### `generate_business_data.py`
+
+Creates the nine clean business-process datasets using the reference data.
+
+### `inject_quality_issues.py`
+
+Introduces the controlled data-quality issues required for Phase 4.
+
+### `generate_all_data.py`
+
+Runs the complete generation workflow in the correct order.
+
+---
+
+## 17. Status
 
 > **Phase 3 — Data Generation**
 >
 > **Generation specification:** Locked
 >
-> **Next step:** Implement the Python data-generation pipeline
+> **Reference data:** Generated and validated
+>
+> **Next step:** Implement `generate_business_data.py`
 
 ---
 
