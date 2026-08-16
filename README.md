@@ -1,106 +1,49 @@
-# Project Atlas — Business Definition
+# Project Atlas — Enterprise Decision Intelligence Platform
 
-## 1. Project Overview
+## Overview
 
-Project Atlas is an end-to-end Enterprise Decision Intelligence Platform built around a realistic commercial and manufacturing business scenario.
+Project Atlas is an end-to-end Enterprise Decision Intelligence Platform designed to demonstrate how imperfect operational data can be transformed into trusted, decision-ready business intelligence.
 
-The goal is to transform imperfect operational data into trusted, decision-ready business intelligence through data quality, ETL/ELT, PostgreSQL, SQL analytics, Power BI, and Tableau.
+The project uses a realistic commercial and manufacturing business scenario and brings together business understanding, data quality, data engineering, data modeling, analytics, and business intelligence into one integrated platform.
 
-Atlas is one integrated enterprise platform covering 16 business domains.
+Atlas is designed as one enterprise platform rather than a collection of separate projects.
 
-## 2. Business Domains
+---
 
-1. Accounts
-2. Customers
-3. Products
-4. Suppliers
-5. Locations
-6. Employees
-7. Machines
-8. Sales
-9. Production
-10. Maintenance
-11. Financial Transactions
-12. Budget
-13. Energy
-14. Emissions
-15. Waste
-16. Inventory
+## Why Project Atlas?
 
-Accounts and Customers are intentionally separate:
+Real-world business data is often distributed across different operational areas and may contain missing values, duplicates, invalid records, inconsistencies, and other quality issues.
 
-- **Account** — represents a commercial relationship or organizational grouping.
-- **Customer** — represents the customer entity participating in business activity and associated with an account.
+Project Atlas was built to demonstrate the complete analytical journey:
 
-The relationship is intentionally kept simple and does not introduce unnecessary CRM complexity.
+**Business Understanding → Data Understanding → Data Quality → Data Engineering → Data Modeling → Analytics → Visualization → Decision-Making**
 
-## 3. Business Areas
+The project focuses on building a reliable analytical foundation first and using that foundation to support meaningful business analysis and recommendations.
 
-Atlas provides analysis across five main areas:
+---
 
-### Commercial
+## What the Platform Covers
 
-- Sales and revenue
-- Customers and accounts
-- Products and categories
-- Location performance
+Atlas brings together information across commercial, operational, financial, inventory, and sustainability areas.
 
-### Operations
+The platform is designed to support questions around:
 
-- Production
-- Machine activity
-- Downtime
-- Maintenance
-
-### Financial
-
-- Revenue and costs
-- Financial transactions
-- Budget vs. actual
-- Variance analysis
-
-### Inventory & Supply Chain
-
-- Inventory levels
-- Stock movements
-- Shortages
-- Supplier performance
-
-### Sustainability
-
+- Sales and revenue performance
+- Customers, accounts, products, and suppliers
+- Production and operational performance
+- Machines and maintenance
+- Financial performance and budget
+- Inventory and supply chain
 - Energy consumption
-- Energy intensity
 - Emissions
 - Waste
+- Cross-domain business performance
 
-Cross-domain analysis connects these areas where the business grain allows reliable comparison.
+A key focus of the project is cross-domain analysis while respecting the underlying business grain of each data source.
 
-## 4. Key Business Questions
+---
 
-Atlas is designed to answer questions such as:
-
-- How is revenue changing over time?
-- Which customers, products, accounts, and locations perform best?
-- Where are production and machine performance issues occurring?
-- How do maintenance and downtime relate to operations?
-- How does actual financial performance compare with budget?
-- Where are inventory shortages or stock issues occurring?
-- Which locations have higher energy, emissions, or waste levels?
-- How do sales, production, inventory, financial, and sustainability measures relate?
-
-## 5. Analytical Principles
-
-The project follows a few important principles:
-
-- Data is synthetic and generated for the project.
-- Data quality is evaluated before trusted reporting.
-- Business metrics have governed definitions.
-- Facts are analyzed according to their documented grain.
-- Incompatible fact-to-fact joins that can cause double counting are avoided.
-- Power BI and Tableau use the same trusted analytical foundation.
-- Project findings must be traceable to the synthetic data.
-
-## 6. Architecture
+## Architecture
 
 ```text
 Raw Operational Data
@@ -116,67 +59,95 @@ Reusable SQL Analytics
 Power BI + Tableau
         ↓
 Business Insights & Recommendations
+````
+
+Power BI and Tableau use the same trusted analytical foundation and governed business definitions.
+
+---
+
+## Technology Stack
+
+* Python
+* Faker
+* Pandas
+* NumPy
+* PostgreSQL
+* SQL
+* Power BI / DAX
+* Tableau
+* Git / GitHub
+* Markdown
+
+The project intentionally avoids unnecessary technologies and focuses on building a practical, understandable, and reproducible analytics platform.
+
+---
+
+## Data
+
+All data used in Project Atlas is synthetic.
+
+The datasets are designed to resemble realistic enterprise operational data and include controlled data-quality issues for profiling, validation, and transformation.
+
+No real companies, customers, employees, financial results, or business relationships are represented in the project.
+
+Any metrics, insights, or recommendations produced by Atlas are based only on the synthetic data and documented analytical methodology.
+
+---
+
+## Repository Structure
+
+The repository is organized around the major stages of the platform:
+
+```text
+Project-Atlas/
+│
+├── 01_Business_Definition/
+├── 02_Data_Model/
+├── 03_Data_Generation/
+├── 04_Data_Quality/
+├── 05_ETL/
+├── 06_Data_Warehouse/
+├── 07_Analytics/
+├── 08_Power_BI/
+├── 09_Tableau/
+├── 10_Insights_Portfolio/
+│
+├── data/
+├── logs/
+└── README.md
 ```
 
-## 7. Technology
-
-- Python
-- Faker
-- Pandas
-- NumPy
-- PostgreSQL
-- SQL
-- Power BI / DAX
-- Tableau
-- Git / GitHub
-- Markdown
-
-## 8. Development Phases
-
-1. Business Definition
-2. Data Model
-3. Data Generation
-4. Data Quality
-5. ETL
-6. Data Warehouse
-7. Analytics
-8. Power BI
-9. Tableau
-10. Insights & Portfolio
-
-Each phase is completed before moving to the next when important decisions remain unresolved.
-
-## 9. Phase 1 Status
-
-> **Phase 1 — Business Definition**  
-> **Status:** ✅ Complete
-
-Phase 1 established the:
-
-- Business scenario and project scope
-- 16 business domains
-- Stakeholder needs
-- Key business questions
-- Analytical principles
-- Project boundaries
+Each stage contains its own documentation and implementation details.
 
 ---
 
-### Next Phase
+## Project Objective
 
-> **Phase 2 — Data Model**
+The primary objective of Atlas is to demonstrate practical, end-to-end capability across:
 
-The next phase will define:
+* Business Analysis
+* Data Quality
+* Data Engineering
+* Data Modeling
+* SQL Analytics
+* Business Intelligence
+* Operations and Supply Chain Analytics
+* Manufacturing Analytics
+* Financial Analytics
+* Sustainability Analytics
 
-- Entities and relationships
-- Dimensions and facts
-- Primary and surrogate keys
-- Foreign-key relationships
-- Conformed dimensions
-- Exact grain of each fact
-
-The data model will be finalized **before warehouse implementation begins**.
+The final platform is intended to be reproducible, technically credible, business-focused, and easy to explain in a professional interview.
 
 ---
 
-> **Note:** All data and resulting findings in Project Atlas are synthetic and are intended for portfolio and demonstration purposes only.
+## Project Documentation
+
+Detailed documentation is maintained within the individual project stages.
+
+The [Business Definition](./01_Business_Definition/README.md) provides the business context, scope, domains, stakeholder needs, and key business questions.
+
+Further documentation is maintained within each stage as the platform is developed.
+
+---
+
+> **Project Atlas is a portfolio and demonstration project built entirely with synthetic data.**
