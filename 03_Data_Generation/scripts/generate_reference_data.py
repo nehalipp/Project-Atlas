@@ -24,6 +24,14 @@ import numpy as np
 import pandas as pd
 from faker import Faker
 
+import sys
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+DATA_GENERATION_DIR = SCRIPT_DIR.parent
+CONFIG_DIR = DATA_GENERATION_DIR / "config"
+
+sys.path.insert(0, str(CONFIG_DIR))
+
 from generation_config import (
     END_DATE,
     N_ACCOUNTS,
@@ -37,7 +45,6 @@ from generation_config import (
     SEED,
     START_DATE,
 )
-
 
 # ============================================================
 # Setup
