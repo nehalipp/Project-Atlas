@@ -1,0 +1,17 @@
+dataset,records,columns,missing_values,missing_pct,duplicate_rows
+accounts,1020,6,52,0.85,20
+customers,51000,7,2545,0.71,981
+suppliers,1020,5,52,1.02,20
+products,5100,7,256,0.72,97
+locations,102,7,5,0.7,2
+employees,5100,7,254,0.71,96
+machines,2040,6,102,0.83,39
+sales,510000,10,25289,0.5,8505
+production,204000,10,10094,0.49,3473
+maintenance,51000,8,2526,0.62,874
+financial_transactions,306000,6,15243,0.83,5710
+budget,20400,5,1014,0.99,376
+energy,102000,6,5085,0.83,1893
+emissions,102000,5,5063,0.99,1899
+waste,102000,7,5081,0.71,1905
+inventory,510000,7,25280,0.71,8816

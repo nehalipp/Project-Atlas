@@ -1,0 +1,17 @@
+dataset,source_records,trusted_records,records_removed
+accounts,1020,1000,20
+suppliers,1020,1000,20
+locations,102,100,2
+products,5100,4951,149
+employees,5100,4913,187
+machines,2040,1959,81
+customers,51000,49509,1491
+sales,510000,466046,43954
+production,204000,181438,22562
+maintenance,51000,46180,4820
+financial_transactions,306000,293285,12715
+budget,20400,19445,955
+energy,102000,97747,4253
+emissions,102000,97337,4663
+waste,102000,97982,4018
+inventory,510000,479167,30833

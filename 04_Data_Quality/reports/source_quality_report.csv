@@ -1,0 +1,74 @@
+dataset,issue_type,issue_count
+accounts,Missing values,52
+accounts,Duplicate rows,20
+accounts,Duplicate primary keys,20
+customers,Missing values,2545
+customers,Duplicate rows,981
+customers,Duplicate primary keys,1000
+suppliers,Missing values,52
+suppliers,Duplicate rows,20
+suppliers,Duplicate primary keys,20
+products,Missing values,256
+products,Duplicate rows,97
+products,Duplicate primary keys,100
+locations,Missing values,5
+locations,Duplicate rows,2
+locations,Duplicate primary keys,2
+employees,Missing values,254
+employees,Duplicate rows,96
+employees,Duplicate primary keys,100
+machines,Missing values,102
+machines,Duplicate rows,39
+machines,Duplicate primary keys,40
+sales,Missing values,25289
+sales,Duplicate rows,8505
+sales,Duplicate primary keys,10000
+production,Missing values,10094
+production,Duplicate rows,3473
+production,Duplicate primary keys,4000
+maintenance,Missing values,2526
+maintenance,Duplicate rows,874
+maintenance,Duplicate primary keys,1000
+financial_transactions,Missing values,15243
+financial_transactions,Duplicate rows,5710
+financial_transactions,Duplicate primary keys,6000
+budget,Missing values,1014
+budget,Duplicate rows,376
+budget,Duplicate primary keys,400
+energy,Missing values,5085
+energy,Duplicate rows,1893
+energy,Duplicate primary keys,2000
+emissions,Missing values,5063
+emissions,Duplicate rows,1899
+emissions,Duplicate primary keys,2000
+waste,Missing values,5081
+waste,Duplicate rows,1905
+waste,Duplicate primary keys,2000
+inventory,Missing values,25280
+inventory,Duplicate rows,8816
+inventory,Duplicate primary keys,10000
+customers,Invalid reference: account_id,510
+products,Invalid reference: supplier_id,51
+employees,Invalid reference: location_id,51
+machines,Invalid reference: location_id,20
+sales,Invalid reference: account_id,5100
+sales,Invalid reference: customer_id,5100
+sales,Invalid reference: product_id,5100
+sales,Invalid reference: location_id,5100
+production,Invalid reference: product_id,2040
+production,Invalid reference: location_id,2040
+production,Invalid reference: machine_id,2040
+production,Invalid reference: employee_id,2040
+maintenance,Invalid reference: location_id,510
+maintenance,Invalid reference: machine_id,510
+maintenance,Invalid reference: employee_id,510
+financial_transactions,Invalid reference: location_id,3060
+budget,Invalid reference: location_id,204
+energy,Invalid reference: location_id,1020
+emissions,Invalid reference: location_id,1020
+waste,Invalid reference: location_id,1020
+inventory,Invalid reference: product_id,5100
+inventory,Invalid reference: location_id,5100
+sales,Revenue calculation inconsistency,19464
+production,Negative production quantity,2032
+inventory,Negative inventory quantity,5066
