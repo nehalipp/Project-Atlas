@@ -2,50 +2,60 @@
 
 ## 1. Purpose
 
-This document defines how the synthetic source data for Project Atlas will be generated.
+This document defines how the synthetic source data for Project Atlas is
+generated.
 
-The data supports the approved Phase 2 data model and provides realistic operational data for the Data Quality, ETL, Warehouse, Analytics, Power BI, and Tableau phases.
+The data supports the approved Phase 2 Data Model and provides realistic
+operational data for the Data Quality, ETL, Warehouse, Analytics, Power BI,
+and Tableau phases.
 
-All data is synthetic and intended for portfolio and demonstration purposes only.
+All data is synthetic and intended for portfolio and demonstration purposes
+only.
 
 ---
 
 ## 2. Generation Approach
 
-Data will be generated using:
+Data is generated using:
 
 - Python
 - Faker
 - Pandas
 - NumPy where useful
 
-The generation process will be:
+The generation process is:
 
 - Reproducible
 - Relationship-aware
 - Configurable
 - Realistic
+- Maintainable
 - Easy to reproduce and explain
 
-A fixed random seed will be used so the same configuration can reproduce the baseline datasets.
+A fixed random seed is used so that the clean baseline can be reproduced
+using the same configuration and generator version.
 
-The generation workflow is:
+The Phase 3 workflow is:
 
 ```text
-Reference Data
-      ↓
-Clean Business Data
-      ↓
-Controlled Quality Issues
-      ↓
-Imperfect Source Data
+Reference Data Generation
+        ↓
+Reference Data Validation
+        ↓
+Business Data Generation
+        ↓
+Business Data Validation
+        ↓
+Controlled Quality Issue Injection
 ````
+
+The clean baseline is validated before quality issues are introduced.
 
 ---
 
 ## 3. Source Datasets
 
-The generator will create source data for all 16 Atlas domains.
+Phase 3 creates source data for all 16 approved Atlas domains.
 
 ### Reference Data
 
@@ -73,13 +83,13 @@ waste
 inventory
 ```
 
-These datasets represent the operational source layer and will later flow through the Data Quality and ETL phases.
+These datasets represent the synthetic operational source layer.
 
 ---
 
-## 4. Initial Data Volumes
+## 4. Approved Data Volumes
 
-The approved generation targets are:
+The clean baseline generation targets are:
 
 | Dataset                | Target Records |
 | ---------------------- | -------------: |
@@ -100,13 +110,27 @@ The approved generation targets are:
 | Waste                  |        100,000 |
 | Inventory              |        500,000 |
 
-These are generation targets. Final record counts after controlled quality-issue injection will be measured during the Data Quality phase.
+The clean baseline therefore contains:
+
+```text
+64,100 reference records
++
+1,870,000 business records
+=
+1,934,100 clean baseline records
+```
+
+These are generation targets for the clean baseline.
+
+Final record counts in the quality-issue datasets may differ because
+controlled duplicate injection and other quality issues are intentionally
+introduced.
 
 ---
 
 ## 5. Date Range
 
-The business-process datasets will use:
+The approved Atlas generation period is:
 
 ```text
 Start: 2019-01-01
@@ -119,13 +143,35 @@ The date range is centralized in:
 03_Data_Generation/config/generation_config.py
 ```
 
-so it can be changed without modifying individual generation scripts.
+---
+
+## 6. Reproducibility
+
+The centralized configuration contains:
+
+```text
+Random seed
+Date range
+Dataset record counts
+Quality-issue rates
+Project paths
+```
+
+The project seed is:
+
+```text
+42
+```
+
+The same configuration and generator version should reproduce the same clean
+baseline.
 
 ---
 
-## 6. Business Relationships
+## 7. Business Relationships
 
-Generation follows the dependency structure established in the approved Phase 2 data model.
+Generation follows the dependency structure defined by the approved Phase 2
+Data Model.
 
 ### Account and Customer
 
@@ -155,7 +201,7 @@ Location
    └── Machine
 ```
 
-Employees and machines are associated with operational locations.
+Each employee and machine has one primary operational location.
 
 ### Sales
 
@@ -168,6 +214,9 @@ Customer
 Product
 Location
 ```
+
+The account associated with a sales record must correspond to the account
+associated with its customer in the clean baseline.
 
 ### Production
 
@@ -192,18 +241,47 @@ Machine
 Employee
 ```
 
-### Financial Transactions and Budget
+### Financial Transactions
 
-These reference:
+Financial transactions reference:
 
 ```text
 Date
 Location
 ```
 
-### Energy, Emissions and Waste
+### Budget
 
-These reference:
+Budget records reference:
+
+```text
+Date
+Location
+```
+
+The date represents the applicable budget period.
+
+### Energy
+
+Energy records reference:
+
+```text
+Date
+Location
+```
+
+### Emissions
+
+Emissions records reference:
+
+```text
+Date
+Location
+```
+
+### Waste
+
+Waste records reference:
 
 ```text
 Date
@@ -220,13 +298,14 @@ Product
 Location
 ```
 
-The generation process must preserve the relationships defined in the approved Phase 2 model.
+The generation process follows the relationships established in the approved
+Phase 2 Data Model.
 
 ---
 
-## 7. Fact Grain
+## 8. Fact Grain
 
-The generated business data must respect the approved fact grains.
+The generated business datasets respect the approved Phase 2 fact grains.
 
 | Dataset                | Grain                                 |
 | ---------------------- | ------------------------------------- |
@@ -240,18 +319,49 @@ The generated business data must respect the approved fact grains.
 | Waste                  | One row per waste record              |
 | Inventory              | One row per Product + Location + Date |
 
-Inventory is a periodic snapshot dataset.
+Inventory is a periodic snapshot fact.
 
 ```text
 Inventory Grain:
 Date + Product + Location
 ```
 
-No generated dataset should create a new fact grain that differs from the approved Phase 2 model.
+No Phase 3 dataset introduces a new fact grain outside the approved Phase 2
+Data Model.
 
 ---
 
-## 8. Realistic Data Behavior
+## 9. Lifecycle and Baseline Integrity
+
+Reference data establishes valid business relationships and lifecycle
+constraints used by the business-process generators.
+
+The clean baseline must maintain valid relationships such as:
+
+* Customer → Account
+* Product → Supplier
+* Employee → Location
+* Machine → Location
+* Sales → Account
+* Sales → Customer
+* Sales → Product
+* Sales → Location
+* Production → Product
+* Production → Machine
+* Production → Employee
+* Production → Location
+* Maintenance → Machine
+* Maintenance → Employee
+* Maintenance → Location
+* Inventory → Product
+* Inventory → Location
+
+The business-data validation scripts verify these relationships before quality
+issues are injected.
+
+---
+
+## 10. Realistic Data Behavior
 
 Generated data should contain believable:
 
@@ -274,41 +384,48 @@ Generated data should contain believable:
 * Emissions
 * Waste
 
-Values should vary by entity and business activity rather than being uniformly random.
+Values should vary by entity and business activity rather than being
+uniformly random.
 
-For example:
+Examples include:
 
-* Some customers should generate more sales activity than others.
-* Some products should have higher demand.
-* Some locations should have higher operational activity.
-* Machines should have different levels of production and maintenance activity.
-* Energy, emissions, waste, and inventory should vary by location and time.
+* Different levels of customer sales activity
+* Different product demand
+* Different operational activity by location
+* Different machine production and maintenance activity
+* Variation in energy, emissions, waste, and inventory over time
+
+The generated data is synthetic and does not represent real companies,
+customers, employees, financial results, or operational performance.
 
 ---
 
-## 9. Business-Process Generation Rules
+## 11. Business-Process Generation Rules
 
 ### Sales
 
-Sales should use valid customers, accounts, products, and locations.
+Sales use valid customers, accounts, products, and locations.
 
-Revenue should be mathematically consistent with quantity, unit price, and discount in the clean baseline.
+Revenue is mathematically consistent with quantity, unit price, and discount
+in the clean baseline.
 
 ### Production
 
-Production should use valid products, machines, employees, and locations.
+Production uses valid products, machines, employees, and locations.
 
-Production activity should vary by product, machine, location, and date.
+Production activity varies by product, machine, location, and date.
 
 ### Maintenance
 
-Maintenance should be associated with valid machines and their operational locations.
+Maintenance is associated with valid machines and their operational
+locations.
 
-Maintenance types should include a realistic mixture of preventive, corrective, inspection, and emergency activity.
+Maintenance activity includes a mixture of preventive, corrective,
+inspection, and emergency events.
 
 ### Financial Transactions
 
-Financial activity should include realistic revenue and expense categories.
+Financial activity includes realistic revenue and expense categories.
 
 Examples include:
 
@@ -325,15 +442,15 @@ Other Expense
 
 ### Budget
 
-Budget records should support budget-versus-actual analysis.
+Budget records support budget-versus-actual analysis.
 
-Budget categories should align with relevant financial categories.
+Budget categories align with relevant financial categories.
 
 ### Energy
 
-Energy records should represent realistic consumption by location and energy type.
+Energy records represent consumption by location and energy type.
 
-Examples:
+Examples include:
 
 ```text
 Electricity
@@ -344,9 +461,9 @@ Steam
 
 ### Emissions
 
-Emissions should represent realistic operational sources.
+Emissions represent operational emission sources.
 
-Examples:
+Examples include:
 
 ```text
 Electricity
@@ -358,9 +475,9 @@ Process
 
 ### Waste
 
-Waste should represent realistic waste types and disposal methods.
+Waste represents operational waste types and disposal methods.
 
-Examples:
+Examples include:
 
 ```text
 Metal
@@ -373,9 +490,9 @@ Organic
 
 ### Inventory
 
-Inventory should represent product stock at each location over time.
+Inventory represents product stock at locations over time.
 
-The clean baseline should maintain:
+The clean baseline maintains:
 
 ```text
 Closing Quantity
@@ -387,9 +504,9 @@ Opening Quantity
 
 ---
 
-## 10. Cross-Domain Consistency
+## 12. Cross-Domain Consistency
 
-The generated datasets should support meaningful cross-domain analysis.
+The generated datasets support meaningful cross-domain analysis.
 
 Examples include:
 
@@ -397,189 +514,251 @@ Examples include:
 Sales + Production + Inventory
 Production + Machine + Maintenance
 Production + Energy + Emissions
-Revenue + Financial Transactions + Budget
+Financial Transactions + Budget
 ```
 
-Facts must not be directly joined at incompatible grains.
+Facts must not be joined directly at incompatible detailed grains.
 
-Cross-domain comparisons will be performed by aggregating facts to compatible business grains.
+Cross-domain analysis must aggregate each fact to a compatible business grain
+before comparison.
+
+Examples include:
+
+```text
+Date + Product + Location
+```
+
+and:
+
+```text
+Date + Location
+```
 
 This prevents fan-out and double counting.
 
 ---
 
-## 11. Controlled Data-Quality Issues
+## 13. Clean Baseline Validation
 
-The clean baseline generated by:
+Before quality issues are introduced, the generated datasets are validated.
+
+Reference validation checks include:
+
+* Record counts
+* Customer → Account relationships
+* Product → Supplier relationships
+* Employee → Location relationships
+* Machine → Location relationships
+* Product pricing
+* Lifecycle dates
+
+Business validation checks include:
+
+* Record counts
+* Referential integrity
+* Sales customer/account consistency
+* Sales revenue calculation
+* Production machine/location consistency
+* Production employee/location consistency
+* Maintenance machine/location consistency
+* Maintenance employee/location consistency
+* Inventory Date + Product + Location grain
+
+A clean baseline validation failure indicates a generation problem and must
+be resolved before quality injection.
+
+---
+
+## 14. Controlled Data-Quality Issues
+
+The clean baseline is generated first and remains preserved under:
 
 ```text
-generate_reference_data.py
-generate_business_data.py
+03_Data_Generation/data/raw/
 ```
 
-should remain internally consistent.
-
-Controlled quality issues will then be introduced by:
+Controlled quality issues are then introduced by:
 
 ```text
 inject_quality_issues.py
 ```
 
-Potential issues include:
+The intentionally imperfect copies are written to:
+
+```text
+03_Data_Generation/data/quality_issues/
+```
+
+Potential quality issues include:
 
 * Missing values
 * Duplicate records
 * Invalid references
 * Invalid categories
-* Invalid quantities or prices
+* Invalid numeric values
 * Revenue inconsistencies
 * Outliers
 * Referential-integrity issues
 * Business-rule violations
+* Other controlled structural or consistency defects
 
-Quality issues must be deliberate, documented, and limited enough to keep the source data believable.
+Quality issues are deliberately introduced using the centralized quality
+parameters.
 
-The quality-injection process must not introduce uncontrolled random corruption.
+They are not intended to represent random uncontrolled corruption.
 
----
-
-## 12. Reproducibility
-
-The centralized configuration contains:
-
-```text
-Random seed
-Date range
-Dataset record counts
-Generation parameters
-Quality-issue parameters
-```
-
-The initial random seed is:
-
-```text
-42
-```
-
-The same configuration and generator version should produce the same baseline data.
+The quality-issue dataset exists specifically to provide the input for
+Phase 4 — Data Quality.
 
 ---
 
-## 13. Generation Order
+## 15. Output Structure
 
-The complete generation workflow follows:
+Phase 3 produces two distinct data states:
 
 ```text
-1. Reference Data
-2. Business Process Data
-3. Controlled Quality Issues
-4. Final Raw Source Data
+03_Data_Generation/
+└── data/
+    ├── raw/
+    │   ├── accounts.csv
+    │   ├── customers.csv
+    │   ├── products.csv
+    │   ├── suppliers.csv
+    │   ├── locations.csv
+    │   ├── employees.csv
+    │   ├── machines.csv
+    │   ├── sales.csv
+    │   ├── production.csv
+    │   ├── maintenance.csv
+    │   ├── financial_transactions.csv
+    │   ├── budget.csv
+    │   ├── energy.csv
+    │   ├── emissions.csv
+    │   ├── waste.csv
+    │   └── inventory.csv
+    │
+    └── quality_issues/
+        └── intentionally imperfect copies
 ```
 
-Reference data must exist before dependent business-process data is generated.
+The `raw/` directory contains the validated clean baseline.
 
-Business-process datasets must use valid identifiers from the reference datasets.
+The `quality_issues/` directory contains the intentionally imperfect source
+copies used by Phase 4.
 
-Quality issues are applied only after the clean baseline has been generated.
+The quality-issue datasets do not replace the clean baseline.
 
 ---
 
-## 14. Output
+## 16. Phase 3 Scripts
 
-Generated datasets are stored under:
+Phase 3 contains six operational scripts.
 
-```text
-data/
-└── raw/
-```
+### `generate_reference_data.py`
 
-Expected files:
+Generates the seven reference datasets.
 
-```text
-accounts.csv
-customers.csv
-products.csv
-suppliers.csv
-locations.csv
-employees.csv
-machines.csv
-sales.csv
-production.csv
-maintenance.csv
-financial_transactions.csv
-budget.csv
-energy.csv
-emissions.csv
-waste.csv
-inventory.csv
-```
+### `validate_reference_data.py`
 
-The generated files represent the operational source layer.
+Validates the generated reference datasets and their approved relationships.
 
-They are not trusted warehouse data.
+### `generate_business_data.py`
+
+Generates the nine clean business-process datasets using the reference data.
+
+### `validate_business_data.py`
+
+Validates the clean business-process datasets, referential integrity,
+business rules, and approved fact grain.
+
+### `inject_quality_issues.py`
+
+Creates intentionally imperfect copies of all 16 datasets for Phase 4.
+
+### `generate_all_data.py`
+
+Orchestrates the complete Phase 3 workflow in the approved order.
 
 ---
 
-## 15. Implementation Rules
+## 17. Phase 3 Execution
 
-The generation code must:
+The recommended execution method is:
 
-* Follow the approved Phase 2 model.
-* Preserve business relationships.
-* Respect fact grain.
-* Use the centralized configuration.
+```bash
+python3 03_Data_Generation/scripts/generate_all_data.py
+```
+
+The orchestration performs:
+
+```text
+1. Reference Data Generation
+2. Reference Data Validation
+3. Business Data Generation
+4. Business Data Validation
+5. Controlled Quality Issue Injection
+```
+
+The pipeline stops if a required generation or validation step fails.
+
+Individual scripts remain available for targeted execution and troubleshooting.
+
+---
+
+## 18. Technology
+
+Phase 3 uses:
+
+* Python
+* Faker
+* Pandas
+* NumPy
+* CSV files
+
+No additional orchestration framework or data platform is required.
+
+---
+
+## 19. Implementation Rules
+
+The generation implementation must:
+
+* Follow the approved Phase 2 Data Model.
+* Preserve approved business relationships.
+* Respect documented fact grain.
+* Use centralized configuration.
 * Use reproducible random generation.
 * Keep all data synthetic.
 * Avoid real companies, people, customers, employees, or financial results.
 * Remain understandable and maintainable.
 * Avoid unnecessary technologies or complexity.
 
-No additional domains, facts, dimensions, or relationships will be introduced during Phase 3 without revisiting the approved Phase 2 model.
+No additional domains, facts, dimensions, bridges, or relationships are
+introduced during Phase 3 without revisiting the approved Phase 2 Data Model.
 
 ---
 
-## 16. Phase 3 Scripts
-
-The Phase 3 implementation uses four scripts:
-
-```text
-generate_reference_data.py
-    ↓
-generate_business_data.py
-    ↓
-inject_quality_issues.py
-    ↓
-generate_all_data.py
-```
-
-### `generate_reference_data.py`
-
-Creates the seven reference datasets.
-
-### `generate_business_data.py`
-
-Creates the nine clean business-process datasets using the reference data.
-
-### `inject_quality_issues.py`
-
-Introduces the controlled data-quality issues required for Phase 4.
-
-### `generate_all_data.py`
-
-Runs the complete generation workflow in the correct order.
-
----
-
-## 17. Status
+## 20. Status
 
 > **Phase 3 — Data Generation**
 >
-> **Generation specification:** Locked
+> **Specification:** Complete
 >
-> **Reference data:** Generated and validated
+> **Reference generation:** Complete
 >
-> **Next step:** Implement `generate_business_data.py`
+> **Reference validation:** Passed
+>
+> **Business generation:** Complete
+>
+> **Business validation:** Passed
+>
+> **Quality issue injection:** Complete
+>
+> **Phase status:** COMPLETE
+>
+> **Next phase:** Phase 4 — Data Quality
 
 ---
 
-> **Note:** All data used in Project Atlas is synthetic and intended for portfolio and demonstration purposes only.
+> **Note:** All data used in Project Atlas is synthetic and intended for
+> portfolio and demonstration purposes only.

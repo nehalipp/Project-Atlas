@@ -1,0 +1,2041 @@
+machine_id,location_id,machine_name,machine_type,installation_date,status
+MCH-000001,LOC-0059,Furnace 00001,Furnace,2019-07-21,Active
+MCH-000002,LOC-0005,Press 00002,Press,2019-10-25,Active
+MCH-000003,LOC-0014,Press 00003,Press,2022-04-20,Active
+MCH-000004,LOC-0049,Assembly Line 00004,Assembly Line,2022-09-20,Active
+MCH-000005,LOC-0095,Robotic Cell 00005,Robotic Cell,2021-12-13,Active
+MCH-000006,LOC-0069,Furnace 00006,Furnace,2022-02-22,Active
+MCH-000007,LOC-0064,CNC Machine 00007,CNC Machine,2021-12-02,Active
+MCH-000008,LOC-0077,CNC Machine 00008,CNC Machine,2023-09-05,Active
+MCH-000009,LOC-0038,Furnace 00009,Furnace,2019-01-05,Active
+MCH-000010,LOC-0035,Conveyor 00010,Conveyor,2024-12-30,Active
+MCH-000011,LOC-0084,Cutting Machine 00011,Cutting Machine,2021-09-24,Active
+MCH-000012,LOC-0040,Press 00012,Press,2022-09-30,Active
+MCH-000013,LOC-0081,CNC Machine 00013,CNC Machine,2019-10-23,Active
+MCH-000014,LOC-0084,Assembly Line 00014,Assembly Line,2025-08-14,Active
+MCH-000015,LOC-0083,Furnace 00015,Furnace,2019-02-12,Maintenance
+MCH-000016,LOC-0034,CNC Machine 00016,CNC Machine,2021-05-04,Active
+MCH-000017,LOC-0080,Cutting Machine 00017,Cutting Machine,2022-08-16,Active
+MCH-000018,LOC-0031,Conveyor 00018,Conveyor,2022-07-10,Inactive
+MCH-000019,LOC-0045,Robotic Cell 00019,Robotic Cell,2022-04-15,Active
+MCH-000020,LOC-0098,Furnace 00020,Furnace,2021-03-22,Inactive
+MCH-000021,LOC-0033,CNC Machine 00021,CNC Machine,2020-06-24,Maintenance
+MCH-000022,LOC-0052,Packaging Machine 00022,Packaging Machine,2025-03-22,Active
+MCH-000023,LOC-0092,Assembly Line 00023,Assembly Line,2021-08-02,Active
+MCH-000024,LOC-0035,Robotic Cell 00024,,2023-09-25,Active
+MCH-000025,LOC-0060,Press 00025,Press,2020-10-29,Maintenance
+MCH-000026,LOC-0081,Assembly Line 00026,Assembly Line,2021-12-20,Active
+MCH-000027,LOC-0098,Robotic Cell 00027,Robotic Cell,2024-03-12,Active
+MCH-000028,LOC-0077,Cutting Machine 00028,Cutting Machine,2020-08-14,Active
+MCH-000029,LOC-0043,Press 00029,Press,2025-09-02,Maintenance
+MCH-000030,LOC-0061,Packaging Machine 00030,Packaging Machine,2021-03-22,Active
+MCH-000031,LOC-0036,Cutting Machine 00031,Cutting Machine,2021-01-14,Active
+MCH-000032,LOC-0070,Robotic Cell 00032,Robotic Cell,2024-12-23,Active
+MCH-000033,LOC-0046,Conveyor 00033,Conveyor,2023-12-09,Active
+MCH-000034,LOC-0015,Conveyor 00034,Conveyor,2022-08-13,Active
+MCH-000035,LOC-0062,Assembly Line 00035,Assembly Line,2019-01-02,Active
+MCH-000036,LOC-0009,Robotic Cell 00036,Robotic Cell,2022-06-24,Active
+MCH-000037,LOC-0025,CNC Machine 00037,CNC Machine,2022-10-11,Active
+MCH-000038,LOC-0097,Assembly Line 00038,Assembly Line,2021-08-02,Active
+MCH-000039,LOC-0071,CNC Machine 00039,CNC Machine,2024-03-22,Maintenance
+MCH-000040,LOC-0035,Conveyor 00040,Conveyor,2023-09-21,Active
+MCH-000041,LOC-0044,Cutting Machine 00041,Cutting Machine,2021-06-10,Maintenance
+MCH-000042,LOC-0085,Packaging Machine 00042,Packaging Machine,2019-08-13,Active
+MCH-000043,LOC-0027,Press 00043,Press,2020-09-24,Active
+MCH-000044,LOC-0062,Conveyor 00044,Conveyor,2025-04-30,Active
+MCH-000045,LOC-0003,Assembly Line 00045,Assembly Line,2024-05-15,Active
+MCH-000046,LOC-0063,Robotic Cell 00046,Robotic Cell,2022-11-16,Maintenance
+MCH-000047,LOC-0099,Furnace 00047,Furnace,2020-06-02,Active
+MCH-000048,INVALID-LOCATION_ID-00000047,Packaging Machine 00048,Packaging Machine,2024-08-28,Active
+MCH-000049,LOC-0014,Robotic Cell 00049,Robotic Cell,2022-12-17,Maintenance
+MCH-000050,LOC-0011,Cutting Machine 00050,Cutting Machine,2024-12-11,Active
+MCH-000051,LOC-0023,Furnace 00051,Furnace,2022-07-17,Active
+MCH-000052,LOC-0089,Packaging Machine 00052,Packaging Machine,2025-10-03,Active
+MCH-000053,LOC-0080,Assembly Line 00053,Assembly Line,2024-08-20,Active
+MCH-000054,LOC-0034,Conveyor 00054,Conveyor,2019-06-21,Active
+MCH-000055,LOC-0096,Cutting Machine 00055,Cutting Machine,2020-10-18,Active
+MCH-000056,LOC-0054,Assembly Line 00056,Assembly Line,2020-04-30,Active
+MCH-000057,LOC-0055,Packaging Machine 00057,Packaging Machine,2024-01-13,Active
+MCH-000058,LOC-0057,Furnace 00058,Furnace,2022-07-29,Active
+MCH-000059,LOC-0086,Packaging Machine 00059,Packaging Machine,2019-12-29,Maintenance
+MCH-000060,LOC-0055,Packaging Machine 00060,Packaging Machine,2022-02-09,Active
+MCH-000061,LOC-0095,Conveyor 00061,Conveyor,2020-08-05,Active
+MCH-000062,LOC-0055,Cutting Machine 00062,Cutting Machine,2020-11-12,Active
+MCH-000063,LOC-0095,CNC Machine 00063,CNC Machine,2022-09-02,Active
+MCH-000064,LOC-0028,Conveyor 00064,Conveyor,2019-01-18,Active
+MCH-000065,LOC-0079,Packaging Machine 00065,Packaging Machine,2024-01-13,Maintenance
+MCH-000066,LOC-0062,Packaging Machine 00066,Packaging Machine,2024-12-23,Active
+MCH-000067,LOC-0061,Assembly Line 00067,Assembly Line,2020-04-21,Active
+MCH-000068,LOC-0060,Cutting Machine 00068,Cutting Machine,2022-11-05,Active
+MCH-000069,LOC-0068,Furnace 00069,Furnace,2020-11-29,Active
+MCH-000070,LOC-0055,,Press,2019-01-23,Active
+MCH-000071,LOC-0028,CNC Machine 00071,CNC Machine,2023-07-16,Active
+MCH-000072,LOC-0064,CNC Machine 00072,,2019-02-24,Inactive
+MCH-000073,LOC-0082,Furnace 00073,Furnace,2024-07-06,Active
+MCH-000074,LOC-0067,Packaging Machine 00074,Packaging Machine,2022-02-02,Active
+MCH-000075,LOC-0092,Cutting Machine 00075,Cutting Machine,2022-05-09,Active
+MCH-000076,LOC-0042,Conveyor 00076,Conveyor,2021-07-31,Inactive
+MCH-000077,LOC-0011,Conveyor 00077,Conveyor,2019-08-04,Active
+MCH-000078,LOC-0072,,Press,2024-01-20,Maintenance
+MCH-000079,LOC-0082,Robotic Cell 00079,Robotic Cell,2024-04-03,Maintenance
+MCH-000080,LOC-0018,CNC Machine 00080,CNC Machine,2021-01-06,
+MCH-000081,LOC-0088,Assembly Line 00081,Assembly Line,2019-11-20,Active
+MCH-000082,LOC-0008,Furnace 00082,Furnace,2022-02-26,Active
+MCH-000083,LOC-0051,Conveyor 00083,Conveyor,2020-07-06,Maintenance
+MCH-000084,LOC-0058,,Cutting Machine,2024-10-10,Active
+MCH-000085,LOC-0063,Packaging Machine 00085,Packaging Machine,2021-10-10,Active
+MCH-000086,LOC-0030,Assembly Line 00086,Assembly Line,2024-07-30,Active
+MCH-000087,LOC-0057,Furnace 00087,Furnace,2022-11-27,Maintenance
+MCH-000088,LOC-0040,CNC Machine 00088,CNC Machine,2024-04-10,Maintenance
+MCH-000089,LOC-0048,Conveyor 00089,Conveyor,2020-09-14,Active
+MCH-000090,LOC-0070,Robotic Cell 00090,Robotic Cell,2022-02-11,Active
+MCH-000091,LOC-0020,Assembly Line 00091,Assembly Line,2022-09-29,Active
+MCH-000092,LOC-0002,Robotic Cell 00092,Robotic Cell,2024-05-23,Active
+MCH-000093,LOC-0036,Robotic Cell 00093,Robotic Cell,2023-03-19,Active
+MCH-000094,LOC-0004,Furnace 00094,Furnace,2024-10-28,Active
+MCH-000095,LOC-0054,Press 00095,Press,2020-01-31,Active
+MCH-000096,LOC-0070,Cutting Machine 00096,Cutting Machine,2019-03-11,Inactive
+MCH-000097,LOC-0040,Conveyor 00097,Conveyor,2021-12-21,Active
+MCH-000098,LOC-0004,Packaging Machine 00098,Packaging Machine,2020-01-28,Active
+MCH-000099,LOC-0095,Assembly Line 00099,Assembly Line,2021-06-12,Active
+MCH-000100,LOC-0050,CNC Machine 00100,CNC Machine,2020-07-12,Active
+MCH-000101,LOC-0087,CNC Machine 00101,CNC Machine,2021-04-23,Active
+MCH-000102,LOC-0089,Press 00102,Press,2020-09-03,Active
+MCH-000103,LOC-0005,Cutting Machine 00103,Cutting Machine,2019-12-22,Active
+MCH-000104,LOC-0058,Assembly Line 00104,Assembly Line,2023-05-03,Active
+MCH-000105,LOC-0002,Cutting Machine 00105,Cutting Machine,2022-08-20,Active
+MCH-000106,LOC-0017,Conveyor 00106,Conveyor,2024-11-16,Active
+MCH-000107,LOC-0030,Press 00107,Press,2023-08-22,Active
+MCH-000108,LOC-0070,Robotic Cell 00108,Robotic Cell,2022-09-18,Maintenance
+MCH-000109,LOC-0049,Cutting Machine 00109,Cutting Machine,2019-09-13,Active
+MCH-000110,LOC-0049,Assembly Line 00110,Assembly Line,2021-09-06,Inactive
+MCH-000111,LOC-0021,Packaging Machine 00111,Packaging Machine,2023-06-22,Maintenance
+MCH-000112,LOC-0014,Packaging Machine 00112,Packaging Machine,2019-06-18,Active
+MCH-000113,LOC-0056,Assembly Line 00113,Assembly Line,2020-08-15,Active
+MCH-000114,LOC-0070,Robotic Cell 00114,Robotic Cell,2024-10-30,Active
+MCH-000115,LOC-0034,Packaging Machine 00115,Packaging Machine,2025-08-22,Active
+MCH-000116,LOC-0067,Packaging Machine 00116,Packaging Machine,2024-10-25,Active
+MCH-000117,LOC-0016,CNC Machine 00117,CNC Machine,2023-05-04,Active
+MCH-000118,LOC-0016,Press 00118,Press,2024-11-22,Active
+MCH-000119,LOC-0019,Cutting Machine 00119,Cutting Machine,2023-09-04,Maintenance
+MCH-000120,LOC-0021,Robotic Cell 00120,Robotic Cell,2019-05-28,Active
+MCH-000121,LOC-0093,Cutting Machine 00121,Cutting Machine,2021-08-02,Active
+MCH-000122,LOC-0043,Cutting Machine 00122,Cutting Machine,2020-11-15,Active
+MCH-000123,LOC-0085,Press 00123,Press,2021-12-25,Active
+MCH-000124,LOC-0038,Assembly Line 00124,Assembly Line,2021-08-31,Active
+MCH-000125,LOC-0020,Press 00125,Press,2025-12-25,Maintenance
+MCH-000126,LOC-0064,Cutting Machine 00126,Cutting Machine,2021-10-05,Active
+MCH-000127,LOC-0076,Conveyor 00127,Conveyor,2024-12-03,Active
+MCH-000128,LOC-0044,CNC Machine 00128,CNC Machine,2024-08-23,Active
+MCH-000129,LOC-0020,Assembly Line 00129,Assembly Line,2025-09-08,Active
+MCH-000130,LOC-0011,Cutting Machine 00130,Cutting Machine,2020-05-20,Active
+MCH-000131,LOC-0044,Robotic Cell 00131,Robotic Cell,2021-12-26,Active
+MCH-000132,LOC-0023,Assembly Line 00132,Assembly Line,2022-08-14,Active
+MCH-000133,LOC-0060,CNC Machine 00133,CNC Machine,2019-01-25,Active
+MCH-000134,LOC-0064,Furnace 00134,Furnace,2023-09-03,Active
+MCH-000135,LOC-0040,Packaging Machine 00135,Packaging Machine,2019-08-29,Active
+MCH-000136,LOC-0075,Furnace 00136,Furnace,2019-02-13,Active
+MCH-000137,LOC-0023,Conveyor 00137,Conveyor,2023-12-03,Active
+MCH-000138,LOC-0004,Cutting Machine 00138,Cutting Machine,2021-02-17,
+MCH-000139,LOC-0041,Cutting Machine 00139,Cutting Machine,2019-05-08,Active
+MCH-000140,LOC-0088,Conveyor 00140,Conveyor,2022-04-07,Active
+MCH-000141,LOC-0003,Press 00141,Press,2021-08-24,Maintenance
+MCH-000142,LOC-0058,Robotic Cell 00142,Robotic Cell,2022-09-18,Active
+MCH-000143,LOC-0075,Conveyor 00143,Conveyor,2021-01-01,Active
+MCH-000144,LOC-0055,Conveyor 00144,Conveyor,2024-02-17,Active
+MCH-000145,LOC-0078,Robotic Cell 00145,Robotic Cell,2023-07-03,Active
+MCH-000146,LOC-0053,Conveyor 00146,Conveyor,2021-09-20,Active
+MCH-000147,LOC-0038,Cutting Machine 00147,Cutting Machine,2025-12-26,Active
+MCH-000148,LOC-0092,Robotic Cell 00148,Robotic Cell,2020-04-22,Active
+MCH-000149,LOC-0083,Assembly Line 00149,Assembly Line,2023-01-15,Active
+MCH-000150,LOC-0018,Robotic Cell 00150,Robotic Cell,2021-01-10,Active
+MCH-000151,LOC-0067,Robotic Cell 00151,Robotic Cell,2023-03-12,Maintenance
+MCH-000152,LOC-0024,,Packaging Machine,2021-09-26,Active
+MCH-000153,LOC-0028,Press 00153,Press,2025-02-12,Active
+MCH-000154,LOC-0018,Assembly Line 00154,Assembly Line,2025-03-23,Active
+MCH-000155,LOC-0014,Furnace 00155,Furnace,2022-04-06,Active
+MCH-000156,LOC-0062,CNC Machine 00156,CNC Machine,2022-06-16,Inactive
+MCH-000157,LOC-0060,Robotic Cell 00157,Robotic Cell,2024-01-17,Active
+MCH-000158,LOC-0013,CNC Machine 00158,CNC Machine,2023-10-20,Active
+MCH-000159,LOC-0032,Packaging Machine 00159,Packaging Machine,2021-01-10,Active
+MCH-000160,LOC-0024,CNC Machine 00160,CNC Machine,2022-01-19,Active
+MCH-000161,LOC-0058,Conveyor 00161,Conveyor,2020-03-04,Active
+MCH-000162,LOC-0019,CNC Machine 00162,CNC Machine,2019-01-20,Active
+MCH-000163,LOC-0090,Furnace 00163,Furnace,2021-07-08,Active
+MCH-000164,LOC-0095,Furnace 00164,Furnace,2021-03-24,Active
+MCH-000165,LOC-0010,CNC Machine 00165,CNC Machine,2021-12-23,Active
+MCH-000166,LOC-0065,Cutting Machine 00166,Cutting Machine,2025-06-19,Active
+MCH-000167,LOC-0041,Conveyor 00167,Conveyor,2021-12-24,Active
+MCH-000168,LOC-0096,Packaging Machine 00168,,2025-08-14,Maintenance
+MCH-000169,LOC-0041,Press 00169,Press,2024-01-16,Active
+MCH-000170,LOC-0087,Furnace 00170,Furnace,2020-04-20,Active
+MCH-000171,LOC-0055,Furnace 00171,Furnace,2021-07-22,Inactive
+MCH-000172,LOC-0013,Cutting Machine 00172,Cutting Machine,2025-03-01,Maintenance
+MCH-000173,LOC-0022,Assembly Line 00173,Assembly Line,2025-03-17,Active
+MCH-000174,LOC-0094,Assembly Line 00174,Assembly Line,2024-06-21,Active
+MCH-000175,LOC-0056,CNC Machine 00175,CNC Machine,2022-01-02,Active
+MCH-000176,LOC-0053,Robotic Cell 00176,Robotic Cell,2019-04-18,Active
+MCH-000177,LOC-0098,Cutting Machine 00177,Cutting Machine,2023-05-01,Active
+MCH-000178,LOC-0043,Robotic Cell 00178,Robotic Cell,2024-07-27,Active
+MCH-000179,LOC-0006,Cutting Machine 00179,Cutting Machine,2024-07-21,Active
+MCH-000180,LOC-0031,Conveyor 00180,Conveyor,2022-11-28,Active
+MCH-000181,LOC-0051,Cutting Machine 00181,Cutting Machine,2022-11-02,Active
+MCH-000182,LOC-0079,Robotic Cell 00182,Robotic Cell,2022-11-11,Active
+MCH-000183,LOC-0045,Cutting Machine 00183,Cutting Machine,2021-07-01,Inactive
+MCH-000184,LOC-0005,Cutting Machine 00184,Cutting Machine,2019-03-23,Active
+MCH-000185,LOC-0060,Robotic Cell 00185,Robotic Cell,2021-07-11,Active
+MCH-000186,LOC-0052,Furnace 00186,Furnace,2024-03-15,Active
+MCH-000187,LOC-0058,Packaging Machine 00187,Packaging Machine,2022-02-24,Active
+MCH-000188,LOC-0047,CNC Machine 00188,CNC Machine,2025-02-07,Active
+MCH-000189,LOC-0069,Robotic Cell 00189,Robotic Cell,2021-09-12,Active
+MCH-000190,LOC-0022,CNC Machine 00190,CNC Machine,2023-10-18,Inactive
+MCH-000191,LOC-0005,Press 00191,Press,2024-11-19,Active
+MCH-000192,LOC-0038,Assembly Line 00192,Assembly Line,2023-09-28,Maintenance
+MCH-000193,LOC-0050,Robotic Cell 00193,Robotic Cell,2023-02-28,Active
+MCH-000194,LOC-0086,Packaging Machine 00194,Packaging Machine,2021-09-05,Inactive
+MCH-000195,LOC-0064,Press 00195,Press,2022-03-20,Active
+MCH-000196,LOC-0082,Furnace 00196,Furnace,2025-04-26,Active
+MCH-000197,LOC-0093,Robotic Cell 00197,Robotic Cell,2020-09-03,Active
+MCH-000198,LOC-0099,Conveyor 00198,Conveyor,2023-05-19,Active
+MCH-000199,LOC-0070,Packaging Machine 00199,Packaging Machine,2024-01-16,Active
+MCH-000200,LOC-0071,Press 00200,Press,2020-12-23,Active
+MCH-000201,LOC-0070,Conveyor 00201,Conveyor,2020-08-25,Active
+MCH-000202,LOC-0075,Furnace 00202,Furnace,2023-06-07,Active
+MCH-000203,LOC-0030,CNC Machine 00203,CNC Machine,2020-10-15,Active
+MCH-000204,LOC-0085,Conveyor 00204,Conveyor,2019-04-11,Active
+MCH-000205,LOC-0073,Press 00205,Press,2019-03-22,Active
+MCH-000206,LOC-0029,Furnace 00206,Furnace,2020-07-28,Active
+MCH-000207,LOC-0078,Press 00207,Press,2023-03-20,Active
+MCH-000208,LOC-0004,Assembly Line 00208,Assembly Line,2025-04-13,Active
+MCH-000209,LOC-0031,Cutting Machine 00209,Cutting Machine,2025-12-16,Active
+MCH-000210,LOC-0086,Press 00210,Press,2022-02-23,Active
+MCH-000211,LOC-0076,CNC Machine 00211,CNC Machine,2020-09-19,Active
+MCH-000212,LOC-0003,Packaging Machine 00212,Packaging Machine,2025-04-17,Active
+MCH-000213,LOC-0028,Packaging Machine 00213,Packaging Machine,2019-09-02,Active
+MCH-000214,LOC-0039,Packaging Machine 00214,Packaging Machine,2024-10-19,Active
+MCH-000215,LOC-0010,Packaging Machine 00215,Packaging Machine,2020-05-25,Active
+MCH-000216,LOC-0003,CNC Machine 00216,CNC Machine,2019-08-16,Active
+MCH-000217,LOC-0028,Furnace 00217,Furnace,2019-12-19,Active
+MCH-000218,LOC-0083,Assembly Line 00218,Assembly Line,2019-09-12,Active
+MCH-000219,LOC-0059,Conveyor 00219,Conveyor,2024-06-20,Active
+MCH-000220,LOC-0016,Cutting Machine 00220,Cutting Machine,2024-12-11,Active
+MCH-000221,LOC-0073,Assembly Line 00221,Assembly Line,2024-08-12,Active
+MCH-000222,LOC-0092,Robotic Cell 00222,Robotic Cell,2024-02-14,Active
+MCH-000223,LOC-0047,Assembly Line 00223,Assembly Line,2021-11-05,Active
+MCH-000224,LOC-0033,Press 00224,Press,2021-02-23,Active
+MCH-000225,LOC-0081,Packaging Machine 00225,Packaging Machine,2019-05-01,Active
+MCH-000226,LOC-0059,Robotic Cell 00226,Robotic Cell,2024-05-18,Active
+MCH-000227,LOC-0010,Conveyor 00227,Conveyor,2024-10-12,Active
+MCH-000228,LOC-0012,Furnace 00228,Furnace,2024-11-02,Active
+MCH-000229,LOC-0003,Cutting Machine 00229,Cutting Machine,2025-01-15,Active
+MCH-000230,LOC-0078,Furnace 00230,Furnace,2023-11-07,Active
+MCH-000231,LOC-0016,Conveyor 00231,Conveyor,2024-07-27,Active
+MCH-000232,LOC-0035,Cutting Machine 00232,Cutting Machine,2021-08-27,Active
+MCH-000233,LOC-0027,Conveyor 00233,Conveyor,2020-09-14,Active
+MCH-000234,LOC-0008,Press 00234,Press,2025-04-04,Active
+MCH-000235,LOC-0042,CNC Machine 00235,CNC Machine,2021-07-18,Active
+MCH-000236,LOC-0005,CNC Machine 00236,CNC Machine,2023-11-19,Active
+MCH-000237,LOC-0050,Robotic Cell 00237,Robotic Cell,2025-01-29,Active
+MCH-000238,LOC-0064,Robotic Cell 00238,Robotic Cell,2024-03-07,Active
+MCH-000239,LOC-0070,Robotic Cell 00239,Robotic Cell,2022-01-01,Active
+MCH-000240,LOC-0028,CNC Machine 00240,CNC Machine,2023-10-08,Active
+MCH-000241,LOC-0064,Press 00241,Press,2020-09-17,Active
+MCH-000242,LOC-0014,Press 00242,Press,2020-05-14,Maintenance
+MCH-000243,LOC-0090,Press 00243,Press,2023-12-27,Maintenance
+MCH-000244,LOC-0046,CNC Machine 00244,CNC Machine,2025-09-11,Active
+MCH-000245,LOC-0088,Press 00245,Press,2022-10-22,Active
+MCH-000246,LOC-0066,Cutting Machine 00246,Cutting Machine,2022-01-25,Active
+MCH-000247,LOC-0030,Robotic Cell 00247,Robotic Cell,2025-01-20,Active
+MCH-000248,LOC-0060,Conveyor 00248,Conveyor,2022-01-26,Active
+MCH-000249,LOC-0011,Press 00249,Press,2023-09-26,Maintenance
+MCH-000250,LOC-0069,Assembly Line 00250,Assembly Line,2022-01-19,Maintenance
+MCH-000251,LOC-0002,Assembly Line 00251,Assembly Line,2020-12-23,Active
+MCH-000252,LOC-0093,Assembly Line 00252,Assembly Line,2020-02-20,Active
+MCH-000253,LOC-0053,Press 00253,Press,2023-07-09,Active
+MCH-000254,LOC-0058,,Packaging Machine,2019-02-02,Active
+MCH-000255,LOC-0049,Packaging Machine 00255,Packaging Machine,2021-03-30,Maintenance
+MCH-000256,LOC-0026,CNC Machine 00256,CNC Machine,2019-05-02,Maintenance
+MCH-000257,LOC-0026,Cutting Machine 00257,Cutting Machine,2020-11-08,Maintenance
+MCH-000258,LOC-0090,Press 00258,Press,2019-06-06,
+MCH-000259,LOC-0086,Furnace 00259,Furnace,2024-10-07,Inactive
+MCH-000260,LOC-0062,Assembly Line 00260,Assembly Line,2022-04-14,Active
+MCH-000261,LOC-0020,Press 00261,Press,2022-09-28,Active
+MCH-000262,LOC-0054,Furnace 00262,Furnace,2025-08-25,Active
+MCH-000263,LOC-0086,Assembly Line 00263,Assembly Line,2023-05-09,Active
+MCH-000264,LOC-0022,Conveyor 00264,Conveyor,2019-11-17,Active
+MCH-000265,LOC-0074,Furnace 00265,Furnace,2020-08-30,Active
+MCH-000266,LOC-0005,Furnace 00266,Furnace,2024-03-25,Active
+MCH-000267,LOC-0071,Cutting Machine 00267,Cutting Machine,2025-01-05,Active
+MCH-000268,LOC-0037,Cutting Machine 00268,Cutting Machine,2022-07-21,Active
+MCH-000269,LOC-0013,Assembly Line 00269,Assembly Line,2025-04-19,Active
+MCH-000270,LOC-0010,Furnace 00270,Furnace,2025-01-02,Active
+MCH-000271,LOC-0045,Furnace 00271,Furnace,2021-02-11,Active
+MCH-000272,LOC-0090,CNC Machine 00272,CNC Machine,2020-09-23,Active
+MCH-000273,LOC-0018,Furnace 00273,Furnace,2024-09-27,Active
+MCH-000274,LOC-0015,Assembly Line 00274,Assembly Line,2021-02-07,Active
+MCH-000275,LOC-0036,CNC Machine 00275,CNC Machine,2019-07-11,Maintenance
+MCH-000276,LOC-0052,Robotic Cell 00276,Robotic Cell,2025-05-23,Active
+MCH-000277,LOC-0053,Cutting Machine 00277,Cutting Machine,2020-06-24,Active
+MCH-000278,LOC-0030,Packaging Machine 00278,Packaging Machine,2019-01-21,Active
+MCH-000279,LOC-0076,Cutting Machine 00279,Cutting Machine,2020-11-23,Maintenance
+MCH-000280,LOC-0094,Conveyor 00280,Conveyor,2020-10-18,Inactive
+MCH-000281,LOC-0074,Assembly Line 00281,Assembly Line,2021-08-05,Active
+MCH-000282,LOC-0053,Furnace 00282,Furnace,2022-10-05,Maintenance
+MCH-000283,LOC-0082,Conveyor 00283,,2020-04-18,Active
+MCH-000284,LOC-0096,Cutting Machine 00284,Cutting Machine,2021-08-25,Active
+MCH-000285,LOC-0055,Press 00285,,2021-03-31,Active
+MCH-000286,LOC-0071,Packaging Machine 00286,,2024-07-21,Active
+MCH-000287,LOC-0012,Assembly Line 00287,Assembly Line,2020-03-31,Active
+MCH-000288,LOC-0072,Packaging Machine 00288,Packaging Machine,2021-09-29,Maintenance
+MCH-000289,LOC-0094,Conveyor 00289,Conveyor,2024-09-25,Active
+MCH-000290,LOC-0100,Assembly Line 00290,Assembly Line,2023-10-02,Active
+MCH-000291,LOC-0086,Press 00291,Press,2020-11-23,Active
+MCH-000292,LOC-0087,Robotic Cell 00292,Robotic Cell,2020-04-05,Active
+MCH-000293,LOC-0091,Cutting Machine 00293,Cutting Machine,2021-02-26,Active
+MCH-000294,LOC-0048,Furnace 00294,Furnace,2019-11-11,Active
+MCH-000295,LOC-0085,Cutting Machine 00295,Cutting Machine,2022-03-19,Active
+MCH-000296,LOC-0073,CNC Machine 00296,CNC Machine,2021-05-07,Active
+MCH-000297,LOC-0072,CNC Machine 00297,CNC Machine,2021-06-21,Active
+MCH-000298,LOC-0033,Furnace 00298,Furnace,2021-03-28,Inactive
+MCH-000299,LOC-0005,Robotic Cell 00299,Robotic Cell,2020-04-10,Active
+MCH-000300,LOC-0064,Press 00300,Press,2019-07-10,Maintenance
+MCH-000301,LOC-0021,CNC Machine 00301,CNC Machine,2024-08-18,Active
+MCH-000302,LOC-0051,Assembly Line 00302,Assembly Line,2019-06-09,Inactive
+MCH-000303,LOC-0076,Furnace 00303,Furnace,2024-10-21,Active
+MCH-000304,LOC-0043,Robotic Cell 00304,Robotic Cell,2024-08-01,Active
+MCH-000305,LOC-0012,Cutting Machine 00305,Cutting Machine,2019-12-06,Active
+MCH-000306,LOC-0072,Cutting Machine 00306,Cutting Machine,2024-12-19,Active
+MCH-000307,LOC-0085,Robotic Cell 00307,Robotic Cell,2025-10-12,Maintenance
+MCH-000308,LOC-0069,Conveyor 00308,Conveyor,2022-02-05,Active
+MCH-000309,LOC-0066,Cutting Machine 00309,Cutting Machine,2025-04-06,Active
+MCH-000310,LOC-0069,Assembly Line 00310,Assembly Line,2020-06-25,Active
+MCH-000311,LOC-0040,Conveyor 00311,Conveyor,2022-03-17,Active
+MCH-000312,LOC-0047,Conveyor 00312,,2023-02-17,Active
+MCH-000313,LOC-0045,Packaging Machine 00313,Packaging Machine,2021-09-23,Inactive
+MCH-000314,LOC-0069,Assembly Line 00314,Assembly Line,2023-05-29,Active
+MCH-000315,LOC-0068,Furnace 00315,Furnace,2024-12-09,Active
+MCH-000316,LOC-0068,,Packaging Machine,2025-08-21,Active
+MCH-000317,LOC-0035,Conveyor 00317,Conveyor,2022-04-12,Inactive
+MCH-000318,LOC-0005,Furnace 00318,Furnace,2021-08-31,Active
+MCH-000319,LOC-0069,Cutting Machine 00319,Cutting Machine,2021-01-06,Maintenance
+MCH-000320,LOC-0016,Cutting Machine 00320,Cutting Machine,2025-10-01,Active
+MCH-000321,LOC-0021,Assembly Line 00321,Assembly Line,2022-06-30,Active
+MCH-000322,LOC-0005,Furnace 00322,Furnace,2022-01-27,Active
+MCH-000323,LOC-0083,Assembly Line 00323,Assembly Line,2024-12-31,Active
+MCH-000324,LOC-0023,Assembly Line 00324,Assembly Line,2021-04-02,Active
+MCH-000325,LOC-0083,Robotic Cell 00325,Robotic Cell,2022-09-16,Active
+MCH-000326,LOC-0090,Conveyor 00326,Conveyor,2025-12-28,Active
+MCH-000327,LOC-0013,Press 00327,Press,2022-07-04,Active
+MCH-000328,LOC-0002,Furnace 00328,Furnace,2020-06-14,Active
+MCH-000329,LOC-0034,Assembly Line 00329,Assembly Line,2019-09-13,Active
+MCH-000330,LOC-0061,CNC Machine 00330,CNC Machine,2020-09-11,Active
+MCH-000331,LOC-0056,Cutting Machine 00331,Cutting Machine,2023-10-30,Inactive
+MCH-000332,LOC-0021,Furnace 00332,Furnace,2023-02-09,Active
+MCH-000333,LOC-0014,Robotic Cell 00333,Robotic Cell,2020-03-23,Active
+MCH-000334,LOC-0040,Conveyor 00334,Conveyor,2020-09-12,Active
+MCH-000335,LOC-0056,Press 00335,Press,2020-10-07,Active
+MCH-000336,LOC-0059,Press 00336,Press,2019-02-21,Active
+MCH-000337,LOC-0047,Robotic Cell 00337,Robotic Cell,2025-02-11,Active
+MCH-000338,LOC-0023,Cutting Machine 00338,Cutting Machine,2021-07-26,Active
+MCH-000339,LOC-0037,Packaging Machine 00339,Packaging Machine,2019-07-23,Active
+MCH-000340,LOC-0073,Robotic Cell 00340,Robotic Cell,2024-05-07,Active
+MCH-000341,LOC-0034,Robotic Cell 00341,Robotic Cell,2023-09-01,Active
+MCH-000342,LOC-0047,Conveyor 00342,Conveyor,2023-11-30,Active
+MCH-000343,LOC-0052,Press 00343,Press,2022-03-05,Active
+MCH-000344,LOC-0054,Conveyor 00344,Conveyor,2024-02-13,Active
+MCH-000345,LOC-0097,Assembly Line 00345,Assembly Line,2021-03-09,Active
+MCH-000346,LOC-0042,Assembly Line 00346,Assembly Line,2025-02-23,Active
+MCH-000347,LOC-0080,Furnace 00347,Furnace,2021-07-11,Active
+MCH-000348,LOC-0011,Assembly Line 00348,Assembly Line,2025-10-20,Active
+MCH-000349,INVALID-LOCATION_ID-00000348,Assembly Line 00349,Assembly Line,2024-10-16,Active
+MCH-000350,LOC-0084,Assembly Line 00350,Assembly Line,2022-03-25,Active
+MCH-000351,LOC-0032,Packaging Machine 00351,Packaging Machine,2025-10-19,Active
+MCH-000352,LOC-0049,Cutting Machine 00352,Cutting Machine,2019-09-06,
+MCH-000353,LOC-0065,Conveyor 00353,Conveyor,2019-11-15,Active
+MCH-000354,LOC-0062,Packaging Machine 00354,Packaging Machine,2024-09-22,Active
+MCH-000355,LOC-0098,Packaging Machine 00355,Packaging Machine,2019-07-14,Active
+MCH-000356,LOC-0085,Robotic Cell 00356,Robotic Cell,2024-02-20,Active
+MCH-000357,LOC-0017,Conveyor 00357,Conveyor,2020-08-26,Active
+MCH-000358,LOC-0056,Assembly Line 00358,Assembly Line,2021-11-19,Active
+MCH-000359,LOC-0046,Packaging Machine 00359,Packaging Machine,2023-10-12,Active
+MCH-000360,LOC-0013,Cutting Machine 00360,Cutting Machine,2025-12-29,Active
+MCH-000361,LOC-0019,Cutting Machine 00361,Cutting Machine,2019-04-29,Active
+MCH-000362,LOC-0072,Press 00362,Press,2025-07-09,Active
+MCH-000363,LOC-0075,Conveyor 00363,Conveyor,2019-01-21,Active
+MCH-000364,LOC-0069,Packaging Machine 00364,Packaging Machine,2023-05-19,Active
+MCH-000365,LOC-0066,Press 00365,Press,2025-10-24,Active
+MCH-000366,LOC-0099,CNC Machine 00366,CNC Machine,2025-09-24,Active
+MCH-000367,LOC-0060,Conveyor 00367,Conveyor,2022-01-08,Active
+MCH-000368,LOC-0051,Furnace 00368,Furnace,2023-05-23,Active
+MCH-000369,LOC-0084,Robotic Cell 00369,Robotic Cell,2020-03-11,Maintenance
+MCH-000370,LOC-0028,Press 00370,Press,2025-10-07,Active
+MCH-000371,LOC-0059,Cutting Machine 00371,Cutting Machine,2020-03-09,Active
+MCH-000372,LOC-0040,Cutting Machine 00372,Cutting Machine,2025-08-31,Active
+MCH-000373,LOC-0094,Robotic Cell 00373,Robotic Cell,2020-12-23,Maintenance
+MCH-000374,LOC-0067,Packaging Machine 00374,Packaging Machine,2021-03-02,Inactive
+MCH-000375,LOC-0035,Conveyor 00375,Conveyor,2020-10-10,Active
+MCH-000376,LOC-0068,Packaging Machine 00376,Packaging Machine,2024-12-07,Active
+MCH-000377,LOC-0074,CNC Machine 00377,CNC Machine,2024-08-24,Active
+MCH-000378,LOC-0084,CNC Machine 00378,CNC Machine,2021-02-20,Active
+MCH-000379,LOC-0032,Assembly Line 00379,Assembly Line,2021-07-15,Active
+MCH-000380,LOC-0031,Press 00380,Press,2022-09-29,Active
+MCH-000381,LOC-0076,Cutting Machine 00381,Cutting Machine,2025-01-10,Active
+MCH-000382,LOC-0100,Robotic Cell 00382,Robotic Cell,2023-08-12,Active
+MCH-000383,LOC-0030,Assembly Line 00383,Assembly Line,2020-10-29,Active
+MCH-000384,LOC-0029,Cutting Machine 00384,Cutting Machine,2024-07-05,Active
+MCH-000385,LOC-0023,CNC Machine 00385,CNC Machine,2022-10-04,Active
+MCH-000386,LOC-0004,Assembly Line 00386,Assembly Line,2021-05-29,Active
+MCH-000387,LOC-0001,Packaging Machine 00387,Packaging Machine,2022-12-12,Active
+MCH-000388,LOC-0053,Robotic Cell 00388,Robotic Cell,2022-02-05,Active
+MCH-000389,LOC-0082,Assembly Line 00389,Assembly Line,2024-04-30,Active
+MCH-000390,LOC-0007,Furnace 00390,Furnace,2021-11-17,Active
+MCH-000391,LOC-0023,Cutting Machine 00391,Cutting Machine,2024-02-14,Active
+MCH-000392,LOC-0049,Robotic Cell 00392,Robotic Cell,2022-08-22,Active
+MCH-000393,LOC-0056,Conveyor 00393,Conveyor,2022-10-27,Active
+MCH-000394,LOC-0092,CNC Machine 00394,CNC Machine,2019-08-26,Active
+MCH-000395,LOC-0093,CNC Machine 00395,CNC Machine,2022-03-02,Active
+MCH-000396,LOC-0088,Furnace 00396,Furnace,2023-09-09,Active
+MCH-000397,LOC-0024,Assembly Line 00397,Assembly Line,2019-02-17,Active
+MCH-000398,LOC-0050,Cutting Machine 00398,Cutting Machine,2020-04-21,Active
+MCH-000399,LOC-0091,Press 00399,Press,2021-12-04,Active
+MCH-000400,LOC-0092,CNC Machine 00400,CNC Machine,2025-10-04,Active
+MCH-000401,LOC-0089,Conveyor 00401,Conveyor,2024-10-09,Inactive
+MCH-000402,LOC-0070,Robotic Cell 00402,Robotic Cell,2025-12-09,Active
+MCH-000403,LOC-0041,Assembly Line 00403,Assembly Line,2022-04-07,Active
+MCH-000404,LOC-0011,CNC Machine 00404,CNC Machine,2022-02-15,Active
+MCH-000405,LOC-0040,Packaging Machine 00405,Packaging Machine,2025-09-15,Active
+MCH-000406,LOC-0027,CNC Machine 00406,CNC Machine,2024-07-07,Inactive
+MCH-000407,LOC-0033,Furnace 00407,Furnace,2023-04-11,
+MCH-000408,LOC-0042,Furnace 00408,Furnace,2019-10-15,Active
+MCH-000409,LOC-0065,Furnace 00409,Furnace,2023-04-25,Active
+MCH-000410,LOC-0009,Assembly Line 00410,Assembly Line,2022-11-13,Maintenance
+MCH-000411,LOC-0097,Furnace 00411,Furnace,2021-11-07,Active
+MCH-000412,LOC-0055,Robotic Cell 00412,Robotic Cell,2020-01-09,Maintenance
+MCH-000413,LOC-0046,Cutting Machine 00413,Cutting Machine,2023-09-07,Active
+MCH-000414,LOC-0029,CNC Machine 00414,CNC Machine,2019-01-12,Active
+MCH-000415,LOC-0039,Robotic Cell 00415,Robotic Cell,2023-06-04,Active
+MCH-000416,LOC-0057,Furnace 00416,Furnace,2025-11-25,Inactive
+MCH-000417,LOC-0053,Cutting Machine 00417,Cutting Machine,2025-04-26,Active
+MCH-000418,LOC-0008,Assembly Line 00418,Assembly Line,2022-03-28,Active
+MCH-000419,LOC-0012,Furnace 00419,Furnace,2025-05-05,Maintenance
+MCH-000420,LOC-0072,Press 00420,Press,2023-07-01,Active
+MCH-000421,LOC-0051,Cutting Machine 00421,Cutting Machine,2023-03-16,Active
+MCH-000422,LOC-0035,Cutting Machine 00422,Cutting Machine,2024-06-27,Active
+MCH-000423,LOC-0062,Robotic Cell 00423,Robotic Cell,2020-09-11,Active
+MCH-000424,LOC-0077,Robotic Cell 00424,Robotic Cell,2019-10-23,Active
+MCH-000425,LOC-0028,CNC Machine 00425,CNC Machine,2019-03-27,Inactive
+MCH-000426,LOC-0005,Packaging Machine 00426,Packaging Machine,2020-10-08,Active
+MCH-000427,LOC-0045,Packaging Machine 00427,Packaging Machine,2022-12-25,Active
+MCH-000428,LOC-0091,Conveyor 00428,Conveyor,2025-12-16,Active
+MCH-000429,LOC-0042,Furnace 00429,Furnace,2023-01-18,Active
+MCH-000430,LOC-0077,Furnace 00430,Furnace,2024-03-01,Active
+MCH-000431,LOC-0040,Conveyor 00431,Conveyor,2022-11-11,Active
+MCH-000432,LOC-0051,Assembly Line 00432,Assembly Line,2025-05-02,Active
+MCH-000433,LOC-0085,CNC Machine 00433,CNC Machine,2021-12-15,Maintenance
+MCH-000434,LOC-0043,Packaging Machine 00434,Packaging Machine,2019-12-16,Active
+MCH-000435,LOC-0005,Assembly Line 00435,Assembly Line,2024-12-25,Active
+MCH-000436,LOC-0049,Assembly Line 00436,Assembly Line,2022-11-30,Active
+MCH-000437,LOC-0003,Conveyor 00437,Conveyor,2022-12-18,Active
+MCH-000438,LOC-0019,CNC Machine 00438,CNC Machine,2024-02-28,Active
+MCH-000439,LOC-0035,Furnace 00439,Furnace,2025-03-07,Active
+MCH-000440,LOC-0079,Cutting Machine 00440,Cutting Machine,2024-11-24,Active
+MCH-000441,LOC-0097,Assembly Line 00441,Assembly Line,2025-02-05,Active
+MCH-000442,LOC-0032,Furnace 00442,Furnace,2023-03-25,Active
+MCH-000443,LOC-0078,Furnace 00443,Furnace,2021-09-16,Active
+MCH-000444,LOC-0080,Robotic Cell 00444,Robotic Cell,2022-06-19,Active
+MCH-000445,LOC-0031,Conveyor 00445,Conveyor,2023-04-28,Inactive
+MCH-000446,LOC-0021,Robotic Cell 00446,Robotic Cell,2019-03-16,Active
+MCH-000447,LOC-0015,Furnace 00447,Furnace,2021-05-18,Active
+MCH-000448,LOC-0013,Packaging Machine 00448,Packaging Machine,2025-08-04,Active
+MCH-000449,LOC-0001,Press 00449,Press,2021-12-07,Inactive
+MCH-000450,LOC-0009,Assembly Line 00450,Assembly Line,2021-05-12,Active
+MCH-000451,LOC-0095,Cutting Machine 00451,Cutting Machine,2023-06-26,Active
+MCH-000452,LOC-0083,Press 00452,Press,2022-09-28,Active
+MCH-000453,LOC-0039,Robotic Cell 00453,Robotic Cell,2019-03-23,Active
+MCH-000454,LOC-0078,Press 00454,Press,2022-10-13,Active
+MCH-000455,LOC-0019,Robotic Cell 00455,Robotic Cell,2023-04-26,Active
+MCH-000456,LOC-0031,Press 00456,Press,2024-09-26,Active
+MCH-000457,LOC-0089,Cutting Machine 00457,Cutting Machine,2025-11-19,Active
+MCH-000458,LOC-0013,Conveyor 00458,Conveyor,2025-05-12,Active
+MCH-000459,LOC-0049,Assembly Line 00459,Assembly Line,2022-08-30,Active
+MCH-000460,LOC-0065,Assembly Line 00460,Assembly Line,2024-07-28,Active
+MCH-000461,LOC-0050,Packaging Machine 00461,Packaging Machine,2025-12-24,Active
+MCH-000462,LOC-0098,Conveyor 00462,Conveyor,2024-09-15,Active
+MCH-000463,INVALID-LOCATION_ID-00000462,Cutting Machine 00463,Cutting Machine,2019-12-21,Active
+MCH-000464,LOC-0006,Assembly Line 00464,Assembly Line,2021-12-24,Active
+MCH-000465,LOC-0024,Assembly Line 00465,Assembly Line,2020-06-26,Active
+MCH-000466,LOC-0062,Assembly Line 00466,Assembly Line,2022-03-31,Active
+MCH-000467,LOC-0035,Cutting Machine 00467,Cutting Machine,2024-01-29,
+MCH-000468,LOC-0055,CNC Machine 00468,CNC Machine,2022-01-13,Active
+MCH-000469,LOC-0051,Press 00469,Press,2023-07-08,Active
+MCH-000470,LOC-0020,Conveyor 00470,Conveyor,2020-08-24,Active
+MCH-000471,LOC-0027,Conveyor 00471,Conveyor,2019-09-01,Active
+MCH-000472,LOC-0012,CNC Machine 00472,CNC Machine,2023-10-27,Active
+MCH-000473,LOC-0061,Furnace 00473,Furnace,2019-09-18,Active
+MCH-000474,LOC-0017,Conveyor 00474,Conveyor,2023-10-22,Active
+MCH-000475,LOC-0014,Conveyor 00475,Conveyor,2025-02-19,Active
+MCH-000476,LOC-0021,Assembly Line 00476,Assembly Line,2019-01-25,Active
+MCH-000477,LOC-0091,CNC Machine 00477,CNC Machine,2023-06-17,Active
+MCH-000478,LOC-0011,Conveyor 00478,Conveyor,2023-12-19,Active
+MCH-000479,LOC-0033,Conveyor 00479,Conveyor,2021-11-05,Active
+MCH-000480,INVALID-LOCATION_ID-00000479,Robotic Cell 00480,Robotic Cell,2025-02-06,Active
+MCH-000481,LOC-0004,Packaging Machine 00481,Packaging Machine,2021-09-01,Active
+MCH-000482,LOC-0051,,Robotic Cell,2023-10-11,Active
+MCH-000483,LOC-0086,CNC Machine 00483,CNC Machine,2021-07-17,Active
+MCH-000484,LOC-0033,Cutting Machine 00484,Cutting Machine,2022-12-01,
+MCH-000485,LOC-0046,Press 00485,Press,2020-06-18,Active
+MCH-000486,LOC-0098,Conveyor 00486,Conveyor,2022-01-23,Active
+MCH-000487,LOC-0064,Conveyor 00487,Conveyor,2025-11-25,Active
+MCH-000488,LOC-0020,Packaging Machine 00488,Packaging Machine,2019-02-02,Active
+MCH-000489,LOC-0012,Assembly Line 00489,Assembly Line,2021-09-12,Active
+MCH-000490,LOC-0064,Cutting Machine 00490,Cutting Machine,2025-09-09,Active
+MCH-000491,LOC-0075,Packaging Machine 00491,Packaging Machine,2023-06-13,Active
+MCH-000492,LOC-0041,CNC Machine 00492,CNC Machine,2023-02-10,Active
+MCH-000493,LOC-0023,,Furnace,2020-01-13,Inactive
+MCH-000494,LOC-0081,Press 00494,Press,2022-12-13,Active
+MCH-000495,LOC-0094,Robotic Cell 00495,Robotic Cell,2020-10-17,Active
+MCH-000496,LOC-0054,Robotic Cell 00496,Robotic Cell,2022-12-10,Active
+MCH-000497,LOC-0047,CNC Machine 00497,CNC Machine,2024-12-20,Active
+MCH-000498,LOC-0039,Press 00498,Press,2020-04-09,Active
+MCH-000499,LOC-0038,Assembly Line 00499,Assembly Line,2019-08-01,Active
+MCH-000500,LOC-0069,Cutting Machine 00500,Cutting Machine,2025-07-05,Active
+MCH-000501,LOC-0067,Robotic Cell 00501,Robotic Cell,2023-12-20,Active
+MCH-000502,LOC-0071,Cutting Machine 00502,Cutting Machine,2020-02-12,Active
+MCH-000503,LOC-0065,Cutting Machine 00503,Cutting Machine,2023-02-27,Active
+MCH-000504,LOC-0097,Assembly Line 00504,Assembly Line,2019-08-03,Active
+MCH-000505,LOC-0064,Assembly Line 00505,Assembly Line,2022-02-11,Active
+MCH-000506,LOC-0040,Robotic Cell 00506,Robotic Cell,2025-09-10,Active
+MCH-000507,LOC-0050,Robotic Cell 00507,Robotic Cell,2021-12-02,Active
+MCH-000508,INVALID-LOCATION_ID-00000507,Conveyor 00508,Conveyor,2024-09-25,Active
+MCH-000509,LOC-0047,CNC Machine 00509,CNC Machine,2024-03-16,Active
+MCH-000510,LOC-0007,Press 00510,Press,2021-10-28,Active
+MCH-000511,LOC-0015,Furnace 00511,Furnace,2023-03-02,Active
+MCH-000512,LOC-0095,Packaging Machine 00512,Packaging Machine,2019-05-27,Active
+MCH-000513,LOC-0013,Packaging Machine 00513,,2023-07-11,Inactive
+MCH-000514,LOC-0083,Robotic Cell 00514,Robotic Cell,2022-06-29,Active
+MCH-000515,LOC-0073,Cutting Machine 00515,Cutting Machine,2024-07-09,Active
+MCH-000516,LOC-0027,Robotic Cell 00516,Robotic Cell,2024-04-11,Active
+MCH-000517,LOC-0050,Robotic Cell 00517,Robotic Cell,2020-07-04,Active
+MCH-000518,LOC-0079,Conveyor 00518,Conveyor,2024-09-14,Maintenance
+MCH-000519,INVALID-LOCATION_ID-00000518,CNC Machine 00519,CNC Machine,2020-01-12,Active
+MCH-000520,LOC-0092,Robotic Cell 00520,Robotic Cell,2023-02-01,Active
+MCH-000521,LOC-0015,Press 00521,Press,2024-09-06,Active
+MCH-000522,LOC-0080,Packaging Machine 00522,Packaging Machine,2023-01-27,Active
+MCH-000523,LOC-0059,Press 00523,Press,2022-08-14,Active
+MCH-000524,LOC-0078,Assembly Line 00524,Assembly Line,2021-12-20,Active
+MCH-000525,LOC-0035,Conveyor 00525,Conveyor,2022-09-24,Active
+MCH-000526,LOC-0040,Cutting Machine 00526,Cutting Machine,2021-11-01,Active
+MCH-000527,LOC-0012,Conveyor 00527,Conveyor,2020-03-03,Active
+MCH-000528,LOC-0015,CNC Machine 00528,CNC Machine,2020-01-27,Active
+MCH-000529,LOC-0054,Assembly Line 00529,Assembly Line,2019-03-05,Active
+MCH-000530,LOC-0093,Cutting Machine 00530,Cutting Machine,2019-11-06,Active
+MCH-000531,LOC-0018,Packaging Machine 00531,Packaging Machine,2024-05-01,
+MCH-000532,LOC-0052,Packaging Machine 00532,Packaging Machine,2024-06-28,Active
+MCH-000533,LOC-0015,Assembly Line 00533,Assembly Line,2022-01-27,Active
+MCH-000534,LOC-0012,Press 00534,Press,2023-06-14,Active
+MCH-000535,LOC-0028,Robotic Cell 00535,Robotic Cell,2024-05-06,Active
+MCH-000536,LOC-0010,Conveyor 00536,Conveyor,2024-10-13,Inactive
+MCH-000537,LOC-0080,Cutting Machine 00537,Cutting Machine,2023-03-15,Active
+MCH-000538,LOC-0084,Conveyor 00538,Conveyor,2022-08-16,Active
+MCH-000539,LOC-0024,Conveyor 00539,Conveyor,2022-03-01,Inactive
+MCH-000540,LOC-0076,CNC Machine 00540,,2025-04-11,Active
+MCH-000541,LOC-0075,Assembly Line 00541,Assembly Line,2021-03-29,Active
+MCH-000542,LOC-0058,Press 00542,Press,2023-02-01,Maintenance
+MCH-000543,LOC-0076,Assembly Line 00543,Assembly Line,2023-08-10,Inactive
+MCH-000544,LOC-0031,Robotic Cell 00544,Robotic Cell,2025-05-17,Active
+MCH-000545,LOC-0093,Cutting Machine 00545,Cutting Machine,2021-03-06,Active
+MCH-000546,LOC-0096,Press 00546,Press,2025-12-27,Active
+MCH-000547,LOC-0033,Robotic Cell 00547,Robotic Cell,2021-05-12,
+MCH-000548,LOC-0007,,CNC Machine,2019-12-22,Active
+MCH-000549,LOC-0045,Packaging Machine 00549,Packaging Machine,2020-11-08,Active
+MCH-000550,LOC-0021,Furnace 00550,Furnace,2024-01-06,Active
+MCH-000551,LOC-0051,CNC Machine 00551,CNC Machine,,Active
+MCH-000552,LOC-0087,Cutting Machine 00552,Cutting Machine,2025-06-09,Active
+MCH-000553,LOC-0100,Furnace 00553,Furnace,2024-01-19,Inactive
+MCH-000554,LOC-0088,,Robotic Cell,2023-09-30,Inactive
+MCH-000555,LOC-0052,Robotic Cell 00555,Robotic Cell,2023-07-04,Active
+MCH-000556,LOC-0055,Assembly Line 00556,Assembly Line,2022-07-30,Active
+MCH-000557,LOC-0087,Conveyor 00557,Conveyor,2019-11-03,Active
+MCH-000558,LOC-0014,Packaging Machine 00558,Packaging Machine,2021-02-24,Active
+MCH-000559,LOC-0081,CNC Machine 00559,CNC Machine,2022-05-07,Active
+MCH-000560,LOC-0037,Assembly Line 00560,Assembly Line,2019-07-18,Maintenance
+MCH-000561,LOC-0075,CNC Machine 00561,CNC Machine,2025-06-13,Active
+MCH-000562,LOC-0033,CNC Machine 00562,CNC Machine,2021-04-27,Active
+MCH-000563,LOC-0024,Assembly Line 00563,Assembly Line,,Active
+MCH-000564,LOC-0091,Packaging Machine 00564,Packaging Machine,2022-08-05,Active
+MCH-000565,LOC-0071,Packaging Machine 00565,Packaging Machine,2021-09-08,Active
+MCH-000566,LOC-0002,Furnace 00566,Furnace,2023-05-03,Active
+MCH-000567,LOC-0093,CNC Machine 00567,CNC Machine,2024-09-24,Active
+MCH-000568,LOC-0092,Packaging Machine 00568,Packaging Machine,2021-07-12,Active
+MCH-000569,LOC-0031,Packaging Machine 00569,Packaging Machine,2019-05-11,Active
+MCH-000570,LOC-0073,Cutting Machine 00570,Cutting Machine,2023-10-01,Maintenance
+MCH-000571,LOC-0043,Press 00571,Press,2025-07-09,Inactive
+MCH-000572,LOC-0010,Furnace 00572,Furnace,2021-07-31,Active
+MCH-000573,LOC-0080,Assembly Line 00573,Assembly Line,2019-06-07,Active
+MCH-000574,LOC-0058,Packaging Machine 00574,Packaging Machine,2023-03-09,Inactive
+MCH-000575,LOC-0050,Robotic Cell 00575,Robotic Cell,2020-08-10,Active
+MCH-000576,LOC-0063,Furnace 00576,Furnace,2025-09-22,Active
+MCH-000577,LOC-0053,Assembly Line 00577,Assembly Line,2023-03-16,Active
+MCH-000578,LOC-0043,Furnace 00578,Furnace,2023-07-31,Maintenance
+MCH-000579,LOC-0004,Robotic Cell 00579,Robotic Cell,2025-09-10,Active
+MCH-000580,LOC-0095,Robotic Cell 00580,Robotic Cell,2023-02-04,Maintenance
+MCH-000581,LOC-0064,Furnace 00581,Furnace,2023-09-23,Maintenance
+MCH-000582,LOC-0025,Assembly Line 00582,Assembly Line,2022-04-06,Active
+MCH-000583,LOC-0098,Packaging Machine 00583,Packaging Machine,2025-04-19,Active
+MCH-000584,LOC-0010,Press 00584,Press,2025-09-16,Inactive
+MCH-000585,LOC-0012,Press 00585,Press,2021-12-24,Active
+MCH-000586,LOC-0084,Robotic Cell 00586,Robotic Cell,2019-11-09,Active
+MCH-000587,LOC-0098,Conveyor 00587,Conveyor,2020-10-25,Active
+MCH-000588,LOC-0092,Packaging Machine 00588,Packaging Machine,2023-10-26,Active
+MCH-000589,LOC-0021,Assembly Line 00589,Assembly Line,2023-08-23,Maintenance
+MCH-000590,LOC-0026,Press 00590,Press,2021-01-03,Active
+MCH-000591,LOC-0032,Furnace 00591,Furnace,2021-03-09,Active
+MCH-000592,LOC-0021,Furnace 00592,Furnace,,Active
+MCH-000593,LOC-0099,Press 00593,Press,2025-02-25,Active
+MCH-000594,LOC-0056,Furnace 00594,Furnace,2020-01-22,Active
+MCH-000595,LOC-0030,Press 00595,Press,2023-05-17,Active
+MCH-000596,LOC-0071,Furnace 00596,Furnace,2024-06-08,Active
+MCH-000597,LOC-0026,CNC Machine 00597,CNC Machine,2020-08-18,Active
+MCH-000598,LOC-0051,Press 00598,Press,2023-11-24,Maintenance
+MCH-000599,LOC-0053,Conveyor 00599,Conveyor,2020-01-03,Inactive
+MCH-000600,LOC-0050,Packaging Machine 00600,Packaging Machine,2021-12-15,Active
+MCH-000601,LOC-0015,Press 00601,Press,2025-06-27,Maintenance
+MCH-000602,LOC-0059,Furnace 00602,Furnace,2023-09-06,Maintenance
+MCH-000603,LOC-0054,Press 00603,Press,2024-10-03,Active
+MCH-000604,LOC-0018,Assembly Line 00604,Assembly Line,2023-09-06,Active
+MCH-000605,LOC-0024,Assembly Line 00605,Assembly Line,2023-06-06,Active
+MCH-000606,LOC-0052,Cutting Machine 00606,Cutting Machine,2019-08-03,Active
+MCH-000607,LOC-0100,CNC Machine 00607,CNC Machine,2019-12-24,Active
+MCH-000608,LOC-0096,Conveyor 00608,Conveyor,2024-02-14,Active
+MCH-000609,LOC-0025,Furnace 00609,Furnace,2023-03-03,Active
+MCH-000610,LOC-0029,Robotic Cell 00610,Robotic Cell,2019-12-26,Active
+MCH-000611,LOC-0070,Conveyor 00611,Conveyor,2025-03-05,Active
+MCH-000612,LOC-0067,Press 00612,Press,2023-01-02,Active
+MCH-000613,LOC-0007,Press 00613,Press,2021-11-20,Active
+MCH-000614,LOC-0038,Assembly Line 00614,Assembly Line,2020-12-07,Active
+MCH-000615,LOC-0047,Robotic Cell 00615,Robotic Cell,2024-08-29,Active
+MCH-000616,LOC-0057,Furnace 00616,Furnace,2019-03-15,Active
+MCH-000617,LOC-0002,Conveyor 00617,Conveyor,2019-09-09,Active
+MCH-000618,LOC-0057,Conveyor 00618,Conveyor,2025-08-12,Active
+MCH-000619,LOC-0079,Robotic Cell 00619,Robotic Cell,2021-02-09,Active
+MCH-000620,LOC-0051,Furnace 00620,Furnace,2025-12-10,Active
+MCH-000621,LOC-0018,Robotic Cell 00621,Robotic Cell,2022-08-18,Active
+MCH-000622,LOC-0002,Assembly Line 00622,Assembly Line,2024-02-01,Active
+MCH-000623,INVALID-LOCATION_ID-00000622,Cutting Machine 00623,Cutting Machine,2020-09-19,Active
+MCH-000624,LOC-0015,Robotic Cell 00624,Robotic Cell,2022-10-28,Active
+MCH-000625,LOC-0010,Packaging Machine 00625,Packaging Machine,2024-11-27,Active
+MCH-000626,LOC-0014,Press 00626,Press,2020-09-11,Active
+MCH-000627,LOC-0027,Robotic Cell 00627,Robotic Cell,2020-08-05,Active
+MCH-000628,LOC-0048,Assembly Line 00628,Assembly Line,2019-12-04,Active
+MCH-000629,LOC-0050,Assembly Line 00629,Assembly Line,2021-03-07,Active
+MCH-000630,LOC-0021,Furnace 00630,Furnace,2022-02-22,Active
+MCH-000631,LOC-0004,CNC Machine 00631,CNC Machine,2024-11-29,Active
+MCH-000632,INVALID-LOCATION_ID-00000631,Cutting Machine 00632,Cutting Machine,2024-08-13,Active
+MCH-000633,LOC-0065,Press 00633,Press,2025-04-14,Active
+MCH-000634,LOC-0056,CNC Machine 00634,CNC Machine,2020-05-21,Maintenance
+MCH-000635,LOC-0059,Assembly Line 00635,,2024-01-29,Active
+MCH-000636,LOC-0034,Press 00636,Press,2019-10-19,Active
+MCH-000637,LOC-0034,Robotic Cell 00637,Robotic Cell,2025-11-01,Inactive
+MCH-000638,LOC-0094,Assembly Line 00638,Assembly Line,,Active
+MCH-000639,LOC-0075,Press 00639,Press,2023-10-29,Active
+MCH-000640,LOC-0089,Furnace 00640,Furnace,2020-10-26,Active
+MCH-000641,LOC-0015,Conveyor 00641,Conveyor,2024-12-21,Active
+MCH-000642,LOC-0072,Robotic Cell 00642,Robotic Cell,2021-08-22,Active
+MCH-000643,LOC-0037,Robotic Cell 00643,Robotic Cell,2020-03-11,Active
+MCH-000644,LOC-0095,CNC Machine 00644,CNC Machine,2020-04-10,Active
+MCH-000645,LOC-0096,Packaging Machine 00645,Packaging Machine,2019-12-07,Active
+MCH-000646,LOC-0027,CNC Machine 00646,CNC Machine,2023-05-03,Inactive
+MCH-000647,LOC-0086,Robotic Cell 00647,Robotic Cell,2024-05-07,Active
+MCH-000648,LOC-0079,CNC Machine 00648,CNC Machine,2021-06-11,Active
+MCH-000649,LOC-0039,Packaging Machine 00649,Packaging Machine,2025-02-06,Active
+MCH-000650,LOC-0088,Packaging Machine 00650,Packaging Machine,2025-07-16,Active
+MCH-000651,LOC-0025,Assembly Line 00651,Assembly Line,2023-11-17,Active
+MCH-000652,LOC-0029,Conveyor 00652,Conveyor,2025-08-04,Active
+MCH-000653,LOC-0080,Conveyor 00653,Conveyor,,Active
+MCH-000654,LOC-0095,Assembly Line 00654,Assembly Line,2025-09-29,Active
+MCH-000655,INVALID-LOCATION_ID-00000654,Cutting Machine 00655,Cutting Machine,2019-09-01,Active
+MCH-000656,LOC-0064,Robotic Cell 00656,Robotic Cell,2022-06-29,Active
+MCH-000657,LOC-0079,Conveyor 00657,Conveyor,2022-03-06,Active
+MCH-000658,LOC-0072,Cutting Machine 00658,Cutting Machine,2025-02-06,Active
+MCH-000659,LOC-0019,Robotic Cell 00659,Robotic Cell,2019-08-26,Active
+MCH-000660,LOC-0043,Packaging Machine 00660,Packaging Machine,2022-07-19,Active
+MCH-000661,LOC-0066,Cutting Machine 00661,Cutting Machine,2024-04-13,Maintenance
+MCH-000662,LOC-0073,Packaging Machine 00662,Packaging Machine,2021-03-28,Active
+MCH-000663,LOC-0056,Conveyor 00663,Conveyor,2019-11-26,Active
+MCH-000664,LOC-0030,Cutting Machine 00664,Cutting Machine,,Active
+MCH-000665,LOC-0053,Conveyor 00665,Conveyor,2022-01-13,Active
+MCH-000666,LOC-0030,CNC Machine 00666,CNC Machine,,Active
+MCH-000667,LOC-0049,Packaging Machine 00667,Packaging Machine,2023-03-23,Active
+MCH-000668,LOC-0080,Assembly Line 00668,Assembly Line,2024-06-06,Active
+MCH-000669,LOC-0078,CNC Machine 00669,CNC Machine,2023-08-28,Active
+MCH-000670,LOC-0089,CNC Machine 00670,CNC Machine,2022-10-16,Active
+MCH-000671,LOC-0034,Robotic Cell 00671,Robotic Cell,,Active
+MCH-000672,LOC-0042,Packaging Machine 00672,Packaging Machine,2020-09-12,
+MCH-000673,LOC-0070,,Cutting Machine,2025-06-28,Active
+MCH-000674,LOC-0080,CNC Machine 00674,CNC Machine,2025-04-24,Active
+MCH-000675,LOC-0095,Conveyor 00675,Conveyor,2021-11-30,Active
+MCH-000676,LOC-0045,Press 00676,Press,2025-05-10,Active
+MCH-000677,LOC-0078,Packaging Machine 00677,Packaging Machine,2022-07-15,Active
+MCH-000678,LOC-0032,CNC Machine 00678,CNC Machine,2023-01-29,Maintenance
+MCH-000679,LOC-0083,Furnace 00679,Furnace,2019-01-27,Inactive
+MCH-000680,LOC-0042,Packaging Machine 00680,Packaging Machine,2025-08-15,Active
+MCH-000681,LOC-0036,Robotic Cell 00681,Robotic Cell,,Maintenance
+MCH-000682,LOC-0090,Assembly Line 00682,Assembly Line,2025-08-16,Active
+MCH-000683,LOC-0097,Furnace 00683,Furnace,2025-08-09,Maintenance
+MCH-000684,LOC-0061,Packaging Machine 00684,Packaging Machine,2022-07-08,Active
+MCH-000685,LOC-0085,,CNC Machine,2024-01-31,Active
+MCH-000686,LOC-0086,Press 00686,Press,2019-01-30,Active
+MCH-000687,LOC-0005,CNC Machine 00687,CNC Machine,2020-05-24,Active
+MCH-000688,LOC-0065,Packaging Machine 00688,Packaging Machine,2021-05-27,Active
+MCH-000689,LOC-0026,Packaging Machine 00689,Packaging Machine,2024-05-31,Active
+MCH-000690,LOC-0100,Cutting Machine 00690,Cutting Machine,2020-07-04,Active
+MCH-000691,LOC-0086,Conveyor 00691,Conveyor,2019-01-21,Active
+MCH-000692,LOC-0001,Packaging Machine 00692,Packaging Machine,2022-06-20,Maintenance
+MCH-000693,LOC-0011,Cutting Machine 00693,Cutting Machine,2022-08-08,Active
+MCH-000694,LOC-0071,Assembly Line 00694,Assembly Line,2025-07-18,Active
+MCH-000695,LOC-0005,Assembly Line 00695,Assembly Line,2024-08-01,Active
+MCH-000696,LOC-0002,CNC Machine 00696,CNC Machine,2019-08-10,Active
+MCH-000697,LOC-0092,Robotic Cell 00697,Robotic Cell,2020-09-18,Maintenance
+MCH-000698,LOC-0063,Robotic Cell 00698,Robotic Cell,2025-04-01,Maintenance
+MCH-000699,LOC-0090,Conveyor 00699,Conveyor,2020-03-11,Active
+MCH-000700,LOC-0022,Assembly Line 00700,Assembly Line,2025-03-15,Active
+MCH-000701,LOC-0087,Conveyor 00701,Conveyor,2024-12-15,Active
+MCH-000702,LOC-0071,Robotic Cell 00702,Robotic Cell,2021-12-20,Active
+MCH-000703,LOC-0043,Assembly Line 00703,Assembly Line,,Active
+MCH-000704,LOC-0085,Assembly Line 00704,Assembly Line,2022-04-09,Active
+MCH-000705,LOC-0076,Conveyor 00705,Conveyor,2022-04-09,Active
+MCH-000706,LOC-0029,Furnace 00706,Furnace,2021-07-27,Inactive
+MCH-000707,LOC-0057,Furnace 00707,Furnace,2021-03-23,Active
+MCH-000708,LOC-0001,Press 00708,Press,2023-03-11,Active
+MCH-000709,LOC-0058,Assembly Line 00709,Assembly Line,2024-12-07,Active
+MCH-000710,LOC-0082,Conveyor 00710,Conveyor,2022-10-31,Active
+MCH-000711,LOC-0048,Assembly Line 00711,Assembly Line,2025-12-03,Maintenance
+MCH-000712,LOC-0018,CNC Machine 00712,CNC Machine,2025-08-06,Active
+MCH-000713,LOC-0027,Conveyor 00713,Conveyor,2024-12-08,Active
+MCH-000714,LOC-0034,CNC Machine 00714,CNC Machine,2021-01-19,Active
+MCH-000715,LOC-0047,Conveyor 00715,Conveyor,2021-10-31,Active
+MCH-000716,LOC-0042,Conveyor 00716,Conveyor,2024-12-30,Active
+MCH-000717,LOC-0045,Robotic Cell 00717,Robotic Cell,2019-02-03,Active
+MCH-000718,LOC-0065,Robotic Cell 00718,Robotic Cell,2024-02-01,Active
+MCH-000719,INVALID-LOCATION_ID-00000718,Cutting Machine 00719,Cutting Machine,2023-07-25,Active
+MCH-000720,LOC-0036,Robotic Cell 00720,Robotic Cell,2023-01-19,Active
+MCH-000721,LOC-0065,Assembly Line 00721,Assembly Line,2019-03-19,Active
+MCH-000722,LOC-0092,Assembly Line 00722,Assembly Line,2024-08-02,Active
+MCH-000723,LOC-0024,Assembly Line 00723,Assembly Line,2023-04-12,Active
+MCH-000724,LOC-0094,Press 00724,Press,2019-11-11,Active
+MCH-000725,LOC-0019,Cutting Machine 00725,Cutting Machine,2020-03-16,Inactive
+MCH-000726,LOC-0026,Conveyor 00726,Conveyor,2019-07-19,Active
+MCH-000727,LOC-0038,Assembly Line 00727,Assembly Line,,Active
+MCH-000728,LOC-0042,Robotic Cell 00728,Robotic Cell,2022-04-28,Active
+MCH-000729,LOC-0031,Conveyor 00729,Conveyor,2022-05-20,Active
+MCH-000730,LOC-0058,Robotic Cell 00730,Robotic Cell,2020-02-29,Active
+MCH-000731,LOC-0084,CNC Machine 00731,CNC Machine,2021-04-17,Active
+MCH-000732,LOC-0009,Robotic Cell 00732,Robotic Cell,2019-10-23,Active
+MCH-000733,LOC-0015,CNC Machine 00733,CNC Machine,2022-01-21,Active
+MCH-000734,LOC-0081,Press 00734,Press,2020-07-02,Active
+MCH-000735,LOC-0073,Press 00735,Press,2021-07-16,Maintenance
+MCH-000736,LOC-0059,Robotic Cell 00736,Robotic Cell,2025-05-29,Active
+MCH-000737,LOC-0097,Press 00737,Press,2021-10-31,Active
+MCH-000738,LOC-0035,Press 00738,Press,2025-05-08,Active
+MCH-000739,LOC-0060,Assembly Line 00739,Assembly Line,2024-05-24,Active
+MCH-000740,LOC-0078,Robotic Cell 00740,Robotic Cell,2023-10-31,Maintenance
+MCH-000741,LOC-0076,Cutting Machine 00741,Cutting Machine,2024-04-24,Active
+MCH-000742,LOC-0072,Assembly Line 00742,Assembly Line,2021-09-23,Active
+MCH-000743,LOC-0034,Cutting Machine 00743,Cutting Machine,2019-10-30,Active
+MCH-000744,LOC-0052,Press 00744,Press,2024-06-21,Active
+MCH-000745,LOC-0005,Assembly Line 00745,Assembly Line,2021-03-13,Active
+MCH-000746,LOC-0001,CNC Machine 00746,CNC Machine,2025-11-08,Active
+MCH-000747,LOC-0066,Conveyor 00747,Conveyor,2019-04-23,Active
+MCH-000748,LOC-0047,,Robotic Cell,2024-06-18,Active
+MCH-000749,LOC-0097,Press 00749,Press,2022-09-03,Active
+MCH-000750,LOC-0072,Assembly Line 00750,Assembly Line,2025-06-17,Active
+MCH-000751,LOC-0045,CNC Machine 00751,CNC Machine,2022-11-02,Active
+MCH-000752,LOC-0046,CNC Machine 00752,CNC Machine,2024-10-05,Active
+MCH-000753,LOC-0061,Conveyor 00753,Conveyor,2020-04-17,Active
+MCH-000754,LOC-0030,Furnace 00754,Furnace,2019-06-30,Active
+MCH-000755,LOC-0099,Conveyor 00755,Conveyor,2021-06-21,Active
+MCH-000756,LOC-0035,Packaging Machine 00756,Packaging Machine,2024-04-28,Active
+MCH-000757,LOC-0019,Cutting Machine 00757,Cutting Machine,2022-05-01,Active
+MCH-000758,LOC-0044,Conveyor 00758,Conveyor,2025-11-14,Active
+MCH-000759,LOC-0018,Cutting Machine 00759,Cutting Machine,2024-09-25,Active
+MCH-000760,LOC-0027,Assembly Line 00760,Assembly Line,2019-09-03,Active
+MCH-000761,LOC-0070,Cutting Machine 00761,Cutting Machine,2023-02-09,Active
+MCH-000762,LOC-0082,Conveyor 00762,Conveyor,2023-08-04,Active
+MCH-000763,LOC-0055,,Press,2024-09-17,Active
+MCH-000764,LOC-0086,Cutting Machine 00764,Cutting Machine,2024-11-04,Maintenance
+MCH-000765,LOC-0054,Press 00765,Press,2025-01-19,Maintenance
+MCH-000766,LOC-0001,Press 00766,Press,2020-07-14,Inactive
+MCH-000767,LOC-0067,Robotic Cell 00767,Robotic Cell,2023-10-12,Active
+MCH-000768,LOC-0008,Press 00768,Press,2022-07-10,Active
+MCH-000769,LOC-0037,Assembly Line 00769,Assembly Line,2021-02-11,Maintenance
+MCH-000770,LOC-0078,Conveyor 00770,Conveyor,2022-04-02,Active
+MCH-000771,LOC-0048,Press 00771,Press,2025-07-23,Inactive
+MCH-000772,LOC-0064,CNC Machine 00772,CNC Machine,2019-07-23,Active
+MCH-000773,LOC-0028,Robotic Cell 00773,Robotic Cell,2021-01-04,Active
+MCH-000774,LOC-0100,Assembly Line 00774,Assembly Line,2020-04-17,Active
+MCH-000775,LOC-0026,Furnace 00775,Furnace,2022-12-18,Active
+MCH-000776,LOC-0046,Furnace 00776,Furnace,2022-01-17,Active
+MCH-000777,LOC-0084,CNC Machine 00777,CNC Machine,2023-08-14,Active
+MCH-000778,LOC-0039,Conveyor 00778,Conveyor,2019-01-23,Active
+MCH-000779,LOC-0044,Cutting Machine 00779,Cutting Machine,2024-01-16,Active
+MCH-000780,LOC-0063,CNC Machine 00780,CNC Machine,2025-10-12,Active
+MCH-000781,LOC-0093,Robotic Cell 00781,Robotic Cell,2024-06-26,Active
+MCH-000782,LOC-0070,Assembly Line 00782,Assembly Line,2019-12-18,Active
+MCH-000783,LOC-0063,Packaging Machine 00783,Packaging Machine,2021-06-11,Active
+MCH-000784,LOC-0004,Press 00784,Press,2025-10-03,Active
+MCH-000785,LOC-0020,Cutting Machine 00785,Cutting Machine,2025-04-23,Active
+MCH-000786,LOC-0011,Press 00786,Press,,Active
+MCH-000787,LOC-0087,Press 00787,Press,2022-03-22,Active
+MCH-000788,LOC-0062,Assembly Line 00788,Assembly Line,2021-05-23,Active
+MCH-000789,LOC-0060,CNC Machine 00789,CNC Machine,2022-07-04,Active
+MCH-000790,LOC-0019,Packaging Machine 00790,Packaging Machine,2019-07-08,Active
+MCH-000791,LOC-0097,Press 00791,Press,2025-04-30,Active
+MCH-000792,LOC-0088,Cutting Machine 00792,Cutting Machine,2024-02-16,Inactive
+MCH-000793,LOC-0052,Conveyor 00793,Conveyor,2023-01-30,Active
+MCH-000794,LOC-0098,Robotic Cell 00794,,2022-04-17,Active
+MCH-000795,LOC-0015,Furnace 00795,Furnace,2021-12-10,Inactive
+MCH-000796,LOC-0073,Furnace 00796,Furnace,2023-07-07,Active
+MCH-000797,LOC-0059,CNC Machine 00797,CNC Machine,2025-02-15,Active
+MCH-000798,LOC-0089,CNC Machine 00798,CNC Machine,2023-09-23,Active
+MCH-000799,LOC-0085,Robotic Cell 00799,Robotic Cell,2025-10-09,Active
+MCH-000800,LOC-0027,CNC Machine 00800,CNC Machine,2020-09-22,Inactive
+MCH-000801,LOC-0042,Assembly Line 00801,Assembly Line,2024-04-02,Active
+MCH-000802,LOC-0099,Press 00802,Press,2022-01-09,Inactive
+MCH-000803,LOC-0090,CNC Machine 00803,CNC Machine,2025-02-27,Active
+MCH-000804,LOC-0002,Press 00804,Press,2023-08-04,Active
+MCH-000805,LOC-0007,Robotic Cell 00805,Robotic Cell,2019-11-30,Active
+MCH-000806,LOC-0088,Press 00806,Press,2019-07-22,Active
+MCH-000807,LOC-0020,Furnace 00807,Furnace,2020-11-03,Active
+MCH-000808,LOC-0030,Robotic Cell 00808,Robotic Cell,2025-12-16,Active
+MCH-000809,LOC-0095,CNC Machine 00809,CNC Machine,2020-06-27,Active
+MCH-000810,LOC-0003,CNC Machine 00810,CNC Machine,2023-01-13,Active
+MCH-000811,LOC-0049,Cutting Machine 00811,Cutting Machine,2022-03-20,Active
+MCH-000812,LOC-0091,Packaging Machine 00812,Packaging Machine,2025-02-05,Active
+MCH-000813,LOC-0078,Assembly Line 00813,Assembly Line,2021-02-21,Active
+MCH-000814,LOC-0052,Conveyor 00814,Conveyor,2023-08-26,Maintenance
+MCH-000815,LOC-0064,Packaging Machine 00815,,2021-10-08,Active
+MCH-000816,LOC-0008,Assembly Line 00816,Assembly Line,2024-04-22,Active
+MCH-000817,LOC-0050,Assembly Line 00817,Assembly Line,2019-12-03,Active
+MCH-000818,LOC-0072,Furnace 00818,Furnace,2025-11-17,Active
+MCH-000819,LOC-0011,Press 00819,Press,2021-12-01,Active
+MCH-000820,LOC-0062,Conveyor 00820,Conveyor,2020-11-24,Active
+MCH-000821,LOC-0023,Cutting Machine 00821,Cutting Machine,2023-12-10,Maintenance
+MCH-000822,LOC-0088,Assembly Line 00822,Assembly Line,2022-06-28,Active
+MCH-000823,LOC-0037,Conveyor 00823,Conveyor,2019-11-07,Active
+MCH-000824,LOC-0057,Conveyor 00824,Conveyor,2020-06-05,Active
+MCH-000825,LOC-0053,Press 00825,Press,2021-04-24,Active
+MCH-000826,LOC-0087,Packaging Machine 00826,Packaging Machine,2021-03-29,Active
+MCH-000827,LOC-0043,Assembly Line 00827,Assembly Line,2024-10-01,Active
+MCH-000828,LOC-0073,CNC Machine 00828,,2021-03-15,Maintenance
+MCH-000829,LOC-0049,Cutting Machine 00829,Cutting Machine,2019-04-01,Active
+MCH-000830,LOC-0067,Press 00830,Press,2020-04-28,Active
+MCH-000831,LOC-0030,Cutting Machine 00831,Cutting Machine,2021-02-07,Active
+MCH-000832,LOC-0038,Cutting Machine 00832,Cutting Machine,2019-09-02,Active
+MCH-000833,LOC-0025,Robotic Cell 00833,Robotic Cell,2025-10-27,Active
+MCH-000834,LOC-0042,Furnace 00834,Furnace,2025-05-29,Inactive
+MCH-000835,LOC-0062,Press 00835,Press,2025-07-02,Active
+MCH-000836,LOC-0060,CNC Machine 00836,CNC Machine,2022-10-01,Active
+MCH-000837,LOC-0078,Robotic Cell 00837,Robotic Cell,2025-12-23,Active
+MCH-000838,LOC-0089,Press 00838,Press,2020-06-27,Active
+MCH-000839,LOC-0098,Press 00839,Press,2019-02-18,Active
+MCH-000840,LOC-0018,Press 00840,Press,2020-01-08,Active
+MCH-000841,LOC-0023,Assembly Line 00841,Assembly Line,2024-01-07,Active
+MCH-000842,LOC-0058,Conveyor 00842,Conveyor,2023-09-03,Active
+MCH-000843,LOC-0073,Conveyor 00843,Conveyor,2025-05-05,Active
+MCH-000844,LOC-0030,Assembly Line 00844,Assembly Line,2023-06-21,Active
+MCH-000845,LOC-0100,Packaging Machine 00845,Packaging Machine,2021-11-09,Active
+MCH-000846,LOC-0034,Robotic Cell 00846,Robotic Cell,2023-03-25,Active
+MCH-000847,LOC-0049,Press 00847,Press,2022-06-25,Active
+MCH-000848,LOC-0011,Packaging Machine 00848,Packaging Machine,2023-02-02,Active
+MCH-000849,LOC-0071,Packaging Machine 00849,Packaging Machine,2022-08-22,Active
+MCH-000850,LOC-0077,Cutting Machine 00850,Cutting Machine,2021-01-16,Active
+MCH-000851,LOC-0059,CNC Machine 00851,CNC Machine,2020-06-19,Inactive
+MCH-000852,LOC-0037,Cutting Machine 00852,Cutting Machine,2019-05-21,Inactive
+MCH-000853,LOC-0016,Furnace 00853,Furnace,2023-08-15,Maintenance
+MCH-000854,LOC-0054,CNC Machine 00854,CNC Machine,2023-12-16,Active
+MCH-000855,LOC-0020,,Furnace,2021-03-26,Active
+MCH-000856,LOC-0035,CNC Machine 00856,CNC Machine,2022-05-16,Active
+MCH-000857,LOC-0078,Conveyor 00857,Conveyor,2021-11-25,Active
+MCH-000858,LOC-0096,Packaging Machine 00858,Packaging Machine,2022-02-14,Active
+MCH-000859,LOC-0076,CNC Machine 00859,CNC Machine,2022-10-09,Maintenance
+MCH-000860,LOC-0090,CNC Machine 00860,CNC Machine,2022-07-10,Active
+MCH-000861,LOC-0088,Conveyor 00861,Conveyor,2022-12-27,Maintenance
+MCH-000862,LOC-0028,Cutting Machine 00862,Cutting Machine,2022-02-04,Active
+MCH-000863,LOC-0060,Conveyor 00863,Conveyor,2024-07-02,Active
+MCH-000864,LOC-0092,Robotic Cell 00864,Robotic Cell,2019-05-15,Maintenance
+MCH-000865,LOC-0048,CNC Machine 00865,CNC Machine,2020-10-20,Maintenance
+MCH-000866,LOC-0048,Cutting Machine 00866,Cutting Machine,2020-12-27,Active
+MCH-000867,LOC-0025,Robotic Cell 00867,Robotic Cell,2020-10-04,Active
+MCH-000868,LOC-0018,Furnace 00868,Furnace,2022-04-09,Active
+MCH-000869,LOC-0037,Packaging Machine 00869,Packaging Machine,2023-06-19,Active
+MCH-000870,LOC-0040,Assembly Line 00870,Assembly Line,2022-02-13,Active
+MCH-000871,LOC-0065,Cutting Machine 00871,Cutting Machine,2021-08-31,Active
+MCH-000872,LOC-0008,Assembly Line 00872,Assembly Line,2025-06-05,Active
+MCH-000873,LOC-0028,Robotic Cell 00873,Robotic Cell,2020-11-06,Active
+MCH-000874,LOC-0052,Conveyor 00874,Conveyor,2020-06-23,Maintenance
+MCH-000875,LOC-0038,Assembly Line 00875,Assembly Line,2024-08-26,Active
+MCH-000876,LOC-0100,Robotic Cell 00876,Robotic Cell,2020-02-23,Active
+MCH-000877,LOC-0034,,Cutting Machine,2025-02-13,Active
+MCH-000878,LOC-0066,Assembly Line 00878,Assembly Line,2020-08-16,Active
+MCH-000879,LOC-0090,Conveyor 00879,Conveyor,2024-08-27,Active
+MCH-000880,LOC-0012,CNC Machine 00880,CNC Machine,2021-01-06,Active
+MCH-000881,LOC-0001,Assembly Line 00881,Assembly Line,2024-11-03,Active
+MCH-000882,LOC-0048,Assembly Line 00882,Assembly Line,2025-12-29,Active
+MCH-000883,LOC-0045,Robotic Cell 00883,Robotic Cell,2024-09-08,Active
+MCH-000884,LOC-0038,Robotic Cell 00884,Robotic Cell,2023-11-22,Active
+MCH-000885,LOC-0086,Press 00885,Press,2023-08-17,Active
+MCH-000886,LOC-0006,Assembly Line 00886,Assembly Line,2024-08-04,Active
+MCH-000887,LOC-0091,Assembly Line 00887,Assembly Line,2023-10-26,Active
+MCH-000888,LOC-0086,Furnace 00888,Furnace,2022-11-20,Inactive
+MCH-000889,LOC-0080,Cutting Machine 00889,Cutting Machine,2020-07-14,Active
+MCH-000890,LOC-0080,Furnace 00890,Furnace,2020-12-22,Active
+MCH-000891,LOC-0086,Robotic Cell 00891,Robotic Cell,2025-08-26,Active
+MCH-000892,LOC-0074,Robotic Cell 00892,Robotic Cell,2019-08-22,Active
+MCH-000893,LOC-0075,CNC Machine 00893,CNC Machine,2023-11-17,Active
+MCH-000894,LOC-0085,Press 00894,Press,2019-01-09,Active
+MCH-000895,LOC-0091,Cutting Machine 00895,Cutting Machine,2021-11-30,Active
+MCH-000896,LOC-0019,Packaging Machine 00896,Packaging Machine,2025-12-06,Active
+MCH-000897,LOC-0082,Conveyor 00897,Conveyor,2021-01-26,Active
+MCH-000898,LOC-0022,Assembly Line 00898,Assembly Line,2025-07-13,Active
+MCH-000899,LOC-0004,Furnace 00899,Furnace,2019-10-31,Active
+MCH-000900,LOC-0039,Robotic Cell 00900,Robotic Cell,2019-04-06,Active
+MCH-000901,LOC-0036,CNC Machine 00901,CNC Machine,2019-10-10,Active
+MCH-000902,LOC-0059,Furnace 00902,Furnace,2025-12-05,Active
+MCH-000903,LOC-0061,Conveyor 00903,Conveyor,2023-08-26,Active
+MCH-000904,LOC-0033,CNC Machine 00904,CNC Machine,2019-08-28,Active
+MCH-000905,LOC-0062,Assembly Line 00905,Assembly Line,2019-01-29,Active
+MCH-000906,LOC-0025,Robotic Cell 00906,Robotic Cell,2025-03-10,Active
+MCH-000907,LOC-0063,Conveyor 00907,Conveyor,2024-02-27,Active
+MCH-000908,LOC-0087,Furnace 00908,Furnace,2020-06-29,Active
+MCH-000909,LOC-0046,Assembly Line 00909,Assembly Line,2023-08-07,Active
+MCH-000910,LOC-0090,Packaging Machine 00910,Packaging Machine,2024-09-05,Active
+MCH-000911,LOC-0084,Press 00911,Press,2024-03-09,Maintenance
+MCH-000912,LOC-0026,Assembly Line 00912,Assembly Line,2020-08-23,Active
+MCH-000913,LOC-0013,Assembly Line 00913,Assembly Line,2024-08-19,Active
+MCH-000914,LOC-0013,Cutting Machine 00914,Cutting Machine,2024-01-19,Active
+MCH-000915,LOC-0075,Assembly Line 00915,Assembly Line,2025-03-27,Active
+MCH-000916,LOC-0003,Assembly Line 00916,Assembly Line,2023-09-23,Maintenance
+MCH-000917,LOC-0003,Assembly Line 00917,Assembly Line,2025-07-08,Active
+MCH-000918,LOC-0083,Robotic Cell 00918,Robotic Cell,2020-12-11,Active
+MCH-000919,LOC-0068,CNC Machine 00919,CNC Machine,2025-11-09,Active
+MCH-000920,LOC-0098,Furnace 00920,Furnace,2024-03-30,Maintenance
+MCH-000921,LOC-0079,Press 00921,Press,2019-05-02,Active
+MCH-000922,LOC-0003,CNC Machine 00922,CNC Machine,2023-07-27,Active
+MCH-000923,LOC-0085,Assembly Line 00923,Assembly Line,2020-12-12,Active
+MCH-000924,LOC-0013,Conveyor 00924,Conveyor,2025-11-07,Active
+MCH-000925,LOC-0066,Robotic Cell 00925,Robotic Cell,2025-07-10,Active
+MCH-000926,LOC-0001,Conveyor 00926,Conveyor,2024-12-01,Active
+MCH-000927,LOC-0039,Press 00927,Press,2023-12-20,Maintenance
+MCH-000928,LOC-0051,Cutting Machine 00928,Cutting Machine,2021-08-29,Active
+MCH-000929,LOC-0087,Press 00929,Press,2021-09-05,Active
+MCH-000930,LOC-0060,CNC Machine 00930,CNC Machine,2023-08-03,Active
+MCH-000931,LOC-0072,Furnace 00931,Furnace,2024-04-21,Active
+MCH-000932,LOC-0034,Conveyor 00932,Conveyor,2019-11-04,Active
+MCH-000933,INVALID-LOCATION_ID-00000932,Conveyor 00933,Conveyor,2019-01-18,Active
+MCH-000934,LOC-0066,CNC Machine 00934,CNC Machine,2022-07-10,Active
+MCH-000935,LOC-0089,Conveyor 00935,Conveyor,2024-09-08,Active
+MCH-000936,LOC-0002,Assembly Line 00936,Assembly Line,2020-10-09,Active
+MCH-000937,LOC-0052,Packaging Machine 00937,Packaging Machine,2019-01-25,Active
+MCH-000938,LOC-0032,Packaging Machine 00938,Packaging Machine,2024-07-15,Active
+MCH-000939,LOC-0068,CNC Machine 00939,CNC Machine,2023-04-21,Active
+MCH-000940,LOC-0024,Conveyor 00940,Conveyor,2021-09-03,Active
+MCH-000941,LOC-0011,Packaging Machine 00941,Packaging Machine,2023-12-16,Active
+MCH-000942,LOC-0082,Cutting Machine 00942,Cutting Machine,2019-05-08,Active
+MCH-000943,LOC-0026,Packaging Machine 00943,Packaging Machine,2025-08-05,Active
+MCH-000944,LOC-0050,Cutting Machine 00944,Cutting Machine,2023-05-21,Inactive
+MCH-000945,LOC-0039,Press 00945,Press,2024-04-15,Active
+MCH-000946,LOC-0030,Assembly Line 00946,Assembly Line,2020-12-30,Active
+MCH-000947,LOC-0069,Cutting Machine 00947,Cutting Machine,2019-09-01,Active
+MCH-000948,LOC-0022,Furnace 00948,Furnace,2021-08-06,Active
+MCH-000949,LOC-0018,Press 00949,Press,2024-02-14,Active
+MCH-000950,LOC-0049,Robotic Cell 00950,Robotic Cell,2023-12-28,Active
+MCH-000951,LOC-0019,Packaging Machine 00951,,2020-11-11,Active
+MCH-000952,LOC-0013,Conveyor 00952,Conveyor,2020-03-10,Active
+MCH-000953,LOC-0001,Conveyor 00953,Conveyor,2024-08-12,Active
+MCH-000954,LOC-0049,Packaging Machine 00954,Packaging Machine,2022-11-12,Active
+MCH-000955,LOC-0065,Conveyor 00955,Conveyor,2021-03-15,Active
+MCH-000956,LOC-0071,Robotic Cell 00956,Robotic Cell,2022-05-14,Active
+MCH-000957,LOC-0071,Cutting Machine 00957,Cutting Machine,,Active
+MCH-000958,LOC-0089,Robotic Cell 00958,Robotic Cell,2019-05-30,Active
+MCH-000959,LOC-0011,Packaging Machine 00959,Packaging Machine,2024-05-30,Active
+MCH-000960,LOC-0054,Packaging Machine 00960,Packaging Machine,2025-02-28,Active
+MCH-000961,LOC-0053,Assembly Line 00961,Assembly Line,2025-12-25,Active
+MCH-000962,LOC-0001,Cutting Machine 00962,Cutting Machine,2021-09-27,Active
+MCH-000963,LOC-0087,Packaging Machine 00963,Packaging Machine,2025-03-25,Active
+MCH-000964,LOC-0031,Press 00964,Press,2020-08-18,Active
+MCH-000965,LOC-0080,Furnace 00965,Furnace,2022-09-17,Active
+MCH-000966,LOC-0045,CNC Machine 00966,CNC Machine,2020-01-07,Active
+MCH-000967,LOC-0040,Packaging Machine 00967,Packaging Machine,2021-06-05,Active
+MCH-000968,LOC-0027,Conveyor 00968,Conveyor,2019-09-14,Active
+MCH-000969,LOC-0026,Press 00969,Press,2025-07-29,Active
+MCH-000970,LOC-0032,Assembly Line 00970,Assembly Line,2019-09-08,Active
+MCH-000971,LOC-0072,CNC Machine 00971,CNC Machine,2023-11-10,Active
+MCH-000972,LOC-0074,Cutting Machine 00972,Cutting Machine,2023-12-03,Active
+MCH-000973,LOC-0095,Robotic Cell 00973,Robotic Cell,2024-01-23,Inactive
+MCH-000974,LOC-0023,Furnace 00974,Furnace,2020-07-25,Maintenance
+MCH-000975,LOC-0018,Assembly Line 00975,Assembly Line,2022-01-21,Active
+MCH-000976,LOC-0086,Packaging Machine 00976,Packaging Machine,2021-06-19,Maintenance
+MCH-000977,LOC-0064,Press 00977,Press,2019-05-05,Active
+MCH-000978,LOC-0099,Robotic Cell 00978,Robotic Cell,2020-05-30,Active
+MCH-000979,LOC-0087,Conveyor 00979,Conveyor,2024-04-28,Active
+MCH-000980,LOC-0087,Furnace 00980,Furnace,2023-05-08,Active
+MCH-000981,LOC-0037,Conveyor 00981,Conveyor,2023-04-13,Active
+MCH-000982,LOC-0080,Conveyor 00982,Conveyor,2019-12-14,Active
+MCH-000983,LOC-0024,Furnace 00983,Furnace,2025-06-19,Active
+MCH-000984,LOC-0006,Cutting Machine 00984,Cutting Machine,2025-04-10,Active
+MCH-000985,LOC-0003,Cutting Machine 00985,Cutting Machine,2020-05-13,Active
+MCH-000986,LOC-0089,Assembly Line 00986,Assembly Line,2023-04-28,Active
+MCH-000987,LOC-0062,Cutting Machine 00987,Cutting Machine,2022-02-22,Active
+MCH-000988,LOC-0056,CNC Machine 00988,CNC Machine,2021-12-17,Active
+MCH-000989,LOC-0062,Packaging Machine 00989,Packaging Machine,2025-06-07,Maintenance
+MCH-000990,LOC-0016,Cutting Machine 00990,Cutting Machine,2023-01-19,Active
+MCH-000991,LOC-0001,Robotic Cell 00991,Robotic Cell,2023-11-09,Active
+MCH-000992,LOC-0069,Conveyor 00992,Conveyor,2023-09-11,Active
+MCH-000993,LOC-0050,Robotic Cell 00993,Robotic Cell,2025-01-27,Active
+MCH-000994,LOC-0006,Robotic Cell 00994,Robotic Cell,2020-08-02,Active
+MCH-000995,LOC-0092,CNC Machine 00995,CNC Machine,2022-02-03,Active
+MCH-000996,LOC-0049,Robotic Cell 00996,Robotic Cell,2025-11-27,Active
+MCH-000997,LOC-0040,Cutting Machine 00997,Cutting Machine,2022-12-07,Active
+MCH-000998,LOC-0082,CNC Machine 00998,CNC Machine,2020-03-15,Active
+MCH-000999,LOC-0052,Furnace 00999,Furnace,2025-12-07,Active
+MCH-001000,LOC-0089,CNC Machine 01000,CNC Machine,2020-06-23,Active
+MCH-001001,LOC-0064,Assembly Line 01001,Assembly Line,2024-08-02,Active
+MCH-001002,LOC-0020,CNC Machine 01002,CNC Machine,2022-12-02,Maintenance
+MCH-001003,LOC-0061,Furnace 01003,Furnace,2020-11-06,Inactive
+MCH-001004,LOC-0044,Furnace 01004,Furnace,2025-01-26,Active
+MCH-001005,LOC-0081,Furnace 01005,Furnace,2019-11-15,Active
+MCH-001006,LOC-0028,Press 01006,Press,2024-02-01,Active
+MCH-001007,LOC-0054,Cutting Machine 01007,Cutting Machine,2023-03-29,Active
+MCH-001008,LOC-0041,Assembly Line 01008,Assembly Line,2020-07-29,Active
+MCH-001009,LOC-0028,Press 01009,Press,2019-06-27,Active
+MCH-001010,LOC-0084,Cutting Machine 01010,Cutting Machine,2024-06-01,Active
+MCH-001011,LOC-0085,Furnace 01011,Furnace,2019-10-05,Active
+MCH-001012,LOC-0027,Robotic Cell 01012,Robotic Cell,2020-01-14,Maintenance
+MCH-001013,LOC-0017,CNC Machine 01013,CNC Machine,2022-06-06,Active
+MCH-001014,LOC-0039,Conveyor 01014,Conveyor,2023-04-12,Active
+MCH-001015,LOC-0053,Press 01015,Press,2025-02-28,Active
+MCH-001016,LOC-0098,Conveyor 01016,Conveyor,2025-01-30,Active
+MCH-001017,LOC-0028,CNC Machine 01017,CNC Machine,2025-01-27,Active
+MCH-001018,LOC-0088,Conveyor 01018,Conveyor,2021-12-02,Active
+MCH-001019,LOC-0023,Packaging Machine 01019,Packaging Machine,2021-05-16,Active
+MCH-001020,LOC-0040,Packaging Machine 01020,Packaging Machine,2021-05-03,Maintenance
+MCH-001021,LOC-0020,Conveyor 01021,Conveyor,2025-12-22,Active
+MCH-001022,LOC-0073,Cutting Machine 01022,Cutting Machine,2025-01-14,Active
+MCH-001023,LOC-0100,Conveyor 01023,Conveyor,2020-05-21,Active
+MCH-001024,LOC-0044,Robotic Cell 01024,Robotic Cell,2019-04-30,Active
+MCH-001025,LOC-0061,CNC Machine 01025,CNC Machine,2023-10-19,Active
+MCH-001026,LOC-0012,Assembly Line 01026,Assembly Line,2025-09-12,Active
+MCH-001027,LOC-0035,Conveyor 01027,Conveyor,2025-11-26,Maintenance
+MCH-001028,LOC-0086,CNC Machine 01028,CNC Machine,2020-07-02,Active
+MCH-001029,LOC-0061,Assembly Line 01029,Assembly Line,2019-07-25,Inactive
+MCH-001030,LOC-0043,Furnace 01030,Furnace,2025-06-28,Active
+MCH-001031,LOC-0043,Packaging Machine 01031,Packaging Machine,2022-07-08,Active
+MCH-001032,LOC-0001,Conveyor 01032,Conveyor,2019-08-23,Maintenance
+MCH-001033,LOC-0041,Robotic Cell 01033,Robotic Cell,2021-11-14,Active
+MCH-001034,INVALID-LOCATION_ID-00001033,Conveyor 01034,Conveyor,2025-10-09,Active
+MCH-001035,LOC-0066,Furnace 01035,Furnace,2022-04-13,Active
+MCH-001036,LOC-0069,Press 01036,Press,2022-05-29,Active
+MCH-001037,LOC-0084,,Packaging Machine,2021-09-11,Active
+MCH-001038,LOC-0024,CNC Machine 01038,CNC Machine,2025-04-04,Active
+MCH-001039,LOC-0080,Conveyor 01039,Conveyor,2020-03-06,Active
+MCH-001040,LOC-0036,Furnace 01040,Furnace,2022-07-08,Active
+MCH-001041,LOC-0089,Furnace 01041,,2021-03-18,Inactive
+MCH-001042,LOC-0021,Furnace 01042,Furnace,2023-01-04,Active
+MCH-001043,LOC-0040,Press 01043,Press,2023-12-04,Active
+MCH-001044,LOC-0070,Robotic Cell 01044,Robotic Cell,2023-08-29,Active
+MCH-001045,LOC-0071,Robotic Cell 01045,Robotic Cell,2023-10-06,Active
+MCH-001046,LOC-0008,Furnace 01046,Furnace,2019-12-18,Active
+MCH-001047,LOC-0007,Furnace 01047,Furnace,2021-01-16,Active
+MCH-001048,LOC-0076,Packaging Machine 01048,Packaging Machine,2023-01-18,Active
+MCH-001049,LOC-0015,Conveyor 01049,Conveyor,2024-07-05,Active
+MCH-001050,LOC-0097,Robotic Cell 01050,Robotic Cell,2025-11-21,Active
+MCH-001051,LOC-0061,Press 01051,Press,2023-12-17,Active
+MCH-001052,LOC-0054,Conveyor 01052,Conveyor,2022-10-28,Active
+MCH-001053,LOC-0011,Furnace 01053,Furnace,2020-09-02,Active
+MCH-001054,LOC-0050,Robotic Cell 01054,Robotic Cell,2022-01-31,Active
+MCH-001055,LOC-0059,Packaging Machine 01055,Packaging Machine,2022-01-21,Active
+MCH-001056,LOC-0014,Packaging Machine 01056,Packaging Machine,2025-10-06,Maintenance
+MCH-001057,LOC-0061,Assembly Line 01057,Assembly Line,2019-01-05,Active
+MCH-001058,LOC-0056,Press 01058,Press,2023-08-06,Active
+MCH-001059,LOC-0053,Robotic Cell 01059,Robotic Cell,2020-04-25,Maintenance
+MCH-001060,LOC-0053,Furnace 01060,Furnace,2024-05-13,
+MCH-001061,LOC-0069,Conveyor 01061,Conveyor,2024-05-07,Active
+MCH-001062,LOC-0053,Packaging Machine 01062,Packaging Machine,2023-01-15,Maintenance
+MCH-001063,LOC-0025,Furnace 01063,Furnace,2024-12-29,Active
+MCH-001064,LOC-0061,Conveyor 01064,Conveyor,2023-04-06,Active
+MCH-001065,LOC-0035,Cutting Machine 01065,Cutting Machine,2025-10-03,Active
+MCH-001066,LOC-0076,CNC Machine 01066,CNC Machine,2021-12-31,Active
+MCH-001067,LOC-0025,Cutting Machine 01067,Cutting Machine,2025-11-10,Active
+MCH-001068,LOC-0003,Furnace 01068,Furnace,2023-10-17,Active
+MCH-001069,LOC-0060,Packaging Machine 01069,Packaging Machine,2025-01-11,Active
+MCH-001070,LOC-0059,Cutting Machine 01070,Cutting Machine,2024-01-20,Active
+MCH-001071,LOC-0059,Furnace 01071,Furnace,2022-06-02,Active
+MCH-001072,LOC-0004,Packaging Machine 01072,Packaging Machine,2022-12-25,Active
+MCH-001073,LOC-0095,Packaging Machine 01073,Packaging Machine,2019-05-15,Active
+MCH-001074,LOC-0096,Cutting Machine 01074,Cutting Machine,2022-02-08,Active
+MCH-001075,LOC-0007,Packaging Machine 01075,Packaging Machine,2023-08-20,Active
+MCH-001076,LOC-0078,CNC Machine 01076,CNC Machine,2022-06-25,Active
+MCH-001077,LOC-0001,Cutting Machine 01077,Cutting Machine,2024-08-15,Active
+MCH-001078,LOC-0089,Furnace 01078,Furnace,2019-08-27,Active
+MCH-001079,LOC-0088,Robotic Cell 01079,Robotic Cell,2024-07-17,Active
+MCH-001080,LOC-0011,Furnace 01080,Furnace,2019-06-17,Active
+MCH-001081,LOC-0041,Assembly Line 01081,Assembly Line,2025-12-26,Maintenance
+MCH-001082,LOC-0017,Conveyor 01082,Conveyor,2025-12-03,Active
+MCH-001083,LOC-0070,Press 01083,Press,2020-12-03,Active
+MCH-001084,LOC-0059,Conveyor 01084,Conveyor,2023-09-12,Active
+MCH-001085,LOC-0067,Packaging Machine 01085,Packaging Machine,2024-03-04,Active
+MCH-001086,LOC-0005,Assembly Line 01086,Assembly Line,2022-02-16,Active
+MCH-001087,LOC-0097,Assembly Line 01087,Assembly Line,2025-10-14,Active
+MCH-001088,LOC-0029,Cutting Machine 01088,Cutting Machine,2021-02-15,Active
+MCH-001089,LOC-0028,CNC Machine 01089,CNC Machine,2024-07-17,Inactive
+MCH-001090,LOC-0019,CNC Machine 01090,CNC Machine,2022-03-04,Active
+MCH-001091,LOC-0010,CNC Machine 01091,CNC Machine,2024-03-21,Active
+MCH-001092,LOC-0059,Packaging Machine 01092,Packaging Machine,2024-03-13,Active
+MCH-001093,LOC-0064,Press 01093,Press,2023-10-20,Active
+MCH-001094,LOC-0089,Furnace 01094,Furnace,2025-03-24,Active
+MCH-001095,LOC-0061,Packaging Machine 01095,Packaging Machine,2019-04-08,Active
+MCH-001096,LOC-0082,Cutting Machine 01096,Cutting Machine,2020-09-12,Active
+MCH-001097,LOC-0067,Conveyor 01097,Conveyor,2021-05-22,Active
+MCH-001098,LOC-0053,Assembly Line 01098,Assembly Line,2020-03-08,Maintenance
+MCH-001099,LOC-0006,Furnace 01099,Furnace,2022-12-20,Active
+MCH-001100,LOC-0002,Packaging Machine 01100,Packaging Machine,2023-01-06,Active
+MCH-001101,LOC-0035,Assembly Line 01101,Assembly Line,2020-07-18,Inactive
+MCH-001102,LOC-0029,Cutting Machine 01102,Cutting Machine,2022-01-02,Active
+MCH-001103,LOC-0036,Furnace 01103,Furnace,2025-12-03,Maintenance
+MCH-001104,LOC-0090,Packaging Machine 01104,Packaging Machine,2025-06-25,Active
+MCH-001105,LOC-0096,Furnace 01105,Furnace,2025-02-23,Active
+MCH-001106,LOC-0034,Robotic Cell 01106,Robotic Cell,2020-02-27,Active
+MCH-001107,LOC-0028,CNC Machine 01107,CNC Machine,2022-12-02,Active
+MCH-001108,LOC-0048,Conveyor 01108,Conveyor,2021-10-30,Active
+MCH-001109,LOC-0089,Packaging Machine 01109,Packaging Machine,2022-06-17,Active
+MCH-001110,LOC-0096,Press 01110,Press,2020-05-29,Active
+MCH-001111,LOC-0038,Assembly Line 01111,Assembly Line,2021-06-24,Active
+MCH-001112,LOC-0069,Press 01112,Press,2020-06-02,Active
+MCH-001113,LOC-0007,Furnace 01113,Furnace,2023-02-12,Active
+MCH-001114,LOC-0044,Conveyor 01114,Conveyor,2020-07-07,Maintenance
+MCH-001115,LOC-0004,Furnace 01115,Furnace,2022-02-04,Active
+MCH-001116,LOC-0068,CNC Machine 01116,CNC Machine,2020-04-08,Maintenance
+MCH-001117,LOC-0055,Cutting Machine 01117,Cutting Machine,2022-04-09,Active
+MCH-001118,LOC-0027,Cutting Machine 01118,Cutting Machine,2020-02-13,
+MCH-001119,LOC-0052,Furnace 01119,Furnace,2025-07-25,Inactive
+MCH-001120,LOC-0009,Press 01120,Press,2024-12-01,Active
+MCH-001121,LOC-0018,Conveyor 01121,Conveyor,2023-07-29,Active
+MCH-001122,LOC-0064,CNC Machine 01122,CNC Machine,2022-05-16,Active
+MCH-001123,LOC-0074,CNC Machine 01123,CNC Machine,2025-02-03,Active
+MCH-001124,LOC-0082,Assembly Line 01124,Assembly Line,2023-08-22,Active
+MCH-001125,INVALID-LOCATION_ID-00001124,Press 01125,Press,2024-11-03,Active
+MCH-001126,LOC-0045,Conveyor 01126,Conveyor,2025-02-25,Active
+MCH-001127,LOC-0063,Robotic Cell 01127,Robotic Cell,2025-12-06,Active
+MCH-001128,LOC-0015,Conveyor 01128,Conveyor,2025-09-27,Active
+MCH-001129,LOC-0088,Robotic Cell 01129,Robotic Cell,2023-10-07,Active
+MCH-001130,LOC-0069,Conveyor 01130,Conveyor,2022-04-19,Active
+MCH-001131,LOC-0069,CNC Machine 01131,CNC Machine,2020-08-26,Active
+MCH-001132,LOC-0039,CNC Machine 01132,CNC Machine,2025-02-07,Maintenance
+MCH-001133,LOC-0078,Robotic Cell 01133,Robotic Cell,2019-12-15,Active
+MCH-001134,LOC-0033,Press 01134,Press,2025-10-11,Active
+MCH-001135,LOC-0061,Packaging Machine 01135,Packaging Machine,2020-03-12,Active
+MCH-001136,LOC-0040,CNC Machine 01136,CNC Machine,2021-02-07,Active
+MCH-001137,LOC-0076,Cutting Machine 01137,Cutting Machine,2023-06-10,Active
+MCH-001138,LOC-0024,Furnace 01138,Furnace,2025-05-01,Active
+MCH-001139,LOC-0099,Furnace 01139,Furnace,2022-06-02,Active
+MCH-001140,LOC-0072,Robotic Cell 01140,Robotic Cell,2023-05-08,Active
+MCH-001141,LOC-0066,Press 01141,Press,2023-11-10,Active
+MCH-001142,LOC-0060,CNC Machine 01142,CNC Machine,2022-10-10,
+MCH-001143,LOC-0055,Assembly Line 01143,Assembly Line,2019-08-18,Active
+MCH-001144,LOC-0039,Assembly Line 01144,Assembly Line,2021-03-17,Active
+MCH-001145,LOC-0028,Cutting Machine 01145,Cutting Machine,2019-11-20,Active
+MCH-001146,LOC-0016,Cutting Machine 01146,Cutting Machine,2023-05-19,Active
+MCH-001147,LOC-0090,CNC Machine 01147,CNC Machine,2022-02-23,Active
+MCH-001148,LOC-0016,Packaging Machine 01148,Packaging Machine,2021-06-21,Active
+MCH-001149,LOC-0097,Packaging Machine 01149,Packaging Machine,2020-12-14,Active
+MCH-001150,LOC-0009,Robotic Cell 01150,Robotic Cell,2019-04-15,Maintenance
+MCH-001151,LOC-0034,Assembly Line 01151,Assembly Line,2025-05-30,Active
+MCH-001152,LOC-0022,Assembly Line 01152,Assembly Line,2022-01-30,Active
+MCH-001153,LOC-0007,Robotic Cell 01153,Robotic Cell,2024-05-20,Active
+MCH-001154,LOC-0008,CNC Machine 01154,,2021-11-10,Active
+MCH-001155,LOC-0099,Assembly Line 01155,Assembly Line,2022-07-07,Inactive
+MCH-001156,LOC-0076,Packaging Machine 01156,Packaging Machine,2024-05-16,Inactive
+MCH-001157,LOC-0066,CNC Machine 01157,CNC Machine,2022-01-29,Inactive
+MCH-001158,LOC-0015,Conveyor 01158,Conveyor,2021-11-13,Active
+MCH-001159,LOC-0095,CNC Machine 01159,CNC Machine,2022-11-15,Active
+MCH-001160,LOC-0091,Cutting Machine 01160,Cutting Machine,2020-06-24,Active
+MCH-001161,LOC-0052,Assembly Line 01161,Assembly Line,2020-06-29,Active
+MCH-001162,LOC-0063,Robotic Cell 01162,Robotic Cell,2021-10-12,Active
+MCH-001163,LOC-0040,Cutting Machine 01163,Cutting Machine,2021-02-12,Active
+MCH-001164,LOC-0100,Robotic Cell 01164,Robotic Cell,2020-04-27,Active
+MCH-001165,LOC-0066,Conveyor 01165,Conveyor,2021-05-10,Active
+MCH-001166,LOC-0086,Assembly Line 01166,Assembly Line,2021-12-09,Active
+MCH-001167,LOC-0014,Robotic Cell 01167,Robotic Cell,2020-12-23,Active
+MCH-001168,LOC-0059,Cutting Machine 01168,Cutting Machine,2023-04-22,Active
+MCH-001169,LOC-0070,Assembly Line 01169,Assembly Line,2025-05-04,Active
+MCH-001170,LOC-0049,CNC Machine 01170,CNC Machine,2020-10-12,Active
+MCH-001171,LOC-0078,CNC Machine 01171,CNC Machine,2023-04-16,Active
+MCH-001172,LOC-0076,Furnace 01172,Furnace,2024-06-27,Inactive
+MCH-001173,LOC-0015,Assembly Line 01173,,2019-09-29,Active
+MCH-001174,LOC-0037,CNC Machine 01174,CNC Machine,2020-01-21,Active
+MCH-001175,LOC-0092,Furnace 01175,Furnace,2021-03-11,Inactive
+MCH-001176,LOC-0037,Packaging Machine 01176,Packaging Machine,2019-10-24,Active
+MCH-001177,LOC-0003,Robotic Cell 01177,Robotic Cell,2024-12-23,Active
+MCH-001178,LOC-0061,Press 01178,Press,2025-08-11,Active
+MCH-001179,LOC-0023,Furnace 01179,Furnace,2025-05-12,Active
+MCH-001180,LOC-0068,Assembly Line 01180,Assembly Line,2022-07-04,Active
+MCH-001181,LOC-0001,Robotic Cell 01181,Robotic Cell,2021-08-01,Active
+MCH-001182,LOC-0030,Cutting Machine 01182,Cutting Machine,2024-07-23,Active
+MCH-001183,LOC-0087,Press 01183,Press,2019-06-10,Active
+MCH-001184,LOC-0066,Packaging Machine 01184,Packaging Machine,2025-11-01,Active
+MCH-001185,LOC-0071,Press 01185,Press,2020-05-28,Active
+MCH-001186,LOC-0002,Press 01186,Press,2022-05-21,Active
+MCH-001187,LOC-0039,Conveyor 01187,Conveyor,2024-04-24,Active
+MCH-001188,LOC-0068,Conveyor 01188,Conveyor,2021-06-02,Active
+MCH-001189,LOC-0041,CNC Machine 01189,CNC Machine,2025-04-09,Active
+MCH-001190,LOC-0088,Cutting Machine 01190,Cutting Machine,2024-05-31,Active
+MCH-001191,LOC-0017,CNC Machine 01191,CNC Machine,2022-02-24,Active
+MCH-001192,LOC-0065,Conveyor 01192,Conveyor,2022-02-26,Active
+MCH-001193,LOC-0056,CNC Machine 01193,CNC Machine,2021-02-06,Active
+MCH-001194,LOC-0019,Conveyor 01194,Conveyor,2021-08-22,Active
+MCH-001195,LOC-0041,Press 01195,Press,2019-12-17,Active
+MCH-001196,LOC-0032,Press 01196,Press,2020-02-10,Active
+MCH-001197,LOC-0100,Packaging Machine 01197,Packaging Machine,2021-11-12,Active
+MCH-001198,LOC-0016,Furnace 01198,Furnace,2020-09-30,Active
+MCH-001199,LOC-0078,Assembly Line 01199,Assembly Line,2019-09-09,Active
+MCH-001200,LOC-0090,Cutting Machine 01200,Cutting Machine,2022-05-06,Maintenance
+MCH-001201,LOC-0023,Assembly Line 01201,Assembly Line,2023-08-07,Active
+MCH-001202,LOC-0073,Furnace 01202,Furnace,2021-01-25,Inactive
+MCH-001203,LOC-0068,Robotic Cell 01203,Robotic Cell,2022-09-11,Inactive
+MCH-001204,LOC-0064,Assembly Line 01204,Assembly Line,2024-06-15,Active
+MCH-001205,LOC-0066,Assembly Line 01205,Assembly Line,2022-09-12,
+MCH-001206,LOC-0076,Conveyor 01206,Conveyor,2021-01-15,Active
+MCH-001207,LOC-0059,Cutting Machine 01207,Cutting Machine,2024-09-11,Active
+MCH-001208,LOC-0066,Cutting Machine 01208,Cutting Machine,2025-01-27,Inactive
+MCH-001209,LOC-0008,CNC Machine 01209,CNC Machine,2025-05-20,Active
+MCH-001210,LOC-0069,CNC Machine 01210,CNC Machine,2021-03-18,Active
+MCH-001211,LOC-0023,Packaging Machine 01211,Packaging Machine,2020-11-22,Active
+MCH-001212,LOC-0059,Robotic Cell 01212,Robotic Cell,2022-06-12,Inactive
+MCH-001213,LOC-0084,Robotic Cell 01213,Robotic Cell,2024-04-09,Inactive
+MCH-001214,LOC-0043,Press 01214,Press,2020-11-26,Active
+MCH-001215,LOC-0002,Conveyor 01215,Conveyor,2023-05-04,Active
+MCH-001216,LOC-0073,Cutting Machine 01216,Cutting Machine,,Active
+MCH-001217,LOC-0043,Assembly Line 01217,Assembly Line,2023-02-05,Active
+MCH-001218,LOC-0069,Furnace 01218,Furnace,2020-01-05,Maintenance
+MCH-001219,LOC-0092,Packaging Machine 01219,Packaging Machine,2020-01-11,Active
+MCH-001220,LOC-0026,Assembly Line 01220,Assembly Line,2024-11-20,Active
+MCH-001221,LOC-0064,Packaging Machine 01221,Packaging Machine,2019-01-04,Active
+MCH-001222,LOC-0049,Robotic Cell 01222,Robotic Cell,2025-06-07,Active
+MCH-001223,LOC-0042,Robotic Cell 01223,Robotic Cell,2023-05-31,Active
+MCH-001224,LOC-0095,CNC Machine 01224,CNC Machine,2020-08-28,Active
+MCH-001225,LOC-0083,Assembly Line 01225,Assembly Line,2022-09-03,Active
+MCH-001226,LOC-0093,,Furnace,2020-07-26,Active
+MCH-001227,LOC-0018,Press 01227,Press,2022-03-03,Inactive
+MCH-001228,LOC-0078,Press 01228,Press,2019-09-13,Active
+MCH-001229,LOC-0053,,CNC Machine,2020-10-29,Active
+MCH-001230,LOC-0001,Packaging Machine 01230,Packaging Machine,2025-11-24,Active
+MCH-001231,LOC-0023,Robotic Cell 01231,Robotic Cell,2020-09-12,Active
+MCH-001232,LOC-0026,CNC Machine 01232,CNC Machine,2019-05-30,Active
+MCH-001233,LOC-0068,Assembly Line 01233,Assembly Line,2021-01-26,Active
+MCH-001234,LOC-0008,Assembly Line 01234,Assembly Line,2025-04-03,Active
+MCH-001235,LOC-0006,CNC Machine 01235,CNC Machine,2020-11-05,Maintenance
+MCH-001236,LOC-0028,Press 01236,Press,2024-08-28,Inactive
+MCH-001237,LOC-0017,Conveyor 01237,Conveyor,2019-10-13,Active
+MCH-001238,LOC-0099,CNC Machine 01238,CNC Machine,2024-03-14,Active
+MCH-001239,LOC-0085,Conveyor 01239,Conveyor,2023-01-02,Active
+MCH-001240,LOC-0044,CNC Machine 01240,CNC Machine,2020-04-20,Maintenance
+MCH-001241,LOC-0026,Cutting Machine 01241,Cutting Machine,2019-12-01,Active
+MCH-001242,LOC-0023,Assembly Line 01242,Assembly Line,2019-04-09,Active
+MCH-001243,LOC-0058,Conveyor 01243,Conveyor,2022-06-27,Inactive
+MCH-001244,LOC-0079,Robotic Cell 01244,Robotic Cell,2024-04-22,Active
+MCH-001245,LOC-0092,Robotic Cell 01245,Robotic Cell,2024-06-13,Active
+MCH-001246,LOC-0026,Conveyor 01246,Conveyor,2019-03-29,Active
+MCH-001247,LOC-0043,Furnace 01247,Furnace,2019-03-29,Active
+MCH-001248,LOC-0049,Furnace 01248,Furnace,2020-07-23,Active
+MCH-001249,INVALID-LOCATION_ID-00001248,Packaging Machine 01249,Packaging Machine,2025-08-22,Active
+MCH-001250,LOC-0008,Furnace 01250,Furnace,2019-09-24,Active
+MCH-001251,LOC-0027,Conveyor 01251,Conveyor,2019-05-08,Maintenance
+MCH-001252,LOC-0081,Conveyor 01252,Conveyor,2025-09-14,Active
+MCH-001253,LOC-0023,Press 01253,Press,2019-11-27,Active
+MCH-001254,LOC-0047,Cutting Machine 01254,Cutting Machine,2025-06-15,
+MCH-001255,LOC-0047,Conveyor 01255,Conveyor,2024-08-01,Active
+MCH-001256,LOC-0014,Conveyor 01256,Conveyor,2021-11-09,Active
+MCH-001257,LOC-0061,Furnace 01257,Furnace,2020-09-04,Active
+MCH-001258,LOC-0047,Furnace 01258,Furnace,2020-07-29,Active
+MCH-001259,LOC-0062,Conveyor 01259,Conveyor,2022-05-30,Active
+MCH-001260,LOC-0039,Assembly Line 01260,Assembly Line,2021-04-10,Active
+MCH-001261,LOC-0056,CNC Machine 01261,CNC Machine,2023-10-08,Active
+MCH-001262,LOC-0092,Furnace 01262,Furnace,2021-10-21,Active
+MCH-001263,LOC-0042,Conveyor 01263,Conveyor,2025-01-07,Active
+MCH-001264,LOC-0060,Conveyor 01264,Conveyor,2023-01-01,Active
+MCH-001265,LOC-0017,Cutting Machine 01265,Cutting Machine,2025-06-07,Maintenance
+MCH-001266,LOC-0040,Furnace 01266,Furnace,2020-11-30,Active
+MCH-001267,LOC-0058,Furnace 01267,Furnace,2024-05-10,Active
+MCH-001268,LOC-0076,Cutting Machine 01268,Cutting Machine,2022-03-15,Active
+MCH-001269,LOC-0041,CNC Machine 01269,CNC Machine,2024-03-31,Active
+MCH-001270,LOC-0017,Press 01270,Press,2022-05-14,Active
+MCH-001271,LOC-0026,Press 01271,Press,2019-07-17,Active
+MCH-001272,LOC-0030,Cutting Machine 01272,Cutting Machine,2022-02-05,Active
+MCH-001273,LOC-0091,Cutting Machine 01273,Cutting Machine,2021-06-12,Active
+MCH-001274,LOC-0092,Robotic Cell 01274,Robotic Cell,2021-02-14,Active
+MCH-001275,LOC-0053,Conveyor 01275,Conveyor,2019-09-28,Active
+MCH-001276,LOC-0018,Robotic Cell 01276,Robotic Cell,2025-05-21,Active
+MCH-001277,LOC-0083,Cutting Machine 01277,Cutting Machine,2025-10-30,Active
+MCH-001278,LOC-0095,Press 01278,Press,2024-04-10,Active
+MCH-001279,LOC-0064,Furnace 01279,Furnace,2019-11-03,Active
+MCH-001280,LOC-0072,Furnace 01280,Furnace,2019-01-25,Active
+MCH-001281,LOC-0064,Conveyor 01281,Conveyor,2020-02-23,Active
+MCH-001282,LOC-0006,Conveyor 01282,Conveyor,2022-11-22,Active
+MCH-001283,LOC-0051,Robotic Cell 01283,Robotic Cell,2020-08-11,Active
+MCH-001284,LOC-0008,Assembly Line 01284,Assembly Line,2019-10-17,Active
+MCH-001285,LOC-0071,CNC Machine 01285,CNC Machine,2022-08-30,Active
+MCH-001286,LOC-0023,Press 01286,Press,2024-05-06,Active
+MCH-001287,LOC-0084,Conveyor 01287,Conveyor,2019-03-03,Active
+MCH-001288,LOC-0090,Robotic Cell 01288,Robotic Cell,2020-11-14,Active
+MCH-001289,LOC-0031,Assembly Line 01289,Assembly Line,2025-09-05,Active
+MCH-001290,LOC-0046,CNC Machine 01290,CNC Machine,2025-03-01,Active
+MCH-001291,LOC-0069,Cutting Machine 01291,Cutting Machine,2021-03-24,Active
+MCH-001292,LOC-0036,Press 01292,Press,2023-10-14,Active
+MCH-001293,LOC-0076,Press 01293,Press,2024-08-20,Active
+MCH-001294,LOC-0054,Assembly Line 01294,Assembly Line,2023-06-20,Active
+MCH-001295,INVALID-LOCATION_ID-00001294,Press 01295,Press,2020-01-01,Active
+MCH-001296,LOC-0035,Robotic Cell 01296,Robotic Cell,2022-10-19,Active
+MCH-001297,LOC-0060,Press 01297,Press,2022-03-29,Active
+MCH-001298,LOC-0041,CNC Machine 01298,CNC Machine,2022-05-29,Maintenance
+MCH-001299,LOC-0018,Packaging Machine 01299,Packaging Machine,2019-06-24,Active
+MCH-001300,LOC-0062,Press 01300,Press,2022-04-17,Active
+MCH-001301,LOC-0083,Conveyor 01301,Conveyor,2021-07-28,Active
+MCH-001302,LOC-0072,Press 01302,Press,2022-05-21,Maintenance
+MCH-001303,LOC-0053,Conveyor 01303,Conveyor,2020-12-25,Active
+MCH-001304,LOC-0001,CNC Machine 01304,CNC Machine,2020-11-11,Active
+MCH-001305,LOC-0077,Robotic Cell 01305,Robotic Cell,2024-10-10,Active
+MCH-001306,LOC-0021,CNC Machine 01306,CNC Machine,2025-01-28,Active
+MCH-001307,LOC-0003,CNC Machine 01307,CNC Machine,2024-06-17,Maintenance
+MCH-001308,LOC-0029,Assembly Line 01308,Assembly Line,2024-06-14,Active
+MCH-001309,LOC-0067,Furnace 01309,Furnace,2019-11-14,Active
+MCH-001310,LOC-0036,Assembly Line 01310,Assembly Line,2021-02-04,Active
+MCH-001311,LOC-0031,Robotic Cell 01311,Robotic Cell,2021-02-09,Maintenance
+MCH-001312,LOC-0014,Cutting Machine 01312,Cutting Machine,2022-03-13,
+MCH-001313,LOC-0093,Press 01313,Press,2022-05-04,Active
+MCH-001314,LOC-0089,Furnace 01314,Furnace,2024-08-31,Active
+MCH-001315,LOC-0051,Assembly Line 01315,,2025-12-23,Active
+MCH-001316,LOC-0096,Packaging Machine 01316,Packaging Machine,2023-08-29,Active
+MCH-001317,LOC-0060,Assembly Line 01317,Assembly Line,2021-03-13,Maintenance
+MCH-001318,LOC-0067,Packaging Machine 01318,Packaging Machine,2023-07-28,Active
+MCH-001319,LOC-0074,Robotic Cell 01319,Robotic Cell,2024-04-04,Active
+MCH-001320,LOC-0089,Assembly Line 01320,Assembly Line,2020-03-01,Active
+MCH-001321,LOC-0076,Packaging Machine 01321,Packaging Machine,2021-04-05,Active
+MCH-001322,LOC-0030,Cutting Machine 01322,Cutting Machine,2023-11-08,Active
+MCH-001323,LOC-0074,Conveyor 01323,Conveyor,2022-01-03,Active
+MCH-001324,LOC-0064,Cutting Machine 01324,Cutting Machine,2023-10-31,Active
+MCH-001325,LOC-0070,CNC Machine 01325,CNC Machine,2025-02-01,Active
+MCH-001326,LOC-0091,Furnace 01326,Furnace,2019-12-14,Active
+MCH-001327,LOC-0082,Robotic Cell 01327,,2019-12-28,Active
+MCH-001328,LOC-0011,Conveyor 01328,Conveyor,2020-06-28,Active
+MCH-001329,LOC-0079,Robotic Cell 01329,Robotic Cell,2022-07-08,Active
+MCH-001330,LOC-0076,Robotic Cell 01330,Robotic Cell,2019-08-28,Active
+MCH-001331,LOC-0077,Packaging Machine 01331,Packaging Machine,2021-12-31,Active
+MCH-001332,LOC-0085,Conveyor 01332,Conveyor,2023-07-02,Active
+MCH-001333,LOC-0065,CNC Machine 01333,CNC Machine,2020-08-09,Active
+MCH-001334,LOC-0044,Conveyor 01334,Conveyor,2020-12-13,
+MCH-001335,LOC-0035,Packaging Machine 01335,Packaging Machine,2023-01-30,Active
+MCH-001336,LOC-0058,Furnace 01336,Furnace,2021-06-28,Active
+MCH-001337,LOC-0072,Assembly Line 01337,Assembly Line,2019-04-20,Active
+MCH-001338,LOC-0061,Conveyor 01338,Conveyor,2020-05-18,Active
+MCH-001339,LOC-0039,Assembly Line 01339,Assembly Line,2024-05-21,Active
+MCH-001340,LOC-0100,Cutting Machine 01340,Cutting Machine,2023-09-11,Active
+MCH-001341,LOC-0080,Furnace 01341,Furnace,2021-01-09,Active
+MCH-001342,LOC-0005,Assembly Line 01342,Assembly Line,2020-01-02,Active
+MCH-001343,LOC-0090,Assembly Line 01343,Assembly Line,2024-11-04,Active
+MCH-001344,LOC-0029,Robotic Cell 01344,Robotic Cell,2019-02-02,Inactive
+MCH-001345,LOC-0030,Cutting Machine 01345,Cutting Machine,2020-05-28,Active
+MCH-001346,LOC-0004,Packaging Machine 01346,Packaging Machine,2021-01-29,Active
+MCH-001347,LOC-0087,Conveyor 01347,Conveyor,2024-03-22,Active
+MCH-001348,LOC-0069,CNC Machine 01348,CNC Machine,2020-08-24,Active
+MCH-001349,LOC-0027,Robotic Cell 01349,Robotic Cell,2022-12-29,Active
+MCH-001350,LOC-0060,Robotic Cell 01350,Robotic Cell,2020-03-16,Active
+MCH-001351,LOC-0044,Press 01351,Press,2023-02-13,Active
+MCH-001352,LOC-0100,CNC Machine 01352,CNC Machine,2024-10-10,Active
+MCH-001353,LOC-0006,Press 01353,Press,2020-10-29,Active
+MCH-001354,LOC-0049,Conveyor 01354,Conveyor,2020-03-31,Active
+MCH-001355,LOC-0027,Robotic Cell 01355,Robotic Cell,2025-02-04,Active
+MCH-001356,LOC-0004,Furnace 01356,Furnace,2020-04-01,Active
+MCH-001357,LOC-0002,Cutting Machine 01357,Cutting Machine,2023-09-15,Active
+MCH-001358,LOC-0030,Cutting Machine 01358,Cutting Machine,2022-12-21,Active
+MCH-001359,LOC-0051,Robotic Cell 01359,Robotic Cell,2022-01-28,Active
+MCH-001360,LOC-0084,Furnace 01360,Furnace,2019-05-01,Active
+MCH-001361,LOC-0006,Assembly Line 01361,Assembly Line,2020-02-15,Active
+MCH-001362,LOC-0003,Press 01362,Press,2022-07-10,Active
+MCH-001363,LOC-0043,Furnace 01363,Furnace,2019-07-03,Active
+MCH-001364,LOC-0020,CNC Machine 01364,CNC Machine,2023-04-23,Active
+MCH-001365,LOC-0002,Conveyor 01365,Conveyor,2024-06-24,Active
+MCH-001366,LOC-0060,Furnace 01366,Furnace,2022-10-11,Active
+MCH-001367,LOC-0013,CNC Machine 01367,CNC Machine,2025-07-16,Active
+MCH-001368,LOC-0081,,Packaging Machine,2025-10-05,Active
+MCH-001369,LOC-0063,Furnace 01369,Furnace,2023-08-01,Active
+MCH-001370,LOC-0045,Packaging Machine 01370,Packaging Machine,2025-09-28,Active
+MCH-001371,LOC-0007,Conveyor 01371,Conveyor,2024-07-13,Active
+MCH-001372,LOC-0040,Press 01372,Press,2022-12-28,Active
+MCH-001373,LOC-0063,Robotic Cell 01373,Robotic Cell,2022-02-25,Active
+MCH-001374,LOC-0074,Furnace 01374,Furnace,2025-11-06,Active
+MCH-001375,LOC-0007,Furnace 01375,Furnace,2020-06-17,Active
+MCH-001376,LOC-0087,CNC Machine 01376,CNC Machine,2020-02-17,Maintenance
+MCH-001377,LOC-0040,Robotic Cell 01377,Robotic Cell,2025-12-07,Active
+MCH-001378,LOC-0080,CNC Machine 01378,,2025-10-21,Active
+MCH-001379,LOC-0096,Cutting Machine 01379,Cutting Machine,2019-03-15,Maintenance
+MCH-001380,LOC-0031,CNC Machine 01380,CNC Machine,2021-08-01,Active
+MCH-001381,LOC-0027,Assembly Line 01381,Assembly Line,2023-03-14,Active
+MCH-001382,LOC-0014,Assembly Line 01382,Assembly Line,2019-04-17,Active
+MCH-001383,LOC-0043,Furnace 01383,Furnace,2024-01-13,Maintenance
+MCH-001384,LOC-0042,Press 01384,Press,2021-10-23,Active
+MCH-001385,LOC-0097,Robotic Cell 01385,Robotic Cell,2023-07-13,Inactive
+MCH-001386,LOC-0006,Furnace 01386,Furnace,2019-05-23,Active
+MCH-001387,LOC-0001,Cutting Machine 01387,Cutting Machine,2021-03-11,
+MCH-001388,LOC-0081,Packaging Machine 01388,Packaging Machine,2020-07-21,Active
+MCH-001389,LOC-0052,Packaging Machine 01389,Packaging Machine,2023-07-20,Active
+MCH-001390,LOC-0027,CNC Machine 01390,CNC Machine,2021-06-16,Active
+MCH-001391,LOC-0004,Cutting Machine 01391,Cutting Machine,2025-04-25,Maintenance
+MCH-001392,LOC-0016,Press 01392,Press,2025-11-12,Active
+MCH-001393,LOC-0008,Conveyor 01393,Conveyor,2025-05-28,Active
+MCH-001394,LOC-0076,Robotic Cell 01394,Robotic Cell,2025-10-18,Active
+MCH-001395,LOC-0093,Cutting Machine 01395,Cutting Machine,2021-12-28,Inactive
+MCH-001396,LOC-0055,Conveyor 01396,Conveyor,2022-12-13,Active
+MCH-001397,LOC-0100,Furnace 01397,Furnace,2021-12-26,Active
+MCH-001398,LOC-0065,Assembly Line 01398,Assembly Line,2025-10-28,Active
+MCH-001399,LOC-0061,Cutting Machine 01399,Cutting Machine,2019-10-15,Active
+MCH-001400,LOC-0008,Conveyor 01400,Conveyor,2020-11-13,Active
+MCH-001401,LOC-0036,Cutting Machine 01401,Cutting Machine,2024-11-19,Active
+MCH-001402,LOC-0024,Assembly Line 01402,Assembly Line,2025-04-09,Active
+MCH-001403,LOC-0021,Packaging Machine 01403,Packaging Machine,2025-06-08,Active
+MCH-001404,LOC-0031,,Assembly Line,2019-10-27,Maintenance
+MCH-001405,LOC-0009,Assembly Line 01405,Assembly Line,2021-07-30,Active
+MCH-001406,LOC-0100,Assembly Line 01406,Assembly Line,2020-12-28,Active
+MCH-001407,LOC-0019,Conveyor 01407,Conveyor,2022-05-24,Active
+MCH-001408,LOC-0049,Robotic Cell 01408,Robotic Cell,2019-05-14,Active
+MCH-001409,LOC-0011,Packaging Machine 01409,Packaging Machine,2020-11-11,Active
+MCH-001410,LOC-0073,Conveyor 01410,Conveyor,2022-06-27,Active
+MCH-001411,LOC-0034,Press 01411,Press,2023-09-14,Active
+MCH-001412,LOC-0066,Robotic Cell 01412,Robotic Cell,2019-01-07,Active
+MCH-001413,LOC-0078,Press 01413,Press,2019-09-03,Active
+MCH-001414,LOC-0024,Packaging Machine 01414,Packaging Machine,2025-10-05,Active
+MCH-001415,LOC-0048,Furnace 01415,Furnace,2024-01-06,Active
+MCH-001416,LOC-0092,Cutting Machine 01416,Cutting Machine,2021-08-30,Active
+MCH-001417,LOC-0045,Cutting Machine 01417,Cutting Machine,2024-04-30,Active
+MCH-001418,LOC-0068,,Assembly Line,2019-03-15,Active
+MCH-001419,LOC-0073,Conveyor 01419,Conveyor,2021-07-02,Active
+MCH-001420,LOC-0073,CNC Machine 01420,CNC Machine,2025-05-23,Active
+MCH-001421,LOC-0087,Assembly Line 01421,Assembly Line,2019-09-15,Maintenance
+MCH-001422,LOC-0030,Conveyor 01422,Conveyor,2020-11-03,Active
+MCH-001423,LOC-0086,Press 01423,Press,2024-05-02,Active
+MCH-001424,LOC-0100,Robotic Cell 01424,Robotic Cell,2022-02-20,Maintenance
+MCH-001425,LOC-0096,Robotic Cell 01425,Robotic Cell,2025-06-19,Active
+MCH-001426,LOC-0025,Cutting Machine 01426,Cutting Machine,2020-05-16,Active
+MCH-001427,LOC-0038,Conveyor 01427,Conveyor,2025-12-19,Active
+MCH-001428,LOC-0029,Press 01428,Press,2020-05-03,Active
+MCH-001429,LOC-0004,Press 01429,Press,2025-06-04,Active
+MCH-001430,LOC-0065,Cutting Machine 01430,Cutting Machine,2024-08-13,Active
+MCH-001431,LOC-0052,Robotic Cell 01431,Robotic Cell,2025-03-07,Maintenance
+MCH-001432,LOC-0019,Assembly Line 01432,Assembly Line,2021-10-18,Active
+MCH-001433,LOC-0031,Cutting Machine 01433,Cutting Machine,2022-06-02,Active
+MCH-001434,LOC-0028,Press 01434,Press,2024-10-16,Active
+MCH-001435,LOC-0096,Furnace 01435,Furnace,2023-05-13,Maintenance
+MCH-001436,LOC-0058,Packaging Machine 01436,Packaging Machine,2023-01-15,Active
+MCH-001437,LOC-0005,Packaging Machine 01437,Packaging Machine,2020-10-23,Active
+MCH-001438,LOC-0010,Conveyor 01438,,2024-09-14,Inactive
+MCH-001439,LOC-0097,Furnace 01439,Furnace,2022-04-15,Active
+MCH-001440,LOC-0079,Conveyor 01440,Conveyor,2019-12-23,Maintenance
+MCH-001441,LOC-0093,Robotic Cell 01441,Robotic Cell,2024-06-09,Active
+MCH-001442,LOC-0075,Assembly Line 01442,Assembly Line,2023-05-16,Active
+MCH-001443,LOC-0058,Cutting Machine 01443,Cutting Machine,2019-02-28,Active
+MCH-001444,LOC-0044,CNC Machine 01444,CNC Machine,2021-04-23,Active
+MCH-001445,LOC-0056,CNC Machine 01445,CNC Machine,2020-12-27,Active
+MCH-001446,LOC-0041,Furnace 01446,Furnace,2020-05-16,Maintenance
+MCH-001447,LOC-0010,Packaging Machine 01447,Packaging Machine,2024-09-02,Active
+MCH-001448,LOC-0007,Cutting Machine 01448,Cutting Machine,2021-08-13,Active
+MCH-001449,LOC-0037,CNC Machine 01449,CNC Machine,2025-08-09,Active
+MCH-001450,LOC-0024,Packaging Machine 01450,Packaging Machine,2022-02-27,Inactive
+MCH-001451,LOC-0082,CNC Machine 01451,CNC Machine,2025-05-19,Active
+MCH-001452,LOC-0036,Conveyor 01452,Conveyor,2024-03-29,Active
+MCH-001453,LOC-0065,Press 01453,Press,2019-12-09,Active
+MCH-001454,LOC-0040,Cutting Machine 01454,Cutting Machine,2023-09-04,
+MCH-001455,LOC-0041,CNC Machine 01455,CNC Machine,2022-10-27,Maintenance
+MCH-001456,LOC-0046,Robotic Cell 01456,Robotic Cell,2024-01-12,Inactive
+MCH-001457,LOC-0072,Cutting Machine 01457,Cutting Machine,2021-09-28,Maintenance
+MCH-001458,LOC-0042,Packaging Machine 01458,Packaging Machine,2022-11-05,Active
+MCH-001459,LOC-0092,Assembly Line 01459,Assembly Line,2023-02-07,Active
+MCH-001460,LOC-0026,Conveyor 01460,Conveyor,2022-02-11,Active
+MCH-001461,LOC-0073,Packaging Machine 01461,Packaging Machine,2020-02-23,Active
+MCH-001462,LOC-0026,Furnace 01462,Furnace,2025-10-02,Active
+MCH-001463,LOC-0035,Conveyor 01463,Conveyor,2024-12-06,Active
+MCH-001464,LOC-0012,Cutting Machine 01464,Cutting Machine,2024-12-14,Active
+MCH-001465,LOC-0070,Conveyor 01465,Conveyor,2021-01-27,Active
+MCH-001466,LOC-0024,Furnace 01466,Furnace,2024-12-12,Active
+MCH-001467,LOC-0019,Cutting Machine 01467,Cutting Machine,2021-08-11,Inactive
+MCH-001468,LOC-0012,Conveyor 01468,Conveyor,2021-06-25,Active
+MCH-001469,LOC-0016,Packaging Machine 01469,Packaging Machine,2025-08-26,Active
+MCH-001470,LOC-0054,Cutting Machine 01470,Cutting Machine,2020-07-17,Inactive
+MCH-001471,LOC-0006,Packaging Machine 01471,Packaging Machine,2024-02-11,Maintenance
+MCH-001472,LOC-0045,Conveyor 01472,Conveyor,2023-06-12,Inactive
+MCH-001473,LOC-0018,Assembly Line 01473,Assembly Line,2022-07-11,Active
+MCH-001474,LOC-0084,CNC Machine 01474,CNC Machine,2019-06-18,Active
+MCH-001475,LOC-0057,Assembly Line 01475,Assembly Line,2021-04-13,Active
+MCH-001476,LOC-0014,,Conveyor,2023-07-10,Active
+MCH-001477,LOC-0052,Press 01477,Press,2020-01-11,Active
+MCH-001478,LOC-0081,Press 01478,Press,2020-12-05,Active
+MCH-001479,LOC-0077,Assembly Line 01479,Assembly Line,2019-04-02,Active
+MCH-001480,LOC-0099,Robotic Cell 01480,Robotic Cell,2020-07-23,Active
+MCH-001481,LOC-0025,Packaging Machine 01481,Packaging Machine,2020-06-28,Maintenance
+MCH-001482,LOC-0029,Press 01482,Press,2025-06-11,Maintenance
+MCH-001483,LOC-0008,Packaging Machine 01483,Packaging Machine,2019-03-09,Active
+MCH-001484,LOC-0082,CNC Machine 01484,CNC Machine,2019-05-20,Active
+MCH-001485,LOC-0095,Assembly Line 01485,Assembly Line,2019-12-01,Active
+MCH-001486,LOC-0091,Press 01486,Press,2020-07-26,Active
+MCH-001487,LOC-0036,CNC Machine 01487,CNC Machine,2022-02-04,Active
+MCH-001488,LOC-0043,Robotic Cell 01488,Robotic Cell,2025-12-01,Active
+MCH-001489,LOC-0089,Cutting Machine 01489,Cutting Machine,2022-11-10,Active
+MCH-001490,LOC-0057,Robotic Cell 01490,Robotic Cell,,Active
+MCH-001491,LOC-0026,Packaging Machine 01491,Packaging Machine,2024-02-20,Active
+MCH-001492,LOC-0007,Conveyor 01492,Conveyor,2023-10-19,Active
+MCH-001493,LOC-0048,Assembly Line 01493,Assembly Line,2024-11-20,Active
+MCH-001494,LOC-0090,Robotic Cell 01494,Robotic Cell,2025-07-24,
+MCH-001495,LOC-0068,Packaging Machine 01495,Packaging Machine,2020-04-06,Active
+MCH-001496,LOC-0023,Packaging Machine 01496,Packaging Machine,2020-08-08,Active
+MCH-001497,LOC-0089,Conveyor 01497,Conveyor,2024-01-20,Active
+MCH-001498,LOC-0079,Assembly Line 01498,Assembly Line,,Active
+MCH-001499,LOC-0073,Robotic Cell 01499,Robotic Cell,2022-04-10,Maintenance
+MCH-001500,LOC-0075,Press 01500,Press,2024-03-18,Active
+MCH-001501,LOC-0020,Robotic Cell 01501,Robotic Cell,,Active
+MCH-001502,LOC-0079,CNC Machine 01502,CNC Machine,2019-03-12,Active
+MCH-001503,LOC-0003,Assembly Line 01503,Assembly Line,2025-10-16,Active
+MCH-001504,LOC-0077,Assembly Line 01504,Assembly Line,2022-04-19,Active
+MCH-001505,LOC-0035,Assembly Line 01505,Assembly Line,2021-10-08,
+MCH-001506,LOC-0080,Assembly Line 01506,Assembly Line,2020-03-30,Inactive
+MCH-001507,LOC-0042,Robotic Cell 01507,Robotic Cell,2021-12-05,Active
+MCH-001508,LOC-0078,Cutting Machine 01508,Cutting Machine,2021-06-01,Maintenance
+MCH-001509,LOC-0045,Press 01509,Press,2019-07-11,Active
+MCH-001510,LOC-0072,Packaging Machine 01510,Packaging Machine,2020-09-02,Active
+MCH-001511,LOC-0037,Press 01511,Press,2023-06-28,Active
+MCH-001512,LOC-0004,CNC Machine 01512,CNC Machine,2024-03-25,Active
+MCH-001513,LOC-0091,Furnace 01513,Furnace,2023-06-26,Active
+MCH-001514,LOC-0043,Robotic Cell 01514,Robotic Cell,2023-12-01,Active
+MCH-001515,LOC-0045,CNC Machine 01515,CNC Machine,2021-08-16,Active
+MCH-001516,LOC-0010,Conveyor 01516,Conveyor,2021-05-21,Active
+MCH-001517,LOC-0051,CNC Machine 01517,CNC Machine,2024-08-13,Active
+MCH-001518,LOC-0099,Furnace 01518,Furnace,2024-08-10,Active
+MCH-001519,LOC-0098,Furnace 01519,Furnace,2023-07-07,Inactive
+MCH-001520,LOC-0035,Press 01520,Press,2023-06-06,Active
+MCH-001521,LOC-0099,,CNC Machine,2021-11-24,Maintenance
+MCH-001522,LOC-0026,Furnace 01522,Furnace,2021-05-09,Active
+MCH-001523,LOC-0065,Conveyor 01523,Conveyor,2024-03-05,Active
+MCH-001524,LOC-0082,CNC Machine 01524,CNC Machine,2023-05-13,Active
+MCH-001525,LOC-0085,,CNC Machine,2024-07-20,Active
+MCH-001526,LOC-0100,Cutting Machine 01526,Cutting Machine,2025-09-30,Active
+MCH-001527,LOC-0085,Conveyor 01527,Conveyor,2020-05-19,Active
+MCH-001528,LOC-0044,CNC Machine 01528,CNC Machine,2021-11-06,Active
+MCH-001529,LOC-0079,Assembly Line 01529,Assembly Line,2025-05-26,Active
+MCH-001530,LOC-0073,CNC Machine 01530,CNC Machine,2019-08-24,Active
+MCH-001531,LOC-0007,Conveyor 01531,Conveyor,2020-11-16,Active
+MCH-001532,LOC-0029,Assembly Line 01532,Assembly Line,2023-07-18,Active
+MCH-001533,LOC-0022,Robotic Cell 01533,Robotic Cell,2022-02-18,Active
+MCH-001534,LOC-0016,CNC Machine 01534,CNC Machine,2020-05-16,Active
+MCH-001535,LOC-0099,Cutting Machine 01535,Cutting Machine,2024-08-04,Inactive
+MCH-001536,LOC-0071,Cutting Machine 01536,Cutting Machine,2019-09-14,Active
+MCH-001537,LOC-0070,Furnace 01537,Furnace,2021-03-24,Active
+MCH-001538,LOC-0015,Furnace 01538,Furnace,2020-07-19,Active
+MCH-001539,LOC-0047,Cutting Machine 01539,Cutting Machine,,Active
+MCH-001540,LOC-0059,Press 01540,Press,2025-04-19,Active
+MCH-001541,LOC-0052,Assembly Line 01541,Assembly Line,2025-01-22,Active
+MCH-001542,LOC-0098,Cutting Machine 01542,Cutting Machine,2020-04-18,Inactive
+MCH-001543,LOC-0024,Press 01543,Press,2021-06-28,Active
+MCH-001544,LOC-0026,Cutting Machine 01544,Cutting Machine,2021-12-08,Active
+MCH-001545,LOC-0045,Assembly Line 01545,Assembly Line,2019-08-02,Maintenance
+MCH-001546,LOC-0063,Packaging Machine 01546,Packaging Machine,2025-10-21,Active
+MCH-001547,LOC-0022,Cutting Machine 01547,Cutting Machine,2020-08-08,Active
+MCH-001548,LOC-0004,Conveyor 01548,Conveyor,2024-12-10,Active
+MCH-001549,LOC-0084,Robotic Cell 01549,Robotic Cell,2021-03-08,Active
+MCH-001550,LOC-0092,Robotic Cell 01550,Robotic Cell,2024-06-22,Active
+MCH-001551,LOC-0071,Cutting Machine 01551,Cutting Machine,2023-03-10,Maintenance
+MCH-001552,LOC-0078,Assembly Line 01552,Assembly Line,2024-07-07,Active
+MCH-001553,LOC-0031,Packaging Machine 01553,Packaging Machine,2022-08-16,Active
+MCH-001554,LOC-0066,Cutting Machine 01554,Cutting Machine,2019-06-10,Active
+MCH-001555,LOC-0021,Assembly Line 01555,Assembly Line,2023-01-15,Active
+MCH-001556,LOC-0041,Press 01556,Press,2022-01-28,Maintenance
+MCH-001557,LOC-0024,Furnace 01557,Furnace,2022-06-02,Active
+MCH-001558,LOC-0033,Cutting Machine 01558,Cutting Machine,2022-12-04,Active
+MCH-001559,LOC-0043,Conveyor 01559,Conveyor,2021-05-18,Active
+MCH-001560,LOC-0032,Packaging Machine 01560,Packaging Machine,2021-11-07,Maintenance
+MCH-001561,LOC-0034,Furnace 01561,Furnace,2024-11-23,Active
+MCH-001562,LOC-0019,Robotic Cell 01562,Robotic Cell,2022-04-26,Active
+MCH-001563,LOC-0097,CNC Machine 01563,CNC Machine,2021-01-26,Maintenance
+MCH-001564,LOC-0054,Furnace 01564,Furnace,2023-08-18,Active
+MCH-001565,LOC-0094,CNC Machine 01565,CNC Machine,2022-12-30,Active
+MCH-001566,LOC-0017,Furnace 01566,Furnace,2024-06-14,Maintenance
+MCH-001567,LOC-0071,Conveyor 01567,Conveyor,2024-04-02,Active
+MCH-001568,LOC-0083,Furnace 01568,Furnace,2023-07-03,Active
+MCH-001569,LOC-0011,Cutting Machine 01569,Cutting Machine,2024-12-19,Active
+MCH-001570,LOC-0083,Packaging Machine 01570,Packaging Machine,2019-10-29,Active
+MCH-001571,LOC-0031,CNC Machine 01571,CNC Machine,2022-09-19,Maintenance
+MCH-001572,LOC-0099,Assembly Line 01572,Assembly Line,2020-07-21,Active
+MCH-001573,LOC-0006,Press 01573,Press,2022-08-02,Active
+MCH-001574,LOC-0063,Press 01574,Press,2023-12-01,Active
+MCH-001575,LOC-0097,Furnace 01575,Furnace,2019-12-31,Active
+MCH-001576,LOC-0065,Assembly Line 01576,Assembly Line,2023-09-21,Active
+MCH-001577,LOC-0094,Cutting Machine 01577,Cutting Machine,2022-03-31,Active
+MCH-001578,LOC-0029,CNC Machine 01578,CNC Machine,2019-11-18,Active
+MCH-001579,LOC-0011,Assembly Line 01579,Assembly Line,2020-06-24,Active
+MCH-001580,LOC-0015,Assembly Line 01580,Assembly Line,2022-07-07,Active
+MCH-001581,LOC-0039,Robotic Cell 01581,Robotic Cell,2023-09-05,Active
+MCH-001582,LOC-0068,CNC Machine 01582,CNC Machine,2020-04-14,Active
+MCH-001583,LOC-0074,Conveyor 01583,Conveyor,2021-01-22,Inactive
+MCH-001584,LOC-0040,Cutting Machine 01584,Cutting Machine,2022-09-24,Active
+MCH-001585,LOC-0075,Furnace 01585,Furnace,2019-10-27,Active
+MCH-001586,LOC-0047,Press 01586,Press,2020-03-10,Active
+MCH-001587,LOC-0045,Press 01587,Press,2025-08-19,Active
+MCH-001588,LOC-0002,Robotic Cell 01588,Robotic Cell,2021-02-08,Active
+MCH-001589,LOC-0096,Furnace 01589,Furnace,2024-09-30,Active
+MCH-001590,LOC-0030,Furnace 01590,Furnace,2024-12-31,Active
+MCH-001591,LOC-0087,Press 01591,Press,2025-07-17,Maintenance
+MCH-001592,LOC-0051,Conveyor 01592,Conveyor,2019-08-11,Active
+MCH-001593,LOC-0070,Packaging Machine 01593,Packaging Machine,2020-02-16,Active
+MCH-001594,LOC-0048,Robotic Cell 01594,Robotic Cell,2021-10-13,Active
+MCH-001595,LOC-0035,Cutting Machine 01595,Cutting Machine,2019-06-19,Active
+MCH-001596,LOC-0010,Press 01596,Press,2022-05-04,Active
+MCH-001597,LOC-0023,Press 01597,Press,2025-03-31,Active
+MCH-001598,LOC-0048,CNC Machine 01598,CNC Machine,2022-08-11,Active
+MCH-001599,LOC-0020,CNC Machine 01599,CNC Machine,2024-09-14,Active
+MCH-001600,LOC-0073,Conveyor 01600,Conveyor,2022-05-08,Active
+MCH-001601,LOC-0098,Cutting Machine 01601,Cutting Machine,2020-10-26,Active
+MCH-001602,LOC-0072,Press 01602,Press,2024-11-06,Active
+MCH-001603,LOC-0052,CNC Machine 01603,CNC Machine,2024-12-18,Inactive
+MCH-001604,LOC-0073,CNC Machine 01604,CNC Machine,2022-02-12,Active
+MCH-001605,LOC-0024,Assembly Line 01605,Assembly Line,2023-04-30,Active
+MCH-001606,LOC-0091,Cutting Machine 01606,Cutting Machine,2024-03-24,Active
+MCH-001607,LOC-0041,Conveyor 01607,Conveyor,2019-04-06,Maintenance
+MCH-001608,LOC-0005,Cutting Machine 01608,Cutting Machine,2022-06-04,Active
+MCH-001609,LOC-0016,Conveyor 01609,Conveyor,2023-07-26,Maintenance
+MCH-001610,LOC-0090,Press 01610,Press,2024-08-11,Active
+MCH-001611,LOC-0059,Robotic Cell 01611,Robotic Cell,2024-11-12,Active
+MCH-001612,LOC-0053,Robotic Cell 01612,Robotic Cell,2024-09-17,Active
+MCH-001613,LOC-0001,Furnace 01613,Furnace,2024-01-20,Active
+MCH-001614,LOC-0003,Packaging Machine 01614,Packaging Machine,2024-11-05,Active
+MCH-001615,LOC-0048,Packaging Machine 01615,Packaging Machine,2020-03-15,Active
+MCH-001616,LOC-0055,Assembly Line 01616,Assembly Line,2020-04-22,Active
+MCH-001617,LOC-0067,Robotic Cell 01617,Robotic Cell,2024-04-15,Active
+MCH-001618,LOC-0053,Robotic Cell 01618,Robotic Cell,2024-02-06,Active
+MCH-001619,LOC-0097,Robotic Cell 01619,Robotic Cell,2022-04-23,Active
+MCH-001620,LOC-0057,Furnace 01620,Furnace,2021-11-11,Active
+MCH-001621,LOC-0074,Conveyor 01621,Conveyor,2021-08-12,Inactive
+MCH-001622,LOC-0016,Furnace 01622,Furnace,2023-08-13,Active
+MCH-001623,LOC-0036,Furnace 01623,Furnace,2023-10-15,Active
+MCH-001624,LOC-0073,CNC Machine 01624,CNC Machine,2020-07-19,Maintenance
+MCH-001625,LOC-0036,Robotic Cell 01625,Robotic Cell,2023-05-29,Active
+MCH-001626,LOC-0012,Conveyor 01626,Conveyor,2023-04-14,Active
+MCH-001627,LOC-0080,Cutting Machine 01627,Cutting Machine,2025-07-28,Active
+MCH-001628,LOC-0064,Furnace 01628,Furnace,2021-10-24,Active
+MCH-001629,LOC-0043,Packaging Machine 01629,Packaging Machine,2025-07-22,Active
+MCH-001630,LOC-0053,Packaging Machine 01630,Packaging Machine,2022-03-31,Active
+MCH-001631,LOC-0043,Robotic Cell 01631,Robotic Cell,2019-07-03,Active
+MCH-001632,LOC-0003,Conveyor 01632,Conveyor,2023-10-12,Maintenance
+MCH-001633,LOC-0041,Packaging Machine 01633,Packaging Machine,2023-04-23,Active
+MCH-001634,LOC-0081,Robotic Cell 01634,Robotic Cell,2025-06-11,Active
+MCH-001635,LOC-0016,Assembly Line 01635,,2024-08-06,Active
+MCH-001636,LOC-0035,Robotic Cell 01636,Robotic Cell,2025-10-07,Active
+MCH-001637,LOC-0067,Robotic Cell 01637,Robotic Cell,2024-12-21,Active
+MCH-001638,LOC-0060,Conveyor 01638,Conveyor,2019-01-23,Active
+MCH-001639,LOC-0094,Conveyor 01639,Conveyor,2023-03-15,Active
+MCH-001640,LOC-0094,Conveyor 01640,Conveyor,2024-05-07,Active
+MCH-001641,LOC-0015,Packaging Machine 01641,Packaging Machine,2021-07-25,Active
+MCH-001642,LOC-0032,Press 01642,Press,2024-05-26,Active
+MCH-001643,LOC-0081,Conveyor 01643,Conveyor,2022-12-27,Active
+MCH-001644,LOC-0067,Assembly Line 01644,Assembly Line,2021-06-05,Active
+MCH-001645,LOC-0038,Furnace 01645,Furnace,2019-03-07,Active
+MCH-001646,LOC-0003,Assembly Line 01646,Assembly Line,2021-06-13,Active
+MCH-001647,LOC-0094,Press 01647,Press,2020-12-15,Active
+MCH-001648,LOC-0061,Packaging Machine 01648,Packaging Machine,2021-10-13,Active
+MCH-001649,LOC-0089,Press 01649,Press,2024-04-12,Active
+MCH-001650,LOC-0070,Assembly Line 01650,Assembly Line,2024-03-12,Active
+MCH-001651,LOC-0055,Press 01651,,2020-10-04,Active
+MCH-001652,LOC-0076,Press 01652,Press,2025-05-04,Active
+MCH-001653,LOC-0070,Cutting Machine 01653,Cutting Machine,2023-08-15,Active
+MCH-001654,LOC-0044,CNC Machine 01654,CNC Machine,2023-09-23,Active
+MCH-001655,LOC-0083,Robotic Cell 01655,Robotic Cell,2020-05-20,Active
+MCH-001656,LOC-0095,Assembly Line 01656,Assembly Line,2024-04-13,Active
+MCH-001657,LOC-0073,Packaging Machine 01657,Packaging Machine,2020-05-31,Active
+MCH-001658,LOC-0070,Press 01658,Press,2019-07-29,Active
+MCH-001659,LOC-0022,Assembly Line 01659,Assembly Line,2020-08-26,Active
+MCH-001660,LOC-0073,CNC Machine 01660,CNC Machine,2025-05-20,Active
+MCH-001661,LOC-0082,Cutting Machine 01661,Cutting Machine,2021-03-28,Active
+MCH-001662,LOC-0022,Robotic Cell 01662,Robotic Cell,2025-01-12,Active
+MCH-001663,LOC-0082,Press 01663,Press,2022-10-02,Active
+MCH-001664,LOC-0040,Conveyor 01664,Conveyor,2020-04-14,Active
+MCH-001665,LOC-0059,Press 01665,Press,2022-05-08,Active
+MCH-001666,LOC-0070,Conveyor 01666,Conveyor,2024-03-05,Active
+MCH-001667,LOC-0026,Furnace 01667,Furnace,2023-12-02,Active
+MCH-001668,LOC-0029,Packaging Machine 01668,Packaging Machine,2025-06-15,Active
+MCH-001669,LOC-0014,Packaging Machine 01669,Packaging Machine,2025-11-28,Inactive
+MCH-001670,LOC-0080,Robotic Cell 01670,Robotic Cell,2025-03-14,Maintenance
+MCH-001671,LOC-0039,Robotic Cell 01671,Robotic Cell,2025-09-28,Active
+MCH-001672,LOC-0056,Assembly Line 01672,Assembly Line,2022-01-01,Active
+MCH-001673,LOC-0093,Assembly Line 01673,Assembly Line,2023-05-12,Active
+MCH-001674,LOC-0034,Assembly Line 01674,Assembly Line,2020-12-30,Active
+MCH-001675,LOC-0075,Conveyor 01675,Conveyor,,Active
+MCH-001676,LOC-0058,Robotic Cell 01676,Robotic Cell,2021-11-27,Active
+MCH-001677,LOC-0006,Press 01677,Press,2025-10-13,Maintenance
+MCH-001678,LOC-0070,Robotic Cell 01678,Robotic Cell,2019-01-03,Active
+MCH-001679,LOC-0020,Robotic Cell 01679,Robotic Cell,2025-05-18,Active
+MCH-001680,LOC-0065,Furnace 01680,Furnace,2021-12-20,Active
+MCH-001681,LOC-0016,Press 01681,Press,2023-02-20,Active
+MCH-001682,LOC-0075,Assembly Line 01682,Assembly Line,2024-06-03,Active
+MCH-001683,LOC-0093,Packaging Machine 01683,Packaging Machine,,Maintenance
+MCH-001684,LOC-0049,Robotic Cell 01684,Robotic Cell,2020-10-09,Active
+MCH-001685,LOC-0014,Assembly Line 01685,Assembly Line,2022-06-04,Active
+MCH-001686,LOC-0032,Furnace 01686,Furnace,2023-03-26,Active
+MCH-001687,LOC-0081,Conveyor 01687,Conveyor,2021-07-25,Inactive
+MCH-001688,LOC-0003,Packaging Machine 01688,Packaging Machine,2022-01-04,Active
+MCH-001689,LOC-0056,Cutting Machine 01689,Cutting Machine,2024-10-27,Active
+MCH-001690,LOC-0076,Cutting Machine 01690,Cutting Machine,2019-03-05,Active
+MCH-001691,LOC-0076,CNC Machine 01691,CNC Machine,2020-05-02,Active
+MCH-001692,LOC-0051,Packaging Machine 01692,Packaging Machine,2019-10-03,Active
+MCH-001693,LOC-0100,Press 01693,Press,2025-09-05,Active
+MCH-001694,LOC-0083,Press 01694,Press,2019-11-03,Active
+MCH-001695,INVALID-LOCATION_ID-00001694,Packaging Machine 01695,Packaging Machine,2024-06-02,Active
+MCH-001696,LOC-0070,Press 01696,Press,2023-02-17,Maintenance
+MCH-001697,LOC-0026,CNC Machine 01697,CNC Machine,2021-01-02,Active
+MCH-001698,LOC-0022,Cutting Machine 01698,Cutting Machine,2019-11-03,Maintenance
+MCH-001699,LOC-0098,Furnace 01699,Furnace,2021-07-17,Active
+MCH-001700,LOC-0012,Robotic Cell 01700,Robotic Cell,2025-10-10,Active
+MCH-001701,LOC-0012,Cutting Machine 01701,Cutting Machine,2024-02-14,Active
+MCH-001702,LOC-0032,Press 01702,Press,2024-11-14,Active
+MCH-001703,LOC-0094,Press 01703,Press,2023-09-14,Active
+MCH-001704,LOC-0069,Conveyor 01704,Conveyor,2020-05-21,Active
+MCH-001705,LOC-0085,Press 01705,Press,2022-10-05,Active
+MCH-001706,LOC-0050,Cutting Machine 01706,Cutting Machine,2023-12-06,Maintenance
+MCH-001707,LOC-0085,Conveyor 01707,Conveyor,2024-09-05,Active
+MCH-001708,LOC-0066,Furnace 01708,Furnace,2023-07-16,Active
+MCH-001709,LOC-0001,Cutting Machine 01709,Cutting Machine,2019-03-14,Active
+MCH-001710,LOC-0010,Conveyor 01710,Conveyor,2023-08-10,Active
+MCH-001711,LOC-0015,Conveyor 01711,Conveyor,2022-12-09,Active
+MCH-001712,LOC-0068,Assembly Line 01712,Assembly Line,2021-09-12,Active
+MCH-001713,LOC-0020,Robotic Cell 01713,Robotic Cell,2025-03-05,Active
+MCH-001714,LOC-0013,Press 01714,Press,2020-01-28,Active
+MCH-001715,LOC-0026,CNC Machine 01715,CNC Machine,2019-11-15,Active
+MCH-001716,LOC-0097,Press 01716,Press,2024-02-02,Active
+MCH-001717,LOC-0069,Robotic Cell 01717,Robotic Cell,2022-11-09,Active
+MCH-001718,LOC-0053,Cutting Machine 01718,Cutting Machine,2019-01-15,Active
+MCH-001719,LOC-0032,Conveyor 01719,Conveyor,2025-10-28,Active
+MCH-001720,LOC-0090,Press 01720,,2024-08-23,Maintenance
+MCH-001721,LOC-0052,CNC Machine 01721,CNC Machine,2020-07-24,Maintenance
+MCH-001722,LOC-0045,Conveyor 01722,Conveyor,2021-02-15,Active
+MCH-001723,LOC-0092,Cutting Machine 01723,Cutting Machine,2020-12-28,Active
+MCH-001724,LOC-0060,CNC Machine 01724,CNC Machine,2019-06-29,Active
+MCH-001725,LOC-0047,Robotic Cell 01725,Robotic Cell,2019-04-06,Maintenance
+MCH-001726,LOC-0064,Furnace 01726,Furnace,2020-03-18,Active
+MCH-001727,LOC-0004,CNC Machine 01727,CNC Machine,2024-10-06,Active
+MCH-001728,LOC-0037,CNC Machine 01728,,2023-01-27,Active
+MCH-001729,INVALID-LOCATION_ID-00001728,CNC Machine 01729,CNC Machine,2019-10-19,Active
+MCH-001730,LOC-0086,Press 01730,Press,2024-12-06,Maintenance
+MCH-001731,LOC-0012,Conveyor 01731,Conveyor,2025-06-21,Active
+MCH-001732,LOC-0020,Packaging Machine 01732,Packaging Machine,2021-12-20,Active
+MCH-001733,LOC-0003,Assembly Line 01733,Assembly Line,2020-08-23,Inactive
+MCH-001734,LOC-0081,Furnace 01734,Furnace,2021-05-26,Active
+MCH-001735,LOC-0004,CNC Machine 01735,CNC Machine,2022-12-18,Active
+MCH-001736,LOC-0070,Furnace 01736,Furnace,2021-09-14,Active
+MCH-001737,LOC-0082,Press 01737,Press,2019-03-02,Active
+MCH-001738,LOC-0042,Robotic Cell 01738,Robotic Cell,2024-03-02,Active
+MCH-001739,LOC-0036,Cutting Machine 01739,Cutting Machine,2021-08-07,Active
+MCH-001740,LOC-0027,CNC Machine 01740,CNC Machine,2020-04-17,Active
+MCH-001741,LOC-0027,Press 01741,Press,2024-02-16,Active
+MCH-001742,LOC-0010,Press 01742,Press,2024-02-10,Active
+MCH-001743,INVALID-LOCATION_ID-00001742,Conveyor 01743,Conveyor,2020-12-15,Active
+MCH-001744,LOC-0002,Cutting Machine 01744,Cutting Machine,2024-10-19,Active
+MCH-001745,LOC-0050,Press 01745,Press,2025-01-23,Active
+MCH-001746,LOC-0071,CNC Machine 01746,CNC Machine,2022-02-10,Maintenance
+MCH-001747,LOC-0042,Assembly Line 01747,Assembly Line,2019-11-07,Active
+MCH-001748,LOC-0067,Robotic Cell 01748,Robotic Cell,2020-01-30,Active
+MCH-001749,LOC-0040,Furnace 01749,Furnace,2021-02-19,Maintenance
+MCH-001750,LOC-0047,Press 01750,Press,2023-11-23,Inactive
+MCH-001751,LOC-0041,Conveyor 01751,Conveyor,2024-11-07,Active
+MCH-001752,LOC-0009,Furnace 01752,Furnace,2019-08-17,Active
+MCH-001753,LOC-0063,Conveyor 01753,Conveyor,2024-01-05,Active
+MCH-001754,LOC-0069,Packaging Machine 01754,Packaging Machine,2019-02-24,Active
+MCH-001755,LOC-0072,Robotic Cell 01755,Robotic Cell,2019-07-01,Active
+MCH-001756,LOC-0065,Press 01756,Press,2019-03-07,Active
+MCH-001757,LOC-0028,Robotic Cell 01757,Robotic Cell,2022-04-24,Active
+MCH-001758,LOC-0048,Conveyor 01758,Conveyor,2019-08-17,Active
+MCH-001759,LOC-0048,Packaging Machine 01759,Packaging Machine,2023-08-22,Maintenance
+MCH-001760,LOC-0013,Conveyor 01760,Conveyor,2021-09-11,Active
+MCH-001761,LOC-0025,Packaging Machine 01761,Packaging Machine,2024-07-30,Active
+MCH-001762,LOC-0009,Furnace 01762,Furnace,2023-03-26,Active
+MCH-001763,LOC-0029,Robotic Cell 01763,Robotic Cell,2021-03-15,Active
+MCH-001764,LOC-0059,Conveyor 01764,Conveyor,2020-02-28,Active
+MCH-001765,LOC-0062,Furnace 01765,Furnace,2025-03-02,Active
+MCH-001766,LOC-0004,Furnace 01766,Furnace,2020-03-22,Active
+MCH-001767,LOC-0062,CNC Machine 01767,CNC Machine,2019-08-24,Active
+MCH-001768,LOC-0077,Cutting Machine 01768,Cutting Machine,2022-12-29,Active
+MCH-001769,LOC-0072,Robotic Cell 01769,Robotic Cell,2019-05-15,Active
+MCH-001770,LOC-0057,Press 01770,Press,2021-10-08,Active
+MCH-001771,LOC-0089,,Press,2022-08-10,Active
+MCH-001772,LOC-0058,Cutting Machine 01772,Cutting Machine,2022-07-01,Maintenance
+MCH-001773,LOC-0094,CNC Machine 01773,CNC Machine,2021-07-22,Active
+MCH-001774,LOC-0076,CNC Machine 01774,CNC Machine,2022-03-22,Inactive
+MCH-001775,LOC-0091,Furnace 01775,Furnace,2022-10-18,Active
+MCH-001776,LOC-0006,Furnace 01776,Furnace,2024-05-16,Maintenance
+MCH-001777,LOC-0085,Cutting Machine 01777,Cutting Machine,2022-07-16,Active
+MCH-001778,LOC-0029,Robotic Cell 01778,Robotic Cell,2024-10-13,Maintenance
+MCH-001779,LOC-0040,Furnace 01779,Furnace,2024-07-20,Active
+MCH-001780,LOC-0029,Robotic Cell 01780,Robotic Cell,2024-05-05,Active
+MCH-001781,LOC-0074,Press 01781,Press,2022-12-14,Active
+MCH-001782,LOC-0048,Assembly Line 01782,Assembly Line,2022-01-20,Active
+MCH-001783,LOC-0001,Press 01783,Press,2023-07-19,Active
+MCH-001784,LOC-0008,Press 01784,Press,2024-04-11,Active
+MCH-001785,LOC-0087,Packaging Machine 01785,Packaging Machine,2019-12-31,Active
+MCH-001786,LOC-0055,CNC Machine 01786,CNC Machine,2019-07-14,Inactive
+MCH-001787,LOC-0035,Robotic Cell 01787,Robotic Cell,2023-10-20,Inactive
+MCH-001788,LOC-0069,Robotic Cell 01788,Robotic Cell,2025-07-01,Maintenance
+MCH-001789,LOC-0076,Packaging Machine 01789,Packaging Machine,2021-04-03,Active
+MCH-001790,LOC-0046,Assembly Line 01790,Assembly Line,2023-05-08,Active
+MCH-001791,LOC-0061,Press 01791,Press,2023-05-19,Active
+MCH-001792,LOC-0006,Packaging Machine 01792,Packaging Machine,2024-05-13,Active
+MCH-001793,LOC-0034,Furnace 01793,Furnace,2025-01-28,Active
+MCH-001794,LOC-0022,Packaging Machine 01794,Packaging Machine,2025-02-16,Active
+MCH-001795,LOC-0088,Cutting Machine 01795,Cutting Machine,2025-09-25,
+MCH-001796,LOC-0100,Conveyor 01796,,2020-03-30,Active
+MCH-001797,LOC-0004,Furnace 01797,Furnace,2019-01-18,Active
+MCH-001798,LOC-0008,Assembly Line 01798,Assembly Line,2025-01-10,Active
+MCH-001799,LOC-0071,CNC Machine 01799,CNC Machine,2025-04-14,Active
+MCH-001800,LOC-0065,Cutting Machine 01800,Cutting Machine,2025-11-20,Active
+MCH-001801,LOC-0030,Conveyor 01801,Conveyor,2022-04-22,Active
+MCH-001802,LOC-0022,Conveyor 01802,Conveyor,2020-03-02,Active
+MCH-001803,LOC-0084,Assembly Line 01803,Assembly Line,2020-08-31,Active
+MCH-001804,LOC-0012,Furnace 01804,Furnace,2019-05-22,Active
+MCH-001805,LOC-0043,Cutting Machine 01805,Cutting Machine,2025-08-13,Maintenance
+MCH-001806,LOC-0063,Press 01806,Press,2023-02-07,Maintenance
+MCH-001807,LOC-0090,Press 01807,Press,2020-05-02,Active
+MCH-001808,LOC-0038,CNC Machine 01808,CNC Machine,2021-10-22,Active
+MCH-001809,LOC-0077,Packaging Machine 01809,Packaging Machine,2023-12-31,Active
+MCH-001810,LOC-0077,Furnace 01810,Furnace,2019-10-05,Active
+MCH-001811,LOC-0003,Robotic Cell 01811,Robotic Cell,2022-06-03,Active
+MCH-001812,LOC-0036,Press 01812,Press,2021-02-19,Maintenance
+MCH-001813,LOC-0001,Furnace 01813,Furnace,2022-07-24,Active
+MCH-001814,LOC-0048,Conveyor 01814,Conveyor,2024-09-06,Active
+MCH-001815,LOC-0024,Conveyor 01815,Conveyor,2025-03-25,Active
+MCH-001816,LOC-0076,Robotic Cell 01816,Robotic Cell,2024-08-11,Active
+MCH-001817,LOC-0090,Cutting Machine 01817,Cutting Machine,2025-04-02,Maintenance
+MCH-001818,LOC-0063,Conveyor 01818,Conveyor,2019-02-07,Active
+MCH-001819,LOC-0056,Assembly Line 01819,Assembly Line,2023-12-02,Active
+MCH-001820,LOC-0062,Conveyor 01820,Conveyor,2020-09-19,Active
+MCH-001821,LOC-0003,Press 01821,Press,2023-06-10,Active
+MCH-001822,LOC-0081,CNC Machine 01822,CNC Machine,,Active
+MCH-001823,LOC-0025,Conveyor 01823,Conveyor,2022-06-15,Active
+MCH-001824,LOC-0022,Robotic Cell 01824,Robotic Cell,2019-03-16,Active
+MCH-001825,LOC-0056,CNC Machine 01825,CNC Machine,2019-03-21,Active
+MCH-001826,LOC-0051,CNC Machine 01826,CNC Machine,2025-03-08,Active
+MCH-001827,LOC-0077,Press 01827,Press,2022-08-27,Active
+MCH-001828,LOC-0060,Packaging Machine 01828,Packaging Machine,2023-12-05,Maintenance
+MCH-001829,LOC-0091,Assembly Line 01829,Assembly Line,2023-07-27,Maintenance
+MCH-001830,LOC-0001,Cutting Machine 01830,Cutting Machine,2023-10-18,Active
+MCH-001831,LOC-0083,Furnace 01831,Furnace,,Active
+MCH-001832,LOC-0087,Cutting Machine 01832,Cutting Machine,2020-07-11,Active
+MCH-001833,LOC-0040,Assembly Line 01833,Assembly Line,2023-07-07,Active
+MCH-001834,LOC-0020,Press 01834,Press,2024-05-28,Active
+MCH-001835,LOC-0015,Assembly Line 01835,Assembly Line,2025-09-01,Active
+MCH-001836,LOC-0036,Assembly Line 01836,Assembly Line,2025-11-29,Active
+MCH-001837,LOC-0080,Assembly Line 01837,Assembly Line,2025-03-01,Active
+MCH-001838,LOC-0088,,Assembly Line,2023-12-14,Active
+MCH-001839,LOC-0044,Robotic Cell 01839,Robotic Cell,2024-05-24,Active
+MCH-001840,LOC-0066,Robotic Cell 01840,Robotic Cell,2022-04-19,Active
+MCH-001841,LOC-0077,Conveyor 01841,Conveyor,2025-06-07,Active
+MCH-001842,LOC-0090,CNC Machine 01842,CNC Machine,2021-11-16,Maintenance
+MCH-001843,LOC-0032,Conveyor 01843,Conveyor,2021-05-29,Active
+MCH-001844,LOC-0048,Assembly Line 01844,Assembly Line,2023-01-28,Active
+MCH-001845,LOC-0097,Press 01845,Press,2020-04-26,Active
+MCH-001846,LOC-0055,Conveyor 01846,Conveyor,2019-09-26,Inactive
+MCH-001847,LOC-0094,Press 01847,Press,2022-03-26,Active
+MCH-001848,LOC-0100,CNC Machine 01848,CNC Machine,2022-09-14,Active
+MCH-001849,LOC-0035,CNC Machine 01849,CNC Machine,2023-03-18,Inactive
+MCH-001850,LOC-0082,CNC Machine 01850,CNC Machine,2025-02-07,Active
+MCH-001851,LOC-0078,Furnace 01851,Furnace,2019-10-19,Active
+MCH-001852,LOC-0052,Assembly Line 01852,Assembly Line,2020-04-29,Active
+MCH-001853,LOC-0036,Conveyor 01853,Conveyor,2021-07-03,Active
+MCH-001854,LOC-0068,Conveyor 01854,Conveyor,2020-05-18,Active
+MCH-001855,LOC-0029,Conveyor 01855,Conveyor,2020-05-08,Active
+MCH-001856,LOC-0026,Press 01856,Press,2024-07-11,Active
+MCH-001857,INVALID-LOCATION_ID-00001856,Robotic Cell 01857,Robotic Cell,2019-02-10,Inactive
+MCH-001858,LOC-0041,Cutting Machine 01858,Cutting Machine,2020-02-09,Active
+MCH-001859,LOC-0039,Conveyor 01859,Conveyor,2022-10-13,Inactive
+MCH-001860,LOC-0023,Packaging Machine 01860,Packaging Machine,2019-11-28,Active
+MCH-001861,LOC-0028,Press 01861,Press,2020-01-20,Active
+MCH-001862,LOC-0099,Assembly Line 01862,Assembly Line,2020-03-23,Active
+MCH-001863,LOC-0015,Assembly Line 01863,Assembly Line,2025-02-23,Active
+MCH-001864,LOC-0044,Robotic Cell 01864,Robotic Cell,2019-05-11,Active
+MCH-001865,LOC-0037,Furnace 01865,Furnace,2023-05-07,Active
+MCH-001866,LOC-0056,,Assembly Line,2022-05-05,Active
+MCH-001867,LOC-0098,Packaging Machine 01867,Packaging Machine,2020-03-21,Active
+MCH-001868,LOC-0005,Furnace 01868,Furnace,2025-06-18,Active
+MCH-001869,LOC-0060,Assembly Line 01869,Assembly Line,2025-01-10,Active
+MCH-001870,LOC-0047,Conveyor 01870,Conveyor,2024-10-11,Active
+MCH-001871,LOC-0046,CNC Machine 01871,CNC Machine,2019-12-21,Active
+MCH-001872,LOC-0010,Furnace 01872,Furnace,2024-07-28,Active
+MCH-001873,LOC-0082,Robotic Cell 01873,Robotic Cell,2025-05-31,Active
+MCH-001874,LOC-0057,Furnace 01874,Furnace,2020-05-11,Inactive
+MCH-001875,LOC-0058,Conveyor 01875,Conveyor,2020-05-27,Active
+MCH-001876,LOC-0007,Robotic Cell 01876,Robotic Cell,2024-01-13,Maintenance
+MCH-001877,LOC-0045,Robotic Cell 01877,Robotic Cell,2019-11-30,Active
+MCH-001878,LOC-0038,Robotic Cell 01878,Robotic Cell,2022-05-04,Active
+MCH-001879,LOC-0093,Cutting Machine 01879,Cutting Machine,2021-10-05,Active
+MCH-001880,LOC-0064,CNC Machine 01880,CNC Machine,2021-08-06,Active
+MCH-001881,LOC-0074,Furnace 01881,Furnace,2025-04-27,Active
+MCH-001882,LOC-0051,Cutting Machine 01882,Cutting Machine,2022-05-12,Active
+MCH-001883,LOC-0033,Furnace 01883,Furnace,2020-01-21,Active
+MCH-001884,LOC-0015,Assembly Line 01884,Assembly Line,2023-10-26,Active
+MCH-001885,LOC-0096,Packaging Machine 01885,Packaging Machine,2025-06-26,Active
+MCH-001886,LOC-0072,Conveyor 01886,Conveyor,2023-09-07,Active
+MCH-001887,LOC-0071,Packaging Machine 01887,Packaging Machine,2019-07-05,Active
+MCH-001888,LOC-0046,Packaging Machine 01888,Packaging Machine,2020-06-19,Active
+MCH-001889,LOC-0005,Robotic Cell 01889,Robotic Cell,2025-04-16,Active
+MCH-001890,LOC-0086,CNC Machine 01890,CNC Machine,2022-06-19,Active
+MCH-001891,LOC-0020,Press 01891,Press,2021-06-01,Maintenance
+MCH-001892,LOC-0079,Furnace 01892,Furnace,2020-10-24,Active
+MCH-001893,LOC-0071,Furnace 01893,Furnace,2023-06-20,Active
+MCH-001894,LOC-0070,CNC Machine 01894,CNC Machine,2021-12-19,Active
+MCH-001895,LOC-0079,Assembly Line 01895,Assembly Line,2024-07-07,Active
+MCH-001896,LOC-0010,CNC Machine 01896,CNC Machine,2020-12-23,Active
+MCH-001897,LOC-0008,Packaging Machine 01897,Packaging Machine,2021-07-21,Active
+MCH-001898,LOC-0067,Furnace 01898,Furnace,2020-06-26,Active
+MCH-001899,LOC-0006,Packaging Machine 01899,Packaging Machine,2021-12-31,Active
+MCH-001900,LOC-0079,CNC Machine 01900,CNC Machine,2023-06-18,Active
+MCH-001901,LOC-0010,Furnace 01901,Furnace,2022-01-06,Active
+MCH-001902,LOC-0016,Packaging Machine 01902,Packaging Machine,2020-05-27,Maintenance
+MCH-001903,LOC-0099,Assembly Line 01903,Assembly Line,2025-11-29,Active
+MCH-001904,LOC-0040,Packaging Machine 01904,Packaging Machine,2022-03-07,Active
+MCH-001905,LOC-0002,Press 01905,Press,2020-06-24,
+MCH-001906,LOC-0067,Assembly Line 01906,Assembly Line,2019-12-12,Active
+MCH-001907,LOC-0097,,Furnace,2023-12-26,Active
+MCH-001908,LOC-0082,Assembly Line 01908,Assembly Line,2020-05-09,Active
+MCH-001909,LOC-0014,CNC Machine 01909,CNC Machine,2021-12-29,Active
+MCH-001910,LOC-0082,Cutting Machine 01910,Cutting Machine,2021-04-04,Active
+MCH-001911,LOC-0002,Press 01911,Press,2020-09-08,Active
+MCH-001912,LOC-0063,Conveyor 01912,Conveyor,2023-05-06,Active
+MCH-001913,LOC-0098,Robotic Cell 01913,Robotic Cell,2022-11-24,Maintenance
+MCH-001914,LOC-0067,CNC Machine 01914,CNC Machine,2023-08-13,Active
+MCH-001915,LOC-0046,Conveyor 01915,Conveyor,2022-10-29,Maintenance
+MCH-001916,LOC-0069,Robotic Cell 01916,Robotic Cell,2019-10-21,Active
+MCH-001917,LOC-0082,CNC Machine 01917,CNC Machine,2024-11-11,Active
+MCH-001918,LOC-0019,Robotic Cell 01918,Robotic Cell,2021-09-25,Maintenance
+MCH-001919,LOC-0061,Furnace 01919,Furnace,2024-02-22,Maintenance
+MCH-001920,LOC-0081,Robotic Cell 01920,Robotic Cell,2020-10-14,Active
+MCH-001921,LOC-0061,Cutting Machine 01921,Cutting Machine,2024-02-18,Active
+MCH-001922,LOC-0029,Conveyor 01922,Conveyor,2020-10-17,Maintenance
+MCH-001923,LOC-0036,Conveyor 01923,Conveyor,2025-06-28,Active
+MCH-001924,LOC-0092,Press 01924,Press,2023-04-01,Active
+MCH-001925,LOC-0020,Packaging Machine 01925,Packaging Machine,2023-05-24,Active
+MCH-001926,LOC-0095,Press 01926,Press,2021-12-26,Maintenance
+MCH-001927,LOC-0048,Assembly Line 01927,Assembly Line,2025-12-24,Active
+MCH-001928,LOC-0021,Conveyor 01928,Conveyor,2022-01-03,Active
+MCH-001929,LOC-0048,Packaging Machine 01929,Packaging Machine,2020-05-26,Active
+MCH-001930,LOC-0047,Robotic Cell 01930,Robotic Cell,2025-10-22,Active
+MCH-001931,LOC-0092,Furnace 01931,Furnace,2021-03-08,Active
+MCH-001932,LOC-0048,Assembly Line 01932,Assembly Line,2019-01-18,Active
+MCH-001933,LOC-0033,Assembly Line 01933,Assembly Line,2025-11-25,Active
+MCH-001934,LOC-0059,Conveyor 01934,Conveyor,2021-06-19,Active
+MCH-001935,LOC-0076,Packaging Machine 01935,Packaging Machine,2024-01-17,Inactive
+MCH-001936,LOC-0084,Press 01936,Press,2022-07-31,Active
+MCH-001937,LOC-0097,Assembly Line 01937,Assembly Line,2019-11-01,Active
+MCH-001938,LOC-0037,Cutting Machine 01938,Cutting Machine,2024-11-07,Active
+MCH-001939,LOC-0038,Conveyor 01939,Conveyor,2023-04-09,Active
+MCH-001940,LOC-0054,Robotic Cell 01940,Robotic Cell,2025-01-30,Active
+MCH-001941,LOC-0010,CNC Machine 01941,CNC Machine,2019-12-27,Active
+MCH-001942,LOC-0028,Packaging Machine 01942,Packaging Machine,2025-02-07,Active
+MCH-001943,LOC-0070,Press 01943,Press,2022-10-04,Active
+MCH-001944,LOC-0047,Conveyor 01944,Conveyor,2019-05-24,Active
+MCH-001945,LOC-0071,Conveyor 01945,Conveyor,2020-08-22,Active
+MCH-001946,LOC-0091,CNC Machine 01946,CNC Machine,2022-03-13,Active
+MCH-001947,LOC-0041,Robotic Cell 01947,Robotic Cell,2021-06-28,Active
+MCH-001948,LOC-0079,Packaging Machine 01948,Packaging Machine,2020-01-18,Active
+MCH-001949,LOC-0054,Robotic Cell 01949,Robotic Cell,2025-06-25,Active
+MCH-001950,LOC-0007,Furnace 01950,Furnace,2022-07-21,Active
+MCH-001951,LOC-0034,CNC Machine 01951,CNC Machine,2024-05-19,Active
+MCH-001952,LOC-0005,Cutting Machine 01952,Cutting Machine,2023-02-15,Active
+MCH-001953,LOC-0028,CNC Machine 01953,CNC Machine,2024-02-06,Active
+MCH-001954,LOC-0002,Cutting Machine 01954,Cutting Machine,2023-11-13,Active
+MCH-001955,LOC-0004,Furnace 01955,Furnace,2022-12-07,Active
+MCH-001956,LOC-0010,Furnace 01956,Furnace,2020-04-03,Inactive
+MCH-001957,INVALID-LOCATION_ID-00001956,Packaging Machine 01957,Packaging Machine,2025-02-15,Active
+MCH-001958,LOC-0021,Conveyor 01958,Conveyor,2024-12-23,Active
+MCH-001959,LOC-0066,Cutting Machine 01959,Cutting Machine,2019-11-18,Active
+MCH-001960,LOC-0027,Cutting Machine 01960,Cutting Machine,2022-07-14,Active
+MCH-001961,LOC-0018,Assembly Line 01961,Assembly Line,2022-04-28,Maintenance
+MCH-001962,LOC-0023,Furnace 01962,Furnace,2022-10-10,Active
+MCH-001963,LOC-0057,Robotic Cell 01963,Robotic Cell,2021-04-23,Inactive
+MCH-001964,LOC-0055,Furnace 01964,Furnace,2021-05-29,Maintenance
+MCH-001965,LOC-0059,Furnace 01965,Furnace,2019-11-29,Active
+MCH-001966,LOC-0076,Conveyor 01966,Conveyor,2024-10-27,Active
+MCH-001967,LOC-0029,CNC Machine 01967,CNC Machine,2022-09-30,Active
+MCH-001968,LOC-0018,Assembly Line 01968,Assembly Line,2022-12-22,Active
+MCH-001969,LOC-0052,Robotic Cell 01969,Robotic Cell,2025-09-07,Active
+MCH-001970,LOC-0021,Furnace 01970,Furnace,2019-03-14,Active
+MCH-001971,LOC-0096,CNC Machine 01971,CNC Machine,2024-05-04,Active
+MCH-001972,LOC-0008,Packaging Machine 01972,Packaging Machine,2019-11-30,Active
+MCH-001973,LOC-0095,Robotic Cell 01973,Robotic Cell,2025-05-01,Active
+MCH-001974,LOC-0061,Conveyor 01974,Conveyor,2023-01-31,Active
+MCH-001975,LOC-0022,Packaging Machine 01975,Packaging Machine,2024-03-30,Active
+MCH-001976,LOC-0025,Assembly Line 01976,Assembly Line,2021-04-08,Inactive
+MCH-001977,LOC-0072,Conveyor 01977,Conveyor,2022-09-20,Inactive
+MCH-001978,LOC-0068,CNC Machine 01978,CNC Machine,2023-06-09,Active
+MCH-001979,LOC-0045,Packaging Machine 01979,Packaging Machine,2021-06-28,Active
+MCH-001980,LOC-0013,Cutting Machine 01980,Cutting Machine,2023-10-10,Maintenance
+MCH-001981,LOC-0035,Press 01981,Press,2023-03-01,Active
+MCH-001982,LOC-0084,Packaging Machine 01982,Packaging Machine,2023-08-12,Active
+MCH-001983,LOC-0026,CNC Machine 01983,CNC Machine,2025-09-30,Active
+MCH-001984,LOC-0098,Press 01984,Press,2020-11-25,Active
+MCH-001985,LOC-0056,Conveyor 01985,Conveyor,2024-01-07,Active
+MCH-001986,LOC-0085,Assembly Line 01986,Assembly Line,2020-03-19,Active
+MCH-001987,LOC-0026,Press 01987,Press,2025-06-01,Active
+MCH-001988,LOC-0030,Furnace 01988,Furnace,2019-07-17,Active
+MCH-001989,LOC-0025,Cutting Machine 01989,Cutting Machine,2024-04-03,Active
+MCH-001990,LOC-0062,Furnace 01990,Furnace,2024-02-24,Active
+MCH-001991,LOC-0072,Conveyor 01991,Conveyor,2025-11-23,Active
+MCH-001992,LOC-0024,Packaging Machine 01992,Packaging Machine,2021-09-27,Active
+MCH-001993,LOC-0007,Packaging Machine 01993,Packaging Machine,2021-10-21,Active
+MCH-001994,LOC-0072,Packaging Machine 01994,Packaging Machine,2022-09-20,Maintenance
+MCH-001995,LOC-0074,Assembly Line 01995,Assembly Line,2020-06-24,Active
+MCH-001996,LOC-0100,CNC Machine 01996,CNC Machine,2025-11-11,Active
+MCH-001997,LOC-0062,CNC Machine 01997,CNC Machine,2021-11-17,Active
+MCH-001998,LOC-0045,CNC Machine 01998,CNC Machine,2024-10-23,Active
+MCH-001999,LOC-0085,Robotic Cell 01999,Robotic Cell,2025-10-16,Active
+MCH-002000,LOC-0030,Robotic Cell 02000,Robotic Cell,2023-05-02,Active
+MCH-000219,LOC-0059,Conveyor 00219,Conveyor,2024-06-20,Active
+MCH-000110,LOC-0049,Assembly Line 00110,Assembly Line,2021-09-06,Inactive
+MCH-000922,LOC-0003,CNC Machine 00922,CNC Machine,2023-07-27,Active
+MCH-000265,LOC-0074,Furnace 00265,Furnace,2020-08-30,Active
+MCH-001266,LOC-0040,Furnace 01266,Furnace,2020-11-30,Active
+MCH-001467,LOC-0019,Cutting Machine 01467,Cutting Machine,2021-08-11,Inactive
+MCH-001489,LOC-0089,Cutting Machine 01489,Cutting Machine,2022-11-10,Active
+MCH-001043,LOC-0040,Press 01043,Press,2023-12-04,Active
+MCH-000193,LOC-0050,Robotic Cell 00193,Robotic Cell,2023-02-28,Active
+MCH-001289,LOC-0031,Assembly Line 01289,Assembly Line,2025-09-05,Active
+MCH-000343,LOC-0052,Press 00343,Press,2022-03-05,Active
+MCH-001273,LOC-0091,Cutting Machine 01273,Cutting Machine,2021-06-12,Active
+MCH-000379,LOC-0032,Assembly Line 00379,Assembly Line,2021-07-15,Active
+MCH-000854,LOC-0054,CNC Machine 00854,CNC Machine,2023-12-16,Active
+MCH-001860,LOC-0023,Packaging Machine 01860,Packaging Machine,2019-11-28,Active
+MCH-001998,LOC-0045,CNC Machine 01998,CNC Machine,2024-10-23,Active
+MCH-000282,LOC-0053,Furnace 00282,Furnace,2022-10-05,Maintenance
+MCH-000585,LOC-0012,Press 00585,Press,2021-12-24,Active
+MCH-001339,LOC-0039,Assembly Line 01339,Assembly Line,2024-05-21,Active
+MCH-001583,LOC-0074,Conveyor 01583,Conveyor,2021-01-22,Inactive
+MCH-000351,LOC-0032,Packaging Machine 00351,Packaging Machine,2025-10-19,Active
+MCH-001208,LOC-0066,Cutting Machine 01208,Cutting Machine,2025-01-27,Inactive
+MCH-000635,LOC-0059,Assembly Line 00635,,2024-01-29,Active
+MCH-001263,LOC-0042,Conveyor 01263,Conveyor,2025-01-07,Active
+MCH-001755,LOC-0072,Robotic Cell 01755,Robotic Cell,2019-07-01,Active
+MCH-000211,LOC-0076,CNC Machine 00211,CNC Machine,2020-09-19,Active
+MCH-000285,LOC-0055,Press 00285,,2021-03-31,Active
+MCH-000082,LOC-0008,Furnace 00082,Furnace,2022-02-26,Active
+MCH-001249,LOC-0024,Packaging Machine 01249,Packaging Machine,2025-08-22,Active
+MCH-001355,LOC-0027,Robotic Cell 01355,Robotic Cell,2025-02-04,Active
+MCH-000126,LOC-0064,Cutting Machine 00126,Cutting Machine,2021-10-05,Active
+MCH-001830,LOC-0001,Cutting Machine 01830,Cutting Machine,2023-10-18,Active
+MCH-000348,LOC-0011,Assembly Line 00348,Assembly Line,2025-10-20,Active
+MCH-001889,LOC-0005,Robotic Cell 01889,Robotic Cell,2025-04-16,Active
+MCH-001211,LOC-0023,Packaging Machine 01211,Packaging Machine,2020-11-22,Active
+MCH-001880,LOC-0064,CNC Machine 01880,CNC Machine,2021-08-06,Active
+MCH-001609,LOC-0016,Conveyor 01609,Conveyor,2023-07-26,Maintenance
+MCH-000742,LOC-0072,Assembly Line 00742,Assembly Line,2021-09-23,Active
+MCH-000037,LOC-0025,CNC Machine 00037,CNC Machine,2022-10-11,Active
+MCH-001033,LOC-0041,Robotic Cell 01033,Robotic Cell,2021-11-14,Active

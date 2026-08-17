@@ -2,9 +2,8 @@
 Project Atlas
 Phase 3 — Reference Data Validation
 
-Validates the clean reference datasets.
-
-Run this BEFORE quality issue injection.
+Validates the seven reference datasets against the approved
+Phase 2 data model.
 """
 
 from pathlib import Path
@@ -34,304 +33,323 @@ from generation_config import (
 )
 
 
-EXPECTED_COUNTS = {
-    "accounts.csv": N_ACCOUNTS,
-    "customers.csv": N_CUSTOMERS,
-    "suppliers.csv": N_SUPPLIERS,
-    "products.csv": N_PRODUCTS,
-    "locations.csv": N_LOCATIONS,
-    "employees.csv": N_EMPLOYEES,
-    "machines.csv": N_MACHINES,
+DATASETS = {
+    "accounts": {
+        "file": "accounts.csv",
+        "key": "account_id",
+        "count": N_ACCOUNTS,
+        "columns": [
+            "account_id",
+            "account_name",
+            "account_type",
+            "industry",
+            "country",
+            "status",
+        ],
+    },
+    "customers": {
+        "file": "customers.csv",
+        "key": "customer_id",
+        "count": N_CUSTOMERS,
+        "columns": [
+            "customer_id",
+            "account_id",
+            "customer_name",
+            "customer_segment",
+            "industry",
+            "country",
+            "status",
+        ],
+    },
+    "suppliers": {
+        "file": "suppliers.csv",
+        "key": "supplier_id",
+        "count": N_SUPPLIERS,
+        "columns": [
+            "supplier_id",
+            "supplier_name",
+            "supplier_category",
+            "country",
+            "status",
+        ],
+    },
+    "products": {
+        "file": "products.csv",
+        "key": "product_id",
+        "count": N_PRODUCTS,
+        "columns": [
+            "product_id",
+            "supplier_id",
+            "product_name",
+            "category",
+            "unit_cost",
+            "unit_price",
+            "status",
+        ],
+    },
+    "locations": {
+        "file": "locations.csv",
+        "key": "location_id",
+        "count": N_LOCATIONS,
+        "columns": [
+            "location_id",
+            "location_name",
+            "location_type",
+            "city",
+            "state_region",
+            "country",
+            "status",
+        ],
+    },
+    "employees": {
+        "file": "employees.csv",
+        "key": "employee_id",
+        "count": N_EMPLOYEES,
+        "columns": [
+            "employee_id",
+            "location_id",
+            "employee_name",
+            "department",
+            "role",
+            "hire_date",
+            "status",
+        ],
+    },
+    "machines": {
+        "file": "machines.csv",
+        "key": "machine_id",
+        "count": N_MACHINES,
+        "columns": [
+            "machine_id",
+            "location_id",
+            "machine_name",
+            "machine_type",
+            "installation_date",
+            "status",
+        ],
+    },
 }
 
 
-REQUIRED_COLUMNS = {
-    "accounts.csv": [
-        "account_id",
-        "account_name",
-        "account_type",
-        "industry",
-        "country",
-        "status",
-    ],
-    "customers.csv": [
-        "customer_id",
-        "account_id",
-        "customer_name",
-        "customer_segment",
-        "industry",
-        "country",
-        "status",
-    ],
-    "suppliers.csv": [
-        "supplier_id",
-        "supplier_name",
-        "supplier_category",
-        "country",
-        "status",
-    ],
-    "products.csv": [
-        "product_id",
-        "supplier_id",
-        "product_name",
-        "category",
-        "unit_cost",
-        "unit_price",
-        "status",
-    ],
-    "locations.csv": [
-        "location_id",
-        "location_name",
-        "location_type",
-        "city",
-        "state_region",
-        "country",
-        "status",
-    ],
-    "employees.csv": [
-        "employee_id",
-        "location_id",
-        "employee_name",
-        "department",
-        "role",
-        "hire_date",
-        "status",
-    ],
-    "machines.csv": [
-        "machine_id",
-        "location_id",
-        "machine_name",
-        "machine_type",
-        "installation_date",
-        "status",
-    ],
-}
+# ============================================================
+# HELPERS
+# ============================================================
+
+def load_dataset(name):
+
+    path = RAW_DATA_DIR / DATASETS[name]["file"]
+
+    if not path.exists():
+        raise FileNotFoundError(
+            f"Missing dataset: {path}"
+        )
+
+    return pd.read_csv(path)
 
 
-KEYS = {
-    "accounts.csv": "account_id",
-    "customers.csv": "customer_id",
-    "suppliers.csv": "supplier_id",
-    "products.csv": "product_id",
-    "locations.csv": "location_id",
-    "employees.csv": "employee_id",
-    "machines.csv": "machine_id",
-}
+def validate_columns(name, df):
+
+    expected = DATASETS[name]["columns"]
+
+    missing = [
+        column
+        for column in expected
+        if column not in df.columns
+    ]
+
+    if missing:
+        raise ValueError(
+            f"{name}: missing columns: {missing}"
+        )
 
 
-def load(filename):
+def validate_basic(name, df):
 
-    return pd.read_csv(
-        RAW_DATA_DIR / filename
+    definition = DATASETS[name]
+
+    if len(df) != definition["count"]:
+        raise ValueError(
+            f"{name}: expected "
+            f"{definition['count']:,} rows, "
+            f"found {len(df):,}."
+        )
+
+    if df.isna().any().any():
+        raise ValueError(
+            f"{name}: unexpected null values."
+        )
+
+    if df[definition["key"]].duplicated().any():
+        raise ValueError(
+            f"{name}: primary key is not unique."
+        )
+
+
+def validate_reference_relationship(
+    child,
+    child_column,
+    parent,
+    parent_column,
+    relationship,
+):
+
+    valid_values = set(
+        parent[parent_column]
     )
 
+    invalid = ~child[child_column].isin(
+        valid_values
+    )
+
+    if invalid.any():
+        raise ValueError(
+            f"{relationship}: "
+            f"{invalid.sum():,} invalid references."
+        )
+
+
+# ============================================================
+# MAIN
+# ============================================================
 
 def main():
 
-    print("=" * 60)
+    print("=" * 70)
     print("Project Atlas — Reference Data Validation")
-    print("Mode: CLEAN BASELINE")
-    print("=" * 60)
+    print("=" * 70)
 
-    failed = False
+    print("\nValidating reference datasets...")
 
-    # --------------------------------------------------------
-    # Record counts
-    # --------------------------------------------------------
+    datasets = {}
 
-    print("\n1. Record count validation")
+    for name in DATASETS:
 
-    data = {}
+        df = load_dataset(name)
 
-    for filename, expected in EXPECTED_COUNTS.items():
-
-        df = load(filename)
-        data[filename] = df
-
-        actual = len(df)
-
-        if actual == expected:
-            print(
-                f"PASS  {filename}: "
-                f"expected {expected:,}, found {actual:,}"
-            )
-        else:
-            print(
-                f"FAIL  {filename}: "
-                f"expected {expected:,}, found {actual:,}"
-            )
-            failed = True
-
-    # --------------------------------------------------------
-    # Required columns
-    # --------------------------------------------------------
-
-    print("\n2. Required column validation")
-
-    for filename, columns in REQUIRED_COLUMNS.items():
-
-        missing = [
-            column
-            for column in columns
-            if column not in data[filename].columns
-        ]
-
-        if not missing:
-            print(
-                f"PASS  {filename}: "
-                "all required columns present"
-            )
-        else:
-            print(
-                f"FAIL  {filename}: "
-                f"missing {missing}"
-            )
-            failed = True
-
-    # --------------------------------------------------------
-    # Business keys
-    # --------------------------------------------------------
-
-    print("\n3. Business-key validation")
-
-    for filename, key in KEYS.items():
-
-        series = data[filename][key]
-
-        if series.isna().any():
-            print(
-                f"FAIL  {filename}: "
-                f"{key} contains nulls"
-            )
-            failed = True
-        elif series.duplicated().any():
-            print(
-                f"FAIL  {filename}: "
-                f"{key} contains duplicates"
-            )
-            failed = True
-        else:
-            print(
-                f"PASS  {filename}: "
-                f"{key} is complete and unique"
-            )
-
-    # --------------------------------------------------------
-    # Foreign keys
-    # --------------------------------------------------------
-
-    print("\n4. Foreign-key validation")
-
-    checks = [
-        ("customers.csv", "account_id", "accounts.csv", "account_id"),
-        ("products.csv", "supplier_id", "suppliers.csv", "supplier_id"),
-        ("employees.csv", "location_id", "locations.csv", "location_id"),
-        ("machines.csv", "location_id", "locations.csv", "location_id"),
-    ]
-
-    for child_file, child_key, parent_file, parent_key in checks:
-
-        valid = data[child_file][child_key].isin(
-            set(data[parent_file][parent_key])
+        validate_columns(
+            name,
+            df,
         )
 
-        name = (
-            f"{child_file.replace('.csv', '').title()} "
-            f"→ {parent_file.replace('.csv', '').title()}"
+        validate_basic(
+            name,
+            df,
         )
 
-        if valid.all():
-            print(f"PASS  {name}")
-        else:
-            print(f"FAIL  {name}")
-            failed = True
+        datasets[name] = df
 
-    # --------------------------------------------------------
-    # Location coverage
-    # --------------------------------------------------------
+        print(
+            f"      ✓ {DATASETS[name]['file']:<28}"
+            f"{len(df):>10,} records"
+        )
 
-    print("\n5. Location coverage validation")
+    print("\nRunning relationship checks...")
 
-    locations = set(
-        data["locations.csv"]["location_id"]
+    validate_reference_relationship(
+        datasets["customers"],
+        "account_id",
+        datasets["accounts"],
+        "account_id",
+        "Customer → Account",
     )
 
-    employee_locations = set(
-        data["employees.csv"]["location_id"]
+    print("      ✓ Customer → Account")
+
+    validate_reference_relationship(
+        datasets["products"],
+        "supplier_id",
+        datasets["suppliers"],
+        "supplier_id",
+        "Product → Supplier",
     )
 
-    machine_locations = set(
-        data["machines.csv"]["location_id"]
+    print("      ✓ Product → Supplier")
+
+    validate_reference_relationship(
+        datasets["employees"],
+        "location_id",
+        datasets["locations"],
+        "location_id",
+        "Employee → Location",
     )
 
-    if locations.issubset(employee_locations):
-        print(
-            "PASS  Every location has at least one employee"
+    print("      ✓ Employee → Location")
+
+    validate_reference_relationship(
+        datasets["machines"],
+        "location_id",
+        datasets["locations"],
+        "location_id",
+        "Machine → Location",
+    )
+
+    print("      ✓ Machine → Location")
+
+    print("\nRunning business-rule checks...")
+
+    products = datasets["products"]
+
+    if (products["unit_cost"] <= 0).any():
+        raise ValueError(
+            "Products contain non-positive unit costs."
         )
-    else:
-        print(
-            "FAIL  Some locations have no employees"
+
+    if (products["unit_price"] <= 0).any():
+        raise ValueError(
+            "Products contain non-positive unit prices."
         )
-        failed = True
 
-    if locations.issubset(machine_locations):
-        print(
-            "PASS  Every location has at least one machine"
+    if (
+        products["unit_price"]
+        < products["unit_cost"]
+    ).any():
+        raise ValueError(
+            "Products contain prices below unit cost."
         )
-    else:
-        print(
-            "FAIL  Some locations have no machines"
+
+    print("      ✓ Product pricing")
+
+    employees = datasets["employees"].copy()
+    machines = datasets["machines"].copy()
+
+    employees["hire_date"] = pd.to_datetime(
+        employees["hire_date"],
+        errors="coerce",
+    )
+
+    machines["installation_date"] = pd.to_datetime(
+        machines["installation_date"],
+        errors="coerce",
+    )
+
+    if employees["hire_date"].isna().any():
+        raise ValueError(
+            "Employees contain invalid hire dates."
         )
-        failed = True
 
-    # --------------------------------------------------------
-    # Product rules
-    # --------------------------------------------------------
+    if machines["installation_date"].isna().any():
+        raise ValueError(
+            "Machines contain invalid installation dates."
+        )
 
-    print("\n6. Product business rules")
+    print("      ✓ Lifecycle dates")
 
-    products = data["products.csv"]
+    total_records = sum(
+        len(df)
+        for df in datasets.values()
+    )
 
-    checks = [
-        (
-            "Product unit costs are positive",
-            (products["unit_cost"] > 0).all(),
-        ),
-        (
-            "Product unit prices are positive",
-            (products["unit_price"] > 0).all(),
-        ),
-        (
-            "Product prices are not below cost",
-            (
-                products["unit_price"]
-                >= products["unit_cost"]
-            ).all(),
-        ),
-    ]
+    print("\n" + "-" * 70)
+    print("VALIDATION SUMMARY")
+    print("-" * 70)
+    print(f"Datasets validated                  : 7")
+    print(f"Records validated                   : {total_records:,.0f}")
+    print(f"Validation status                   : PASSED")
+    print(f"Output                              : {RAW_DATA_DIR}")
 
-    for message, passed in checks:
-
-        if passed:
-            print(f"PASS  {message}")
-        else:
-            print(f"FAIL  {message}")
-            failed = True
-
-    # --------------------------------------------------------
-    # Result
-    # --------------------------------------------------------
-
-    print("\n" + "=" * 60)
-
-    if failed:
-        print("REFERENCE DATA VALIDATION FAILED")
-        print("=" * 60)
-        raise SystemExit(1)
-
-    print("REFERENCE DATA VALIDATION PASSED")
-    print("Clean reference datasets are ready.")
-    print("=" * 60)
+    print("\n" + "=" * 70)
+    print("REFERENCE DATA VALIDATION COMPLETE")
+    print("=" * 70)
 
 
 if __name__ == "__main__":

@@ -1,6 +1,10 @@
 """
 Project Atlas
 Phase 3 — Data Generation Configuration
+
+Central configuration for reproducible synthetic data generation.
+
+All Phase 3 generators import configuration from this file.
 """
 
 from pathlib import Path
@@ -14,7 +18,7 @@ SEED = 42
 
 
 # ============================================================
-# DATE RANGE
+# PROJECT DATE RANGE
 # ============================================================
 
 START_DATE = "2019-01-01"
@@ -26,7 +30,14 @@ END_DATE = "2025-12-31"
 # ============================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-RAW_DATA_DIR = PROJECT_ROOT / "data" / "raw"
+
+DATA_GENERATION_DIR = (
+    PROJECT_ROOT / "03_Data_Generation"
+)
+
+RAW_DATA_DIR = (
+    DATA_GENERATION_DIR / "data" / "raw"
+)
 
 
 # ============================================================
@@ -58,7 +69,7 @@ N_INVENTORY = 500_000
 
 
 # ============================================================
-# QUALITY ISSUE RATES
+# CONTROLLED QUALITY ISSUE RATES
 # ============================================================
 
 MISSING_RATE = 0.05
@@ -94,4 +105,7 @@ BUSINESS_DATASETS = (
     "inventory",
 )
 
-ALL_DATASETS = REFERENCE_DATASETS + BUSINESS_DATASETS
+ALL_DATASETS = (
+    REFERENCE_DATASETS
+    + BUSINESS_DATASETS
+)

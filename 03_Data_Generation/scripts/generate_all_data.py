@@ -1,110 +1,159 @@
+"""
+Project Atlas
+Phase 3 — Complete Data Generation Pipeline
+
+Workflow:
+
+    1. Generate reference data
+    2. Validate reference data
+    3. Generate business data
+    4. Validate business data
+    5. Inject controlled quality issues
+
+Clean baseline:
+
+    03_Data_Generation/data/raw/
+
+Intentionally imperfect data:
+
+    03_Data_Generation/data/quality_issues/
+"""
+
 from pathlib import Path
 import subprocess
 import sys
 
 
+# ============================================================
+# PATHS
+# ============================================================
+
 SCRIPT_DIR = Path(__file__).resolve().parent
 
 
-def run_stage(script_name):
-    """Run a Phase 3 script and stop the pipeline if it fails."""
+PIPELINE = [
+    (
+        "Reference Data Generation",
+        SCRIPT_DIR / "generate_reference_data.py",
+    ),
+    (
+        "Reference Data Validation",
+        SCRIPT_DIR / "validate_reference_data.py",
+    ),
+    (
+        "Business Data Generation",
+        SCRIPT_DIR / "generate_business_data.py",
+    ),
+    (
+        "Business Data Validation",
+        SCRIPT_DIR / "validate_business_data.py",
+    ),
+    (
+        "Controlled Quality Issue Injection",
+        SCRIPT_DIR / "inject_quality_issues.py",
+    ),
+]
 
-    script_path = SCRIPT_DIR / script_name
+
+# ============================================================
+# HELPERS
+# ============================================================
+
+def run_step(number, total, name, script):
+
+    print("\n" + "=" * 70)
+    print(
+        f"PIPELINE STEP {number}/{total} — {name}"
+    )
+    print("=" * 70)
 
     result = subprocess.run(
-        [sys.executable, str(script_path)],
-        cwd=SCRIPT_DIR,
-        capture_output=True,
-        text=True
+        [
+            sys.executable,
+            str(script),
+        ],
+        check=False,
     )
 
     if result.returncode != 0:
-        print()
-        print(f"ERROR: {script_name} failed.")
-        print()
-        print("Details:")
-        print("-" * 60)
 
-        if result.stdout:
-            print(result.stdout)
+        print("\n" + "!" * 70)
+        print(
+            f"PIPELINE FAILED — {name}"
+        )
+        print("!" * 70)
 
-        if result.stderr:
-            print(result.stderr)
+        raise SystemExit(
+            result.returncode
+        )
 
-        print("-" * 60)
-        print()
-        print("Phase 3 stopped.")
-        print("Fix the error above and run:")
-        print("python3 scripts/generate_all_data.py")
+    print(
+        f"\n✓ Step {number}/{total} completed successfully."
+    )
 
-        sys.exit(result.returncode)
 
+# ============================================================
+# MAIN
+# ============================================================
 
 def main():
-    print("Project Atlas — Phase 3: Data Generation")
-    print("=========================================")
-    print()
 
-    # ---------------------------------------------------------
-    # 1. Reference data
-    # ---------------------------------------------------------
-    print("[1/5] Generating reference data")
+    print("=" * 70)
+    print("Project Atlas — Phase 3 Data Generation Pipeline")
+    print("=" * 70)
 
-    run_stage("generate_reference_data.py")
+    print(
+        "\nPipeline:"
+    )
 
-    print("      ✓ 7 datasets generated")
-    print()
+    print(
+        "  Reference Generation"
+        " → Reference Validation"
+        " → Business Generation"
+        " → Business Validation"
+        " → Quality Injection"
+    )
 
-    # ---------------------------------------------------------
-    # 2. Business data
-    # ---------------------------------------------------------
-    print("[2/5] Generating business data")
+    total_steps = len(PIPELINE)
 
-    run_stage("generate_business_data.py")
+    for number, (name, script) in enumerate(
+        PIPELINE,
+        start=1,
+    ):
 
-    print("      ✓ 9 datasets generated")
-    print()
+        run_step(
+            number,
+            total_steps,
+            name,
+            script,
+        )
 
-    # ---------------------------------------------------------
-    # 3. Clean baseline validation
-    # ---------------------------------------------------------
-    print("[3/5] Validating clean baseline")
+    print("\n" + "-" * 70)
+    print("PHASE 3 SUMMARY")
+    print("-" * 70)
 
-    run_stage("validate_reference_data.py")
-    print("      ✓ Reference data passed")
+    print(
+        "Status                              : PASSED"
+    )
 
-    run_stage("validate_business_data.py")
-    print("      ✓ Business data passed")
-    print()
+    print(
+        "Clean baseline                      : "
+        "03_Data_Generation/data/raw/"
+    )
 
-    # ---------------------------------------------------------
-    # 4. Quality issue injection
-    # ---------------------------------------------------------
-    print("[4/5] Injecting controlled quality issues")
+    print(
+        "Quality-issue dataset               : "
+        "03_Data_Generation/data/quality_issues/"
+    )
 
-    run_stage("inject_quality_issues.py")
+    print(
+        "Next phase                          : "
+        "Phase 4 — Data Quality"
+    )
 
-    print("      ✓ 16 datasets updated")
-    print()
-
-    # ---------------------------------------------------------
-    # 5. Finalization
-    # ---------------------------------------------------------
-    print("[5/5] Finalizing Phase 3")
-
-    print("      ✓ Synthetic datasets are ready for Phase 4")
-    print()
-
-    print("Phase 3 complete.")
-    print()
-    print("Output:")
-    print("data/raw/")
-    print()
-    print("Next phase:")
-    print("Phase 4 — Data Quality")
-    print()
-    print("Run:")
-    print("cd ../04_Data_Quality")
+    print("\n" + "=" * 70)
+    print("PROJECT ATLAS — PHASE 3 COMPLETE")
+    print("=" * 70)
 
 
 if __name__ == "__main__":

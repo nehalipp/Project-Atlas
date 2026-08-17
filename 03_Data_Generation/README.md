@@ -1,12 +1,13 @@
 # Project Atlas — Phase 3: Data Generation
 
-Phase 3 creates the synthetic operational data used by Project Atlas.
+Phase 3 creates the synthetic operational source data used by Project Atlas.
 
-The datasets are generated with Python, Faker, and Pandas using controlled
-relationships, realistic business behavior, and reproducible randomness.
+The data is generated with Python, Faker, Pandas, and NumPy using the
+approved Phase 2 Data Model, controlled relationships, realistic business
+behavior, and reproducible randomness.
 
-Phase 3 also intentionally introduces controlled data-quality issues so that
-Phase 4 can demonstrate data profiling, validation, and remediation.
+All data is synthetic and intended for portfolio and demonstration purposes
+only.
 
 ---
 
@@ -17,13 +18,15 @@ Phase 3 produces:
 1. Clean synthetic reference data
 2. Clean synthetic business-process data
 3. A validated clean baseline
-4. Controlled data-quality issues across all 16 datasets
+4. Intentionally imperfect copies for Phase 4 Data Quality
 
-All data is synthetic and exists only for Project Atlas.
+The clean baseline is preserved separately from the quality-issue datasets.
 
 ---
 
 ## Datasets
+
+Phase 3 generates all 16 approved Atlas datasets.
 
 ### Reference Data
 
@@ -51,144 +54,162 @@ All data is synthetic and exists only for Project Atlas.
 | waste.csv | 100,000 |
 | inventory.csv | 500,000 |
 
-Total: **16 synthetic datasets**
-
-Output location:
+Clean baseline:
 
 ```text
-data/raw/
+16 datasets
+1,934,100 records
 ````
 
 ---
 
 ## Data Generation Flow
 
-Phase 3 follows this sequence:
+The complete Phase 3 workflow is:
 
 ```text
-Generate Reference Data
+Reference Generation
         ↓
-Generate Business Data
+Reference Validation
         ↓
-Validate Clean Baseline
+Business Generation
         ↓
-Inject Controlled Quality Issues
+Business Validation
+        ↓
+Controlled Quality Injection
         ↓
 Phase 3 Complete
 ```
 
-The clean baseline is validated before quality issues are introduced. This
-ensures that intentionally defective data can be distinguished from accidental
-generation errors.
+The clean baseline is validated before any quality issues are introduced.
 
 ---
 
-## Controlled Quality Injection
-
-The `inject_quality_issues.py` script introduces realistic and controlled
-defects across all 16 datasets.
-
-Quality issues include:
-
-* Missing values (`NaN`)
-* Hidden missing-value placeholders
-* Exact duplicate rows
-* Partial duplicates
-* Invalid foreign-key references
-* Structural inconsistencies
-* Incorrect data types
-* Mixed date formats
-* Leading/trailing whitespace
-* Invalid categories
-* Negative or impossible numeric values
-* Outliers and anomalies
-* Business-rule violations
-* Referential-integrity issues
-* Reconciliation inconsistencies
-
-The purpose is not to make the data unusable. The defects are intentionally
-controlled so Phase 4 can identify, measure, validate, and remediate them.
-
----
-
-## Phase 3 Orchestration
-
-The complete Phase 3 workflow is controlled by:
+## Scripts
 
 ```text
-scripts/generate_all_data.py
+scripts/
+├── generate_reference_data.py
+├── validate_reference_data.py
+├── generate_business_data.py
+├── validate_business_data.py
+├── inject_quality_issues.py
+└── generate_all_data.py
 ```
 
-This is the **primary script for normal Phase 3 execution**.
+### Recommended execution
 
-It automatically runs:
-
-```text
-generate_reference_data.py
-generate_business_data.py
-validate_reference_data.py
-validate_business_data.py
-inject_quality_issues.py
-```
-
-Successful execution produces a concise progress summary and stops
-automatically if any stage fails.
-
----
-
-## Running Phase 3
-
-From the `03_Data_Generation` directory:
+Run the complete pipeline from the repository root:
 
 ```bash
-python3 scripts/generate_all_data.py
+python3 03_Data_Generation/scripts/generate_all_data.py
 ```
 
-A successful run ends with:
+The orchestration script runs all five Phase 3 stages in the correct order
+and stops if a required stage fails.
+
+Individual scripts can also be run when troubleshooting or validating a
+specific stage.
+
+---
+
+## Output
+
+Phase 3 creates two separate data states:
 
 ```text
-Phase 3 complete.
-
-Output:
-data/raw/
-
-Next phase:
-Phase 4 — Data Quality
-
-Run:
-cd ../04_Data_Quality
+03_Data_Generation/data/
+├── raw/
+└── quality_issues/
 ```
 
-The underlying scripts do not normally need to be executed manually.
+### `data/raw/`
+
+Contains the clean, validated synthetic baseline.
+
+This data is used as the trusted source baseline for downstream development
+and reconciliation.
+
+### `data/quality_issues/`
+
+Contains intentionally imperfect copies created by
+`inject_quality_issues.py`.
+
+These datasets are the primary input for Phase 4 — Data Quality.
+
+The quality-issue datasets do not replace the clean baseline.
+
+---
+
+## Controlled Quality Issues
+
+The quality-injection process introduces deliberate defects such as:
+
+* Missing values
+* Duplicate records
+* Invalid references
+* Invalid categories
+* Invalid numeric values
+* Outliers
+* Referential-integrity issues
+* Business-rule violations
+* Structural and consistency issues
+
+The purpose is to provide realistic data-quality challenges for Phase 4.
+
+The defects are controlled and reproducible rather than uncontrolled random
+corruption.
+
+---
+
+## Validation
+
+The clean baseline is validated before quality injection.
+
+Reference validation covers:
+
+* Record counts
+* Relationship integrity
+* Product pricing
+* Lifecycle dates
+
+Business validation covers:
+
+* Record counts
+* Referential integrity
+* Customer/account consistency
+* Revenue calculations
+* Machine/location consistency
+* Employee/location consistency
+* Inventory grain
+
+A successful Phase 3 run therefore establishes both:
+
+```text
+Validated Clean Baseline
++
+Controlled Imperfect Dataset
+```
 
 ---
 
 ## Reproducibility
 
-Data generation uses a controlled project seed so that the synthetic
-datasets and injected quality issues can be reproduced consistently.
+Generation is controlled through:
 
-Run the Phase 3 orchestration script again whenever the complete raw dataset
-needs to be regenerated.
+```text
+03_Data_Generation/config/generation_config.py
+```
 
----
+The project uses:
 
-## Phase Boundary
+```text
+Random Seed: 42
+Date Range: 2019-01-01 to 2025-12-31
+```
 
-Phase 3 is responsible for **creating intentionally imperfect synthetic
-datasets**.
-
-Phase 4 is responsible for:
-
-* Data profiling
-* Data-quality measurement
-* Validation
-* Business-rule checks
-* Referential-integrity checks
-* Quality reporting
-* Identifying and documenting remediation requirements
-
-Phase 3 does not perform the final data-quality remediation.
+Running the pipeline with the same configuration and generator version
+reproduces the clean baseline.
 
 ---
 
@@ -197,7 +218,36 @@ Phase 3 does not perform the final data-quality remediation.
 * Python
 * Faker
 * Pandas
-* NumPy where useful
+* NumPy
+* CSV
+
+No additional orchestration framework or data platform is required.
+
+---
+
+## Phase Boundary
+
+Phase 3 is responsible for:
+
+* Synthetic data generation
+* Relationship-aware generation
+* Clean baseline validation
+* Controlled quality-issue injection
+
+Phase 4 is responsible for:
+
+* Data profiling
+* Data-quality measurement
+* Completeness
+* Uniqueness
+* Validity
+* Consistency
+* Referential integrity
+* Business-rule validation
+* Quality reporting
+* Remediation
+
+Phase 3 does not perform final data-quality remediation.
 
 ---
 
@@ -212,4 +262,5 @@ validated, and controlled quality issues have been injected.
 
 ---
 
-> **Note:** All data used in Project Atlas is synthetic and intended for portfolio and demonstration purposes only.
+> **Note:** All data used in Project Atlas is synthetic and intended for
+> portfolio and demonstration purposes only.

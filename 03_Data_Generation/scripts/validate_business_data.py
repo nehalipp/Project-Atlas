@@ -2,14 +2,14 @@
 Project Atlas
 Phase 3 — Business Data Validation
 
-Validates the clean business datasets.
-
-Run this BEFORE quality issue injection.
+Validates the nine approved business datasets against the
+Phase 2 fact grains, relationships and business rules.
 """
 
 from pathlib import Path
 import sys
 
+import numpy as np
 import pandas as pd
 
 
@@ -38,651 +38,581 @@ from generation_config import (
 )
 
 
-EXPECTED_COUNTS = {
-    "sales.csv": N_SALES,
-    "production.csv": N_PRODUCTION,
-    "maintenance.csv": N_MAINTENANCE,
-    "financial_transactions.csv": N_FINANCIAL_TRANSACTIONS,
-    "budget.csv": N_BUDGET,
-    "energy.csv": N_ENERGY,
-    "emissions.csv": N_EMISSIONS,
-    "waste.csv": N_WASTE,
-    "inventory.csv": N_INVENTORY,
-}
+START = pd.Timestamp(START_DATE)
+END = pd.Timestamp(END_DATE)
 
 
-KEYS = {
-    "sales.csv": "transaction_id",
-    "production.csv": "production_id",
-    "maintenance.csv": "maintenance_id",
-    "financial_transactions.csv": "financial_transaction_id",
-    "budget.csv": "budget_id",
-    "energy.csv": "energy_id",
-    "emissions.csv": "emissions_id",
-    "waste.csv": "waste_id",
-    "inventory.csv": "inventory_id",
-}
-
-
-REQUIRED_COLUMNS = {
-    "sales.csv": [
-        "transaction_id",
-        "transaction_date",
-        "account_id",
-        "customer_id",
-        "product_id",
-        "location_id",
-        "quantity",
-        "unit_price",
-        "discount_amount",
-        "revenue",
-    ],
-    "production.csv": [
-        "production_id",
-        "production_date",
-        "product_id",
-        "location_id",
-        "machine_id",
-        "employee_id",
-        "planned_quantity",
-        "produced_quantity",
-        "defect_quantity",
-        "production_hours",
-    ],
-    "maintenance.csv": [
-        "maintenance_id",
-        "maintenance_date",
-        "location_id",
-        "machine_id",
-        "employee_id",
-        "maintenance_type",
-        "maintenance_hours",
-        "downtime_hours",
-        "maintenance_cost",
-    ],
-    "financial_transactions.csv": [
-        "financial_transaction_id",
-        "transaction_date",
-        "location_id",
-        "category",
-        "transaction_type",
-        "amount",
-    ],
-    "budget.csv": [
-        "budget_id",
-        "budget_date",
-        "location_id",
-        "budget_category",
-        "budget_amount",
-    ],
-    "energy.csv": [
-        "energy_id",
-        "measurement_date",
-        "location_id",
-        "energy_type",
-        "consumption",
-        "unit",
-        "energy_cost",
-    ],
-    "emissions.csv": [
-        "emissions_id",
-        "emissions_date",
-        "location_id",
-        "emission_source",
-        "co2e_amount",
-        "unit",
-    ],
-    "waste.csv": [
-        "waste_id",
-        "waste_date",
-        "location_id",
-        "waste_type",
-        "waste_quantity",
-        "unit",
-        "disposal_method",
-    ],
-    "inventory.csv": [
-        "inventory_id",
-        "inventory_date",
-        "product_id",
-        "location_id",
-        "opening_quantity",
-        "received_quantity",
-        "issued_quantity",
-        "closing_quantity",
-        "reorder_point",
-    ],
-}
-
-
-def load(filename):
-
-    return pd.read_csv(
-        RAW_DATA_DIR / filename
-    )
-
-
-def main():
-
-    print("=" * 60)
-    print("Project Atlas — Business Data Validation")
-    print("Mode: CLEAN BASELINE")
-    print("=" * 60)
-
-    failed = False
-    data = {}
-
-    # --------------------------------------------------------
-    # Record counts
-    # --------------------------------------------------------
-
-    print("\n1. Record count validation")
-
-    for filename, expected in EXPECTED_COUNTS.items():
-
-        df = load(filename)
-        data[filename] = df
-
-        actual = len(df)
-
-        if actual == expected:
-            print(
-                f"PASS  {filename}: "
-                f"expected {expected:,}, found {actual:,}"
-            )
-        else:
-            print(
-                f"FAIL  {filename}: "
-                f"expected {expected:,}, found {actual:,}"
-            )
-            failed = True
-
-    # --------------------------------------------------------
-    # Required columns
-    # --------------------------------------------------------
-
-    print("\n2. Required column validation")
-
-    for filename, columns in REQUIRED_COLUMNS.items():
-
-        missing = [
-            column
-            for column in columns
-            if column not in data[filename].columns
-        ]
-
-        if not missing:
-            print(
-                f"PASS  {filename}: "
-                "all required columns present"
-            )
-        else:
-            print(
-                f"FAIL  {filename}: "
-                f"missing {missing}"
-            )
-            failed = True
-
-    # --------------------------------------------------------
-    # Stop if structure is invalid
-    # --------------------------------------------------------
-
-    if failed:
-
-        print("\n" + "=" * 60)
-        print("BUSINESS DATA VALIDATION FAILED")
-        print("Fix the clean baseline before continuing.")
-        print("=" * 60)
-
-        raise SystemExit(1)
-
-    # --------------------------------------------------------
-    # Business keys
-    # --------------------------------------------------------
-
-    print("\n3. Business-key validation")
-
-    for filename, key in KEYS.items():
-
-        series = data[filename][key]
-
-        if series.isna().any():
-            print(
-                f"FAIL  {filename}: {key} contains nulls"
-            )
-            failed = True
-        elif series.duplicated().any():
-            print(
-                f"FAIL  {filename}: {key} contains duplicates"
-            )
-            failed = True
-        else:
-            print(
-                f"PASS  {filename}: "
-                f"{key} contains no nulls or duplicates"
-            )
-
-    # --------------------------------------------------------
-    # Required fields
-    # --------------------------------------------------------
-
-    print("\n4. Required-field null validation")
-
-    required_fields = {
-        "sales.csv": [
-            "transaction_id",
-            "transaction_date",
+DATASETS = {
+    "sales": {
+        "file": "sales.csv",
+        "key": "sales_id",
+        "count": N_SALES,
+        "columns": [
+            "sales_id",
+            "date",
             "account_id",
             "customer_id",
             "product_id",
             "location_id",
+            "quantity",
+            "unit_price",
+            "discount_rate",
+            "revenue",
         ],
-        "production.csv": [
+    },
+    "production": {
+        "file": "production.csv",
+        "key": "production_id",
+        "count": N_PRODUCTION,
+        "columns": [
             "production_id",
-            "production_date",
+            "date",
             "product_id",
             "location_id",
             "machine_id",
             "employee_id",
+            "planned_quantity",
+            "quantity_produced",
+            "production_hours",
+            "production_status",
         ],
-        "maintenance.csv": [
+    },
+    "maintenance": {
+        "file": "maintenance.csv",
+        "key": "maintenance_id",
+        "count": N_MAINTENANCE,
+        "columns": [
             "maintenance_id",
-            "maintenance_date",
+            "date",
             "location_id",
             "machine_id",
             "employee_id",
+            "maintenance_type",
+            "downtime_hours",
+            "maintenance_cost",
         ],
-        "financial_transactions.csv": [
+    },
+    "financial_transactions": {
+        "file": "financial_transactions.csv",
+        "key": "financial_transaction_id",
+        "count": N_FINANCIAL_TRANSACTIONS,
+        "columns": [
             "financial_transaction_id",
-            "transaction_date",
+            "date",
+            "location_id",
+            "transaction_type",
+            "amount",
+            "description",
+        ],
+    },
+    "budget": {
+        "file": "budget.csv",
+        "key": "budget_id",
+        "count": N_BUDGET,
+        "columns": [
+            "budget_id",
+            "date",
             "location_id",
             "category",
+            "budget_amount",
         ],
-        "budget.csv": [
-            "budget_id",
-            "budget_date",
-            "location_id",
-            "budget_category",
-        ],
-        "energy.csv": [
+    },
+    "energy": {
+        "file": "energy.csv",
+        "key": "energy_id",
+        "count": N_ENERGY,
+        "columns": [
             "energy_id",
-            "measurement_date",
+            "date",
             "location_id",
             "energy_type",
+            "consumption",
+            "unit",
         ],
-        "emissions.csv": [
+    },
+    "emissions": {
+        "file": "emissions.csv",
+        "key": "emissions_id",
+        "count": N_EMISSIONS,
+        "columns": [
             "emissions_id",
-            "emissions_date",
+            "date",
             "location_id",
-            "emission_source",
+            "source",
+            "co2_kg",
         ],
-        "waste.csv": [
+    },
+    "waste": {
+        "file": "waste.csv",
+        "key": "waste_id",
+        "count": N_WASTE,
+        "columns": [
             "waste_id",
-            "waste_date",
+            "date",
             "location_id",
             "waste_type",
+            "quantity",
+            "unit",
+            "disposal_method",
         ],
-        "inventory.csv": [
+    },
+    "inventory": {
+        "file": "inventory.csv",
+        "key": "inventory_id",
+        "count": N_INVENTORY,
+        "columns": [
             "inventory_id",
-            "inventory_date",
+            "date",
             "product_id",
             "location_id",
+            "quantity_on_hand",
+            "reorder_point",
+            "inventory_value",
         ],
-    }
+    },
+}
 
-    for filename, columns in required_fields.items():
 
-        for column in columns:
+REFERENCE_FILES = {
+    "accounts": "accounts.csv",
+    "customers": "customers.csv",
+    "products": "products.csv",
+    "locations": "locations.csv",
+    "employees": "employees.csv",
+    "machines": "machines.csv",
+}
 
-            if data[filename][column].isna().any():
-                print(
-                    f"FAIL  {filename}: "
-                    f"{column} contains nulls"
-                )
-                failed = True
-            else:
-                print(
-                    f"PASS  {filename}: "
-                    f"{column} contains no nulls"
-                )
 
-    # --------------------------------------------------------
-    # Reference data
-    # --------------------------------------------------------
+# ============================================================
+# HELPERS
+# ============================================================
+
+def load_csv(filename):
+
+    path = RAW_DATA_DIR / filename
+
+    if not path.exists():
+        raise FileNotFoundError(
+            f"Missing dataset: {path}"
+        )
+
+    return pd.read_csv(path)
+
+
+def validate_columns(name, df):
+
+    missing = [
+        column
+        for column in DATASETS[name]["columns"]
+        if column not in df.columns
+    ]
+
+    if missing:
+        raise ValueError(
+            f"{name}: missing columns: {missing}"
+        )
+
+
+def validate_basic(name, df):
+
+    definition = DATASETS[name]
+
+    if len(df) != definition["count"]:
+        raise ValueError(
+            f"{name}: expected "
+            f"{definition['count']:,} rows, "
+            f"found {len(df):,}."
+        )
+
+    if df.isna().any().any():
+        raise ValueError(
+            f"{name}: unexpected null values."
+        )
+
+    if df[definition["key"]].duplicated().any():
+        raise ValueError(
+            f"{name}: primary key is not unique."
+        )
+
+
+def validate_ids(
+    df,
+    column,
+    reference,
+    reference_column,
+    relationship,
+):
+
+    invalid = ~df[column].isin(
+        set(reference[reference_column])
+    )
+
+    if invalid.any():
+        raise ValueError(
+            f"{relationship}: "
+            f"{invalid.sum():,} invalid references."
+        )
+
+
+def validate_dates(name, df):
+
+    dates = pd.to_datetime(
+        df["date"],
+        errors="coerce",
+    )
+
+    if dates.isna().any():
+        raise ValueError(
+            f"{name}: invalid dates detected."
+        )
+
+    if (dates < START).any() or (dates > END).any():
+        raise ValueError(
+            f"{name}: dates outside Atlas period."
+        )
+
+
+# ============================================================
+# MAIN
+# ============================================================
+
+def main():
+
+    print("=" * 70)
+    print("Project Atlas — Business Data Validation")
+    print("=" * 70)
+
+    print("\nLoading reference datasets...")
 
     references = {
-        "accounts": load("accounts.csv"),
-        "customers": load("customers.csv"),
-        "products": load("products.csv"),
-        "locations": load("locations.csv"),
-        "employees": load("employees.csv"),
-        "machines": load("machines.csv"),
+        name: load_csv(filename)
+        for name, filename in REFERENCE_FILES.items()
     }
 
-    # --------------------------------------------------------
-    # Foreign keys
-    # --------------------------------------------------------
-
-    print("\n5. Foreign-key validation")
-
-    fk_checks = [
-        ("sales.csv", "account_id", "accounts", "account_id"),
-        ("sales.csv", "customer_id", "customers", "customer_id"),
-        ("sales.csv", "product_id", "products", "product_id"),
-        ("sales.csv", "location_id", "locations", "location_id"),
-
-        ("production.csv", "product_id", "products", "product_id"),
-        ("production.csv", "location_id", "locations", "location_id"),
-        ("production.csv", "machine_id", "machines", "machine_id"),
-        ("production.csv", "employee_id", "employees", "employee_id"),
-
-        ("maintenance.csv", "location_id", "locations", "location_id"),
-        ("maintenance.csv", "machine_id", "machines", "machine_id"),
-        ("maintenance.csv", "employee_id", "employees", "employee_id"),
-
-        ("financial_transactions.csv", "location_id", "locations", "location_id"),
-        ("budget.csv", "location_id", "locations", "location_id"),
-        ("energy.csv", "location_id", "locations", "location_id"),
-        ("emissions.csv", "location_id", "locations", "location_id"),
-        ("waste.csv", "location_id", "locations", "location_id"),
-        ("inventory.csv", "product_id", "products", "product_id"),
-        ("inventory.csv", "location_id", "locations", "location_id"),
-    ]
-
-    for child_file, child_key, parent, parent_key in fk_checks:
-
-        valid = data[child_file][child_key].isin(
-            set(references[parent][parent_key])
+    for name in REFERENCE_FILES:
+        print(
+            f"      ✓ {name}.csv"
         )
 
-        if valid.all():
-            print(
-                f"PASS  {child_file}: "
-                f"{child_key} → {parent}.{parent_key}"
-            )
-        else:
-            print(
-                f"FAIL  {child_file}: "
-                f"{child_key} contains invalid references"
-            )
-            failed = True
+    print("\nValidating business datasets...")
 
-    # --------------------------------------------------------
-    # Business consistency
-    # --------------------------------------------------------
+    datasets = {}
 
-    print("\n6. Business consistency validation")
+    for name, definition in DATASETS.items():
 
-    customer_accounts = references["customers"].set_index(
-        "customer_id"
-    )["account_id"]
+        df = load_csv(
+            definition["file"]
+        )
 
-    sales = data["sales.csv"]
+        validate_columns(
+            name,
+            df,
+        )
 
-    expected_accounts = sales["customer_id"].map(
-        customer_accounts
+        validate_basic(
+            name,
+            df,
+        )
+
+        validate_dates(
+            name,
+            df,
+        )
+
+        datasets[name] = df
+
+        print(
+            f"      ✓ {definition['file']:<32}"
+            f"{len(df):>10,} records"
+        )
+
+    print("\nRunning referential-integrity checks...")
+
+    sales = datasets["sales"]
+
+    validate_ids(
+        sales,
+        "account_id",
+        references["accounts"],
+        "account_id",
+        "Sales → Account",
     )
 
-    if (
-        sales["account_id"].to_numpy()
-        == expected_accounts.to_numpy()
-    ).all():
-
-        print(
-            "PASS  Sales account matches customer account"
-        )
-    else:
-        print(
-            "FAIL  Sales account does not match customer account"
-        )
-        failed = True
-
-    machine_locations = references["machines"].set_index(
-        "machine_id"
-    )["location_id"]
-
-    production = data["production.csv"]
-
-    expected_locations = production["machine_id"].map(
-        machine_locations
+    validate_ids(
+        sales,
+        "customer_id",
+        references["customers"],
+        "customer_id",
+        "Sales → Customer",
     )
 
-    if (
-        production["location_id"].to_numpy()
-        == expected_locations.to_numpy()
-    ).all():
-
-        print(
-            "PASS  Production machine location matches machine master"
-        )
-    else:
-        print(
-            "FAIL  Production machine location mismatch"
-        )
-        failed = True
-
-    maintenance = data["maintenance.csv"]
-
-    expected_locations = maintenance["machine_id"].map(
-        machine_locations
+    validate_ids(
+        sales,
+        "product_id",
+        references["products"],
+        "product_id",
+        "Sales → Product",
     )
 
-    if (
-        maintenance["location_id"].to_numpy()
-        == expected_locations.to_numpy()
-    ).all():
-
-        print(
-            "PASS  Maintenance machine location matches machine master"
-        )
-    else:
-        print(
-            "FAIL  Maintenance machine location mismatch"
-        )
-        failed = True
-
-    employee_locations = references["employees"].set_index(
-        "employee_id"
-    )["location_id"]
-
-    expected_locations = production["employee_id"].map(
-        employee_locations
+    validate_ids(
+        sales,
+        "location_id",
+        references["locations"],
+        "location_id",
+        "Sales → Location",
     )
 
-    if (
-        production["location_id"].to_numpy()
-        == expected_locations.to_numpy()
+    print("      ✓ Sales → Account")
+    print("      ✓ Sales → Customer")
+    print("      ✓ Sales → Product")
+    print("      ✓ Sales → Location")
+
+    production = datasets["production"]
+
+    for column, reference, relationship in [
+        (
+            "product_id",
+            references["products"],
+            "Production → Product",
+        ),
+        (
+            "location_id",
+            references["locations"],
+            "Production → Location",
+        ),
+        (
+            "machine_id",
+            references["machines"],
+            "Production → Machine",
+        ),
+        (
+            "employee_id",
+            references["employees"],
+            "Production → Employee",
+        ),
+    ]:
+        validate_ids(
+            production,
+            column,
+            reference,
+            column,
+            relationship,
+        )
+
+    print("      ✓ Production references")
+
+    maintenance = datasets["maintenance"]
+
+    for column, reference, relationship in [
+        (
+            "location_id",
+            references["locations"],
+            "Maintenance → Location",
+        ),
+        (
+            "machine_id",
+            references["machines"],
+            "Maintenance → Machine",
+        ),
+        (
+            "employee_id",
+            references["employees"],
+            "Maintenance → Employee",
+        ),
+    ]:
+        validate_ids(
+            maintenance,
+            column,
+            reference,
+            column,
+            relationship,
+        )
+
+    print("      ✓ Maintenance references")
+
+    for name in [
+        "financial_transactions",
+        "budget",
+        "energy",
+        "emissions",
+        "waste",
+    ]:
+        validate_ids(
+            datasets[name],
+            "location_id",
+            references["locations"],
+            "location_id",
+            f"{name} → Location",
+        )
+
+    print("      ✓ Location references")
+
+    inventory = datasets["inventory"]
+
+    validate_ids(
+        inventory,
+        "product_id",
+        references["products"],
+        "product_id",
+        "Inventory → Product",
+    )
+
+    validate_ids(
+        inventory,
+        "location_id",
+        references["locations"],
+        "location_id",
+        "Inventory → Location",
+    )
+
+    print("      ✓ Inventory → Product")
+    print("      ✓ Inventory → Location")
+
+    print("\nRunning business-rule checks...")
+
+    customer_accounts = (
+        references["customers"]
+        .set_index("customer_id")["account_id"]
+    )
+
+    if not (
+        sales["account_id"]
+        == sales["customer_id"].map(
+            customer_accounts
+        )
     ).all():
-
-        print(
-            "PASS  Production employee location matches employee master"
+        raise ValueError(
+            "Sales account does not match customer account."
         )
-    else:
-        print(
-            "FAIL  Production employee location mismatch"
+
+    print("      ✓ Sales customer/account consistency")
+
+    if (sales["quantity"] <= 0).any():
+        raise ValueError(
+            "Sales contain non-positive quantities."
         )
-        failed = True
 
-    # --------------------------------------------------------
-    # Numeric rules
-    # --------------------------------------------------------
+    if (sales["unit_price"] <= 0).any():
+        raise ValueError(
+            "Sales contain non-positive prices."
+        )
 
-    print("\n7. Numeric business-rule validation")
+    if (
+        (sales["discount_rate"] < 0)
+        | (sales["discount_rate"] > 1)
+    ).any():
+        raise ValueError(
+            "Sales contain invalid discount rates."
+        )
 
-    checks = [
-        (
-            "Sales quantities are positive",
-            (sales["quantity"] > 0).all(),
-        ),
-        (
-            "Sales unit prices are positive",
-            (sales["unit_price"] > 0).all(),
-        ),
-        (
-            "Sales revenue calculation is consistent",
-            (
-                sales["revenue"]
-                == (
-                    sales["quantity"]
-                    * sales["unit_price"]
-                    - sales["discount_amount"]
-                ).round(2)
-            ).all(),
-        ),
-    ]
+    expected_revenue = np.round(
+        sales["quantity"]
+        * sales["unit_price"]
+        * (1 - sales["discount_rate"]),
+        2,
+    )
 
-    production = data["production.csv"]
+    if not np.allclose(
+        sales["revenue"],
+        expected_revenue,
+        atol=0.01,
+    ):
+        raise ValueError(
+            "Sales revenue reconciliation failed."
+        )
 
-    checks += [
-        (
-            "Production planned quantities are non-negative",
-            (production["planned_quantity"] >= 0).all(),
-        ),
-        (
-            "Production quantities are non-negative",
-            (production["produced_quantity"] >= 0).all(),
-        ),
-        (
-            "Production defect quantity does not exceed production quantity",
-            (
-                production["defect_quantity"]
-                <= production["produced_quantity"]
-            ).all(),
-        ),
-    ]
+    print("      ✓ Sales revenue calculation")
 
-    maintenance = data["maintenance.csv"]
+    machines = references["machines"]
+    employees = references["employees"]
 
-    checks += [
-        (
-            "Maintenance hours are positive",
-            (maintenance["maintenance_hours"] > 0).all(),
-        ),
-        (
-            "Maintenance downtime is non-negative",
-            (maintenance["downtime_hours"] >= 0).all(),
-        ),
-    ]
+    machine_locations = (
+        machines
+        .set_index("machine_id")["location_id"]
+    )
 
-    for message, passed in checks:
+    employee_locations = (
+        employees
+        .set_index("employee_id")["location_id"]
+    )
 
-        if passed:
-            print(f"PASS  {message}")
-        else:
-            print(f"FAIL  {message}")
-            failed = True
+    if not (
+        production["location_id"]
+        == production["machine_id"].map(
+            machine_locations
+        )
+    ).all():
+        raise ValueError(
+            "Production location does not match machine location."
+        )
 
-    # --------------------------------------------------------
-    # Inventory grain
-    # --------------------------------------------------------
+    if not (
+        production["location_id"]
+        == production["employee_id"].map(
+            employee_locations
+        )
+    ).all():
+        raise ValueError(
+            "Production location does not match employee location."
+        )
 
-    print("\n8. Inventory grain validation")
+    print("      ✓ Production machine/location consistency")
+    print("      ✓ Production employee/location consistency")
 
-    inventory = data["inventory.csv"]
+    if not (
+        maintenance["location_id"]
+        == maintenance["machine_id"].map(
+            machine_locations
+        )
+    ).all():
+        raise ValueError(
+            "Maintenance location does not match machine."
+        )
 
-    duplicate_grain = inventory.duplicated(
+    if not (
+        maintenance["location_id"]
+        == maintenance["employee_id"].map(
+            employee_locations
+        )
+    ).all():
+        raise ValueError(
+            "Maintenance location does not match employee."
+        )
+
+    print("      ✓ Maintenance machine/location consistency")
+    print("      ✓ Maintenance employee/location consistency")
+
+    if inventory.duplicated(
         subset=[
-            "inventory_date",
+            "date",
             "product_id",
             "location_id",
         ]
-    ).any()
-
-    if not duplicate_grain:
-        print(
-            "PASS  Inventory Date + Product + Location is unique"
-        )
-    else:
-        print(
-            "FAIL  Inventory Date + Product + Location contains duplicates"
-        )
-        failed = True
-
-    reconciled = (
-        inventory["opening_quantity"]
-        + inventory["received_quantity"]
-        - inventory["issued_quantity"]
-        == inventory["closing_quantity"]
-    ).all()
-
-    if reconciled:
-        print(
-            "PASS  Inventory closing quantity reconciles"
-        )
-    else:
-        print(
-            "FAIL  Inventory closing quantity does not reconcile"
-        )
-        failed = True
-
-    if (
-        inventory["closing_quantity"] >= 0
-    ).all():
-
-        print(
-            "PASS  Inventory closing quantity is non-negative"
-        )
-    else:
-        print(
-            "FAIL  Inventory closing quantity is negative"
-        )
-        failed = True
-
-    # --------------------------------------------------------
-    # Date ranges
-    # --------------------------------------------------------
-
-    print("\n9. Date-range validation")
-
-    start = pd.Timestamp(START_DATE)
-    end = pd.Timestamp(END_DATE)
-
-    date_columns = {
-        "sales.csv": "transaction_date",
-        "production.csv": "production_date",
-        "maintenance.csv": "maintenance_date",
-        "financial_transactions.csv": "transaction_date",
-        "budget.csv": "budget_date",
-        "energy.csv": "measurement_date",
-        "emissions.csv": "emissions_date",
-        "waste.csv": "waste_date",
-        "inventory.csv": "inventory_date",
-    }
-
-    for filename, column in date_columns.items():
-
-        dates = pd.to_datetime(
-            data[filename][column]
+    ).any():
+        raise ValueError(
+            "Inventory grain violation detected."
         )
 
-        if (
-            dates.between(start, end)
-        ).all():
+    print(
+        "      ✓ Inventory Date + Product + Location grain"
+    )
 
-            print(
-                f"PASS  {filename}: dates fall within approved range"
-            )
-        else:
-            print(
-                f"FAIL  {filename}: dates outside approved range"
-            )
-            failed = True
+    total_records = sum(
+        len(df)
+        for df in datasets.values()
+    )
 
-    # --------------------------------------------------------
-    # Final result
-    # --------------------------------------------------------
+    print("\n" + "-" * 70)
+    print("VALIDATION SUMMARY")
+    print("-" * 70)
+    print(f"Datasets validated                  : 9")
+    print(f"Records validated                   : {total_records:,.0f}")
+    print(f"Validation status                   : PASSED")
+    print(f"Output                              : {RAW_DATA_DIR}")
 
-    print("\n" + "=" * 60)
-
-    if failed:
-        print("BUSINESS DATA VALIDATION FAILED")
-        print("Clean baseline must pass before injection.")
-        print("=" * 60)
-        raise SystemExit(1)
-
-    print("BUSINESS DATA VALIDATION PASSED")
-    print("The nine clean business datasets are ready.")
-    print("=" * 60)
+    print("\n" + "=" * 70)
+    print("BUSINESS DATA VALIDATION COMPLETE")
+    print("=" * 70)
 
 
 if __name__ == "__main__":
