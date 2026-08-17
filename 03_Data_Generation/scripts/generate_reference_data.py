@@ -562,6 +562,7 @@ def main():
     save(machines, "machines.csv")
 
     print("\nReference data generation complete.")
+    print(f"Output directory: {RAW_DATA_DIR}")
 
 
 if __name__ == "__main__":
