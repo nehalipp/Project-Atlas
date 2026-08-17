@@ -561,9 +561,10 @@ def main():
     machines = generate_machines(locations)
     save(machines, "machines.csv")
 
+    print("\n" + "=" * 60)
     print("\nReference data generation complete.")
     print(f"Output directory: {RAW_DATA_DIR}")
-
+    print("=" * 60)
 
 if __name__ == "__main__":
     main()
