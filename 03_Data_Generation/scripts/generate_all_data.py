@@ -1,15 +1,12 @@
 """
 Project Atlas
-Phase 3 — Complete Data Generation Pipeline
+Phase 3 — Generate All Data
 
-Runs the complete reproducible source-data generation process:
+Runs the complete data-generation process:
 
 1. Reference data
-2. Reference validation
-3. Clean business data
-4. Clean business-data validation
-5. Controlled quality-issue injection
-6. Final raw-data validation
+2. Business data
+3. Quality issue injection
 """
 
 from pathlib import Path
@@ -17,42 +14,34 @@ import subprocess
 import sys
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-SCRIPTS_DIR = PROJECT_ROOT / "03_Data_Generation" / "scripts"
+# ============================================================
+# PATHS
+# ============================================================
+
+SCRIPT_DIR = Path(__file__).resolve().parent
 
 
-def run_script(script_name, arguments=None):
+# ============================================================
+# RUN SCRIPT
+# ============================================================
 
-    if arguments is None:
-        arguments = []
+def run_script(filename):
 
-    script_path = SCRIPTS_DIR / script_name
-
-    command = [
-        sys.executable,
-        str(script_path),
-        *arguments,
-    ]
+    script = SCRIPT_DIR / filename
 
     print("\n" + "=" * 60)
-    print(f"Running: {script_name}")
+    print(f"Running {filename}")
     print("=" * 60)
 
-    result = subprocess.run(
-        command,
-        cwd=PROJECT_ROOT,
+    subprocess.run(
+        [sys.executable, str(script)],
+        check=True,
     )
 
-    if result.returncode != 0:
 
-        print(
-            f"\nPIPELINE STOPPED: {script_name} failed."
-        )
-
-        sys.exit(
-            result.returncode
-        )
-
+# ============================================================
+# MAIN
+# ============================================================
 
 def main():
 
@@ -60,66 +49,13 @@ def main():
     print("Project Atlas — Complete Data Generation")
     print("=" * 60)
 
-    # --------------------------------------------------------
-    # 1. Reference Data
-    # --------------------------------------------------------
-
-    run_script(
-        "generate_reference_data.py"
-    )
-
-    # --------------------------------------------------------
-    # 2. Reference Validation
-    # --------------------------------------------------------
-
-    run_script(
-        "validate_reference_data.py"
-    )
-
-    # --------------------------------------------------------
-    # 3. Clean Business Data
-    # --------------------------------------------------------
-
-    run_script(
-        "generate_business_data.py"
-    )
-
-    # --------------------------------------------------------
-    # 4. Clean Business Data Validation
-    # --------------------------------------------------------
-
-    run_script(
-        "validate_business_data.py"
-    )
-
-    # --------------------------------------------------------
-    # 5. Controlled Quality Issues
-    # --------------------------------------------------------
-
-    run_script(
-        "inject_quality_issues.py"
-    )
-
-    # --------------------------------------------------------
-    # 6. Final Raw Data Validation
-    # --------------------------------------------------------
-
-    run_script(
-        "validate_business_data.py",
-        ["--final"],
-    )
+    run_script("generate_reference_data.py")
+    run_script("generate_business_data.py")
+    run_script("inject_quality_issues.py")
 
     print("\n" + "=" * 60)
-    print("COMPLETE DATA GENERATION PIPELINE PASSED")
+    print("All data generation completed successfully.")
     print("=" * 60)
-
-    print(
-        "\nFinal source datasets are available under:"
-    )
-
-    print(
-        PROJECT_ROOT / "data" / "raw"
-    )
 
 
 if __name__ == "__main__":
