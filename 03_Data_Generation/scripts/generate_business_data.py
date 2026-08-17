@@ -1,37 +1,18 @@
 """
 Project Atlas
-Enterprise Decision Intelligence Platform
+Phase 3 — Business Data Generation
 
-Business Data Generation
--------------------------
+Creates the nine business-process datasets:
 
-Generates the nine transactional/business-process datasets:
-
-    sales
-    production
-    maintenance
-    financial_transactions
-    budget
-    energy
-    emissions
-    waste
-    inventory
-
-Reference datasets must already exist in:
-
-    data/raw/
-
-Reference datasets:
-    accounts.csv
-    customers.csv
-    suppliers.csv
-    products.csv
-    locations.csv
-    employees.csv
-    machines.csv
-
-All data is synthetic and intended for portfolio and
-demonstration purposes only.
+sales
+production
+maintenance
+financial_transactions
+budget
+energy
+emissions
+waste
+inventory
 """
 
 from pathlib import Path
@@ -41,19 +22,13 @@ import pandas as pd
 
 
 # ============================================================
-# PROJECT PATHS
+# SETUP
 # ============================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-
 RAW_DIR = PROJECT_ROOT / "data" / "raw"
 
-
-# ============================================================
-# GENERATION CONFIGURATION
-# ============================================================
-
-RANDOM_SEED = 42
+SEED = 42
 
 START_DATE = pd.Timestamp("2019-01-01")
 END_DATE = pd.Timestamp("2025-12-31")
@@ -68,28 +43,52 @@ N_EMISSIONS = 100_000
 N_WASTE = 100_000
 N_INVENTORY = 500_000
 
-
-# ============================================================
-# RANDOM NUMBER GENERATOR
-# ============================================================
-
-rng = np.random.default_rng(RANDOM_SEED)
+rng = np.random.default_rng(SEED)
 
 
 # ============================================================
-# HELPER FUNCTIONS
+# HELPERS
 # ============================================================
 
-def random_dates(size):
-    """
-    Generate random dates within the approved project date range.
-    """
+def random_dates(n):
+    """Generate random dates within the approved date range."""
 
     days = (END_DATE - START_DATE).days
 
-    return START_DATE + pd.to_timedelta(
-        rng.integers(0, days + 1, size=size),
-        unit="D"
+    return (
+        START_DATE
+        + pd.to_timedelta(
+            rng.integers(0, days + 1, n),
+            unit="D"
+        )
+    ).strftime("%Y-%m-%d")
+
+
+def load(name):
+    """Load a reference dataset."""
+
+    path = RAW_DIR / f"{name}.csv"
+
+    if not path.exists():
+        raise FileNotFoundError(
+            f"Missing {name}.csv. "
+            "Run generate_reference_data.py first."
+        )
+
+    return pd.read_csv(path)
+
+
+def save(df, name):
+    """Save a business dataset."""
+
+    df.to_csv(
+        RAW_DIR / f"{name}.csv",
+        index=False
+    )
+
+    print(
+        f"Created {name}.csv: "
+        f"{len(df):,} records"
     )
 
 
@@ -97,140 +96,59 @@ def random_dates(size):
 # LOAD REFERENCE DATA
 # ============================================================
 
-def load_reference_data():
-    """
-    Load the seven reference datasets.
-    """
+def load_references():
 
-    print("Loading reference datasets...")
-
-    required_files = [
-        "accounts.csv",
-        "customers.csv",
-        "suppliers.csv",
-        "products.csv",
-        "locations.csv",
-        "employees.csv",
-        "machines.csv",
-    ]
-
-    missing_files = [
-        file_name
-        for file_name in required_files
-        if not (RAW_DIR / file_name).exists()
-    ]
-
-    if missing_files:
-
-        raise FileNotFoundError(
-            "The following reference datasets are missing:\n"
-            + "\n".join(
-                f" - {file}"
-                for file in missing_files
-            )
-            + "\n\nRun generate_reference_data.py first."
-        )
-
-    references = {
-        "accounts": pd.read_csv(
-            RAW_DIR / "accounts.csv"
-        ),
-        "customers": pd.read_csv(
-            RAW_DIR / "customers.csv"
-        ),
-        "suppliers": pd.read_csv(
-            RAW_DIR / "suppliers.csv"
-        ),
-        "products": pd.read_csv(
-            RAW_DIR / "products.csv"
-        ),
-        "locations": pd.read_csv(
-            RAW_DIR / "locations.csv"
-        ),
-        "employees": pd.read_csv(
-            RAW_DIR / "employees.csv"
-        ),
-        "machines": pd.read_csv(
-            RAW_DIR / "machines.csv"
-        ),
+    return {
+        "accounts": load("accounts"),
+        "customers": load("customers"),
+        "suppliers": load("suppliers"),
+        "products": load("products"),
+        "locations": load("locations"),
+        "employees": load("employees"),
+        "machines": load("machines"),
     }
-
-    print("Reference data loaded successfully.\n")
-
-    return references
 
 
 # ============================================================
 # SALES
 # ============================================================
 
-def generate_sales(references):
-    """
-    Grain:
-        One row per sales transaction line.
+def generate_sales(ref):
 
-    Relationships:
-        Date
-        Account
-        Customer
-        Product
-        Location
-    """
+    customers = ref["customers"]
+    products = ref["products"]
+    locations = ref["locations"]
 
-    print("Generating sales...")
-
-    customers = references["customers"]
-    products = references["products"]
-    locations = references["locations"]
-
-    customer_sample = customers.iloc[
-        rng.integers(
-            0,
-            len(customers),
-            N_SALES
-        )
+    customer = customers.iloc[
+        rng.integers(len(customers), size=N_SALES)
     ].reset_index(drop=True)
 
-    product_sample = products.iloc[
-        rng.integers(
-            0,
-            len(products),
-            N_SALES
-        )
+    product = products.iloc[
+        rng.integers(len(products), size=N_SALES)
     ].reset_index(drop=True)
 
-    location_sample = locations.iloc[
-        rng.integers(
-            0,
-            len(locations),
-            N_SALES
-        )
+    location = locations.iloc[
+        rng.integers(len(locations), size=N_SALES)
     ].reset_index(drop=True)
 
-    quantities = rng.integers(
+    quantity = rng.integers(
         1,
         101,
         N_SALES
     )
 
-    unit_prices = product_sample[
-        "unit_price"
-    ].to_numpy()
+    unit_price = product["unit_price"].to_numpy()
 
-    gross_amount = (
-        quantities
-        * unit_prices
-    )
+    gross_amount = quantity * unit_price
 
-    # Small realistic discount distribution.
-    discount_rates = rng.choice(
+    discount_rate = rng.choice(
         [0.00, 0.02, 0.05, 0.10, 0.15],
-        size=N_SALES,
+        N_SALES,
         p=[0.45, 0.20, 0.20, 0.10, 0.05]
     )
 
     discount_amount = np.round(
-        gross_amount * discount_rates,
+        gross_amount * discount_rate,
         2
     )
 
@@ -239,186 +157,69 @@ def generate_sales(references):
         2
     )
 
-    sales = pd.DataFrame({
-
+    return pd.DataFrame({
         "transaction_id": [
             f"TXN-{i:08d}"
-            for i in range(
-                1,
-                N_SALES + 1
-            )
+            for i in range(1, N_SALES + 1)
         ],
 
-        "transaction_date":
-            random_dates(N_SALES),
+        "transaction_date": random_dates(N_SALES),
 
-        "account_id":
-            customer_sample[
-                "account_id"
-            ].values,
+        "account_id": customer["account_id"],
 
-        "customer_id":
-            customer_sample[
-                "customer_id"
-            ].values,
+        "customer_id": customer["customer_id"],
 
-        "product_id":
-            product_sample[
-                "product_id"
-            ].values,
+        "product_id": product["product_id"],
 
-        "location_id":
-            location_sample[
-                "location_id"
-            ].values,
+        "location_id": location["location_id"],
 
-        "quantity":
-            quantities,
+        "quantity": quantity,
 
-        "unit_price":
-            np.round(
-                unit_prices,
-                2
-            ),
+        "unit_price": np.round(unit_price, 2),
 
-        "discount_amount":
-            discount_amount,
+        "discount_amount": discount_amount,
 
-        "revenue":
-            revenue,
+        "revenue": revenue,
     })
-
-    sales.to_csv(
-        RAW_DIR / "sales.csv",
-        index=False
-    )
-
-    print(
-        f"Created sales.csv: "
-        f"{len(sales):,} records"
-    )
 
 
 # ============================================================
 # PRODUCTION
 # ============================================================
 
-def generate_production(references):
-    """
-    Grain:
-        One row per production activity.
+def generate_production(ref):
 
-    Relationship logic:
+    products = ref["products"]
+    machines = ref["machines"]
+    employees = ref["employees"]
 
-        Machine
-            ↓
-        Machine Location
-            ↓
-        Employee from same Location
-            ↓
-        Production Event
+    # Employees available at each location.
+    employees_by_location = (
+        employees
+        .groupby("location_id")["employee_id"]
+        .apply(np.array)
+        .to_dict()
+    )
 
-    Therefore:
-
-        production.location_id
-        =
-        machine.location_id
-        =
-        employee.location_id
-    """
-
-    print("Generating production...")
-
-    products = references["products"]
-    machines = references["machines"]
-    employees = references["employees"]
-
-    # --------------------------------------------------------
-    # Employee lookup by location
-    # --------------------------------------------------------
-
-    employees_by_location = {
-        location_id:
-            group["employee_id"].to_numpy()
-
-        for location_id, group
-        in employees.groupby("location_id")
-    }
-
-    # --------------------------------------------------------
-    # Select products
-    # --------------------------------------------------------
-
-    product_sample = products.iloc[
-        rng.integers(
-            0,
-            len(products),
-            N_PRODUCTION
-        )
+    product = products.iloc[
+        rng.integers(len(products), size=N_PRODUCTION)
     ].reset_index(drop=True)
 
-    # --------------------------------------------------------
-    # Select machine FIRST
-    # --------------------------------------------------------
-
-    machine_sample = machines.iloc[
-        rng.integers(
-            0,
-            len(machines),
-            N_PRODUCTION
-        )
+    # 1. Select Machine.
+    machine = machines.iloc[
+        rng.integers(len(machines), size=N_PRODUCTION)
     ].reset_index(drop=True)
 
-    machine_ids = (
-        machine_sample[
-            "machine_id"
-        ].to_numpy()
-    )
+    machine_id = machine["machine_id"].to_numpy()
 
-    machine_locations = (
-        machine_sample[
-            "location_id"
-        ].to_numpy()
-    )
+    # 2. Get Machine Location.
+    location_id = machine["location_id"].to_numpy()
 
-    # --------------------------------------------------------
-    # Select employee from SAME location
-    # --------------------------------------------------------
-
-    employee_ids = []
-
-    for location_id in machine_locations:
-
-        available_employees = (
-            employees_by_location.get(
-                location_id
-            )
-        )
-
-        if (
-            available_employees is None
-            or len(available_employees) == 0
-        ):
-
-            raise ValueError(
-                "No employees found for "
-                f"production location: "
-                f"{location_id}"
-            )
-
-        employee_ids.append(
-            rng.choice(
-                available_employees
-            )
-        )
-
-    employee_ids = np.array(
-        employee_ids
-    )
-
-    # --------------------------------------------------------
-    # Generate quantities
-    # --------------------------------------------------------
+    # 3. Select Employee from the same Location.
+    employee_id = [
+        rng.choice(employees_by_location[location])
+        for location in location_id
+    ]
 
     planned_quantity = rng.integers(
         50,
@@ -426,77 +227,36 @@ def generate_production(references):
         N_PRODUCTION
     )
 
-    production_efficiency = rng.uniform(
-        0.85,
-        1.05,
-        N_PRODUCTION
-    )
-
     produced_quantity = np.floor(
         planned_quantity
-        * production_efficiency
+        * rng.uniform(0.85, 1.05, N_PRODUCTION)
     ).astype(int)
-
-    produced_quantity = np.maximum(
-        produced_quantity,
-        0
-    )
 
     defect_quantity = np.floor(
         produced_quantity
-        * rng.uniform(
-            0.00,
-            0.05,
-            N_PRODUCTION
-        )
+        * rng.uniform(0.00, 0.05, N_PRODUCTION)
     ).astype(int)
 
-    defect_quantity = np.minimum(
-        defect_quantity,
-        produced_quantity
-    )
-
-    # --------------------------------------------------------
-    # Production hours
-    # --------------------------------------------------------
-
-    production_hours = np.round(
-        rng.uniform(
-            1,
-            24,
-            N_PRODUCTION
-        ),
-        2
-    )
-
-    production = pd.DataFrame({
-
+    return pd.DataFrame({
         "production_id": [
             f"PROD-{i:08d}"
-            for i in range(
-                1,
-                N_PRODUCTION + 1
-            )
+            for i in range(1, N_PRODUCTION + 1)
         ],
 
         "production_date":
-            random_dates(
-                N_PRODUCTION
-            ),
+            random_dates(N_PRODUCTION),
 
         "product_id":
-            product_sample[
-                "product_id"
-            ].values,
+            product["product_id"],
 
         "location_id":
-            machine_locations,
+            location_id,
 
         "machine_id":
-            machine_ids,
+            machine_id,
 
         "employee_id":
-            employee_ids,
+            employee_id,
 
         "planned_quantity":
             planned_quantity,
@@ -508,314 +268,178 @@ def generate_production(references):
             defect_quantity,
 
         "production_hours":
-            production_hours,
+            np.round(
+                rng.uniform(1, 24, N_PRODUCTION),
+                2
+            ),
     })
-
-    production.to_csv(
-        RAW_DIR / "production.csv",
-        index=False
-    )
-
-    print(
-        f"Created production.csv: "
-        f"{len(production):,} records"
-    )
 
 
 # ============================================================
 # MAINTENANCE
 # ============================================================
 
-def generate_maintenance(references):
-    """
-    Grain:
-        One row per maintenance event.
+def generate_maintenance(ref):
 
-    Machine and employee belong to the same location.
-    """
+    machines = ref["machines"]
+    employees = ref["employees"]
 
-    print("Generating maintenance...")
+    employees_by_location = (
+        employees
+        .groupby("location_id")["employee_id"]
+        .apply(np.array)
+        .to_dict()
+    )
 
-    machines = references["machines"]
-    employees = references["employees"]
-
-    employees_by_location = {
-        location_id:
-            group["employee_id"].to_numpy()
-
-        for location_id, group
-        in employees.groupby("location_id")
-    }
-
-    machine_sample = machines.iloc[
-        rng.integers(
-            0,
-            len(machines),
-            N_MAINTENANCE
-        )
+    machine = machines.iloc[
+        rng.integers(len(machines), size=N_MAINTENANCE)
     ].reset_index(drop=True)
 
-    machine_ids = (
-        machine_sample[
-            "machine_id"
-        ].to_numpy()
-    )
+    location_id = machine["location_id"].to_numpy()
 
-    locations = (
-        machine_sample[
-            "location_id"
-        ].to_numpy()
-    )
+    employee_id = [
+        rng.choice(employees_by_location[location])
+        for location in location_id
+    ]
 
-    employee_ids = []
-
-    for location_id in locations:
-
-        available_employees = (
-            employees_by_location.get(
-                location_id
-            )
-        )
-
-        if (
-            available_employees is None
-            or len(available_employees) == 0
-        ):
-
-            raise ValueError(
-                "No employees found for "
-                f"maintenance location: "
-                f"{location_id}"
-            )
-
-        employee_ids.append(
-            rng.choice(
-                available_employees
-            )
-        )
-
-    maintenance_types = np.array([
-        "Preventive",
-        "Corrective",
-        "Inspection",
-    ])
-
-    maintenance = pd.DataFrame({
-
+    return pd.DataFrame({
         "maintenance_id": [
             f"MAINT-{i:08d}"
-            for i in range(
-                1,
-                N_MAINTENANCE + 1
-            )
+            for i in range(1, N_MAINTENANCE + 1)
         ],
 
         "maintenance_date":
-            random_dates(
-                N_MAINTENANCE
-            ),
+            random_dates(N_MAINTENANCE),
 
         "location_id":
-            locations,
+            location_id,
 
         "machine_id":
-            machine_ids,
+            machine["machine_id"],
 
         "employee_id":
-            employee_ids,
+            employee_id,
 
         "maintenance_type":
             rng.choice(
-                maintenance_types,
+                [
+                    "Preventive",
+                    "Corrective",
+                    "Inspection",
+                ],
                 N_MAINTENANCE
             ),
 
         "maintenance_hours":
             np.round(
-                rng.uniform(
-                    1,
-                    12,
-                    N_MAINTENANCE
-                ),
+                rng.uniform(1, 12, N_MAINTENANCE),
                 2
             ),
 
         "downtime_hours":
             np.round(
-                rng.uniform(
-                    0,
-                    24,
-                    N_MAINTENANCE
-                ),
+                rng.uniform(0, 24, N_MAINTENANCE),
                 2
             ),
 
         "maintenance_cost":
             np.round(
-                rng.uniform(
-                    100,
-                    5000,
-                    N_MAINTENANCE
-                ),
+                rng.uniform(100, 5000, N_MAINTENANCE),
                 2
             ),
     })
-
-    maintenance.to_csv(
-        RAW_DIR / "maintenance.csv",
-        index=False
-    )
-
-    print(
-        f"Created maintenance.csv: "
-        f"{len(maintenance):,} records"
-    )
 
 
 # ============================================================
 # FINANCIAL TRANSACTIONS
 # ============================================================
 
-def generate_financial_transactions(references):
-    """
-    Grain:
-        One row per financial transaction.
-    """
+def generate_financial_transactions(ref):
 
-    print(
-        "Generating financial transactions..."
-    )
+    locations = ref["locations"]
 
-    locations = references["locations"]
-
-    categories = np.array([
-        "Revenue",
-        "Payroll",
-        "Operations",
-        "Maintenance",
-        "Utilities",
-        "Procurement",
-        "Transportation",
-    ])
-
-    transaction_types = np.array([
-        "Income",
-        "Expense",
-    ])
-
-    transaction_type = rng.choice(
-        transaction_types,
-        N_FINANCIAL,
-        p=[0.30, 0.70]
-    )
-
-    amounts = np.round(
-        rng.uniform(
-            100,
-            100000,
-            N_FINANCIAL
-        ),
-        2
-    )
-
-    financial_transactions = pd.DataFrame({
-
+    return pd.DataFrame({
         "financial_transaction_id": [
             f"FIN-{i:08d}"
-            for i in range(
-                1,
-                N_FINANCIAL + 1
-            )
+            for i in range(1, N_FINANCIAL + 1)
         ],
 
         "transaction_date":
-            random_dates(
-                N_FINANCIAL
-            ),
+            random_dates(N_FINANCIAL),
 
         "location_id":
             rng.choice(
-                locations[
-                    "location_id"
-                ].to_numpy(),
+                locations["location_id"],
                 N_FINANCIAL
             ),
 
         "category":
             rng.choice(
-                categories,
+                [
+                    "Revenue",
+                    "Payroll",
+                    "Operations",
+                    "Maintenance",
+                    "Utilities",
+                    "Procurement",
+                    "Transportation",
+                ],
                 N_FINANCIAL
             ),
 
         "transaction_type":
-            transaction_type,
+            rng.choice(
+                ["Income", "Expense"],
+                N_FINANCIAL,
+                p=[0.30, 0.70]
+            ),
 
         "amount":
-            amounts,
+            np.round(
+                rng.uniform(
+                    100,
+                    100000,
+                    N_FINANCIAL
+                ),
+                2
+            ),
     })
-
-    financial_transactions.to_csv(
-        RAW_DIR /
-        "financial_transactions.csv",
-        index=False
-    )
-
-    print(
-        "Created financial_transactions.csv: "
-        f"{len(financial_transactions):,} records"
-    )
 
 
 # ============================================================
 # BUDGET
 # ============================================================
 
-def generate_budget(references):
-    """
-    Grain:
-        One row per budget record.
-    """
+def generate_budget(ref):
 
-    print("Generating budget...")
+    locations = ref["locations"]
 
-    locations = references["locations"]
-
-    budget_categories = np.array([
-        "Operations",
-        "Maintenance",
-        "Payroll",
-        "Utilities",
-        "Procurement",
-        "Transportation",
-        "Sustainability",
-    ])
-
-    budget = pd.DataFrame({
-
+    return pd.DataFrame({
         "budget_id": [
             f"BUD-{i:08d}"
-            for i in range(
-                1,
-                N_BUDGET + 1
-            )
+            for i in range(1, N_BUDGET + 1)
         ],
 
         "budget_date":
-            random_dates(
-                N_BUDGET
-            ),
+            random_dates(N_BUDGET),
 
         "location_id":
             rng.choice(
-                locations[
-                    "location_id"
-                ].to_numpy(),
+                locations["location_id"],
                 N_BUDGET
             ),
 
         "budget_category":
             rng.choice(
-                budget_categories,
+                [
+                    "Operations",
+                    "Maintenance",
+                    "Payroll",
+                    "Utilities",
+                    "Procurement",
+                    "Transportation",
+                    "Sustainability",
+                ],
                 N_BUDGET
             ),
 
@@ -830,30 +454,14 @@ def generate_budget(references):
             ),
     })
 
-    budget.to_csv(
-        RAW_DIR / "budget.csv",
-        index=False
-    )
-
-    print(
-        f"Created budget.csv: "
-        f"{len(budget):,} records"
-    )
-
 
 # ============================================================
 # ENERGY
 # ============================================================
 
-def generate_energy(references):
-    """
-    Grain:
-        One row per energy measurement.
-    """
+def generate_energy(ref):
 
-    print("Generating energy...")
-
-    locations = references["locations"]
+    locations = ref["locations"]
 
     energy_types = np.array([
         "Electricity",
@@ -862,7 +470,7 @@ def generate_energy(references):
         "Steam",
     ])
 
-    energy_units = {
+    units = {
         "Electricity": "kWh",
         "Natural Gas": "therm",
         "Diesel": "liter",
@@ -874,51 +482,18 @@ def generate_energy(references):
         N_ENERGY
     )
 
-    consumption = np.round(
-        rng.uniform(
-            100,
-            10000,
-            N_ENERGY
-        ),
-        2
-    )
-
-    units = np.array([
-        energy_units[
-            energy
-        ]
-        for energy in energy_type
-    ])
-
-    energy_cost = np.round(
-        rng.uniform(
-            50,
-            5000,
-            N_ENERGY
-        ),
-        2
-    )
-
-    energy = pd.DataFrame({
-
+    return pd.DataFrame({
         "energy_id": [
             f"ENG-{i:08d}"
-            for i in range(
-                1,
-                N_ENERGY + 1
-            )
+            for i in range(1, N_ENERGY + 1)
         ],
 
         "measurement_date":
-            random_dates(
-                N_ENERGY
-            ),
+            random_dates(N_ENERGY),
 
         "location_id":
             rng.choice(
-                locations[
-                    "location_id"
-                ].to_numpy(),
+                locations["location_id"],
                 N_ENERGY
             ),
 
@@ -926,171 +501,108 @@ def generate_energy(references):
             energy_type,
 
         "consumption":
-            consumption,
+            np.round(
+                rng.uniform(100, 10000, N_ENERGY),
+                2
+            ),
 
-        "unit":
-            units,
+        "unit": [
+            units[value]
+            for value in energy_type
+        ],
 
         "energy_cost":
-            energy_cost,
+            np.round(
+                rng.uniform(50, 5000, N_ENERGY),
+                2
+            ),
     })
-
-    energy.to_csv(
-        RAW_DIR / "energy.csv",
-        index=False
-    )
-
-    print(
-        f"Created energy.csv: "
-        f"{len(energy):,} records"
-    )
 
 
 # ============================================================
 # EMISSIONS
 # ============================================================
 
-def generate_emissions(references):
-    """
-    Grain:
-        One row per emissions record.
-    """
+def generate_emissions(ref):
 
-    print("Generating emissions...")
+    locations = ref["locations"]
 
-    locations = references["locations"]
-
-    emission_sources = np.array([
-        "Electricity",
-        "Natural Gas",
-        "Diesel",
-        "Manufacturing Process",
-        "Transportation",
-    ])
-
-    emission_source = rng.choice(
-        emission_sources,
-        N_EMISSIONS
-    )
-
-    co2e_amount = np.round(
-        rng.uniform(
-            10,
-            5000,
-            N_EMISSIONS
-        ),
-        2
-    )
-
-    emissions = pd.DataFrame({
-
+    return pd.DataFrame({
         "emissions_id": [
             f"EMI-{i:08d}"
-            for i in range(
-                1,
-                N_EMISSIONS + 1
-            )
+            for i in range(1, N_EMISSIONS + 1)
         ],
 
         "emissions_date":
-            random_dates(
-                N_EMISSIONS
-            ),
+            random_dates(N_EMISSIONS),
 
         "location_id":
             rng.choice(
-                locations[
-                    "location_id"
-                ].to_numpy(),
+                locations["location_id"],
                 N_EMISSIONS
             ),
 
         "emission_source":
-            emission_source,
+            rng.choice(
+                [
+                    "Electricity",
+                    "Natural Gas",
+                    "Diesel",
+                    "Manufacturing Process",
+                    "Transportation",
+                ],
+                N_EMISSIONS
+            ),
 
         "co2e_amount":
-            co2e_amount,
+            np.round(
+                rng.uniform(10, 5000, N_EMISSIONS),
+                2
+            ),
 
         "unit":
             "kg CO2e",
     })
-
-    emissions.to_csv(
-        RAW_DIR / "emissions.csv",
-        index=False
-    )
-
-    print(
-        f"Created emissions.csv: "
-        f"{len(emissions):,} records"
-    )
 
 
 # ============================================================
 # WASTE
 # ============================================================
 
-def generate_waste(references):
-    """
-    Grain:
-        One row per waste record.
-    """
+def generate_waste(ref):
 
-    print("Generating waste...")
+    locations = ref["locations"]
 
-    locations = references["locations"]
-
-    waste_types = np.array([
-        "Metal",
-        "Plastic",
-        "Chemical",
-        "General",
-        "Recyclable",
-    ])
-
-    disposal_methods = np.array([
-        "Recycled",
-        "Landfill",
-        "Treatment",
-        "Incineration",
-    ])
-
-    waste = pd.DataFrame({
-
+    return pd.DataFrame({
         "waste_id": [
             f"WST-{i:08d}"
-            for i in range(
-                1,
-                N_WASTE + 1
-            )
+            for i in range(1, N_WASTE + 1)
         ],
 
         "waste_date":
-            random_dates(
-                N_WASTE
-            ),
+            random_dates(N_WASTE),
 
         "location_id":
             rng.choice(
-                locations[
-                    "location_id"
-                ].to_numpy(),
+                locations["location_id"],
                 N_WASTE
             ),
 
         "waste_type":
             rng.choice(
-                waste_types,
+                [
+                    "Metal",
+                    "Plastic",
+                    "Chemical",
+                    "General",
+                    "Recyclable",
+                ],
                 N_WASTE
             ),
 
         "waste_quantity":
             np.round(
-                rng.uniform(
-                    1,
-                    1000,
-                    N_WASTE
-                ),
+                rng.uniform(1, 1000, N_WASTE),
                 2
             ),
 
@@ -1099,107 +611,60 @@ def generate_waste(references):
 
         "disposal_method":
             rng.choice(
-                disposal_methods,
+                [
+                    "Recycled",
+                    "Landfill",
+                    "Treatment",
+                    "Incineration",
+                ],
                 N_WASTE
             ),
     })
-
-    waste.to_csv(
-        RAW_DIR / "waste.csv",
-        index=False
-    )
-
-    print(
-        f"Created waste.csv: "
-        f"{len(waste):,} records"
-    )
 
 
 # ============================================================
 # INVENTORY
 # ============================================================
 
-def generate_inventory(references):
-    """
-    Grain:
-        One row per product, location, and inventory date.
+def generate_inventory(ref):
 
-    This is a periodic snapshot fact.
+    products = ref["products"]
+    locations = ref["locations"]
 
-    Quantity relationship:
+    # Create unique Date + Product + Location combinations.
+    records = set()
 
-        closing_quantity
-        =
-        opening_quantity
-        + received_quantity
-        - issued_quantity
-    """
-
-    print("Generating inventory...")
-
-    products = references["products"]
-    locations = references["locations"]
-
-    # --------------------------------------------------------
-    # Generate unique Date + Product + Location combinations
-    # --------------------------------------------------------
-
-    inventory_records = set()
-
-    while len(inventory_records) < N_INVENTORY:
+    while len(records) < N_INVENTORY:
 
         batch_size = max(
             10000,
-            int(
-                (N_INVENTORY - len(
-                    inventory_records
-                )) * 1.25
-            )
+            int((N_INVENTORY - len(records)) * 1.25)
         )
 
-        dates = random_dates(
-            batch_size
-        )
+        dates = random_dates(batch_size)
 
         product_ids = rng.choice(
-            products[
-                "product_id"
-            ].to_numpy(),
+            products["product_id"],
             batch_size
         )
 
         location_ids = rng.choice(
-            locations[
-                "location_id"
-            ].to_numpy(),
+            locations["location_id"],
             batch_size
         )
 
-        for date, product_id, location_id in zip(
-            dates,
-            product_ids,
-            location_ids
-        ):
-
-            inventory_records.add(
-                (
-                    pd.Timestamp(date).date(),
-                    product_id,
-                    location_id
-                )
+        records.update(
+            zip(
+                dates,
+                product_ids,
+                location_ids
             )
+        )
 
-            if len(
-                inventory_records
-            ) >= N_INVENTORY:
-                break
-
-    inventory_records = list(
-        inventory_records
-    )[:N_INVENTORY]
+    records = list(records)[:N_INVENTORY]
 
     inventory = pd.DataFrame(
-        inventory_records,
+        records,
         columns=[
             "inventory_date",
             "product_id",
@@ -1207,81 +672,47 @@ def generate_inventory(references):
         ]
     )
 
-    inventory["inventory_id"] = [
-        f"INV-{i:08d}"
-        for i in range(
-            1,
-            N_INVENTORY + 1
-        )
-    ]
-
-    # --------------------------------------------------------
-    # Inventory quantities
-    # --------------------------------------------------------
-
-    opening_quantity = rng.integers(
+    opening = rng.integers(
         0,
         5000,
         N_INVENTORY
     )
 
-    received_quantity = rng.integers(
+    received = rng.integers(
         0,
         2000,
         N_INVENTORY
     )
 
-    # Keep issued quantity within available inventory.
-    available_quantity = (
-        opening_quantity
-        + received_quantity
-    )
+    available = opening + received
 
-    issued_quantity = np.array([
-        rng.integers(
-            0,
-            available + 1
-        )
-        for available in available_quantity
+    issued = np.array([
+        rng.integers(0, value + 1)
+        for value in available
     ])
 
-    closing_quantity = (
-        opening_quantity
-        + received_quantity
-        - issued_quantity
+    inventory["inventory_id"] = [
+        f"INV-{i:08d}"
+        for i in range(1, N_INVENTORY + 1)
+    ]
+
+    inventory["opening_quantity"] = opening
+    inventory["received_quantity"] = received
+    inventory["issued_quantity"] = issued
+
+    inventory["closing_quantity"] = (
+        opening
+        + received
+        - issued
     )
 
-    reorder_point = rng.integers(
+    inventory["reorder_point"] = rng.integers(
         100,
         1500,
         N_INVENTORY
     )
 
-    inventory["opening_quantity"] = (
-        opening_quantity
-    )
-
-    inventory["received_quantity"] = (
-        received_quantity
-    )
-
-    inventory["issued_quantity"] = (
-        issued_quantity
-    )
-
-    inventory["closing_quantity"] = (
-        closing_quantity
-    )
-
-    inventory["reorder_point"] = (
-        reorder_point
-    )
-
-    # --------------------------------------------------------
-    # Column order
-    # --------------------------------------------------------
-
-    inventory = inventory[
+    return inventory[
         [
             "inventory_id",
             "inventory_date",
@@ -1295,16 +726,6 @@ def generate_inventory(references):
         ]
     ]
 
-    inventory.to_csv(
-        RAW_DIR / "inventory.csv",
-        index=False
-    )
-
-    print(
-        f"Created inventory.csv: "
-        f"{len(inventory):,} records"
-    )
-
 
 # ============================================================
 # MAIN
@@ -1315,58 +736,28 @@ def main():
     print("=" * 60)
     print("Project Atlas — Business Data Generation")
     print("=" * 60)
-    print()
 
     RAW_DIR.mkdir(
         parents=True,
         exist_ok=True
     )
 
-    references = load_reference_data()
+    ref = load_references()
 
-    generate_sales(
-        references
+    save(generate_sales(ref), "sales")
+    save(generate_production(ref), "production")
+    save(generate_maintenance(ref), "maintenance")
+    save(
+        generate_financial_transactions(ref),
+        "financial_transactions"
     )
+    save(generate_budget(ref), "budget")
+    save(generate_energy(ref), "energy")
+    save(generate_emissions(ref), "emissions")
+    save(generate_waste(ref), "waste")
+    save(generate_inventory(ref), "inventory")
 
-    generate_production(
-        references
-    )
-
-    generate_maintenance(
-        references
-    )
-
-    generate_financial_transactions(
-        references
-    )
-
-    generate_budget(
-        references
-    )
-
-    generate_energy(
-        references
-    )
-
-    generate_emissions(
-        references
-    )
-
-    generate_waste(
-        references
-    )
-
-    generate_inventory(
-        references
-    )
-
-    print()
-    print("=" * 60)
-    print("Business data generation complete.")
-    print(
-        f"Output directory: {RAW_DIR}"
-    )
-    print("=" * 60)
+    print("\nBusiness data generation complete.")
 
 
 if __name__ == "__main__":
