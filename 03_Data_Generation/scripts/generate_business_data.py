@@ -724,35 +724,23 @@ def generate_inventory(ref):
     ]
 
 
-# ============================================================
-# MAIN
-# ============================================================
-
 def main():
 
     print("=" * 60)
     print("Project Atlas — Business Data Generation")
     print("=" * 60)
 
-    RAW_DIR.mkdir(
-        parents=True,
-        exist_ok=True
-    )
+    references = load_references()
 
-    ref = load_references()
-
-    save(generate_sales(ref), "sales")
-    save(generate_production(ref), "production")
-    save(generate_maintenance(ref), "maintenance")
-    save(
-        generate_financial_transactions(ref),
-        "financial_transactions"
-    )
-    save(generate_budget(ref), "budget")
-    save(generate_energy(ref), "energy")
-    save(generate_emissions(ref), "emissions")
-    save(generate_waste(ref), "waste")
-    save(generate_inventory(ref), "inventory")
+    generate_sales(references)
+    generate_production(references)
+    generate_maintenance(references)
+    generate_financial_transactions(references)
+    generate_budget(references)
+    generate_energy(references)
+    generate_emissions(references)
+    generate_waste(references)
+    generate_inventory(references)
 
     print("\nBusiness data generation complete.")
 
