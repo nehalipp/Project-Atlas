@@ -1,0 +1,101 @@
+location_id,location_name,location_type,city,state_region,country,status
+LOC-0001,Warehouse 001,Warehouse,Detroit,Michigan,United States,Active
+LOC-0002,Store 002,Store,Newark,New Jersey,United States,Active
+LOC-0003,Store 003,Store,Pittsburgh,Pennsylvania,United States,Active
+LOC-0004,Plant 004,Plant,Houston,Texas,United States,Inactive
+LOC-0005,Office 005,Office,Chicago,Illinois,United States,Active
+LOC-0006,Plant 006,Plant,Malmö,Skåne County,Sweden,Active
+LOC-0007,Office 007,Office,Chicago,Illinois,United States,Active
+LOC-0008,Distribution Center 008,Distribution Center,Dallas,Texas,United States,Active
+LOC-0009,Distribution Center 009,Distribution Center,Columbus,Ohio,United States,Active
+LOC-0010,Plant 010,Plant,Columbus,Ohio,United States,Active
+LOC-0011,Store 011,Store,Stockholm,Stockholm County,Sweden,Active
+LOC-0012,Store 012,Store,Malmö,Skåne County,Sweden,Active
+LOC-0013,Plant 013,Plant,Jönköping,Jönköping County,Sweden,Active
+LOC-0014,Store 014,Store,Västerås,Västmanland County,Sweden,Active
+LOC-0015,Office 015,Office,Västerås,Västmanland County,Sweden,Active
+LOC-0016,Office 016,Office,Indianapolis,Indiana,United States,Active
+LOC-0017,Warehouse 017,Warehouse,Houston,Texas,United States,Active
+LOC-0018,Office 018,Office,Stockholm,Stockholm County,Sweden,Active
+LOC-0019,Warehouse 019,Warehouse,Chicago,Illinois,United States,Active
+LOC-0020,Plant 020,Plant,Linköping,Östergötland County,Sweden,Active
+LOC-0021,Store 021,Store,Gothenburg,Västra Götaland County,Sweden,Inactive
+LOC-0022,Distribution Center 022,Distribution Center,Houston,Texas,United States,Active
+LOC-0023,Plant 023,Plant,Malmö,Skåne County,Sweden,Active
+LOC-0024,Office 024,Office,Jönköping,Jönköping County,Sweden,Active
+LOC-0025,Store 025,Store,Pittsburgh,Pennsylvania,United States,Active
+LOC-0026,Plant 026,Plant,Gothenburg,Västra Götaland County,Sweden,Active
+LOC-0027,Plant 027,Plant,Columbus,Ohio,United States,Active
+LOC-0028,Plant 028,Plant,Columbus,Ohio,United States,Active
+LOC-0029,Plant 029,Plant,Dallas,Texas,United States,Active
+LOC-0030,Plant 030,Plant,Dallas,Texas,United States,Active
+LOC-0031,Distribution Center 031,Distribution Center,Örebro,Örebro County,Sweden,Active
+LOC-0032,Warehouse 032,Warehouse,Linköping,Östergötland County,Sweden,Active
+LOC-0033,Plant 033,Plant,Philadelphia,Pennsylvania,United States,Active
+LOC-0034,Office 034,Office,Stockholm,Stockholm County,Sweden,Active
+LOC-0035,Warehouse 035,Warehouse,Newark,New Jersey,United States,Active
+LOC-0036,Warehouse 036,Warehouse,Malmö,Skåne County,Sweden,Active
+LOC-0037,Plant 037,Plant,Dallas,Texas,United States,Active
+LOC-0038,Plant 038,Plant,Houston,Texas,United States,Active
+LOC-0039,Store 039,Store,Pittsburgh,Pennsylvania,United States,Active
+LOC-0040,Office 040,Office,Jönköping,Jönköping County,Sweden,Active
+LOC-0041,Plant 041,Plant,Helsingborg,Skåne County,Sweden,Active
+LOC-0042,Store 042,Store,Allentown,Pennsylvania,United States,Active
+LOC-0043,Warehouse 043,Warehouse,Gothenburg,Västra Götaland County,Sweden,Active
+LOC-0044,Plant 044,Plant,Västerås,Västmanland County,Sweden,Active
+LOC-0045,Distribution Center 045,Distribution Center,New York,New York,United States,Active
+LOC-0046,Office 046,Office,New York,New York,United States,Inactive
+LOC-0047,Office 047,Office,Linköping,Östergötland County,Sweden,Active
+LOC-0048,Office 048,Office,Cleveland,Ohio,United States,Inactive
+LOC-0049,Warehouse 049,Warehouse,Malmö,Skåne County,Sweden,Active
+LOC-0050,Plant 050,Plant,Columbus,Ohio,United States,Active
+LOC-0051,Office 051,Office,Newark,New Jersey,United States,Active
+LOC-0052,Plant 052,Plant,Chicago,Illinois,United States,Active
+LOC-0053,Warehouse 053,Warehouse,Cleveland,Ohio,United States,Active
+LOC-0054,Plant 054,Plant,Newark,New Jersey,United States,Active
+LOC-0055,Plant 055,Plant,Pittsburgh,Pennsylvania,United States,Active
+LOC-0056,Plant 056,Plant,Västerås,Västmanland County,Sweden,Active
+LOC-0057,Warehouse 057,Warehouse,Pittsburgh,Pennsylvania,United States,Active
+LOC-0058,Plant 058,Plant,Newark,New Jersey,United States,Active
+LOC-0059,Plant 059,Plant,New York,New York,United States,Active
+LOC-0060,Distribution Center 060,Distribution Center,Dallas,Texas,United States,Active
+LOC-0061,Office 061,Office,Allentown,Pennsylvania,United States,Active
+LOC-0062,Store 062,Store,Philadelphia,Pennsylvania,United States,Active
+LOC-0063,Plant 063,Plant,Philadelphia,Pennsylvania,United States,Active
+LOC-0064,Warehouse 064,Warehouse,Cleveland,Ohio,United States,Active
+LOC-0065,Warehouse 065,Warehouse,Dallas,Texas,United States,Active
+LOC-0066,Warehouse 066,Warehouse,Pittsburgh,Pennsylvania,United States,Active
+LOC-0067,Store 067,Store,Stockholm,Stockholm County,Sweden,Inactive
+LOC-0068,Plant 068,Plant,Stockholm,Stockholm County,Sweden,Active
+LOC-0069,Store 069,Store,Columbus,Ohio,United States,Active
+LOC-0070,Plant 070,Plant,Gothenburg,Västra Götaland County,Sweden,Active
+LOC-0071,Warehouse 071,Warehouse,Chicago,Illinois,United States,Active
+LOC-0072,Plant 072,Plant,Västerås,Västmanland County,Sweden,Active
+LOC-0073,Plant 073,Plant,Columbus,Ohio,United States,Active
+LOC-0074,Warehouse 074,Warehouse,Indianapolis,Indiana,United States,Active
+LOC-0075,Distribution Center 075,Distribution Center,Malmö,Skåne County,Sweden,Active
+LOC-0076,Plant 076,Plant,Cleveland,Ohio,United States,Active
+LOC-0077,Store 077,Store,Stockholm,Stockholm County,Sweden,Active
+LOC-0078,Store 078,Store,Philadelphia,Pennsylvania,United States,Active
+LOC-0079,Plant 079,Plant,Stockholm,Stockholm County,Sweden,Active
+LOC-0080,Warehouse 080,Warehouse,Indianapolis,Indiana,United States,Active
+LOC-0081,Plant 081,Plant,Philadelphia,Pennsylvania,United States,Inactive
+LOC-0082,Office 082,Office,Dallas,Texas,United States,Active
+LOC-0083,Store 083,Store,Philadelphia,Pennsylvania,United States,Active
+LOC-0084,Distribution Center 084,Distribution Center,Houston,Texas,United States,Active
+LOC-0085,Store 085,Store,Jönköping,Jönköping County,Sweden,Active
+LOC-0086,Plant 086,Plant,Chicago,Illinois,United States,Active
+LOC-0087,Office 087,Office,New York,New York,United States,Active
+LOC-0088,Warehouse 088,Warehouse,Örebro,Örebro County,Sweden,Active
+LOC-0089,Store 089,Store,Stockholm,Stockholm County,Sweden,Active
+LOC-0090,Warehouse 090,Warehouse,Charlotte,North Carolina,United States,Active
+LOC-0091,Warehouse 091,Warehouse,Gothenburg,Västra Götaland County,Sweden,Active
+LOC-0092,Distribution Center 092,Distribution Center,Västerås,Västmanland County,Sweden,Active
+LOC-0093,Office 093,Office,Stockholm,Stockholm County,Sweden,Active
+LOC-0094,Distribution Center 094,Distribution Center,Indianapolis,Indiana,United States,Active
+LOC-0095,Store 095,Store,Helsingborg,Skåne County,Sweden,Active
+LOC-0096,Plant 096,Plant,Newark,New Jersey,United States,Active
+LOC-0097,Distribution Center 097,Distribution Center,Västerås,Västmanland County,Sweden,Active
+LOC-0098,Distribution Center 098,Distribution Center,Indianapolis,Indiana,United States,Active
+LOC-0099,Plant 099,Plant,Gothenburg,Västra Götaland County,Sweden,Active
+LOC-0100,Office 100,Office,Dallas,Texas,United States,Active
