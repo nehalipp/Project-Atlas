@@ -1,22 +1,20 @@
 """
 Project Atlas
 Phase 3 — Data Generation Configuration
-
-Central configuration for the synthetic source-data generation pipeline.
 """
 
 from pathlib import Path
 
 
 # ============================================================
-# Reproducibility
+# REPRODUCIBILITY
 # ============================================================
 
 SEED = 42
 
 
 # ============================================================
-# Date Range
+# DATE RANGE
 # ============================================================
 
 START_DATE = "2019-01-01"
@@ -24,16 +22,15 @@ END_DATE = "2025-12-31"
 
 
 # ============================================================
-# Project Paths
+# PROJECT PATHS
 # ============================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-
 RAW_DATA_DIR = PROJECT_ROOT / "data" / "raw"
 
 
 # ============================================================
-# Reference Data Volumes
+# REFERENCE DATA VOLUMES
 # ============================================================
 
 N_ACCOUNTS = 1_000
@@ -46,7 +43,7 @@ N_MACHINES = 2_000
 
 
 # ============================================================
-# Business Process Data Volumes
+# BUSINESS DATA VOLUMES
 # ============================================================
 
 N_SALES = 500_000
@@ -61,10 +58,7 @@ N_INVENTORY = 500_000
 
 
 # ============================================================
-# Controlled Data Quality Issue Rates
-#
-# These are generation parameters only.
-# Phase 4 will measure the actual resulting quality issues.
+# QUALITY ISSUE RATES
 # ============================================================
 
 MISSING_RATE = 0.05
@@ -75,7 +69,7 @@ OUTLIER_RATE = 0.005
 
 
 # ============================================================
-# Dataset Groups
+# DATASET GROUPS
 # ============================================================
 
 REFERENCE_DATASETS = (
