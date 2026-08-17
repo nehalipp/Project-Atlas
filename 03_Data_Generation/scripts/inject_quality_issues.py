@@ -2,11 +2,8 @@
 Project Atlas
 Phase 3 — Controlled Data Quality Issue Injection
 
-Introduces deliberate, reproducible quality issues into the
-clean business datasets.
-
-The clean baseline is generated first.
-This script then modifies selected source files in place.
+Adds deliberate and reproducible quality issues
+to the clean business datasets.
 """
 
 from pathlib import Path
@@ -16,37 +13,27 @@ import pandas as pd
 
 
 # ============================================================
-# Paths
+# SETUP
 # ============================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 RAW_DATA_DIR = PROJECT_ROOT / "data" / "raw"
 
 SEED = 42
-
 rng = np.random.default_rng(SEED)
 
 
 # ============================================================
-# Helper
+# HELPERS
 # ============================================================
 
 def load(filename):
-    path = RAW_DATA_DIR / filename
-
-    if not path.exists():
-        raise FileNotFoundError(
-            f"Required file not found: {path}"
-        )
-
-    return pd.read_csv(path)
+    return pd.read_csv(RAW_DATA_DIR / filename)
 
 
 def save(df, filename):
-    path = RAW_DATA_DIR / filename
-
     df.to_csv(
-        path,
+        RAW_DATA_DIR / filename,
         index=False,
     )
 
@@ -58,400 +45,214 @@ def choose_rows(df, percentage):
     )
 
     return rng.choice(
-        df.index.to_numpy(),
+        df.index,
         size=count,
         replace=False,
     )
 
 
 # ============================================================
-# Sales Quality Issues
+# SALES
 # ============================================================
 
 def inject_sales_issues():
 
-    filename = "sales.csv"
-
-    df = load(filename)
+    df = load("sales.csv")
 
     # Missing product references
-    missing_product_rows = choose_rows(
-        df,
-        0.02,
-    )
-
-    df.loc[
-        missing_product_rows,
-        "product_id",
-    ] = np.nan
+    rows = choose_rows(df, 0.02)
+    df.loc[rows, "product_id"] = np.nan
 
     # Negative quantities
-    negative_quantity_rows = choose_rows(
-        df,
-        0.01,
-    )
-
-    df.loc[
-        negative_quantity_rows,
-        "quantity",
-    ] *= -1
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "quantity"] *= -1
 
     # Revenue mismatches
-    revenue_issue_rows = choose_rows(
-        df,
-        0.02,
-    )
-
-    df.loc[
-        revenue_issue_rows,
-        "revenue",
-    ] = np.round(
-        df.loc[
-            revenue_issue_rows,
-            "revenue",
-        ] * 1.10,
+    rows = choose_rows(df, 0.02)
+    df.loc[rows, "revenue"] = np.round(
+        df.loc[rows, "revenue"] * 1.10,
         2,
     )
 
     # Duplicate records
-    duplicate_rows = df.sample(
-        n=max(
-            1,
-            int(len(df) * 0.02),
-        ),
+    duplicates = df.sample(
+        n=int(len(df) * 0.02),
         random_state=SEED,
     )
 
     df = pd.concat(
-        [
-            df,
-            duplicate_rows,
-        ],
+        [df, duplicates],
         ignore_index=True,
     )
 
-    save(df, filename)
+    save(df, "sales.csv")
 
-    print(
-        "sales.csv: quality issues injected"
-    )
+    print("sales.csv: issues injected")
 
 
 # ============================================================
-# Production Quality Issues
+# PRODUCTION
 # ============================================================
 
 def inject_production_issues():
 
-    filename = "production.csv"
+    df = load("production.csv")
 
-    df = load(filename)
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "produced_quantity"] *= -1
 
-    negative_rows = choose_rows(
-        df,
-        0.01,
-    )
-
-    df.loc[
-        negative_rows,
-        "produced_quantity",
-    ] *= -1
-
-    defect_rows = choose_rows(
-        df,
-        0.01,
-    )
-
-    df.loc[
-        defect_rows,
-        "defect_quantity",
-    ] = (
-        df.loc[
-            defect_rows,
-            "produced_quantity",
-        ].abs()
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "defect_quantity"] = (
+        df.loc[rows, "produced_quantity"].abs()
         * 1.25
     ).astype(int)
 
-    missing_employee_rows = choose_rows(
-        df,
-        0.01,
-    )
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "employee_id"] = np.nan
 
-    df.loc[
-        missing_employee_rows,
-        "employee_id",
-    ] = np.nan
+    save(df, "production.csv")
 
-    save(df, filename)
-
-    print(
-        "production.csv: quality issues injected"
-    )
+    print("production.csv: issues injected")
 
 
 # ============================================================
-# Maintenance Quality Issues
+# MAINTENANCE
 # ============================================================
 
 def inject_maintenance_issues():
 
-    filename = "maintenance.csv"
+    df = load("maintenance.csv")
 
-    df = load(filename)
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "maintenance_cost"] *= -1
 
-    negative_cost_rows = choose_rows(
-        df,
-        0.01,
-    )
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "machine_id"] = np.nan
 
-    df.loc[
-        negative_cost_rows,
-        "maintenance_cost",
-    ] *= -1
+    save(df, "maintenance.csv")
 
-    missing_machine_rows = choose_rows(
-        df,
-        0.01,
-    )
-
-    df.loc[
-        missing_machine_rows,
-        "machine_id",
-    ] = np.nan
-
-    save(df, filename)
-
-    print(
-        "maintenance.csv: quality issues injected"
-    )
+    print("maintenance.csv: issues injected")
 
 
 # ============================================================
-# Financial Quality Issues
+# FINANCIAL
 # ============================================================
 
 def inject_financial_issues():
 
-    filename = "financial_transactions.csv"
+    df = load("financial_transactions.csv")
 
-    df = load(filename)
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "amount"] *= -1
 
-    negative_amount_rows = choose_rows(
-        df,
-        0.01,
-    )
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "category"] = np.nan
 
-    df.loc[
-        negative_amount_rows,
-        "amount",
-    ] *= -1
-
-    missing_category_rows = choose_rows(
-        df,
-        0.01,
-    )
-
-    df.loc[
-        missing_category_rows,
-        "category",
-    ] = np.nan
-
-    save(df, filename)
+    save(df, "financial_transactions.csv")
 
     print(
         "financial_transactions.csv: "
-        "quality issues injected"
+        "issues injected"
     )
 
 
 # ============================================================
-# Budget Quality Issues
+# BUDGET
 # ============================================================
 
 def inject_budget_issues():
 
-    filename = "budget.csv"
+    df = load("budget.csv")
 
-    df = load(filename)
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "budget_amount"] *= -1
 
-    negative_budget_rows = choose_rows(
-        df,
-        0.01,
-    )
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "budget_category"] = np.nan
 
-    df.loc[
-        negative_budget_rows,
-        "budget_amount",
-    ] *= -1
+    save(df, "budget.csv")
 
-    missing_category_rows = choose_rows(
-        df,
-        0.01,
-    )
-
-    df.loc[
-        missing_category_rows,
-        "budget_category",
-    ] = np.nan
-
-    save(df, filename)
-
-    print(
-        "budget.csv: quality issues injected"
-    )
+    print("budget.csv: issues injected")
 
 
 # ============================================================
-# Energy Quality Issues
+# ENERGY
 # ============================================================
 
 def inject_energy_issues():
 
-    filename = "energy.csv"
+    df = load("energy.csv")
 
-    df = load(filename)
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "consumption"] *= -1
 
-    negative_rows = choose_rows(
-        df,
-        0.01,
-    )
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "energy_type"] = np.nan
 
-    df.loc[
-        negative_rows,
-        "consumption",
-    ] *= -1
+    save(df, "energy.csv")
 
-    missing_type_rows = choose_rows(
-        df,
-        0.01,
-    )
-
-    df.loc[
-        missing_type_rows,
-        "energy_type",
-    ] = np.nan
-
-    save(df, filename)
-
-    print(
-        "energy.csv: quality issues injected"
-    )
+    print("energy.csv: issues injected")
 
 
 # ============================================================
-# Emissions Quality Issues
+# EMISSIONS
 # ============================================================
 
 def inject_emissions_issues():
 
-    filename = "emissions.csv"
+    df = load("emissions.csv")
 
-    df = load(filename)
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "co2e_amount"] *= -1
 
-    negative_rows = choose_rows(
-        df,
-        0.01,
-    )
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "emission_source"] = np.nan
 
-    df.loc[
-        negative_rows,
-        "co2e_amount",
-    ] *= -1
+    save(df, "emissions.csv")
 
-    missing_source_rows = choose_rows(
-        df,
-        0.01,
-    )
-
-    df.loc[
-        missing_source_rows,
-        "emission_source",
-    ] = np.nan
-
-    save(df, filename)
-
-    print(
-        "emissions.csv: quality issues injected"
-    )
+    print("emissions.csv: issues injected")
 
 
 # ============================================================
-# Waste Quality Issues
+# WASTE
 # ============================================================
 
 def inject_waste_issues():
 
-    filename = "waste.csv"
+    df = load("waste.csv")
 
-    df = load(filename)
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "waste_quantity"] *= -1
 
-    negative_rows = choose_rows(
-        df,
-        0.01,
-    )
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "waste_type"] = np.nan
 
-    df.loc[
-        negative_rows,
-        "waste_quantity",
-    ] *= -1
+    save(df, "waste.csv")
 
-    missing_type_rows = choose_rows(
-        df,
-        0.01,
-    )
-
-    df.loc[
-        missing_type_rows,
-        "waste_type",
-    ] = np.nan
-
-    save(df, filename)
-
-    print(
-        "waste.csv: quality issues injected"
-    )
+    print("waste.csv: issues injected")
 
 
 # ============================================================
-# Inventory Quality Issues
+# INVENTORY
 # ============================================================
 
 def inject_inventory_issues():
 
-    filename = "inventory.csv"
+    df = load("inventory.csv")
 
-    df = load(filename)
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "closing_quantity"] *= -1
 
-    negative_closing_rows = choose_rows(
-        df,
-        0.01,
-    )
+    rows = choose_rows(df, 0.01)
+    df.loc[rows, "product_id"] = np.nan
 
-    df.loc[
-        negative_closing_rows,
-        "closing_quantity",
-    ] *= -1
+    save(df, "inventory.csv")
 
-    missing_product_rows = choose_rows(
-        df,
-        0.01,
-    )
-
-    df.loc[
-        missing_product_rows,
-        "product_id",
-    ] = np.nan
-
-    save(df, filename)
-
-    print(
-        "inventory.csv: quality issues injected"
-    )
+    print("inventory.csv: issues injected")
 
 
 # ============================================================
-# Main
+# MAIN
 # ============================================================
 
 def main():
@@ -459,8 +260,6 @@ def main():
     print("=" * 60)
     print("Project Atlas — Quality Issue Injection")
     print("=" * 60)
-
-    print("\nInjecting controlled quality issues...\n")
 
     inject_sales_issues()
     inject_production_issues()
@@ -472,10 +271,7 @@ def main():
     inject_waste_issues()
     inject_inventory_issues()
 
-    print("\n" + "=" * 60)
-    print("Quality issue injection complete.")
-    print(f"Output directory: {RAW_DATA_DIR}")
-    print("=" * 60)
+    print("\nQuality issue injection complete.")
 
 
 if __name__ == "__main__":
