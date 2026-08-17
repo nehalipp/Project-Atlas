@@ -1,128 +1,110 @@
-"""
-Project Atlas
-Phase 3 — Complete Data Generation
-
-Workflow:
-
-    1. Generate clean reference data
-    2. Generate clean business data
-    3. Validate clean reference data
-    4. Validate clean business data
-    5. Inject controlled quality issues
-
-After this script completes, Phase 3 is complete.
-
-Phase 4 will profile and evaluate the intentionally imperfect data.
-"""
-
+from pathlib import Path
 import subprocess
 import sys
-from pathlib import Path
 
 
-# ============================================================
-# PROJECT PATHS
-# ============================================================
-
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-SCRIPTS_DIR = PROJECT_ROOT / "03_Data_Generation" / "scripts"
+SCRIPT_DIR = Path(__file__).resolve().parent
 
 
-# ============================================================
-# SCRIPT RUNNER
-# ============================================================
+def run_stage(script_name):
+    """Run a Phase 3 script and stop the pipeline if it fails."""
 
-def run_script(filename):
-
-    script = SCRIPTS_DIR / filename
-
-    print("\n" + "=" * 60)
-    print(f"Running {filename}")
-    print("=" * 60)
+    script_path = SCRIPT_DIR / script_name
 
     result = subprocess.run(
-        [sys.executable, str(script)],
-        check=False,
+        [sys.executable, str(script_path)],
+        cwd=SCRIPT_DIR,
+        capture_output=True,
+        text=True
     )
 
     if result.returncode != 0:
-        raise SystemExit(
-            f"\nERROR: {filename} failed.\n"
-            "Phase 3 cannot continue until the issue is resolved."
-        )
+        print()
+        print(f"ERROR: {script_name} failed.")
+        print()
+        print("Details:")
+        print("-" * 60)
 
+        if result.stdout:
+            print(result.stdout)
 
-# ============================================================
-# MAIN WORKFLOW
-# ============================================================
+        if result.stderr:
+            print(result.stderr)
+
+        print("-" * 60)
+        print()
+        print("Phase 3 stopped.")
+        print("Fix the error above and run:")
+        print("python3 scripts/generate_all_data.py")
+
+        sys.exit(result.returncode)
+
 
 def main():
+    print("Project Atlas — Phase 3: Data Generation")
+    print("=========================================")
+    print()
 
-    print("=" * 60)
-    print("PROJECT ATLAS — PHASE 3")
-    print("DATA GENERATION")
-    print("=" * 60)
+    # ---------------------------------------------------------
+    # 1. Reference data
+    # ---------------------------------------------------------
+    print("[1/5] Generating reference data")
 
-    # --------------------------------------------------------
-    # 1. Generate clean reference data
-    # --------------------------------------------------------
+    run_stage("generate_reference_data.py")
 
-    run_script("generate_reference_data.py")
+    print("      ✓ 7 datasets generated")
+    print()
 
-    # --------------------------------------------------------
-    # 2. Generate clean business data
-    # --------------------------------------------------------
+    # ---------------------------------------------------------
+    # 2. Business data
+    # ---------------------------------------------------------
+    print("[2/5] Generating business data")
 
-    run_script("generate_business_data.py")
+    run_stage("generate_business_data.py")
 
-    # --------------------------------------------------------
-    # 3. Validate clean reference data
-    # --------------------------------------------------------
+    print("      ✓ 9 datasets generated")
+    print()
 
-    run_script("validate_reference_data.py")
+    # ---------------------------------------------------------
+    # 3. Clean baseline validation
+    # ---------------------------------------------------------
+    print("[3/5] Validating clean baseline")
 
-    # --------------------------------------------------------
-    # 4. Validate clean business data
-    # --------------------------------------------------------
+    run_stage("validate_reference_data.py")
+    print("      ✓ Reference data passed")
 
-    run_script("validate_business_data.py")
+    run_stage("validate_business_data.py")
+    print("      ✓ Business data passed")
+    print()
 
-    # --------------------------------------------------------
-    # 5. Inject controlled quality issues
-    # --------------------------------------------------------
+    # ---------------------------------------------------------
+    # 4. Quality issue injection
+    # ---------------------------------------------------------
+    print("[4/5] Injecting controlled quality issues")
 
-    run_script("inject_quality_issues.py")
+    run_stage("inject_quality_issues.py")
 
-    # --------------------------------------------------------
-    # PHASE 3 COMPLETE
-    # --------------------------------------------------------
+    print("      ✓ 16 datasets updated")
+    print()
 
-    print("\n" + "=" * 60)
-    print("PHASE 3 — DATA GENERATION COMPLETE")
-    print("=" * 60)
+    # ---------------------------------------------------------
+    # 5. Finalization
+    # ---------------------------------------------------------
+    print("[5/5] Finalizing Phase 3")
 
-    print("""
-The following has been completed:
+    print("      ✓ Synthetic datasets are ready for Phase 4")
+    print()
 
-1. Clean reference data generated
-2. Clean business data generated
-3. Clean reference data validated
-4. Clean business data validated
-5. Controlled data-quality issues injected
-
-The raw datasets are now intentionally imperfect.
-
-NEXT:
-Proceed to Phase 4 — Data Quality.
-
-Do NOT run the validation scripts or
-inject_quality_issues.py manually.
-
-Run this script again whenever you need
-to regenerate the complete Phase 3 dataset.
-""")
-
-    print("=" * 60)
+    print("Phase 3 complete.")
+    print()
+    print("Output:")
+    print("data/raw/")
+    print()
+    print("Next phase:")
+    print("Phase 4 — Data Quality")
+    print()
+    print("Run:")
+    print("cd ../04_Data_Quality")
 
 
 if __name__ == "__main__":
