@@ -1,0 +1,129 @@
+{
+  "pipeline_stage": "staging_to_warehouse_ready",
+  "timestamp_utc": "2026-08-17T20:17:54.132849+00:00",
+  "dimension_count": 8,
+  "fact_count": 9,
+  "warehouse_object_count": 17,
+  "status": "SUCCESS",
+  "results": [
+    {
+      "dataset": "dim_account",
+      "rows": 1000,
+      "columns": 7,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/dim_account.csv",
+      "status": "PASS"
+    },
+    {
+      "dataset": "dim_customer",
+      "rows": 49509,
+      "columns": 8,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/dim_customer.csv",
+      "status": "PASS"
+    },
+    {
+      "dataset": "dim_product",
+      "rows": 4951,
+      "columns": 8,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/dim_product.csv",
+      "status": "PASS"
+    },
+    {
+      "dataset": "dim_supplier",
+      "rows": 1000,
+      "columns": 6,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/dim_supplier.csv",
+      "status": "PASS"
+    },
+    {
+      "dataset": "dim_location",
+      "rows": 100,
+      "columns": 8,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/dim_location.csv",
+      "status": "PASS"
+    },
+    {
+      "dataset": "dim_employee",
+      "rows": 4913,
+      "columns": 8,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/dim_employee.csv",
+      "status": "PASS"
+    },
+    {
+      "dataset": "dim_machine",
+      "rows": 1959,
+      "columns": 7,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/dim_machine.csv",
+      "status": "PASS"
+    },
+    {
+      "dataset": "dim_date",
+      "rows": 2557,
+      "columns": 11,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/dim_date.csv",
+      "status": "PASS"
+    },
+    {
+      "dataset": "fact_sales",
+      "rows": 466046,
+      "columns": 15,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/fact_sales.csv",
+      "status": "PASS"
+    },
+    {
+      "dataset": "fact_production",
+      "rows": 181438,
+      "columns": 15,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/fact_production.csv",
+      "status": "PASS"
+    },
+    {
+      "dataset": "fact_maintenance",
+      "rows": 46180,
+      "columns": 12,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/fact_maintenance.csv",
+      "status": "PASS"
+    },
+    {
+      "dataset": "fact_financial_transaction",
+      "rows": 293285,
+      "columns": 8,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/fact_financial_transaction.csv",
+      "status": "PASS"
+    },
+    {
+      "dataset": "fact_budget",
+      "rows": 19445,
+      "columns": 7,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/fact_budget.csv",
+      "status": "PASS"
+    },
+    {
+      "dataset": "fact_energy",
+      "rows": 97747,
+      "columns": 8,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/fact_energy.csv",
+      "status": "PASS"
+    },
+    {
+      "dataset": "fact_emissions",
+      "rows": 97337,
+      "columns": 7,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/fact_emissions.csv",
+      "status": "PASS"
+    },
+    {
+      "dataset": "fact_waste",
+      "rows": 97982,
+      "columns": 9,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/fact_waste.csv",
+      "status": "PASS"
+    },
+    {
+      "dataset": "fact_inventory",
+      "rows": 479167,
+      "columns": 10,
+      "file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/warehouse_ready/fact_inventory.csv",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,1009 @@
+{
+  "pipeline_stage": "warehouse_ready_validation",
+  "timestamp_utc": "2026-08-17T20:21:42.447318+00:00",
+  "status": "SUCCESS",
+  "results": [
+    {
+      "category": "object_existence",
+      "check": "dim_date",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "object_existence",
+      "check": "dim_account",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "object_existence",
+      "check": "dim_customer",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "object_existence",
+      "check": "dim_product",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "object_existence",
+      "check": "dim_supplier",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "object_existence",
+      "check": "dim_location",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "object_existence",
+      "check": "dim_employee",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "object_existence",
+      "check": "dim_machine",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "object_existence",
+      "check": "fact_sales",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "object_existence",
+      "check": "fact_production",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "object_existence",
+      "check": "fact_maintenance",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "object_existence",
+      "check": "fact_financial_transaction",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "object_existence",
+      "check": "fact_budget",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "object_existence",
+      "check": "fact_energy",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "object_existence",
+      "check": "fact_emissions",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "object_existence",
+      "check": "fact_waste",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "object_existence",
+      "check": "fact_inventory",
+      "status": "PASS",
+      "details": "Warehouse-ready object exists."
+    },
+    {
+      "category": "structure",
+      "check": "dim_date",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "structure",
+      "check": "dim_account",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "structure",
+      "check": "dim_customer",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "structure",
+      "check": "dim_product",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "structure",
+      "check": "dim_supplier",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "structure",
+      "check": "dim_location",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "structure",
+      "check": "dim_employee",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "structure",
+      "check": "dim_machine",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "structure",
+      "check": "fact_sales",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "structure",
+      "check": "fact_production",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "structure",
+      "check": "fact_maintenance",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "structure",
+      "check": "fact_financial_transaction",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "structure",
+      "check": "fact_budget",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "structure",
+      "check": "fact_energy",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "structure",
+      "check": "fact_emissions",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "structure",
+      "check": "fact_waste",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "structure",
+      "check": "fact_inventory",
+      "status": "PASS",
+      "details": "Column structure matches specification."
+    },
+    {
+      "category": "row_count",
+      "check": "fact_sales",
+      "status": "PASS",
+      "details": "Expected=466,046; Trusted=466,046 Staging=466,046 Warehouse=466,046"
+    },
+    {
+      "category": "row_count",
+      "check": "fact_production",
+      "status": "PASS",
+      "details": "Expected=181,438; Trusted=181,438 Staging=181,438 Warehouse=181,438"
+    },
+    {
+      "category": "row_count",
+      "check": "fact_maintenance",
+      "status": "PASS",
+      "details": "Expected=46,180; Trusted=46,180 Staging=46,180 Warehouse=46,180"
+    },
+    {
+      "category": "row_count",
+      "check": "fact_financial_transaction",
+      "status": "PASS",
+      "details": "Expected=293,285; Trusted=293,285 Staging=293,285 Warehouse=293,285"
+    },
+    {
+      "category": "row_count",
+      "check": "fact_budget",
+      "status": "PASS",
+      "details": "Expected=19,445; Trusted=19,445 Staging=19,445 Warehouse=19,445"
+    },
+    {
+      "category": "row_count",
+      "check": "fact_energy",
+      "status": "PASS",
+      "details": "Expected=97,747; Trusted=97,747 Staging=97,747 Warehouse=97,747"
+    },
+    {
+      "category": "row_count",
+      "check": "fact_emissions",
+      "status": "PASS",
+      "details": "Expected=97,337; Trusted=97,337 Staging=97,337 Warehouse=97,337"
+    },
+    {
+      "category": "row_count",
+      "check": "fact_waste",
+      "status": "PASS",
+      "details": "Expected=97,982; Trusted=97,982 Staging=97,982 Warehouse=97,982"
+    },
+    {
+      "category": "row_count",
+      "check": "fact_inventory",
+      "status": "PASS",
+      "details": "Expected=479,167; Trusted=479,167 Staging=479,167 Warehouse=479,167"
+    },
+    {
+      "category": "dimension_keys",
+      "check": "dim_account.account_id",
+      "status": "PASS",
+      "details": "account_id: unique and non-null"
+    },
+    {
+      "category": "dimension_keys",
+      "check": "dim_account.account_key",
+      "status": "PASS",
+      "details": "account_key: unique and non-null"
+    },
+    {
+      "category": "dimension_keys",
+      "check": "dim_customer.customer_id",
+      "status": "PASS",
+      "details": "customer_id: unique and non-null"
+    },
+    {
+      "category": "dimension_keys",
+      "check": "dim_customer.customer_key",
+      "status": "PASS",
+      "details": "customer_key: unique and non-null"
+    },
+    {
+      "category": "dimension_keys",
+      "check": "dim_product.product_id",
+      "status": "PASS",
+      "details": "product_id: unique and non-null"
+    },
+    {
+      "category": "dimension_keys",
+      "check": "dim_product.product_key",
+      "status": "PASS",
+      "details": "product_key: unique and non-null"
+    },
+    {
+      "category": "dimension_keys",
+      "check": "dim_supplier.supplier_id",
+      "status": "PASS",
+      "details": "supplier_id: unique and non-null"
+    },
+    {
+      "category": "dimension_keys",
+      "check": "dim_supplier.supplier_key",
+      "status": "PASS",
+      "details": "supplier_key: unique and non-null"
+    },
+    {
+      "category": "dimension_keys",
+      "check": "dim_location.location_id",
+      "status": "PASS",
+      "details": "location_id: unique and non-null"
+    },
+    {
+      "category": "dimension_keys",
+      "check": "dim_location.location_key",
+      "status": "PASS",
+      "details": "location_key: unique and non-null"
+    },
+    {
+      "category": "dimension_keys",
+      "check": "dim_employee.employee_id",
+      "status": "PASS",
+      "details": "employee_id: unique and non-null"
+    },
+    {
+      "category": "dimension_keys",
+      "check": "dim_employee.employee_key",
+      "status": "PASS",
+      "details": "employee_key: unique and non-null"
+    },
+    {
+      "category": "dimension_keys",
+      "check": "dim_machine.machine_id",
+      "status": "PASS",
+      "details": "machine_id: unique and non-null"
+    },
+    {
+      "category": "dimension_keys",
+      "check": "dim_machine.machine_key",
+      "status": "PASS",
+      "details": "machine_key: unique and non-null"
+    },
+    {
+      "category": "dimension_keys",
+      "check": "dim_date.date",
+      "status": "PASS",
+      "details": "date: unique and non-null"
+    },
+    {
+      "category": "dimension_keys",
+      "check": "dim_date.date_key",
+      "status": "PASS",
+      "details": "date_key: unique and non-null"
+    },
+    {
+      "category": "fact_source_keys",
+      "check": "fact_sales",
+      "status": "PASS",
+      "details": "sales_id is unique and non-null."
+    },
+    {
+      "category": "fact_source_keys",
+      "check": "fact_production",
+      "status": "PASS",
+      "details": "production_id is unique and non-null."
+    },
+    {
+      "category": "fact_source_keys",
+      "check": "fact_maintenance",
+      "status": "PASS",
+      "details": "maintenance_id is unique and non-null."
+    },
+    {
+      "category": "fact_source_keys",
+      "check": "fact_financial_transaction",
+      "status": "PASS",
+      "details": "financial_transaction_id is unique and non-null."
+    },
+    {
+      "category": "fact_source_keys",
+      "check": "fact_budget",
+      "status": "PASS",
+      "details": "budget_id is unique and non-null."
+    },
+    {
+      "category": "fact_source_keys",
+      "check": "fact_energy",
+      "status": "PASS",
+      "details": "energy_id is unique and non-null."
+    },
+    {
+      "category": "fact_source_keys",
+      "check": "fact_emissions",
+      "status": "PASS",
+      "details": "emissions_id is unique and non-null."
+    },
+    {
+      "category": "fact_source_keys",
+      "check": "fact_waste",
+      "status": "PASS",
+      "details": "waste_id is unique and non-null."
+    },
+    {
+      "category": "fact_source_keys",
+      "check": "fact_inventory",
+      "status": "PASS",
+      "details": "inventory_id is unique and non-null."
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_sales.date_key",
+      "status": "PASS",
+      "details": "date_key \u2192 dim_date.date_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_sales.account_key",
+      "status": "PASS",
+      "details": "account_key \u2192 dim_account.account_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_sales.customer_key",
+      "status": "PASS",
+      "details": "customer_key \u2192 dim_customer.customer_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_sales.product_key",
+      "status": "PASS",
+      "details": "product_key \u2192 dim_product.product_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_sales.location_key",
+      "status": "PASS",
+      "details": "location_key \u2192 dim_location.location_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_production.date_key",
+      "status": "PASS",
+      "details": "date_key \u2192 dim_date.date_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_production.product_key",
+      "status": "PASS",
+      "details": "product_key \u2192 dim_product.product_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_production.location_key",
+      "status": "PASS",
+      "details": "location_key \u2192 dim_location.location_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_production.machine_key",
+      "status": "PASS",
+      "details": "machine_key \u2192 dim_machine.machine_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_production.employee_key",
+      "status": "PASS",
+      "details": "employee_key \u2192 dim_employee.employee_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_maintenance.date_key",
+      "status": "PASS",
+      "details": "date_key \u2192 dim_date.date_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_maintenance.location_key",
+      "status": "PASS",
+      "details": "location_key \u2192 dim_location.location_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_maintenance.machine_key",
+      "status": "PASS",
+      "details": "machine_key \u2192 dim_machine.machine_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_maintenance.employee_key",
+      "status": "PASS",
+      "details": "employee_key \u2192 dim_employee.employee_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_financial_transaction.date_key",
+      "status": "PASS",
+      "details": "date_key \u2192 dim_date.date_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_financial_transaction.location_key",
+      "status": "PASS",
+      "details": "location_key \u2192 dim_location.location_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_budget.date_key",
+      "status": "PASS",
+      "details": "date_key \u2192 dim_date.date_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_budget.location_key",
+      "status": "PASS",
+      "details": "location_key \u2192 dim_location.location_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_energy.date_key",
+      "status": "PASS",
+      "details": "date_key \u2192 dim_date.date_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_energy.location_key",
+      "status": "PASS",
+      "details": "location_key \u2192 dim_location.location_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_emissions.date_key",
+      "status": "PASS",
+      "details": "date_key \u2192 dim_date.date_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_emissions.location_key",
+      "status": "PASS",
+      "details": "location_key \u2192 dim_location.location_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_waste.date_key",
+      "status": "PASS",
+      "details": "date_key \u2192 dim_date.date_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_waste.location_key",
+      "status": "PASS",
+      "details": "location_key \u2192 dim_location.location_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_inventory.date_key",
+      "status": "PASS",
+      "details": "date_key \u2192 dim_date.date_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_inventory.product_key",
+      "status": "PASS",
+      "details": "product_key \u2192 dim_product.product_key"
+    },
+    {
+      "category": "foreign_keys",
+      "check": "fact_inventory.location_key",
+      "status": "PASS",
+      "details": "location_key \u2192 dim_location.location_key"
+    },
+    {
+      "category": "date_keys",
+      "check": "fact_sales",
+      "status": "PASS",
+      "details": "All date keys resolve to dim_date."
+    },
+    {
+      "category": "date_keys",
+      "check": "fact_production",
+      "status": "PASS",
+      "details": "All date keys resolve to dim_date."
+    },
+    {
+      "category": "date_keys",
+      "check": "fact_maintenance",
+      "status": "PASS",
+      "details": "All date keys resolve to dim_date."
+    },
+    {
+      "category": "date_keys",
+      "check": "fact_financial_transaction",
+      "status": "PASS",
+      "details": "All date keys resolve to dim_date."
+    },
+    {
+      "category": "date_keys",
+      "check": "fact_budget",
+      "status": "PASS",
+      "details": "All date keys resolve to dim_date."
+    },
+    {
+      "category": "date_keys",
+      "check": "fact_energy",
+      "status": "PASS",
+      "details": "All date keys resolve to dim_date."
+    },
+    {
+      "category": "date_keys",
+      "check": "fact_emissions",
+      "status": "PASS",
+      "details": "All date keys resolve to dim_date."
+    },
+    {
+      "category": "date_keys",
+      "check": "fact_waste",
+      "status": "PASS",
+      "details": "All date keys resolve to dim_date."
+    },
+    {
+      "category": "date_keys",
+      "check": "fact_inventory",
+      "status": "PASS",
+      "details": "All date keys resolve to dim_date."
+    },
+    {
+      "category": "fact_grain",
+      "check": "fact_sales",
+      "status": "PASS",
+      "details": "One row represents one sales transaction. Source key unique."
+    },
+    {
+      "category": "fact_grain",
+      "check": "fact_production",
+      "status": "PASS",
+      "details": "One row represents one production event for a product, machine, employee, location and date. Source key unique."
+    },
+    {
+      "category": "fact_grain",
+      "check": "fact_maintenance",
+      "status": "PASS",
+      "details": "One row represents one maintenance event for a machine, employee, location and date. Source key unique."
+    },
+    {
+      "category": "fact_grain",
+      "check": "fact_financial_transaction",
+      "status": "PASS",
+      "details": "One row represents one financial transaction. Source key unique."
+    },
+    {
+      "category": "fact_grain",
+      "check": "fact_budget",
+      "status": "PASS",
+      "details": "One row represents one budget record for a location, category and date. Source key unique."
+    },
+    {
+      "category": "fact_grain",
+      "check": "fact_energy",
+      "status": "PASS",
+      "details": "One row represents one energy measurement for a location, energy type and date. Source key unique."
+    },
+    {
+      "category": "fact_grain",
+      "check": "fact_emissions",
+      "status": "PASS",
+      "details": "One row represents one emissions measurement for a location, source and date. Source key unique."
+    },
+    {
+      "category": "fact_grain",
+      "check": "fact_waste",
+      "status": "PASS",
+      "details": "One row represents one waste record for a location, waste type and date. Source key unique."
+    },
+    {
+      "category": "fact_grain",
+      "check": "fact_inventory",
+      "status": "PASS",
+      "details": "One row represents one inventory snapshot for a product, location and date. Source key unique."
+    },
+    {
+      "category": "business_rules",
+      "check": "customer_account",
+      "status": "PASS",
+      "details": "Each customer maps to one account."
+    },
+    {
+      "category": "business_rules",
+      "check": "product_supplier",
+      "status": "PASS",
+      "details": "Every product has a supplier."
+    },
+    {
+      "category": "business_rules",
+      "check": "machine_location",
+      "status": "PASS",
+      "details": "Every machine has a location."
+    },
+    {
+      "category": "business_rules",
+      "check": "employee_location",
+      "status": "PASS",
+      "details": "Every employee has a location."
+    },
+    {
+      "category": "numeric_validation",
+      "check": "dim_product",
+      "status": "PASS",
+      "details": "Numeric fields are valid."
+    },
+    {
+      "category": "numeric_validation",
+      "check": "fact_sales",
+      "status": "PASS",
+      "details": "Numeric fields are valid."
+    },
+    {
+      "category": "numeric_validation",
+      "check": "fact_production",
+      "status": "PASS",
+      "details": "Numeric fields are valid."
+    },
+    {
+      "category": "numeric_validation",
+      "check": "fact_maintenance",
+      "status": "PASS",
+      "details": "Numeric fields are valid."
+    },
+    {
+      "category": "numeric_validation",
+      "check": "fact_financial_transaction",
+      "status": "PASS",
+      "details": "Numeric fields are valid."
+    },
+    {
+      "category": "numeric_validation",
+      "check": "fact_budget",
+      "status": "PASS",
+      "details": "Numeric fields are valid."
+    },
+    {
+      "category": "numeric_validation",
+      "check": "fact_energy",
+      "status": "PASS",
+      "details": "Numeric fields are valid."
+    },
+    {
+      "category": "numeric_validation",
+      "check": "fact_emissions",
+      "status": "PASS",
+      "details": "Numeric fields are valid."
+    },
+    {
+      "category": "numeric_validation",
+      "check": "fact_waste",
+      "status": "PASS",
+      "details": "Numeric fields are valid."
+    },
+    {
+      "category": "numeric_validation",
+      "check": "fact_inventory",
+      "status": "PASS",
+      "details": "Numeric fields are valid."
+    },
+    {
+      "category": "date_validation",
+      "check": "dim_date.date",
+      "status": "PASS",
+      "details": "Date values are valid."
+    },
+    {
+      "category": "date_validation",
+      "check": "dim_employee.hire_date",
+      "status": "PASS",
+      "details": "Date values are valid."
+    },
+    {
+      "category": "date_validation",
+      "check": "dim_machine.installation_date",
+      "status": "PASS",
+      "details": "Date values are valid."
+    },
+    {
+      "category": "date_validation",
+      "check": "fact_sales.date",
+      "status": "PASS",
+      "details": "Date values are valid."
+    },
+    {
+      "category": "date_validation",
+      "check": "fact_production.date",
+      "status": "PASS",
+      "details": "Date values are valid."
+    },
+    {
+      "category": "date_validation",
+      "check": "fact_maintenance.date",
+      "status": "PASS",
+      "details": "Date values are valid."
+    },
+    {
+      "category": "date_validation",
+      "check": "fact_financial_transaction.date",
+      "status": "PASS",
+      "details": "Date values are valid."
+    },
+    {
+      "category": "date_validation",
+      "check": "fact_budget.date",
+      "status": "PASS",
+      "details": "Date values are valid."
+    },
+    {
+      "category": "date_validation",
+      "check": "fact_energy.date",
+      "status": "PASS",
+      "details": "Date values are valid."
+    },
+    {
+      "category": "date_validation",
+      "check": "fact_emissions.date",
+      "status": "PASS",
+      "details": "Date values are valid."
+    },
+    {
+      "category": "date_validation",
+      "check": "fact_waste.date",
+      "status": "PASS",
+      "details": "Date values are valid."
+    },
+    {
+      "category": "date_validation",
+      "check": "fact_inventory.date",
+      "status": "PASS",
+      "details": "Date values are valid."
+    },
+    {
+      "category": "required_keys",
+      "check": "dim_account",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "required_keys",
+      "check": "dim_customer",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "required_keys",
+      "check": "dim_product",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "required_keys",
+      "check": "dim_supplier",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "required_keys",
+      "check": "dim_location",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "required_keys",
+      "check": "dim_employee",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "required_keys",
+      "check": "dim_machine",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "required_keys",
+      "check": "dim_date",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "required_keys",
+      "check": "fact_sales",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "required_keys",
+      "check": "fact_production",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "required_keys",
+      "check": "fact_maintenance",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "required_keys",
+      "check": "fact_financial_transaction",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "required_keys",
+      "check": "fact_budget",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "required_keys",
+      "check": "fact_energy",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "required_keys",
+      "check": "fact_emissions",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "required_keys",
+      "check": "fact_waste",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "required_keys",
+      "check": "fact_inventory",
+      "status": "PASS",
+      "details": "Required keys are complete."
+    },
+    {
+      "category": "date_dimension",
+      "check": "dim_date",
+      "status": "PASS",
+      "details": "Date dimension is unique, correctly keyed and continuous."
+    },
+    {
+      "category": "fact_date_coverage",
+      "check": "fact_sales",
+      "status": "PASS",
+      "details": "Dates within 2019-01-01 to 2025-12-31."
+    },
+    {
+      "category": "fact_date_coverage",
+      "check": "fact_production",
+      "status": "PASS",
+      "details": "Dates within 2019-01-01 to 2025-12-31."
+    },
+    {
+      "category": "fact_date_coverage",
+      "check": "fact_maintenance",
+      "status": "PASS",
+      "details": "Dates within 2019-01-01 to 2025-12-31."
+    },
+    {
+      "category": "fact_date_coverage",
+      "check": "fact_financial_transaction",
+      "status": "PASS",
+      "details": "Dates within 2019-01-01 to 2025-12-31."
+    },
+    {
+      "category": "fact_date_coverage",
+      "check": "fact_budget",
+      "status": "PASS",
+      "details": "Dates within 2019-01-01 to 2025-12-31."
+    },
+    {
+      "category": "fact_date_coverage",
+      "check": "fact_energy",
+      "status": "PASS",
+      "details": "Dates within 2019-01-01 to 2025-12-31."
+    },
+    {
+      "category": "fact_date_coverage",
+      "check": "fact_emissions",
+      "status": "PASS",
+      "details": "Dates within 2019-01-01 to 2025-12-31."
+    },
+    {
+      "category": "fact_date_coverage",
+      "check": "fact_waste",
+      "status": "PASS",
+      "details": "Dates within 2019-01-01 to 2025-12-31."
+    },
+    {
+      "category": "fact_date_coverage",
+      "check": "fact_inventory",
+      "status": "PASS",
+      "details": "Dates within 2019-01-01 to 2025-12-31."
+    },
+    {
+      "category": "business_rules",
+      "check": "sales_customer_account",
+      "status": "PASS",
+      "details": "Sales customer/account relationships are consistent."
+    }
+  ]
+}

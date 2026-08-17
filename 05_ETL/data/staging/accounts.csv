@@ -1,0 +1,1001 @@
+account_id,account_name,account_type,industry,country,status
+ACC-000001,"Rodriguez, Figueroa and Sanchez Account",Small Business,Retail,Mexico,Active
+ACC-000002,Doyle Ltd Account,Mid-Market,Automotive,Sweden,Active
+ACC-000003,"Mcclain, Miller and Henderson Account",Distributor,Electronics,United States,Inactive
+ACC-000004,Davis and Sons Account,Small Business,Food & Beverage,United States,Active
+ACC-000005,"Guzman, Hoffman and Baldwin Account",Enterprise,Manufacturing,United Kingdom,Active
+ACC-000006,"Gardner, Robinson and Lawrence Account",Distributor,Construction,United States,Active
+ACC-000007,Blake and Sons Account,Small Business,Food & Beverage,Germany,Active
+ACC-000008,"Henderson, Ramirez and Lewis Account",Small Business,Construction,United States,Active
+ACC-000009,Garcia-James Account,Enterprise,Manufacturing,United States,Active
+ACC-000010,Abbott-Munoz Account,Mid-Market,Industrial Equipment,Germany,Active
+ACC-000011,Blair PLC Account,Mid-Market,Food & Beverage,United States,Active
+ACC-000012,Dudley Group Account,Distributor,Electronics,United States,Active
+ACC-000013,Arnold Ltd Account,Small Business,Construction,Canada,Active
+ACC-000014,"Mcclure, Ward and Lee Account",Small Business,Technology,Germany,Active
+ACC-000015,Williams and Sons Account,Mid-Market,Industrial Equipment,United Kingdom,Active
+ACC-000016,Galloway-Wyatt Account,Mid-Market,Electronics,United States,Active
+ACC-000017,James Group Account,Small Business,Food & Beverage,United States,Active
+ACC-000018,"Flowers, Martin and Kelly Account",Enterprise,Manufacturing,Sweden,Active
+ACC-000019,"Adams, Zuniga and Wong Account",Small Business,Manufacturing,United States,Active
+ACC-000020,"Reid, Ferguson and Sanchez Account",Small Business,Food & Beverage,United States,Active
+ACC-000021,Gray-Mayo Account,Small Business,Electronics,United States,Active
+ACC-000022,"Watts, Robinson and Nguyen Account",Mid-Market,Industrial Equipment,United States,Active
+ACC-000023,Perez Inc Account,Distributor,Industrial Equipment,United Kingdom,Active
+ACC-000024,Morales-Jones Account,Distributor,Healthcare,Germany,Active
+ACC-000025,"Walter, Edwards and Rios Account",Small Business,Automotive,Mexico,Active
+ACC-000026,Wilkerson-Day Account,Mid-Market,Food & Beverage,United States,Active
+ACC-000027,Baker and Sons Account,Mid-Market,Industrial Equipment,United States,Active
+ACC-000028,"Hoffman, Baker and Richards Account",Enterprise,Technology,United States,Active
+ACC-000029,"Ross, Robinson and Bright Account",Mid-Market,Healthcare,United States,Active
+ACC-000030,"Snyder, Campos and Callahan Account",Small Business,Electronics,United States,Active
+ACC-000031,Burton Ltd Account,Small Business,Healthcare,United States,Active
+ACC-000032,Carlson-Cruz Account,Distributor,Construction,United States,Active
+ACC-000033,"Ferrell, Rice and Maddox Account",Mid-Market,Automotive,Canada,Active
+ACC-000034,Frazier Inc Account,Mid-Market,Industrial Equipment,Mexico,Active
+ACC-000035,"Dyer, Potter and Mack Account",Mid-Market,Technology,United States,Inactive
+ACC-000036,Rodriguez-Graham Account,Mid-Market,Retail,United States,Active
+ACC-000037,Smith-Bowen Account,Enterprise,Healthcare,Germany,Active
+ACC-000038,"Baker, Mason and White Account",Mid-Market,Automotive,Germany,Active
+ACC-000039,Harrell LLC Account,Mid-Market,Technology,United Kingdom,Active
+ACC-000040,"Romero, Gonzalez and Brooks Account",Small Business,Food & Beverage,United States,Active
+ACC-000041,Ryan PLC Account,Mid-Market,Consumer Goods,United Kingdom,Active
+ACC-000042,George Group Account,Small Business,Retail,United States,Active
+ACC-000043,Rodriguez LLC Account,Small Business,Manufacturing,United States,Active
+ACC-000044,Allen-Allen Account,Mid-Market,Manufacturing,United States,Active
+ACC-000045,"Arroyo, Miller and Tucker Account",Small Business,Consumer Goods,United States,Active
+ACC-000046,Spence PLC Account,Small Business,Technology,United States,Active
+ACC-000047,Anderson Group Account,Mid-Market,Food & Beverage,United States,Inactive
+ACC-000048,"Martin, Rose and Obrien Account",Mid-Market,Healthcare,Germany,Active
+ACC-000049,Hickman Ltd Account,Small Business,Manufacturing,United States,Active
+ACC-000050,"Harris, Collins and Carney Account",Enterprise,Industrial Equipment,United States,Active
+ACC-000051,"Brooks, Lam and Hayes Account",Mid-Market,Construction,United States,Active
+ACC-000052,Walker LLC Account,Enterprise,Electronics,United States,Active
+ACC-000053,Chapman and Sons Account,Small Business,Electronics,United States,Active
+ACC-000054,"Robinson, Jones and Welch Account",Small Business,Technology,United States,Inactive
+ACC-000055,Jones Inc Account,Small Business,Manufacturing,United States,Active
+ACC-000056,Jones-Young Account,Small Business,Electronics,Germany,Active
+ACC-000057,"Washington, Ryan and Cummings Account",Mid-Market,Manufacturing,Sweden,Active
+ACC-000058,"Johnston, Sanchez and Kennedy Account",Small Business,Manufacturing,United States,Active
+ACC-000059,Lee-Davis Account,Enterprise,Electronics,Mexico,Active
+ACC-000060,Gomez-Jenkins Account,Enterprise,Food & Beverage,United Kingdom,Active
+ACC-000061,"Brown, Valdez and Lucas Account",Small Business,Retail,Sweden,Active
+ACC-000062,Powell LLC Account,Mid-Market,Healthcare,Canada,Active
+ACC-000063,Wright and Sons Account,Small Business,Construction,United Kingdom,Active
+ACC-000064,"West, Henderson and Ramirez Account",Small Business,Manufacturing,Sweden,Active
+ACC-000065,Baxter Inc Account,Small Business,Healthcare,Germany,Active
+ACC-000066,Morton-Chase Account,Small Business,Healthcare,United States,Active
+ACC-000067,Williams PLC Account,Small Business,Manufacturing,United States,Active
+ACC-000068,Novak and Sons Account,Mid-Market,Technology,United States,Active
+ACC-000069,Russell Group Account,Enterprise,Electronics,United States,Active
+ACC-000070,Hancock Inc Account,Mid-Market,Food & Beverage,United States,Inactive
+ACC-000071,Gray Group Account,Mid-Market,Construction,United States,Active
+ACC-000072,House-Glover Account,Mid-Market,Industrial Equipment,Canada,Active
+ACC-000073,Henderson-Bernard Account,Distributor,Food & Beverage,Canada,Active
+ACC-000074,"Stanley, Tucker and Lee Account",Mid-Market,Electronics,United Kingdom,Active
+ACC-000075,Novak PLC Account,Enterprise,Industrial Equipment,United States,Active
+ACC-000076,"Daniels, Adkins and Brown Account",Mid-Market,Food & Beverage,United States,Active
+ACC-000077,"Woods, Calhoun and Schmidt Account",Mid-Market,Food & Beverage,Germany,Active
+ACC-000078,Yu Inc Account,Small Business,Food & Beverage,United Kingdom,Active
+ACC-000079,Jones Inc Account,Small Business,Consumer Goods,Sweden,Active
+ACC-000080,"Hensley, Powell and David Account",Small Business,Construction,United Kingdom,Active
+ACC-000081,"Sanchez, Wheeler and Harvey Account",Small Business,Retail,United Kingdom,Active
+ACC-000082,Sandoval-Cunningham Account,Mid-Market,Automotive,United States,Active
+ACC-000083,Donovan-Harris Account,Small Business,Electronics,United States,Active
+ACC-000084,"Edwards, Baker and Anderson Account",Mid-Market,Industrial Equipment,United States,Active
+ACC-000085,"Evans, Stewart and Walton Account",Enterprise,Construction,Canada,Active
+ACC-000086,Smith PLC Account,Enterprise,Industrial Equipment,Sweden,Active
+ACC-000087,"Ferrell, Jones and Lewis Account",Small Business,Manufacturing,United States,Active
+ACC-000088,Anderson-Bailey Account,Mid-Market,Industrial Equipment,Canada,Active
+ACC-000089,Suarez LLC Account,Mid-Market,Electronics,United States,Active
+ACC-000090,Moore-Bass Account,Small Business,Automotive,United States,Active
+ACC-000091,"Turner, Riggs and Roman Account",Small Business,Retail,United States,Active
+ACC-000092,"Smith, Montoya and Evans Account",Small Business,Electronics,United States,Active
+ACC-000093,"Garcia, Humphrey and Baker Account",Mid-Market,Retail,Sweden,Active
+ACC-000094,Newton and Sons Account,Mid-Market,Construction,United States,Active
+ACC-000095,Campbell-Clark Account,Mid-Market,Construction,United Kingdom,Active
+ACC-000096,Harris-Walters Account,Small Business,Manufacturing,Mexico,Active
+ACC-000097,Wagner-King Account,Mid-Market,Technology,United States,Active
+ACC-000098,Davis Group Account,Enterprise,Retail,United States,Active
+ACC-000099,Williams-Cook Account,Enterprise,Manufacturing,United Kingdom,Active
+ACC-000100,Walsh LLC Account,Distributor,Consumer Goods,United States,Inactive
+ACC-000101,Figueroa PLC Account,Distributor,Technology,Sweden,Active
+ACC-000102,"Patterson, Smith and Jones Account",Small Business,Industrial Equipment,United States,Active
+ACC-000103,"Mckee, Gardner and Davenport Account",Mid-Market,Construction,Mexico,Active
+ACC-000104,"Tran, Jordan and Williams Account",Distributor,Construction,United Kingdom,Active
+ACC-000105,Nolan-Flynn Account,Small Business,Retail,United States,Active
+ACC-000106,Nolan and Sons Account,Small Business,Consumer Goods,United States,Active
+ACC-000107,"Wright, Garcia and Deleon Account",Mid-Market,Manufacturing,Sweden,Active
+ACC-000108,Dickson-Brady Account,Mid-Market,Construction,United States,Active
+ACC-000109,Hancock and Sons Account,Enterprise,Consumer Goods,United States,Active
+ACC-000110,Johnson-Doyle Account,Distributor,Consumer Goods,United States,Active
+ACC-000111,Patton-Jenkins Account,Mid-Market,Consumer Goods,United States,Active
+ACC-000112,"Shields, Cochran and Adams Account",Mid-Market,Industrial Equipment,Germany,Active
+ACC-000113,"Rodriguez, Brennan and Garrison Account",Mid-Market,Technology,Germany,Active
+ACC-000114,Gonzalez Group Account,Small Business,Technology,United States,Active
+ACC-000115,Torres-Pope Account,Mid-Market,Manufacturing,United Kingdom,Active
+ACC-000116,Walker Ltd Account,Distributor,Consumer Goods,United States,Active
+ACC-000117,Ross LLC Account,Small Business,Technology,United States,Active
+ACC-000118,Rasmussen LLC Account,Small Business,Healthcare,Canada,Active
+ACC-000119,May-Ross Account,Mid-Market,Healthcare,Sweden,Active
+ACC-000120,"Rivera, Johnson and Wiley Account",Small Business,Manufacturing,United States,Active
+ACC-000121,White-Estes Account,Small Business,Manufacturing,United States,Active
+ACC-000122,Johnson-Carlson Account,Small Business,Technology,United States,Inactive
+ACC-000123,Chandler-Edwards Account,Enterprise,Healthcare,Germany,Active
+ACC-000124,"Joyce, Wilson and Lam Account",Mid-Market,Industrial Equipment,United States,Active
+ACC-000125,Jones Inc Account,Enterprise,Manufacturing,United States,Active
+ACC-000126,Smith-Frost Account,Mid-Market,Consumer Goods,Germany,Active
+ACC-000127,"Mcdaniel, Bentley and Mclaughlin Account",Mid-Market,Electronics,United States,Active
+ACC-000128,Diaz Inc Account,Enterprise,Industrial Equipment,United States,Active
+ACC-000129,"Mccall, Hanson and Alvarado Account",Enterprise,Automotive,United States,Active
+ACC-000130,Cortez LLC Account,Small Business,Electronics,United States,Active
+ACC-000131,"Parker, Ortiz and Powell Account",Mid-Market,Manufacturing,United States,Active
+ACC-000132,Spencer-Lee Account,Distributor,Technology,United Kingdom,Active
+ACC-000133,"Bentley, Byrd and Orr Account",Small Business,Healthcare,Mexico,Active
+ACC-000134,"Carroll, Sullivan and Bass Account",Mid-Market,Electronics,Mexico,Active
+ACC-000135,Mitchell-Jordan Account,Small Business,Food & Beverage,Sweden,Active
+ACC-000136,"Lawson, Morris and Ramos Account",Enterprise,Industrial Equipment,United States,Active
+ACC-000137,"Lewis, Kennedy and Santana Account",Distributor,Healthcare,United States,Active
+ACC-000138,"Jackson, Miller and Robertson Account",Mid-Market,Automotive,Sweden,Active
+ACC-000139,"Harvey, Davis and Crane Account",Small Business,Healthcare,United States,Active
+ACC-000140,Chambers and Sons Account,Enterprise,Food & Beverage,Germany,Active
+ACC-000141,Hernandez Inc Account,Mid-Market,Manufacturing,Germany,Active
+ACC-000142,Riggs PLC Account,Mid-Market,Retail,United States,Active
+ACC-000143,Gibson Ltd Account,Distributor,Technology,United States,Active
+ACC-000144,"Lee, Horton and Snyder Account",Small Business,Industrial Equipment,United States,Active
+ACC-000145,Hernandez Ltd Account,Mid-Market,Electronics,United States,Active
+ACC-000146,Stafford Inc Account,Mid-Market,Food & Beverage,United States,Active
+ACC-000147,Robinson-Brock Account,Mid-Market,Construction,United States,Active
+ACC-000148,"Holmes, Williams and Wright Account",Small Business,Technology,Germany,Active
+ACC-000149,Bryant Group Account,Mid-Market,Retail,Sweden,Active
+ACC-000150,"Schmidt, Hansen and Stewart Account",Enterprise,Retail,Germany,Active
+ACC-000151,Salazar-Ball Account,Small Business,Electronics,United States,Inactive
+ACC-000152,"Simmons, Meadows and Griffin Account",Distributor,Electronics,United States,Active
+ACC-000153,Manning Group Account,Enterprise,Retail,United States,Active
+ACC-000154,Green-Wright Account,Small Business,Healthcare,United States,Active
+ACC-000155,"Ramirez, Strickland and Washington Account",Enterprise,Manufacturing,Sweden,Active
+ACC-000156,Hill Inc Account,Small Business,Food & Beverage,United States,Active
+ACC-000157,"Mitchell, Nelson and Flores Account",Mid-Market,Food & Beverage,United States,Active
+ACC-000158,"Miller, Hernandez and Reyes Account",Small Business,Industrial Equipment,United Kingdom,Active
+ACC-000159,Mccarthy Inc Account,Small Business,Retail,United States,Active
+ACC-000160,Russell-Daniels Account,Small Business,Electronics,United States,Active
+ACC-000161,Brown-Wall Account,Enterprise,Retail,United States,Active
+ACC-000162,Stein-Silva Account,Distributor,Consumer Goods,Mexico,Active
+ACC-000163,"Smith, Gilmore and Johnston Account",Mid-Market,Food & Beverage,Germany,Active
+ACC-000164,Smith-Bell Account,Enterprise,Technology,United States,Active
+ACC-000165,Castaneda-Ashley Account,Small Business,Technology,Sweden,Active
+ACC-000166,Medina-Navarro Account,Mid-Market,Technology,United Kingdom,Active
+ACC-000167,"Hurst, Freeman and Nelson Account",Small Business,Electronics,United Kingdom,Active
+ACC-000168,Johnson-Rogers Account,Small Business,Retail,United States,Active
+ACC-000169,"Yates, Ramsey and Pittman Account",Mid-Market,Technology,United States,Active
+ACC-000170,Hooper PLC Account,Distributor,Technology,United Kingdom,Active
+ACC-000171,Meadows PLC Account,Mid-Market,Automotive,United States,Active
+ACC-000172,"Alvarado, Miller and Patterson Account",Small Business,Manufacturing,Canada,Active
+ACC-000173,White-Green Account,Mid-Market,Technology,Germany,Active
+ACC-000174,Lewis-Murphy Account,Distributor,Manufacturing,United States,Active
+ACC-000175,Ramirez-Bean Account,Mid-Market,Consumer Goods,Germany,Active
+ACC-000176,King-Miller Account,Enterprise,Manufacturing,Sweden,Active
+ACC-000177,Curry Inc Account,Mid-Market,Construction,Germany,Active
+ACC-000178,Walker-Jones Account,Distributor,Food & Beverage,United States,Active
+ACC-000179,"Williams, Johnson and Wright Account",Distributor,Industrial Equipment,United Kingdom,Active
+ACC-000180,Howell and Sons Account,Small Business,Food & Beverage,United States,Active
+ACC-000181,Wells Inc Account,Distributor,Industrial Equipment,Germany,Active
+ACC-000182,"Gould, Marshall and Scott Account",Distributor,Consumer Goods,United Kingdom,Active
+ACC-000183,Jackson-Lawson Account,Small Business,Industrial Equipment,Germany,Active
+ACC-000184,"Higgins, Strickland and Martin Account",Mid-Market,Industrial Equipment,United States,Active
+ACC-000185,Rodriguez-Johnson Account,Small Business,Industrial Equipment,United States,Active
+ACC-000186,Johnston-Odonnell Account,Small Business,Consumer Goods,United States,Active
+ACC-000187,Sanders-Espinoza Account,Mid-Market,Electronics,United States,Active
+ACC-000188,Vargas Ltd Account,Enterprise,Consumer Goods,United States,Active
+ACC-000189,Garcia LLC Account,Small Business,Food & Beverage,Canada,Active
+ACC-000190,"Burke, Martinez and Riggs Account",Mid-Market,Healthcare,United States,Active
+ACC-000191,Reed Group Account,Distributor,Electronics,Germany,Active
+ACC-000192,"Wood, Hunter and Peterson Account",Mid-Market,Food & Beverage,Sweden,Active
+ACC-000193,Short-Garcia Account,Enterprise,Consumer Goods,United States,Active
+ACC-000194,Jones Inc Account,Small Business,Consumer Goods,Germany,Inactive
+ACC-000195,"Hernandez, Thompson and Boyd Account",Mid-Market,Industrial Equipment,Mexico,Active
+ACC-000196,"Nelson, Morton and Medina Account",Mid-Market,Retail,United States,Active
+ACC-000197,Marshall-Petersen Account,Small Business,Consumer Goods,United States,Active
+ACC-000198,"Adams, Christian and Rivas Account",Distributor,Retail,Germany,Active
+ACC-000199,Ramirez Group Account,Mid-Market,Healthcare,Sweden,Active
+ACC-000200,Christensen PLC Account,Mid-Market,Construction,Germany,Active
+ACC-000201,"Barnett, Rogers and Snyder Account",Small Business,Electronics,Sweden,Active
+ACC-000202,White-Lewis Account,Distributor,Automotive,Sweden,Active
+ACC-000203,Peterson-Beard Account,Small Business,Automotive,United States,Active
+ACC-000204,"Beard, Peters and Black Account",Enterprise,Electronics,Mexico,Active
+ACC-000205,Miller Ltd Account,Enterprise,Food & Beverage,United States,Active
+ACC-000206,Freeman-Chang Account,Mid-Market,Manufacturing,Sweden,Active
+ACC-000207,"Alvarez, Joseph and West Account",Enterprise,Construction,United States,Active
+ACC-000208,Davis and Sons Account,Small Business,Retail,United States,Active
+ACC-000209,Holt-Torres Account,Enterprise,Consumer Goods,United Kingdom,Active
+ACC-000210,"Wood, Tran and Cooper Account",Small Business,Construction,United States,Active
+ACC-000211,"Pierce, Bell and Chavez Account",Small Business,Industrial Equipment,Germany,Inactive
+ACC-000212,King-Martinez Account,Small Business,Manufacturing,United States,Active
+ACC-000213,Stewart Ltd Account,Mid-Market,Industrial Equipment,Sweden,Active
+ACC-000214,"Tapia, Vaughn and Lee Account",Small Business,Construction,United Kingdom,Active
+ACC-000215,"Washington, Hardy and Bray Account",Small Business,Construction,United States,Active
+ACC-000216,"Carlson, Hooper and Wall Account",Small Business,Electronics,Germany,Active
+ACC-000217,Perez-White Account,Enterprise,Food & Beverage,United States,Active
+ACC-000218,Erickson and Sons Account,Enterprise,Technology,Canada,Inactive
+ACC-000219,Williams-Brown Account,Distributor,Consumer Goods,Mexico,Active
+ACC-000220,Terry-Martinez Account,Mid-Market,Construction,United Kingdom,Active
+ACC-000221,Garcia-Smith Account,Mid-Market,Technology,United States,Active
+ACC-000222,Harrison-Alexander Account,Mid-Market,Construction,United States,Active
+ACC-000223,Sheppard LLC Account,Small Business,Automotive,Germany,Active
+ACC-000224,Wilson-Jones Account,Distributor,Food & Beverage,Canada,Active
+ACC-000225,Jones-Soto Account,Mid-Market,Food & Beverage,United States,Active
+ACC-000226,Hernandez PLC Account,Distributor,Industrial Equipment,United States,Active
+ACC-000227,Miller-Wright Account,Enterprise,Retail,United States,Active
+ACC-000228,"Duran, Obrien and Gibbs Account",Small Business,Technology,United Kingdom,Active
+ACC-000229,Rowe Group Account,Small Business,Consumer Goods,United States,Active
+ACC-000230,Kerr-Evans Account,Enterprise,Technology,United States,Active
+ACC-000231,"Branch, Torres and Oliver Account",Enterprise,Industrial Equipment,Sweden,Active
+ACC-000232,"Choi, Garcia and Farmer Account",Mid-Market,Automotive,United States,Active
+ACC-000233,"Clark, Guerrero and Moore Account",Distributor,Technology,Germany,Active
+ACC-000234,Arnold and Sons Account,Small Business,Construction,United States,Active
+ACC-000235,Ortiz Ltd Account,Distributor,Healthcare,United Kingdom,Active
+ACC-000236,"Harrison, Johnson and Roberts Account",Small Business,Manufacturing,Germany,Active
+ACC-000237,Warner-Gibson Account,Mid-Market,Consumer Goods,United Kingdom,Active
+ACC-000238,"Hall, Baker and Moody Account",Small Business,Consumer Goods,United States,Active
+ACC-000239,"Guerrero, Peck and Coleman Account",Enterprise,Food & Beverage,United States,Active
+ACC-000240,"Walker, Hernandez and Baker Account",Enterprise,Retail,Germany,Active
+ACC-000241,Jones and Sons Account,Small Business,Consumer Goods,United States,Active
+ACC-000242,Larson-Holloway Account,Small Business,Industrial Equipment,United States,Active
+ACC-000243,Gonzales-Harrison Account,Mid-Market,Food & Beverage,United States,Active
+ACC-000244,Lyons-Bender Account,Small Business,Construction,Sweden,Active
+ACC-000245,"Fernandez, Kim and George Account",Small Business,Manufacturing,Germany,Active
+ACC-000246,Navarro-Munoz Account,Distributor,Retail,Mexico,Active
+ACC-000247,Davis Ltd Account,Small Business,Healthcare,Germany,Active
+ACC-000248,"Matthews, Smith and Hubbard Account",Mid-Market,Construction,United States,Active
+ACC-000249,Johnston-Hines Account,Mid-Market,Construction,United States,Active
+ACC-000250,Ruiz Ltd Account,Mid-Market,Food & Beverage,United States,Active
+ACC-000251,Moon-White Account,Small Business,Healthcare,Mexico,Active
+ACC-000252,"Graham, Olsen and Costa Account",Distributor,Healthcare,United States,Active
+ACC-000253,Bailey-Cook Account,Mid-Market,Consumer Goods,United Kingdom,Active
+ACC-000254,"Garcia, Martin and Jenkins Account",Mid-Market,Healthcare,United Kingdom,Active
+ACC-000255,Roberts-Landry Account,Mid-Market,Consumer Goods,United States,Active
+ACC-000256,"Johnson, Miller and King Account",Small Business,Industrial Equipment,Canada,Active
+ACC-000257,Cordova Group Account,Small Business,Manufacturing,United States,Active
+ACC-000258,"Bryan, Smith and Booth Account",Enterprise,Industrial Equipment,Sweden,Active
+ACC-000259,Gutierrez-Lopez Account,Enterprise,Automotive,Sweden,Active
+ACC-000260,Dean-Jimenez Account,Small Business,Technology,Sweden,Active
+ACC-000261,Wolf-Harris Account,Enterprise,Automotive,United States,Active
+ACC-000262,"Anderson, Roberts and Gilmore Account",Small Business,Technology,United States,Active
+ACC-000263,Martinez-Dudley Account,Mid-Market,Automotive,United States,Active
+ACC-000264,"Lloyd, Mckinney and Collins Account",Enterprise,Healthcare,United States,Active
+ACC-000265,Tran Inc Account,Distributor,Construction,United States,Active
+ACC-000266,Gay Inc Account,Mid-Market,Automotive,United States,Active
+ACC-000267,Valentine-Holland Account,Mid-Market,Industrial Equipment,Sweden,Active
+ACC-000268,Jimenez Ltd Account,Mid-Market,Manufacturing,United States,Active
+ACC-000269,Hicks-Hill Account,Enterprise,Construction,United States,Active
+ACC-000270,Baird-Sanchez Account,Enterprise,Technology,United Kingdom,Inactive
+ACC-000271,"Thomas, Lee and Greene Account",Enterprise,Electronics,Canada,Active
+ACC-000272,"Suarez, Shields and Hill Account",Mid-Market,Electronics,Germany,Active
+ACC-000273,Morgan-French Account,Enterprise,Consumer Goods,Mexico,Active
+ACC-000274,Hoover-Campbell Account,Small Business,Food & Beverage,United States,Active
+ACC-000275,Monroe-Carpenter Account,Small Business,Construction,Mexico,Active
+ACC-000276,"Burns, Hernandez and Ryan Account",Mid-Market,Food & Beverage,United States,Active
+ACC-000277,Cook-Hines Account,Mid-Market,Consumer Goods,Germany,Active
+ACC-000278,Gibson-Morris Account,Small Business,Automotive,United States,Active
+ACC-000279,Pollard and Sons Account,Distributor,Electronics,United States,Active
+ACC-000280,"Reyes, Chase and Jenkins Account",Distributor,Industrial Equipment,United States,Active
+ACC-000281,Garner-Thornton Account,Enterprise,Manufacturing,United States,Active
+ACC-000282,Hughes-Alvarado Account,Mid-Market,Electronics,Germany,Active
+ACC-000283,"Pollard, Simpson and Johnson Account",Mid-Market,Electronics,United States,Active
+ACC-000284,"Sanford, Rivera and Garcia Account",Mid-Market,Manufacturing,United States,Active
+ACC-000285,Garcia-Lozano Account,Small Business,Industrial Equipment,United States,Active
+ACC-000286,Bowen Group Account,Mid-Market,Retail,United Kingdom,Active
+ACC-000287,"Booker, Jones and Harrington Account",Enterprise,Technology,United States,Active
+ACC-000288,Morgan-Schwartz Account,Mid-Market,Retail,Mexico,Active
+ACC-000289,"Miller, Murphy and Craig Account",Small Business,Technology,United Kingdom,Active
+ACC-000290,"James, Stewart and Higgins Account",Enterprise,Food & Beverage,United States,Active
+ACC-000291,Brennan-Johnson Account,Small Business,Electronics,Germany,Active
+ACC-000292,Young Ltd Account,Enterprise,Electronics,United States,Active
+ACC-000293,Bright-Francis Account,Distributor,Consumer Goods,United States,Active
+ACC-000294,Good-Hodges Account,Enterprise,Manufacturing,Mexico,Inactive
+ACC-000295,"Brennan, Wallace and Benson Account",Small Business,Manufacturing,Sweden,Active
+ACC-000296,Williams Inc Account,Distributor,Retail,United States,Active
+ACC-000297,Howard-Jordan Account,Distributor,Construction,Canada,Active
+ACC-000298,Schmidt PLC Account,Small Business,Food & Beverage,United States,Active
+ACC-000299,"Sparks, Jackson and Miller Account",Small Business,Consumer Goods,Canada,Active
+ACC-000300,Harvey-Allen Account,Small Business,Retail,Canada,Active
+ACC-000301,"Thomas, Murray and King Account",Small Business,Consumer Goods,Canada,Inactive
+ACC-000302,Estrada-Nolan Account,Enterprise,Construction,Canada,Active
+ACC-000303,Santana-Byrd Account,Small Business,Healthcare,United States,Active
+ACC-000304,Jones LLC Account,Small Business,Retail,Mexico,Active
+ACC-000305,"Evans, Hayden and Vaughn Account",Distributor,Technology,Mexico,Active
+ACC-000306,Bruce-Gonzalez Account,Mid-Market,Automotive,Mexico,Active
+ACC-000307,Castaneda-Rodriguez Account,Mid-Market,Electronics,United States,Active
+ACC-000308,Armstrong-Andrews Account,Small Business,Construction,United States,Active
+ACC-000309,"Phillips, Spence and Barrett Account",Mid-Market,Electronics,United States,Active
+ACC-000310,Smith-Grimes Account,Enterprise,Healthcare,United States,Active
+ACC-000311,"Beltran, Lozano and Mcgee Account",Mid-Market,Consumer Goods,United States,Active
+ACC-000312,Parsons-Hall Account,Mid-Market,Automotive,United States,Active
+ACC-000313,Robinson-Lee Account,Mid-Market,Healthcare,Germany,Active
+ACC-000314,Byrd-Le Account,Mid-Market,Automotive,United States,Active
+ACC-000315,"Becker, Taylor and Davis Account",Mid-Market,Consumer Goods,United Kingdom,Active
+ACC-000316,"Lucas, Parker and Alexander Account",Mid-Market,Automotive,United States,Active
+ACC-000317,"Diaz, Anderson and Browning Account",Mid-Market,Automotive,Germany,Active
+ACC-000318,Burgess-Thompson Account,Small Business,Food & Beverage,United States,Active
+ACC-000319,Buchanan LLC Account,Mid-Market,Retail,United States,Active
+ACC-000320,"Shaw, Nelson and Martin Account",Distributor,Manufacturing,Canada,Active
+ACC-000321,Coffey-Phillips Account,Distributor,Automotive,Sweden,Active
+ACC-000322,Brock-Mcdonald Account,Mid-Market,Automotive,United States,Active
+ACC-000323,Taylor and Sons Account,Mid-Market,Electronics,United States,Active
+ACC-000324,"Ramsey, Whitney and Coffey Account",Small Business,Industrial Equipment,Canada,Inactive
+ACC-000325,"Diaz, Gibbs and Smith Account",Small Business,Manufacturing,Germany,Inactive
+ACC-000326,"Martinez, Richardson and Curry Account",Small Business,Retail,United States,Active
+ACC-000327,Richards-Carson Account,Small Business,Electronics,United States,Active
+ACC-000328,Rodriguez-Hall Account,Small Business,Construction,United States,Active
+ACC-000329,Harvey PLC Account,Small Business,Automotive,Sweden,Active
+ACC-000330,Herman-Walker Account,Mid-Market,Construction,United States,Active
+ACC-000331,Reid Group Account,Small Business,Automotive,United States,Active
+ACC-000332,"Turner, Ortiz and Taylor Account",Mid-Market,Retail,Sweden,Active
+ACC-000333,Torres Group Account,Small Business,Consumer Goods,United States,Active
+ACC-000334,Davis PLC Account,Distributor,Retail,United States,Active
+ACC-000335,Price LLC Account,Enterprise,Healthcare,United States,Active
+ACC-000336,"Avery, Horton and Fernandez Account",Small Business,Healthcare,United States,Active
+ACC-000337,"Newton, Moore and Perry Account",Enterprise,Food & Beverage,United States,Active
+ACC-000338,Bass PLC Account,Small Business,Retail,United States,Active
+ACC-000339,Crosby-Ramirez Account,Enterprise,Automotive,Germany,Active
+ACC-000340,"Wood, Ramos and Sampson Account",Distributor,Automotive,Germany,Active
+ACC-000341,Garcia-Jennings Account,Enterprise,Food & Beverage,United States,Active
+ACC-000342,"Winters, Newman and Brown Account",Distributor,Electronics,Canada,Active
+ACC-000343,Lopez-Martinez Account,Small Business,Healthcare,United States,Active
+ACC-000344,Davis-Lewis Account,Small Business,Manufacturing,Sweden,Active
+ACC-000345,"Harper, Smith and Buchanan Account",Small Business,Healthcare,United States,Active
+ACC-000346,Zhang PLC Account,Small Business,Consumer Goods,Canada,Active
+ACC-000347,Jones PLC Account,Distributor,Electronics,United States,Active
+ACC-000348,Willis and Sons Account,Mid-Market,Manufacturing,Mexico,Active
+ACC-000349,Schroeder-Kramer Account,Small Business,Consumer Goods,United States,Active
+ACC-000350,"Smith, Garrison and Thomas Account",Enterprise,Healthcare,Germany,Active
+ACC-000351,Fernandez and Sons Account,Small Business,Healthcare,United States,Active
+ACC-000352,Guerrero Inc Account,Mid-Market,Manufacturing,Sweden,Active
+ACC-000353,Smith and Sons Account,Small Business,Manufacturing,United States,Active
+ACC-000354,"Morris, Thompson and Williams Account",Small Business,Food & Beverage,Germany,Active
+ACC-000355,"Fisher, Wilson and Brown Account",Mid-Market,Electronics,United Kingdom,Active
+ACC-000356,Strickland-Palmer Account,Small Business,Electronics,Sweden,Active
+ACC-000357,Hayes and Sons Account,Small Business,Food & Beverage,United States,Active
+ACC-000358,"Williams, Logan and Camacho Account",Small Business,Consumer Goods,United States,Active
+ACC-000359,"Turner, Schneider and Johnson Account",Mid-Market,Industrial Equipment,United States,Active
+ACC-000360,Boone-Simmons Account,Small Business,Consumer Goods,United States,Active
+ACC-000361,Henry Group Account,Distributor,Industrial Equipment,Canada,Active
+ACC-000362,Lam LLC Account,Enterprise,Manufacturing,Sweden,Active
+ACC-000363,"Hernandez, Martinez and Weber Account",Enterprise,Technology,Sweden,Active
+ACC-000364,"Kelley, Nguyen and Vang Account",Enterprise,Construction,United States,Active
+ACC-000365,"Phillips, Wagner and Jordan Account",Small Business,Manufacturing,Mexico,Active
+ACC-000366,"Wilson, Pena and Rich Account",Mid-Market,Automotive,United Kingdom,Active
+ACC-000367,"Le, Lewis and Hayes Account",Small Business,Electronics,Sweden,Active
+ACC-000368,Gutierrez Group Account,Small Business,Construction,United States,Active
+ACC-000369,Perry-Davis Account,Mid-Market,Construction,United States,Active
+ACC-000370,Edwards-Scott Account,Distributor,Construction,United Kingdom,Active
+ACC-000371,Mcdaniel Group Account,Small Business,Automotive,United States,Active
+ACC-000372,Davis Inc Account,Mid-Market,Retail,United States,Active
+ACC-000373,Reynolds Ltd Account,Mid-Market,Automotive,Sweden,Active
+ACC-000374,"Watson, Anderson and Brown Account",Mid-Market,Electronics,Sweden,Active
+ACC-000375,"Hoffman, Santiago and Jenkins Account",Mid-Market,Industrial Equipment,Sweden,Active
+ACC-000376,"Pugh, Henderson and Moon Account",Enterprise,Technology,Germany,Active
+ACC-000377,Schmitt PLC Account,Distributor,Retail,United States,Active
+ACC-000378,Bell-Lane Account,Mid-Market,Construction,United States,Active
+ACC-000379,Moore Group Account,Mid-Market,Technology,United States,Active
+ACC-000380,Boone LLC Account,Small Business,Industrial Equipment,Canada,Active
+ACC-000381,"Richardson, Farmer and Andrews Account",Small Business,Construction,United States,Active
+ACC-000382,Bruce-Villegas Account,Distributor,Food & Beverage,Mexico,Active
+ACC-000383,"Austin, Day and Johnson Account",Small Business,Technology,United States,Active
+ACC-000384,"Gallegos, Adams and White Account",Mid-Market,Electronics,Germany,Active
+ACC-000385,"Farmer, Dorsey and Bell Account",Mid-Market,Construction,United States,Active
+ACC-000386,Kane PLC Account,Distributor,Retail,United States,Active
+ACC-000387,"Morales, Thomas and Schultz Account",Small Business,Technology,United States,Active
+ACC-000388,Davis PLC Account,Distributor,Technology,United States,Active
+ACC-000389,Bennett Group Account,Enterprise,Technology,United Kingdom,Active
+ACC-000390,Moore-Collins Account,Distributor,Retail,United States,Active
+ACC-000391,Frank-Bradley Account,Small Business,Food & Beverage,United States,Active
+ACC-000392,Ware and Sons Account,Enterprise,Construction,Germany,Inactive
+ACC-000393,Webster Inc Account,Small Business,Industrial Equipment,Canada,Active
+ACC-000394,Jones Inc Account,Small Business,Consumer Goods,United States,Active
+ACC-000395,"Ramos, Nelson and Fischer Account",Enterprise,Food & Beverage,United States,Inactive
+ACC-000396,Reed Inc Account,Mid-Market,Industrial Equipment,United States,Active
+ACC-000397,Gregory-Watkins Account,Small Business,Technology,Mexico,Inactive
+ACC-000398,"Estrada, Williams and Foster Account",Mid-Market,Consumer Goods,United States,Active
+ACC-000399,"Brown, Harris and Dougherty Account",Mid-Market,Consumer Goods,United States,Active
+ACC-000400,Duran LLC Account,Mid-Market,Manufacturing,United States,Active
+ACC-000401,Wilson-Jimenez Account,Mid-Market,Automotive,Canada,Active
+ACC-000402,Thompson-James Account,Distributor,Healthcare,United States,Active
+ACC-000403,"Hall, Hansen and Barnett Account",Small Business,Manufacturing,United Kingdom,Active
+ACC-000404,Jones-Hensley Account,Enterprise,Healthcare,United States,Inactive
+ACC-000405,Graham Group Account,Distributor,Electronics,Canada,Active
+ACC-000406,Atkins PLC Account,Distributor,Retail,United States,Active
+ACC-000407,Berry-Mckinney Account,Mid-Market,Electronics,United States,Inactive
+ACC-000408,Roberts-Sullivan Account,Small Business,Manufacturing,United States,Active
+ACC-000409,Jackson-Meza Account,Enterprise,Food & Beverage,Germany,Active
+ACC-000410,Collier-Gillespie Account,Distributor,Automotive,United Kingdom,Active
+ACC-000411,Kim Inc Account,Small Business,Healthcare,United States,Active
+ACC-000412,Graham Group Account,Small Business,Automotive,United States,Active
+ACC-000413,"Miller, Harrell and Reese Account",Enterprise,Technology,Sweden,Active
+ACC-000414,Cook and Sons Account,Distributor,Industrial Equipment,United States,Active
+ACC-000415,Dixon Inc Account,Enterprise,Electronics,United States,Active
+ACC-000416,"Hicks, Bullock and Bailey Account",Mid-Market,Food & Beverage,United States,Active
+ACC-000417,"Mullen, Brewer and Hernandez Account",Enterprise,Industrial Equipment,Mexico,Active
+ACC-000418,Thomas and Sons Account,Small Business,Consumer Goods,Germany,Active
+ACC-000419,Morrison Ltd Account,Mid-Market,Technology,Canada,Active
+ACC-000420,Thompson Ltd Account,Distributor,Food & Beverage,Sweden,Active
+ACC-000421,Marshall-Elliott Account,Small Business,Consumer Goods,United States,Inactive
+ACC-000422,"Cole, Glass and Cunningham Account",Enterprise,Manufacturing,United States,Active
+ACC-000423,"Downs, Morris and Maddox Account",Enterprise,Construction,United States,Active
+ACC-000424,Hernandez-Jones Account,Enterprise,Retail,United States,Active
+ACC-000425,Welch-Hogan Account,Small Business,Electronics,United States,Active
+ACC-000426,"Brown, Romero and Collins Account",Small Business,Healthcare,United States,Active
+ACC-000427,Johnson-Wood Account,Mid-Market,Construction,United States,Active
+ACC-000428,Jones-Lin Account,Small Business,Electronics,Germany,Active
+ACC-000429,Gilbert PLC Account,Enterprise,Manufacturing,United States,Active
+ACC-000430,Ford-Spencer Account,Small Business,Consumer Goods,United States,Active
+ACC-000431,"Huang, Cole and Pacheco Account",Distributor,Construction,Mexico,Active
+ACC-000432,"Lopez, Jacobs and Mason Account",Small Business,Healthcare,Canada,Active
+ACC-000433,Hayes LLC Account,Small Business,Construction,Germany,Active
+ACC-000434,"Miller, Lucas and Williams Account",Small Business,Electronics,United Kingdom,Active
+ACC-000435,Jones Inc Account,Enterprise,Food & Beverage,Germany,Active
+ACC-000436,Cox LLC Account,Mid-Market,Healthcare,United States,Active
+ACC-000437,Jones Inc Account,Enterprise,Industrial Equipment,United States,Active
+ACC-000438,"Williams, Mccoy and Cook Account",Small Business,Industrial Equipment,Canada,Active
+ACC-000439,Davis-Gregory Account,Small Business,Retail,United States,Active
+ACC-000440,King-York Account,Small Business,Automotive,United States,Active
+ACC-000441,"Marks, Cook and Aguilar Account",Distributor,Electronics,United States,Inactive
+ACC-000442,Jones Inc Account,Mid-Market,Automotive,United States,Active
+ACC-000443,"Hale, Myers and Larson Account",Small Business,Automotive,United States,Active
+ACC-000444,Collins Group Account,Mid-Market,Consumer Goods,United States,Active
+ACC-000445,"Conner, Li and Santiago Account",Mid-Market,Technology,United Kingdom,Active
+ACC-000446,"Osborn, Gaines and Davis Account",Small Business,Retail,Sweden,Active
+ACC-000447,"Henderson, Cox and Cox Account",Distributor,Manufacturing,United States,Active
+ACC-000448,Bean LLC Account,Small Business,Industrial Equipment,Sweden,Active
+ACC-000449,Lee-Cooke Account,Enterprise,Manufacturing,United States,Inactive
+ACC-000450,Jones Inc Account,Small Business,Construction,Sweden,Active
+ACC-000451,"Wise, Conley and Stephenson Account",Enterprise,Retail,Sweden,Active
+ACC-000452,Stanley PLC Account,Distributor,Retail,United States,Active
+ACC-000453,Harper and Sons Account,Small Business,Automotive,Germany,Active
+ACC-000454,White Ltd Account,Mid-Market,Food & Beverage,Sweden,Active
+ACC-000455,"Lamb, Martin and Kim Account",Enterprise,Retail,Sweden,Active
+ACC-000456,Diaz-Ball Account,Mid-Market,Food & Beverage,Sweden,Active
+ACC-000457,Bishop-Goodwin Account,Distributor,Retail,Canada,Active
+ACC-000458,Young-Allen Account,Mid-Market,Technology,United States,Active
+ACC-000459,Mckee-Lee Account,Small Business,Food & Beverage,United Kingdom,Active
+ACC-000460,"Valentine, Joyce and Murray Account",Small Business,Automotive,Canada,Active
+ACC-000461,Strickland-Shaw Account,Small Business,Electronics,Canada,Active
+ACC-000462,Burch-Montoya Account,Enterprise,Consumer Goods,United States,Inactive
+ACC-000463,"Taylor, Wright and Davidson Account",Distributor,Food & Beverage,Canada,Active
+ACC-000464,Spencer-Garcia Account,Mid-Market,Healthcare,United States,Active
+ACC-000465,"Rosales, Mitchell and Hines Account",Small Business,Food & Beverage,Germany,Active
+ACC-000466,Cole-Palmer Account,Small Business,Construction,United States,Active
+ACC-000467,Davis-Lozano Account,Small Business,Electronics,Germany,Active
+ACC-000468,Wilkerson-Arias Account,Distributor,Industrial Equipment,United Kingdom,Active
+ACC-000469,Brown-Shaw Account,Enterprise,Automotive,United States,Active
+ACC-000470,Hughes Inc Account,Small Business,Consumer Goods,United States,Active
+ACC-000471,Walker-Flores Account,Mid-Market,Retail,United States,Active
+ACC-000472,Combs Ltd Account,Mid-Market,Automotive,Sweden,Active
+ACC-000473,Moody-Taylor Account,Enterprise,Food & Beverage,Germany,Active
+ACC-000474,Lowery-Kennedy Account,Enterprise,Consumer Goods,United States,Active
+ACC-000475,Blake Group Account,Mid-Market,Construction,United States,Active
+ACC-000476,Gilbert-Bullock Account,Mid-Market,Food & Beverage,United States,Active
+ACC-000477,Scott and Sons Account,Mid-Market,Healthcare,United States,Active
+ACC-000478,"Bentley, Lynch and Henderson Account",Small Business,Construction,Sweden,Active
+ACC-000479,Young-Martinez Account,Small Business,Automotive,Germany,Active
+ACC-000480,Barnes PLC Account,Mid-Market,Construction,United States,Active
+ACC-000481,Brown-Copeland Account,Mid-Market,Industrial Equipment,United Kingdom,Active
+ACC-000482,Carlson-Smith Account,Mid-Market,Retail,United States,Active
+ACC-000483,"Andrews, Higgins and Carter Account",Small Business,Construction,United Kingdom,Active
+ACC-000484,Mendez and Sons Account,Mid-Market,Electronics,United States,Active
+ACC-000485,"Butler, Beck and Miller Account",Enterprise,Electronics,Canada,Active
+ACC-000486,Jones-Fox Account,Mid-Market,Technology,Sweden,Active
+ACC-000487,"Hartman, Romero and Smith Account",Mid-Market,Consumer Goods,United States,Active
+ACC-000488,Williams-Hughes Account,Mid-Market,Automotive,Mexico,Active
+ACC-000489,King-Smith Account,Small Business,Healthcare,Sweden,Active
+ACC-000490,Cooper Ltd Account,Small Business,Electronics,United States,Active
+ACC-000491,"Fuller, Ingram and Moss Account",Small Business,Electronics,United States,Active
+ACC-000492,Anderson-Bell Account,Small Business,Consumer Goods,Mexico,Active
+ACC-000493,Li-Thompson Account,Small Business,Technology,United States,Active
+ACC-000494,"Marshall, Dominguez and Welch Account",Mid-Market,Industrial Equipment,United States,Active
+ACC-000495,Brown Group Account,Small Business,Food & Beverage,United States,Active
+ACC-000496,Carter Inc Account,Small Business,Consumer Goods,Germany,Active
+ACC-000497,Blackwell LLC Account,Mid-Market,Retail,United States,Active
+ACC-000498,Robertson-Hays Account,Small Business,Retail,United States,Active
+ACC-000499,"Kennedy, Johnson and Lucas Account",Mid-Market,Automotive,United Kingdom,Inactive
+ACC-000500,Kelly-Norman Account,Small Business,Technology,United States,Active
+ACC-000501,"Rivera, Martinez and Richardson Account",Small Business,Industrial Equipment,United Kingdom,Active
+ACC-000502,Paul-Kline Account,Distributor,Automotive,United States,Active
+ACC-000503,Morgan-Lopez Account,Distributor,Manufacturing,Sweden,Active
+ACC-000504,"Jimenez, Glass and Stone Account",Small Business,Construction,Mexico,Active
+ACC-000505,Acosta Inc Account,Small Business,Automotive,United States,Active
+ACC-000506,Morrison-Short Account,Small Business,Technology,United Kingdom,Active
+ACC-000507,"Carter, Garcia and Murphy Account",Mid-Market,Food & Beverage,United States,Active
+ACC-000508,Parker-Morrison Account,Small Business,Industrial Equipment,United States,Active
+ACC-000509,Jackson-Wallace Account,Mid-Market,Food & Beverage,United States,Active
+ACC-000510,Williams-Berg Account,Enterprise,Construction,Mexico,Active
+ACC-000511,Mendez-Graham Account,Enterprise,Construction,United States,Active
+ACC-000512,"Whitney, Gould and Jones Account",Small Business,Retail,United States,Active
+ACC-000513,"Sullivan, Palmer and Brady Account",Enterprise,Technology,United States,Active
+ACC-000514,Cisneros and Sons Account,Mid-Market,Manufacturing,United States,Active
+ACC-000515,"Gregory, Kim and Martinez Account",Mid-Market,Construction,United States,Active
+ACC-000516,Osborne LLC Account,Mid-Market,Retail,United States,Active
+ACC-000517,Reyes-Bradley Account,Mid-Market,Industrial Equipment,United States,Active
+ACC-000518,"Hernandez, Cole and Watson Account",Small Business,Healthcare,United States,Active
+ACC-000519,Hines-Berry Account,Enterprise,Construction,Canada,Active
+ACC-000520,"Richardson, Edwards and Ramirez Account",Small Business,Technology,United States,Active
+ACC-000521,Johnson and Sons Account,Distributor,Food & Beverage,Mexico,Active
+ACC-000522,Holmes-Mcintyre Account,Mid-Market,Automotive,United States,Active
+ACC-000523,Green LLC Account,Mid-Market,Consumer Goods,United States,Active
+ACC-000524,"Griffin, Davies and Mitchell Account",Small Business,Food & Beverage,United States,Active
+ACC-000525,Gonzalez-Taylor Account,Enterprise,Automotive,United States,Active
+ACC-000526,Hayes Ltd Account,Mid-Market,Electronics,United States,Active
+ACC-000527,Osborn-Cochran Account,Distributor,Food & Beverage,United Kingdom,Active
+ACC-000528,Contreras-Mckinney Account,Distributor,Technology,United States,Active
+ACC-000529,"Daniels, Vance and York Account",Small Business,Automotive,United States,Active
+ACC-000530,"Mckinney, Graves and Thompson Account",Mid-Market,Healthcare,Canada,Active
+ACC-000531,Hicks-Martinez Account,Small Business,Technology,United States,Active
+ACC-000532,Conner and Sons Account,Small Business,Retail,United States,Active
+ACC-000533,Johnson-Spencer Account,Mid-Market,Technology,United States,Active
+ACC-000534,Mcdonald-Bird Account,Small Business,Technology,United States,Active
+ACC-000535,Salazar Inc Account,Enterprise,Retail,United States,Inactive
+ACC-000536,Parker Ltd Account,Mid-Market,Technology,Germany,Active
+ACC-000537,"Mendoza, Jenkins and Ortiz Account",Small Business,Electronics,Sweden,Active
+ACC-000538,"Jones, Compton and Day Account",Mid-Market,Food & Beverage,United States,Active
+ACC-000539,Owens-Holmes Account,Mid-Market,Healthcare,Canada,Active
+ACC-000540,Humphrey PLC Account,Small Business,Food & Beverage,Germany,Active
+ACC-000541,"Matthews, Saunders and Anderson Account",Distributor,Consumer Goods,United States,Active
+ACC-000542,"Bartlett, Brown and Martinez Account",Small Business,Technology,Germany,Active
+ACC-000543,Torres and Sons Account,Small Business,Technology,Mexico,Active
+ACC-000544,Donovan-Perez Account,Distributor,Electronics,Sweden,Active
+ACC-000545,"Jacobson, Singleton and King Account",Enterprise,Retail,Sweden,Active
+ACC-000546,Jones Inc Account,Mid-Market,Electronics,United States,Inactive
+ACC-000547,"Ferguson, Shaw and Jackson Account",Mid-Market,Manufacturing,United States,Active
+ACC-000548,"Moore, Hopkins and Le Account",Enterprise,Healthcare,United States,Active
+ACC-000549,"Morgan, Bradshaw and Williams Account",Small Business,Food & Beverage,United States,Active
+ACC-000550,Miller Ltd Account,Mid-Market,Construction,United States,Active
+ACC-000551,"Baker, Clark and Armstrong Account",Mid-Market,Industrial Equipment,Sweden,Active
+ACC-000552,"Fowler, Jimenez and Burton Account",Mid-Market,Electronics,United States,Active
+ACC-000553,May-Turner Account,Mid-Market,Consumer Goods,United States,Active
+ACC-000554,Ballard Ltd Account,Distributor,Construction,United Kingdom,Active
+ACC-000555,Evans-Jones Account,Enterprise,Technology,United States,Active
+ACC-000556,Moore Group Account,Mid-Market,Construction,United States,Active
+ACC-000557,Marshall-Peterson Account,Mid-Market,Manufacturing,Sweden,Active
+ACC-000558,Edwards Ltd Account,Mid-Market,Retail,United States,Active
+ACC-000559,Gross-Valencia Account,Small Business,Automotive,United States,Active
+ACC-000560,Anderson-Wood Account,Mid-Market,Healthcare,United States,Active
+ACC-000561,"Rodriguez, Allen and Martinez Account",Enterprise,Healthcare,Sweden,Active
+ACC-000562,Wright-Davis Account,Mid-Market,Electronics,United States,Active
+ACC-000563,Dougherty-Lin Account,Small Business,Industrial Equipment,United States,Active
+ACC-000564,Wright-Grimes Account,Small Business,Food & Beverage,United States,Active
+ACC-000565,Li PLC Account,Small Business,Food & Beverage,United States,Active
+ACC-000566,"Edwards, Hines and Jimenez Account",Small Business,Food & Beverage,Sweden,Active
+ACC-000567,"Owens, Koch and Jimenez Account",Small Business,Retail,United States,Active
+ACC-000568,Landry PLC Account,Enterprise,Industrial Equipment,Sweden,Active
+ACC-000569,Levy-Lewis Account,Mid-Market,Electronics,United States,Active
+ACC-000570,Williams-Campbell Account,Small Business,Technology,United States,Active
+ACC-000571,"Khan, Pena and Ruiz Account",Mid-Market,Retail,United Kingdom,Active
+ACC-000572,"Smith, Rodriguez and Anderson Account",Small Business,Technology,United States,Inactive
+ACC-000573,Luna-Gallagher Account,Mid-Market,Manufacturing,United States,Active
+ACC-000574,Williams-Williams Account,Small Business,Electronics,United Kingdom,Active
+ACC-000575,"Lee, Tran and Jones Account",Distributor,Manufacturing,United States,Active
+ACC-000576,"Cole, Pierce and Bryan Account",Small Business,Electronics,United States,Active
+ACC-000577,"Becker, Wilson and Hester Account",Distributor,Consumer Goods,Sweden,Active
+ACC-000578,Brooks-Hatfield Account,Small Business,Food & Beverage,United States,Active
+ACC-000579,"Mcmillan, Fischer and Gonzalez Account",Distributor,Technology,United States,Active
+ACC-000580,"Morales, Williams and Williams Account",Mid-Market,Healthcare,United States,Active
+ACC-000581,"Cook, Wells and Bryant Account",Mid-Market,Electronics,United States,Active
+ACC-000582,"Barry, Taylor and Velazquez Account",Small Business,Food & Beverage,United States,Active
+ACC-000583,Martin-Ewing Account,Enterprise,Consumer Goods,Mexico,Active
+ACC-000584,"Kirby, Wheeler and Romero Account",Mid-Market,Industrial Equipment,United States,Active
+ACC-000585,"Patel, Erickson and Evans Account",Distributor,Electronics,Mexico,Active
+ACC-000586,Richardson Ltd Account,Small Business,Healthcare,United States,Active
+ACC-000587,Whitney PLC Account,Mid-Market,Electronics,United States,Active
+ACC-000588,Robles-Swanson Account,Mid-Market,Electronics,United States,Active
+ACC-000589,"Soto, Carlson and Baker Account",Mid-Market,Technology,Germany,Active
+ACC-000590,"Patton, Parsons and Lane Account",Enterprise,Electronics,United States,Active
+ACC-000591,"Williams, Castillo and Warren Account",Distributor,Automotive,United States,Active
+ACC-000592,"Harvey, Randall and Hernandez Account",Mid-Market,Electronics,United Kingdom,Active
+ACC-000593,"Allen, Armstrong and Graves Account",Mid-Market,Healthcare,Canada,Active
+ACC-000594,Smith LLC Account,Small Business,Automotive,United States,Inactive
+ACC-000595,Hernandez-Vaughn Account,Enterprise,Electronics,Sweden,Active
+ACC-000596,Shaw-Carr Account,Mid-Market,Construction,United States,Active
+ACC-000597,Salas-Fitzgerald Account,Small Business,Healthcare,United States,Active
+ACC-000598,Thornton PLC Account,Small Business,Manufacturing,United States,Active
+ACC-000599,Hoffman Ltd Account,Distributor,Technology,United States,Active
+ACC-000600,Fox-Edwards Account,Small Business,Electronics,United States,Active
+ACC-000601,Stevens PLC Account,Mid-Market,Retail,Germany,Inactive
+ACC-000602,Payne-Lowe Account,Small Business,Consumer Goods,United States,Active
+ACC-000603,"Becker, Lara and Baker Account",Distributor,Manufacturing,Germany,Inactive
+ACC-000604,Lee-Wright Account,Small Business,Healthcare,Sweden,Active
+ACC-000605,"Evans, David and Hendrix Account",Distributor,Manufacturing,Canada,Active
+ACC-000606,Bush-Vaughn Account,Small Business,Manufacturing,Germany,Active
+ACC-000607,Stewart-Bailey Account,Distributor,Healthcare,Germany,Active
+ACC-000608,"Hill, Martinez and Rhodes Account",Enterprise,Consumer Goods,Sweden,Active
+ACC-000609,Huang-Foster Account,Small Business,Healthcare,United States,Active
+ACC-000610,Blevins-Ballard Account,Mid-Market,Retail,United States,Active
+ACC-000611,Williams-Moses Account,Small Business,Technology,United States,Active
+ACC-000612,Reed Group Account,Small Business,Technology,United States,Active
+ACC-000613,"Scott, Mendoza and Harris Account",Distributor,Construction,United States,Active
+ACC-000614,"Nelson, Hoffman and Nelson Account",Distributor,Healthcare,Canada,Active
+ACC-000615,Gilbert PLC Account,Mid-Market,Construction,United States,Active
+ACC-000616,Sanchez Ltd Account,Small Business,Industrial Equipment,Sweden,Active
+ACC-000617,"Perez, Hall and Garcia Account",Small Business,Technology,United States,Active
+ACC-000618,Love-Garcia Account,Mid-Market,Automotive,United States,Active
+ACC-000619,Smith PLC Account,Enterprise,Industrial Equipment,United States,Active
+ACC-000620,Russell Group Account,Enterprise,Technology,United States,Active
+ACC-000621,Santos-Avila Account,Small Business,Retail,United States,Active
+ACC-000622,Morris-Brewer Account,Mid-Market,Electronics,United States,Active
+ACC-000623,Pearson and Sons Account,Distributor,Construction,United States,Active
+ACC-000624,"Rodgers, Jefferson and Johnson Account",Mid-Market,Technology,United States,Active
+ACC-000625,Butler and Sons Account,Distributor,Technology,United States,Active
+ACC-000626,Osborn Group Account,Mid-Market,Healthcare,United States,Active
+ACC-000627,Lopez-Curry Account,Small Business,Technology,United States,Active
+ACC-000628,Mcdowell-Smith Account,Enterprise,Automotive,United States,Active
+ACC-000629,"Morrison, Hebert and Rogers Account",Small Business,Industrial Equipment,United States,Active
+ACC-000630,Hays-Daniels Account,Small Business,Automotive,United States,Active
+ACC-000631,Small-Anderson Account,Distributor,Technology,United States,Active
+ACC-000632,"Mcdonald, Lee and Rodriguez Account",Small Business,Industrial Equipment,Germany,Active
+ACC-000633,Simon Ltd Account,Enterprise,Technology,Sweden,Active
+ACC-000634,Higgins-Smith Account,Mid-Market,Healthcare,Sweden,Active
+ACC-000635,Gibbs-Bradley Account,Enterprise,Automotive,United States,Active
+ACC-000636,Thompson Ltd Account,Enterprise,Automotive,United States,Active
+ACC-000637,Wilcox-Robertson Account,Small Business,Electronics,United States,Active
+ACC-000638,Morales Inc Account,Small Business,Manufacturing,Germany,Active
+ACC-000639,Holden Group Account,Small Business,Construction,Germany,Active
+ACC-000640,Boyle-Smith Account,Distributor,Retail,United Kingdom,Active
+ACC-000641,Young-Molina Account,Small Business,Consumer Goods,United Kingdom,Active
+ACC-000642,Turner-Sharp Account,Small Business,Food & Beverage,United States,Active
+ACC-000643,Green LLC Account,Enterprise,Consumer Goods,Germany,Inactive
+ACC-000644,"Young, Contreras and Marshall Account",Mid-Market,Food & Beverage,Germany,Active
+ACC-000645,Sullivan PLC Account,Small Business,Food & Beverage,United States,Active
+ACC-000646,"Carrillo, Vaughn and Fowler Account",Distributor,Automotive,Sweden,Active
+ACC-000647,Richardson-Walker Account,Enterprise,Healthcare,United States,Active
+ACC-000648,Mendoza Group Account,Small Business,Manufacturing,Sweden,Active
+ACC-000649,"Zhang, Brooks and Miles Account",Small Business,Technology,Germany,Active
+ACC-000650,Todd-Pham Account,Enterprise,Electronics,United States,Active
+ACC-000651,Gill Ltd Account,Mid-Market,Retail,Mexico,Active
+ACC-000652,"Marks, Miller and Griffin Account",Distributor,Retail,United States,Active
+ACC-000653,"Cox, Stark and Rodriguez Account",Small Business,Technology,Germany,Active
+ACC-000654,"Leach, Harris and Herrera Account",Mid-Market,Electronics,Germany,Active
+ACC-000655,Murphy PLC Account,Distributor,Retail,Canada,Active
+ACC-000656,Wilson-Harris Account,Mid-Market,Healthcare,United Kingdom,Active
+ACC-000657,"Burns, Nolan and Griffin Account",Distributor,Automotive,United States,Active
+ACC-000658,Chavez PLC Account,Mid-Market,Consumer Goods,United States,Active
+ACC-000659,Bryant-Brown Account,Small Business,Industrial Equipment,United States,Active
+ACC-000660,Chambers-Parker Account,Mid-Market,Construction,United States,Active
+ACC-000661,Foster Inc Account,Mid-Market,Food & Beverage,United States,Inactive
+ACC-000662,"Robinson, Jones and Henderson Account",Distributor,Manufacturing,United States,Inactive
+ACC-000663,"Brown, Mcknight and Michael Account",Mid-Market,Construction,United States,Active
+ACC-000664,Andersen Group Account,Enterprise,Food & Beverage,United States,Active
+ACC-000665,Mitchell and Sons Account,Mid-Market,Consumer Goods,United Kingdom,Active
+ACC-000666,Cannon Ltd Account,Small Business,Healthcare,United States,Active
+ACC-000667,"Stuart, Brooks and Vance Account",Small Business,Consumer Goods,United Kingdom,Active
+ACC-000668,Kane-Knox Account,Distributor,Technology,United States,Active
+ACC-000669,Miller-Brandt Account,Mid-Market,Automotive,United States,Active
+ACC-000670,"Anderson, Dalton and Wilson Account",Mid-Market,Technology,United States,Active
+ACC-000671,"Long, Anderson and Irwin Account",Enterprise,Manufacturing,United States,Inactive
+ACC-000672,Avila LLC Account,Small Business,Retail,United States,Active
+ACC-000673,Nunez-Stephens Account,Distributor,Retail,United States,Active
+ACC-000674,"Gray, Hall and Murray Account",Small Business,Construction,United States,Inactive
+ACC-000675,Hill Ltd Account,Small Business,Technology,United States,Active
+ACC-000676,Johnson Ltd Account,Mid-Market,Healthcare,Canada,Active
+ACC-000677,Mendez-Mayer Account,Distributor,Technology,United States,Active
+ACC-000678,Allen Inc Account,Small Business,Retail,United Kingdom,Active
+ACC-000679,Wheeler Group Account,Enterprise,Healthcare,United States,Active
+ACC-000680,"Powers, Brennan and Sanchez Account",Mid-Market,Electronics,Sweden,Active
+ACC-000681,Morales and Sons Account,Enterprise,Construction,Germany,Active
+ACC-000682,"Robinson, Shields and Brown Account",Mid-Market,Construction,Sweden,Active
+ACC-000683,"Holder, Young and Hendricks Account",Enterprise,Electronics,United Kingdom,Active
+ACC-000684,"Flores, Harper and Chambers Account",Mid-Market,Retail,United States,Active
+ACC-000685,Young-Walter Account,Small Business,Healthcare,United States,Active
+ACC-000686,"Boyd, Gutierrez and Hill Account",Mid-Market,Food & Beverage,United States,Active
+ACC-000687,"Fry, Hobbs and Buck Account",Mid-Market,Consumer Goods,United Kingdom,Active
+ACC-000688,"Shelton, Peters and Williams Account",Distributor,Healthcare,Canada,Active
+ACC-000689,David-Powers Account,Small Business,Industrial Equipment,United States,Active
+ACC-000690,"Flores, Butler and Hernandez Account",Small Business,Technology,Sweden,Active
+ACC-000691,White-Medina Account,Mid-Market,Manufacturing,United States,Active
+ACC-000692,Atkinson LLC Account,Distributor,Industrial Equipment,Canada,Active
+ACC-000693,"Thomas, Ford and Brown Account",Mid-Market,Technology,United States,Active
+ACC-000694,Faulkner-Grant Account,Mid-Market,Food & Beverage,United States,Active
+ACC-000695,Price LLC Account,Distributor,Technology,Canada,Active
+ACC-000696,Rivera Inc Account,Small Business,Electronics,United States,Active
+ACC-000697,Boone-Davis Account,Small Business,Construction,United States,Active
+ACC-000698,"Calderon, Williams and Bennett Account",Small Business,Food & Beverage,United States,Active
+ACC-000699,"Morrison, Russo and Lopez Account",Small Business,Construction,United States,Active
+ACC-000700,"Ramsey, Hansen and Mendoza Account",Mid-Market,Construction,Mexico,Active
+ACC-000701,Turner-Stout Account,Mid-Market,Retail,United States,Active
+ACC-000702,Giles Ltd Account,Mid-Market,Manufacturing,Sweden,Active
+ACC-000703,Burgess Group Account,Mid-Market,Consumer Goods,United Kingdom,Active
+ACC-000704,Dominguez Ltd Account,Distributor,Retail,United States,Active
+ACC-000705,Sanders and Sons Account,Mid-Market,Automotive,United States,Active
+ACC-000706,"Morris, Campbell and Owens Account",Small Business,Consumer Goods,Canada,Active
+ACC-000707,"Howard, Green and Hunt Account",Small Business,Manufacturing,Germany,Active
+ACC-000708,Owens-Lang Account,Small Business,Electronics,United States,Active
+ACC-000709,"Harrison, Franco and Rocha Account",Mid-Market,Technology,United States,Active
+ACC-000710,Edwards-Williams Account,Mid-Market,Retail,United States,Active
+ACC-000711,Figueroa Inc Account,Distributor,Automotive,Sweden,Active
+ACC-000712,Tran-Silva Account,Small Business,Automotive,United States,Active
+ACC-000713,"Butler, Hernandez and Rivera Account",Small Business,Technology,United Kingdom,Active
+ACC-000714,Hudson-Sanchez Account,Distributor,Healthcare,United States,Active
+ACC-000715,"Pena, Cohen and Scott Account",Small Business,Healthcare,Sweden,Active
+ACC-000716,Levy-May Account,Mid-Market,Food & Beverage,United States,Active
+ACC-000717,Murray-Oconnor Account,Small Business,Food & Beverage,United States,Active
+ACC-000718,Jackson-Cortez Account,Enterprise,Industrial Equipment,Sweden,Active
+ACC-000719,White-Preston Account,Small Business,Healthcare,Sweden,Active
+ACC-000720,"Bernard, Warren and Combs Account",Distributor,Construction,United States,Active
+ACC-000721,Landry Ltd Account,Small Business,Industrial Equipment,United States,Active
+ACC-000722,Duran Group Account,Mid-Market,Industrial Equipment,United States,Active
+ACC-000723,Kirby and Sons Account,Enterprise,Construction,United States,Active
+ACC-000724,Mann Inc Account,Distributor,Electronics,United States,Active
+ACC-000725,Wagner LLC Account,Enterprise,Manufacturing,United Kingdom,Active
+ACC-000726,Williamson Ltd Account,Enterprise,Industrial Equipment,United States,Active
+ACC-000727,"Durham, Hopkins and Smith Account",Mid-Market,Construction,Mexico,Active
+ACC-000728,"Arnold, Smith and Moreno Account",Enterprise,Automotive,United States,Active
+ACC-000729,Nichols-Mitchell Account,Mid-Market,Healthcare,United States,Active
+ACC-000730,"Li, Craig and Drake Account",Small Business,Food & Beverage,Mexico,Active
+ACC-000731,Rodriguez Inc Account,Mid-Market,Technology,United States,Active
+ACC-000732,"Hernandez, Lee and Fox Account",Enterprise,Healthcare,Mexico,Active
+ACC-000733,Adams-Sanders Account,Enterprise,Technology,United States,Active
+ACC-000734,Chung-Stevens Account,Mid-Market,Consumer Goods,United States,Active
+ACC-000735,Branch and Sons Account,Enterprise,Food & Beverage,Germany,Active
+ACC-000736,Sutton-Abbott Account,Small Business,Construction,United Kingdom,Active
+ACC-000737,"Frey, Santos and Johnson Account",Mid-Market,Technology,United States,Inactive
+ACC-000738,Gray-Tran Account,Mid-Market,Construction,United States,Active
+ACC-000739,Walsh Ltd Account,Mid-Market,Food & Beverage,United States,Active
+ACC-000740,Miller Group Account,Mid-Market,Electronics,United States,Active
+ACC-000741,"Mueller, Knight and Hodge Account",Enterprise,Construction,United States,Active
+ACC-000742,Jacobson Inc Account,Enterprise,Automotive,United States,Active
+ACC-000743,Lewis Ltd Account,Distributor,Healthcare,United States,Active
+ACC-000744,"Alvarez, Williams and Jones Account",Enterprise,Technology,United States,Active
+ACC-000745,Lam-Elliott Account,Small Business,Construction,United States,Active
+ACC-000746,White LLC Account,Mid-Market,Food & Beverage,United States,Active
+ACC-000747,Ali PLC Account,Mid-Market,Consumer Goods,United States,Active
+ACC-000748,Goodwin Ltd Account,Mid-Market,Retail,Canada,Active
+ACC-000749,Hickman-Evans Account,Small Business,Food & Beverage,United States,Active
+ACC-000750,"Allen, Davenport and Price Account",Small Business,Technology,United States,Active
+ACC-000751,"Rivera, Campos and Taylor Account",Mid-Market,Consumer Goods,United States,Inactive
+ACC-000752,"Ramsey, Mason and Mccann Account",Mid-Market,Automotive,Germany,Active
+ACC-000753,Jones Inc Account,Mid-Market,Healthcare,United States,Active
+ACC-000754,Peterson PLC Account,Mid-Market,Industrial Equipment,Canada,Active
+ACC-000755,"Sanders, Ayala and Johnson Account",Small Business,Technology,Sweden,Active
+ACC-000756,Bowers-Hayes Account,Mid-Market,Retail,United States,Active
+ACC-000757,Kelly Group Account,Mid-Market,Retail,Sweden,Active
+ACC-000758,Lopez-Willis Account,Distributor,Industrial Equipment,Germany,Active
+ACC-000759,Miller-Montgomery Account,Enterprise,Electronics,United States,Active
+ACC-000760,Marquez Inc Account,Mid-Market,Technology,United States,Active
+ACC-000761,Moore-Dawson Account,Small Business,Construction,Mexico,Active
+ACC-000762,"Moore, Price and Ward Account",Mid-Market,Food & Beverage,Sweden,Active
+ACC-000763,Smith LLC Account,Small Business,Electronics,United States,Active
+ACC-000764,Ward-Nelson Account,Enterprise,Automotive,United States,Active
+ACC-000765,Miller Group Account,Distributor,Consumer Goods,Canada,Active
+ACC-000766,Hawkins-Hunt Account,Enterprise,Healthcare,United States,Active
+ACC-000767,Johnson LLC Account,Mid-Market,Electronics,Germany,Active
+ACC-000768,"Davis, George and Nguyen Account",Enterprise,Technology,United States,Active
+ACC-000769,Smith-Gutierrez Account,Enterprise,Food & Beverage,Germany,Inactive
+ACC-000770,Hardy PLC Account,Small Business,Technology,United Kingdom,Active
+ACC-000771,Armstrong and Sons Account,Mid-Market,Industrial Equipment,Canada,Inactive
+ACC-000772,"James, Taylor and Turner Account",Small Business,Automotive,Canada,Active
+ACC-000773,Thomas-Jackson Account,Small Business,Consumer Goods,Germany,Active
+ACC-000774,Fisher-Washington Account,Small Business,Manufacturing,United Kingdom,Active
+ACC-000775,Ward and Sons Account,Enterprise,Healthcare,United Kingdom,Active
+ACC-000776,"Weber, Wheeler and Gonzalez Account",Distributor,Electronics,United States,Active
+ACC-000777,Taylor Inc Account,Small Business,Healthcare,Canada,Active
+ACC-000778,Cook-Oliver Account,Mid-Market,Technology,United States,Active
+ACC-000779,Jones Inc Account,Small Business,Electronics,United Kingdom,Active
+ACC-000780,"Mccann, Taylor and Flores Account",Distributor,Automotive,Mexico,Active
+ACC-000781,"Harris, Edwards and Oconnell Account",Mid-Market,Electronics,United States,Active
+ACC-000782,Carter-Neal Account,Distributor,Technology,United States,Active
+ACC-000783,Faulkner-Casey Account,Mid-Market,Manufacturing,United States,Active
+ACC-000784,Bennett-Velasquez Account,Small Business,Retail,Mexico,Active
+ACC-000785,Diaz-Frederick Account,Distributor,Technology,United States,Active
+ACC-000786,Vargas PLC Account,Mid-Market,Construction,United States,Active
+ACC-000787,Maldonado PLC Account,Small Business,Consumer Goods,United Kingdom,Active
+ACC-000788,Benton Group Account,Mid-Market,Automotive,Germany,Active
+ACC-000789,"Clark, Salinas and Guerra Account",Small Business,Automotive,United States,Active
+ACC-000790,Fuentes Group Account,Small Business,Retail,United States,Active
+ACC-000791,"Porter, Schultz and Allen Account",Mid-Market,Technology,Sweden,Active
+ACC-000792,"Moore, Henderson and Bennett Account",Mid-Market,Construction,Mexico,Active
+ACC-000793,Ewing-Mendoza Account,Mid-Market,Manufacturing,Canada,Active
+ACC-000794,Ferguson-Mclean Account,Enterprise,Healthcare,United States,Active
+ACC-000795,"Barnes, Johnson and Schmitt Account",Enterprise,Automotive,United States,Active
+ACC-000796,"Woodard, Herrera and Little Account",Mid-Market,Technology,United States,Inactive
+ACC-000797,Rodriguez and Sons Account,Enterprise,Retail,Germany,Active
+ACC-000798,"Ortega, Jackson and Salazar Account",Mid-Market,Healthcare,United States,Active
+ACC-000799,"Terrell, Byrd and Ross Account",Small Business,Manufacturing,United States,Active
+ACC-000800,Sheppard-Jordan Account,Small Business,Electronics,Germany,Active
+ACC-000801,Garcia and Sons Account,Small Business,Manufacturing,Sweden,Active
+ACC-000802,"Burgess, Grant and Watts Account",Mid-Market,Food & Beverage,Germany,Active
+ACC-000803,Griffin Group Account,Distributor,Technology,United States,Active
+ACC-000804,Barton-Chapman Account,Small Business,Automotive,United States,Inactive
+ACC-000805,"Hernandez, Cuevas and Webb Account",Enterprise,Technology,United States,Active
+ACC-000806,Perry-Nixon Account,Enterprise,Technology,United States,Active
+ACC-000807,Guerra Ltd Account,Small Business,Consumer Goods,United States,Active
+ACC-000808,Bailey LLC Account,Mid-Market,Electronics,United States,Active
+ACC-000809,Mueller-Boyd Account,Small Business,Manufacturing,Canada,Active
+ACC-000810,Alvarez-Kim Account,Distributor,Construction,United Kingdom,Active
+ACC-000811,"Chavez, Jones and Williams Account",Enterprise,Healthcare,Sweden,Active
+ACC-000812,"Wilson, Sweeney and Wong Account",Enterprise,Consumer Goods,United States,Active
+ACC-000813,"Marsh, Spears and Yang Account",Distributor,Construction,United States,Active
+ACC-000814,"Thompson, Moore and Castro Account",Small Business,Technology,United States,Active
+ACC-000815,Hall-Sullivan Account,Enterprise,Construction,United States,Active
+ACC-000816,Lopez Ltd Account,Distributor,Automotive,United States,Active
+ACC-000817,Foster-Mclaughlin Account,Distributor,Industrial Equipment,United States,Active
+ACC-000818,Cole Group Account,Small Business,Retail,Germany,Active
+ACC-000819,Smith-Lewis Account,Small Business,Construction,United States,Active
+ACC-000820,Goodwin-Stokes Account,Mid-Market,Manufacturing,Sweden,Active
+ACC-000821,Ray PLC Account,Enterprise,Healthcare,United States,Active
+ACC-000822,Diaz and Sons Account,Small Business,Retail,United States,Active
+ACC-000823,Wilson-Lambert Account,Mid-Market,Construction,United States,Active
+ACC-000824,Rose-Fowler Account,Small Business,Technology,United States,Active
+ACC-000825,"Price, Long and Wilson Account",Small Business,Industrial Equipment,United States,Active
+ACC-000826,Bruce-Williamson Account,Enterprise,Retail,Sweden,Active
+ACC-000827,"Mccarthy, Evans and Mendez Account",Small Business,Electronics,United States,Active
+ACC-000828,Powers LLC Account,Mid-Market,Technology,United States,Active
+ACC-000829,Allen Inc Account,Distributor,Industrial Equipment,Canada,Active
+ACC-000830,Brooks and Sons Account,Mid-Market,Construction,United States,Active
+ACC-000831,"Price, Carlson and Andrews Account",Small Business,Technology,Canada,Active
+ACC-000832,Lopez-Reid Account,Small Business,Manufacturing,United States,Active
+ACC-000833,"Ellison, Arias and Thompson Account",Mid-Market,Electronics,United Kingdom,Active
+ACC-000834,Burns and Sons Account,Small Business,Healthcare,United States,Active
+ACC-000835,Edwards Group Account,Small Business,Electronics,United States,Active
+ACC-000836,"Brown, Howard and Smith Account",Small Business,Healthcare,Mexico,Active
+ACC-000837,Lee Group Account,Small Business,Technology,United Kingdom,Active
+ACC-000838,"Wagner, Simpson and Cohen Account",Distributor,Retail,United States,Active
+ACC-000839,Mckinney-Wallace Account,Mid-Market,Consumer Goods,Canada,Active
+ACC-000840,Miller Inc Account,Small Business,Technology,United States,Active
+ACC-000841,Carter LLC Account,Enterprise,Food & Beverage,United States,Active
+ACC-000842,Medina and Sons Account,Small Business,Manufacturing,United States,Active
+ACC-000843,Cunningham-Barton Account,Small Business,Manufacturing,Germany,Active
+ACC-000844,Dunn-Wilson Account,Mid-Market,Food & Beverage,United States,Active
+ACC-000845,Adams PLC Account,Enterprise,Food & Beverage,Germany,Active
+ACC-000846,Weaver-Sherman Account,Distributor,Food & Beverage,United States,Active
+ACC-000847,"Alexander, Robinson and Coleman Account",Mid-Market,Retail,United Kingdom,Active
+ACC-000848,"Greer, Potter and Evans Account",Small Business,Electronics,United Kingdom,Active
+ACC-000849,Cole LLC Account,Enterprise,Consumer Goods,United States,Active
+ACC-000850,Gonzales Inc Account,Distributor,Electronics,United States,Active
+ACC-000851,Clark Ltd Account,Mid-Market,Construction,United States,Active
+ACC-000852,"Norris, Callahan and Bishop Account",Mid-Market,Electronics,United Kingdom,Active
+ACC-000853,Martin-Taylor Account,Distributor,Construction,United States,Active
+ACC-000854,Li Inc Account,Distributor,Automotive,United States,Active
+ACC-000855,"Bell, Campbell and Ryan Account",Mid-Market,Manufacturing,United States,Active
+ACC-000856,Werner-Carter Account,Mid-Market,Automotive,Germany,Active
+ACC-000857,"Adams, Hodge and Duke Account",Small Business,Healthcare,United States,Active
+ACC-000858,"Ochoa, Taylor and Brady Account",Distributor,Manufacturing,United States,Active
+ACC-000859,Sellers-Riddle Account,Mid-Market,Manufacturing,Sweden,Active
+ACC-000860,"Martinez, Cline and Wright Account",Small Business,Food & Beverage,United States,Active
+ACC-000861,"Morris, Wright and Bridges Account",Small Business,Construction,United Kingdom,Active
+ACC-000862,Burns-Ray Account,Small Business,Technology,United States,Active
+ACC-000863,Burton-Brooks Account,Small Business,Retail,United States,Active
+ACC-000864,Schultz Inc Account,Small Business,Industrial Equipment,United Kingdom,Active
+ACC-000865,Robertson-Ramirez Account,Enterprise,Automotive,Mexico,Active
+ACC-000866,Gibson-Freeman Account,Distributor,Automotive,Mexico,Active
+ACC-000867,"Smith, Schroeder and Oconnor Account",Distributor,Electronics,United States,Active
+ACC-000868,"Stanton, Reid and Terry Account",Small Business,Construction,United States,Active
+ACC-000869,Flynn Group Account,Enterprise,Retail,United States,Active
+ACC-000870,Donaldson and Sons Account,Mid-Market,Consumer Goods,United States,Active
+ACC-000871,Adams-Clayton Account,Small Business,Consumer Goods,United States,Active
+ACC-000872,Kelley-Anderson Account,Enterprise,Technology,United States,Active
+ACC-000873,Kramer-Shannon Account,Distributor,Retail,United States,Active
+ACC-000874,Williams Ltd Account,Mid-Market,Consumer Goods,United States,Active
+ACC-000875,Smith-Noble Account,Small Business,Technology,United States,Active
+ACC-000876,Alexander Inc Account,Distributor,Healthcare,United States,Active
+ACC-000877,Harris-Barker Account,Mid-Market,Industrial Equipment,United Kingdom,Active
+ACC-000878,Khan LLC Account,Mid-Market,Technology,Canada,Active
+ACC-000879,Baxter LLC Account,Small Business,Retail,United States,Active
+ACC-000880,Pena LLC Account,Small Business,Technology,Mexico,Inactive
+ACC-000881,Watson Ltd Account,Mid-Market,Automotive,United Kingdom,Active
+ACC-000882,Williams Ltd Account,Small Business,Consumer Goods,United States,Active
+ACC-000883,Barber-Fischer Account,Distributor,Healthcare,United States,Active
+ACC-000884,Rios-Padilla Account,Mid-Market,Automotive,United States,Active
+ACC-000885,Lewis Inc Account,Mid-Market,Electronics,United States,Active
+ACC-000886,Wheeler PLC Account,Mid-Market,Construction,Germany,Active
+ACC-000887,"Wallace, Smith and Cooper Account",Mid-Market,Technology,Sweden,Active
+ACC-000888,Mcneil Group Account,Enterprise,Automotive,United States,Active
+ACC-000889,"Anderson, Jones and Reyes Account",Mid-Market,Construction,Germany,Active
+ACC-000890,"Shaffer, Garcia and Richardson Account",Small Business,Construction,United States,Active
+ACC-000891,Taylor-Ayala Account,Mid-Market,Construction,Canada,Active
+ACC-000892,May Ltd Account,Distributor,Healthcare,Germany,Active
+ACC-000893,Jones PLC Account,Mid-Market,Electronics,United States,Inactive
+ACC-000894,Bishop and Sons Account,Enterprise,Technology,United States,Active
+ACC-000895,Bell-Lewis Account,Small Business,Consumer Goods,Canada,Active
+ACC-000896,"Hernandez, Jenkins and Parks Account",Distributor,Healthcare,Sweden,Active
+ACC-000897,Miller Inc Account,Mid-Market,Industrial Equipment,United States,Active
+ACC-000898,Goodwin PLC Account,Mid-Market,Industrial Equipment,United States,Active
+ACC-000899,"Cruz, Richmond and Edwards Account",Mid-Market,Manufacturing,United States,Active
+ACC-000900,Wright Ltd Account,Small Business,Consumer Goods,Canada,Active
+ACC-000901,Wright PLC Account,Mid-Market,Healthcare,Canada,Active
+ACC-000902,"Griffith, Mitchell and Pugh Account",Mid-Market,Retail,Germany,Active
+ACC-000903,Abbott Ltd Account,Enterprise,Technology,Germany,Active
+ACC-000904,Harris-Lawson Account,Mid-Market,Industrial Equipment,United Kingdom,Active
+ACC-000905,Adkins LLC Account,Distributor,Industrial Equipment,Germany,Active
+ACC-000906,"Brown, Hurst and Blevins Account",Small Business,Retail,United States,Active
+ACC-000907,Cruz-Allen Account,Mid-Market,Industrial Equipment,Canada,Active
+ACC-000908,"Wheeler, Rice and Levine Account",Enterprise,Technology,United States,Active
+ACC-000909,Peck-Anderson Account,Mid-Market,Construction,United States,Active
+ACC-000910,"Fisher, Payne and Thompson Account",Mid-Market,Electronics,Sweden,Active
+ACC-000911,Best-Townsend Account,Small Business,Construction,Mexico,Active
+ACC-000912,Matthews Inc Account,Distributor,Automotive,Sweden,Active
+ACC-000913,Lewis-Livingston Account,Distributor,Food & Beverage,United States,Active
+ACC-000914,Hunter-Fuller Account,Distributor,Consumer Goods,United States,Active
+ACC-000915,"Wang, Henderson and Morales Account",Distributor,Food & Beverage,United States,Active
+ACC-000916,"Herrera, Jensen and Ramirez Account",Distributor,Food & Beverage,United States,Active
+ACC-000917,Miller-Mccall Account,Enterprise,Industrial Equipment,United States,Active
+ACC-000918,Herrera Group Account,Enterprise,Technology,United States,Active
+ACC-000919,"Walters, Davenport and Becker Account",Mid-Market,Retail,United States,Active
+ACC-000920,Collins Group Account,Small Business,Electronics,Sweden,Active
+ACC-000921,"Ashley, Allen and Sanchez Account",Enterprise,Electronics,United States,Active
+ACC-000922,Wilson-Salazar Account,Small Business,Manufacturing,United States,Active
+ACC-000923,Parker Ltd Account,Small Business,Construction,Germany,Active
+ACC-000924,"Yang, Wilson and Zimmerman Account",Small Business,Healthcare,United States,Active
+ACC-000925,"Smith, Crawford and Reed Account",Mid-Market,Food & Beverage,Sweden,Active
+ACC-000926,"Logan, Le and Jackson Account",Mid-Market,Construction,Germany,Active
+ACC-000927,Brady LLC Account,Mid-Market,Industrial Equipment,United States,Active
+ACC-000928,"Tanner, Wise and Johnson Account",Distributor,Electronics,Mexico,Active
+ACC-000929,Nelson-Brown Account,Small Business,Construction,Mexico,Active
+ACC-000930,"Proctor, Burton and Crawford Account",Small Business,Industrial Equipment,Germany,Active
+ACC-000931,"Ward, Porter and Bradley Account",Mid-Market,Construction,United Kingdom,Active
+ACC-000932,Moore-Ayala Account,Mid-Market,Industrial Equipment,Germany,Active
+ACC-000933,"Craig, Wilson and Yang Account",Mid-Market,Construction,Canada,Inactive
+ACC-000934,Williams Inc Account,Small Business,Food & Beverage,United States,Active
+ACC-000935,Williams LLC Account,Small Business,Retail,Mexico,Active
+ACC-000936,Mora-White Account,Mid-Market,Consumer Goods,Sweden,Active
+ACC-000937,Tran Ltd Account,Distributor,Manufacturing,Canada,Active
+ACC-000938,"Rios, Walker and Wright Account",Enterprise,Manufacturing,Mexico,Active
+ACC-000939,"Flores, Mckenzie and Duncan Account",Distributor,Technology,United States,Active
+ACC-000940,Shaw Inc Account,Enterprise,Construction,Germany,Active
+ACC-000941,Walker PLC Account,Mid-Market,Manufacturing,Sweden,Active
+ACC-000942,Finley Inc Account,Small Business,Technology,United States,Active
+ACC-000943,Cline-Ayala Account,Mid-Market,Manufacturing,United States,Active
+ACC-000944,Murphy-Tran Account,Mid-Market,Construction,United States,Active
+ACC-000945,Wood LLC Account,Mid-Market,Retail,United States,Active
+ACC-000946,"Mueller, Stevenson and Sanchez Account",Mid-Market,Construction,Canada,Active
+ACC-000947,Vargas-Snyder Account,Small Business,Healthcare,United States,Active
+ACC-000948,Oconnor PLC Account,Distributor,Food & Beverage,United States,Active
+ACC-000949,Hernandez Group Account,Distributor,Healthcare,Canada,Active
+ACC-000950,Hall LLC Account,Mid-Market,Healthcare,Canada,Active
+ACC-000951,"Franco, Wiley and Tapia Account",Small Business,Automotive,Mexico,Active
+ACC-000952,Blake Group Account,Mid-Market,Healthcare,Germany,Active
+ACC-000953,"Acosta, Garcia and Moreno Account",Mid-Market,Technology,Mexico,Active
+ACC-000954,Barnes Inc Account,Mid-Market,Food & Beverage,Germany,Active
+ACC-000955,Dawson Inc Account,Distributor,Consumer Goods,Canada,Inactive
+ACC-000956,Morse PLC Account,Distributor,Technology,United States,Active
+ACC-000957,Haynes-Watson Account,Small Business,Automotive,Canada,Active
+ACC-000958,"Miller, Davis and Anderson Account",Small Business,Food & Beverage,United States,Active
+ACC-000959,Jones-Bradley Account,Mid-Market,Healthcare,United States,Active
+ACC-000960,Bates-Anderson Account,Small Business,Food & Beverage,United States,Active
+ACC-000961,Green-Edwards Account,Small Business,Technology,United Kingdom,Active
+ACC-000962,Haynes-Moss Account,Mid-Market,Food & Beverage,Mexico,Active
+ACC-000963,Chavez-Hall Account,Enterprise,Technology,United States,Active
+ACC-000964,Taylor PLC Account,Enterprise,Automotive,Canada,Active
+ACC-000965,Moore and Sons Account,Distributor,Manufacturing,United States,Active
+ACC-000966,Owens-Russell Account,Mid-Market,Healthcare,Germany,Active
+ACC-000967,"Howard, Townsend and Hayes Account",Distributor,Consumer Goods,United States,Active
+ACC-000968,Baker-Wilson Account,Mid-Market,Consumer Goods,Canada,Active
+ACC-000969,Aguirre LLC Account,Small Business,Manufacturing,Canada,Active
+ACC-000970,"Terry, Williams and Huff Account",Mid-Market,Industrial Equipment,United States,Inactive
+ACC-000971,Hernandez-Dawson Account,Mid-Market,Industrial Equipment,United States,Active
+ACC-000972,Foster-Williams Account,Enterprise,Automotive,United Kingdom,Active
+ACC-000973,Green-Ewing Account,Enterprise,Healthcare,Germany,Active
+ACC-000974,Crane Group Account,Distributor,Technology,United States,Active
+ACC-000975,"Adkins, Wright and Murray Account",Mid-Market,Automotive,United States,Active
+ACC-000976,Martinez Inc Account,Small Business,Food & Beverage,United States,Active
+ACC-000977,Anderson Group Account,Mid-Market,Food & Beverage,United States,Active
+ACC-000978,Parks-Pace Account,Mid-Market,Retail,United States,Active
+ACC-000979,Aguilar LLC Account,Small Business,Consumer Goods,United States,Active
+ACC-000980,Johnson Inc Account,Mid-Market,Food & Beverage,Sweden,Active
+ACC-000981,Orr Group Account,Distributor,Manufacturing,United States,Active
+ACC-000982,Davis LLC Account,Small Business,Automotive,United States,Active
+ACC-000983,Jones Inc Account,Small Business,Retail,United States,Active
+ACC-000984,Jackson PLC Account,Mid-Market,Retail,United States,Active
+ACC-000985,Underwood-Foster Account,Mid-Market,Manufacturing,United Kingdom,Active
+ACC-000986,Reyes Group Account,Distributor,Industrial Equipment,United States,Active
+ACC-000987,Gomez and Sons Account,Mid-Market,Manufacturing,Germany,Active
+ACC-000988,Ramirez-Stephenson Account,Enterprise,Manufacturing,Germany,Active
+ACC-000989,Mendez PLC Account,Mid-Market,Technology,United States,Active
+ACC-000990,Holland Group Account,Small Business,Food & Beverage,Canada,Active
+ACC-000991,Andrade-Mendoza Account,Small Business,Food & Beverage,Sweden,Active
+ACC-000992,Ramirez and Sons Account,Small Business,Industrial Equipment,United States,Active
+ACC-000993,Gonzalez-Wilkerson Account,Small Business,Construction,United States,Active
+ACC-000994,"Wright, Mcknight and Stephens Account",Mid-Market,Retail,Sweden,Active
+ACC-000995,Mayo Ltd Account,Distributor,Manufacturing,United Kingdom,Active
+ACC-000996,Castillo-Harrington Account,Mid-Market,Industrial Equipment,United States,Active
+ACC-000997,Durham-Shaw Account,Small Business,Electronics,Canada,Active
+ACC-000998,Nelson-Johnson Account,Enterprise,Electronics,United States,Active
+ACC-000999,"Robinson, Huang and Osborne Account",Distributor,Food & Beverage,United Kingdom,Active
+ACC-001000,Stokes Group Account,Mid-Market,Industrial Equipment,United States,Active

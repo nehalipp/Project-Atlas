@@ -1,0 +1,1001 @@
+supplier_key,supplier_id,supplier_name,supplier_category,country,status
+1,SUP-000001,"Perry, Cooper and Wall",Packaging,United States,Active
+2,SUP-000002,Dickerson-Miller,Components,Sweden,Active
+3,SUP-000003,"Poole, Wagner and Richardson",Equipment,Germany,Active
+4,SUP-000004,Rose Group,Raw Materials,United Kingdom,Active
+5,SUP-000005,Williams Inc,Components,United States,Active
+6,SUP-000006,Sanders-Hubbard,Packaging,United States,Active
+7,SUP-000007,Schmidt Inc,Components,Mexico,Active
+8,SUP-000008,"Valencia, Mullins and Guzman",Packaging,United States,Active
+9,SUP-000009,Haley-Evans,Equipment,United States,Active
+10,SUP-000010,"Ramirez, Allen and White",Packaging,Mexico,Active
+11,SUP-000011,Coleman-Robinson,Packaging,United States,Active
+12,SUP-000012,Mckenzie Inc,Equipment,United States,Active
+13,SUP-000013,Lewis PLC,Components,United States,Active
+14,SUP-000014,"Harding, Schmidt and Garrett",Maintenance,United States,Active
+15,SUP-000015,Dillon Group,Components,Germany,Active
+16,SUP-000016,"Webster, Fletcher and Villarreal",Raw Materials,United States,Active
+17,SUP-000017,Parks LLC,Packaging,United States,Active
+18,SUP-000018,Camacho Ltd,Equipment,Germany,Active
+19,SUP-000019,Robinson PLC,Equipment,Sweden,Active
+20,SUP-000020,"Miller, Johnson and Bennett",Maintenance,United States,Active
+21,SUP-000021,"Cochran, Watson and Leach",Equipment,United States,Active
+22,SUP-000022,Bonilla-Daniels,Packaging,Canada,Active
+23,SUP-000023,Deleon Ltd,Raw Materials,Germany,Active
+24,SUP-000024,"Newman, Li and Davis",Components,United States,Active
+25,SUP-000025,Rivera Inc,Components,United States,Inactive
+26,SUP-000026,Herrera-Perez,Raw Materials,United States,Active
+27,SUP-000027,Mccullough-Owen,Packaging,United States,Active
+28,SUP-000028,Poole Inc,Raw Materials,United States,Active
+29,SUP-000029,"Hayes, Whitney and Maynard",Maintenance,Germany,Active
+30,SUP-000030,"Hawkins, Wolf and Walker",Raw Materials,United States,Active
+31,SUP-000031,Mayo Ltd,Raw Materials,United States,Active
+32,SUP-000032,"Keith, Rivera and Vaughn",Maintenance,Germany,Active
+33,SUP-000033,Fox-Horn,Components,United Kingdom,Active
+34,SUP-000034,Davis-May,Packaging,Germany,Active
+35,SUP-000035,"Hughes, Chavez and Hughes",Components,United States,Active
+36,SUP-000036,Malone PLC,Raw Materials,Germany,Active
+37,SUP-000037,Graham-Shah,Components,United States,Active
+38,SUP-000038,"Jones, Roberts and Lowe",Maintenance,United States,Active
+39,SUP-000039,Wood-Strong,Components,Mexico,Active
+40,SUP-000040,Spence-Fields,Equipment,United States,Active
+41,SUP-000041,Terry-Avery,Components,United States,Active
+42,SUP-000042,"Nichols, Clark and Walker",Raw Materials,Germany,Active
+43,SUP-000043,Lawson-Stewart,Equipment,Germany,Active
+44,SUP-000044,"Phillips, Allen and Cunningham",Packaging,United States,Active
+45,SUP-000045,Brown Group,Equipment,United States,Active
+46,SUP-000046,Steele LLC,Equipment,United States,Active
+47,SUP-000047,"Miller, Stevens and Pineda",Components,United States,Active
+48,SUP-000048,Esparza Ltd,Maintenance,United States,Active
+49,SUP-000049,Keith-Villanueva,Packaging,United States,Active
+50,SUP-000050,Grant Inc,Maintenance,Mexico,Active
+51,SUP-000051,Johnson Group,Components,United States,Active
+52,SUP-000052,Collier and Sons,Packaging,United States,Inactive
+53,SUP-000053,Johnson-Lopez,Components,United States,Active
+54,SUP-000054,Hampton-Holmes,Equipment,Mexico,Active
+55,SUP-000055,Simpson-Thompson,Maintenance,United Kingdom,Active
+56,SUP-000056,Cervantes-Good,Packaging,United Kingdom,Active
+57,SUP-000057,Romero-Sanchez,Packaging,Germany,Active
+58,SUP-000058,"Hopkins, Smith and Avila",Equipment,United States,Active
+59,SUP-000059,"Davis, Conner and Torres",Maintenance,Canada,Active
+60,SUP-000060,Hodges LLC,Components,Mexico,Active
+61,SUP-000061,"Stout, Smith and Blair",Packaging,United States,Active
+62,SUP-000062,Scott PLC,Packaging,United States,Active
+63,SUP-000063,"Freeman, Thompson and Nelson",Packaging,Canada,Active
+64,SUP-000064,Ortiz-Vasquez,Maintenance,United States,Active
+65,SUP-000065,Baldwin LLC,Packaging,United States,Active
+66,SUP-000066,"Moody, Foster and Hunt",Raw Materials,United States,Active
+67,SUP-000067,"Little, Dixon and Carlson",Packaging,United States,Active
+68,SUP-000068,Hall-Murray,Packaging,United States,Active
+69,SUP-000069,Baird-Garcia,Equipment,United States,Active
+70,SUP-000070,"Bryan, Gibson and Johnson",Components,United States,Active
+71,SUP-000071,Moore-George,Equipment,United States,Active
+72,SUP-000072,Young-Russell,Equipment,United States,Active
+73,SUP-000073,Lawrence LLC,Maintenance,Mexico,Active
+74,SUP-000074,Walker PLC,Components,United States,Active
+75,SUP-000075,"Wolf, Boyd and Bennett",Maintenance,Mexico,Active
+76,SUP-000076,Moore-Johnson,Maintenance,United States,Inactive
+77,SUP-000077,Ray-Morrison,Maintenance,United States,Active
+78,SUP-000078,Martin-Drake,Packaging,United States,Active
+79,SUP-000079,Stephens-Martinez,Components,United States,Active
+80,SUP-000080,Glover Ltd,Equipment,United States,Active
+81,SUP-000081,Smith-Hampton,Components,United States,Active
+82,SUP-000082,Case Group,Raw Materials,United States,Active
+83,SUP-000083,Walker-Murray,Components,Germany,Active
+84,SUP-000084,Murphy-Hinton,Raw Materials,Sweden,Active
+85,SUP-000085,Willis-Hawkins,Components,United States,Active
+86,SUP-000086,Todd-Wagner,Components,United States,Active
+87,SUP-000087,Bennett-Vasquez,Maintenance,Mexico,Active
+88,SUP-000088,"Hudson, Fox and Lynch",Maintenance,Germany,Active
+89,SUP-000089,"Blankenship, Weaver and Davidson",Components,United States,Active
+90,SUP-000090,Ayala-Green,Components,United States,Active
+91,SUP-000091,Brown Group,Raw Materials,Sweden,Active
+92,SUP-000092,"Murphy, Thomas and Rodriguez",Components,United States,Active
+93,SUP-000093,Harris-Erickson,Packaging,United States,Inactive
+94,SUP-000094,"Miller, Lopez and Thompson",Equipment,United States,Active
+95,SUP-000095,Walton Inc,Raw Materials,Germany,Active
+96,SUP-000096,Chen-Robinson,Maintenance,Canada,Active
+97,SUP-000097,Mckee LLC,Maintenance,Mexico,Active
+98,SUP-000098,Hill-Owens,Equipment,United Kingdom,Active
+99,SUP-000099,"Odonnell, West and Robinson",Components,United States,Active
+100,SUP-000100,Mitchell-Hall,Maintenance,United States,Active
+101,SUP-000101,Martin Ltd,Raw Materials,United States,Active
+102,SUP-000102,Combs Ltd,Equipment,United States,Active
+103,SUP-000103,Alvarez PLC,Equipment,United States,Active
+104,SUP-000104,"Payne, Reynolds and Wells",Maintenance,United States,Active
+105,SUP-000105,Young-Barton,Equipment,Mexico,Active
+106,SUP-000106,Shaw Ltd,Raw Materials,Mexico,Active
+107,SUP-000107,"Peterson, Fowler and Bell",Raw Materials,Canada,Active
+108,SUP-000108,Hawkins-Burnett,Equipment,Germany,Active
+109,SUP-000109,Nelson-Mcfarland,Components,Germany,Active
+110,SUP-000110,Cook PLC,Equipment,United States,Active
+111,SUP-000111,Best-Murray,Raw Materials,Germany,Active
+112,SUP-000112,Rodriguez-Johnson,Raw Materials,United States,Active
+113,SUP-000113,"Rice, French and Sanchez",Raw Materials,Mexico,Active
+114,SUP-000114,King-Ward,Equipment,United States,Active
+115,SUP-000115,Lowe Inc,Components,Germany,Active
+116,SUP-000116,Thomas-Thomas,Components,Sweden,Active
+117,SUP-000117,"Huber, Blankenship and Rivera",Maintenance,United States,Inactive
+118,SUP-000118,"Garrison, Payne and Mccullough",Maintenance,Germany,Active
+119,SUP-000119,Gregory-Nelson,Components,United States,Active
+120,SUP-000120,Jackson and Sons,Maintenance,United States,Inactive
+121,SUP-000121,"Mendez, Murillo and Allen",Maintenance,United States,Active
+122,SUP-000122,Medina-Graham,Raw Materials,Canada,Active
+123,SUP-000123,Rice-Delgado,Raw Materials,United States,Active
+124,SUP-000124,Roberts Ltd,Components,Sweden,Active
+125,SUP-000125,Campos and Sons,Maintenance,United States,Inactive
+126,SUP-000126,"Sanders, Simmons and Collins",Raw Materials,Germany,Active
+127,SUP-000127,"Mitchell, Owens and Shaffer",Maintenance,United States,Active
+128,SUP-000128,Snyder Inc,Components,United States,Active
+129,SUP-000129,Park and Sons,Raw Materials,United States,Active
+130,SUP-000130,"Ayers, Gordon and Dominguez",Raw Materials,Canada,Active
+131,SUP-000131,"Cherry, Carroll and Olson",Packaging,Sweden,Active
+132,SUP-000132,Evans-Ortiz,Packaging,Canada,Inactive
+133,SUP-000133,Gibbs Group,Packaging,United States,Active
+134,SUP-000134,"Carr, Baldwin and Colon",Raw Materials,United States,Active
+135,SUP-000135,Hawkins-Stone,Components,United States,Active
+136,SUP-000136,Williams Inc,Packaging,United States,Active
+137,SUP-000137,"Johnson, Perry and Fowler",Components,United States,Active
+138,SUP-000138,"Moore, Johnson and Hawkins",Packaging,United States,Inactive
+139,SUP-000139,"Alvarado, Lambert and Santos",Packaging,United States,Active
+140,SUP-000140,"Williams, Mccann and Gardner",Components,Mexico,Active
+141,SUP-000141,"Gray, Harrison and Henderson",Packaging,United States,Active
+142,SUP-000142,Berry-Anderson,Equipment,United States,Active
+143,SUP-000143,Fitzpatrick Ltd,Packaging,United States,Inactive
+144,SUP-000144,Saunders LLC,Components,United States,Active
+145,SUP-000145,Ramirez-Cain,Raw Materials,United States,Active
+146,SUP-000146,Krueger-Collins,Components,United States,Active
+147,SUP-000147,Taylor Group,Packaging,United Kingdom,Active
+148,SUP-000148,Warner Ltd,Components,Canada,Active
+149,SUP-000149,Nicholson-Rodriguez,Packaging,United States,Active
+150,SUP-000150,Wright Group,Maintenance,Germany,Active
+151,SUP-000151,Martinez-Newman,Raw Materials,United States,Active
+152,SUP-000152,Obrien LLC,Components,United Kingdom,Active
+153,SUP-000153,Parsons LLC,Maintenance,United States,Active
+154,SUP-000154,"Mitchell, Francis and Barry",Packaging,United States,Active
+155,SUP-000155,Tanner-Jones,Equipment,United States,Active
+156,SUP-000156,Greene-Woodard,Maintenance,United States,Active
+157,SUP-000157,Allen-Bauer,Components,United States,Active
+158,SUP-000158,"Hubbard, Lewis and Webster",Raw Materials,United States,Active
+159,SUP-000159,"Ferguson, Moreno and Williams",Packaging,Sweden,Active
+160,SUP-000160,Scott-Schmidt,Raw Materials,United States,Active
+161,SUP-000161,King Inc,Maintenance,United States,Active
+162,SUP-000162,Adams PLC,Raw Materials,United Kingdom,Active
+163,SUP-000163,Singh PLC,Equipment,United States,Active
+164,SUP-000164,Thompson-Weeks,Packaging,Sweden,Active
+165,SUP-000165,Tran-Weber,Components,United States,Active
+166,SUP-000166,"David, Thornton and Miller",Equipment,United States,Active
+167,SUP-000167,"Jones, Morris and Jimenez",Packaging,United States,Active
+168,SUP-000168,Monroe-Gregory,Maintenance,Germany,Active
+169,SUP-000169,"Torres, Johnson and Taylor",Components,United States,Active
+170,SUP-000170,Ward Ltd,Components,Sweden,Active
+171,SUP-000171,Gibson-Montgomery,Equipment,United States,Active
+172,SUP-000172,"Greene, Bright and Camacho",Maintenance,Sweden,Active
+173,SUP-000173,"Nelson, Faulkner and Miller",Components,United States,Active
+174,SUP-000174,Martin-Meyer,Equipment,United States,Active
+175,SUP-000175,Anthony Ltd,Components,Germany,Active
+176,SUP-000176,"Wilson, Dennis and Kennedy",Components,Sweden,Active
+177,SUP-000177,Howard Group,Equipment,United States,Active
+178,SUP-000178,Whitney-Edwards,Maintenance,United States,Active
+179,SUP-000179,"Watkins, Buck and White",Components,United States,Active
+180,SUP-000180,"Hicks, Harrington and Mitchell",Raw Materials,United States,Active
+181,SUP-000181,Fitzpatrick LLC,Equipment,United States,Active
+182,SUP-000182,"Williams, Hughes and Cain",Packaging,United States,Active
+183,SUP-000183,"Medina, Welch and Peterson",Equipment,United States,Active
+184,SUP-000184,Mason PLC,Packaging,United States,Active
+185,SUP-000185,Perez Ltd,Maintenance,Canada,Active
+186,SUP-000186,Garcia Group,Components,United States,Active
+187,SUP-000187,Hughes-Padilla,Maintenance,United States,Active
+188,SUP-000188,Frye-Leonard,Maintenance,United States,Active
+189,SUP-000189,"Copeland, Hancock and Alvarez",Equipment,United States,Active
+190,SUP-000190,Johnson-Williams,Raw Materials,United States,Active
+191,SUP-000191,Williams-Murray,Equipment,United States,Active
+192,SUP-000192,"Frank, Davidson and Dean",Maintenance,Sweden,Active
+193,SUP-000193,Benitez PLC,Raw Materials,Sweden,Active
+194,SUP-000194,Harding Inc,Components,United States,Active
+195,SUP-000195,"Miller, Thompson and Watts",Components,Germany,Inactive
+196,SUP-000196,Martinez-Walker,Raw Materials,United States,Active
+197,SUP-000197,Clark-Coleman,Raw Materials,United States,Active
+198,SUP-000198,Smith-Stone,Packaging,United States,Active
+199,SUP-000199,White-Briggs,Raw Materials,Canada,Inactive
+200,SUP-000200,Sparks and Sons,Raw Materials,Mexico,Active
+201,SUP-000201,Gomez Ltd,Components,United Kingdom,Inactive
+202,SUP-000202,Rogers Inc,Equipment,Canada,Active
+203,SUP-000203,Callahan-Gonzales,Maintenance,Canada,Active
+204,SUP-000204,White-Scott,Raw Materials,Mexico,Active
+205,SUP-000205,"Daniels, Martin and Sweeney",Packaging,Canada,Active
+206,SUP-000206,Henderson Group,Equipment,United Kingdom,Active
+207,SUP-000207,Mccullough-Kaufman,Maintenance,United Kingdom,Active
+208,SUP-000208,Cruz-Lang,Components,Canada,Active
+209,SUP-000209,Perez-Crawford,Components,Sweden,Active
+210,SUP-000210,"Butler, Washington and Bennett",Maintenance,United States,Active
+211,SUP-000211,Edwards-Beard,Packaging,Canada,Active
+212,SUP-000212,Rasmussen-Jones,Packaging,Germany,Active
+213,SUP-000213,"Eaton, Pruitt and Hall",Maintenance,Mexico,Active
+214,SUP-000214,"Mitchell, Knox and Jones",Maintenance,United Kingdom,Active
+215,SUP-000215,"Shepard, Davis and Vazquez",Raw Materials,Canada,Active
+216,SUP-000216,Warner-Brown,Equipment,United States,Active
+217,SUP-000217,"Schneider, Chan and Diaz",Equipment,Germany,Active
+218,SUP-000218,"Martin, Marshall and Brown",Components,Germany,Active
+219,SUP-000219,Robinson-Gomez,Packaging,United States,Active
+220,SUP-000220,Lewis Inc,Maintenance,Sweden,Active
+221,SUP-000221,Garcia LLC,Packaging,Mexico,Active
+222,SUP-000222,Cook Group,Raw Materials,United States,Active
+223,SUP-000223,"Nelson, Hughes and Nielsen",Maintenance,United States,Active
+224,SUP-000224,Larson and Sons,Components,Sweden,Active
+225,SUP-000225,Barber-Knight,Maintenance,Sweden,Active
+226,SUP-000226,"Nguyen, Gilbert and Rodriguez",Components,United States,Active
+227,SUP-000227,Figueroa and Sons,Maintenance,United States,Active
+228,SUP-000228,Robinson and Sons,Raw Materials,United States,Active
+229,SUP-000229,Dixon PLC,Maintenance,Canada,Inactive
+230,SUP-000230,"Aguilar, Walker and Romero",Equipment,United States,Active
+231,SUP-000231,Robinson-Dennis,Raw Materials,United States,Active
+232,SUP-000232,Mcmahon-Welch,Raw Materials,United States,Active
+233,SUP-000233,Cunningham-White,Equipment,United States,Active
+234,SUP-000234,"Maxwell, Williams and Andrews",Packaging,United States,Active
+235,SUP-000235,"Wong, Mason and Miller",Components,United States,Active
+236,SUP-000236,Stewart Ltd,Packaging,Germany,Active
+237,SUP-000237,Brown-Moss,Maintenance,United Kingdom,Active
+238,SUP-000238,"Brown, Romero and Lopez",Equipment,United States,Active
+239,SUP-000239,Quinn-Gardner,Raw Materials,United Kingdom,Inactive
+240,SUP-000240,Strickland Group,Maintenance,United States,Active
+241,SUP-000241,Watkins-Cox,Maintenance,Sweden,Active
+242,SUP-000242,Elliott Group,Maintenance,United Kingdom,Active
+243,SUP-000243,"Lee, Crawford and Miles",Packaging,United States,Active
+244,SUP-000244,Lynch-Lyons,Equipment,United States,Active
+245,SUP-000245,"Ramirez, Villarreal and Schneider",Components,United States,Active
+246,SUP-000246,Lewis Group,Packaging,United Kingdom,Active
+247,SUP-000247,Cowan and Sons,Maintenance,United States,Active
+248,SUP-000248,Burns-Cobb,Maintenance,Sweden,Active
+249,SUP-000249,Day LLC,Maintenance,United States,Active
+250,SUP-000250,"Sherman, Johnson and Sweeney",Equipment,Canada,Active
+251,SUP-000251,Cox Inc,Components,United States,Active
+252,SUP-000252,Washington-Cole,Maintenance,United Kingdom,Active
+253,SUP-000253,Gonzales-York,Raw Materials,United States,Active
+254,SUP-000254,Carey PLC,Maintenance,United States,Active
+255,SUP-000255,Carroll and Sons,Raw Materials,Germany,Active
+256,SUP-000256,Price LLC,Components,Canada,Active
+257,SUP-000257,Lee-Mills,Components,Canada,Inactive
+258,SUP-000258,Clark Group,Components,United States,Active
+259,SUP-000259,"Howard, Cummings and Martinez",Raw Materials,United States,Active
+260,SUP-000260,Herrera-Holmes,Packaging,Sweden,Active
+261,SUP-000261,Lynch and Sons,Raw Materials,United States,Active
+262,SUP-000262,Goodwin Ltd,Components,United States,Active
+263,SUP-000263,Lloyd-Jackson,Packaging,United States,Active
+264,SUP-000264,Jones-Oliver,Maintenance,Germany,Active
+265,SUP-000265,Gordon-Smith,Maintenance,United States,Active
+266,SUP-000266,Horn Ltd,Components,United States,Active
+267,SUP-000267,Roberts-Porter,Raw Materials,Germany,Active
+268,SUP-000268,"Johnson, Lopez and Marquez",Equipment,United States,Active
+269,SUP-000269,Henry PLC,Maintenance,United States,Active
+270,SUP-000270,"Lee, Mcdonald and Garcia",Packaging,United States,Active
+271,SUP-000271,Chase Inc,Components,Canada,Active
+272,SUP-000272,Miller-Harris,Equipment,United States,Active
+273,SUP-000273,"Santiago, Craig and Proctor",Packaging,United Kingdom,Active
+274,SUP-000274,"Duncan, Jones and Rodriguez",Raw Materials,United States,Active
+275,SUP-000275,Salinas Inc,Components,Mexico,Active
+276,SUP-000276,Diaz-Ruiz,Maintenance,United States,Active
+277,SUP-000277,Hinton-Wilson,Packaging,United Kingdom,Active
+278,SUP-000278,Obrien-Chen,Components,United Kingdom,Active
+279,SUP-000279,Nichols-Barnes,Components,Canada,Active
+280,SUP-000280,Cohen Ltd,Equipment,United States,Active
+281,SUP-000281,"Wallace, Hammond and Reynolds",Raw Materials,Sweden,Active
+282,SUP-000282,Adams-Barnes,Maintenance,Mexico,Active
+283,SUP-000283,Smith-Walton,Maintenance,Germany,Active
+284,SUP-000284,Fox Ltd,Components,Germany,Active
+285,SUP-000285,"Smith, Hayes and Snow",Packaging,United States,Active
+286,SUP-000286,Rose PLC,Equipment,United States,Active
+287,SUP-000287,Miller LLC,Maintenance,United States,Active
+288,SUP-000288,"Dixon, Hamilton and Bailey",Raw Materials,Germany,Active
+289,SUP-000289,"Owens, Christian and Weiss",Packaging,Canada,Active
+290,SUP-000290,Davis-Garcia,Components,Sweden,Active
+291,SUP-000291,Lopez and Sons,Maintenance,United Kingdom,Active
+292,SUP-000292,Smith Inc,Packaging,United States,Active
+293,SUP-000293,Roman-Martinez,Components,United Kingdom,Active
+294,SUP-000294,Miller LLC,Raw Materials,United States,Active
+295,SUP-000295,"Barnes, Howe and Beck",Components,United States,Active
+296,SUP-000296,Simmons-Kent,Raw Materials,United States,Active
+297,SUP-000297,"Powell, Yoder and Norris",Raw Materials,United States,Active
+298,SUP-000298,Grimes-Kent,Equipment,United States,Active
+299,SUP-000299,"Garcia, Evans and Hoover",Components,United States,Active
+300,SUP-000300,Miller PLC,Equipment,Mexico,Active
+301,SUP-000301,Rodriguez PLC,Raw Materials,Sweden,Active
+302,SUP-000302,Sandoval-Harris,Maintenance,United States,Active
+303,SUP-000303,Nguyen PLC,Packaging,United States,Active
+304,SUP-000304,Cross-Kent,Raw Materials,United Kingdom,Active
+305,SUP-000305,Wilson Ltd,Raw Materials,United States,Active
+306,SUP-000306,"Lopez, Simpson and Blackwell",Equipment,United States,Active
+307,SUP-000307,Davis Inc,Packaging,United States,Active
+308,SUP-000308,Mason-Baker,Equipment,United States,Active
+309,SUP-000309,"Adams, Velazquez and Bridges",Maintenance,Sweden,Active
+310,SUP-000310,"Patel, Ramirez and Morton",Equipment,United States,Active
+311,SUP-000311,Bowman-Rogers,Components,Germany,Inactive
+312,SUP-000312,Beard PLC,Components,Mexico,Active
+313,SUP-000313,Garcia Group,Equipment,United States,Active
+314,SUP-000314,Moore-Wilson,Maintenance,United States,Active
+315,SUP-000315,Austin-Jacobs,Raw Materials,United Kingdom,Active
+316,SUP-000316,"Hall, Soto and Hester",Equipment,United Kingdom,Inactive
+317,SUP-000317,Jones-Simmons,Raw Materials,United States,Active
+318,SUP-000318,"Beltran, Rodriguez and Martinez",Raw Materials,United States,Active
+319,SUP-000319,Lowery PLC,Raw Materials,United States,Active
+320,SUP-000320,Moore and Sons,Components,United States,Active
+321,SUP-000321,Smith-Austin,Maintenance,Canada,Active
+322,SUP-000322,Cole Group,Packaging,United Kingdom,Active
+323,SUP-000323,"Williams, Cook and Pittman",Components,United States,Active
+324,SUP-000324,Potter Ltd,Packaging,United States,Active
+325,SUP-000325,"Oconnor, Hall and Smith",Maintenance,Canada,Active
+326,SUP-000326,Henderson Group,Equipment,United States,Active
+327,SUP-000327,Rowe-Gibson,Maintenance,United States,Active
+328,SUP-000328,"Andersen, Stevenson and Bell",Components,United Kingdom,Active
+329,SUP-000329,"Clark, Howard and Smith",Packaging,United States,Active
+330,SUP-000330,Long Group,Packaging,United States,Active
+331,SUP-000331,"Harrison, Lane and Lane",Raw Materials,United States,Active
+332,SUP-000332,"Cortez, Horton and Wright",Equipment,United States,Active
+333,SUP-000333,White Group,Components,United States,Active
+334,SUP-000334,Henson-Edwards,Equipment,Canada,Inactive
+335,SUP-000335,Watkins Group,Components,United States,Active
+336,SUP-000336,"Mitchell, Simpson and Zhang",Raw Materials,United States,Active
+337,SUP-000337,"Grant, Schmidt and Carlson",Raw Materials,United States,Active
+338,SUP-000338,"Walker, Jimenez and Hughes",Packaging,United States,Active
+339,SUP-000339,Roberts-Bailey,Components,United States,Active
+340,SUP-000340,Sullivan-Carter,Maintenance,Germany,Active
+341,SUP-000341,Orr-Clark,Components,United States,Active
+342,SUP-000342,Smith Ltd,Components,Germany,Active
+343,SUP-000343,Tucker-Rogers,Packaging,Germany,Active
+344,SUP-000344,Mccall-Mccann,Equipment,United Kingdom,Active
+345,SUP-000345,Horton Inc,Raw Materials,Germany,Active
+346,SUP-000346,Brown Inc,Raw Materials,Sweden,Active
+347,SUP-000347,"Hill, Gonzalez and Martin",Components,United States,Active
+348,SUP-000348,"White, King and Booker",Equipment,Mexico,Active
+349,SUP-000349,Moore-Roberts,Packaging,United States,Active
+350,SUP-000350,Baker-Mack,Components,Mexico,Active
+351,SUP-000351,David-Beard,Maintenance,Germany,Active
+352,SUP-000352,Jones Group,Equipment,United States,Active
+353,SUP-000353,Mitchell Group,Maintenance,Sweden,Active
+354,SUP-000354,Coleman Ltd,Packaging,Mexico,Active
+355,SUP-000355,Myers Group,Components,United Kingdom,Active
+356,SUP-000356,"Rocha, Garza and Hodge",Equipment,Sweden,Active
+357,SUP-000357,Walker Inc,Maintenance,United States,Active
+358,SUP-000358,Schroeder Ltd,Components,United Kingdom,Active
+359,SUP-000359,Middleton LLC,Equipment,Germany,Active
+360,SUP-000360,Pittman PLC,Equipment,Mexico,Active
+361,SUP-000361,"Mitchell, Francis and Stewart",Raw Materials,United States,Active
+362,SUP-000362,Adkins-Wagner,Raw Materials,United States,Active
+363,SUP-000363,Campbell-Lewis,Equipment,Germany,Active
+364,SUP-000364,Elliott Group,Raw Materials,United States,Active
+365,SUP-000365,Reyes-Charles,Packaging,United States,Active
+366,SUP-000366,Gordon Group,Components,Canada,Active
+367,SUP-000367,Coleman-Floyd,Raw Materials,United States,Active
+368,SUP-000368,"Hernandez, Miller and Parks",Maintenance,United States,Active
+369,SUP-000369,Smith Group,Components,Germany,Active
+370,SUP-000370,Alexander-Bailey,Maintenance,Mexico,Active
+371,SUP-000371,"Cooper, Adams and Archer",Equipment,Mexico,Active
+372,SUP-000372,"Lynch, Browning and Brewer",Packaging,United States,Active
+373,SUP-000373,"Fuller, Evans and Taylor",Equipment,Germany,Active
+374,SUP-000374,"Rodgers, Welch and Clark",Raw Materials,United States,Active
+375,SUP-000375,Cooper Group,Components,United States,Active
+376,SUP-000376,"Brooks, Lopez and Ferguson",Packaging,Germany,Active
+377,SUP-000377,Jones-Butler,Maintenance,United States,Active
+378,SUP-000378,"Dixon, James and Fuller",Equipment,United States,Active
+379,SUP-000379,Weaver PLC,Raw Materials,United States,Active
+380,SUP-000380,"Dunn, Williams and Woods",Maintenance,United Kingdom,Active
+381,SUP-000381,Diaz and Sons,Equipment,Canada,Active
+382,SUP-000382,Morgan Group,Maintenance,United States,Active
+383,SUP-000383,"Newman, Cross and Armstrong",Components,Canada,Active
+384,SUP-000384,Hancock-Roberts,Raw Materials,United Kingdom,Active
+385,SUP-000385,Cooper-Oconnor,Equipment,United States,Active
+386,SUP-000386,Benton-Williams,Maintenance,United States,Active
+387,SUP-000387,"Farley, Johnson and Powell",Raw Materials,Mexico,Active
+388,SUP-000388,Edwards-Glass,Raw Materials,United States,Active
+389,SUP-000389,Chandler-Lawrence,Components,Germany,Active
+390,SUP-000390,"Scott, Dixon and Cruz",Maintenance,United Kingdom,Active
+391,SUP-000391,Miller Inc,Packaging,United States,Active
+392,SUP-000392,"Lane, Hubbard and Cross",Components,United States,Active
+393,SUP-000393,Pena-Morris,Components,United States,Active
+394,SUP-000394,Bass LLC,Equipment,United Kingdom,Active
+395,SUP-000395,"Ford, Parrish and Flores",Equipment,United States,Active
+396,SUP-000396,Cruz-Barrera,Equipment,Germany,Active
+397,SUP-000397,Vazquez-Le,Maintenance,United States,Active
+398,SUP-000398,Kelley-Stephens,Packaging,United States,Inactive
+399,SUP-000399,"Lane, Young and Floyd",Components,Mexico,Active
+400,SUP-000400,"White, Cummings and Smith",Raw Materials,United States,Active
+401,SUP-000401,"Webb, Whitehead and Andrews",Components,United States,Active
+402,SUP-000402,"Lowe, Murphy and Soto",Components,Germany,Active
+403,SUP-000403,Garcia-Jones,Equipment,United States,Active
+404,SUP-000404,"Watts, Miller and Townsend",Components,United States,Active
+405,SUP-000405,Yates-Ramirez,Packaging,Mexico,Active
+406,SUP-000406,Stephens and Sons,Raw Materials,United States,Active
+407,SUP-000407,Bryant-Young,Equipment,United States,Active
+408,SUP-000408,Morrison-Peterson,Maintenance,Sweden,Active
+409,SUP-000409,"Lee, Johnson and Dixon",Components,United States,Active
+410,SUP-000410,"Knapp, Brown and Tanner",Packaging,United States,Active
+411,SUP-000411,Freeman-Adams,Equipment,United States,Active
+412,SUP-000412,Castro-Palmer,Packaging,Canada,Active
+413,SUP-000413,Guerrero-Carlson,Maintenance,United Kingdom,Active
+414,SUP-000414,"Morgan, Howard and Galvan",Maintenance,Sweden,Active
+415,SUP-000415,Nguyen LLC,Maintenance,Sweden,Active
+416,SUP-000416,"Olson, Farmer and Russo",Maintenance,Sweden,Active
+417,SUP-000417,Hahn-Smith,Equipment,United States,Active
+418,SUP-000418,Martinez Group,Packaging,United States,Active
+419,SUP-000419,"Snyder, Sims and Watson",Raw Materials,United States,Active
+420,SUP-000420,Hoffman-Hunt,Maintenance,United States,Active
+421,SUP-000421,"Valdez, Wright and Lewis",Maintenance,United Kingdom,Active
+422,SUP-000422,Gonzales Group,Components,United States,Active
+423,SUP-000423,"Ritter, Lee and Young",Equipment,Sweden,Active
+424,SUP-000424,Roth-Barry,Components,United States,Active
+425,SUP-000425,"Wells, Rodriguez and Hines",Packaging,Mexico,Active
+426,SUP-000426,Trujillo Ltd,Packaging,Germany,Active
+427,SUP-000427,Williams-Boone,Raw Materials,United States,Active
+428,SUP-000428,Evans and Sons,Raw Materials,Mexico,Active
+429,SUP-000429,"Miller, Burgess and Reed",Maintenance,Sweden,Active
+430,SUP-000430,"Peterson, Morrison and Chang",Equipment,United Kingdom,Active
+431,SUP-000431,Turner-Harris,Equipment,United Kingdom,Active
+432,SUP-000432,Caldwell Ltd,Equipment,Sweden,Active
+433,SUP-000433,Donaldson-Alexander,Packaging,United Kingdom,Active
+434,SUP-000434,"Roman, Conway and Manning",Raw Materials,United States,Active
+435,SUP-000435,Young-Edwards,Equipment,United States,Active
+436,SUP-000436,Turner-Williams,Raw Materials,United States,Active
+437,SUP-000437,Greer Inc,Packaging,United States,Active
+438,SUP-000438,Carter-Zhang,Components,United States,Active
+439,SUP-000439,Robinson Group,Equipment,United States,Active
+440,SUP-000440,Jones-Simpson,Raw Materials,Canada,Active
+441,SUP-000441,Turner-Hunter,Components,United States,Active
+442,SUP-000442,Walter-Herrera,Raw Materials,United States,Active
+443,SUP-000443,Case-Harris,Equipment,United States,Inactive
+444,SUP-000444,White PLC,Maintenance,United States,Active
+445,SUP-000445,"Smith, Moss and Rogers",Maintenance,Mexico,Active
+446,SUP-000446,"Cole, Marquez and Davis",Equipment,United States,Inactive
+447,SUP-000447,Anderson-Branch,Packaging,United States,Inactive
+448,SUP-000448,Johnson-Leon,Components,United States,Active
+449,SUP-000449,"Baker, Bryant and Santiago",Raw Materials,United Kingdom,Active
+450,SUP-000450,Becker Inc,Maintenance,United States,Active
+451,SUP-000451,"Smith, Hobbs and Hoover",Maintenance,Canada,Active
+452,SUP-000452,"Williams, Washington and Russo",Components,Sweden,Active
+453,SUP-000453,"Schultz, Bates and Livingston",Packaging,United States,Active
+454,SUP-000454,"Reed, Henderson and Lucas",Components,United Kingdom,Active
+455,SUP-000455,"Thomas, Mitchell and Gutierrez",Packaging,Mexico,Active
+456,SUP-000456,Robbins Inc,Packaging,United Kingdom,Active
+457,SUP-000457,Nguyen-Allen,Components,Sweden,Active
+458,SUP-000458,Sanchez Inc,Components,United States,Active
+459,SUP-000459,Williams Group,Components,United States,Active
+460,SUP-000460,Pruitt Group,Packaging,United States,Active
+461,SUP-000461,Davis and Sons,Maintenance,Germany,Active
+462,SUP-000462,Peterson-Cooper,Components,Germany,Active
+463,SUP-000463,Rhodes Group,Raw Materials,United States,Active
+464,SUP-000464,"Adams, Barnes and Willis",Packaging,Canada,Active
+465,SUP-000465,Vance-Harris,Raw Materials,Mexico,Active
+466,SUP-000466,"Roberts, Vasquez and Ruiz",Maintenance,United States,Active
+467,SUP-000467,"Greene, Davis and Mack",Maintenance,United States,Active
+468,SUP-000468,"Miller, Whitaker and Gibson",Maintenance,Sweden,Active
+469,SUP-000469,Thomas-Pitts,Packaging,United States,Active
+470,SUP-000470,"Davis, Dixon and Meadows",Maintenance,United States,Active
+471,SUP-000471,"Villa, West and Mclean",Components,United States,Active
+472,SUP-000472,Price-Williams,Maintenance,Canada,Active
+473,SUP-000473,Blanchard Inc,Maintenance,United States,Active
+474,SUP-000474,Smith and Sons,Maintenance,Germany,Active
+475,SUP-000475,Moody-Boyer,Raw Materials,United States,Active
+476,SUP-000476,Scott-Mullen,Maintenance,United States,Active
+477,SUP-000477,Butler LLC,Equipment,United States,Inactive
+478,SUP-000478,Torres PLC,Maintenance,Germany,Active
+479,SUP-000479,Martin Ltd,Equipment,Mexico,Active
+480,SUP-000480,Garcia Group,Components,United States,Active
+481,SUP-000481,White PLC,Maintenance,Canada,Active
+482,SUP-000482,Burton-Stewart,Equipment,United Kingdom,Inactive
+483,SUP-000483,Vincent-Campbell,Components,United States,Active
+484,SUP-000484,Cummings-Kelly,Maintenance,United States,Active
+485,SUP-000485,"Johnson, Haynes and Barrera",Components,United States,Active
+486,SUP-000486,Rodriguez-Robinson,Maintenance,Sweden,Active
+487,SUP-000487,Garcia Group,Raw Materials,United States,Active
+488,SUP-000488,Solis-Best,Components,United States,Active
+489,SUP-000489,"King, Savage and Murphy",Maintenance,United States,Active
+490,SUP-000490,"Brown, Garcia and Hughes",Raw Materials,United States,Active
+491,SUP-000491,"Shannon, Sellers and Mitchell",Equipment,United Kingdom,Active
+492,SUP-000492,"Lucas, Schmidt and Sanchez",Maintenance,United States,Active
+493,SUP-000493,"Brewer, Campbell and Jackson",Raw Materials,United States,Active
+494,SUP-000494,Wilson-Williams,Equipment,United States,Active
+495,SUP-000495,Smith-Morgan,Equipment,United Kingdom,Active
+496,SUP-000496,"Fernandez, Johnson and Mcgrath",Equipment,Canada,Active
+497,SUP-000497,"Bray, Williamson and Miller",Components,United States,Active
+498,SUP-000498,"Chavez, Wright and Adams",Components,United States,Active
+499,SUP-000499,Haley LLC,Maintenance,United States,Active
+500,SUP-000500,Richardson-Butler,Components,United States,Inactive
+501,SUP-000501,"Hernandez, Bright and Dickerson",Components,Sweden,Active
+502,SUP-000502,"Bond, Ford and Hall",Packaging,United States,Active
+503,SUP-000503,Parks-Frazier,Components,United Kingdom,Active
+504,SUP-000504,Richards-Harris,Packaging,Canada,Active
+505,SUP-000505,Robles PLC,Equipment,United States,Active
+506,SUP-000506,"Thomas, James and Weaver",Raw Materials,Canada,Active
+507,SUP-000507,Hill Ltd,Packaging,United States,Active
+508,SUP-000508,"Cox, Barber and Taylor",Maintenance,United States,Active
+509,SUP-000509,"Trevino, Erickson and Webb",Maintenance,Germany,Active
+510,SUP-000510,"Lin, Thomas and Campbell",Components,United States,Active
+511,SUP-000511,Lewis and Sons,Raw Materials,United States,Active
+512,SUP-000512,Wiley LLC,Packaging,United Kingdom,Active
+513,SUP-000513,Leonard-Cameron,Components,Sweden,Active
+514,SUP-000514,Spencer-Wong,Equipment,Canada,Active
+515,SUP-000515,Gray Ltd,Maintenance,United Kingdom,Active
+516,SUP-000516,"Matthews, Johnson and Holmes",Maintenance,Canada,Active
+517,SUP-000517,"Miller, Fischer and Potts",Raw Materials,Germany,Active
+518,SUP-000518,Jennings-Morris,Maintenance,United States,Active
+519,SUP-000519,Griffin Inc,Packaging,Canada,Active
+520,SUP-000520,Sullivan Ltd,Equipment,Mexico,Active
+521,SUP-000521,"Diaz, Andrews and Schmidt",Equipment,United States,Active
+522,SUP-000522,"Leach, Schwartz and Johnson",Equipment,Sweden,Active
+523,SUP-000523,Warren-Moreno,Raw Materials,United Kingdom,Active
+524,SUP-000524,Phillips Inc,Components,United Kingdom,Active
+525,SUP-000525,"Lopez, Meyer and Wall",Components,United States,Active
+526,SUP-000526,"Ellison, Williams and Martin",Components,Sweden,Active
+527,SUP-000527,"Brooks, Franco and Morrow",Equipment,Mexico,Active
+528,SUP-000528,"Harmon, Henderson and Hodges",Equipment,United States,Inactive
+529,SUP-000529,"Hall, Sanchez and Price",Maintenance,United States,Active
+530,SUP-000530,Goodman-Elliott,Equipment,United States,Active
+531,SUP-000531,"Richard, Harris and Gomez",Equipment,Germany,Active
+532,SUP-000532,"Mendoza, Perez and Nguyen",Components,Germany,Active
+533,SUP-000533,"Gonzalez, Coleman and Parker",Maintenance,Sweden,Active
+534,SUP-000534,"Nelson, Black and Smith",Equipment,United States,Inactive
+535,SUP-000535,"Nelson, Campbell and Stevens",Maintenance,Sweden,Active
+536,SUP-000536,"Santos, Kelly and Barrett",Maintenance,United States,Active
+537,SUP-000537,Porter and Sons,Components,Sweden,Active
+538,SUP-000538,"Baxter, Martin and Wood",Equipment,United States,Active
+539,SUP-000539,"Mora, Flores and Burns",Maintenance,United States,Active
+540,SUP-000540,"Campbell, Ortiz and Alexander",Equipment,United Kingdom,Active
+541,SUP-000541,Conway LLC,Maintenance,United States,Active
+542,SUP-000542,Garcia Group,Maintenance,United States,Active
+543,SUP-000543,"Luna, Moore and Avery",Components,United States,Active
+544,SUP-000544,"Wilson, Barnes and Smith",Maintenance,Sweden,Active
+545,SUP-000545,Fox-Flowers,Equipment,Canada,Active
+546,SUP-000546,Landry LLC,Raw Materials,United Kingdom,Active
+547,SUP-000547,Craig-Murphy,Maintenance,United Kingdom,Active
+548,SUP-000548,"Lee, Hernandez and Mason",Packaging,Germany,Active
+549,SUP-000549,"Singh, Smith and Clarke",Maintenance,Mexico,Active
+550,SUP-000550,"Fields, Clark and Carter",Equipment,United States,Active
+551,SUP-000551,"Jarvis, Andrews and Miller",Raw Materials,United States,Active
+552,SUP-000552,"Rodriguez, Alexander and Roman",Equipment,Sweden,Active
+553,SUP-000553,Barnett LLC,Packaging,Sweden,Active
+554,SUP-000554,Miller-Reynolds,Raw Materials,United States,Active
+555,SUP-000555,"Stanton, Allison and Knapp",Equipment,United States,Inactive
+556,SUP-000556,Bishop-Young,Packaging,United States,Active
+557,SUP-000557,Reyes and Sons,Packaging,United States,Active
+558,SUP-000558,"Patrick, White and Mcgee",Equipment,Sweden,Active
+559,SUP-000559,"Hall, Brown and Lopez",Maintenance,Sweden,Active
+560,SUP-000560,"Morgan, Reed and Gray",Components,Canada,Active
+561,SUP-000561,Roberts PLC,Maintenance,United States,Active
+562,SUP-000562,Nash Inc,Packaging,United States,Active
+563,SUP-000563,Kent Ltd,Packaging,United States,Active
+564,SUP-000564,"Anthony, Cruz and Bailey",Components,Sweden,Active
+565,SUP-000565,Perez-Schneider,Raw Materials,United States,Active
+566,SUP-000566,Johnson Ltd,Components,United States,Active
+567,SUP-000567,Garcia Group,Maintenance,Sweden,Active
+568,SUP-000568,Francis Ltd,Components,United States,Active
+569,SUP-000569,Reyes-Carr,Components,United Kingdom,Active
+570,SUP-000570,Smith-Mason,Components,United States,Active
+571,SUP-000571,Silva-Williams,Packaging,United States,Active
+572,SUP-000572,Castillo Group,Packaging,Mexico,Active
+573,SUP-000573,Carson-Medina,Maintenance,United States,Active
+574,SUP-000574,Sweeney LLC,Raw Materials,United States,Active
+575,SUP-000575,"Maynard, Frederick and Obrien",Raw Materials,Canada,Active
+576,SUP-000576,Smith-Chen,Components,United States,Inactive
+577,SUP-000577,Bowen Group,Components,United States,Active
+578,SUP-000578,Hogan-Perez,Raw Materials,Sweden,Active
+579,SUP-000579,Larsen-Craig,Maintenance,United States,Active
+580,SUP-000580,Simon Ltd,Equipment,United States,Active
+581,SUP-000581,Murphy PLC,Maintenance,United States,Active
+582,SUP-000582,Wolfe-Larson,Packaging,Canada,Active
+583,SUP-000583,Snyder-Leonard,Raw Materials,Sweden,Active
+584,SUP-000584,Bennett-Nguyen,Maintenance,United States,Active
+585,SUP-000585,"Johnson, Gonzalez and Hicks",Raw Materials,United States,Active
+586,SUP-000586,"Cook, Daugherty and Roberts",Raw Materials,United States,Active
+587,SUP-000587,Hicks and Sons,Components,United States,Active
+588,SUP-000588,"Baldwin, Estrada and Sanchez",Equipment,United States,Active
+589,SUP-000589,Martin-Underwood,Packaging,United Kingdom,Active
+590,SUP-000590,Jones Ltd,Raw Materials,United States,Active
+591,SUP-000591,"Tran, Jones and Hawkins",Equipment,Canada,Active
+592,SUP-000592,Marsh-Goodman,Maintenance,United Kingdom,Active
+593,SUP-000593,Garcia Group,Components,United States,Active
+594,SUP-000594,Howard-Solis,Raw Materials,United States,Active
+595,SUP-000595,Morales-Booth,Equipment,United States,Active
+596,SUP-000596,Kelly-Reyes,Packaging,United States,Active
+597,SUP-000597,Campos PLC,Raw Materials,United States,Active
+598,SUP-000598,"Richmond, Wright and Evans",Raw Materials,United States,Active
+599,SUP-000599,"Tapia, Buchanan and Lucero",Packaging,United States,Active
+600,SUP-000600,Curry-Estrada,Packaging,United Kingdom,Active
+601,SUP-000601,Fisher-Webb,Equipment,United States,Active
+602,SUP-000602,"Meyers, Whitehead and Walton",Components,United States,Active
+603,SUP-000603,Perez LLC,Components,United Kingdom,Active
+604,SUP-000604,Delgado LLC,Packaging,United States,Active
+605,SUP-000605,Duffy PLC,Maintenance,Mexico,Active
+606,SUP-000606,Montes-Ramirez,Components,United States,Active
+607,SUP-000607,Smith Group,Packaging,Mexico,Active
+608,SUP-000608,"Hinton, Simpson and Stein",Components,Canada,Active
+609,SUP-000609,Garcia Group,Maintenance,United States,Active
+610,SUP-000610,Saunders-Cook,Raw Materials,United Kingdom,Active
+611,SUP-000611,"Cameron, Roman and Richards",Components,United States,Active
+612,SUP-000612,Espinoza LLC,Components,United Kingdom,Active
+613,SUP-000613,"Johnson, Zimmerman and Mcintosh",Components,Mexico,Active
+614,SUP-000614,Dean-Wilson,Maintenance,United States,Active
+615,SUP-000615,"Ortiz, Richardson and Lewis",Raw Materials,United States,Active
+616,SUP-000616,Armstrong-Allen,Packaging,United Kingdom,Active
+617,SUP-000617,Peterson-Simmons,Maintenance,United States,Active
+618,SUP-000618,Castillo-White,Packaging,United States,Active
+619,SUP-000619,"Watson, Wilkerson and David",Equipment,United States,Active
+620,SUP-000620,"Wilkerson, Brown and Orr",Components,Canada,Active
+621,SUP-000621,Travis-Peters,Components,United States,Active
+622,SUP-000622,"Thompson, Hernandez and Richmond",Raw Materials,United States,Active
+623,SUP-000623,Santiago Ltd,Maintenance,United States,Active
+624,SUP-000624,Snyder Ltd,Raw Materials,United Kingdom,Active
+625,SUP-000625,Davidson-Ballard,Raw Materials,United States,Active
+626,SUP-000626,"Glover, Taylor and Martin",Packaging,United States,Active
+627,SUP-000627,"Morris, Dorsey and Morrow",Packaging,Germany,Active
+628,SUP-000628,"Johnson, Smith and Jones",Raw Materials,United States,Active
+629,SUP-000629,Farmer-Burns,Maintenance,Sweden,Active
+630,SUP-000630,"Ford, Johnson and Webb",Components,United Kingdom,Active
+631,SUP-000631,Watson-Johnson,Components,United States,Active
+632,SUP-000632,"Foster, Green and Phillips",Maintenance,United Kingdom,Active
+633,SUP-000633,Lawrence-Jordan,Equipment,United States,Active
+634,SUP-000634,Collins-Perkins,Raw Materials,United Kingdom,Active
+635,SUP-000635,"Santiago, Gray and Dixon",Packaging,Mexico,Active
+636,SUP-000636,Sanders-Small,Equipment,Germany,Active
+637,SUP-000637,Turner Ltd,Maintenance,United States,Active
+638,SUP-000638,Graves Ltd,Raw Materials,United Kingdom,Active
+639,SUP-000639,Henry Inc,Equipment,United States,Active
+640,SUP-000640,"Yang, Burgess and Navarro",Maintenance,United Kingdom,Active
+641,SUP-000641,"Bridges, Anderson and Odom",Maintenance,United States,Active
+642,SUP-000642,Sanders-Ross,Packaging,United States,Active
+643,SUP-000643,Salinas and Sons,Components,Germany,Active
+644,SUP-000644,"Watkins, Norris and Banks",Packaging,Sweden,Active
+645,SUP-000645,Walls-Thompson,Maintenance,United States,Active
+646,SUP-000646,Torres PLC,Components,United States,Active
+647,SUP-000647,"Barnett, Stephens and Simmons",Raw Materials,United States,Active
+648,SUP-000648,Walker-Long,Packaging,United States,Active
+649,SUP-000649,Baker-Hansen,Maintenance,United States,Active
+650,SUP-000650,Williams-Moore,Components,Germany,Active
+651,SUP-000651,Brown-Snyder,Components,Mexico,Active
+652,SUP-000652,"Walker, Moreno and Bird",Packaging,United States,Active
+653,SUP-000653,Brown and Sons,Packaging,United States,Active
+654,SUP-000654,Rose-Craig,Raw Materials,United States,Active
+655,SUP-000655,Alvarado-Parks,Equipment,United States,Active
+656,SUP-000656,"Williams, Ibarra and Ayers",Components,United States,Active
+657,SUP-000657,Hernandez-Henry,Components,United States,Active
+658,SUP-000658,Wood Inc,Equipment,United Kingdom,Active
+659,SUP-000659,Hardin LLC,Raw Materials,United States,Active
+660,SUP-000660,Nixon LLC,Packaging,Mexico,Active
+661,SUP-000661,Jacobs Inc,Components,United States,Active
+662,SUP-000662,"Marshall, Ford and Jones",Equipment,United States,Active
+663,SUP-000663,Merritt Inc,Raw Materials,Sweden,Active
+664,SUP-000664,Johnson and Sons,Maintenance,Germany,Active
+665,SUP-000665,"Thomas, Johnson and Lloyd",Equipment,United States,Active
+666,SUP-000666,"Campbell, Ward and Herrera",Raw Materials,United States,Active
+667,SUP-000667,Rivera PLC,Equipment,United States,Active
+668,SUP-000668,Monroe Ltd,Maintenance,United States,Active
+669,SUP-000669,Silva-Rodgers,Packaging,United States,Active
+670,SUP-000670,"Bean, David and Martin",Equipment,United States,Active
+671,SUP-000671,Reeves-Patton,Components,United States,Active
+672,SUP-000672,"Garcia, Jones and Ramirez",Equipment,United States,Inactive
+673,SUP-000673,Beltran PLC,Raw Materials,United States,Active
+674,SUP-000674,"Sharp, Terry and Nolan",Maintenance,United States,Active
+675,SUP-000675,Barnes Ltd,Packaging,United States,Active
+676,SUP-000676,"Jones, Pratt and Hall",Raw Materials,United States,Active
+677,SUP-000677,Myers-Harding,Packaging,Germany,Active
+678,SUP-000678,Davidson PLC,Packaging,United States,Active
+679,SUP-000679,Ballard Group,Raw Materials,Sweden,Active
+680,SUP-000680,Gomez-Jordan,Raw Materials,Sweden,Active
+681,SUP-000681,"Reynolds, Gonzalez and Clark",Packaging,Canada,Active
+682,SUP-000682,"Kaufman, Miller and Hernandez",Equipment,United States,Active
+683,SUP-000683,Rodriguez PLC,Components,United States,Active
+684,SUP-000684,Evans-Alvarez,Packaging,United States,Active
+685,SUP-000685,"Munoz, Lloyd and Carrillo",Components,United Kingdom,Active
+686,SUP-000686,Massey-Buck,Packaging,United States,Active
+687,SUP-000687,"Scott, Rodriguez and Berry",Maintenance,United States,Active
+688,SUP-000688,Callahan-Houston,Equipment,Sweden,Active
+689,SUP-000689,Thomas Inc,Maintenance,United States,Active
+690,SUP-000690,Thompson PLC,Equipment,Mexico,Active
+691,SUP-000691,Johnson and Sons,Maintenance,United States,Active
+692,SUP-000692,"Vazquez, Collins and Miller",Components,United States,Active
+693,SUP-000693,Taylor Inc,Equipment,Canada,Active
+694,SUP-000694,Lopez Group,Packaging,Sweden,Active
+695,SUP-000695,"Alvarez, Nichols and Snyder",Components,Sweden,Active
+696,SUP-000696,"Kelly, Lopez and Hamilton",Maintenance,Sweden,Active
+697,SUP-000697,Mcdaniel Ltd,Maintenance,United States,Active
+698,SUP-000698,"Estrada, Vazquez and Greene",Maintenance,Sweden,Active
+699,SUP-000699,Davenport-Johnson,Maintenance,United States,Active
+700,SUP-000700,Pennington Inc,Packaging,United States,Active
+701,SUP-000701,Mitchell-Miller,Components,United States,Active
+702,SUP-000702,"Diaz, Savage and Bryant",Components,United Kingdom,Active
+703,SUP-000703,Hartman Inc,Packaging,United States,Active
+704,SUP-000704,"Boyd, Adams and Brown",Raw Materials,United States,Active
+705,SUP-000705,"Prince, Miller and Mills",Raw Materials,United States,Active
+706,SUP-000706,Harmon and Sons,Maintenance,United States,Active
+707,SUP-000707,"Watts, Wells and Golden",Equipment,United States,Active
+708,SUP-000708,Washington Inc,Packaging,Germany,Active
+709,SUP-000709,Spears-Buchanan,Raw Materials,United States,Active
+710,SUP-000710,"Griffin, Jacobs and Simmons",Equipment,Sweden,Active
+711,SUP-000711,Sharp-Marshall,Maintenance,United States,Active
+712,SUP-000712,Harvey PLC,Raw Materials,United States,Active
+713,SUP-000713,Medina LLC,Packaging,United States,Active
+714,SUP-000714,Bird PLC,Raw Materials,Canada,Active
+715,SUP-000715,Castro Inc,Components,United States,Active
+716,SUP-000716,Hunt Group,Packaging,United States,Active
+717,SUP-000717,"Robinson, Chavez and Cameron",Packaging,United States,Active
+718,SUP-000718,Solomon LLC,Maintenance,Germany,Active
+719,SUP-000719,Patel-Jordan,Equipment,Sweden,Active
+720,SUP-000720,"Francis, Conley and Gardner",Packaging,United States,Active
+721,SUP-000721,"Wilson, Rogers and Clark",Maintenance,United States,Active
+722,SUP-000722,Lopez and Sons,Packaging,Sweden,Active
+723,SUP-000723,Adams-Young,Raw Materials,Germany,Active
+724,SUP-000724,"Adams, Craig and Jones",Packaging,Germany,Active
+725,SUP-000725,"Hill, Fisher and Pace",Packaging,Canada,Active
+726,SUP-000726,Campos-Taylor,Raw Materials,Mexico,Active
+727,SUP-000727,"Scott, Vasquez and Mccarty",Components,United States,Active
+728,SUP-000728,Davis-Hendricks,Components,United States,Active
+729,SUP-000729,Collins Group,Components,United States,Active
+730,SUP-000730,"Anderson, Conrad and Meyer",Equipment,Sweden,Active
+731,SUP-000731,"Branch, Johnson and Hanson",Raw Materials,United States,Active
+732,SUP-000732,"Smith, Ross and Bush",Packaging,United States,Inactive
+733,SUP-000733,Armstrong Group,Raw Materials,United States,Active
+734,SUP-000734,Bell-Russell,Components,United States,Active
+735,SUP-000735,Strong-Walker,Packaging,Canada,Active
+736,SUP-000736,Burgess-Hobbs,Packaging,Canada,Active
+737,SUP-000737,Beasley and Sons,Components,United States,Active
+738,SUP-000738,Mcknight and Sons,Equipment,United Kingdom,Active
+739,SUP-000739,Young Inc,Maintenance,United States,Inactive
+740,SUP-000740,"Atkins, Johnson and Gross",Components,United States,Active
+741,SUP-000741,Jensen PLC,Components,United States,Active
+742,SUP-000742,"Barker, Allen and Bauer",Packaging,United States,Active
+743,SUP-000743,Clark-Harris,Raw Materials,United States,Active
+744,SUP-000744,"Smith, Pham and Rogers",Components,United States,Active
+745,SUP-000745,Rodriguez LLC,Components,United States,Active
+746,SUP-000746,Morris-Martinez,Packaging,United Kingdom,Active
+747,SUP-000747,Evans-Cole,Packaging,Canada,Inactive
+748,SUP-000748,"Kennedy, Becker and Morrow",Maintenance,United States,Active
+749,SUP-000749,"Newman, King and Gomez",Packaging,Sweden,Active
+750,SUP-000750,Myers-Thompson,Components,United States,Inactive
+751,SUP-000751,Smith and Sons,Raw Materials,United States,Active
+752,SUP-000752,"Burton, Kent and Hart",Components,United States,Active
+753,SUP-000753,Rich Group,Components,Germany,Active
+754,SUP-000754,Martin-Nelson,Equipment,Sweden,Active
+755,SUP-000755,"Gomez, West and Smith",Components,United States,Active
+756,SUP-000756,"Esparza, Davis and Bell",Maintenance,United Kingdom,Active
+757,SUP-000757,Peck and Sons,Maintenance,Sweden,Active
+758,SUP-000758,"Anderson, Molina and Wilson",Equipment,United States,Active
+759,SUP-000759,"Blake, Jenkins and Lang",Equipment,United States,Active
+760,SUP-000760,Wiggins Ltd,Maintenance,Mexico,Active
+761,SUP-000761,Brown LLC,Equipment,United States,Active
+762,SUP-000762,"Vaughn, Spencer and Butler",Components,United Kingdom,Active
+763,SUP-000763,"Frost, White and Pacheco",Packaging,United States,Active
+764,SUP-000764,Berg-Gardner,Maintenance,United States,Active
+765,SUP-000765,"Johnson, Smith and Jimenez",Raw Materials,United States,Active
+766,SUP-000766,Lewis Group,Equipment,Germany,Active
+767,SUP-000767,Hamilton-Riley,Equipment,United Kingdom,Active
+768,SUP-000768,Crawford and Sons,Equipment,United States,Active
+769,SUP-000769,Maxwell-Reid,Equipment,United States,Active
+770,SUP-000770,Underwood-Rice,Components,Sweden,Active
+771,SUP-000771,Smith-Koch,Raw Materials,United States,Active
+772,SUP-000772,Randall-Malone,Equipment,United States,Active
+773,SUP-000773,Sanchez-Richmond,Packaging,Mexico,Active
+774,SUP-000774,Perez and Sons,Raw Materials,Mexico,Active
+775,SUP-000775,Mcintyre-Taylor,Equipment,Mexico,Inactive
+776,SUP-000776,Martinez Inc,Maintenance,Sweden,Active
+777,SUP-000777,Obrien-Stafford,Packaging,United States,Active
+778,SUP-000778,Gray-Stevenson,Packaging,United States,Active
+779,SUP-000779,Lawson Inc,Packaging,Canada,Active
+780,SUP-000780,Tran-Potter,Components,United States,Active
+781,SUP-000781,Nguyen-Banks,Components,United States,Active
+782,SUP-000782,"Boone, Clark and Perry",Maintenance,Sweden,Active
+783,SUP-000783,Johnson Group,Equipment,United States,Active
+784,SUP-000784,"Baker, Farmer and Lee",Maintenance,United States,Active
+785,SUP-000785,Rogers Ltd,Packaging,United States,Active
+786,SUP-000786,"Smith, Rogers and Hoffman",Equipment,United Kingdom,Inactive
+787,SUP-000787,"Serrano, Reid and Stewart",Components,United States,Inactive
+788,SUP-000788,Miranda Ltd,Maintenance,United States,Active
+789,SUP-000789,Garcia Group,Packaging,Sweden,Active
+790,SUP-000790,"Lawson, Rios and Mercado",Raw Materials,United States,Active
+791,SUP-000791,Martinez Group,Components,Canada,Active
+792,SUP-000792,Webb Group,Raw Materials,United States,Active
+793,SUP-000793,Perkins-Vasquez,Maintenance,United States,Active
+794,SUP-000794,Webb Inc,Equipment,Mexico,Active
+795,SUP-000795,"Bennett, Ford and Lewis",Maintenance,United States,Active
+796,SUP-000796,Jordan PLC,Components,United States,Active
+797,SUP-000797,Burnett Ltd,Components,United States,Active
+798,SUP-000798,"Gutierrez, Campbell and Williams",Components,United States,Active
+799,SUP-000799,Perez-Briggs,Equipment,United States,Active
+800,SUP-000800,Macias-Clark,Maintenance,United Kingdom,Active
+801,SUP-000801,Williams-Wu,Components,Sweden,Active
+802,SUP-000802,Carney Ltd,Packaging,United States,Active
+803,SUP-000803,Valdez-Anderson,Raw Materials,United States,Active
+804,SUP-000804,"Davila, Mayo and Barajas",Components,Sweden,Active
+805,SUP-000805,Garcia Group,Raw Materials,Canada,Active
+806,SUP-000806,Smith-Davis,Components,Mexico,Active
+807,SUP-000807,Garcia Group,Maintenance,United Kingdom,Active
+808,SUP-000808,"Huerta, Davis and Wright",Maintenance,Canada,Active
+809,SUP-000809,"Vang, Bates and Rice",Equipment,Sweden,Active
+810,SUP-000810,Harris Inc,Maintenance,United States,Active
+811,SUP-000811,Mills-Hawkins,Components,Sweden,Active
+812,SUP-000812,Johnson LLC,Maintenance,United States,Active
+813,SUP-000813,Alexander-Horton,Components,United Kingdom,Active
+814,SUP-000814,Wood Ltd,Equipment,United States,Active
+815,SUP-000815,"Reid, Baker and Mitchell",Raw Materials,Germany,Inactive
+816,SUP-000816,Becker Group,Packaging,Sweden,Active
+817,SUP-000817,"Bullock, Hall and Anderson",Packaging,United States,Active
+818,SUP-000818,Baker Inc,Components,Mexico,Active
+819,SUP-000819,Tucker and Sons,Equipment,United States,Inactive
+820,SUP-000820,"Alvarez, Rivera and Pearson",Packaging,Sweden,Active
+821,SUP-000821,Green LLC,Packaging,Canada,Active
+822,SUP-000822,Sparks-Harris,Components,United States,Inactive
+823,SUP-000823,Thomas Inc,Components,Canada,Active
+824,SUP-000824,"Sullivan, Woods and Sanders",Equipment,United States,Active
+825,SUP-000825,Savage LLC,Maintenance,United States,Active
+826,SUP-000826,"Wright, Moore and Allen",Maintenance,United States,Active
+827,SUP-000827,Hanna-Romero,Equipment,United Kingdom,Active
+828,SUP-000828,"Jackson, Smith and Johnson",Maintenance,United States,Active
+829,SUP-000829,Hernandez-Thomas,Maintenance,United States,Active
+830,SUP-000830,Johnson PLC,Equipment,United States,Active
+831,SUP-000831,Osborn-Moreno,Raw Materials,United Kingdom,Active
+832,SUP-000832,"Gutierrez, Gonzales and Shea",Maintenance,United Kingdom,Active
+833,SUP-000833,Hawkins and Sons,Maintenance,United States,Active
+834,SUP-000834,Sanford Group,Maintenance,United Kingdom,Active
+835,SUP-000835,"Jones, Garcia and Acosta",Equipment,United States,Active
+836,SUP-000836,Knapp Inc,Maintenance,United States,Active
+837,SUP-000837,Murray LLC,Equipment,United States,Active
+838,SUP-000838,"Gomez, Taylor and Estes",Components,Sweden,Active
+839,SUP-000839,Wood-Sims,Maintenance,Sweden,Active
+840,SUP-000840,"Clark, Whitney and Obrien",Packaging,United Kingdom,Active
+841,SUP-000841,Rodriguez LLC,Raw Materials,Germany,Active
+842,SUP-000842,Kirby Inc,Equipment,Canada,Active
+843,SUP-000843,Ruiz PLC,Equipment,United States,Inactive
+844,SUP-000844,Rowe-Moore,Equipment,Canada,Active
+845,SUP-000845,"Gutierrez, Jones and Rodriguez",Components,United States,Inactive
+846,SUP-000846,Barnes Ltd,Components,Mexico,Active
+847,SUP-000847,"Cohen, Warner and Parker",Components,Canada,Active
+848,SUP-000848,Bennett LLC,Components,United States,Active
+849,SUP-000849,Rodriguez Ltd,Raw Materials,United States,Active
+850,SUP-000850,Turner-Sheppard,Equipment,Canada,Active
+851,SUP-000851,"Randall, Wolf and Holder",Equipment,United States,Inactive
+852,SUP-000852,"Campbell, Hammond and Tucker",Components,United States,Active
+853,SUP-000853,Kelley-Watkins,Packaging,United States,Active
+854,SUP-000854,"Torres, Quinn and Diaz",Components,United States,Active
+855,SUP-000855,Wall Group,Maintenance,United States,Active
+856,SUP-000856,Ramos Inc,Packaging,Germany,Active
+857,SUP-000857,Dawson-Ross,Equipment,Mexico,Active
+858,SUP-000858,Hensley Inc,Maintenance,United States,Active
+859,SUP-000859,Woodward-Harding,Equipment,United States,Active
+860,SUP-000860,Francis-Johnson,Components,United States,Active
+861,SUP-000861,"Davis, Clark and Kent",Maintenance,United States,Inactive
+862,SUP-000862,Sanders-Clark,Components,United States,Active
+863,SUP-000863,Fuller Ltd,Raw Materials,United States,Active
+864,SUP-000864,Ward Ltd,Equipment,Mexico,Active
+865,SUP-000865,Henderson-Cervantes,Packaging,United States,Active
+866,SUP-000866,Garcia Group,Packaging,United States,Active
+867,SUP-000867,Garcia-Chen,Equipment,United States,Active
+868,SUP-000868,Garcia Group,Packaging,Sweden,Active
+869,SUP-000869,Miller-Lee,Components,United States,Active
+870,SUP-000870,"Howard, Roach and Garcia",Raw Materials,Sweden,Active
+871,SUP-000871,"Johnson, Sanchez and Miller",Maintenance,United States,Active
+872,SUP-000872,Cook Ltd,Maintenance,Sweden,Active
+873,SUP-000873,Brown Ltd,Components,United States,Active
+874,SUP-000874,"Williams, James and Garcia",Raw Materials,United Kingdom,Active
+875,SUP-000875,Bailey-Robertson,Components,United Kingdom,Active
+876,SUP-000876,Brock PLC,Packaging,United States,Active
+877,SUP-000877,"Best, Smith and Morse",Equipment,United States,Active
+878,SUP-000878,Morgan-Davis,Raw Materials,United States,Active
+879,SUP-000879,Dudley-Johnson,Raw Materials,United States,Active
+880,SUP-000880,Simon Inc,Equipment,United States,Active
+881,SUP-000881,"Foster, Hernandez and Powell",Packaging,United States,Active
+882,SUP-000882,"Duncan, Martinez and Barnes",Maintenance,United States,Active
+883,SUP-000883,"Waters, Miller and Russo",Components,United States,Active
+884,SUP-000884,Miller-Jones,Components,United States,Active
+885,SUP-000885,"Miranda, Baker and Holloway",Packaging,Canada,Active
+886,SUP-000886,Moore-Cochran,Packaging,United States,Active
+887,SUP-000887,Davis-Tucker,Maintenance,Sweden,Active
+888,SUP-000888,"Gray, Bradford and Adams",Raw Materials,Mexico,Active
+889,SUP-000889,"Perry, Hayden and Coleman",Raw Materials,United States,Active
+890,SUP-000890,Watts Inc,Maintenance,Sweden,Active
+891,SUP-000891,Love-Benson,Raw Materials,Sweden,Active
+892,SUP-000892,Lopez Inc,Maintenance,United States,Active
+893,SUP-000893,Wilson-Wiley,Maintenance,United Kingdom,Inactive
+894,SUP-000894,Bailey Group,Packaging,United States,Active
+895,SUP-000895,Harris Ltd,Equipment,Mexico,Active
+896,SUP-000896,Davis-Watkins,Maintenance,United States,Active
+897,SUP-000897,Morgan Ltd,Packaging,United Kingdom,Active
+898,SUP-000898,Taylor PLC,Maintenance,United States,Active
+899,SUP-000899,"Aguirre, Craig and Williams",Equipment,United States,Active
+900,SUP-000900,Snyder-Park,Packaging,Sweden,Active
+901,SUP-000901,Hampton-Mcdonald,Raw Materials,Germany,Active
+902,SUP-000902,"Merritt, Vasquez and Jones",Components,Canada,Active
+903,SUP-000903,Long-Caldwell,Equipment,United States,Active
+904,SUP-000904,Richardson-Brown,Raw Materials,Germany,Active
+905,SUP-000905,"Clark, White and Johns",Maintenance,Canada,Active
+906,SUP-000906,Reyes Inc,Maintenance,Germany,Active
+907,SUP-000907,Delgado-Nicholson,Equipment,United States,Active
+908,SUP-000908,Moyer-Tran,Packaging,United Kingdom,Active
+909,SUP-000909,Reed PLC,Maintenance,Canada,Active
+910,SUP-000910,Delacruz Group,Raw Materials,United States,Active
+911,SUP-000911,Lee-Johnson,Packaging,United States,Active
+912,SUP-000912,Lucero-Sanders,Equipment,United States,Active
+913,SUP-000913,Moore PLC,Raw Materials,Sweden,Active
+914,SUP-000914,"Brown, Roberts and Hill",Components,Sweden,Active
+915,SUP-000915,"Sims, Martinez and Alvarez",Components,Germany,Inactive
+916,SUP-000916,Miller-King,Maintenance,United States,Active
+917,SUP-000917,Nelson-Wu,Packaging,United States,Active
+918,SUP-000918,Russo Group,Components,United States,Active
+919,SUP-000919,Reynolds Group,Packaging,United States,Active
+920,SUP-000920,Smith-Smith,Raw Materials,United States,Active
+921,SUP-000921,Johnson-Roman,Packaging,United States,Active
+922,SUP-000922,"Meyer, Underwood and Williams",Equipment,Canada,Active
+923,SUP-000923,Jones LLC,Components,United States,Active
+924,SUP-000924,Ross Ltd,Raw Materials,United States,Active
+925,SUP-000925,Vazquez-Jordan,Maintenance,Sweden,Active
+926,SUP-000926,Garrett LLC,Packaging,Sweden,Active
+927,SUP-000927,Tran Inc,Maintenance,United States,Active
+928,SUP-000928,Hines Inc,Equipment,Germany,Active
+929,SUP-000929,"Rhodes, Duran and Spencer",Raw Materials,United States,Inactive
+930,SUP-000930,Murphy LLC,Maintenance,United States,Active
+931,SUP-000931,Salazar-Hansen,Equipment,United States,Active
+932,SUP-000932,"Smith, Barker and Gonzalez",Components,United States,Active
+933,SUP-000933,"Rodriguez, Wright and Coleman",Components,Sweden,Active
+934,SUP-000934,"Ford, Thomas and Chavez",Raw Materials,United States,Active
+935,SUP-000935,Garcia Group,Packaging,United States,Active
+936,SUP-000936,Ayala-Gonzalez,Maintenance,United Kingdom,Active
+937,SUP-000937,Hayes-Robertson,Maintenance,Canada,Active
+938,SUP-000938,Hernandez Inc,Components,United States,Active
+939,SUP-000939,Kelly Ltd,Components,United States,Active
+940,SUP-000940,Cook LLC,Components,Mexico,Active
+941,SUP-000941,Wagner-Villanueva,Maintenance,United States,Active
+942,SUP-000942,Mueller-Young,Raw Materials,Canada,Active
+943,SUP-000943,"Wilson, Scott and Walls",Raw Materials,United States,Active
+944,SUP-000944,Kim and Sons,Components,United States,Active
+945,SUP-000945,Sanchez Ltd,Components,United States,Active
+946,SUP-000946,Ramirez-Mata,Maintenance,United States,Active
+947,SUP-000947,Manning Ltd,Components,Sweden,Active
+948,SUP-000948,"Simpson, Wagner and Cohen",Components,United Kingdom,Active
+949,SUP-000949,Pacheco Inc,Equipment,Mexico,Active
+950,SUP-000950,"Smith, Baker and Pineda",Equipment,United States,Active
+951,SUP-000951,Peterson Inc,Equipment,Germany,Active
+952,SUP-000952,"Daniels, Carr and Jackson",Raw Materials,Mexico,Active
+953,SUP-000953,Meadows-Rivera,Equipment,Germany,Active
+954,SUP-000954,Gonzalez-Rodriguez,Components,United States,Active
+955,SUP-000955,Burton Inc,Equipment,United States,Active
+956,SUP-000956,Key Inc,Equipment,United States,Active
+957,SUP-000957,"Stevens, Lopez and Perez",Raw Materials,United States,Active
+958,SUP-000958,Combs-Mcdowell,Maintenance,United Kingdom,Active
+959,SUP-000959,Campbell PLC,Packaging,United States,Active
+960,SUP-000960,Frye-Flores,Components,Canada,Active
+961,SUP-000961,Chase PLC,Components,Sweden,Active
+962,SUP-000962,Ramirez Group,Components,Mexico,Active
+963,SUP-000963,Estrada-Young,Raw Materials,United States,Active
+964,SUP-000964,Pruitt Inc,Packaging,United Kingdom,Active
+965,SUP-000965,Lewis Inc,Raw Materials,Germany,Active
+966,SUP-000966,"Mcdaniel, Gonzales and Doyle",Equipment,United States,Active
+967,SUP-000967,"Sweeney, Williams and Ryan",Equipment,Sweden,Active
+968,SUP-000968,"Morris, Obrien and Ferrell",Equipment,United States,Active
+969,SUP-000969,Coleman-Hughes,Raw Materials,United States,Active
+970,SUP-000970,Keller Group,Raw Materials,United States,Active
+971,SUP-000971,Garcia and Sons,Raw Materials,Germany,Active
+972,SUP-000972,"Pearson, Evans and Ware",Equipment,United States,Active
+973,SUP-000973,Douglas Group,Equipment,Canada,Active
+974,SUP-000974,Pope-Gonzales,Components,Sweden,Active
+975,SUP-000975,"Odonnell, Delgado and Allison",Components,Germany,Inactive
+976,SUP-000976,"Elliott, Rose and Brennan",Components,United Kingdom,Active
+977,SUP-000977,James-Johnson,Raw Materials,United States,Active
+978,SUP-000978,Williams Group,Maintenance,United States,Inactive
+979,SUP-000979,Alexander Group,Maintenance,United States,Active
+980,SUP-000980,Garcia Group,Components,United States,Active
+981,SUP-000981,"Carroll, Reynolds and Lamb",Components,United States,Active
+982,SUP-000982,Krueger and Sons,Raw Materials,United States,Active
+983,SUP-000983,"Jones, Watson and White",Raw Materials,United States,Inactive
+984,SUP-000984,"Perry, Robinson and Weaver",Packaging,United States,Active
+985,SUP-000985,Bender-Nicholson,Packaging,United States,Inactive
+986,SUP-000986,"Green, Hanson and Vance",Packaging,Canada,Active
+987,SUP-000987,King and Sons,Components,United States,Active
+988,SUP-000988,"Gomez, Shields and Atkins",Raw Materials,United States,Active
+989,SUP-000989,Hunter-Morales,Components,Mexico,Active
+990,SUP-000990,Pratt-Warren,Raw Materials,United States,Active
+991,SUP-000991,Garcia Group,Components,Sweden,Active
+992,SUP-000992,"Harris, Pierce and Cooper",Maintenance,United States,Active
+993,SUP-000993,"Craig, Moore and Lin",Packaging,United Kingdom,Active
+994,SUP-000994,Warren-Salazar,Raw Materials,United States,Active
+995,SUP-000995,Vazquez Ltd,Packaging,Canada,Active
+996,SUP-000996,"Hicks, Harris and Gill",Components,United States,Active
+997,SUP-000997,Reeves-Morrison,Equipment,Canada,Active
+998,SUP-000998,"Abbott, Alvarez and Robbins",Maintenance,United States,Active
+999,SUP-000999,Bennett-Clay,Equipment,United States,Active
+1000,SUP-001000,King Group,Equipment,United States,Active

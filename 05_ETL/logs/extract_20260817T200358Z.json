@@ -1,0 +1,178 @@
+[
+  {
+    "dataset": "accounts",
+    "source_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/04_Data_Quality/data/trusted/accounts.csv",
+    "raw_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/raw/accounts.csv",
+    "expected_rows": 1000,
+    "source_rows": 1000,
+    "raw_rows": 1000,
+    "source_sha256": "0b463aa9cb19cd64707d442fc59d50628eab4aa93a564554f09861b2a5f5a515",
+    "raw_sha256": "0b463aa9cb19cd64707d442fc59d50628eab4aa93a564554f09861b2a5f5a515",
+    "status": "PASS"
+  },
+  {
+    "dataset": "customers",
+    "source_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/04_Data_Quality/data/trusted/customers.csv",
+    "raw_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/raw/customers.csv",
+    "expected_rows": 49509,
+    "source_rows": 49509,
+    "raw_rows": 49509,
+    "source_sha256": "f02b4bedac845816b6e7516e64d25f5d122d4117abd470ec8272e82b19044d3f",
+    "raw_sha256": "f02b4bedac845816b6e7516e64d25f5d122d4117abd470ec8272e82b19044d3f",
+    "status": "PASS"
+  },
+  {
+    "dataset": "products",
+    "source_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/04_Data_Quality/data/trusted/products.csv",
+    "raw_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/raw/products.csv",
+    "expected_rows": 4951,
+    "source_rows": 4951,
+    "raw_rows": 4951,
+    "source_sha256": "e5123fb4e5cfa45879f6a17d468eb4e4306129211df30b20748fcc3d25a290e2",
+    "raw_sha256": "e5123fb4e5cfa45879f6a17d468eb4e4306129211df30b20748fcc3d25a290e2",
+    "status": "PASS"
+  },
+  {
+    "dataset": "suppliers",
+    "source_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/04_Data_Quality/data/trusted/suppliers.csv",
+    "raw_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/raw/suppliers.csv",
+    "expected_rows": 1000,
+    "source_rows": 1000,
+    "raw_rows": 1000,
+    "source_sha256": "5cb02b322bc0a6ed1cb1b93d50c61e19d8246d684176c1ad6fc54fbf5122cd15",
+    "raw_sha256": "5cb02b322bc0a6ed1cb1b93d50c61e19d8246d684176c1ad6fc54fbf5122cd15",
+    "status": "PASS"
+  },
+  {
+    "dataset": "locations",
+    "source_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/04_Data_Quality/data/trusted/locations.csv",
+    "raw_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/raw/locations.csv",
+    "expected_rows": 100,
+    "source_rows": 100,
+    "raw_rows": 100,
+    "source_sha256": "9f9a88cf06850cbb83980f83376d13ba2a50fbd889dab2658411644c3383e2b5",
+    "raw_sha256": "9f9a88cf06850cbb83980f83376d13ba2a50fbd889dab2658411644c3383e2b5",
+    "status": "PASS"
+  },
+  {
+    "dataset": "employees",
+    "source_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/04_Data_Quality/data/trusted/employees.csv",
+    "raw_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/raw/employees.csv",
+    "expected_rows": 4913,
+    "source_rows": 4913,
+    "raw_rows": 4913,
+    "source_sha256": "cea426f8138b05a9a982b0f40f84ba8bd4af2ae5870b76ec6af4de601d97dc63",
+    "raw_sha256": "cea426f8138b05a9a982b0f40f84ba8bd4af2ae5870b76ec6af4de601d97dc63",
+    "status": "PASS"
+  },
+  {
+    "dataset": "machines",
+    "source_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/04_Data_Quality/data/trusted/machines.csv",
+    "raw_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/raw/machines.csv",
+    "expected_rows": 1959,
+    "source_rows": 1959,
+    "raw_rows": 1959,
+    "source_sha256": "b8eeab8f2a4c523839a9725aa9784b7b25a5d0116db9a8460d31cdec7cc615a8",
+    "raw_sha256": "b8eeab8f2a4c523839a9725aa9784b7b25a5d0116db9a8460d31cdec7cc615a8",
+    "status": "PASS"
+  },
+  {
+    "dataset": "sales",
+    "source_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/04_Data_Quality/data/trusted/sales.csv",
+    "raw_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/raw/sales.csv",
+    "expected_rows": 466046,
+    "source_rows": 466046,
+    "raw_rows": 466046,
+    "source_sha256": "25f3a9e0ec4d38eb7b759c40680e11b8682e0d54c11ae4331c062a3dad36f3d7",
+    "raw_sha256": "25f3a9e0ec4d38eb7b759c40680e11b8682e0d54c11ae4331c062a3dad36f3d7",
+    "status": "PASS"
+  },
+  {
+    "dataset": "production",
+    "source_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/04_Data_Quality/data/trusted/production.csv",
+    "raw_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/raw/production.csv",
+    "expected_rows": 181438,
+    "source_rows": 181438,
+    "raw_rows": 181438,
+    "source_sha256": "284d3f107959cdb5ec36beaa486bba48b1f41166064540d7e979134087b7c8b1",
+    "raw_sha256": "284d3f107959cdb5ec36beaa486bba48b1f41166064540d7e979134087b7c8b1",
+    "status": "PASS"
+  },
+  {
+    "dataset": "maintenance",
+    "source_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/04_Data_Quality/data/trusted/maintenance.csv",
+    "raw_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/raw/maintenance.csv",
+    "expected_rows": 46180,
+    "source_rows": 46180,
+    "raw_rows": 46180,
+    "source_sha256": "f320e80e14d6f6f42f117aff7467d579cd56663a0f19c43771beb3c8a870e423",
+    "raw_sha256": "f320e80e14d6f6f42f117aff7467d579cd56663a0f19c43771beb3c8a870e423",
+    "status": "PASS"
+  },
+  {
+    "dataset": "financial_transactions",
+    "source_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/04_Data_Quality/data/trusted/financial_transactions.csv",
+    "raw_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/raw/financial_transactions.csv",
+    "expected_rows": 293285,
+    "source_rows": 293285,
+    "raw_rows": 293285,
+    "source_sha256": "80d311ed33ab0bfc95e3654567ae0b647d806d8e12f1ea0134c2d2f0cf79bf2f",
+    "raw_sha256": "80d311ed33ab0bfc95e3654567ae0b647d806d8e12f1ea0134c2d2f0cf79bf2f",
+    "status": "PASS"
+  },
+  {
+    "dataset": "budget",
+    "source_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/04_Data_Quality/data/trusted/budget.csv",
+    "raw_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/raw/budget.csv",
+    "expected_rows": 19445,
+    "source_rows": 19445,
+    "raw_rows": 19445,
+    "source_sha256": "79ac9eb777564ca1821ec62c20f47c9ea9d36cadddc29b95a5419eeb7fb77072",
+    "raw_sha256": "79ac9eb777564ca1821ec62c20f47c9ea9d36cadddc29b95a5419eeb7fb77072",
+    "status": "PASS"
+  },
+  {
+    "dataset": "energy",
+    "source_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/04_Data_Quality/data/trusted/energy.csv",
+    "raw_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/raw/energy.csv",
+    "expected_rows": 97747,
+    "source_rows": 97747,
+    "raw_rows": 97747,
+    "source_sha256": "a5f3dd2247fbadc82d613cb0cea9382aa4f011ad6b9fa53accf4a8e7f8969190",
+    "raw_sha256": "a5f3dd2247fbadc82d613cb0cea9382aa4f011ad6b9fa53accf4a8e7f8969190",
+    "status": "PASS"
+  },
+  {
+    "dataset": "emissions",
+    "source_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/04_Data_Quality/data/trusted/emissions.csv",
+    "raw_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/raw/emissions.csv",
+    "expected_rows": 97337,
+    "source_rows": 97337,
+    "raw_rows": 97337,
+    "source_sha256": "1fc1e07f23f50b558b2aeffc5004e53631e03ea5b5de01e442cd6dd83c518f2d",
+    "raw_sha256": "1fc1e07f23f50b558b2aeffc5004e53631e03ea5b5de01e442cd6dd83c518f2d",
+    "status": "PASS"
+  },
+  {
+    "dataset": "waste",
+    "source_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/04_Data_Quality/data/trusted/waste.csv",
+    "raw_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/raw/waste.csv",
+    "expected_rows": 97982,
+    "source_rows": 97982,
+    "raw_rows": 97982,
+    "source_sha256": "2c94e631fa6d78bab8f0b75c0b741e55fe69008e223ffe34ad8c2c95362bbce6",
+    "raw_sha256": "2c94e631fa6d78bab8f0b75c0b741e55fe69008e223ffe34ad8c2c95362bbce6",
+    "status": "PASS"
+  },
+  {
+    "dataset": "inventory",
+    "source_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/04_Data_Quality/data/trusted/inventory.csv",
+    "raw_file": "/Users/nehaliparulekar/BI_Projects/Project-Atlas/05_ETL/data/raw/inventory.csv",
+    "expected_rows": 479167,
+    "source_rows": 479167,
+    "raw_rows": 479167,
+    "source_sha256": "b141a458364a762a9777d0a7809de759434cdd2ecb003f9c6d18c660559061af",
+    "raw_sha256": "b141a458364a762a9777d0a7809de759434cdd2ecb003f9c6d18c660559061af",
+    "status": "PASS"
+  }
+]

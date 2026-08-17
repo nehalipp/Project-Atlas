@@ -1,0 +1,487 @@
+{
+  "pipeline_stage": "raw_to_staging",
+  "timestamp_utc": "2026-08-17T20:11:59.963712+00:00",
+  "datasets_processed": 16,
+  "total_raw_rows": 1842059,
+  "total_staging_rows": 1842059,
+  "status": "SUCCESS",
+  "results": [
+    {
+      "dataset": "accounts",
+      "raw_rows": 1000,
+      "staging_rows": 1000,
+      "column_count": 6,
+      "original_columns": [
+        "account_id",
+        "account_name",
+        "account_type",
+        "industry",
+        "country",
+        "status"
+      ],
+      "staging_columns": [
+        "account_id",
+        "account_name",
+        "account_type",
+        "industry",
+        "country",
+        "status"
+      ],
+      "date_columns_transformed": [],
+      "numeric_columns_transformed": [],
+      "status": "PASS"
+    },
+    {
+      "dataset": "customers",
+      "raw_rows": 49509,
+      "staging_rows": 49509,
+      "column_count": 7,
+      "original_columns": [
+        "customer_id",
+        "account_id",
+        "customer_name",
+        "customer_segment",
+        "industry",
+        "country",
+        "status"
+      ],
+      "staging_columns": [
+        "customer_id",
+        "account_id",
+        "customer_name",
+        "customer_segment",
+        "industry",
+        "country",
+        "status"
+      ],
+      "date_columns_transformed": [],
+      "numeric_columns_transformed": [],
+      "status": "PASS"
+    },
+    {
+      "dataset": "products",
+      "raw_rows": 4951,
+      "staging_rows": 4951,
+      "column_count": 7,
+      "original_columns": [
+        "product_id",
+        "supplier_id",
+        "product_name",
+        "category",
+        "unit_cost",
+        "unit_price",
+        "status"
+      ],
+      "staging_columns": [
+        "product_id",
+        "supplier_id",
+        "product_name",
+        "category",
+        "unit_cost",
+        "unit_price",
+        "status"
+      ],
+      "date_columns_transformed": [],
+      "numeric_columns_transformed": [
+        "unit_cost",
+        "unit_price"
+      ],
+      "status": "PASS"
+    },
+    {
+      "dataset": "suppliers",
+      "raw_rows": 1000,
+      "staging_rows": 1000,
+      "column_count": 5,
+      "original_columns": [
+        "supplier_id",
+        "supplier_name",
+        "supplier_category",
+        "country",
+        "status"
+      ],
+      "staging_columns": [
+        "supplier_id",
+        "supplier_name",
+        "supplier_category",
+        "country",
+        "status"
+      ],
+      "date_columns_transformed": [],
+      "numeric_columns_transformed": [],
+      "status": "PASS"
+    },
+    {
+      "dataset": "locations",
+      "raw_rows": 100,
+      "staging_rows": 100,
+      "column_count": 7,
+      "original_columns": [
+        "location_id",
+        "location_name",
+        "location_type",
+        "city",
+        "state_region",
+        "country",
+        "status"
+      ],
+      "staging_columns": [
+        "location_id",
+        "location_name",
+        "location_type",
+        "city",
+        "state_region",
+        "country",
+        "status"
+      ],
+      "date_columns_transformed": [],
+      "numeric_columns_transformed": [],
+      "status": "PASS"
+    },
+    {
+      "dataset": "employees",
+      "raw_rows": 4913,
+      "staging_rows": 4913,
+      "column_count": 7,
+      "original_columns": [
+        "employee_id",
+        "location_id",
+        "employee_name",
+        "department",
+        "role",
+        "hire_date",
+        "status"
+      ],
+      "staging_columns": [
+        "employee_id",
+        "location_id",
+        "employee_name",
+        "department",
+        "role",
+        "hire_date",
+        "status"
+      ],
+      "date_columns_transformed": [
+        "hire_date"
+      ],
+      "numeric_columns_transformed": [],
+      "status": "PASS"
+    },
+    {
+      "dataset": "machines",
+      "raw_rows": 1959,
+      "staging_rows": 1959,
+      "column_count": 6,
+      "original_columns": [
+        "machine_id",
+        "location_id",
+        "machine_name",
+        "machine_type",
+        "installation_date",
+        "status"
+      ],
+      "staging_columns": [
+        "machine_id",
+        "location_id",
+        "machine_name",
+        "machine_type",
+        "installation_date",
+        "status"
+      ],
+      "date_columns_transformed": [
+        "installation_date"
+      ],
+      "numeric_columns_transformed": [],
+      "status": "PASS"
+    },
+    {
+      "dataset": "sales",
+      "raw_rows": 466046,
+      "staging_rows": 466046,
+      "column_count": 10,
+      "original_columns": [
+        "sales_id",
+        "date",
+        "account_id",
+        "customer_id",
+        "product_id",
+        "location_id",
+        "quantity",
+        "unit_price",
+        "discount_rate",
+        "revenue"
+      ],
+      "staging_columns": [
+        "sales_id",
+        "date",
+        "account_id",
+        "customer_id",
+        "product_id",
+        "location_id",
+        "quantity",
+        "unit_price",
+        "discount_rate",
+        "revenue"
+      ],
+      "date_columns_transformed": [
+        "date"
+      ],
+      "numeric_columns_transformed": [
+        "quantity",
+        "unit_price",
+        "discount_rate",
+        "revenue"
+      ],
+      "status": "PASS"
+    },
+    {
+      "dataset": "production",
+      "raw_rows": 181438,
+      "staging_rows": 181438,
+      "column_count": 10,
+      "original_columns": [
+        "production_id",
+        "date",
+        "product_id",
+        "location_id",
+        "machine_id",
+        "employee_id",
+        "planned_quantity",
+        "quantity_produced",
+        "production_hours",
+        "production_status"
+      ],
+      "staging_columns": [
+        "production_id",
+        "date",
+        "product_id",
+        "location_id",
+        "machine_id",
+        "employee_id",
+        "planned_quantity",
+        "quantity_produced",
+        "production_hours",
+        "production_status"
+      ],
+      "date_columns_transformed": [
+        "date"
+      ],
+      "numeric_columns_transformed": [
+        "planned_quantity",
+        "quantity_produced",
+        "production_hours"
+      ],
+      "status": "PASS"
+    },
+    {
+      "dataset": "maintenance",
+      "raw_rows": 46180,
+      "staging_rows": 46180,
+      "column_count": 8,
+      "original_columns": [
+        "maintenance_id",
+        "date",
+        "location_id",
+        "machine_id",
+        "employee_id",
+        "maintenance_type",
+        "downtime_hours",
+        "maintenance_cost"
+      ],
+      "staging_columns": [
+        "maintenance_id",
+        "date",
+        "location_id",
+        "machine_id",
+        "employee_id",
+        "maintenance_type",
+        "downtime_hours",
+        "maintenance_cost"
+      ],
+      "date_columns_transformed": [
+        "date"
+      ],
+      "numeric_columns_transformed": [
+        "downtime_hours",
+        "maintenance_cost"
+      ],
+      "status": "PASS"
+    },
+    {
+      "dataset": "financial_transactions",
+      "raw_rows": 293285,
+      "staging_rows": 293285,
+      "column_count": 6,
+      "original_columns": [
+        "financial_transaction_id",
+        "date",
+        "location_id",
+        "transaction_type",
+        "amount",
+        "description"
+      ],
+      "staging_columns": [
+        "financial_transaction_id",
+        "date",
+        "location_id",
+        "transaction_type",
+        "amount",
+        "description"
+      ],
+      "date_columns_transformed": [
+        "date"
+      ],
+      "numeric_columns_transformed": [
+        "amount"
+      ],
+      "status": "PASS"
+    },
+    {
+      "dataset": "budget",
+      "raw_rows": 19445,
+      "staging_rows": 19445,
+      "column_count": 5,
+      "original_columns": [
+        "budget_id",
+        "date",
+        "location_id",
+        "category",
+        "budget_amount"
+      ],
+      "staging_columns": [
+        "budget_id",
+        "date",
+        "location_id",
+        "category",
+        "budget_amount"
+      ],
+      "date_columns_transformed": [
+        "date"
+      ],
+      "numeric_columns_transformed": [
+        "budget_amount"
+      ],
+      "status": "PASS"
+    },
+    {
+      "dataset": "energy",
+      "raw_rows": 97747,
+      "staging_rows": 97747,
+      "column_count": 6,
+      "original_columns": [
+        "energy_id",
+        "date",
+        "location_id",
+        "energy_type",
+        "consumption",
+        "unit"
+      ],
+      "staging_columns": [
+        "energy_id",
+        "date",
+        "location_id",
+        "energy_type",
+        "consumption",
+        "unit"
+      ],
+      "date_columns_transformed": [
+        "date"
+      ],
+      "numeric_columns_transformed": [
+        "consumption"
+      ],
+      "status": "PASS"
+    },
+    {
+      "dataset": "emissions",
+      "raw_rows": 97337,
+      "staging_rows": 97337,
+      "column_count": 5,
+      "original_columns": [
+        "emissions_id",
+        "date",
+        "location_id",
+        "source",
+        "co2_kg"
+      ],
+      "staging_columns": [
+        "emissions_id",
+        "date",
+        "location_id",
+        "source",
+        "co2_kg"
+      ],
+      "date_columns_transformed": [
+        "date"
+      ],
+      "numeric_columns_transformed": [
+        "co2_kg"
+      ],
+      "status": "PASS"
+    },
+    {
+      "dataset": "waste",
+      "raw_rows": 97982,
+      "staging_rows": 97982,
+      "column_count": 7,
+      "original_columns": [
+        "waste_id",
+        "date",
+        "location_id",
+        "waste_type",
+        "quantity",
+        "unit",
+        "disposal_method"
+      ],
+      "staging_columns": [
+        "waste_id",
+        "date",
+        "location_id",
+        "waste_type",
+        "quantity",
+        "unit",
+        "disposal_method"
+      ],
+      "date_columns_transformed": [
+        "date"
+      ],
+      "numeric_columns_transformed": [
+        "quantity"
+      ],
+      "status": "PASS"
+    },
+    {
+      "dataset": "inventory",
+      "raw_rows": 479167,
+      "staging_rows": 479167,
+      "column_count": 7,
+      "original_columns": [
+        "inventory_id",
+        "date",
+        "product_id",
+        "location_id",
+        "quantity_on_hand",
+        "reorder_point",
+        "inventory_value"
+      ],
+      "staging_columns": [
+        "inventory_id",
+        "date",
+        "product_id",
+        "location_id",
+        "quantity_on_hand",
+        "reorder_point",
+        "inventory_value"
+      ],
+      "date_columns_transformed": [
+        "date"
+      ],
+      "numeric_columns_transformed": [
+        "quantity_on_hand",
+        "reorder_point",
+        "inventory_value"
+      ],
+      "status": "PASS"
+    }
+  ]
+}
