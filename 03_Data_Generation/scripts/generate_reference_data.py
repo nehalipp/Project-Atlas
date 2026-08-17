@@ -2,9 +2,14 @@
 Project Atlas
 Phase 3 — Reference Data Generation
 
-Creates the seven reference datasets:
-accounts, customers, suppliers, products,
-locations, employees, machines.
+Generates:
+    accounts
+    customers
+    suppliers
+    products
+    locations
+    employees
+    machines
 
 All data is synthetic and reproducible.
 """
@@ -44,6 +49,7 @@ from generation_config import (
 
 fake = Faker()
 fake.seed_instance(SEED)
+
 rng = np.random.default_rng(SEED)
 
 RAW_DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -163,7 +169,7 @@ COUNTRY_WEIGHTS = [
 
 
 # ============================================================
-# LOCATION REFERENCE
+# LOCATIONS
 # ============================================================
 
 US_LOCATIONS = [
@@ -202,31 +208,31 @@ OPERATIONAL_LOCATIONS = US_LOCATIONS + SWEDISH_LOCATIONS
 # ============================================================
 
 def random_dates(size):
-    """Generate dates within the project date range."""
+    """Generate random dates within the project period."""
 
-    start = pd.Timestamp(START_DATE)
-    end = pd.Timestamp(END_DATE)
+    days = (
+        pd.Timestamp(END_DATE)
+        - pd.Timestamp(START_DATE)
+    ).days
 
-    days = (end - start).days
-
-    offsets = rng.integers(
+    dates = rng.integers(
         0,
         days + 1,
-        size
+        size=size,
     )
 
     return (
-        start
-        + pd.to_timedelta(offsets, unit="D")
+        pd.Timestamp(START_DATE)
+        + pd.to_timedelta(dates, unit="D")
     ).strftime("%Y-%m-%d")
 
 
-def save(df, filename):
-    """Save a dataframe to the raw data folder."""
+def save_dataset(df, filename):
+    """Save a dataframe to data/raw."""
 
     df.to_csv(
         RAW_DATA_DIR / filename,
-        index=False
+        index=False,
     )
 
     print(
@@ -241,40 +247,40 @@ def save(df, filename):
 
 def generate_accounts():
 
-    n = N_ACCOUNTS
+    account_ids = [
+        f"ACC-{i:06d}"
+        for i in range(1, N_ACCOUNTS + 1)
+    ]
 
     return pd.DataFrame({
-        "account_id": [
-            f"ACC-{i:06d}"
-            for i in range(1, n + 1)
-        ],
+        "account_id": account_ids,
 
         "account_name": [
             f"{fake.company()} Account"
-            for _ in range(n)
+            for _ in range(N_ACCOUNTS)
         ],
 
         "account_type": rng.choice(
             ACCOUNT_TYPES,
-            n,
-            p=[0.15, 0.35, 0.35, 0.15]
+            N_ACCOUNTS,
+            p=[0.15, 0.35, 0.35, 0.15],
         ),
 
         "industry": rng.choice(
             INDUSTRIES,
-            n
+            N_ACCOUNTS,
         ),
 
         "country": rng.choice(
             COUNTRIES,
-            n,
-            p=COUNTRY_WEIGHTS
+            N_ACCOUNTS,
+            p=COUNTRY_WEIGHTS,
         ),
 
         "status": rng.choice(
             ["Active", "Inactive"],
-            n,
-            p=[0.95, 0.05]
+            N_ACCOUNTS,
+            p=[0.95, 0.05],
         ),
     })
 
@@ -285,49 +291,50 @@ def generate_accounts():
 
 def generate_customers(accounts):
 
-    n = N_CUSTOMERS
-
-    account_ids = rng.choice(
+    customer_account_ids = rng.choice(
         accounts["account_id"].to_numpy(),
-        n
+        N_CUSTOMERS,
     )
 
     country_lookup = accounts.set_index(
         "account_id"
     )["country"]
 
+    countries = pd.Series(
+        customer_account_ids
+    ).map(country_lookup)
+
     return pd.DataFrame({
+
         "customer_id": [
             f"CUST-{i:07d}"
-            for i in range(1, n + 1)
+            for i in range(1, N_CUSTOMERS + 1)
         ],
 
-        "account_id": account_ids,
+        "account_id": customer_account_ids,
 
         "customer_name": [
             fake.company()
-            for _ in range(n)
+            for _ in range(N_CUSTOMERS)
         ],
 
         "customer_segment": rng.choice(
             CUSTOMER_SEGMENTS,
-            n,
-            p=[0.15, 0.45, 0.30, 0.10]
+            N_CUSTOMERS,
+            p=[0.15, 0.45, 0.30, 0.10],
         ),
 
         "industry": rng.choice(
             INDUSTRIES,
-            n
+            N_CUSTOMERS,
         ),
 
-        "country": pd.Series(
-            account_ids
-        ).map(country_lookup).to_numpy(),
+        "country": countries.to_numpy(),
 
         "status": rng.choice(
             ["Active", "Inactive"],
-            n,
-            p=[0.94, 0.06]
+            N_CUSTOMERS,
+            p=[0.94, 0.06],
         ),
     })
 
@@ -338,34 +345,33 @@ def generate_customers(accounts):
 
 def generate_suppliers():
 
-    n = N_SUPPLIERS
-
     return pd.DataFrame({
+
         "supplier_id": [
             f"SUP-{i:06d}"
-            for i in range(1, n + 1)
+            for i in range(1, N_SUPPLIERS + 1)
         ],
 
         "supplier_name": [
             fake.company()
-            for _ in range(n)
+            for _ in range(N_SUPPLIERS)
         ],
 
         "supplier_category": rng.choice(
             SUPPLIER_CATEGORIES,
-            n
+            N_SUPPLIERS,
         ),
 
         "country": rng.choice(
             COUNTRIES,
-            n,
-            p=COUNTRY_WEIGHTS
+            N_SUPPLIERS,
+            p=COUNTRY_WEIGHTS,
         ),
 
         "status": rng.choice(
             ["Active", "Inactive"],
-            n,
-            p=[0.95, 0.05]
+            N_SUPPLIERS,
+            p=[0.95, 0.05],
         ),
     })
 
@@ -376,44 +382,44 @@ def generate_suppliers():
 
 def generate_products(suppliers):
 
-    n = N_PRODUCTS
-
     categories = rng.choice(
         PRODUCT_CATEGORIES,
-        n,
-        p=[0.25, 0.25, 0.20, 0.10, 0.20]
+        N_PRODUCTS,
+        p=[0.25, 0.25, 0.20, 0.10, 0.20],
     )
 
     unit_cost = np.round(
         rng.lognormal(
             mean=3.5,
             sigma=0.8,
-            size=n
+            size=N_PRODUCTS,
         ),
-        2
+        2,
     )
 
     unit_price = np.round(
-        unit_cost * rng.uniform(1.20, 2.50, n),
-        2
+        unit_cost
+        * rng.uniform(1.20, 2.50, N_PRODUCTS),
+        2,
     )
 
     return pd.DataFrame({
+
         "product_id": [
             f"PROD-{i:07d}"
-            for i in range(1, n + 1)
+            for i in range(1, N_PRODUCTS + 1)
         ],
 
         "supplier_id": rng.choice(
             suppliers["supplier_id"].to_numpy(),
-            n
+            N_PRODUCTS,
         ),
 
         "product_name": [
             f"{category} Product {i:05d}"
             for i, category in enumerate(
                 categories,
-                start=1
+                start=1,
             )
         ],
 
@@ -425,8 +431,8 @@ def generate_products(suppliers):
 
         "status": rng.choice(
             ["Active", "Inactive"],
-            n,
-            p=[0.96, 0.04]
+            N_PRODUCTS,
+            p=[0.96, 0.04],
         ),
     })
 
@@ -437,63 +443,58 @@ def generate_products(suppliers):
 
 def generate_locations():
 
-    n = N_LOCATIONS
+    selected = rng.integers(
+        0,
+        len(OPERATIONAL_LOCATIONS),
+        N_LOCATIONS,
+    )
 
     location_types = rng.choice(
         LOCATION_TYPES,
-        n,
-        p=[0.30, 0.20, 0.15, 0.15, 0.20]
+        N_LOCATIONS,
+        p=[0.30, 0.20, 0.15, 0.15, 0.20],
     )
-
-    indices = rng.integers(
-        0,
-        len(OPERATIONAL_LOCATIONS),
-        n
-    )
-
-    cities = [
-        OPERATIONAL_LOCATIONS[i][0]
-        for i in indices
-    ]
-
-    regions = [
-        OPERATIONAL_LOCATIONS[i][1]
-        for i in indices
-    ]
-
-    us_count = len(US_LOCATIONS)
-
-    countries = [
-        "United States" if i < us_count else "Sweden"
-        for i in indices
-    ]
 
     return pd.DataFrame({
+
         "location_id": [
             f"LOC-{i:04d}"
-            for i in range(1, n + 1)
+            for i in range(1, N_LOCATIONS + 1)
         ],
 
         "location_name": [
             f"{location_type} {i:03d}"
             for i, location_type in enumerate(
                 location_types,
-                start=1
+                start=1,
             )
         ],
 
         "location_type": location_types,
 
-        "city": cities,
+        "city": [
+            OPERATIONAL_LOCATIONS[i][0]
+            for i in selected
+        ],
 
-        "state_region": regions,
+        "state_region": [
+            OPERATIONAL_LOCATIONS[i][1]
+            for i in selected
+        ],
 
-        "country": countries,
+        "country": [
+            (
+                "United States"
+                if i < len(US_LOCATIONS)
+                else "Sweden"
+            )
+            for i in selected
+        ],
 
         "status": rng.choice(
             ["Active", "Inactive"],
-            n,
-            p=[0.97, 0.03]
+            N_LOCATIONS,
+            p=[0.97, 0.03],
         ),
     })
 
@@ -504,42 +505,77 @@ def generate_locations():
 
 def generate_employees(locations):
 
-    n = N_EMPLOYEES
+    location_ids = locations["location_id"].to_numpy()
+
+    if N_EMPLOYEES < len(location_ids):
+        raise ValueError(
+            "N_EMPLOYEES must be at least "
+            "the number of locations."
+        )
+
+    # First employee goes to every location.
+    # This guarantees employee coverage.
+    employee_locations = list(location_ids)
+
+    # Remaining employees are distributed randomly.
+    remaining = N_EMPLOYEES - len(location_ids)
+
+    if remaining > 0:
+        employee_locations.extend(
+            rng.choice(
+                location_ids,
+                remaining,
+            )
+        )
+
+    employee_locations = np.array(
+        employee_locations
+    )
+
+    rng.shuffle(employee_locations)
 
     return pd.DataFrame({
+
         "employee_id": [
             f"EMP-{i:06d}"
-            for i in range(1, n + 1)
+            for i in range(1, N_EMPLOYEES + 1)
         ],
 
-        "location_id": rng.choice(
-            locations["location_id"].to_numpy(),
-            n
-        ),
+        "location_id": employee_locations,
 
         "employee_name": [
             fake.name()
-            for _ in range(n)
+            for _ in range(N_EMPLOYEES)
         ],
 
         "department": rng.choice(
             EMPLOYEE_DEPARTMENTS,
-            n,
-            p=[0.25, 0.20, 0.10, 0.12,
-               0.08, 0.08, 0.07, 0.10]
+            N_EMPLOYEES,
+            p=[
+                0.25,
+                0.20,
+                0.10,
+                0.12,
+                0.08,
+                0.08,
+                0.07,
+                0.10,
+            ],
         ),
 
         "role": rng.choice(
             EMPLOYEE_ROLES,
-            n
+            N_EMPLOYEES,
         ),
 
-        "hire_date": random_dates(n),
+        "hire_date": random_dates(
+            N_EMPLOYEES
+        ),
 
         "status": rng.choice(
             ["Active", "Inactive"],
-            n,
-            p=[0.93, 0.07]
+            N_EMPLOYEES,
+            p=[0.93, 0.07],
         ),
     })
 
@@ -550,40 +586,41 @@ def generate_employees(locations):
 
 def generate_machines(locations):
 
-    n = N_MACHINES
-
     machine_types = rng.choice(
         MACHINE_TYPES,
-        n
+        N_MACHINES,
     )
 
     return pd.DataFrame({
+
         "machine_id": [
             f"MCH-{i:06d}"
-            for i in range(1, n + 1)
+            for i in range(1, N_MACHINES + 1)
         ],
 
         "location_id": rng.choice(
             locations["location_id"].to_numpy(),
-            n
+            N_MACHINES,
         ),
 
         "machine_name": [
             f"{machine_type} {i:05d}"
             for i, machine_type in enumerate(
                 machine_types,
-                start=1
+                start=1,
             )
         ],
 
         "machine_type": machine_types,
 
-        "installation_date": random_dates(n),
+        "installation_date": random_dates(
+            N_MACHINES
+        ),
 
         "status": rng.choice(
             MACHINE_STATUSES,
-            n,
-            p=[0.85, 0.10, 0.05]
+            N_MACHINES,
+            p=[0.85, 0.10, 0.05],
         ),
     })
 
@@ -599,25 +636,25 @@ def main():
     print("=" * 60)
 
     accounts = generate_accounts()
-    save(accounts, "accounts.csv")
+    save_dataset(accounts, "accounts.csv")
 
     customers = generate_customers(accounts)
-    save(customers, "customers.csv")
+    save_dataset(customers, "customers.csv")
 
     suppliers = generate_suppliers()
-    save(suppliers, "suppliers.csv")
+    save_dataset(suppliers, "suppliers.csv")
 
     products = generate_products(suppliers)
-    save(products, "products.csv")
+    save_dataset(products, "products.csv")
 
     locations = generate_locations()
-    save(locations, "locations.csv")
+    save_dataset(locations, "locations.csv")
 
     employees = generate_employees(locations)
-    save(employees, "employees.csv")
+    save_dataset(employees, "employees.csv")
 
     machines = generate_machines(locations)
-    save(machines, "machines.csv")
+    save_dataset(machines, "machines.csv")
 
     print("\nReference data generation complete.")
 
