@@ -648,34 +648,25 @@ def main():
 
     references = load_references()
 
-    print("\nGenerating sales...")
     save(generate_sales(references), "sales")
 
-    print("\nGenerating production...")
     save(generate_production(references), "production")
 
-    print("\nGenerating maintenance...")
     save(generate_maintenance(references), "maintenance")
 
-    print("\nGenerating financial transactions...")
     save(
         generate_financial_transactions(references),
         "financial_transactions"
     )
 
-    print("\nGenerating budget...")
     save(generate_budget(references), "budget")
 
-    print("\nGenerating energy...")
     save(generate_energy(references), "energy")
 
-    print("\nGenerating emissions...")
     save(generate_emissions(references), "emissions")
 
-    print("\nGenerating waste...")
     save(generate_waste(references), "waste")
 
-    print("\nGenerating inventory...")
     save(generate_inventory(references), "inventory")
 
     print("\n" + "=" * 60)
