@@ -1,246 +1,468 @@
-# Project Atlas — KPI Definitions
+# Project Atlas — Phase 7 KPI Definitions
 
 ## Purpose
 
-This document defines the governed analytical metrics used by
-Project Atlas. KPI definitions are implemented in the PostgreSQL
-analytics layer and serve as the reference for Power BI, Tableau,
-documentation, and interview explanations.
+This document is the governed reference for analytical KPIs used by Project Atlas.
+
+KPI definitions established here must remain consistent across:
+
+- PostgreSQL analytics views
+- Power BI
+- Tableau
+- Documentation
+- Business insights
+- Interview explanations
+
+Atlas uses synthetic enterprise data. Metrics describe the generated analytical dataset and do not represent real-world business results.
 
 ---
 
-## Sales KPIs
+# 1. Sales KPIs
 
-### Total Revenue
+## Total Revenue
 
-Definition:
+**Definition:** Net sales revenue after discounts.
 
-Sum of `fact_sales.revenue`.
+**Formula:**
 
-Source:
-`fact_sales`
+```text
+Total Revenue = SUM(revenue)
+````
 
-### Sales Quantity
+**Source:** `fact_sales`
 
-Definition:
+**Analytical grain:** Date or compatible dimensional aggregation.
 
-Sum of `fact_sales.quantity`.
-
-### Sales Transactions
-
-Definition:
-
-Distinct count of `fact_sales.sales_id`.
-
-### Average Selling Price
-
-Definition:
-
-Total sales revenue divided by total sales quantity.
-
-Formula:
-
-Total Revenue / Sales Quantity
-
-This is preferred over a simple average of transaction-level
-unit prices because transaction quantities may differ.
+**Unit:** Currency.
 
 ---
 
-## Production KPIs
+## Sales Quantity
 
-### Planned Quantity
+**Definition:** Total quantity sold.
 
-Sum of `fact_production.planned_quantity`.
+**Formula:**
 
-### Quantity Produced
+```text
+Sales Quantity = SUM(quantity)
+```
 
-Sum of `fact_production.quantity_produced`.
+**Source:** `fact_sales`
 
-### Production Variance
-
-Quantity Produced minus Planned Quantity.
-
-### Production Attainment Rate
-
-Quantity Produced divided by Planned Quantity.
-
-### Production Rate
-
-Quantity Produced divided by Production Hours.
-
-### Production Status Counts
-
-Production records are classified using the warehouse values:
-
-- Completed
-- Partial
-- Cancelled
+**Unit:** Units.
 
 ---
 
-## Maintenance KPIs
+## Sales Transaction Count
 
-### Maintenance Events
+**Definition:** Number of distinct sales transactions.
 
-Distinct count of `fact_maintenance.maintenance_id`.
+**Formula:**
 
-### Downtime Hours
-
-Sum of `fact_maintenance.downtime_hours`.
-
-### Maintenance Cost
-
-Sum of `fact_maintenance.maintenance_cost`.
-
-### Average Maintenance Cost per Event
-
-Maintenance Cost divided by Maintenance Events.
-
-### Average Downtime per Event
-
-Downtime Hours divided by Maintenance Events.
+```text
+Sales Transaction Count = COUNT(DISTINCT sales_id)
+```
 
 ---
 
-## Financial KPIs
+## Average Selling Price
 
-### Revenue Amount
+**Definition:** Quantity-weighted average realized selling price.
 
-Sum of financial transaction amounts where
-`transaction_type = 'Revenue'`.
+**Formula:**
 
-### Expense Amount
+```text
+Average Selling Price =
+    SUM(revenue) / SUM(quantity)
+```
 
-Sum of financial transaction amounts where
-`transaction_type = 'Expense'`.
-
-### Transfer Amount
-
-Sum of financial transaction amounts where
-`transaction_type = 'Transfer'`.
-
-### Adjustment Amount
-
-Sum of financial transaction amounts where
-`transaction_type = 'Adjustment'`.
-
-Transfers and adjustments are not classified as operating revenue
-or operating expense.
+Revenue is net revenue after discount.
 
 ---
 
-## Budget KPIs
+## Average Discount Rate
 
-### Budget Amount
+**Definition:** Arithmetic average of transaction-level discount rates within the selected analytical context.
 
-Sum of `fact_budget.budget_amount`.
+**Formula:**
 
-Budget categories currently include:
-
-- Maintenance
-- Energy
-- Production
-- Administration
-- Supply Chain
-- Operations
-
-Budget categories must not be artificially mapped to financial
-transaction types without a documented business rule.
+```text
+Average Discount Rate = AVG(discount_rate)
+```
 
 ---
 
-## Energy KPIs
+## Estimated Discount Amount
 
-### Energy Consumption
+**Definition:** Reconstructed discount amount because `revenue` represents net revenue after discount and gross revenue is not stored directly in the analytics layer.
 
-Sum of `fact_energy.consumption` where unit = `kWh`.
+**Formula:**
 
-The current warehouse contains energy observations in kWh.
+```text
+Gross Amount = Revenue / (1 - Discount Rate)
 
----
+Estimated Discount Amount =
+    Revenue × Discount Rate / (1 - Discount Rate)
+```
 
-## Emissions KPIs
-
-### CO2 Emissions
-
-Sum of `fact_emissions.co2_kg`.
-
-Emissions sources currently include:
-
-- Electricity
-- Process
-- Fuel
-- Natural Gas
+The metric is explicitly labeled **estimated** because it is reconstructed from net revenue and discount rate.
 
 ---
 
-## Waste KPIs
+# 2. Production KPIs
 
-### Waste Quantity
+## Production Quantity
 
-Sum of `fact_waste.quantity` where unit = `kg`.
+**Definition:** Total quantity produced.
 
-Waste types currently include:
+**Formula:**
 
-- Chemical
-- Metal
-- Paper
-- Plastic
-- General
-
-Disposal methods currently include:
-
-- Recycling
-- Reuse
-- Treatment
-- Landfill
+```text
+Production Quantity = SUM(quantity_produced)
+```
 
 ---
 
-## Inventory KPIs
+## Planned Production Quantity
 
-### Inventory Quantity
+**Definition:** Total planned production quantity.
 
-Sum of `quantity_on_hand` within a specific inventory snapshot.
+**Formula:**
 
-### Inventory Value
-
-Sum of `inventory_value` within a specific inventory snapshot.
-
-### Items Below Reorder Point
-
-Count of inventory records where:
-
-`quantity_on_hand < reorder_point`
-
-Inventory is a snapshot fact. Inventory quantities and values must
-not be blindly summed across multiple snapshot dates.
+```text
+Planned Production Quantity = SUM(planned_quantity)
+```
 
 ---
 
-## Cross-Domain KPI Principles
+## Production Variance
 
-Facts must be aggregated to compatible grains before being combined.
+**Definition:** Difference between actual production output and planned production.
 
-Examples:
+**Formula:**
 
-Production + Energy:
+```text
+Production Variance =
+    Production Quantity - Planned Production Quantity
+```
 
-Energy Consumption / Quantity Produced
+Positive values indicate production above plan.
 
-Production + Emissions:
+Negative values indicate production below plan.
 
-CO2 kg / Quantity Produced
+---
 
-Production + Maintenance:
+## Production Attainment Rate
 
-Production output compared with maintenance cost and downtime.
+**Definition:** Actual production as a proportion of planned production.
 
-Sales + Inventory:
+**Formula:**
 
-Sales quantity compared with inventory position at a compatible
-date/product/location grain.
+```text
+Production Attainment Rate =
+    Production Quantity / Planned Production Quantity
+```
 
-No raw fact-to-fact joins should be used when they can create
-fan-out or double counting.
+Zero planned quantity returns NULL.
+
+---
+
+## Production Rate
+
+**Definition:** Production output per production hour.
+
+**Formula:**
+
+```text
+Production Rate =
+    Production Quantity / Production Hours
+```
+
+Zero production hours returns NULL.
+
+---
+
+# 3. Maintenance KPIs
+
+## Maintenance Event Count
+
+**Definition:** Number of distinct maintenance events.
+
+**Formula:**
+
+```text
+COUNT(DISTINCT maintenance_id)
+```
+
+---
+
+## Downtime Hours
+
+**Definition:** Total recorded machine downtime hours.
+
+**Formula:**
+
+```text
+SUM(downtime_hours)
+```
+
+---
+
+## Maintenance Cost
+
+**Definition:** Total recorded maintenance cost.
+
+**Formula:**
+
+```text
+SUM(maintenance_cost)
+```
+
+---
+
+## Average Maintenance Cost Per Event
+
+**Formula:**
+
+```text
+Maintenance Cost / Maintenance Event Count
+```
+
+---
+
+## Average Downtime Hours Per Event
+
+**Formula:**
+
+```text
+Downtime Hours / Maintenance Event Count
+```
+
+---
+
+# 4. Financial KPIs
+
+## Revenue Amount
+
+**Definition:** Sum of financial transactions classified as Revenue.
+
+---
+
+## Expense Amount
+
+**Definition:** Sum of financial transactions classified as Expense.
+
+---
+
+## Transfer Amount
+
+**Definition:** Sum of financial transactions classified as Transfer.
+
+---
+
+## Adjustment Amount
+
+**Definition:** Sum of financial transactions classified as Adjustment.
+
+---
+
+# 5. Budget KPIs
+
+## Total Budget Amount
+
+**Definition:** Total budget amount recorded in `fact_budget`.
+
+**Formula:**
+
+```text
+SUM(budget_amount)
+```
+
+Budget remains analytically separate from financial actuals because Atlas does not assume an unsupported common budget/actual category mapping.
+
+---
+
+# 6. Energy KPIs
+
+## Energy Consumption
+
+**Definition:** Total energy consumption recorded in kWh.
+
+**Formula:**
+
+```text
+SUM(consumption)
+WHERE unit = 'kWh'
+```
+
+**Unit:** kWh.
+
+---
+
+## Energy Intensity
+
+**Definition:** Energy consumption per unit of production.
+
+**Formula:**
+
+```text
+Energy Intensity =
+    Energy Consumption kWh / Production Quantity
+```
+
+**Unit:** kWh per production unit.
+
+This is an analytical intensity measure and not a causal claim.
+
+---
+
+# 7. Emissions KPIs
+
+## Total CO2
+
+**Definition:** Total recorded CO₂ emissions.
+
+**Formula:**
+
+```text
+SUM(co2_kg)
+```
+
+**Unit:** kg CO₂.
+
+---
+
+## Emissions Intensity
+
+**Definition:** CO₂ emissions per unit of production.
+
+**Formula:**
+
+```text
+Emissions Intensity =
+    CO2 kg / Production Quantity
+```
+
+**Unit:** kg CO₂ per production unit.
+
+This is an analytical intensity measure and not a causal claim.
+
+---
+
+# 8. Waste KPIs
+
+## Total Waste
+
+**Definition:** Total waste quantity recorded in kilograms.
+
+**Formula:**
+
+```text
+SUM(quantity)
+WHERE unit = 'kg'
+```
+
+**Unit:** kg.
+
+---
+
+# 9. Inventory KPIs
+
+## Quantity On Hand
+
+**Definition:** Inventory quantity available at a specific snapshot date.
+
+**Formula:**
+
+```text
+SUM(quantity_on_hand)
+```
+
+Inventory is a snapshot measure.
+
+It must not be summed across dates to represent a period flow.
+
+---
+
+## Inventory Value
+
+**Definition:** Inventory value at a specific snapshot date.
+
+**Formula:**
+
+```text
+SUM(inventory_value)
+```
+
+Inventory value must be interpreted at the selected snapshot date.
+
+---
+
+## Items Below Reorder Point
+
+**Definition:** Count of inventory records where quantity on hand is below the reorder point.
+
+---
+
+## Inventory-to-Daily-Sales Ratio
+
+**Definition:** Inventory quantity available relative to same-day sales quantity.
+
+**Formula:**
+
+```text
+Quantity On Hand / Sales Quantity
+```
+
+This is a simple analytical ratio and should not be interpreted as a formal days-of-inventory calculation.
+
+---
+
+# 10. Cross-Domain KPIs
+
+## Production Minus Sales Quantity
+
+**Formula:**
+
+```text
+Production Quantity - Sales Quantity
+```
+
+Used to compare production output and sales activity at the common date/location/product grain.
+
+---
+
+## Downtime-to-Production-Hours Ratio
+
+**Formula:**
+
+```text
+Downtime Hours / Production Hours
+```
+
+Used as an operational comparison metric.
+
+---
+
+## Maintenance Cost Per Produced Unit
+
+**Formula:**
+
+```text
+Maintenance Cost / Production Quantity
+```
+
+Used to compare maintenance spending relative to production output.
+
+---
+
+# 11. Analytical Governance Rules
+
+1. Ratios use explicit numeric division.
+2. Division by zero returns NULL.
+3. Revenue is net revenue after discount.
+4. Inventory is treated as a snapshot fact.
+5. Cross-domain facts must be aggregated independently before joining.
+6. KPI definitions must not be independently redefined in Power BI or Tableau.
+7. Synthetic analytical results must not be presented as real-world business impact.
+8. Intensity measures are analytical measures and do not establish causality.

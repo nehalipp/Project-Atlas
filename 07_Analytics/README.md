@@ -2,17 +2,22 @@
 
 ## Purpose
 
-Phase 7 establishes the governed SQL analytics layer for Project Atlas.
+Phase 7 transforms the trusted PostgreSQL warehouse into a reusable analytical SQL layer for downstream Power BI and Tableau consumption.
 
-The purpose of this phase is to transform the PostgreSQL data warehouse into a reusable, decision-oriented analytical foundation that can be consumed consistently by both Power BI and Tableau.
+The objective is to provide:
 
-The analytics layer separates business KPI and analytical logic from individual BI reports. This ensures that important metrics are defined once, validated against the warehouse, and reused consistently across both BI platforms.
+- Governed KPIs
+- Reusable analytical views
+- Dimension-aware domain analysis
+- Cross-domain analysis
+- Reconciliation against warehouse facts
+- Grain and fan-out validation
+
+Phase 7 does not modify the warehouse data.
 
 ---
 
 ## Position in the Atlas Architecture
-
-Project Atlas follows the architecture:
 
 ```text
 Raw Operational Data
@@ -23,41 +28,97 @@ ETL / ELT
         ↓
 PostgreSQL Data Warehouse
         ↓
-Reusable SQL Analytics Layer
+>>> Phase 7 — Reusable SQL Analytics Layer <<<
         ↓
 Power BI + Tableau
         ↓
 Business Insights & Recommendations
 ````
 
-Phase 7 represents the **Reusable SQL Analytics Layer**.
+Power BI and Tableau consume the same analytical foundation.
+
+Important business metrics are defined once and must reconcile across both BI platforms.
 
 ---
 
-## Objectives
+## Analytical Design Principles
 
-The Analytics phase is responsible for:
+### 1. Governed KPIs
 
-* Establishing governed KPI calculations.
-* Creating reusable SQL analytical views.
-* Providing domain-level analytical perspectives.
-* Enabling cross-domain analysis.
-* Preventing inconsistent KPI definitions across BI platforms.
-* Reusing conformed warehouse dimensions.
-* Respecting documented fact grain.
-* Preventing fact-to-fact fan-out and double counting.
-* Reconciling analytical results against warehouse facts.
-* Providing a stable analytical foundation for Power BI and Tableau.
+Important metrics have a single documented definition.
+
+KPI definitions are maintained in:
+
+```text
+07_Analytics/metadata/kpi_definitions.md
+```
+
+These definitions govern SQL, Power BI, Tableau and downstream business interpretation.
+
+### 2. Fact Grain Protection
+
+Facts are never blindly joined at transaction/event grain.
+
+For cross-domain analysis:
+
+```text
+Fact A
+  ↓
+Aggregate to target grain
+
+Fact B
+  ↓
+Aggregate to target grain
+
+Fact C
+  ↓
+Aggregate to target grain
+
+      ↓
+
+Join compatible aggregates
+```
+
+This prevents fan-out and double counting.
+
+### 3. Explicit Numeric Ratios
+
+Analytical ratios use explicit numeric division and `NULLIF` to prevent:
+
+* Integer truncation
+* Divide-by-zero errors
+
+### 4. Inventory Snapshot Protection
+
+Inventory is a snapshot fact.
+
+Inventory position must be interpreted at a specific date and must not be summed across dates as though it were a transaction flow.
+
+### 5. Synthetic Data Governance
+
+All Atlas data is synthetic.
+
+Analytics results describe the generated dataset and do not represent actual companies, customers, financial performance or operational improvements.
 
 ---
 
-## Analytics Scope
+# SQL View Structure
 
-The analytics layer contains three levels of analytical views.
+```text
+07_Analytics/sql/
+│
+├── 01_create_analytics_schema.sql
+├── 02_create_kpi_views.sql
+├── 03_create_domain_views.sql
+├── 04_create_cross_domain_views.sql
+└── 05_validate_all_analytics.sql
+```
 
-### 1. Core KPI Analytics
+---
 
-Daily KPI views provide standardized measures for the major operational and financial facts:
+# KPI Views
+
+Daily enterprise KPI views include:
 
 * Sales
 * Production
@@ -69,262 +130,170 @@ Daily KPI views provide standardized measures for the major operational and fina
 * Waste
 * Inventory
 
-These views provide the governed KPI foundation for downstream reporting.
-
----
-
-### 2. Domain Analytics
-
-Domain analytical views provide reusable perspectives for individual business areas.
-
-Current domain views include:
-
-* Account Sales
-* Customer Sales
-* Product Sales
-* Supplier Sales
-* Location Sales
-* Production Performance
-* Machine Production
-* Maintenance Performance
-* Employee Operations
-* Financial Performance
-* Budget Performance
-* Energy Performance
-* Emissions Performance
-* Waste Performance
-* Inventory Position
-
-These views support domain-specific decision analysis and provide the analytical foundation for the corresponding BI dashboards.
-
----
-
-### 3. Cross-Domain Analytics
-
-Cross-domain views combine compatible analytical grains to support enterprise-level analysis.
-
-Current cross-domain views include:
-
-* Sales + Production + Inventory
-* Production + Maintenance
-* Production + Energy + Emissions
-
-Cross-domain analysis is designed around compatible aggregation grains to avoid double counting and fact-to-fact fan-out.
-
----
-
-## Analytical Governance
-
-Important business metrics are defined consistently across:
+Example:
 
 ```text
-Business Definition
-        ↓
-Warehouse
-        ↓
-SQL Analytics
-        ↓
-Power BI
-        ↓
-Tableau
-        ↓
-Documentation
+vw_sales_kpis_daily
 ```
 
-The SQL analytics layer is therefore treated as a governed analytical foundation rather than a collection of ad hoc queries.
+Grain:
 
-Equivalent analytical contexts must reconcile to the underlying warehouse facts.
+```text
+One row per date
+```
 
 ---
 
-## Validation
+# Domain Views
 
-Phase 7 includes automated validation through:
+Domain views provide reusable dimensional analysis for:
 
-```text
-07_Analytics/scripts/validate_analytics.py
-```
+* Accounts
+* Customers
+* Products
+* Suppliers
+* Locations
+* Production
+* Machines
+* Maintenance
+* Employees
+* Financials
+* Budget
+* Energy
+* Emissions
+* Waste
+* Inventory
 
-Validation covers:
-
-1. Database connectivity
-2. Required analytics views
-3. KPI view population
-4. KPI date coverage
-5. Core KPI reconciliation
-6. Domain analytics reconciliation
-7. Cross-domain reconciliation
-8. Cross-domain grain uniqueness
-9. Cross-domain view population
-
-The validation process compares analytical aggregates against the underlying warehouse facts to detect missing records, inconsistent calculations, and potential double counting.
+These views are designed for downstream BI consumption.
 
 ---
 
-## Current Validation Status
+# Cross-Domain Views
 
-Phase 7 has successfully passed automated analytics validation.
+Phase 7 includes three required cross-domain analytical views.
 
-Latest validation result:
+## Sales + Production + Inventory
 
 ```text
-PASS checks : 75
-FAIL checks : 0
-CHECK items : 2
+vw_sales_production_inventory_daily
 ```
 
-Core warehouse-to-analytics reconciliations produced zero differences for:
+Grain:
 
-* Sales revenue
+```text
+Date + Location + Product
+```
+
+Supports analysis of:
+
+* Sales quantity
 * Production quantity
+* Inventory position
+* Production attainment
+* Inventory-to-sales relationship
+* Reorder-point conditions
+
+---
+
+## Production + Maintenance
+
+```text
+vw_production_maintenance_daily
+```
+
+Grain:
+
+```text
+Date + Location + Machine
+```
+
+Supports analysis of:
+
+* Production output
+* Production rate
+* Maintenance events
+* Downtime
 * Maintenance cost
+* Maintenance cost per produced unit
+
+---
+
+## Production + Energy + Emissions
+
+```text
+vw_production_energy_emissions_daily
+```
+
+Grain:
+
+```text
+Date + Location
+```
+
+Supports analysis of:
+
+* Production output
 * Energy consumption
-* CO2 emissions
-* Waste quantity
-* Domain-level analytical measures
-* Cross-domain analytical measures
+* CO₂ emissions
+* Energy intensity
+* Emissions intensity
 
-Cross-domain grain validation also confirmed that no duplicate analytical grain groups were present in the validated views.
-
-The two date-coverage checks for Production and Maintenance reflect the actual availability of records in the underlying warehouse facts and are not validation failures.
+Intensity measures are analytical measures and are not causal claims.
 
 ---
 
-## Key Analytical Principle
+# Validation
 
-The analytics layer must preserve the grain of the underlying facts.
+Final analytics validation covers:
 
-For example:
+1. Required view existence
+2. KPI population
+3. KPI date coverage against source facts
+4. Warehouse-to-KPI reconciliation
+5. Domain-view reconciliation
+6. Cross-domain reconciliation
+7. Domain analytical grain uniqueness
+8. Cross-domain grain uniqueness
+9. Fan-out protection
 
-```text
-fact_sales
-    ↓
-Daily / Account / Customer / Product / Location
-```
-
-and:
-
-```text
-fact_production
-    ↓
-Daily / Product / Location / Machine / Employee
-```
-
-Cross-domain analysis must first aggregate each fact to a compatible analytical grain before combining measures.
-
-This prevents:
+The validation script is:
 
 ```text
-Fact A × Fact B
-      ↓
-Fan-out
-      ↓
-Double Counting
-```
-
-Instead:
-
-```text
-Fact A → Compatible Grain
-                     ↓
-                  Combine
-                     ↑
-Fact B → Compatible Grain
+07_Analytics/sql/05_validate_all_analytics.sql
 ```
 
 ---
 
-## Repository Structure
+# Reproduction
+
+Run the SQL files in order:
 
 ```text
-07_Analytics/
-│
-├── README.md
-│
-├── metadata/
-│   ├── analytics_specification.md
-│   └── kpi_catalog.md
-│
-├── sql/
-│   ├── 01_create_kpi_views.sql
-│   ├── 02_create_domain_views.sql
-│   ├── 03_create_cross_domain_views.sql
-│   ├── 04_validate_analytics.sql
-│   └── 05_validate_all_analytics.sql
-│
-└── scripts/
-    └── validate_analytics.py
+01_create_analytics_schema.sql
+02_create_kpi_views.sql
+03_create_domain_views.sql
+04_create_cross_domain_views.sql
+05_validate_all_analytics.sql
+```
+
+Then run the Phase 7 Python validation script:
+
+```bash
+python3 07_Analytics/scripts/validate_analytics.py
 ```
 
 ---
 
-## Deliverables
+# Definition of Done
 
-Phase 7 produces:
+Phase 7 is complete when:
 
-* Governed KPI SQL views
-* Domain analytical SQL views
-* Cross-domain analytical SQL views
-* KPI definitions and metadata
-* Analytics specifications
-* Automated SQL validation
-* Automated Python validation
-* Warehouse-to-analytics reconciliation
-* Cross-domain grain validation
-
----
-
-## Downstream Use
-
-The completed analytics layer becomes the trusted analytical source for:
-
-### Phase 8 — Power BI
-
-Power BI will consume the governed warehouse and analytics layer to create:
-
-* Executive Command Center
-* Accounts Intelligence
-* Customer Intelligence
-* Product Intelligence
-* Supplier Intelligence
-* Location Intelligence
-* Employee Intelligence
-* Machine Intelligence
-* Sales Intelligence
-* Production Intelligence
-* Maintenance Intelligence
-* Financial Intelligence
-* Budget Intelligence
-* Energy Intelligence
-* Emissions Intelligence
-* Waste Intelligence
-* Inventory Intelligence
-
-### Phase 9 — Tableau
-
-Tableau will use the same governed analytical foundation to provide equivalent decision-oriented perspectives.
-
-Power BI and Tableau may use different layouts and visualization techniques, but governed KPI definitions and analytical results must remain consistent.
-
----
-
-## Phase Completion Criteria
-
-Phase 7 is considered complete when:
-
-* Required KPI views exist.
-* Required domain analytical views exist.
-* Required cross-domain views exist.
-* Analytical views are populated.
-* KPI calculations reconcile with warehouse facts.
-* Domain analytical calculations reconcile with warehouse facts.
-* Cross-domain calculations reconcile with warehouse facts.
-* Cross-domain grains contain no duplicate grain groups.
-* Analytics documentation is complete.
-* Automated validation passes with zero failures.
-
-### Status
-
-**Phase 7 — Analytics: COMPLETE / VALIDATED**
-
-The validated analytics layer is now ready to support the BI implementation phases.
+* Required analytical views exist.
+* KPI views are populated.
+* KPI definitions are documented.
+* KPI totals reconcile to warehouse facts.
+* Domain views reconcile to source facts.
+* Cross-domain views reconcile to source facts.
+* Documented grains are unique.
+* Cross-domain fact joins are protected from fan-out.
+* SQL is ready for Power BI and Tableau consumption.

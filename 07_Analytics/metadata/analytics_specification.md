@@ -887,7 +887,7 @@ Required SQL artifacts:
 
 ```text
 07_Analytics/sql/01_create_kpi_views.sql
-07_Analytics/sql/02_validate_kpi_views.sql
+07_Analytics/sql/02_create_kpi_views.sql
 07_Analytics/sql/03_create_domain_views.sql
 07_Analytics/sql/04_create_cross_domain_views.sql
 07_Analytics/sql/05_validate_all_analytics.sql

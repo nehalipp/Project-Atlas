@@ -31,9 +31,7 @@ CREATE SCHEMA IF NOT EXISTS analytics;
 -- ============================================================
 
 DROP VIEW IF EXISTS analytics.vw_production_energy_emissions_daily;
-
 DROP VIEW IF EXISTS analytics.vw_production_maintenance_daily;
-
 DROP VIEW IF EXISTS analytics.vw_sales_production_inventory_daily;
 
 
@@ -48,13 +46,7 @@ DROP VIEW IF EXISTS analytics.vw_sales_production_inventory_daily;
 -- Common grain:
 -- One row represents one date + one location + one product.
 --
--- Fact sources:
--- fact_sales
--- fact_production
--- fact_inventory
---
 -- Each fact is aggregated independently before joining.
--- This prevents fact-to-fact fan-out.
 -- ============================================================
 
 CREATE VIEW analytics.vw_sales_production_inventory_daily AS
@@ -176,48 +168,74 @@ combined AS (
             i.product_key
         ) AS product_key,
 
-        COALESCE(s.sales_transaction_count, 0)
-            AS sales_transaction_count,
+        COALESCE(
+            s.sales_transaction_count,
+            0
+        ) AS sales_transaction_count,
 
-        COALESCE(s.sales_quantity, 0)
-            AS sales_quantity,
+        COALESCE(
+            s.sales_quantity,
+            0
+        ) AS sales_quantity,
 
-        COALESCE(s.sales_revenue, 0)
-            AS sales_revenue,
+        COALESCE(
+            s.sales_revenue,
+            0
+        ) AS sales_revenue,
 
         s.average_discount_rate,
 
-        COALESCE(p.production_record_count, 0)
-            AS production_record_count,
+        COALESCE(
+            p.production_record_count,
+            0
+        ) AS production_record_count,
 
-        COALESCE(p.planned_production_quantity, 0)
-            AS planned_production_quantity,
+        COALESCE(
+            p.planned_production_quantity,
+            0
+        ) AS planned_production_quantity,
 
-        COALESCE(p.production_quantity, 0)
-            AS production_quantity,
+        COALESCE(
+            p.production_quantity,
+            0
+        ) AS production_quantity,
 
-        COALESCE(p.production_hours, 0)
-            AS production_hours,
+        COALESCE(
+            p.production_hours,
+            0
+        ) AS production_hours,
 
-        COALESCE(p.completed_production_count, 0)
-            AS completed_production_count,
+        COALESCE(
+            p.completed_production_count,
+            0
+        ) AS completed_production_count,
 
-        COALESCE(p.partial_production_count, 0)
-            AS partial_production_count,
+        COALESCE(
+            p.partial_production_count,
+            0
+        ) AS partial_production_count,
 
-        COALESCE(p.cancelled_production_count, 0)
-            AS cancelled_production_count,
+        COALESCE(
+            p.cancelled_production_count,
+            0
+        ) AS cancelled_production_count,
 
-        COALESCE(i.quantity_on_hand, 0)
-            AS quantity_on_hand,
+        COALESCE(
+            i.quantity_on_hand,
+            0
+        ) AS quantity_on_hand,
 
-        COALESCE(i.inventory_value, 0)
-            AS inventory_value,
+        COALESCE(
+            i.inventory_value,
+            0
+        ) AS inventory_value,
 
         i.reorder_point,
 
-        COALESCE(i.inventory_record_count, 0)
-            AS inventory_record_count
+        COALESCE(
+            i.inventory_record_count,
+            0
+        ) AS inventory_record_count
 
     FROM sales s
 
@@ -227,9 +245,20 @@ combined AS (
        AND s.product_key = p.product_key
 
     FULL OUTER JOIN inventory i
-        ON COALESCE(s.date_key, p.date_key) = i.date_key
-       AND COALESCE(s.location_key, p.location_key) = i.location_key
-       AND COALESCE(s.product_key, p.product_key) = i.product_key
+        ON COALESCE(
+            s.date_key,
+            p.date_key
+        ) = i.date_key
+
+       AND COALESCE(
+            s.location_key,
+            p.location_key
+        ) = i.location_key
+
+       AND COALESCE(
+            s.product_key,
+            p.product_key
+        ) = i.product_key
 )
 
 SELECT
@@ -278,26 +307,34 @@ SELECT
     -- --------------------------------------------------------
 
     c.production_quantity
-        - c.sales_quantity
+        -
+        c.sales_quantity
         AS production_minus_sales_quantity,
 
     CASE
-        WHEN c.planned_production_quantity = 0
-        THEN NULL
+        WHEN c.planned_production_quantity = 0 THEN NULL
         ELSE
-            c.production_quantity
-            / c.planned_production_quantity
+            c.production_quantity::numeric
+            /
+            NULLIF(
+                c.planned_production_quantity,
+                0
+            )
     END AS production_attainment_rate,
 
     CASE
-        WHEN c.sales_quantity = 0
-        THEN NULL
+        WHEN c.sales_quantity = 0 THEN NULL
         ELSE
-            c.quantity_on_hand
-            / c.sales_quantity
+            c.quantity_on_hand::numeric
+            /
+            NULLIF(
+                c.sales_quantity,
+                0
+            )
     END AS inventory_to_daily_sales_ratio,
 
     CASE
+        WHEN c.reorder_point IS NULL THEN NULL
         WHEN c.quantity_on_hand < c.reorder_point
         THEN TRUE
         ELSE FALSE
@@ -326,9 +363,7 @@ JOIN public.dim_product pr
 -- Common grain:
 -- One row represents one date + one location + one machine.
 --
--- IMPORTANT:
 -- Production and maintenance are aggregated independently.
--- They are NOT joined at transaction/event grain.
 -- ============================================================
 
 CREATE VIEW analytics.vw_production_maintenance_daily AS
@@ -513,43 +548,58 @@ SELECT
     -- --------------------------------------------------------
 
     CASE
-        WHEN c.planned_production_quantity = 0
-        THEN NULL
+        WHEN c.planned_production_quantity = 0 THEN NULL
         ELSE
-            c.production_quantity
-            / c.planned_production_quantity
+            c.production_quantity::numeric
+            /
+            NULLIF(
+                c.planned_production_quantity,
+                0
+            )
     END AS production_attainment_rate,
 
     CASE
-        WHEN c.production_hours = 0
-        THEN NULL
+        WHEN c.production_hours = 0 THEN NULL
         ELSE
-            c.production_quantity
-            / c.production_hours
+            c.production_quantity::numeric
+            /
+            NULLIF(
+                c.production_hours,
+                0
+            )
     END AS production_rate,
 
     CASE
-        WHEN c.production_hours = 0
-        THEN NULL
+        WHEN c.production_hours = 0 THEN NULL
         ELSE
-            c.downtime_hours
-            / c.production_hours
+            c.downtime_hours::numeric
+            /
+            NULLIF(
+                c.production_hours,
+                0
+            )
     END AS downtime_to_production_hours_ratio,
 
     CASE
-        WHEN c.maintenance_event_count = 0
-        THEN NULL
+        WHEN c.maintenance_event_count = 0 THEN NULL
         ELSE
-            c.maintenance_cost
-            / c.maintenance_event_count
+            c.maintenance_cost::numeric
+            /
+            NULLIF(
+                c.maintenance_event_count,
+                0
+            )
     END AS average_maintenance_cost_per_event,
 
     CASE
-        WHEN c.production_quantity = 0
-        THEN NULL
+        WHEN c.production_quantity = 0 THEN NULL
         ELSE
-            c.maintenance_cost
-            / c.production_quantity
+            c.maintenance_cost::numeric
+            /
+            NULLIF(
+                c.production_quantity,
+                0
+            )
     END AS maintenance_cost_per_produced_unit
 
 FROM combined c
@@ -575,17 +625,11 @@ JOIN public.dim_machine m
 -- Common grain:
 -- One row represents one date + one location.
 --
--- IMPORTANT:
--- Production, energy and emissions are independently aggregated
--- before being combined.
+-- Production, energy and emissions are independently aggregated.
 --
--- Energy is reported in its native unit. The current generated
--- data uses kWh as the energy unit.
---
--- Intensity metrics therefore use:
---
---   kWh / production unit
---   kg CO2 / production unit
+-- Intensity metrics:
+-- kWh / production unit
+-- kg CO2 / production unit
 --
 -- These are analytical intensity measures, not causal claims.
 -- ============================================================
@@ -722,8 +766,15 @@ combined AS (
        AND p.location_key = e.location_key
 
     FULL OUTER JOIN emissions em
-        ON COALESCE(p.date_key, e.date_key) = em.date_key
-       AND COALESCE(p.location_key, e.location_key) = em.location_key
+        ON COALESCE(
+            p.date_key,
+            e.date_key
+        ) = em.date_key
+
+       AND COALESCE(
+            p.location_key,
+            e.location_key
+        ) = em.location_key
 )
 
 SELECT
@@ -758,35 +809,47 @@ SELECT
     -- --------------------------------------------------------
 
     CASE
-        WHEN c.planned_production_quantity = 0
-        THEN NULL
+        WHEN c.planned_production_quantity = 0 THEN NULL
         ELSE
-            c.production_quantity
-            / c.planned_production_quantity
+            c.production_quantity::numeric
+            /
+            NULLIF(
+                c.planned_production_quantity,
+                0
+            )
     END AS production_attainment_rate,
 
     CASE
-        WHEN c.production_hours = 0
-        THEN NULL
+        WHEN c.production_hours = 0 THEN NULL
         ELSE
-            c.production_quantity
-            / c.production_hours
+            c.production_quantity::numeric
+            /
+            NULLIF(
+                c.production_hours,
+                0
+            )
     END AS production_rate,
 
     CASE
-        WHEN c.production_quantity = 0
-        THEN NULL
+        WHEN c.production_quantity = 0 THEN NULL
         ELSE
-            c.energy_consumption_kwh
-            / c.production_quantity
+            c.energy_consumption_kwh::numeric
+            /
+            NULLIF(
+                c.production_quantity,
+                0
+            )
     END AS energy_intensity_kwh_per_unit,
 
     CASE
-        WHEN c.production_quantity = 0
-        THEN NULL
+        WHEN c.production_quantity = 0 THEN NULL
         ELSE
-            c.co2_kg
-            / c.production_quantity
+            c.co2_kg::numeric
+            /
+            NULLIF(
+                c.production_quantity,
+                0
+            )
     END AS emissions_intensity_kg_per_unit
 
 FROM combined c

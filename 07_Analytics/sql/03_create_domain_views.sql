@@ -8,11 +8,21 @@
 -- inventory analysis.
 --
 -- Design principles:
--- 1. Use warehouse surrogate keys for dimensional joins.
+-- 1. Use warehouse surrogate keys for fact-to-dimension joins.
 -- 2. Preserve conformed dimensions.
 -- 3. Aggregate before combining facts.
 -- 4. Avoid incompatible fact-to-fact joins.
 -- 5. Keep views suitable for Power BI and Tableau consumption.
+-- 6. Use explicit numeric division for calculated ratios.
+-- 7. Preserve documented analytical grains.
+--
+-- Supplier bridge:
+-- fact_sales -> dim_product uses product_key.
+-- dim_product currently carries supplier_id as the supplier
+-- business identifier rather than supplier_key.
+-- Therefore the supplier dimension is joined through its unique
+-- supplier_id. This is intentional and avoids reopening the
+-- Phase 6 warehouse model solely for analytics.
 -- ============================================================
 
 
@@ -68,20 +78,31 @@ SELECT
     a.country,
     a.status AS account_status,
 
-    COUNT(DISTINCT s.sales_id) AS sales_transaction_count,
-    SUM(s.quantity) AS sales_quantity,
-    SUM(s.revenue) AS total_revenue,
+    COUNT(DISTINCT s.sales_id)
+        AS sales_transaction_count,
+
+    SUM(s.quantity)
+        AS sales_quantity,
+
+    SUM(s.revenue)
+        AS total_revenue,
 
     CASE
         WHEN SUM(s.quantity) = 0 THEN NULL
-        ELSE SUM(s.revenue) / SUM(s.quantity)
+        ELSE
+            SUM(s.revenue)::numeric
+            /
+            NULLIF(SUM(s.quantity), 0)
     END AS average_selling_price,
 
-    AVG(s.discount_rate) AS average_discount_rate
+    AVG(s.discount_rate)
+        AS average_discount_rate
 
 FROM public.fact_sales s
+
 JOIN public.dim_date d
     ON s.date_key = d.date_key
+
 JOIN public.dim_account a
     ON s.account_key = a.account_key
 
@@ -125,20 +146,31 @@ SELECT
     c.country,
     c.status AS customer_status,
 
-    COUNT(DISTINCT s.sales_id) AS sales_transaction_count,
-    SUM(s.quantity) AS sales_quantity,
-    SUM(s.revenue) AS total_revenue,
+    COUNT(DISTINCT s.sales_id)
+        AS sales_transaction_count,
+
+    SUM(s.quantity)
+        AS sales_quantity,
+
+    SUM(s.revenue)
+        AS total_revenue,
 
     CASE
         WHEN SUM(s.quantity) = 0 THEN NULL
-        ELSE SUM(s.revenue) / SUM(s.quantity)
+        ELSE
+            SUM(s.revenue)::numeric
+            /
+            NULLIF(SUM(s.quantity), 0)
     END AS average_selling_price,
 
-    AVG(s.discount_rate) AS average_discount_rate
+    AVG(s.discount_rate)
+        AS average_discount_rate
 
 FROM public.fact_sales s
+
 JOIN public.dim_date d
     ON s.date_key = d.date_key
+
 JOIN public.dim_customer c
     ON s.customer_key = c.customer_key
 
@@ -183,25 +215,40 @@ SELECT
     p.unit_price,
     p.status AS product_status,
 
-    COUNT(DISTINCT s.sales_id) AS sales_transaction_count,
-    SUM(s.quantity) AS sales_quantity,
-    SUM(s.revenue) AS total_revenue,
+    COUNT(DISTINCT s.sales_id)
+        AS sales_transaction_count,
+
+    SUM(s.quantity)
+        AS sales_quantity,
+
+    SUM(s.revenue)
+        AS total_revenue,
 
     CASE
         WHEN SUM(s.quantity) = 0 THEN NULL
-        ELSE SUM(s.revenue) / SUM(s.quantity)
+        ELSE
+            SUM(s.revenue)::numeric
+            /
+            NULLIF(SUM(s.quantity), 0)
     END AS average_selling_price,
 
-    AVG(s.discount_rate) AS average_discount_rate,
+    AVG(s.discount_rate)
+        AS average_discount_rate,
 
-    SUM(s.quantity * p.unit_cost) AS estimated_product_cost,
+    SUM(
+        s.quantity * p.unit_cost
+    ) AS estimated_product_cost,
 
     SUM(s.revenue)
-        - SUM(s.quantity * p.unit_cost) AS estimated_gross_margin
+        -
+        SUM(s.quantity * p.unit_cost)
+        AS estimated_gross_margin
 
 FROM public.fact_sales s
+
 JOIN public.dim_date d
     ON s.date_key = d.date_key
+
 JOIN public.dim_product p
     ON s.product_key = p.product_key
 
@@ -227,8 +274,13 @@ GROUP BY
 -- Grain:
 -- One row per date + supplier + product.
 --
--- Supplier is conformed through dim_product.supplier_id because
--- fact_sales contains product_key rather than supplier_key.
+-- Supplier bridge:
+-- fact_sales -> dim_product via product_key.
+-- dim_product -> dim_supplier via supplier_id.
+--
+-- supplier_id is the retained business identifier and is unique
+-- in dim_supplier. This is intentional for the current warehouse
+-- and does not require a Phase 6 schema change.
 -- ============================================================
 
 CREATE VIEW analytics.vw_supplier_sales_daily AS
@@ -252,20 +304,31 @@ SELECT
     p.product_name,
     p.category AS product_category,
 
-    COUNT(DISTINCT s.sales_id) AS sales_transaction_count,
-    SUM(s.quantity) AS sales_quantity,
-    SUM(s.revenue) AS total_revenue,
+    COUNT(DISTINCT s.sales_id)
+        AS sales_transaction_count,
+
+    SUM(s.quantity)
+        AS sales_quantity,
+
+    SUM(s.revenue)
+        AS total_revenue,
 
     CASE
         WHEN SUM(s.quantity) = 0 THEN NULL
-        ELSE SUM(s.revenue) / SUM(s.quantity)
+        ELSE
+            SUM(s.revenue)::numeric
+            /
+            NULLIF(SUM(s.quantity), 0)
     END AS average_selling_price
 
 FROM public.fact_sales s
+
 JOIN public.dim_date d
     ON s.date_key = d.date_key
+
 JOIN public.dim_product p
     ON s.product_key = p.product_key
+
 JOIN public.dim_supplier sp
     ON p.supplier_id = sp.supplier_id
 
@@ -312,18 +375,28 @@ SELECT
     l.country,
     l.status AS location_status,
 
-    COUNT(DISTINCT s.sales_id) AS sales_transaction_count,
-    SUM(s.quantity) AS sales_quantity,
-    SUM(s.revenue) AS total_revenue,
+    COUNT(DISTINCT s.sales_id)
+        AS sales_transaction_count,
+
+    SUM(s.quantity)
+        AS sales_quantity,
+
+    SUM(s.revenue)
+        AS total_revenue,
 
     CASE
         WHEN SUM(s.quantity) = 0 THEN NULL
-        ELSE SUM(s.revenue) / SUM(s.quantity)
+        ELSE
+            SUM(s.revenue)::numeric
+            /
+            NULLIF(SUM(s.quantity), 0)
     END AS average_selling_price
 
 FROM public.fact_sales s
+
 JOIN public.dim_date d
     ON s.date_key = d.date_key
+
 JOIN public.dim_location l
     ON s.location_key = l.location_key
 
@@ -374,7 +447,8 @@ SELECT
     pr.product_name,
     pr.category AS product_category,
 
-    COUNT(DISTINCT p.production_id) AS production_record_count,
+    COUNT(DISTINCT p.production_id)
+        AS production_record_count,
 
     COUNT(DISTINCT CASE
         WHEN p.production_status = 'Completed'
@@ -391,32 +465,50 @@ SELECT
         THEN p.production_id
     END) AS cancelled_production_count,
 
-    SUM(p.planned_quantity) AS planned_quantity,
-    SUM(p.quantity_produced) AS quantity_produced,
-    SUM(p.production_hours) AS production_hours,
+    SUM(p.planned_quantity)
+        AS planned_quantity,
 
     SUM(p.quantity_produced)
-        - SUM(p.planned_quantity) AS production_variance,
+        AS quantity_produced,
+
+    SUM(p.production_hours)
+        AS production_hours,
+
+    SUM(p.quantity_produced)
+        -
+        SUM(p.planned_quantity)
+        AS production_variance,
 
     CASE
         WHEN SUM(p.planned_quantity) = 0 THEN NULL
         ELSE
-            SUM(p.quantity_produced)
-            / SUM(p.planned_quantity)
+            SUM(p.quantity_produced)::numeric
+            /
+            NULLIF(
+                SUM(p.planned_quantity),
+                0
+            )
     END AS production_attainment_rate,
 
     CASE
         WHEN SUM(p.production_hours) = 0 THEN NULL
         ELSE
-            SUM(p.quantity_produced)
-            / SUM(p.production_hours)
+            SUM(p.quantity_produced)::numeric
+            /
+            NULLIF(
+                SUM(p.production_hours),
+                0
+            )
     END AS production_rate
 
 FROM public.fact_production p
+
 JOIN public.dim_date d
     ON p.date_key = d.date_key
+
 JOIN public.dim_location l
     ON p.location_key = l.location_key
+
 JOIN public.dim_product pr
     ON p.product_key = pr.product_key
 
@@ -463,23 +555,37 @@ SELECT
     l.location_id,
     l.location_name,
 
-    COUNT(DISTINCT p.production_id) AS production_record_count,
-    SUM(p.planned_quantity) AS planned_quantity,
-    SUM(p.quantity_produced) AS quantity_produced,
-    SUM(p.production_hours) AS production_hours,
+    COUNT(DISTINCT p.production_id)
+        AS production_record_count,
+
+    SUM(p.planned_quantity)
+        AS planned_quantity,
+
+    SUM(p.quantity_produced)
+        AS quantity_produced,
+
+    SUM(p.production_hours)
+        AS production_hours,
 
     CASE
         WHEN SUM(p.production_hours) = 0 THEN NULL
         ELSE
-            SUM(p.quantity_produced)
-            / SUM(p.production_hours)
+            SUM(p.quantity_produced)::numeric
+            /
+            NULLIF(
+                SUM(p.production_hours),
+                0
+            )
     END AS production_rate
 
 FROM public.fact_production p
+
 JOIN public.dim_date d
     ON p.date_key = d.date_key
+
 JOIN public.dim_machine m
     ON p.machine_key = m.machine_key
+
 JOIN public.dim_location l
     ON p.location_key = l.location_key
 
@@ -526,31 +632,45 @@ SELECT
     l.location_id,
     l.location_name,
 
-    COUNT(DISTINCT m.maintenance_id) AS maintenance_event_count,
+    COUNT(DISTINCT m.maintenance_id)
+        AS maintenance_event_count,
 
-    SUM(m.downtime_hours) AS downtime_hours,
+    SUM(m.downtime_hours)
+        AS downtime_hours,
 
-    SUM(m.maintenance_cost) AS maintenance_cost,
+    SUM(m.maintenance_cost)
+        AS maintenance_cost,
 
     CASE
         WHEN COUNT(DISTINCT m.maintenance_id) = 0 THEN NULL
         ELSE
-            SUM(m.maintenance_cost)
-            / COUNT(DISTINCT m.maintenance_id)
+            SUM(m.maintenance_cost)::numeric
+            /
+            NULLIF(
+                COUNT(DISTINCT m.maintenance_id),
+                0
+            )
     END AS average_maintenance_cost_per_event,
 
     CASE
         WHEN COUNT(DISTINCT m.maintenance_id) = 0 THEN NULL
         ELSE
-            SUM(m.downtime_hours)
-            / COUNT(DISTINCT m.maintenance_id)
+            SUM(m.downtime_hours)::numeric
+            /
+            NULLIF(
+                COUNT(DISTINCT m.maintenance_id),
+                0
+            )
     END AS average_downtime_hours_per_event
 
 FROM public.fact_maintenance m
+
 JOIN public.dim_date d
     ON m.date_key = d.date_key
+
 JOIN public.dim_machine md
     ON m.machine_key = md.machine_key
+
 JOIN public.dim_location l
     ON m.location_key = l.location_key
 
@@ -585,10 +705,18 @@ WITH production AS (
     SELECT
         date_key,
         employee_key,
-        COUNT(DISTINCT production_id) AS production_record_count,
-        SUM(quantity_produced) AS quantity_produced,
-        SUM(production_hours) AS production_hours
+
+        COUNT(DISTINCT production_id)
+            AS production_record_count,
+
+        SUM(quantity_produced)
+            AS quantity_produced,
+
+        SUM(production_hours)
+            AS production_hours
+
     FROM public.fact_production
+
     GROUP BY
         date_key,
         employee_key
@@ -597,10 +725,18 @@ maintenance AS (
     SELECT
         date_key,
         employee_key,
-        COUNT(DISTINCT maintenance_id) AS maintenance_event_count,
-        SUM(downtime_hours) AS downtime_hours,
-        SUM(maintenance_cost) AS maintenance_cost
+
+        COUNT(DISTINCT maintenance_id)
+            AS maintenance_event_count,
+
+        SUM(downtime_hours)
+            AS downtime_hours,
+
+        SUM(maintenance_cost)
+            AS maintenance_cost
+
     FROM public.fact_maintenance
+
     GROUP BY
         date_key,
         employee_key
@@ -621,25 +757,38 @@ SELECT
     e.hire_date,
     e.status AS employee_status,
 
-    COALESCE(p.production_record_count, 0)
-        AS production_record_count,
+    COALESCE(
+        p.production_record_count,
+        0
+    ) AS production_record_count,
 
-    COALESCE(p.quantity_produced, 0)
-        AS quantity_produced,
+    COALESCE(
+        p.quantity_produced,
+        0
+    ) AS quantity_produced,
 
-    COALESCE(p.production_hours, 0)
-        AS production_hours,
+    COALESCE(
+        p.production_hours,
+        0
+    ) AS production_hours,
 
-    COALESCE(m.maintenance_event_count, 0)
-        AS maintenance_event_count,
+    COALESCE(
+        m.maintenance_event_count,
+        0
+    ) AS maintenance_event_count,
 
-    COALESCE(m.downtime_hours, 0)
-        AS downtime_hours,
+    COALESCE(
+        m.downtime_hours,
+        0
+    ) AS downtime_hours,
 
-    COALESCE(m.maintenance_cost, 0)
-        AS maintenance_cost
+    COALESCE(
+        m.maintenance_cost,
+        0
+    ) AS maintenance_cost
 
 FROM public.dim_employee e
+
 CROSS JOIN public.dim_date d
 
 LEFT JOIN production p
@@ -716,11 +865,14 @@ SELECT
         END
     ) AS adjustment_amount,
 
-    SUM(f.amount) AS total_transaction_amount
+    SUM(f.amount)
+        AS total_transaction_amount
 
 FROM public.fact_financial_transaction f
+
 JOIN public.dim_date d
     ON f.date_key = d.date_key
+
 JOIN public.dim_location l
     ON f.location_key = l.location_key
 
@@ -764,13 +916,17 @@ SELECT
 
     b.category AS budget_category,
 
-    COUNT(DISTINCT b.budget_id) AS budget_record_count,
+    COUNT(DISTINCT b.budget_id)
+        AS budget_record_count,
 
-    SUM(b.budget_amount) AS budget_amount
+    SUM(b.budget_amount)
+        AS budget_amount
 
 FROM public.fact_budget b
+
 JOIN public.dim_date d
     ON b.date_key = d.date_key
+
 JOIN public.dim_location l
     ON b.location_key = l.location_key
 
@@ -816,13 +972,17 @@ SELECT
     e.energy_type,
     e.unit,
 
-    COUNT(DISTINCT e.energy_id) AS energy_record_count,
+    COUNT(DISTINCT e.energy_id)
+        AS energy_record_count,
 
-    SUM(e.consumption) AS energy_consumption
+    SUM(e.consumption)
+        AS energy_consumption
 
 FROM public.fact_energy e
+
 JOIN public.dim_date d
     ON e.date_key = d.date_key
+
 JOIN public.dim_location l
     ON e.location_key = l.location_key
 
@@ -866,11 +1026,14 @@ SELECT
     COUNT(DISTINCT e.emissions_id)
         AS emissions_record_count,
 
-    SUM(e.co2_kg) AS co2_kg
+    SUM(e.co2_kg)
+        AS co2_kg
 
 FROM public.fact_emissions e
+
 JOIN public.dim_date d
     ON e.date_key = d.date_key
+
 JOIN public.dim_location l
     ON e.location_key = l.location_key
 
@@ -912,13 +1075,17 @@ SELECT
     w.unit,
     w.disposal_method,
 
-    COUNT(DISTINCT w.waste_id) AS waste_record_count,
+    COUNT(DISTINCT w.waste_id)
+        AS waste_record_count,
 
-    SUM(w.quantity) AS waste_quantity
+    SUM(w.quantity)
+        AS waste_quantity
 
 FROM public.fact_waste w
+
 JOIN public.dim_date d
     ON w.date_key = d.date_key
+
 JOIN public.dim_location l
     ON w.location_key = l.location_key
 
@@ -948,9 +1115,9 @@ GROUP BY
 -- Grain:
 -- One row per date + location + product.
 --
--- Inventory is a snapshot fact. This view therefore represents
--- inventory position at a given date and must not be treated as
--- a transactional flow.
+-- Inventory is a snapshot fact.
+-- This view represents inventory position at a given date.
+-- It must not be treated as a transactional flow.
 -- ============================================================
 
 CREATE VIEW analytics.vw_inventory_position_daily AS
@@ -973,12 +1140,20 @@ SELECT
     p.category AS product_category,
     p.supplier_id,
 
-    SUM(i.quantity_on_hand) AS quantity_on_hand,
-    SUM(i.inventory_value) AS inventory_value,
-    MAX(i.reorder_point) AS reorder_point,
+    SUM(i.quantity_on_hand)
+        AS quantity_on_hand,
+
+    SUM(i.inventory_value)
+        AS inventory_value,
+
+    MAX(i.reorder_point)
+        AS reorder_point,
 
     CASE
-        WHEN SUM(i.quantity_on_hand) < MAX(i.reorder_point)
+        WHEN
+            SUM(i.quantity_on_hand)
+            <
+            MAX(i.reorder_point)
         THEN TRUE
         ELSE FALSE
     END AS below_reorder_point,
@@ -987,10 +1162,13 @@ SELECT
         AS inventory_record_count
 
 FROM public.fact_inventory i
+
 JOIN public.dim_date d
     ON i.date_key = d.date_key
+
 JOIN public.dim_location l
     ON i.location_key = l.location_key
+
 JOIN public.dim_product p
     ON i.product_key = p.product_key
 
