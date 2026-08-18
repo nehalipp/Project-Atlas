@@ -328,5 +328,3 @@ Phase 7 is considered complete when:
 **Phase 7 — Analytics: COMPLETE / VALIDATED**
 
 The validated analytics layer is now ready to support the BI implementation phases.
-
-````
