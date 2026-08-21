@@ -2,14 +2,14 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1,MCH-000001,70,Atlas Machine 1,CNC Machine,2018-10-10,Operational
 2,MCH-000002,79,Atlas Machine 2,Packaging Machine,2017-03-06,Operational
 3,MCH-000003,66,Atlas Machine 3,CNC Machine,2018-12-22,Inactive
-4,MCH-000004,81,Atlas Machine 4,Press Machine,2018-10-27,Unknown
+4,MCH-000004,81,Atlas Machine 4,Press Machine,2018-10-27,Operational
 5,MCH-000005,58,Atlas Machine 5,CNC Machine,2016-10-25,Operational
 6,MCH-000006,64,Atlas Machine 6,Cutting Machine,2016-09-13,Operational
 7,MCH-000007,3,Atlas Machine 7,CNC Machine,2018-02-22,Operational
 8,MCH-000008,79,Atlas Machine 8,Cutting Machine,2016-05-14,Operational
 9,MCH-000009,45,Atlas Machine 9,Press Machine,2016-10-28,Operational
 10,MCH-000010,36,Atlas Machine 10,CNC Machine,2018-11-07,Operational
-11,MCH-000011,77,Atlas Machine 11,CNC Machine,2018-07-21,Operational
+11,MCH-000011,77, Atlas Machine 11 ,CNC Machine,2018-07-21,Operational
 12,MCH-000012,18,Atlas Machine 12,Cutting Machine,2017-01-30,Operational
 13,MCH-000013,99,Atlas Machine 13,Packaging Machine,2016-04-10,Operational
 14,MCH-000014,69,Atlas Machine 14,Assembly Machine,2016-08-08,Operational
@@ -56,7 +56,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 55,MCH-000055,2,Atlas Machine 55,Cutting Machine,2018-07-07,Operational
 56,MCH-000056,60,Atlas Machine 56,Assembly Machine,2016-11-19,Operational
 57,MCH-000057,71,Atlas Machine 57,CNC Machine,2017-03-07,Operational
-58,MCH-000058,45,Atlas Machine 58,Packaging Machine,2018-05-30,Operational
+58,MCH-000058,45, Atlas Machine 58 ,Packaging Machine,2018-05-30,Operational
 59,MCH-000059,53,Atlas Machine 59,CNC Machine,2016-01-26,Maintenance
 60,MCH-000060,85,Atlas Machine 60,Press Machine,2018-07-11,Operational
 61,MCH-000061,16,Atlas Machine 61,Packaging Machine,2018-11-04,Maintenance
@@ -95,7 +95,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 94,MCH-000094,15,Atlas Machine 94,Packaging Machine,2017-08-25,Operational
 95,MCH-000095,4,Atlas Machine 95,Cutting Machine,2017-11-26,Operational
 96,MCH-000096,62,Atlas Machine 96,Packaging Machine,2018-05-22,Inactive
-97,MCH-000097,42,Atlas Machine 97,Assembly Machine,2017-07-03,Unknown
+97,MCH-000097,42,Atlas Machine 97,Assembly Machine,2017-07-03,Operational
 98,MCH-000098,37,Atlas Machine 98,Press Machine,2018-08-30,Operational
 99,MCH-000099,87,Atlas Machine 99,Press Machine,2018-10-30,Operational
 100,MCH-000100,99,Atlas Machine 100,Cutting Machine,2016-09-04,Operational
@@ -170,16 +170,16 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 169,MCH-000169,95,Atlas Machine 169,Packaging Machine,2016-12-13,Operational
 170,MCH-000170,26,Atlas Machine 170,Press Machine,2016-08-11,Inactive
 171,MCH-000171,63,Atlas Machine 171,Press Machine,2016-02-15,Maintenance
-172,MCH-000172,58,Atlas Machine 172,Packaging Machine,2017-12-30,Inactive
+172,MCH-000172,58,Atlas Machine 172,Packaging Machine,2017-12-30,Unknown
 173,MCH-000173,24,Atlas Machine 173,Cutting Machine,2017-04-27,Operational
 174,MCH-000174,42,Atlas Machine 174,CNC Machine,2018-01-25,Operational
 175,MCH-000175,98,Atlas Machine 175,Press Machine,2018-01-31,Operational
 176,MCH-000176,25,Atlas Machine 176,Packaging Machine,2017-08-27,Operational
 177,MCH-000177,87,Atlas Machine 177,Press Machine,2018-11-21,Operational
 178,MCH-000178,11,Atlas Machine 178,CNC Machine,2017-12-07,Operational
-179,MCH-000179,84,Atlas Machine 179,CNC Machine,2018-08-25,Unknown
+179,MCH-000179,84,Atlas Machine 179,CNC Machine,2018-08-25,Operational
 180,MCH-000180,19,Atlas Machine 180,Assembly Machine,2018-06-28,Operational
-181,MCH-000181,75,Atlas Machine 181,Cutting Machine,2016-06-17,Operational
+181,MCH-000181,75,Atlas Machine 181,Cutting Machine,2016-06-17,Unknown
 182,MCH-000182,84,Atlas Machine 182,Cutting Machine,2018-06-25,Operational
 183,MCH-000183,3,Atlas Machine 183,Cutting Machine,2016-10-19,Operational
 184,MCH-000184,90,Atlas Machine 184,Press Machine,2018-05-13,Operational
@@ -212,7 +212,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 211,MCH-000211,87,Atlas Machine 211,Assembly Machine,2017-11-09,Operational
 212,MCH-000212,52,Atlas Machine 212,Assembly Machine,2018-07-13,Operational
 213,MCH-000213,61,Atlas Machine 213,CNC Machine,2016-12-03,Operational
-214,MCH-000214,32,Atlas Machine 214,Cutting Machine,2018-08-01,Operational
+214,MCH-000214,32, Atlas Machine 214 ,Cutting Machine,2018-08-01,Operational
 215,MCH-000215,11,Atlas Machine 215,Packaging Machine,2018-05-09,Operational
 216,MCH-000216,6,Atlas Machine 216,Cutting Machine,2016-07-13,Operational
 217,MCH-000217,57,Atlas Machine 217,Press Machine,2016-11-02,Operational
@@ -317,7 +317,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 316,MCH-000316,9,Atlas Machine 316,Cutting Machine,2018-11-02,Operational
 317,MCH-000317,97,Atlas Machine 317,Assembly Machine,2016-04-23,Operational
 318,MCH-000318,7,Atlas Machine 318,Assembly Machine,2016-12-27,Operational
-319,MCH-000319,22,Atlas Machine 319,Press Machine,2016-09-08,Maintenance
+319,MCH-000319,22, Atlas Machine 319 ,Press Machine,2016-09-08,Maintenance
 320,MCH-000320,50,Atlas Machine 320,Assembly Machine,2016-11-14,Operational
 321,MCH-000321,35,Atlas Machine 321,Cutting Machine,2016-11-22,Operational
 322,MCH-000322,38,Atlas Machine 322,Assembly Machine,2016-10-08,Operational
@@ -327,7 +327,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 326,MCH-000326,87,Atlas Machine 326,Packaging Machine,2018-06-03,Maintenance
 327,MCH-000327,7,Atlas Machine 327,Press Machine,2016-07-25,Operational
 328,MCH-000328,45,Atlas Machine 328,Packaging Machine,2017-06-23,Operational
-329,MCH-000329,7,Atlas Machine 329,Assembly Machine,2018-11-12,Operational
+329,MCH-000329,7,Atlas Machine 329,Assembly Machine,2018-11-12,Unknown
 330,MCH-000330,57,Atlas Machine 330,Packaging Machine,2016-03-23,Maintenance
 331,MCH-000331,24,Atlas Machine 331,CNC Machine,2017-10-01,Operational
 332,MCH-000332,43,Atlas Machine 332,Assembly Machine,2016-06-08,Operational
@@ -368,7 +368,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 367,MCH-000367,93,Atlas Machine 367,Packaging Machine,2016-01-02,Maintenance
 368,MCH-000368,89,Atlas Machine 368,Assembly Machine,2017-10-07,Operational
 369,MCH-000369,93,Atlas Machine 369,CNC Machine,2017-09-23,Operational
-370,MCH-000370,83,Atlas Machine 370,CNC Machine,2017-10-13,Operational
+370,MCH-000370,83, Atlas Machine 370 ,CNC Machine,2017-10-13,Operational
 371,MCH-000371,20,Atlas Machine 371,Assembly Machine,2018-01-27,Operational
 372,MCH-000372,95,Atlas Machine 372,Packaging Machine,2016-05-13,Operational
 373,MCH-000373,83,Atlas Machine 373,CNC Machine,2018-07-14,Operational
@@ -390,7 +390,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 389,MCH-000389,70,Atlas Machine 389,CNC Machine,2017-10-17,Operational
 390,MCH-000390,19,Atlas Machine 390,Press Machine,2018-04-24,Operational
 391,MCH-000391,64,Atlas Machine 391,Packaging Machine,2016-09-09,Operational
-392,MCH-000392,54,Atlas Machine 392,CNC Machine,2017-11-17,Operational
+392,MCH-000392,54, Atlas Machine 392 ,CNC Machine,2017-11-17,Operational
 393,MCH-000393,96,Atlas Machine 393,Packaging Machine,2018-07-20,Operational
 394,MCH-000394,41,Atlas Machine 394,Press Machine,2017-09-26,Operational
 395,MCH-000395,73,Atlas Machine 395,CNC Machine,2017-05-12,Operational
@@ -399,7 +399,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 398,MCH-000398,87,Atlas Machine 398,CNC Machine,2018-02-25,Operational
 399,MCH-000399,62,Atlas Machine 399,Cutting Machine,2017-11-28,Operational
 400,MCH-000400,81,Atlas Machine 400,Packaging Machine,2018-07-02,Maintenance
-401,MCH-000401,36,Atlas Machine 401,Assembly Machine,2018-04-29,Operational
+401,MCH-000401,36, Atlas Machine 401 ,Assembly Machine,2018-04-29,Operational
 402,MCH-000402,49,Atlas Machine 402,Cutting Machine,2017-09-10,Operational
 403,MCH-000403,26,Atlas Machine 403,Press Machine,2018-11-17,Operational
 404,MCH-000404,69,Atlas Machine 404,Press Machine,2017-05-07,Operational
@@ -416,7 +416,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 415,MCH-000415,79,Atlas Machine 415,CNC Machine,2016-07-21,Operational
 416,MCH-000416,21,Atlas Machine 416,Assembly Machine,2018-08-25,Operational
 417,MCH-000417,24,Atlas Machine 417,Press Machine,2017-03-18,Operational
-418,MCH-000418,7,Atlas Machine 418,Cutting Machine,2017-07-07,Unknown
+418,MCH-000418,7,Atlas Machine 418,Cutting Machine,2017-07-07,Operational
 419,MCH-000419,92,Atlas Machine 419,Cutting Machine,2018-10-24,Operational
 420,MCH-000420,22,Atlas Machine 420,Cutting Machine,2018-08-04,Operational
 421,MCH-000421,87,Atlas Machine 421,Packaging Machine,2017-05-25,Operational
@@ -457,11 +457,11 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 456,MCH-000456,32,Atlas Machine 456,Assembly Machine,2018-11-16,Operational
 457,MCH-000457,40,Atlas Machine 457,Assembly Machine,2018-04-04,Inactive
 458,MCH-000458,59,Atlas Machine 458,Press Machine,2017-11-13,Operational
-459,MCH-000459,27,Atlas Machine 459,Press Machine,2016-10-21,Operational
+459,MCH-000459,27, Atlas Machine 459 ,Press Machine,2016-10-21,Operational
 460,MCH-000460,55,Atlas Machine 460,Cutting Machine,2016-10-05,Operational
 461,MCH-000461,67,Atlas Machine 461,Press Machine,2016-04-17,Maintenance
 462,MCH-000462,95,Atlas Machine 462,CNC Machine,2017-03-17,Operational
-463,MCH-000463,85,Atlas Machine 463,CNC Machine,2018-10-23,Unknown
+463,MCH-000463,85,Atlas Machine 463,CNC Machine,2018-10-23,Operational
 464,MCH-000464,63,Atlas Machine 464,Assembly Machine,2016-07-09,Operational
 465,MCH-000465,73,Atlas Machine 465,CNC Machine,2016-12-05,Operational
 466,MCH-000466,27,Atlas Machine 466,CNC Machine,2016-06-17,Operational
@@ -503,7 +503,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 502,MCH-000502,68,Atlas Machine 502,Assembly Machine,2017-02-20,Operational
 503,MCH-000503,57,Atlas Machine 503,Assembly Machine,2016-12-01,Operational
 504,MCH-000504,61,Atlas Machine 504,CNC Machine,2017-12-26,Operational
-505,MCH-000505,58,Atlas Machine 505,Packaging Machine,2016-02-18,Operational
+505,MCH-000505,58,Atlas Machine 505,Packaging Machine,2016-02-18,Unknown
 506,MCH-000506,61,Atlas Machine 506,Packaging Machine,2016-06-09,Operational
 507,MCH-000507,68,Atlas Machine 507,CNC Machine,2018-11-28,Operational
 508,MCH-000508,23,Atlas Machine 508,Assembly Machine,2017-11-22,Operational
@@ -524,7 +524,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 523,MCH-000523,72,Atlas Machine 523,Packaging Machine,2016-07-14,Operational
 524,MCH-000524,90,Atlas Machine 524,Assembly Machine,2017-12-18,Operational
 525,MCH-000525,19,Atlas Machine 525,Packaging Machine,2017-01-30,Operational
-526,MCH-000526,3,Atlas Machine 526,Cutting Machine,2016-08-06,Maintenance
+526,MCH-000526,3,Atlas Machine 526,Cutting Machine,2016-08-06,Unknown
 527,MCH-000527,100,Atlas Machine 527,Press Machine,2018-09-10,Operational
 528,MCH-000528,2,Atlas Machine 528,Cutting Machine,2016-09-09,Operational
 529,MCH-000529,57,Atlas Machine 529,Press Machine,2017-02-22,Operational
@@ -560,7 +560,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 559,MCH-000559,82,Atlas Machine 559,Cutting Machine,2016-09-10,Operational
 560,MCH-000560,62,Atlas Machine 560,Cutting Machine,2017-12-12,Operational
 561,MCH-000561,99,Atlas Machine 561,CNC Machine,2016-09-29,Operational
-562,MCH-000562,29,Atlas Machine 562,Assembly Machine,2016-11-23,Operational
+562,MCH-000562,29, Atlas Machine 562 ,Assembly Machine,2016-11-23,Operational
 563,MCH-000563,37,Atlas Machine 563,Press Machine,2018-05-28,Operational
 564,MCH-000564,74,Atlas Machine 564,Packaging Machine,2018-03-21,Operational
 565,MCH-000565,87,Atlas Machine 565,Press Machine,2016-01-15,Operational
@@ -568,7 +568,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 567,MCH-000567,53,Atlas Machine 567,CNC Machine,2016-11-25,Operational
 568,MCH-000568,44,Atlas Machine 568,Cutting Machine,2018-08-05,Operational
 569,MCH-000569,81,Atlas Machine 569,Press Machine,2018-07-06,Operational
-570,MCH-000570,28,Atlas Machine 570,Cutting Machine,2017-07-11,Operational
+570,MCH-000570,28,Atlas Machine 570,Cutting Machine,2017-07-11,Unknown
 571,MCH-000571,19,Atlas Machine 571,Packaging Machine,2018-12-10,Operational
 572,MCH-000572,43,Atlas Machine 572,Packaging Machine,2016-04-23,Operational
 573,MCH-000573,77,Atlas Machine 573,Packaging Machine,2017-08-02,Operational
@@ -675,7 +675,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 674,MCH-000674,46,Atlas Machine 674,Assembly Machine,2016-02-01,Operational
 675,MCH-000675,13,Atlas Machine 675,Cutting Machine,2016-03-21,Operational
 676,MCH-000676,18,Atlas Machine 676,Cutting Machine,2017-09-11,Operational
-677,MCH-000677,4,Atlas Machine 677,Press Machine,2016-07-28,Maintenance
+677,MCH-000677,4,Atlas Machine 677,Press Machine,2016-07-28,Unknown
 678,MCH-000678,34,Atlas Machine 678,CNC Machine,2017-07-05,Operational
 679,MCH-000679,77,Atlas Machine 679,Assembly Machine,2017-09-27,Operational
 680,MCH-000680,64,Atlas Machine 680,Press Machine,2016-11-19,Operational
@@ -691,7 +691,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 690,MCH-000690,91,Atlas Machine 690,Cutting Machine,2018-08-06,Operational
 691,MCH-000691,28,Atlas Machine 691,Cutting Machine,2017-04-11,Operational
 692,MCH-000692,10,Atlas Machine 692,Cutting Machine,2018-04-04,Operational
-693,MCH-000693,87,Atlas Machine 693,Cutting Machine,2017-12-16,Operational
+693,MCH-000693,87,Atlas Machine 693,Cutting Machine,2017-12-16,Unknown
 694,MCH-000694,71,Atlas Machine 694,Assembly Machine,2018-04-22,Operational
 695,MCH-000695,1,Atlas Machine 695,Cutting Machine,2018-10-28,Operational
 696,MCH-000696,18,Atlas Machine 696,Packaging Machine,2016-10-03,Operational
@@ -752,7 +752,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 751,MCH-000751,5,Atlas Machine 751,CNC Machine,2017-03-08,Operational
 752,MCH-000752,21,Atlas Machine 752,Packaging Machine,2018-05-18,Operational
 753,MCH-000753,37,Atlas Machine 753,Assembly Machine,2018-02-25,Maintenance
-754,MCH-000754,53,Atlas Machine 754,Cutting Machine,2018-11-08,Unknown
+754,MCH-000754,53,Atlas Machine 754,Cutting Machine,2018-11-08,Operational
 755,MCH-000755,34,Atlas Machine 755,CNC Machine,2017-04-01,Operational
 756,MCH-000756,57,Atlas Machine 756,CNC Machine,2016-11-10,Operational
 757,MCH-000757,68,Atlas Machine 757,Press Machine,2018-06-04,Operational
@@ -760,7 +760,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 759,MCH-000759,70,Atlas Machine 759,Assembly Machine,2017-03-21,Operational
 760,MCH-000760,46,Atlas Machine 760,Press Machine,2017-11-27,Operational
 761,MCH-000761,86,Atlas Machine 761,Press Machine,2016-11-13,Operational
-762,MCH-000762,12,Atlas Machine 762,Cutting Machine,2016-01-08,Unknown
+762,MCH-000762,12,Atlas Machine 762,Cutting Machine,2016-01-08,Operational
 763,MCH-000763,7,Atlas Machine 763,Press Machine,2018-04-14,Operational
 764,MCH-000764,2,Atlas Machine 764,CNC Machine,2017-09-28,Operational
 765,MCH-000765,73,Atlas Machine 765,Assembly Machine,2016-03-10,Operational
@@ -777,7 +777,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 776,MCH-000776,32,Atlas Machine 776,Packaging Machine,2017-03-21,Inactive
 777,MCH-000777,3,Atlas Machine 777,Press Machine,2018-12-12,Operational
 778,MCH-000778,2,Atlas Machine 778,Assembly Machine,2016-10-07,Operational
-779,MCH-000779,49,Atlas Machine 779,Cutting Machine,2016-04-29,Operational
+779,MCH-000779,49, Atlas Machine 779 ,Cutting Machine,2016-04-29,Operational
 780,MCH-000780,42,Atlas Machine 780,Press Machine,2016-12-12,Operational
 781,MCH-000781,80,Atlas Machine 781,CNC Machine,2018-04-12,Operational
 782,MCH-000782,90,Atlas Machine 782,Assembly Machine,2016-05-22,Operational
@@ -803,7 +803,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 802,MCH-000802,89,Atlas Machine 802,CNC Machine,2017-10-31,Operational
 803,MCH-000803,8,Atlas Machine 803,CNC Machine,2016-06-26,Operational
 804,MCH-000804,67,Atlas Machine 804,CNC Machine,2017-10-25,Operational
-805,MCH-000805,1,Atlas Machine 805,Packaging Machine,2017-09-17,Operational
+805,MCH-000805,1,Atlas Machine 805,Packaging Machine,2017-09-17,Unknown
 806,MCH-000806,25,Atlas Machine 806,Assembly Machine,2017-11-04,Operational
 807,MCH-000807,30,Atlas Machine 807,Cutting Machine,2016-01-09,Operational
 808,MCH-000808,84,Atlas Machine 808,Press Machine,2017-04-07,Operational
@@ -868,7 +868,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 867,MCH-000867,91,Atlas Machine 867,Packaging Machine,2016-07-24,Operational
 868,MCH-000868,50,Atlas Machine 868,CNC Machine,2017-09-13,Operational
 869,MCH-000869,82,Atlas Machine 869,CNC Machine,2017-04-21,Operational
-870,MCH-000870,39,Atlas Machine 870,Packaging Machine,2016-10-26,Operational
+870,MCH-000870,39,Atlas Machine 870,Packaging Machine,2016-10-26,Unknown
 871,MCH-000871,60,Atlas Machine 871,CNC Machine,2018-03-19,Operational
 872,MCH-000872,65,Atlas Machine 872,Press Machine,2017-01-11,Operational
 873,MCH-000873,57,Atlas Machine 873,Press Machine,2018-12-16,Maintenance
@@ -881,7 +881,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 880,MCH-000880,21,Atlas Machine 880,Cutting Machine,2018-06-17,Operational
 881,MCH-000881,87,Atlas Machine 881,Packaging Machine,2017-10-25,Operational
 882,MCH-000882,50,Atlas Machine 882,Cutting Machine,2016-10-28,Operational
-883,MCH-000883,67,Atlas Machine 883,CNC Machine,2016-07-14,Unknown
+883,MCH-000883,67,Atlas Machine 883,CNC Machine,2016-07-14,Maintenance
 884,MCH-000884,67,Atlas Machine 884,Assembly Machine,2016-04-09,Operational
 885,MCH-000885,99,Atlas Machine 885,Packaging Machine,2017-05-03,Operational
 886,MCH-000886,95,Atlas Machine 886,Press Machine,2017-12-31,Operational
@@ -893,7 +893,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 892,MCH-000892,61,Atlas Machine 892,Assembly Machine,2017-09-28,Operational
 893,MCH-000893,41,Atlas Machine 893,Press Machine,2016-07-05,Operational
 894,MCH-000894,25,Atlas Machine 894,Packaging Machine,2017-08-07,Operational
-895,MCH-000895,73,Atlas Machine 895,Assembly Machine,2017-12-08,Unknown
+895,MCH-000895,73,Atlas Machine 895,Assembly Machine,2017-12-08,Operational
 896,MCH-000896,54,Atlas Machine 896,Press Machine,2018-12-13,Operational
 897,MCH-000897,28,Atlas Machine 897,Packaging Machine,2017-04-22,Operational
 898,MCH-000898,45,Atlas Machine 898,Assembly Machine,2018-11-18,Operational
@@ -1042,10 +1042,10 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1041,MCH-001041,100,Atlas Machine 1041,Packaging Machine,2018-09-21,Operational
 1042,MCH-001042,13,Atlas Machine 1042,Cutting Machine,2016-03-18,Operational
 1043,MCH-001043,32,Atlas Machine 1043,CNC Machine,2017-06-14,Operational
-1044,MCH-001044,33,Atlas Machine 1044,Press Machine,2016-09-28,Unknown
+1044,MCH-001044,33,Atlas Machine 1044,Press Machine,2016-09-28,Operational
 1045,MCH-001045,3,Atlas Machine 1045,Press Machine,2017-06-08,Operational
 1046,MCH-001046,34,Atlas Machine 1046,Assembly Machine,2017-08-23,Maintenance
-1047,MCH-001047,62,Atlas Machine 1047,CNC Machine,2018-08-16,Unknown
+1047,MCH-001047,62,Atlas Machine 1047,CNC Machine,2018-08-16,Operational
 1048,MCH-001048,48,Atlas Machine 1048,Press Machine,2017-12-14,Maintenance
 1049,MCH-001049,59,Atlas Machine 1049,Cutting Machine,2016-11-09,Operational
 1050,MCH-001050,2,Atlas Machine 1050,Cutting Machine,2018-03-12,Operational
@@ -1094,7 +1094,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1093,MCH-001093,61,Atlas Machine 1093,Press Machine,2017-03-18,Operational
 1094,MCH-001094,63,Atlas Machine 1094,Press Machine,2017-03-24,Operational
 1095,MCH-001095,79,Atlas Machine 1095,Assembly Machine,2018-04-02,Operational
-1096,MCH-001096,12,Atlas Machine 1096,Press Machine,2017-06-17,Unknown
+1096,MCH-001096,12,Atlas Machine 1096,Press Machine,2017-06-17,Maintenance
 1097,MCH-001097,5,Atlas Machine 1097,CNC Machine,2018-04-11,Operational
 1098,MCH-001098,96,Atlas Machine 1098,Press Machine,2016-08-23,Inactive
 1099,MCH-001099,33,Atlas Machine 1099,CNC Machine,2016-11-13,Operational
@@ -1160,7 +1160,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1159,MCH-001159,13,Atlas Machine 1159,Packaging Machine,2017-03-05,Operational
 1160,MCH-001160,69,Atlas Machine 1160,Press Machine,2017-07-17,Operational
 1161,MCH-001161,15,Atlas Machine 1161,Assembly Machine,2016-04-26,Inactive
-1162,MCH-001162,14,Atlas Machine 1162,Packaging Machine,2017-02-03,Unknown
+1162,MCH-001162,14,Atlas Machine 1162,Packaging Machine,2017-02-03,Operational
 1163,MCH-001163,42,Atlas Machine 1163,Packaging Machine,2016-09-04,Maintenance
 1164,MCH-001164,65,Atlas Machine 1164,CNC Machine,2018-09-25,Operational
 1165,MCH-001165,84,Atlas Machine 1165,Press Machine,2017-02-20,Operational
@@ -1187,7 +1187,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1186,MCH-001186,58,Atlas Machine 1186,Press Machine,2017-07-18,Operational
 1187,MCH-001187,25,Atlas Machine 1187,Assembly Machine,2018-03-08,Operational
 1188,MCH-001188,47,Atlas Machine 1188,Press Machine,2016-03-27,Operational
-1189,MCH-001189,97,Atlas Machine 1189,CNC Machine,2017-05-16,Operational
+1189,MCH-001189,97,Atlas Machine 1189,CNC Machine,2017-05-16,Unknown
 1190,MCH-001190,70,Atlas Machine 1190,Cutting Machine,2018-08-17,Operational
 1191,MCH-001191,34,Atlas Machine 1191,Press Machine,2017-06-19,Inactive
 1192,MCH-001192,68,Atlas Machine 1192,CNC Machine,2018-07-07,Operational
@@ -1195,7 +1195,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1194,MCH-001194,100,Atlas Machine 1194,Press Machine,2016-04-26,Operational
 1195,MCH-001195,33,Atlas Machine 1195,Press Machine,2018-03-01,Operational
 1196,MCH-001196,59,Atlas Machine 1196,Assembly Machine,2018-03-05,Operational
-1197,MCH-001197,26,Atlas Machine 1197,Press Machine,2017-07-14,Unknown
+1197,MCH-001197,26,Atlas Machine 1197,Press Machine,2017-07-14,Operational
 1198,MCH-001198,93,Atlas Machine 1198,Packaging Machine,2018-05-20,Operational
 1199,MCH-001199,63,Atlas Machine 1199,Assembly Machine,2017-06-16,Operational
 1200,MCH-001200,41,Atlas Machine 1200,Press Machine,2018-07-18,Operational
@@ -1294,19 +1294,19 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1293,MCH-001293,68,Atlas Machine 1293,Packaging Machine,2017-12-22,Operational
 1294,MCH-001294,45,Atlas Machine 1294,Packaging Machine,2016-11-22,Operational
 1295,MCH-001295,38,Atlas Machine 1295,Press Machine,2017-01-15,Operational
-1296,MCH-001296,19,Atlas Machine 1296,CNC Machine,2016-03-17,Operational
+1296,MCH-001296,19, Atlas Machine 1296 ,CNC Machine,2016-03-17,Operational
 1297,MCH-001297,51,Atlas Machine 1297,CNC Machine,2018-09-13,Operational
 1298,MCH-001298,80,Atlas Machine 1298,Packaging Machine,2017-10-10,Operational
 1299,MCH-001299,97,Atlas Machine 1299,Assembly Machine,2017-08-18,Operational
 1300,MCH-001300,68,Atlas Machine 1300,Press Machine,2017-09-26,Operational
 1301,MCH-001301,75,Atlas Machine 1301,Cutting Machine,2017-05-08,Operational
 1302,MCH-001302,2,Atlas Machine 1302,CNC Machine,2016-05-18,Operational
-1303,MCH-001303,77,Atlas Machine 1303,Cutting Machine,2017-09-08,Operational
+1303,MCH-001303,77, Atlas Machine 1303 ,Cutting Machine,2017-09-08,Operational
 1304,MCH-001304,72,Atlas Machine 1304,Press Machine,2017-06-17,Operational
 1305,MCH-001305,17,Atlas Machine 1305,Cutting Machine,2018-02-17,Operational
 1306,MCH-001306,96,Atlas Machine 1306,Cutting Machine,2016-10-28,Operational
 1307,MCH-001307,60,Atlas Machine 1307,Cutting Machine,2018-07-06,Operational
-1308,MCH-001308,72,Atlas Machine 1308,CNC Machine,2017-11-24,Maintenance
+1308,MCH-001308,72,Atlas Machine 1308,CNC Machine,2017-11-24,Unknown
 1309,MCH-001309,93,Atlas Machine 1309,Press Machine,2018-01-26,Maintenance
 1310,MCH-001310,1,Atlas Machine 1310,Cutting Machine,2017-11-27,Maintenance
 1311,MCH-001311,25,Atlas Machine 1311,CNC Machine,2018-11-19,Operational
@@ -1340,7 +1340,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1339,MCH-001339,56,Atlas Machine 1339,Cutting Machine,2016-02-07,Operational
 1340,MCH-001340,70,Atlas Machine 1340,Packaging Machine,2017-11-06,Operational
 1341,MCH-001341,30,Atlas Machine 1341,CNC Machine,2016-01-11,Operational
-1342,MCH-001342,8,Atlas Machine 1342,Assembly Machine,2017-11-17,Unknown
+1342,MCH-001342,8,Atlas Machine 1342,Assembly Machine,2017-11-17,Maintenance
 1343,MCH-001343,2,Atlas Machine 1343,Press Machine,2018-11-03,Operational
 1344,MCH-001344,7,Atlas Machine 1344,Cutting Machine,2017-05-19,Operational
 1345,MCH-001345,36,Atlas Machine 1345,Cutting Machine,2018-10-03,Operational
@@ -1420,7 +1420,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1419,MCH-001419,63,Atlas Machine 1419,Cutting Machine,2018-02-05,Operational
 1420,MCH-001420,31,Atlas Machine 1420,CNC Machine,2017-04-10,Maintenance
 1421,MCH-001421,53,Atlas Machine 1421,Packaging Machine,2016-02-17,Operational
-1422,MCH-001422,73,Atlas Machine 1422,Cutting Machine,2016-12-12,Inactive
+1422,MCH-001422,73,Atlas Machine 1422,Cutting Machine,2016-12-12,Unknown
 1423,MCH-001423,97,Atlas Machine 1423,CNC Machine,2018-10-30,Operational
 1424,MCH-001424,79,Atlas Machine 1424,Press Machine,2018-11-09,Operational
 1425,MCH-001425,68,Atlas Machine 1425,Press Machine,2016-10-17,Operational
@@ -1436,7 +1436,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1435,MCH-001435,69,Atlas Machine 1435,CNC Machine,2016-10-18,Operational
 1436,MCH-001436,21,Atlas Machine 1436,Packaging Machine,2018-10-24,Operational
 1437,MCH-001437,58,Atlas Machine 1437,Packaging Machine,2018-03-10,Operational
-1438,MCH-001438,31,Atlas Machine 1438,Packaging Machine,2018-08-15,Inactive
+1438,MCH-001438,31,Atlas Machine 1438,Packaging Machine,2018-08-15,Unknown
 1439,MCH-001439,88,Atlas Machine 1439,Assembly Machine,2017-08-08,Operational
 1440,MCH-001440,62,Atlas Machine 1440,Press Machine,2017-08-19,Operational
 1441,MCH-001441,31,Atlas Machine 1441,CNC Machine,2016-12-19,Operational
@@ -1452,7 +1452,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1451,MCH-001451,53,Atlas Machine 1451,Cutting Machine,2016-03-07,Operational
 1452,MCH-001452,19,Atlas Machine 1452,Assembly Machine,2017-04-09,Operational
 1453,MCH-001453,87,Atlas Machine 1453,Cutting Machine,2017-05-05,Operational
-1454,MCH-001454,1,Atlas Machine 1454,Assembly Machine,2016-01-22,Operational
+1454,MCH-001454,1,Atlas Machine 1454,Assembly Machine,2016-01-22,Unknown
 1455,MCH-001455,42,Atlas Machine 1455,Assembly Machine,2016-03-15,Operational
 1456,MCH-001456,44,Atlas Machine 1456,CNC Machine,2016-06-19,Operational
 1457,MCH-001457,74,Atlas Machine 1457,Packaging Machine,2016-12-06,Operational
@@ -1480,7 +1480,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1479,MCH-001479,97,Atlas Machine 1479,Cutting Machine,2017-06-24,Maintenance
 1480,MCH-001480,19,Atlas Machine 1480,Cutting Machine,2017-11-08,Operational
 1481,MCH-001481,82,Atlas Machine 1481,Cutting Machine,2018-02-03,Maintenance
-1482,MCH-001482,24,Atlas Machine 1482,Assembly Machine,2018-05-06,Operational
+1482,MCH-001482,24,Atlas Machine 1482,Assembly Machine,2018-05-06,Unknown
 1483,MCH-001483,48,Atlas Machine 1483,CNC Machine,2018-01-20,Operational
 1484,MCH-001484,49,Atlas Machine 1484,Press Machine,2016-12-10,Operational
 1485,MCH-001485,20,Atlas Machine 1485,Press Machine,2016-10-30,Operational
@@ -1527,7 +1527,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1526,MCH-001526,41,Atlas Machine 1526,Packaging Machine,2016-05-27,Operational
 1527,MCH-001527,76,Atlas Machine 1527,Press Machine,2018-11-03,Maintenance
 1528,MCH-001528,77,Atlas Machine 1528,Cutting Machine,2016-11-29,Operational
-1529,MCH-001529,45,Atlas Machine 1529,Press Machine,2018-01-09,Operational
+1529,MCH-001529,45,Atlas Machine 1529,Press Machine,2018-01-09,Unknown
 1530,MCH-001530,48,Atlas Machine 1530,Packaging Machine,2016-02-02,Operational
 1531,MCH-001531,58,Atlas Machine 1531,Cutting Machine,2017-10-07,Operational
 1532,MCH-001532,58,Atlas Machine 1532,CNC Machine,2017-09-09,Operational
@@ -1559,9 +1559,9 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1558,MCH-001558,35,Atlas Machine 1558,Cutting Machine,2017-02-21,Operational
 1559,MCH-001559,10,Atlas Machine 1559,Cutting Machine,2017-09-25,Operational
 1560,MCH-001560,55,Atlas Machine 1560,Press Machine,2016-07-07,Operational
-1561,MCH-001561,17,Atlas Machine 1561,Packaging Machine,2016-04-10,Unknown
+1561,MCH-001561,17,Atlas Machine 1561,Packaging Machine,2016-04-10,Operational
 1562,MCH-001562,91,Atlas Machine 1562,Cutting Machine,2017-03-31,Operational
-1563,MCH-001563,86,Atlas Machine 1563,Assembly Machine,2017-11-01,Operational
+1563,MCH-001563,86,Atlas Machine 1563,Assembly Machine,2017-11-01,Unknown
 1564,MCH-001564,8,Atlas Machine 1564,Assembly Machine,2016-02-26,Operational
 1565,MCH-001565,38,Atlas Machine 1565,Press Machine,2016-05-13,Maintenance
 1566,MCH-001566,71,Atlas Machine 1566,CNC Machine,2016-06-04,Operational
@@ -1590,7 +1590,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1589,MCH-001589,23,Atlas Machine 1589,CNC Machine,2016-05-15,Operational
 1590,MCH-001590,97,Atlas Machine 1590,CNC Machine,2016-02-27,Operational
 1591,MCH-001591,94,Atlas Machine 1591,CNC Machine,2017-11-21,Operational
-1592,MCH-001592,17,Atlas Machine 1592,Press Machine,2016-09-01,Operational
+1592,MCH-001592,17,Atlas Machine 1592,Press Machine,2016-09-01,Unknown
 1593,MCH-001593,73,Atlas Machine 1593,Assembly Machine,2016-11-26,Operational
 1594,MCH-001594,77,Atlas Machine 1594,Assembly Machine,2017-04-24,Operational
 1595,MCH-001595,16,Atlas Machine 1595,Packaging Machine,2018-02-17,Operational
@@ -1604,7 +1604,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1603,MCH-001603,84,Atlas Machine 1603,CNC Machine,2016-10-24,Operational
 1604,MCH-001604,3,Atlas Machine 1604,Cutting Machine,2018-11-28,Operational
 1605,MCH-001605,58,Atlas Machine 1605,Press Machine,2017-03-12,Operational
-1606,MCH-001606,53,Atlas Machine 1606,Packaging Machine,2018-10-20,Unknown
+1606,MCH-001606,53,Atlas Machine 1606,Packaging Machine,2018-10-20,Maintenance
 1607,MCH-001607,99,Atlas Machine 1607,CNC Machine,2017-06-29,Operational
 1608,MCH-001608,79,Atlas Machine 1608,Press Machine,2018-10-31,Operational
 1609,MCH-001609,22,Atlas Machine 1609,Assembly Machine,2018-02-25,Maintenance
@@ -1656,7 +1656,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1655,MCH-001655,31,Atlas Machine 1655,Packaging Machine,2017-02-03,Inactive
 1656,MCH-001656,75,Atlas Machine 1656,Cutting Machine,2016-07-23,Operational
 1657,MCH-001657,26,Atlas Machine 1657,CNC Machine,2018-11-14,Operational
-1658,MCH-001658,60,Atlas Machine 1658,CNC Machine,2016-04-23,Unknown
+1658,MCH-001658,60,Atlas Machine 1658,CNC Machine,2016-04-23,Operational
 1659,MCH-001659,77,Atlas Machine 1659,Press Machine,2016-02-18,Maintenance
 1660,MCH-001660,67,Atlas Machine 1660,CNC Machine,2018-04-05,Operational
 1661,MCH-001661,91,Atlas Machine 1661,Packaging Machine,2016-01-28,Operational
@@ -1728,8 +1728,8 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1727,MCH-001727,26,Atlas Machine 1727,Press Machine,2017-03-13,Operational
 1728,MCH-001728,32,Atlas Machine 1728,Assembly Machine,2018-12-24,Operational
 1729,MCH-001729,21,Atlas Machine 1729,Assembly Machine,2017-10-27,Operational
-1730,MCH-001730,54,Atlas Machine 1730,CNC Machine,2016-01-01,Inactive
-1731,MCH-001731,4,Atlas Machine 1731,CNC Machine,2018-01-24,Unknown
+1730,MCH-001730,54, Atlas Machine 1730 ,CNC Machine,2016-01-01,Inactive
+1731,MCH-001731,4,Atlas Machine 1731,CNC Machine,2018-01-24,Inactive
 1732,MCH-001732,44,Atlas Machine 1732,Cutting Machine,2017-05-20,Operational
 1733,MCH-001733,22,Atlas Machine 1733,CNC Machine,2017-02-14,Operational
 1734,MCH-001734,6,Atlas Machine 1734,CNC Machine,2018-11-05,Operational
@@ -1775,7 +1775,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1774,MCH-001774,87,Atlas Machine 1774,Assembly Machine,2017-03-24,Inactive
 1775,MCH-001775,89,Atlas Machine 1775,CNC Machine,2017-04-12,Operational
 1776,MCH-001776,76,Atlas Machine 1776,Cutting Machine,2018-01-07,Operational
-1777,MCH-001777,100,Atlas Machine 1777,Assembly Machine,2016-07-20,Unknown
+1777,MCH-001777,100,Atlas Machine 1777,Assembly Machine,2016-07-20,Operational
 1778,MCH-001778,48,Atlas Machine 1778,Assembly Machine,2017-12-05,Operational
 1779,MCH-001779,46,Atlas Machine 1779,Cutting Machine,2018-08-28,Operational
 1780,MCH-001780,30,Atlas Machine 1780,CNC Machine,2018-04-22,Operational
@@ -1814,7 +1814,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1813,MCH-001813,74,Atlas Machine 1813,Press Machine,2018-06-13,Operational
 1814,MCH-001814,100,Atlas Machine 1814,Packaging Machine,2016-06-12,Operational
 1815,MCH-001815,93,Atlas Machine 1815,Assembly Machine,2018-03-09,Operational
-1816,MCH-001816,8,Atlas Machine 1816,Packaging Machine,2016-07-24,Operational
+1816,MCH-001816,8, Atlas Machine 1816 ,Packaging Machine,2016-07-24,Operational
 1817,MCH-001817,33,Atlas Machine 1817,Press Machine,2018-01-19,Operational
 1818,MCH-001818,23,Atlas Machine 1818,Cutting Machine,2017-04-15,Operational
 1819,MCH-001819,47,Atlas Machine 1819,Press Machine,2017-12-04,Operational
@@ -1826,7 +1826,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1825,MCH-001825,6,Atlas Machine 1825,Press Machine,2016-10-26,Operational
 1826,MCH-001826,13,Atlas Machine 1826,Assembly Machine,2018-09-06,Operational
 1827,MCH-001827,67,Atlas Machine 1827,CNC Machine,2016-02-25,Operational
-1828,MCH-001828,19,Atlas Machine 1828,Press Machine,2016-10-30,Operational
+1828,MCH-001828,19, Atlas Machine 1828 ,Press Machine,2016-10-30,Operational
 1829,MCH-001829,66,Atlas Machine 1829,CNC Machine,2016-11-07,Operational
 1830,MCH-001830,44,Atlas Machine 1830,CNC Machine,2018-08-15,Operational
 1831,MCH-001831,51,Atlas Machine 1831,Packaging Machine,2016-01-01,Maintenance
@@ -1840,7 +1840,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1839,MCH-001839,56,Atlas Machine 1839,Packaging Machine,2018-08-11,Operational
 1840,MCH-001840,68,Atlas Machine 1840,Assembly Machine,2018-05-22,Operational
 1841,MCH-001841,55,Atlas Machine 1841,Assembly Machine,2018-03-15,Operational
-1842,MCH-001842,94,Atlas Machine 1842,Press Machine,2018-12-03,Operational
+1842,MCH-001842,94, Atlas Machine 1842 ,Press Machine,2018-12-03,Operational
 1843,MCH-001843,36,Atlas Machine 1843,Packaging Machine,2018-05-10,Operational
 1844,MCH-001844,88,Atlas Machine 1844,Packaging Machine,2016-03-03,Operational
 1845,MCH-001845,22,Atlas Machine 1845,Assembly Machine,2018-03-17,Operational
@@ -1871,7 +1871,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1870,MCH-001870,51,Atlas Machine 1870,Press Machine,2016-11-09,Operational
 1871,MCH-001871,17,Atlas Machine 1871,CNC Machine,2016-02-09,Operational
 1872,MCH-001872,56,Atlas Machine 1872,Cutting Machine,2018-07-24,Operational
-1873,MCH-001873,11,Atlas Machine 1873,Press Machine,2018-04-20,Operational
+1873,MCH-001873,11,Atlas Machine 1873,Press Machine,2018-04-20,Unknown
 1874,MCH-001874,69,Atlas Machine 1874,Packaging Machine,2016-06-11,Operational
 1875,MCH-001875,38,Atlas Machine 1875,CNC Machine,2018-08-16,Maintenance
 1876,MCH-001876,62,Atlas Machine 1876,Press Machine,2018-07-23,Operational
@@ -1906,7 +1906,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1905,MCH-001905,9,Atlas Machine 1905,Assembly Machine,2016-07-02,Operational
 1906,MCH-001906,15,Atlas Machine 1906,Cutting Machine,2018-04-04,Operational
 1907,MCH-001907,29,Atlas Machine 1907,Cutting Machine,2016-03-21,Operational
-1908,MCH-001908,96,Atlas Machine 1908,Cutting Machine,2016-07-10,Operational
+1908,MCH-001908,96, Atlas Machine 1908 ,Cutting Machine,2016-07-10,Operational
 1909,MCH-001909,43,Atlas Machine 1909,Packaging Machine,2017-03-02,Maintenance
 1910,MCH-001910,53,Atlas Machine 1910,Packaging Machine,2016-06-19,Operational
 1911,MCH-001911,60,Atlas Machine 1911,Packaging Machine,2017-06-24,Operational
@@ -1921,7 +1921,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1920,MCH-001920,93,Atlas Machine 1920,Press Machine,2017-07-26,Operational
 1921,MCH-001921,93,Atlas Machine 1921,Packaging Machine,2017-08-13,Operational
 1922,MCH-001922,61,Atlas Machine 1922,Press Machine,2016-07-06,Operational
-1923,MCH-001923,2,Atlas Machine 1923,Packaging Machine,2018-01-15,Operational
+1923,MCH-001923,2, Atlas Machine 1923 ,Packaging Machine,2018-01-15,Operational
 1924,MCH-001924,44,Atlas Machine 1924,Press Machine,2016-11-27,Operational
 1925,MCH-001925,65,Atlas Machine 1925,CNC Machine,2018-03-06,Operational
 1926,MCH-001926,60,Atlas Machine 1926,Cutting Machine,2017-02-25,Operational
@@ -1942,7 +1942,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1941,MCH-001941,75,Atlas Machine 1941,Packaging Machine,2016-08-25,Operational
 1942,MCH-001942,54,Atlas Machine 1942,CNC Machine,2018-06-30,Operational
 1943,MCH-001943,14,Atlas Machine 1943,Cutting Machine,2017-08-03,Operational
-1944,MCH-001944,78,Atlas Machine 1944,Packaging Machine,2017-11-07,Maintenance
+1944,MCH-001944,78, Atlas Machine 1944 ,Packaging Machine,2017-11-07,Maintenance
 1945,MCH-001945,33,Atlas Machine 1945,Cutting Machine,2017-05-25,Operational
 1946,MCH-001946,47,Atlas Machine 1946,Assembly Machine,2016-03-05,Operational
 1947,MCH-001947,45,Atlas Machine 1947,Assembly Machine,2017-06-10,Operational
@@ -1964,7 +1964,7 @@ machine_key,machine_id,location_key,machine_name,machine_type,installation_date,
 1963,MCH-001963,20,Atlas Machine 1963,Assembly Machine,2016-05-25,Operational
 1964,MCH-001964,58,Atlas Machine 1964,Cutting Machine,2017-10-17,Maintenance
 1965,MCH-001965,11,Atlas Machine 1965,Assembly Machine,2018-09-12,Operational
-1966,MCH-001966,89,Atlas Machine 1966,CNC Machine,2018-03-23,Operational
+1966,MCH-001966,89, Atlas Machine 1966 ,CNC Machine,2018-03-23,Operational
 1967,MCH-001967,74,Atlas Machine 1967,Cutting Machine,2018-08-11,Maintenance
 1968,MCH-001968,46,Atlas Machine 1968,CNC Machine,2018-12-24,Operational
 1969,MCH-001969,13,Atlas Machine 1969,Packaging Machine,2016-08-20,Operational

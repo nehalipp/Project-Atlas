@@ -2,41 +2,15 @@
 Project Atlas
 Phase 3 - Synthetic Data Generation
 
-Generates the synthetic raw operational data for the
-17 approved Atlas warehouse datasets.
+Generates 17 synthetic datasets for Project Atlas.
 
-All data is synthetic.
-Random seed = 42.
-Date range = 2019-01-01 to 2025-12-31.
+The raw datasets intentionally contain a small number of
+realistic data-quality issues.
 
-Phase 3 intentionally introduces a small, controlled number
-of realistic data-quality issues into the raw datasets.
+Phase 4 will detect and remediate those issues.
 
-Phase 4 will profile, validate, remediate and validate the
-trusted datasets.
-
-Approved datasets:
-
-Dimensions:
-    dim_date
-    dim_account
-    dim_customer
-    dim_product
-    dim_supplier
-    dim_location
-    dim_employee
-    dim_machine
-
-Facts:
-    fact_sales
-    fact_production
-    fact_maintenance
-    fact_financial_transaction
-    fact_budget
-    fact_energy
-    fact_emissions
-    fact_waste
-    fact_inventory
+Random seed: 42
+Date range: 2019-01-01 to 2025-12-31
 """
 
 from pathlib import Path
@@ -56,21 +30,13 @@ SEED = 42
 START_DATE = "2019-01-01"
 END_DATE = "2025-12-31"
 
-# Attribute dates are generated before the operational period.
-# This prevents normal operational activity from occurring
-# before an employee hire date or machine installation date.
 ATTRIBUTE_START_DATE = "2016-01-01"
 ATTRIBUTE_END_DATE = "2018-12-31"
 
-# Always save inside:
-# 03_Data_Generation/data/raw/
 SCRIPT_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = SCRIPT_DIR / "data" / "raw"
 
-OUTPUT_DIR.mkdir(
-    parents=True,
-    exist_ok=True
-)
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 random.seed(SEED)
 np.random.seed(SEED)
@@ -253,81 +219,53 @@ DISPOSAL_METHODS = [
 # ============================================================
 
 def make_ids(prefix, number):
-    """Create business identifiers."""
-
-    return [
-        f"{prefix}-{i:06d}"
-        for i in range(1, number + 1)
-    ]
+    """Create business IDs."""
+    return [f"{prefix}-{i:06d}" for i in range(1, number + 1)]
 
 
 def random_dates(number):
     """Create random operational dates."""
-
-    dates = pd.date_range(
-        START_DATE,
-        END_DATE
-    )
-
-    return rng.choice(
-        dates,
-        size=number
-    )
+    dates = pd.date_range(START_DATE, END_DATE)
+    return rng.choice(dates, number)
 
 
 def random_attribute_dates(number):
     """Create dates before the operational period."""
-
     dates = pd.date_range(
         ATTRIBUTE_START_DATE,
         ATTRIBUTE_END_DATE
     )
-
-    return rng.choice(
-        dates,
-        size=number
-    )
+    return rng.choice(dates, number)
 
 
-def random_indices(dataframe, percentage):
-    """
-    Return deterministic random row indexes.
-
-    The percentage is intentionally small because the raw data
-    should remain mostly realistic.
-    """
-
-    count = max(
-        1,
-        int(len(dataframe) * percentage)
-    )
-
+def random_rows(dataframe, number):
+    """Return random row indexes."""
     return rng.choice(
         dataframe.index,
-        size=count,
+        size=number,
         replace=False
     )
 
 
-def save_data(dataframe, table_name):
-    """Save a dataframe as a CSV file."""
-
+def save_data(dataframe, name):
+    """Save dataframe as CSV."""
     dataframe.to_csv(
-        OUTPUT_DIR / f"{table_name}.csv",
+        OUTPUT_DIR / f"{name}.csv",
         index=False
     )
-
-    print(
-        f"{table_name}: "
-        f"{len(dataframe):,} rows"
-    )
+    print(f"{name}: {len(dataframe):,} rows")
 
 
 # ============================================================
-# DIM_DATE
+# DIMENSION TABLES
 # ============================================================
 
 print("\nGenerating dimensions...")
+
+
+# -------------------------
+# dim_date
+# -------------------------
 
 dates = pd.date_range(
     START_DATE,
@@ -347,35 +285,17 @@ dim_date = pd.DataFrame({
 })
 
 
-# ============================================================
-# DIM_ACCOUNT
-# ============================================================
+# -------------------------
+# dim_account
+# -------------------------
 
 dim_account = pd.DataFrame({
-    "account_key": range(
-        1,
-        N_ACCOUNT + 1
-    ),
-    "account_id": make_ids(
-        "ACC",
-        N_ACCOUNT
-    ),
-    "account_name": [
-        fake.company()
-        for _ in range(N_ACCOUNT)
-    ],
-    "account_type": rng.choice(
-        ACCOUNT_TYPES,
-        N_ACCOUNT
-    ),
-    "industry": rng.choice(
-        INDUSTRIES,
-        N_ACCOUNT
-    ),
-    "country": rng.choice(
-        COUNTRIES,
-        N_ACCOUNT
-    ),
+    "account_key": range(1, N_ACCOUNT + 1),
+    "account_id": make_ids("ACC", N_ACCOUNT),
+    "account_name": [fake.company() for _ in range(N_ACCOUNT)],
+    "account_type": rng.choice(ACCOUNT_TYPES, N_ACCOUNT),
+    "industry": rng.choice(INDUSTRIES, N_ACCOUNT),
+    "country": rng.choice(COUNTRIES, N_ACCOUNT),
     "status": rng.choice(
         ["Active", "Inactive"],
         N_ACCOUNT,
@@ -384,19 +304,13 @@ dim_account = pd.DataFrame({
 })
 
 
-# ============================================================
-# DIM_CUSTOMER
-# ============================================================
+# -------------------------
+# dim_customer
+# -------------------------
 
 dim_customer = pd.DataFrame({
-    "customer_key": range(
-        1,
-        N_CUSTOMER + 1
-    ),
-    "customer_id": make_ids(
-        "CUS",
-        N_CUSTOMER
-    ),
+    "customer_key": range(1, N_CUSTOMER + 1),
+    "customer_id": make_ids("CUS", N_CUSTOMER),
     "account_key": rng.choice(
         dim_account["account_key"],
         N_CUSTOMER
@@ -425,19 +339,13 @@ dim_customer = pd.DataFrame({
 })
 
 
-# ============================================================
-# DIM_SUPPLIER
-# ============================================================
+# -------------------------
+# dim_supplier
+# -------------------------
 
 dim_supplier = pd.DataFrame({
-    "supplier_key": range(
-        1,
-        N_SUPPLIER + 1
-    ),
-    "supplier_id": make_ids(
-        "SUP",
-        N_SUPPLIER
-    ),
+    "supplier_key": range(1, N_SUPPLIER + 1),
+    "supplier_id": make_ids("SUP", N_SUPPLIER),
     "supplier_name": [
         fake.company()
         for _ in range(N_SUPPLIER)
@@ -458,47 +366,30 @@ dim_supplier = pd.DataFrame({
 })
 
 
-# ============================================================
-# DIM_PRODUCT
-# ============================================================
+# -------------------------
+# dim_product
+# -------------------------
 
 unit_cost = np.round(
-    rng.uniform(
-        10,
-        500,
-        N_PRODUCT
-    ),
+    rng.uniform(10, 500, N_PRODUCT),
     2
 )
 
 unit_price = np.round(
-    unit_cost * rng.uniform(
-        1.25,
-        2.50,
-        N_PRODUCT
-    ),
+    unit_cost * rng.uniform(1.25, 2.50, N_PRODUCT),
     2
 )
 
 dim_product = pd.DataFrame({
-    "product_key": range(
-        1,
-        N_PRODUCT + 1
-    ),
-    "product_id": make_ids(
-        "PROD",
-        N_PRODUCT
-    ),
+    "product_key": range(1, N_PRODUCT + 1),
+    "product_id": make_ids("PROD", N_PRODUCT),
     "supplier_key": rng.choice(
         dim_supplier["supplier_key"],
         N_PRODUCT
     ),
     "product_name": [
         f"Atlas Product {i}"
-        for i in range(
-            1,
-            N_PRODUCT + 1
-        )
+        for i in range(1, N_PRODUCT + 1)
     ],
     "category": rng.choice(
         PRODUCT_CATEGORIES,
@@ -509,12 +400,7 @@ dim_product = pd.DataFrame({
         N_PRODUCT
     ),
     "unit_of_measure": rng.choice(
-        [
-            "Each",
-            "Kg",
-            "Liter",
-            "Meter"
-        ],
+        ["Each", "Kg", "Liter", "Meter"],
         N_PRODUCT
     ),
     "unit_cost": unit_cost,
@@ -527,34 +413,22 @@ dim_product = pd.DataFrame({
 })
 
 
-# ============================================================
-# DIM_LOCATION
-# ============================================================
+# -------------------------
+# dim_location
+# -------------------------
 
 dim_location = pd.DataFrame({
-    "location_key": range(
-        1,
-        N_LOCATION + 1
-    ),
-    "location_id": make_ids(
-        "LOC",
-        N_LOCATION
-    ),
+    "location_key": range(1, N_LOCATION + 1),
+    "location_id": make_ids("LOC", N_LOCATION),
     "location_name": [
         f"Atlas Facility {i}"
-        for i in range(
-            1,
-            N_LOCATION + 1
-        )
+        for i in range(1, N_LOCATION + 1)
     ],
     "location_type": rng.choice(
         LOCATION_TYPES,
         N_LOCATION
     ),
-    "city": [
-        fake.city()
-        for _ in range(N_LOCATION)
-    ],
+    "city": [fake.city() for _ in range(N_LOCATION)],
     "state_region": [
         fake.state()
         for _ in range(N_LOCATION)
@@ -571,19 +445,13 @@ dim_location = pd.DataFrame({
 })
 
 
-# ============================================================
-# DIM_EMPLOYEE
-# ============================================================
+# -------------------------
+# dim_employee
+# -------------------------
 
 dim_employee = pd.DataFrame({
-    "employee_key": range(
-        1,
-        N_EMPLOYEE + 1
-    ),
-    "employee_id": make_ids(
-        "EMP",
-        N_EMPLOYEE
-    ),
+    "employee_key": range(1, N_EMPLOYEE + 1),
+    "employee_id": make_ids("EMP", N_EMPLOYEE),
     "location_key": rng.choice(
         dim_location["location_key"],
         N_EMPLOYEE
@@ -600,9 +468,7 @@ dim_employee = pd.DataFrame({
         EMPLOYEE_ROLES,
         N_EMPLOYEE
     ),
-    "hire_date": random_attribute_dates(
-        N_EMPLOYEE
-    ),
+    "hire_date": random_attribute_dates(N_EMPLOYEE),
     "status": rng.choice(
         ["Active", "Inactive"],
         N_EMPLOYEE,
@@ -611,29 +477,20 @@ dim_employee = pd.DataFrame({
 })
 
 
-# ============================================================
-# DIM_MACHINE
-# ============================================================
+# -------------------------
+# dim_machine
+# -------------------------
 
 dim_machine = pd.DataFrame({
-    "machine_key": range(
-        1,
-        N_MACHINE + 1
-    ),
-    "machine_id": make_ids(
-        "MCH",
-        N_MACHINE
-    ),
+    "machine_key": range(1, N_MACHINE + 1),
+    "machine_id": make_ids("MCH", N_MACHINE),
     "location_key": rng.choice(
         dim_location["location_key"],
         N_MACHINE
     ),
     "machine_name": [
         f"Atlas Machine {i}"
-        for i in range(
-            1,
-            N_MACHINE + 1
-        )
+        for i in range(1, N_MACHINE + 1)
     ],
     "machine_type": rng.choice(
         MACHINE_TYPES,
@@ -643,11 +500,7 @@ dim_machine = pd.DataFrame({
         N_MACHINE
     ),
     "status": rng.choice(
-        [
-            "Operational",
-            "Maintenance",
-            "Inactive"
-        ],
+        ["Operational", "Maintenance", "Inactive"],
         N_MACHINE,
         p=[0.85, 0.10, 0.05]
     )
@@ -674,10 +527,15 @@ machine_locations = dict(
 
 
 # ============================================================
-# FACT_SALES
+# FACT TABLES
 # ============================================================
 
 print("\nGenerating facts...")
+
+
+# -------------------------
+# fact_sales
+# -------------------------
 
 sales_dates = pd.to_datetime(
     random_dates(N_SALES)
@@ -699,36 +557,22 @@ sales_unit_price = np.array([
     for key in sales_product_keys
 ])
 
-sales_discount = np.round(
+discount = np.round(
     sales_quantity
     * sales_unit_price
-    * rng.uniform(
-        0,
-        0.15,
-        N_SALES
-    ),
+    * rng.uniform(0, 0.15, N_SALES),
     2
 )
 
-sales_revenue = np.round(
-    sales_quantity
-    * sales_unit_price
-    - sales_discount,
+revenue = np.round(
+    sales_quantity * sales_unit_price - discount,
     2
 )
 
 fact_sales = pd.DataFrame({
-    "sales_key": range(
-        1,
-        N_SALES + 1
-    ),
-    "transaction_id": make_ids(
-        "SAL",
-        N_SALES
-    ),
-    "date_key": sales_dates.strftime(
-        "%Y%m%d"
-    ).astype(int),
+    "sales_key": range(1, N_SALES + 1),
+    "transaction_id": make_ids("SAL", N_SALES),
+    "date_key": sales_dates.strftime("%Y%m%d").astype(int),
     "customer_key": rng.choice(
         dim_customer["customer_key"],
         N_SALES
@@ -740,14 +584,14 @@ fact_sales = pd.DataFrame({
     ),
     "quantity": sales_quantity,
     "unit_price": sales_unit_price,
-    "discount_amount": sales_discount,
-    "revenue": sales_revenue
+    "discount_amount": discount,
+    "revenue": revenue
 })
 
 
-# ============================================================
-# FACT_PRODUCTION
-# ============================================================
+# -------------------------
+# fact_production
+# -------------------------
 
 production_machine_keys = rng.choice(
     dim_machine["machine_key"],
@@ -765,24 +609,25 @@ planned_quantity = rng.integers(
     N_PRODUCTION
 )
 
+# VALID BASELINE:
+# Produced quantity cannot exceed planned quantity.
+
 produced_quantity = np.round(
     planned_quantity
-    * rng.uniform(
-        0.80,
-        1.10,
-        N_PRODUCTION
-    )
+    * rng.uniform(0.80, 1.00, N_PRODUCTION)
 ).astype(int)
 
+# VALID BASELINE:
+# Defects cannot exceed produced quantity.
+
+defect_quantity = np.array([
+    rng.integers(0, produced + 1)
+    for produced in produced_quantity
+])
+
 fact_production = pd.DataFrame({
-    "production_key": range(
-        1,
-        N_PRODUCTION + 1
-    ),
-    "production_id": make_ids(
-        "PRD",
-        N_PRODUCTION
-    ),
+    "production_key": range(1, N_PRODUCTION + 1),
+    "production_id": make_ids("PRD", N_PRODUCTION),
     "date_key": pd.to_datetime(
         random_dates(N_PRODUCTION)
     ).strftime("%Y%m%d").astype(int),
@@ -798,25 +643,17 @@ fact_production = pd.DataFrame({
     ),
     "planned_quantity": planned_quantity,
     "produced_quantity": produced_quantity,
-    "defect_quantity": rng.integers(
-        0,
-        21,
-        N_PRODUCTION
-    ),
+    "defect_quantity": defect_quantity,
     "production_hours": np.round(
-        rng.uniform(
-            1,
-            12,
-            N_PRODUCTION
-        ),
+        rng.uniform(1, 12, N_PRODUCTION),
         2
     )
 })
 
 
-# ============================================================
-# FACT_MAINTENANCE
-# ============================================================
+# -------------------------
+# fact_maintenance
+# -------------------------
 
 maintenance_machine_keys = rng.choice(
     dim_machine["machine_key"],
@@ -829,14 +666,8 @@ maintenance_location_keys = [
 ]
 
 fact_maintenance = pd.DataFrame({
-    "maintenance_key": range(
-        1,
-        N_MAINTENANCE + 1
-    ),
-    "maintenance_id": make_ids(
-        "MNT",
-        N_MAINTENANCE
-    ),
+    "maintenance_key": range(1, N_MAINTENANCE + 1),
+    "maintenance_id": make_ids("MNT", N_MAINTENANCE),
     "date_key": pd.to_datetime(
         random_dates(N_MAINTENANCE)
     ).strftime("%Y%m%d").astype(int),
@@ -851,45 +682,30 @@ fact_maintenance = pd.DataFrame({
         N_MAINTENANCE
     ),
     "maintenance_hours": np.round(
-        rng.uniform(
-            0.5,
-            8,
-            N_MAINTENANCE
-        ),
+        rng.uniform(0.5, 8, N_MAINTENANCE),
         2
     ),
     "downtime_hours": np.round(
-        rng.uniform(
-            0.5,
-            24,
-            N_MAINTENANCE
-        ),
+        rng.uniform(0.5, 24, N_MAINTENANCE),
         2
     ),
     "maintenance_cost": np.round(
-        rng.uniform(
-            100,
-            10_000,
-            N_MAINTENANCE
-        ),
+        rng.uniform(100, 10_000, N_MAINTENANCE),
         2
     )
 })
 
 
-# ============================================================
-# FACT_FINANCIAL_TRANSACTION
-# ============================================================
+# -------------------------
+# fact_financial_transaction
+# -------------------------
 
 fact_financial_transaction = pd.DataFrame({
     "financial_transaction_key": range(
         1,
         N_FINANCIAL + 1
     ),
-    "transaction_id": make_ids(
-        "FIN",
-        N_FINANCIAL
-    ),
+    "transaction_id": make_ids("FIN", N_FINANCIAL),
     "date_key": pd.to_datetime(
         random_dates(N_FINANCIAL)
     ).strftime("%Y%m%d").astype(int),
@@ -910,29 +726,19 @@ fact_financial_transaction = pd.DataFrame({
         N_FINANCIAL
     ),
     "transaction_amount": np.round(
-        rng.uniform(
-            100,
-            50_000,
-            N_FINANCIAL
-        ),
+        rng.uniform(100, 50_000, N_FINANCIAL),
         2
     )
 })
 
 
-# ============================================================
-# FACT_BUDGET
-# ============================================================
+# -------------------------
+# fact_budget
+# -------------------------
 
 fact_budget = pd.DataFrame({
-    "budget_key": range(
-        1,
-        N_BUDGET + 1
-    ),
-    "budget_id": make_ids(
-        "BUD",
-        N_BUDGET
-    ),
+    "budget_key": range(1, N_BUDGET + 1),
+    "budget_id": make_ids("BUD", N_BUDGET),
     "date_key": pd.to_datetime(
         random_dates(N_BUDGET)
     ).strftime("%Y%m%d").astype(int),
@@ -949,19 +755,15 @@ fact_budget = pd.DataFrame({
         N_BUDGET
     ),
     "budget_amount": np.round(
-        rng.uniform(
-            10_000,
-            500_000,
-            N_BUDGET
-        ),
+        rng.uniform(10_000, 500_000, N_BUDGET),
         2
     )
 })
 
 
-# ============================================================
-# FACT_ENERGY
-# ============================================================
+# -------------------------
+# fact_energy
+# -------------------------
 
 energy_machine_keys = rng.choice(
     dim_machine["machine_key"],
@@ -974,14 +776,8 @@ energy_location_keys = [
 ]
 
 fact_energy = pd.DataFrame({
-    "energy_key": range(
-        1,
-        N_ENERGY + 1
-    ),
-    "energy_id": make_ids(
-        "ENG",
-        N_ENERGY
-    ),
+    "energy_key": range(1, N_ENERGY + 1),
+    "energy_id": make_ids("ENG", N_ENERGY),
     "date_key": pd.to_datetime(
         random_dates(N_ENERGY)
     ).strftime("%Y%m%d").astype(int),
@@ -992,29 +788,19 @@ fact_energy = pd.DataFrame({
         N_ENERGY
     ),
     "energy_consumption": np.round(
-        rng.uniform(
-            100,
-            10_000,
-            N_ENERGY
-        ),
+        rng.uniform(100, 10_000, N_ENERGY),
         3
     )
 })
 
 
-# ============================================================
-# FACT_EMISSIONS
-# ============================================================
+# -------------------------
+# fact_emissions
+# -------------------------
 
 fact_emissions = pd.DataFrame({
-    "emissions_key": range(
-        1,
-        N_EMISSIONS + 1
-    ),
-    "emissions_id": make_ids(
-        "EMS",
-        N_EMISSIONS
-    ),
+    "emissions_key": range(1, N_EMISSIONS + 1),
+    "emissions_id": make_ids("EMS", N_EMISSIONS),
     "date_key": pd.to_datetime(
         random_dates(N_EMISSIONS)
     ).strftime("%Y%m%d").astype(int),
@@ -1027,29 +813,19 @@ fact_emissions = pd.DataFrame({
         N_EMISSIONS
     ),
     "co2_emissions": np.round(
-        rng.uniform(
-            10,
-            5_000,
-            N_EMISSIONS
-        ),
+        rng.uniform(10, 5_000, N_EMISSIONS),
         3
     )
 })
 
 
-# ============================================================
-# FACT_WASTE
-# ============================================================
+# -------------------------
+# fact_waste
+# -------------------------
 
 fact_waste = pd.DataFrame({
-    "waste_key": range(
-        1,
-        N_WASTE + 1
-    ),
-    "waste_id": make_ids(
-        "WST",
-        N_WASTE
-    ),
+    "waste_key": range(1, N_WASTE + 1),
+    "waste_id": make_ids("WST", N_WASTE),
     "date_key": pd.to_datetime(
         random_dates(N_WASTE)
     ).strftime("%Y%m%d").astype(int),
@@ -1066,49 +842,35 @@ fact_waste = pd.DataFrame({
         N_WASTE
     ),
     "waste_quantity": np.round(
-        rng.uniform(
-            1,
-            1_000,
-            N_WASTE
-        ),
+        rng.uniform(1, 1_000, N_WASTE),
         3
     )
 })
 
 
-# ============================================================
-# FACT_INVENTORY
-# ============================================================
-
-# Inventory grain:
-# One inventory position for one product,
-# location and date.
+# -------------------------
+# fact_inventory
+# -------------------------
 
 inventory_dates = pd.date_range(
     START_DATE,
     END_DATE
 )
 
-inventory_date_count = len(
-    inventory_dates
-)
+date_count = len(inventory_dates)
 
-inventory_numbers = rng.choice(
-    inventory_date_count
-    * N_PRODUCT
-    * N_LOCATION,
+random_numbers = rng.choice(
+    date_count * N_PRODUCT * N_LOCATION,
     size=N_INVENTORY,
     replace=False
 )
 
-date_index = (
-    inventory_numbers
-    // (N_PRODUCT * N_LOCATION)
+date_index = random_numbers // (
+    N_PRODUCT * N_LOCATION
 )
 
-remaining = (
-    inventory_numbers
-    % (N_PRODUCT * N_LOCATION)
+remaining = random_numbers % (
+    N_PRODUCT * N_LOCATION
 )
 
 inventory_product_keys = (
@@ -1137,11 +899,7 @@ available_quantity = (
 )
 
 issued_quantity = np.minimum(
-    rng.integers(
-        0,
-        2_000,
-        N_INVENTORY
-    ),
+    rng.integers(0, 2_000, N_INVENTORY),
     available_quantity
 )
 
@@ -1152,14 +910,8 @@ closing_quantity = (
 )
 
 fact_inventory = pd.DataFrame({
-    "inventory_key": range(
-        1,
-        N_INVENTORY + 1
-    ),
-    "inventory_id": make_ids(
-        "INV",
-        N_INVENTORY
-    ),
+    "inventory_key": range(1, N_INVENTORY + 1),
+    "inventory_id": make_ids("INV", N_INVENTORY),
     "date_key": inventory_dates[
         date_index
     ].strftime("%Y%m%d").astype(int),
@@ -1178,310 +930,280 @@ fact_inventory = pd.DataFrame({
 
 
 # ============================================================
-# CONTROLLED RAW DATA QUALITY ISSUES
+# CONTROLLED DATA QUALITY ISSUES
 # ============================================================
 
-print(
-    "\nIntroducing controlled raw-data "
-    "quality issues..."
-)
-
-
 # ============================================================
-# 1. MISSING VALUES
+# 1. NULL / BLANK VALUES
 # ============================================================
-
-missing_customer = random_indices(
-    dim_customer,
-    0.002
-)
 
 dim_customer.loc[
-    missing_customer,
+    random_rows(dim_customer, 100),
     "country"
 ] = np.nan
 
-
-missing_product = random_indices(
-    dim_product,
-    0.002
-)
-
 dim_product.loc[
-    missing_product,
+    random_rows(dim_product, 10),
     "subcategory"
 ] = np.nan
 
-
-missing_supplier = random_indices(
-    dim_supplier,
-    0.002
-)
-
 dim_supplier.loc[
-    missing_supplier,
+    random_rows(dim_supplier, 5),
     "supplier_category"
 ] = np.nan
 
-
-missing_maintenance = random_indices(
-    fact_maintenance,
-    0.002
-)
-
 fact_maintenance.loc[
-    missing_maintenance,
+    random_rows(fact_maintenance, 100),
     "maintenance_type"
 ] = np.nan
 
+# Additional blank values
+dim_account.loc[
+    random_rows(dim_account, 10),
+    "industry"
+] = ""
+
+dim_location.loc[
+    random_rows(dim_location, 5),
+    "city"
+] = ""
+
+fact_budget.loc[
+    random_rows(fact_budget, 20),
+    "budget_category"
+] = ""
+
+fact_emissions.loc[
+    random_rows(fact_emissions, 20),
+    "emissions_category"
+] = ""
+
 
 # ============================================================
-# 2. DUPLICATE RECORDS
+# 2. LEADING / TRAILING SPACES
 # ============================================================
 
-sales_duplicates = fact_sales.sample(
-    n=500,
-    random_state=SEED
+rows = random_rows(dim_account, 20)
+dim_account.loc[rows, "account_name"] = (
+    " " + dim_account.loc[rows, "account_name"].astype(str) + " "
 )
+
+rows = random_rows(dim_customer, 20)
+dim_customer.loc[rows, "customer_name"] = (
+    "  " + dim_customer.loc[rows, "customer_name"].astype(str) + "  "
+)
+
+rows = random_rows(dim_product, 20)
+dim_product.loc[rows, "product_name"] = (
+    " " + dim_product.loc[rows, "product_name"].astype(str) + " "
+)
+
+rows = random_rows(dim_supplier, 20)
+dim_supplier.loc[rows, "supplier_name"] = (
+    " " + dim_supplier.loc[rows, "supplier_name"].astype(str) + " "
+)
+
+rows = random_rows(dim_employee, 20)
+dim_employee.loc[rows, "employee_name"] = (
+    " " + dim_employee.loc[rows, "employee_name"].astype(str) + " "
+)
+
+rows = random_rows(dim_machine, 20)
+dim_machine.loc[rows, "machine_name"] = (
+    " " + dim_machine.loc[rows, "machine_name"].astype(str) + " "
+)
+
+
+# ============================================================
+# 3. DUPLICATES
+# ============================================================
 
 fact_sales = pd.concat(
     [
         fact_sales,
-        sales_duplicates
+        fact_sales.sample(
+            500,
+            random_state=SEED
+        )
     ],
     ignore_index=True
-)
-
-
-production_duplicates = fact_production.sample(
-    n=200,
-    random_state=SEED
 )
 
 fact_production = pd.concat(
     [
         fact_production,
-        production_duplicates
+        fact_production.sample(
+            200,
+            random_state=SEED
+        )
     ],
     ignore_index=True
-)
-
-
-financial_duplicates = fact_financial_transaction.sample(
-    n=300,
-    random_state=SEED
 )
 
 fact_financial_transaction = pd.concat(
     [
         fact_financial_transaction,
-        financial_duplicates
+        fact_financial_transaction.sample(
+            300,
+            random_state=SEED
+        )
     ],
     ignore_index=True
 )
 
 
 # ============================================================
-# 3. INVALID FOREIGN-KEY REFERENCES
+# 4. INVALID FOREIGN KEYS
 # ============================================================
 
-invalid_customer_fk = random_indices(
-    fact_sales,
-    0.001
-)
-
 fact_sales.loc[
-    invalid_customer_fk,
+    random_rows(fact_sales, 500),
     "customer_key"
 ] = 999999
 
-
-invalid_product_fk = random_indices(
-    fact_inventory,
-    0.001
-)
-
 fact_inventory.loc[
-    invalid_product_fk,
+    random_rows(fact_inventory, 500),
     "product_key"
 ] = 999999
 
-
-invalid_machine_fk = random_indices(
-    fact_energy,
-    0.001
-)
-
 fact_energy.loc[
-    invalid_machine_fk,
+    random_rows(fact_energy, 100),
     "machine_key"
 ] = 999999
 
-
-invalid_employee_fk = random_indices(
-    fact_maintenance,
-    0.001
-)
-
 fact_maintenance.loc[
-    invalid_employee_fk,
+    random_rows(fact_maintenance, 50),
     "employee_key"
 ] = 999999
 
 
 # ============================================================
-# 4. INVALID CATEGORICAL VALUES
+# 5. INVALID CATEGORIES
 # ============================================================
 
-invalid_customer_segment = random_indices(
-    dim_customer,
-    0.001
-)
-
 dim_customer.loc[
-    invalid_customer_segment,
+    random_rows(dim_customer, 50),
     "customer_segment"
 ] = "Unknown Segment"
 
-
-invalid_location_type = random_indices(
-    dim_location,
-    0.01
-)
-
 dim_location.loc[
-    invalid_location_type,
+    random_rows(dim_location, 5),
     "location_type"
 ] = "Temporary Facility"
 
-
-invalid_machine_status = random_indices(
-    dim_machine,
-    0.01
-)
-
 dim_machine.loc[
-    invalid_machine_status,
+    random_rows(dim_machine, 20),
     "status"
 ] = "Unknown"
 
-
-invalid_supplier_category = random_indices(
-    dim_supplier,
-    0.01
-)
-
 dim_supplier.loc[
-    invalid_supplier_category,
+    random_rows(dim_supplier, 10),
     "supplier_category"
 ] = "Other Supplier"
 
+fact_maintenance.loc[
+    random_rows(fact_maintenance, 10),
+    "maintenance_type"
+] = "Emergency Type"
+
 
 # ============================================================
-# 5. INVALID NUMERIC VALUES
+# 6. INVALID NUMERIC VALUES
 # ============================================================
-
-negative_sales_quantity = random_indices(
-    fact_sales,
-    0.001
-)
 
 fact_sales.loc[
-    negative_sales_quantity,
+    random_rows(fact_sales, 500),
     "quantity"
 ] = -1
 
-
-negative_inventory_quantity = random_indices(
-    fact_inventory,
-    0.001
-)
-
 fact_inventory.loc[
-    negative_inventory_quantity,
+    random_rows(fact_inventory, 500),
     "issued_quantity"
 ] = -10
 
-
-negative_energy = random_indices(
-    fact_energy,
-    0.001
-)
-
 fact_energy.loc[
-    negative_energy,
+    random_rows(fact_energy, 100),
     "energy_consumption"
 ] = -100
 
-
-negative_waste = random_indices(
-    fact_waste,
-    0.001
-)
-
 fact_waste.loc[
-    negative_waste,
+    random_rows(fact_waste, 100),
     "waste_quantity"
 ] = -50
 
 
 # ============================================================
-# 6. SALES REVENUE INCONSISTENCIES
+# 7. SALES REVENUE INCONSISTENCY
 # ============================================================
 
-revenue_issue_indices = random_indices(
+sales_issue = random_rows(
     fact_sales,
-    0.001
+    500
 )
 
 fact_sales.loc[
-    revenue_issue_indices,
+    sales_issue,
     "revenue"
 ] = (
     fact_sales.loc[
-        revenue_issue_indices,
-        "revenue"
+        sales_issue,
+        "quantity"
     ]
-    * 1.10
+    * fact_sales.loc[
+        sales_issue,
+        "unit_price"
+    ]
+    * 1.25
 ).round(2)
 
 
 # ============================================================
-# 7. INVENTORY RECONCILIATION ISSUES
+# 8. INVENTORY RECONCILIATION ISSUES
 # ============================================================
 
-inventory_issue_indices = random_indices(
+inventory_issue = random_rows(
     fact_inventory,
-    0.001
+    500
 )
 
 fact_inventory.loc[
-    inventory_issue_indices,
+    inventory_issue,
     "closing_quantity"
 ] = (
     fact_inventory.loc[
-        inventory_issue_indices,
-        "closing_quantity"
+        inventory_issue,
+        "opening_quantity"
+    ]
+    + fact_inventory.loc[
+        inventory_issue,
+        "received_quantity"
+    ]
+    - fact_inventory.loc[
+        inventory_issue,
+        "issued_quantity"
     ]
     + 100
 )
 
 
 # ============================================================
-# 8. PRODUCTION QUALITY ISSUES
+# 9. PRODUCTION DEFECT ISSUES
 # ============================================================
 
-production_issue_indices = random_indices(
+production_defect_issue = random_rows(
     fact_production,
-    0.001
+    200
 )
 
+# INVALID:
+# Defects are intentionally greater than production.
+
 fact_production.loc[
-    production_issue_indices,
+    production_defect_issue,
     "defect_quantity"
 ] = (
     fact_production.loc[
-        production_issue_indices,
+        production_defect_issue,
         "produced_quantity"
     ]
     + 10
@@ -1489,20 +1211,23 @@ fact_production.loc[
 
 
 # ============================================================
-# 9. PRODUCTION OUTLIERS
+# 10. PRODUCTION OUTLIERS
 # ============================================================
 
-production_outlier_indices = random_indices(
+production_outlier = random_rows(
     fact_production,
-    0.0005
+    100
 )
 
+# INVALID OUTLIER:
+# Production is intentionally much higher than planned.
+
 fact_production.loc[
-    production_outlier_indices,
+    production_outlier,
     "produced_quantity"
 ] = (
     fact_production.loc[
-        production_outlier_indices,
+        production_outlier,
         "planned_quantity"
     ]
     * 3
@@ -1510,32 +1235,31 @@ fact_production.loc[
 
 
 # ============================================================
-# 10. FINANCIAL TRANSACTION OUTLIERS
+# 11. FINANCIAL OUTLIERS
 # ============================================================
 
-financial_outlier_indices = random_indices(
+financial_outlier = random_rows(
     fact_financial_transaction,
-    0.0005
+    150
 )
 
 fact_financial_transaction.loc[
-    financial_outlier_indices,
+    financial_outlier,
     "transaction_amount"
 ] = (
     fact_financial_transaction.loc[
-        financial_outlier_indices,
+        financial_outlier,
         "transaction_amount"
     ]
     * 10
 ).round(2)
 
+
 # ============================================================
 # SAVE DATASETS
 # ============================================================
 
-print(
-    "\nSaving datasets..."
-)
+print("\nSaving datasets...")
 
 datasets = {
     "dim_date": dim_date,
@@ -1558,10 +1282,7 @@ datasets = {
 }
 
 for name, dataframe in datasets.items():
-    save_data(
-        dataframe,
-        name
-    )
+    save_data(dataframe, name)
 
 
 # ============================================================
@@ -1573,38 +1294,12 @@ total_rows = sum(
     for dataframe in datasets.values()
 )
 
-print(
-    "\n========================================"
-)
-
-print(
-    "PROJECT ATLAS DATA GENERATION COMPLETE"
-)
-
-print(
-    "========================================"
-)
-
-print(
-    "All data is synthetic."
-)
-
-print(
-    f"Date range: {START_DATE} to {END_DATE}"
-)
-
-print(
-    f"Datasets generated: {len(datasets)}"
-)
-
-print(
-    f"Total raw rows: {total_rows:,}"
-)
-
-print(
-    f"Files saved to: {OUTPUT_DIR}"
-)
-
-print(
-    "========================================"
-)
+print("\n========================================")
+print("PROJECT ATLAS DATA GENERATION COMPLETE")
+print("========================================")
+print("All data is synthetic.")
+print(f"Date range: {START_DATE} to {END_DATE}")
+print(f"Datasets generated: {len(datasets)}")
+print(f"Total raw rows: {total_rows:,}")
+print(f"Files saved to: {OUTPUT_DIR}")
+print("========================================")

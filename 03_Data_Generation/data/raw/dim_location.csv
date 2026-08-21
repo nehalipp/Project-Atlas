@@ -1,11 +1,11 @@
 location_key,location_id,location_name,location_type,city,state_region,country,status
 1,LOC-000001,Atlas Facility 1,Warehouse,Costashire,Pennsylvania,Mexico,Active
-2,LOC-000002,Atlas Facility 2,Plant,Wongland,Oklahoma,Canada,Active
+2,LOC-000002,Atlas Facility 2,Temporary Facility,Wongland,Oklahoma,Canada,Active
 3,LOC-000003,Atlas Facility 3,Plant,Pattersonburgh,Minnesota,Canada,Active
 4,LOC-000004,Atlas Facility 4,Plant,Christopherhaven,California,United States,Active
 5,LOC-000005,Atlas Facility 5,Distribution Center,South Paulton,Illinois,United States,Active
-6,LOC-000006,Atlas Facility 6,Office,Sandraview,Virginia,Sweden,Active
-7,LOC-000007,Atlas Facility 7,Temporary Facility,Tiffanytown,North Dakota,Sweden,Active
+6,LOC-000006,Atlas Facility 6,Temporary Facility,,Virginia,Sweden,Active
+7,LOC-000007,Atlas Facility 7,Plant,Tiffanytown,North Dakota,Sweden,Active
 8,LOC-000008,Atlas Facility 8,Distribution Center,Gordonview,Idaho,United States,Active
 9,LOC-000009,Atlas Facility 9,Warehouse,Rodneymouth,New York,Canada,Active
 10,LOC-000010,Atlas Facility 10,Plant,North Matthew,New York,Mexico,Active
@@ -15,7 +15,7 @@ location_key,location_id,location_name,location_type,city,state_region,country,s
 14,LOC-000014,Atlas Facility 14,Warehouse,South Edward,Georgia,Germany,Active
 15,LOC-000015,Atlas Facility 15,Warehouse,Patriciaport,Michigan,Germany,Active
 16,LOC-000016,Atlas Facility 16,Office,Jamiemouth,Georgia,Canada,Active
-17,LOC-000017,Atlas Facility 17,Distribution Center,Phamside,Washington,United States,Active
+17,LOC-000017,Atlas Facility 17,Distribution Center,,Washington,United States,Active
 18,LOC-000018,Atlas Facility 18,Plant,East Seanport,Ohio,Canada,Active
 19,LOC-000019,Atlas Facility 19,Warehouse,West Tyler,Alabama,United States,Active
 20,LOC-000020,Atlas Facility 20,Warehouse,Moonmouth,Illinois,Germany,Active
@@ -23,8 +23,8 @@ location_key,location_id,location_name,location_type,city,state_region,country,s
 22,LOC-000022,Atlas Facility 22,Plant,Campbellchester,California,Canada,Active
 23,LOC-000023,Atlas Facility 23,Office,Petersenport,Oklahoma,Germany,Active
 24,LOC-000024,Atlas Facility 24,Plant,Christopherfort,Rhode Island,United States,Active
-25,LOC-000025,Atlas Facility 25,Distribution Center,Alvareztown,Oklahoma,Canada,Active
-26,LOC-000026,Atlas Facility 26,Distribution Center,Ellisberg,Texas,United States,Active
+25,LOC-000025,Atlas Facility 25,Temporary Facility,Alvareztown,Oklahoma,Canada,Active
+26,LOC-000026,Atlas Facility 26,Distribution Center,,Texas,United States,Active
 27,LOC-000027,Atlas Facility 27,Plant,Port Beth,West Virginia,Mexico,Active
 28,LOC-000028,Atlas Facility 28,Office,Foxside,Utah,Sweden,Active
 29,LOC-000029,Atlas Facility 29,Distribution Center,Kimberlyshire,West Virginia,Canada,Active
@@ -42,10 +42,10 @@ location_key,location_id,location_name,location_type,city,state_region,country,s
 41,LOC-000041,Atlas Facility 41,Office,West Heidi,Michigan,Mexico,Active
 42,LOC-000042,Atlas Facility 42,Office,Randallborough,Minnesota,United States,Active
 43,LOC-000043,Atlas Facility 43,Plant,West Robert,California,Mexico,Active
-44,LOC-000044,Atlas Facility 44,Plant,West Amandaville,Texas,Sweden,Active
+44,LOC-000044,Atlas Facility 44,Plant,,Texas,Sweden,Active
 45,LOC-000045,Atlas Facility 45,Distribution Center,West Brian,Alaska,Mexico,Active
 46,LOC-000046,Atlas Facility 46,Warehouse,Taylorview,Delaware,Sweden,Active
-47,LOC-000047,Atlas Facility 47,Office,New Angela,Kentucky,Sweden,Active
+47,LOC-000047,Atlas Facility 47,Office,,Kentucky,Sweden,Active
 48,LOC-000048,Atlas Facility 48,Warehouse,Richardfort,West Virginia,Canada,Active
 49,LOC-000049,Atlas Facility 49,Warehouse,Melissaport,Massachusetts,Mexico,Active
 50,LOC-000050,Atlas Facility 50,Warehouse,New Brookefort,Iowa,Canada,Active
@@ -66,7 +66,7 @@ location_key,location_id,location_name,location_type,city,state_region,country,s
 65,LOC-000065,Atlas Facility 65,Office,Jessicaview,Arizona,United States,Active
 66,LOC-000066,Atlas Facility 66,Office,Rodgersmouth,Mississippi,Germany,Active
 67,LOC-000067,Atlas Facility 67,Warehouse,Patelland,Idaho,Germany,Active
-68,LOC-000068,Atlas Facility 68,Warehouse,Velazquezhaven,Kentucky,Mexico,Active
+68,LOC-000068,Atlas Facility 68,Temporary Facility,Velazquezhaven,Kentucky,Mexico,Active
 69,LOC-000069,Atlas Facility 69,Warehouse,Ryanfurt,Illinois,Mexico,Active
 70,LOC-000070,Atlas Facility 70,Warehouse,Sarastad,Vermont,Mexico,Active
 71,LOC-000071,Atlas Facility 71,Distribution Center,New Danny,Kentucky,Germany,Active
@@ -83,7 +83,7 @@ location_key,location_id,location_name,location_type,city,state_region,country,s
 82,LOC-000082,Atlas Facility 82,Warehouse,Mcdanielside,Mississippi,Mexico,Active
 83,LOC-000083,Atlas Facility 83,Office,Thomasview,North Carolina,Canada,Active
 84,LOC-000084,Atlas Facility 84,Distribution Center,East Brenda,Delaware,Sweden,Active
-85,LOC-000085,Atlas Facility 85,Warehouse,Kayleefurt,Oklahoma,Canada,Active
+85,LOC-000085,Atlas Facility 85,Temporary Facility,Kayleefurt,Oklahoma,Canada,Active
 86,LOC-000086,Atlas Facility 86,Office,West Christopher,Maine,Sweden,Active
 87,LOC-000087,Atlas Facility 87,Warehouse,Davidtown,Alaska,Mexico,Active
 88,LOC-000088,Atlas Facility 88,Distribution Center,East Ashley,Colorado,United States,Active

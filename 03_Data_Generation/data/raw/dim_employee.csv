@@ -23,7 +23,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 22,EMP-000022,20,Tonya Anderson,Supply Chain,Specialist,2018-09-25,Active
 23,EMP-000023,53,Brooke Poole,Finance,Analyst,2018-08-07,Active
 24,EMP-000024,53,Amanda Long,IT,Coordinator,2018-09-26,Active
-25,EMP-000025,49,Lisa Meyer,Maintenance,Manager,2016-05-27,Active
+25,EMP-000025,49, Lisa Meyer ,Maintenance,Manager,2016-05-27,Active
 26,EMP-000026,23,Michael Kennedy,Maintenance,Analyst,2016-12-06,Active
 27,EMP-000027,85,Matthew Conley,Maintenance,Coordinator,2017-08-22,Active
 28,EMP-000028,85,Jennifer Brown,Maintenance,Operator,2017-09-21,Active
@@ -274,7 +274,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 273,EMP-000273,13,Mark Wilkins,Finance,Analyst,2016-01-17,Active
 274,EMP-000274,94,David Harris,IT,Supervisor,2016-10-03,Active
 275,EMP-000275,98,Tammy Garrett,Finance,Analyst,2018-07-15,Active
-276,EMP-000276,27,Linda Hopkins,Supply Chain,Coordinator,2018-06-01,Active
+276,EMP-000276,27, Linda Hopkins ,Supply Chain,Coordinator,2018-06-01,Active
 277,EMP-000277,98,Crystal Soto,Maintenance,Operator,2016-01-21,Active
 278,EMP-000278,95,Samantha Mooney,Finance,Engineer,2016-02-21,Active
 279,EMP-000279,41,Christine Soto,Maintenance,Analyst,2016-09-04,Active
@@ -591,7 +591,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 590,EMP-000590,86,Megan Spears,Supply Chain,Analyst,2016-02-27,Inactive
 591,EMP-000591,15,Regina Drake,Finance,Analyst,2017-07-31,Active
 592,EMP-000592,78,Joy Erickson,Maintenance,Engineer,2018-12-05,Active
-593,EMP-000593,74,Jennifer Barker,Sales,Coordinator,2017-11-27,Inactive
+593,EMP-000593,74, Jennifer Barker ,Sales,Coordinator,2017-11-27,Inactive
 594,EMP-000594,58,John Pratt,Sales,Coordinator,2018-04-13,Active
 595,EMP-000595,25,Tony Dunlap,Human Resources,Specialist,2018-01-27,Active
 596,EMP-000596,39,Matthew Ramirez,Maintenance,Supervisor,2017-02-13,Inactive
@@ -1032,7 +1032,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 1031,EMP-001031,27,Mary Walter,Sales,Operator,2017-06-18,Active
 1032,EMP-001032,55,Albert Butler,Sales,Manager,2016-02-25,Active
 1033,EMP-001033,80,Brittany Hansen DDS,Operations,Manager,2018-11-19,Active
-1034,EMP-001034,3,Mrs. Frances Cox MD,Supply Chain,Engineer,2016-09-01,Active
+1034,EMP-001034,3, Mrs. Frances Cox MD ,Supply Chain,Engineer,2016-09-01,Active
 1035,EMP-001035,15,James Diaz,Human Resources,Coordinator,2018-03-05,Active
 1036,EMP-001036,77,Laura Brewer,Human Resources,Supervisor,2018-06-23,Active
 1037,EMP-001037,31,Sandra Jones,IT,Operator,2016-08-21,Active
@@ -1640,7 +1640,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 1639,EMP-001639,18,Heather Leon,Human Resources,Specialist,2017-04-22,Active
 1640,EMP-001640,36,Yvonne Robinson,Human Resources,Coordinator,2017-08-27,Active
 1641,EMP-001641,42,Ronald Perez,Maintenance,Specialist,2016-01-12,Active
-1642,EMP-001642,45,Stephen Miranda,Maintenance,Coordinator,2018-08-29,Active
+1642,EMP-001642,45, Stephen Miranda ,Maintenance,Coordinator,2018-08-29,Active
 1643,EMP-001643,76,Todd Hawkins,Finance,Engineer,2018-05-31,Active
 1644,EMP-001644,34,Wanda Garcia,Human Resources,Supervisor,2017-04-04,Inactive
 1645,EMP-001645,76,Julie Cox,Operations,Engineer,2018-07-18,Active
@@ -1799,7 +1799,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 1798,EMP-001798,63,Brian Moore,Operations,Specialist,2017-09-29,Active
 1799,EMP-001799,52,Jared Garcia,Operations,Specialist,2017-03-23,Active
 1800,EMP-001800,61,Leroy Spencer,Sales,Supervisor,2017-06-16,Active
-1801,EMP-001801,5,Patricia Marshall,Operations,Coordinator,2018-07-21,Inactive
+1801,EMP-001801,5, Patricia Marshall ,Operations,Coordinator,2018-07-21,Inactive
 1802,EMP-001802,55,Jill Walsh,Maintenance,Coordinator,2017-11-05,Active
 1803,EMP-001803,87,Yvette Williams,Supply Chain,Operator,2016-02-01,Active
 1804,EMP-001804,25,Emily Proctor,Maintenance,Analyst,2017-11-23,Active
@@ -2012,7 +2012,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 2011,EMP-002011,30,Jennifer Wheeler,Human Resources,Operator,2016-05-20,Active
 2012,EMP-002012,3,Patrick Green,IT,Manager,2018-05-27,Active
 2013,EMP-002013,15,Katherine Coleman,Operations,Supervisor,2018-07-11,Active
-2014,EMP-002014,59,Lisa Henry,Maintenance,Engineer,2018-06-10,Active
+2014,EMP-002014,59, Lisa Henry ,Maintenance,Engineer,2018-06-10,Active
 2015,EMP-002015,89,Donna Case,Maintenance,Analyst,2016-08-22,Inactive
 2016,EMP-002016,48,Wesley Gonzalez,Human Resources,Specialist,2017-08-11,Active
 2017,EMP-002017,70,William Curtis,IT,Manager,2016-05-01,Active
@@ -2064,7 +2064,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 2063,EMP-002063,31,Steven Schneider,Operations,Coordinator,2016-04-23,Active
 2064,EMP-002064,98,Christina White,Supply Chain,Manager,2018-02-27,Active
 2065,EMP-002065,1,Nancy Smith,Sales,Specialist,2017-06-30,Active
-2066,EMP-002066,25,Jessica Jones,Operations,Supervisor,2016-03-25,Active
+2066,EMP-002066,25, Jessica Jones ,Operations,Supervisor,2016-03-25,Active
 2067,EMP-002067,77,Nicole Hurley,Supply Chain,Supervisor,2018-06-20,Active
 2068,EMP-002068,48,Michael Howell,Operations,Operator,2017-04-29,Active
 2069,EMP-002069,99,Nathan English,Finance,Coordinator,2017-09-03,Active
@@ -2230,7 +2230,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 2229,EMP-002229,11,Jennifer Young,Human Resources,Specialist,2017-03-18,Active
 2230,EMP-002230,49,Destiny Aguilar,Human Resources,Operator,2017-08-04,Active
 2231,EMP-002231,10,Cathy Castaneda,Sales,Coordinator,2016-10-14,Active
-2232,EMP-002232,50,Stephanie Cross,Maintenance,Specialist,2016-12-27,Active
+2232,EMP-002232,50, Stephanie Cross ,Maintenance,Specialist,2016-12-27,Active
 2233,EMP-002233,54,Claudia Valenzuela,Sales,Manager,2017-09-15,Active
 2234,EMP-002234,98,Michael Shaw,Supply Chain,Specialist,2016-05-23,Active
 2235,EMP-002235,9,Ryan Flores,Supply Chain,Coordinator,2017-05-02,Inactive
@@ -2323,7 +2323,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 2322,EMP-002322,43,John Johnson,Operations,Specialist,2017-05-01,Active
 2323,EMP-002323,93,Matthew Wilson,Supply Chain,Analyst,2017-09-25,Active
 2324,EMP-002324,18,Kimberly Mitchell,Sales,Specialist,2017-08-23,Active
-2325,EMP-002325,21,Matthew Trevino,Finance,Engineer,2018-01-23,Active
+2325,EMP-002325,21, Matthew Trevino ,Finance,Engineer,2018-01-23,Active
 2326,EMP-002326,62,Jeremy White,Supply Chain,Engineer,2017-02-27,Active
 2327,EMP-002327,42,Denise Simpson,Finance,Coordinator,2017-02-09,Active
 2328,EMP-002328,15,Sherri Mcclain,Supply Chain,Manager,2017-08-30,Inactive
@@ -2500,7 +2500,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 2499,EMP-002499,99,Chris Leonard,Supply Chain,Coordinator,2017-06-07,Active
 2500,EMP-002500,24,Carl Miller,Operations,Coordinator,2017-01-07,Inactive
 2501,EMP-002501,98,Ryan Taylor,Maintenance,Supervisor,2017-09-05,Inactive
-2502,EMP-002502,3,Robert Perez,Operations,Supervisor,2016-07-12,Active
+2502,EMP-002502,3, Robert Perez ,Operations,Supervisor,2016-07-12,Active
 2503,EMP-002503,46,Tina Buckley,Human Resources,Analyst,2018-12-14,Active
 2504,EMP-002504,92,Jessica Carpenter,Supply Chain,Analyst,2016-10-03,Inactive
 2505,EMP-002505,77,Pamela Larson,Operations,Supervisor,2017-05-15,Active
@@ -2524,7 +2524,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 2523,EMP-002523,99,Michael Elliott,Operations,Analyst,2016-02-17,Active
 2524,EMP-002524,92,Cathy Perry,Sales,Supervisor,2016-12-05,Active
 2525,EMP-002525,45,Eric Hernandez,Sales,Specialist,2016-07-29,Active
-2526,EMP-002526,3,Troy Mcgrath,Sales,Analyst,2018-11-03,Active
+2526,EMP-002526,3, Troy Mcgrath ,Sales,Analyst,2018-11-03,Active
 2527,EMP-002527,69,Sarah Woods,Finance,Supervisor,2016-03-23,Active
 2528,EMP-002528,66,Richard Tate,Supply Chain,Coordinator,2018-02-24,Active
 2529,EMP-002529,14,Jay Lester,Operations,Analyst,2018-03-11,Active
@@ -3209,7 +3209,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 3208,EMP-003208,42,Lori Rodriguez,Sales,Specialist,2016-06-09,Active
 3209,EMP-003209,13,Caleb Ramirez,Operations,Operator,2017-01-29,Active
 3210,EMP-003210,52,Joshua Hill,Sales,Specialist,2016-03-12,Active
-3211,EMP-003211,24,David Howell,Human Resources,Supervisor,2017-11-23,Active
+3211,EMP-003211,24, David Howell ,Human Resources,Supervisor,2017-11-23,Active
 3212,EMP-003212,52,Charles Perez,Sales,Manager,2016-04-02,Active
 3213,EMP-003213,5,Heather Garza,Sales,Operator,2018-12-20,Active
 3214,EMP-003214,99,Madison Bryant,Finance,Analyst,2017-11-08,Active
@@ -3974,7 +3974,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 3973,EMP-003973,78,Nicole Smith,Finance,Manager,2018-05-14,Active
 3974,EMP-003974,71,Tara Compton,IT,Specialist,2018-10-28,Active
 3975,EMP-003975,57,Courtney Kelly,Finance,Operator,2018-07-18,Active
-3976,EMP-003976,79,Donald Trujillo,Supply Chain,Supervisor,2016-10-28,Active
+3976,EMP-003976,79, Donald Trujillo ,Supply Chain,Supervisor,2016-10-28,Active
 3977,EMP-003977,79,Cynthia Martin,Sales,Supervisor,2018-07-28,Inactive
 3978,EMP-003978,13,Nancy Peterson,Maintenance,Engineer,2016-04-28,Active
 3979,EMP-003979,33,Dr. Derek Sosa,Supply Chain,Engineer,2018-08-22,Active
@@ -4068,12 +4068,12 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 4067,EMP-004067,60,William Leblanc,Supply Chain,Operator,2016-10-21,Active
 4068,EMP-004068,12,Scott Williams,IT,Supervisor,2016-09-27,Active
 4069,EMP-004069,49,Nicole Bradford,Sales,Analyst,2017-11-29,Active
-4070,EMP-004070,38,David Vincent,Supply Chain,Coordinator,2018-05-09,Active
+4070,EMP-004070,38, David Vincent ,Supply Chain,Coordinator,2018-05-09,Active
 4071,EMP-004071,30,Andrea Jackson,Operations,Operator,2018-01-20,Active
 4072,EMP-004072,40,Victor Lee,Finance,Supervisor,2018-12-04,Inactive
 4073,EMP-004073,71,Jerry Brown,Sales,Analyst,2017-05-15,Active
 4074,EMP-004074,41,Mr. Devon Baker,Supply Chain,Specialist,2017-07-03,Active
-4075,EMP-004075,19,Cindy Parker,Operations,Engineer,2017-08-19,Active
+4075,EMP-004075,19, Cindy Parker ,Operations,Engineer,2017-08-19,Active
 4076,EMP-004076,90,Jessica Munoz,Finance,Supervisor,2018-08-12,Inactive
 4077,EMP-004077,33,Scott Boone,Maintenance,Operator,2016-07-22,Active
 4078,EMP-004078,49,Richard Guzman,IT,Specialist,2018-02-17,Active
@@ -4133,7 +4133,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 4132,EMP-004132,63,Mary Leach,Supply Chain,Supervisor,2017-04-24,Active
 4133,EMP-004133,5,Joseph Gould,Human Resources,Operator,2016-09-08,Active
 4134,EMP-004134,83,Timothy Miller,Supply Chain,Supervisor,2017-07-25,Active
-4135,EMP-004135,78,Megan Perez,IT,Supervisor,2018-02-18,Active
+4135,EMP-004135,78, Megan Perez ,IT,Supervisor,2018-02-18,Active
 4136,EMP-004136,46,Robert Thompson,IT,Coordinator,2018-11-20,Inactive
 4137,EMP-004137,58,Glen Manning,Finance,Analyst,2018-07-11,Active
 4138,EMP-004138,68,Kelly Gordon,Human Resources,Operator,2016-06-15,Inactive
@@ -4370,7 +4370,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 4369,EMP-004369,81,Cory Williams,Operations,Specialist,2017-10-22,Active
 4370,EMP-004370,93,Sharon Barton,Human Resources,Analyst,2017-06-10,Active
 4371,EMP-004371,6,Shaun Navarro,Finance,Operator,2018-01-31,Active
-4372,EMP-004372,45,Kimberly Garrett MD,Human Resources,Coordinator,2016-07-26,Active
+4372,EMP-004372,45, Kimberly Garrett MD ,Human Resources,Coordinator,2016-07-26,Active
 4373,EMP-004373,93,Tyler Myers,IT,Manager,2016-05-08,Active
 4374,EMP-004374,55,Christopher Levy,Human Resources,Engineer,2018-05-18,Active
 4375,EMP-004375,18,John Cohen,Operations,Engineer,2016-04-27,Active
@@ -4540,7 +4540,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 4539,EMP-004539,17,Sherry Cline DVM,Supply Chain,Coordinator,2017-09-12,Active
 4540,EMP-004540,38,Audrey Bell,Finance,Manager,2017-09-10,Active
 4541,EMP-004541,16,Cynthia Rogers,Human Resources,Engineer,2016-03-28,Active
-4542,EMP-004542,70,Laura Maldonado,Human Resources,Coordinator,2016-08-05,Active
+4542,EMP-004542,70, Laura Maldonado ,Human Resources,Coordinator,2016-08-05,Active
 4543,EMP-004543,44,Cassie Foster,IT,Analyst,2017-11-14,Active
 4544,EMP-004544,65,Kaitlin Cannon,Sales,Engineer,2018-11-26,Inactive
 4545,EMP-004545,85,Allison Sherman,IT,Operator,2018-08-20,Active
@@ -4613,7 +4613,7 @@ employee_key,employee_id,location_key,employee_name,department,role,hire_date,st
 4612,EMP-004612,2,Michael Sexton,Operations,Engineer,2017-08-24,Active
 4613,EMP-004613,89,Joseph Mcdowell,Sales,Coordinator,2017-07-06,Active
 4614,EMP-004614,78,Matthew Green,Maintenance,Engineer,2018-07-24,Active
-4615,EMP-004615,65,Thomas Porter,Supply Chain,Supervisor,2018-07-28,Active
+4615,EMP-004615,65, Thomas Porter ,Supply Chain,Supervisor,2018-07-28,Active
 4616,EMP-004616,15,Jennifer Waters,IT,Operator,2018-06-12,Inactive
 4617,EMP-004617,94,Robert Patton,Supply Chain,Manager,2016-04-28,Active
 4618,EMP-004618,63,Paul Wagner,Finance,Engineer,2016-10-25,Active

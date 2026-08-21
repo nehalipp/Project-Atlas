@@ -1,117 +1,146 @@
-# Project Atlas — Data Generation
+# Project Atlas — Phase 3 Data Generation
 
 ## Purpose
 
-Phase 3 creates the synthetic raw data used by Project Atlas.
+Phase 3 creates realistic synthetic operational data for Project Atlas.
 
-The data represents a commercial and industrial business covering sales,
-customers, products, suppliers, production, maintenance, finance,
-inventory, energy, emissions and waste.
+The data represents a commercial and manufacturing environment covering customers, products, suppliers, locations, employees, machines, sales, production, maintenance, finance, inventory and sustainability.
 
-All data is synthetic and is intended for portfolio and analytical
-demonstration purposes.
+All data is synthetic and created for portfolio and analytical demonstration purposes.
 
-## Data Generation
+---
 
-The datasets are generated using:
+## Generation Approach
+
+Data is generated using:
 
 - Python
+- Faker
 - Pandas
 - NumPy
-- Faker
 
-A fixed random seed (`42`) is used so the data can be reproduced.
+A fixed random seed of `42` is used so the datasets can be reproduced consistently.
 
-Date range:
+Operational dates range from:
 
-**2019-01-01 to 2025-12-31**
+`2019-01-01` to `2025-12-31`
 
-The generator creates 17 warehouse datasets:
+Reference attributes such as employee hire dates and machine installation dates are generated before the operational period.
+
+---
+
+## Datasets
+
+Phase 3 generates 17 datasets.
 
 ### Dimensions
 
-- dim_date
-- dim_account
-- dim_customer
-- dim_product
-- dim_supplier
-- dim_location
-- dim_employee
-- dim_machine
+- `dim_date`
+- `dim_account`
+- `dim_customer`
+- `dim_product`
+- `dim_supplier`
+- `dim_location`
+- `dim_employee`
+- `dim_machine`
 
 ### Facts
 
-- fact_sales
-- fact_production
-- fact_maintenance
-- fact_financial_transaction
-- fact_budget
-- fact_energy
-- fact_emissions
-- fact_waste
-- fact_inventory
+- `fact_sales`
+- `fact_production`
+- `fact_maintenance`
+- `fact_financial_transaction`
+- `fact_budget`
+- `fact_energy`
+- `fact_emissions`
+- `fact_waste`
+- `fact_inventory`
+
+The datasets follow the approved Phase 2 dimensional model.
+
+---
 
 ## Data Volumes
 
-The baseline generation contains approximately **1.94 million records**
-across the 17 datasets.
+| Dataset | Approx. Rows |
+|---|---:|
+| dim_date | 2,557 |
+| dim_account | 1,000 |
+| dim_customer | 50,000 |
+| dim_product | 5,000 |
+| dim_supplier | 1,000 |
+| dim_location | 100 |
+| dim_employee | 5,000 |
+| dim_machine | 2,000 |
+| fact_sales | 500,500 |
+| fact_production | 200,200 |
+| fact_maintenance | 50,000 |
+| fact_financial_transaction | 300,300 |
+| fact_budget | 20,000 |
+| fact_energy | 100,000 |
+| fact_emissions | 100,000 |
+| fact_waste | 100,000 |
+| fact_inventory | 500,000 |
 
-The largest datasets include:
+Total raw rows: approximately **1.94 million**.
 
-- Sales — 500,000 baseline rows
-- Inventory — 500,000 rows
-- Financial Transactions — 300,000 baseline rows
-- Production — 200,000 baseline rows
-- Energy — 100,000 rows
-- Emissions — 100,000 rows
-- Waste — 100,000 rows
+---
 
-## Raw Data Quality
+## Controlled Raw-Data Quality Issues
 
-The raw layer intentionally contains controlled data-quality issues.
+The raw datasets intentionally contain a small number of realistic quality problems.
+
+These include:
+
+- Missing values
+- Leading/trailing whitespace
+- Duplicate records
+- Invalid foreign-key references
+- Invalid categorical values
+- Negative operational quantities
+- Revenue reconciliation issues
+- Inventory reconciliation issues
+- Production business-rule violations
+- Production outliers
+- Financial transaction outliers
 
 Examples include:
 
-- Missing values
-- Duplicate records
-- Invalid references
-- Invalid domain values
-- Negative quantities or measurements
-- Revenue inconsistencies
-- Inventory reconciliation issues
-- Production rule violations
-- Outliers
+- Missing customer country
+- Missing product subcategory
+- Missing supplier category
+- Missing maintenance type
+- Invalid customer segments
+- Invalid location types
+- Invalid machine statuses
+- Invalid supplier categories
+- Invalid customer, product, machine and employee references
+- Negative sales, inventory, energy and waste quantities
+- Sales revenue inconsistencies
+- Inventory closing-balance inconsistencies
+- Production defects greater than produced quantity
+- Unusually large production quantities
+- Unusually large financial transactions
 
-The issues are intentionally introduced to simulate the type of imperfect
-operational data that an analytics team may encounter before data is
-validated and prepared for reporting.
+These issues are intentional and are part of the project design.
 
-The raw datasets are therefore **not trusted data**.
+They simulate the type of imperfect operational data that a data analyst may encounter before data is prepared for reporting and analytics.
 
-The exact quality issues are intentionally not documented in the generation
-output. They are expected to be discovered during Phase 4 through data
-profiling and validation.
-
-## Reference Data
-
-`reference_data.xlsx` contains:
-
-- Approved categorical values
-- Business rules
-- Expected dataset volumes
-- Data-quality dimensions
-
-It provides the reference information used during data-quality validation.
+---
 
 ## Output
 
-Generated CSV files are saved to:
+Raw CSV files are saved to:
 
 ```text
 03_Data_Generation/data/raw/
-````
+```
 
-The raw layer is the starting point for the Phase 4 data-quality process.
+The raw datasets are intentionally imperfect.
+
+Phase 4 uses these datasets to perform data-quality assessment, remediation and trusted-data validation.
+
+---
 
 ## Reproducibility
 
