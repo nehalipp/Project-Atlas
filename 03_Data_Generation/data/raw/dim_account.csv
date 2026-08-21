@@ -1,0 +1,1001 @@
+account_key,account_id,account_name,account_type,industry,country,status
+1,ACC-000001,"Rodriguez, Figueroa and Sanchez",Enterprise,Technology,Mexico,Active
+2,ACC-000002,Doyle Ltd,Small Business,Healthcare,United States,Inactive
+3,ACC-000003,"Mcclain, Miller and Henderson",Mid-Market,Retail,Canada,Active
+4,ACC-000004,Davis and Sons,Mid-Market,Technology,Germany,Active
+5,ACC-000005,"Guzman, Hoffman and Baldwin",Mid-Market,Manufacturing,Sweden,Active
+6,ACC-000006,"Gardner, Robinson and Lawrence",Small Business,Technology,United States,Active
+7,ACC-000007,Blake and Sons,Enterprise,Technology,Germany,Active
+8,ACC-000008,"Henderson, Ramirez and Lewis",Small Business,Retail,United States,Active
+9,ACC-000009,Garcia-James,Enterprise,Healthcare,Sweden,Active
+10,ACC-000010,Abbott-Munoz,Enterprise,Retail,Sweden,Active
+11,ACC-000011,Blair PLC,Mid-Market,Automotive,Germany,Active
+12,ACC-000012,Dudley Group,Small Business,Healthcare,Canada,Active
+13,ACC-000013,Arnold Ltd,Small Business,Automotive,United States,Active
+14,ACC-000014,"Mcclure, Ward and Lee",Small Business,Automotive,Mexico,Active
+15,ACC-000015,Williams and Sons,Small Business,Retail,Sweden,Active
+16,ACC-000016,Galloway-Wyatt,Small Business,Technology,Canada,Active
+17,ACC-000017,James Group,Mid-Market,Automotive,Germany,Active
+18,ACC-000018,"Flowers, Martin and Kelly",Enterprise,Retail,Sweden,Inactive
+19,ACC-000019,"Adams, Zuniga and Wong",Small Business,Manufacturing,Sweden,Active
+20,ACC-000020,"Reid, Ferguson and Sanchez",Mid-Market,Manufacturing,Germany,Active
+21,ACC-000021,Gray-Mayo,Mid-Market,Manufacturing,Canada,Active
+22,ACC-000022,"Watts, Robinson and Nguyen",Mid-Market,Manufacturing,Sweden,Active
+23,ACC-000023,Perez Inc,Enterprise,Technology,Sweden,Active
+24,ACC-000024,Morales-Jones,Small Business,Technology,Germany,Active
+25,ACC-000025,"Walter, Edwards and Rios",Small Business,Technology,United States,Active
+26,ACC-000026,Wilkerson-Day,Mid-Market,Manufacturing,Germany,Active
+27,ACC-000027,Baker and Sons,Mid-Market,Manufacturing,Sweden,Active
+28,ACC-000028,"Hoffman, Baker and Richards",Small Business,Automotive,Mexico,Active
+29,ACC-000029,"Ross, Robinson and Bright",Mid-Market,Retail,Germany,Active
+30,ACC-000030,"Snyder, Campos and Callahan",Mid-Market,Automotive,Canada,Active
+31,ACC-000031,Burton Ltd,Mid-Market,Retail,Germany,Active
+32,ACC-000032,Carlson-Cruz,Enterprise,Manufacturing,United States,Active
+33,ACC-000033,"Ferrell, Rice and Maddox",Enterprise,Healthcare,United States,Active
+34,ACC-000034,Frazier Inc,Mid-Market,Automotive,Sweden,Active
+35,ACC-000035,"Dyer, Potter and Mack",Small Business,Manufacturing,Mexico,Active
+36,ACC-000036,Rodriguez-Graham,Enterprise,Healthcare,Mexico,Active
+37,ACC-000037,Smith-Bowen,Small Business,Technology,Germany,Active
+38,ACC-000038,"Baker, Mason and White",Small Business,Manufacturing,United States,Active
+39,ACC-000039,Harrell LLC,Enterprise,Retail,Mexico,Active
+40,ACC-000040,"Romero, Gonzalez and Brooks",Mid-Market,Technology,Germany,Active
+41,ACC-000041,Ryan PLC,Enterprise,Healthcare,Canada,Active
+42,ACC-000042,George Group,Small Business,Technology,Mexico,Active
+43,ACC-000043,Rodriguez LLC,Small Business,Retail,Sweden,Active
+44,ACC-000044,Allen-Allen,Mid-Market,Automotive,Sweden,Active
+45,ACC-000045,"Arroyo, Miller and Tucker",Enterprise,Healthcare,Canada,Active
+46,ACC-000046,Spence PLC,Small Business,Manufacturing,Mexico,Active
+47,ACC-000047,Anderson Group,Mid-Market,Automotive,Germany,Active
+48,ACC-000048,"Martin, Rose and Obrien",Small Business,Healthcare,Germany,Active
+49,ACC-000049,Hickman Ltd,Small Business,Healthcare,Sweden,Active
+50,ACC-000050,"Harris, Collins and Carney",Small Business,Manufacturing,Sweden,Active
+51,ACC-000051,"Brooks, Lam and Hayes",Small Business,Retail,United States,Active
+52,ACC-000052,Walker LLC,Enterprise,Automotive,Canada,Active
+53,ACC-000053,Chapman and Sons,Mid-Market,Retail,Canada,Active
+54,ACC-000054,"Robinson, Jones and Welch",Mid-Market,Technology,Mexico,Active
+55,ACC-000055,Jones Inc,Mid-Market,Manufacturing,Sweden,Active
+56,ACC-000056,Jones-Young,Enterprise,Technology,Canada,Active
+57,ACC-000057,"Washington, Ryan and Cummings",Mid-Market,Retail,Sweden,Inactive
+58,ACC-000058,"Johnston, Sanchez and Kennedy",Enterprise,Healthcare,Sweden,Active
+59,ACC-000059,Lee-Davis,Small Business,Retail,Canada,Active
+60,ACC-000060,Gomez-Jenkins,Small Business,Automotive,Germany,Active
+61,ACC-000061,"Brown, Valdez and Lucas",Small Business,Healthcare,Mexico,Inactive
+62,ACC-000062,Powell LLC,Small Business,Healthcare,Germany,Active
+63,ACC-000063,Wright and Sons,Mid-Market,Manufacturing,United States,Active
+64,ACC-000064,"West, Henderson and Ramirez",Small Business,Healthcare,Sweden,Inactive
+65,ACC-000065,Baxter Inc,Mid-Market,Healthcare,Germany,Active
+66,ACC-000066,Morton-Chase,Enterprise,Automotive,Germany,Active
+67,ACC-000067,Williams PLC,Small Business,Technology,Sweden,Active
+68,ACC-000068,Novak and Sons,Mid-Market,Healthcare,Mexico,Active
+69,ACC-000069,Russell Group,Enterprise,Automotive,Canada,Active
+70,ACC-000070,Hancock Inc,Mid-Market,Manufacturing,Germany,Active
+71,ACC-000071,Gray Group,Small Business,Healthcare,United States,Active
+72,ACC-000072,House-Glover,Enterprise,Automotive,Sweden,Active
+73,ACC-000073,Henderson-Bernard,Mid-Market,Healthcare,Germany,Active
+74,ACC-000074,"Stanley, Tucker and Lee",Enterprise,Retail,Canada,Active
+75,ACC-000075,Novak PLC,Small Business,Retail,Sweden,Active
+76,ACC-000076,"Daniels, Adkins and Brown",Mid-Market,Manufacturing,Germany,Active
+77,ACC-000077,"Woods, Calhoun and Schmidt",Enterprise,Healthcare,Germany,Active
+78,ACC-000078,Yu Inc,Enterprise,Manufacturing,Germany,Active
+79,ACC-000079,Jones Inc,Mid-Market,Retail,Canada,Inactive
+80,ACC-000080,"Hensley, Powell and David",Small Business,Technology,United States,Active
+81,ACC-000081,"Sanchez, Wheeler and Harvey",Small Business,Technology,Mexico,Active
+82,ACC-000082,Sandoval-Cunningham,Mid-Market,Technology,United States,Active
+83,ACC-000083,Donovan-Harris,Enterprise,Technology,Canada,Active
+84,ACC-000084,"Edwards, Baker and Anderson",Small Business,Retail,Sweden,Active
+85,ACC-000085,"Evans, Stewart and Walton",Mid-Market,Automotive,United States,Active
+86,ACC-000086,Smith PLC,Small Business,Technology,Sweden,Inactive
+87,ACC-000087,"Ferrell, Jones and Lewis",Enterprise,Technology,Sweden,Active
+88,ACC-000088,Anderson-Bailey,Enterprise,Technology,Sweden,Active
+89,ACC-000089,Suarez LLC,Small Business,Healthcare,Canada,Active
+90,ACC-000090,Moore-Bass,Small Business,Manufacturing,United States,Active
+91,ACC-000091,"Turner, Riggs and Roman",Mid-Market,Retail,Mexico,Active
+92,ACC-000092,"Smith, Montoya and Evans",Small Business,Retail,Canada,Active
+93,ACC-000093,"Garcia, Humphrey and Baker",Small Business,Technology,Mexico,Inactive
+94,ACC-000094,Newton and Sons,Mid-Market,Automotive,United States,Active
+95,ACC-000095,Campbell-Clark,Small Business,Automotive,United States,Active
+96,ACC-000096,Harris-Walters,Enterprise,Manufacturing,Sweden,Active
+97,ACC-000097,Wagner-King,Enterprise,Technology,Mexico,Active
+98,ACC-000098,Davis Group,Small Business,Healthcare,Mexico,Active
+99,ACC-000099,Williams-Cook,Mid-Market,Manufacturing,Sweden,Active
+100,ACC-000100,Walsh LLC,Enterprise,Retail,Canada,Active
+101,ACC-000101,Figueroa PLC,Small Business,Retail,Mexico,Inactive
+102,ACC-000102,"Patterson, Smith and Jones",Enterprise,Retail,Sweden,Active
+103,ACC-000103,"Mckee, Gardner and Davenport",Small Business,Technology,United States,Active
+104,ACC-000104,"Tran, Jordan and Williams",Enterprise,Manufacturing,United States,Active
+105,ACC-000105,Nolan-Flynn,Small Business,Automotive,Mexico,Active
+106,ACC-000106,Nolan and Sons,Small Business,Manufacturing,Canada,Active
+107,ACC-000107,"Wright, Garcia and Deleon",Small Business,Automotive,Sweden,Inactive
+108,ACC-000108,Dickson-Brady,Mid-Market,Technology,United States,Active
+109,ACC-000109,Hancock and Sons,Mid-Market,Technology,Canada,Active
+110,ACC-000110,Johnson-Doyle,Small Business,Manufacturing,Canada,Active
+111,ACC-000111,Patton-Jenkins,Enterprise,Healthcare,Canada,Active
+112,ACC-000112,"Shields, Cochran and Adams",Small Business,Automotive,Sweden,Active
+113,ACC-000113,"Rodriguez, Brennan and Garrison",Mid-Market,Manufacturing,Mexico,Active
+114,ACC-000114,Gonzalez Group,Mid-Market,Automotive,Mexico,Active
+115,ACC-000115,Torres-Pope,Mid-Market,Manufacturing,Sweden,Active
+116,ACC-000116,Walker Ltd,Mid-Market,Retail,Canada,Active
+117,ACC-000117,Ross LLC,Enterprise,Technology,Mexico,Active
+118,ACC-000118,Rasmussen LLC,Enterprise,Retail,Germany,Active
+119,ACC-000119,May-Ross,Enterprise,Healthcare,Germany,Inactive
+120,ACC-000120,"Rivera, Johnson and Wiley",Enterprise,Retail,Sweden,Active
+121,ACC-000121,White-Estes,Mid-Market,Manufacturing,Sweden,Active
+122,ACC-000122,Johnson-Carlson,Small Business,Manufacturing,Mexico,Active
+123,ACC-000123,Chandler-Edwards,Mid-Market,Automotive,Germany,Active
+124,ACC-000124,"Joyce, Wilson and Lam",Mid-Market,Automotive,Sweden,Active
+125,ACC-000125,Scott Ltd,Small Business,Technology,Sweden,Active
+126,ACC-000126,Smith-Frost,Mid-Market,Technology,Canada,Active
+127,ACC-000127,"Mcdaniel, Bentley and Mclaughlin",Enterprise,Technology,Canada,Active
+128,ACC-000128,Diaz Inc,Small Business,Healthcare,Sweden,Active
+129,ACC-000129,"Mccall, Hanson and Alvarado",Mid-Market,Retail,United States,Active
+130,ACC-000130,Cortez LLC,Mid-Market,Healthcare,Canada,Active
+131,ACC-000131,"Parker, Ortiz and Powell",Mid-Market,Retail,Sweden,Active
+132,ACC-000132,Spencer-Lee,Mid-Market,Healthcare,Mexico,Active
+133,ACC-000133,"Bentley, Byrd and Orr",Enterprise,Healthcare,Germany,Active
+134,ACC-000134,"Carroll, Sullivan and Bass",Mid-Market,Healthcare,Canada,Active
+135,ACC-000135,Mitchell-Jordan,Small Business,Healthcare,Germany,Inactive
+136,ACC-000136,"Lawson, Morris and Ramos",Enterprise,Manufacturing,Sweden,Active
+137,ACC-000137,"Lewis, Kennedy and Santana",Mid-Market,Healthcare,Germany,Active
+138,ACC-000138,"Jackson, Miller and Robertson",Enterprise,Automotive,United States,Inactive
+139,ACC-000139,"Harvey, Davis and Crane",Mid-Market,Healthcare,Germany,Active
+140,ACC-000140,Chambers and Sons,Mid-Market,Retail,Germany,Active
+141,ACC-000141,Hernandez Inc,Small Business,Technology,Sweden,Active
+142,ACC-000142,Riggs PLC,Enterprise,Automotive,Mexico,Active
+143,ACC-000143,Gibson Ltd,Enterprise,Technology,Mexico,Active
+144,ACC-000144,"Lee, Horton and Snyder",Mid-Market,Technology,Sweden,Active
+145,ACC-000145,Hernandez Ltd,Small Business,Automotive,Canada,Active
+146,ACC-000146,Stafford Inc,Small Business,Retail,Germany,Active
+147,ACC-000147,Robinson-Brock,Enterprise,Retail,United States,Active
+148,ACC-000148,"Holmes, Williams and Wright",Enterprise,Healthcare,Mexico,Active
+149,ACC-000149,Bryant Group,Small Business,Healthcare,Mexico,Inactive
+150,ACC-000150,"Schmidt, Hansen and Stewart",Enterprise,Technology,Mexico,Active
+151,ACC-000151,Salazar-Ball,Small Business,Automotive,Canada,Active
+152,ACC-000152,"Simmons, Meadows and Griffin",Enterprise,Retail,Canada,Active
+153,ACC-000153,Manning Group,Small Business,Retail,Mexico,Active
+154,ACC-000154,Green-Wright,Enterprise,Technology,Germany,Active
+155,ACC-000155,"Ramirez, Strickland and Washington",Mid-Market,Automotive,Sweden,Inactive
+156,ACC-000156,Hill Inc,Mid-Market,Retail,Germany,Active
+157,ACC-000157,"Mitchell, Nelson and Flores",Enterprise,Manufacturing,Germany,Active
+158,ACC-000158,"Miller, Hernandez and Reyes",Mid-Market,Technology,Sweden,Active
+159,ACC-000159,Mccarthy Inc,Mid-Market,Automotive,Mexico,Active
+160,ACC-000160,Russell-Daniels,Small Business,Automotive,Canada,Active
+161,ACC-000161,Brown-Wall,Small Business,Retail,Mexico,Active
+162,ACC-000162,Stein-Silva,Mid-Market,Retail,Canada,Active
+163,ACC-000163,"Smith, Gilmore and Johnston",Mid-Market,Technology,Germany,Active
+164,ACC-000164,Smith-Bell,Mid-Market,Retail,Mexico,Active
+165,ACC-000165,Castaneda-Ashley,Mid-Market,Retail,Mexico,Inactive
+166,ACC-000166,Medina-Navarro,Small Business,Manufacturing,Mexico,Active
+167,ACC-000167,"Hurst, Freeman and Nelson",Enterprise,Manufacturing,Canada,Active
+168,ACC-000168,Johnson-Rogers,Enterprise,Automotive,Mexico,Active
+169,ACC-000169,"Yates, Ramsey and Pittman",Mid-Market,Technology,Mexico,Active
+170,ACC-000170,Hooper PLC,Enterprise,Technology,Mexico,Active
+171,ACC-000171,Meadows PLC,Enterprise,Healthcare,United States,Active
+172,ACC-000172,"Alvarado, Miller and Patterson",Enterprise,Healthcare,Sweden,Active
+173,ACC-000173,White-Green,Small Business,Automotive,Mexico,Active
+174,ACC-000174,Lewis-Murphy,Small Business,Manufacturing,Sweden,Active
+175,ACC-000175,Ramirez-Bean,Small Business,Manufacturing,Canada,Active
+176,ACC-000176,King-Miller,Mid-Market,Automotive,Sweden,Inactive
+177,ACC-000177,Curry Inc,Small Business,Automotive,United States,Active
+178,ACC-000178,Walker-Jones,Enterprise,Manufacturing,Germany,Active
+179,ACC-000179,"Williams, Johnson and Wright",Small Business,Automotive,Sweden,Active
+180,ACC-000180,Howell and Sons,Mid-Market,Manufacturing,Germany,Active
+181,ACC-000181,Wells Inc,Small Business,Healthcare,Sweden,Active
+182,ACC-000182,"Gould, Marshall and Scott",Enterprise,Technology,Canada,Active
+183,ACC-000183,Jackson-Lawson,Mid-Market,Healthcare,Sweden,Active
+184,ACC-000184,"Higgins, Strickland and Martin",Small Business,Retail,Sweden,Active
+185,ACC-000185,Rodriguez-Johnson,Mid-Market,Retail,Sweden,Active
+186,ACC-000186,Johnston-Odonnell,Mid-Market,Automotive,Canada,Active
+187,ACC-000187,Sanders-Espinoza,Enterprise,Manufacturing,Canada,Active
+188,ACC-000188,Vargas Ltd,Mid-Market,Retail,Canada,Active
+189,ACC-000189,Garcia LLC,Enterprise,Retail,Germany,Active
+190,ACC-000190,"Burke, Martinez and Riggs",Enterprise,Manufacturing,Germany,Active
+191,ACC-000191,Reed Group,Small Business,Retail,Canada,Active
+192,ACC-000192,"Wood, Hunter and Peterson",Mid-Market,Automotive,Germany,Inactive
+193,ACC-000193,Short-Garcia,Mid-Market,Manufacturing,Canada,Active
+194,ACC-000194,Reid-Poole,Mid-Market,Healthcare,Canada,Active
+195,ACC-000195,"Hernandez, Thompson and Boyd",Small Business,Retail,Sweden,Active
+196,ACC-000196,"Nelson, Morton and Medina",Enterprise,Healthcare,Mexico,Active
+197,ACC-000197,Marshall-Petersen,Mid-Market,Healthcare,Canada,Active
+198,ACC-000198,"Adams, Christian and Rivas",Enterprise,Technology,Mexico,Active
+199,ACC-000199,Ramirez Group,Mid-Market,Technology,Germany,Inactive
+200,ACC-000200,Christensen PLC,Small Business,Healthcare,United States,Active
+201,ACC-000201,"Barnett, Rogers and Snyder",Mid-Market,Technology,Canada,Inactive
+202,ACC-000202,White-Lewis,Small Business,Retail,United States,Inactive
+203,ACC-000203,Peterson-Beard,Mid-Market,Technology,United States,Active
+204,ACC-000204,"Beard, Peters and Black",Small Business,Healthcare,Canada,Active
+205,ACC-000205,Miller Ltd,Mid-Market,Healthcare,Germany,Active
+206,ACC-000206,Freeman-Chang,Enterprise,Technology,Sweden,Inactive
+207,ACC-000207,"Alvarez, Joseph and West",Small Business,Retail,United States,Active
+208,ACC-000208,Davis and Sons,Small Business,Healthcare,Mexico,Active
+209,ACC-000209,Holt-Torres,Enterprise,Automotive,Canada,Active
+210,ACC-000210,"Wood, Tran and Cooper",Small Business,Technology,United States,Active
+211,ACC-000211,"Pierce, Bell and Chavez",Enterprise,Healthcare,Sweden,Active
+212,ACC-000212,King-Martinez,Small Business,Healthcare,Sweden,Active
+213,ACC-000213,Stewart Ltd,Small Business,Retail,Sweden,Inactive
+214,ACC-000214,"Tapia, Vaughn and Lee",Mid-Market,Technology,United States,Active
+215,ACC-000215,"Washington, Hardy and Bray",Small Business,Manufacturing,United States,Active
+216,ACC-000216,"Carlson, Hooper and Wall",Enterprise,Manufacturing,Canada,Active
+217,ACC-000217,Perez-White,Enterprise,Retail,Germany,Active
+218,ACC-000218,Erickson and Sons,Enterprise,Healthcare,Mexico,Active
+219,ACC-000219,Williams-Brown,Mid-Market,Technology,Canada,Active
+220,ACC-000220,Terry-Martinez,Small Business,Retail,United States,Active
+221,ACC-000221,Garcia-Smith,Enterprise,Healthcare,Mexico,Active
+222,ACC-000222,Harrison-Alexander,Mid-Market,Retail,United States,Active
+223,ACC-000223,Sheppard LLC,Small Business,Technology,United States,Active
+224,ACC-000224,Wilson-Jones,Enterprise,Healthcare,Germany,Active
+225,ACC-000225,Jones-Soto,Small Business,Retail,Germany,Active
+226,ACC-000226,Hernandez PLC,Enterprise,Technology,Sweden,Active
+227,ACC-000227,Miller-Wright,Small Business,Manufacturing,Mexico,Active
+228,ACC-000228,"Duran, Obrien and Gibbs",Mid-Market,Technology,Mexico,Active
+229,ACC-000229,Rowe Group,Mid-Market,Manufacturing,Canada,Active
+230,ACC-000230,Kerr-Evans,Enterprise,Automotive,Mexico,Active
+231,ACC-000231,"Branch, Torres and Oliver",Mid-Market,Technology,Sweden,Inactive
+232,ACC-000232,"Choi, Garcia and Farmer",Small Business,Healthcare,United States,Active
+233,ACC-000233,"Clark, Guerrero and Moore",Enterprise,Technology,Mexico,Active
+234,ACC-000234,Arnold and Sons,Small Business,Healthcare,United States,Active
+235,ACC-000235,Ortiz Ltd,Mid-Market,Healthcare,Germany,Active
+236,ACC-000236,"Harrison, Johnson and Roberts",Small Business,Automotive,Sweden,Active
+237,ACC-000237,Warner-Gibson,Mid-Market,Manufacturing,Canada,Active
+238,ACC-000238,"Hall, Baker and Moody",Mid-Market,Manufacturing,Canada,Active
+239,ACC-000239,"Guerrero, Peck and Coleman",Enterprise,Automotive,Germany,Active
+240,ACC-000240,"Walker, Hernandez and Baker",Mid-Market,Manufacturing,Mexico,Active
+241,ACC-000241,Jones and Sons,Enterprise,Retail,Canada,Active
+242,ACC-000242,Larson-Holloway,Mid-Market,Healthcare,Sweden,Active
+243,ACC-000243,Gonzales-Harrison,Enterprise,Technology,Germany,Active
+244,ACC-000244,Lyons-Bender,Mid-Market,Retail,United States,Inactive
+245,ACC-000245,"Fernandez, Kim and George",Mid-Market,Technology,Sweden,Active
+246,ACC-000246,Navarro-Munoz,Enterprise,Technology,Mexico,Active
+247,ACC-000247,Davis Ltd,Small Business,Technology,Germany,Active
+248,ACC-000248,"Matthews, Smith and Hubbard",Mid-Market,Retail,United States,Active
+249,ACC-000249,Johnston-Hines,Small Business,Automotive,United States,Active
+250,ACC-000250,Ruiz Ltd,Enterprise,Technology,Germany,Active
+251,ACC-000251,Moon-White,Enterprise,Automotive,Germany,Active
+252,ACC-000252,"Graham, Olsen and Costa",Mid-Market,Retail,Germany,Active
+253,ACC-000253,Bailey-Cook,Enterprise,Manufacturing,Canada,Active
+254,ACC-000254,"Garcia, Martin and Jenkins",Enterprise,Healthcare,Germany,Active
+255,ACC-000255,Roberts-Landry,Mid-Market,Healthcare,Canada,Active
+256,ACC-000256,"Johnson, Miller and King",Enterprise,Manufacturing,Sweden,Active
+257,ACC-000257,Cordova Group,Small Business,Automotive,Sweden,Active
+258,ACC-000258,"Bryan, Smith and Booth",Enterprise,Retail,Sweden,Inactive
+259,ACC-000259,Gutierrez-Lopez,Enterprise,Retail,United States,Inactive
+260,ACC-000260,Dean-Jimenez,Mid-Market,Technology,Mexico,Inactive
+261,ACC-000261,Wolf-Harris,Small Business,Automotive,United States,Active
+262,ACC-000262,"Anderson, Roberts and Gilmore",Enterprise,Technology,Mexico,Active
+263,ACC-000263,Martinez-Dudley,Enterprise,Retail,United States,Active
+264,ACC-000264,"Lloyd, Mckinney and Collins",Small Business,Technology,Germany,Active
+265,ACC-000265,Tran Inc,Small Business,Automotive,United States,Active
+266,ACC-000266,Gay Inc,Mid-Market,Manufacturing,United States,Active
+267,ACC-000267,Valentine-Holland,Mid-Market,Manufacturing,Sweden,Inactive
+268,ACC-000268,Jimenez Ltd,Mid-Market,Automotive,Sweden,Active
+269,ACC-000269,Hicks-Hill,Mid-Market,Technology,United States,Active
+270,ACC-000270,Baird-Sanchez,Mid-Market,Manufacturing,Mexico,Active
+271,ACC-000271,"Thomas, Lee and Greene",Enterprise,Automotive,Canada,Active
+272,ACC-000272,"Suarez, Shields and Hill",Enterprise,Manufacturing,Canada,Active
+273,ACC-000273,Morgan-French,Enterprise,Technology,Canada,Active
+274,ACC-000274,Hoover-Campbell,Small Business,Healthcare,Germany,Active
+275,ACC-000275,Monroe-Carpenter,Mid-Market,Healthcare,United States,Active
+276,ACC-000276,"Burns, Hernandez and Ryan",Mid-Market,Healthcare,Germany,Active
+277,ACC-000277,Cook-Hines,Mid-Market,Healthcare,Canada,Active
+278,ACC-000278,Gibson-Morris,Small Business,Healthcare,United States,Active
+279,ACC-000279,Pollard and Sons,Enterprise,Manufacturing,Canada,Active
+280,ACC-000280,"Reyes, Chase and Jenkins",Enterprise,Technology,Sweden,Active
+281,ACC-000281,Garner-Thornton,Enterprise,Healthcare,Sweden,Active
+282,ACC-000282,Hughes-Alvarado,Mid-Market,Healthcare,Canada,Active
+283,ACC-000283,"Pollard, Simpson and Johnson",Small Business,Automotive,Canada,Active
+284,ACC-000284,"Sanford, Rivera and Garcia",Mid-Market,Technology,Sweden,Active
+285,ACC-000285,Garcia-Lozano,Mid-Market,Automotive,Sweden,Active
+286,ACC-000286,Bowen Group,Small Business,Manufacturing,Mexico,Active
+287,ACC-000287,"Booker, Jones and Harrington",Enterprise,Technology,Mexico,Active
+288,ACC-000288,Morgan-Schwartz,Mid-Market,Automotive,Mexico,Active
+289,ACC-000289,"Miller, Murphy and Craig",Mid-Market,Manufacturing,Mexico,Active
+290,ACC-000290,"James, Stewart and Higgins",Mid-Market,Healthcare,Germany,Active
+291,ACC-000291,Brennan-Johnson,Small Business,Automotive,Canada,Active
+292,ACC-000292,Young Ltd,Enterprise,Technology,Canada,Active
+293,ACC-000293,Bright-Francis,Small Business,Retail,Canada,Active
+294,ACC-000294,Good-Hodges,Enterprise,Manufacturing,Sweden,Active
+295,ACC-000295,"Brennan, Wallace and Benson",Mid-Market,Technology,Sweden,Inactive
+296,ACC-000296,Williams Inc,Mid-Market,Retail,Mexico,Active
+297,ACC-000297,Howard-Jordan,Small Business,Automotive,United States,Active
+298,ACC-000298,Schmidt PLC,Mid-Market,Healthcare,Germany,Active
+299,ACC-000299,"Sparks, Jackson and Miller",Enterprise,Retail,Canada,Active
+300,ACC-000300,Harvey-Allen,Enterprise,Manufacturing,Mexico,Active
+301,ACC-000301,"Thomas, Murray and King",Mid-Market,Healthcare,Canada,Active
+302,ACC-000302,Estrada-Nolan,Small Business,Retail,United States,Active
+303,ACC-000303,Santana-Byrd,Enterprise,Healthcare,Germany,Active
+304,ACC-000304,Jones LLC,Small Business,Technology,Mexico,Active
+305,ACC-000305,"Evans, Hayden and Vaughn",Mid-Market,Healthcare,Mexico,Active
+306,ACC-000306,Bruce-Gonzalez,Enterprise,Healthcare,United States,Active
+307,ACC-000307,Castaneda-Rodriguez,Enterprise,Automotive,Canada,Active
+308,ACC-000308,Armstrong-Andrews,Mid-Market,Automotive,United States,Active
+309,ACC-000309,"Phillips, Spence and Barrett",Enterprise,Retail,Canada,Active
+310,ACC-000310,Smith-Grimes,Enterprise,Technology,Germany,Active
+311,ACC-000311,"Beltran, Lozano and Mcgee",Mid-Market,Retail,Canada,Active
+312,ACC-000312,Parsons-Hall,Small Business,Automotive,United States,Active
+313,ACC-000313,Robinson-Lee,Enterprise,Healthcare,Germany,Active
+314,ACC-000314,Byrd-Le,Enterprise,Technology,United States,Active
+315,ACC-000315,"Becker, Taylor and Davis",Enterprise,Technology,Canada,Active
+316,ACC-000316,"Lucas, Parker and Alexander",Mid-Market,Automotive,United States,Active
+317,ACC-000317,"Diaz, Anderson and Browning",Small Business,Healthcare,United States,Active
+318,ACC-000318,Burgess-Thompson,Small Business,Retail,Germany,Active
+319,ACC-000319,Buchanan LLC,Small Business,Retail,Mexico,Active
+320,ACC-000320,"Shaw, Nelson and Martin",Small Business,Automotive,Sweden,Active
+321,ACC-000321,Coffey-Phillips,Enterprise,Manufacturing,United States,Inactive
+322,ACC-000322,Brock-Mcdonald,Enterprise,Automotive,United States,Active
+323,ACC-000323,Taylor and Sons,Mid-Market,Retail,Canada,Active
+324,ACC-000324,"Ramsey, Whitney and Coffey",Small Business,Technology,Sweden,Active
+325,ACC-000325,"Diaz, Gibbs and Smith",Small Business,Technology,Sweden,Active
+326,ACC-000326,"Martinez, Richardson and Curry",Enterprise,Manufacturing,Mexico,Active
+327,ACC-000327,Richards-Carson,Enterprise,Healthcare,Canada,Active
+328,ACC-000328,Rodriguez-Hall,Enterprise,Manufacturing,United States,Active
+329,ACC-000329,Harvey PLC,Enterprise,Healthcare,United States,Inactive
+330,ACC-000330,Herman-Walker,Mid-Market,Automotive,United States,Active
+331,ACC-000331,Reid Group,Mid-Market,Retail,United States,Active
+332,ACC-000332,"Turner, Ortiz and Taylor",Mid-Market,Healthcare,Mexico,Inactive
+333,ACC-000333,Torres Group,Enterprise,Retail,Canada,Active
+334,ACC-000334,Davis PLC,Small Business,Technology,Mexico,Active
+335,ACC-000335,Price LLC,Mid-Market,Retail,Germany,Active
+336,ACC-000336,"Avery, Horton and Fernandez",Small Business,Technology,Germany,Active
+337,ACC-000337,"Newton, Moore and Perry",Small Business,Healthcare,Germany,Active
+338,ACC-000338,Bass PLC,Enterprise,Automotive,Mexico,Active
+339,ACC-000339,Crosby-Ramirez,Enterprise,Healthcare,United States,Active
+340,ACC-000340,"Wood, Ramos and Sampson",Small Business,Retail,United States,Active
+341,ACC-000341,Garcia-Jennings,Mid-Market,Retail,Germany,Active
+342,ACC-000342,"Winters, Newman and Brown",Enterprise,Manufacturing,Canada,Active
+343,ACC-000343,Lopez-Martinez,Mid-Market,Manufacturing,Germany,Active
+344,ACC-000344,Davis-Lewis,Mid-Market,Retail,Sweden,Inactive
+345,ACC-000345,"Harper, Smith and Buchanan",Small Business,Manufacturing,Germany,Active
+346,ACC-000346,Zhang PLC,Enterprise,Technology,Canada,Active
+347,ACC-000347,Jones PLC,Small Business,Technology,Canada,Active
+348,ACC-000348,Willis and Sons,Small Business,Healthcare,Sweden,Active
+349,ACC-000349,Schroeder-Kramer,Enterprise,Healthcare,Canada,Active
+350,ACC-000350,"Smith, Garrison and Thomas",Enterprise,Retail,Germany,Active
+351,ACC-000351,Fernandez and Sons,Mid-Market,Manufacturing,Germany,Active
+352,ACC-000352,Guerrero Inc,Enterprise,Automotive,Sweden,Inactive
+353,ACC-000353,Smith and Sons,Enterprise,Retail,Sweden,Active
+354,ACC-000354,"Morris, Thompson and Williams",Mid-Market,Technology,Germany,Active
+355,ACC-000355,"Fisher, Wilson and Brown",Small Business,Automotive,Canada,Active
+356,ACC-000356,Strickland-Palmer,Small Business,Retail,Canada,Inactive
+357,ACC-000357,Hayes and Sons,Enterprise,Automotive,Germany,Active
+358,ACC-000358,"Williams, Logan and Camacho",Small Business,Manufacturing,Canada,Active
+359,ACC-000359,"Turner, Schneider and Johnson",Enterprise,Manufacturing,Sweden,Active
+360,ACC-000360,Boone-Simmons,Small Business,Automotive,Canada,Active
+361,ACC-000361,Henry Group,Small Business,Manufacturing,Sweden,Active
+362,ACC-000362,Lam LLC,Small Business,Manufacturing,Sweden,Inactive
+363,ACC-000363,"Hernandez, Martinez and Weber",Enterprise,Automotive,Mexico,Inactive
+364,ACC-000364,"Kelley, Nguyen and Vang",Small Business,Automotive,United States,Active
+365,ACC-000365,"Phillips, Wagner and Jordan",Enterprise,Retail,Sweden,Active
+366,ACC-000366,"Wilson, Pena and Rich",Mid-Market,Manufacturing,United States,Active
+367,ACC-000367,"Le, Lewis and Hayes",Mid-Market,Automotive,Canada,Inactive
+368,ACC-000368,Gutierrez Group,Enterprise,Retail,United States,Active
+369,ACC-000369,Perry-Davis,Enterprise,Technology,United States,Active
+370,ACC-000370,Edwards-Scott,Small Business,Healthcare,United States,Active
+371,ACC-000371,Mcdaniel Group,Mid-Market,Technology,United States,Active
+372,ACC-000372,Davis Inc,Mid-Market,Automotive,Mexico,Active
+373,ACC-000373,Reynolds Ltd,Mid-Market,Retail,United States,Inactive
+374,ACC-000374,"Watson, Anderson and Brown",Mid-Market,Retail,Canada,Inactive
+375,ACC-000375,"Hoffman, Santiago and Jenkins",Small Business,Technology,Sweden,Inactive
+376,ACC-000376,"Pugh, Henderson and Moon",Enterprise,Technology,Mexico,Active
+377,ACC-000377,Schmitt PLC,Small Business,Technology,Mexico,Active
+378,ACC-000378,Bell-Lane,Small Business,Healthcare,United States,Active
+379,ACC-000379,Moore Group,Mid-Market,Retail,Mexico,Active
+380,ACC-000380,Boone LLC,Enterprise,Retail,Sweden,Active
+381,ACC-000381,"Richardson, Farmer and Andrews",Enterprise,Technology,United States,Active
+382,ACC-000382,Bruce-Villegas,Small Business,Automotive,Germany,Active
+383,ACC-000383,"Austin, Day and Johnson",Small Business,Automotive,Mexico,Active
+384,ACC-000384,"Gallegos, Adams and White",Enterprise,Technology,Canada,Active
+385,ACC-000385,"Farmer, Dorsey and Bell",Enterprise,Automotive,United States,Active
+386,ACC-000386,Kane PLC,Enterprise,Automotive,Mexico,Active
+387,ACC-000387,"Morales, Thomas and Schultz",Enterprise,Retail,Mexico,Active
+388,ACC-000388,Davis PLC,Small Business,Automotive,Mexico,Active
+389,ACC-000389,Bennett Group,Small Business,Technology,Mexico,Active
+390,ACC-000390,Moore-Collins,Enterprise,Technology,Mexico,Active
+391,ACC-000391,Frank-Bradley,Small Business,Automotive,Germany,Active
+392,ACC-000392,Ware and Sons,Enterprise,Retail,United States,Active
+393,ACC-000393,Webster Inc,Mid-Market,Technology,Sweden,Active
+394,ACC-000394,"Miller, Ramos and Coleman",Mid-Market,Healthcare,Canada,Active
+395,ACC-000395,"Ramos, Nelson and Fischer",Small Business,Automotive,Germany,Active
+396,ACC-000396,Reed Inc,Small Business,Retail,Sweden,Active
+397,ACC-000397,Gregory-Watkins,Enterprise,Healthcare,Mexico,Active
+398,ACC-000398,"Estrada, Williams and Foster",Enterprise,Healthcare,Canada,Active
+399,ACC-000399,"Brown, Harris and Dougherty",Enterprise,Manufacturing,Canada,Active
+400,ACC-000400,Duran LLC,Enterprise,Automotive,Sweden,Active
+401,ACC-000401,Wilson-Jimenez,Small Business,Technology,United States,Active
+402,ACC-000402,Thompson-James,Small Business,Automotive,Germany,Active
+403,ACC-000403,"Hall, Hansen and Barnett",Enterprise,Automotive,Sweden,Active
+404,ACC-000404,Jones-Hensley,Small Business,Automotive,Germany,Active
+405,ACC-000405,Graham Group,Mid-Market,Manufacturing,Canada,Active
+406,ACC-000406,Atkins PLC,Mid-Market,Manufacturing,Mexico,Active
+407,ACC-000407,Berry-Mckinney,Mid-Market,Automotive,Canada,Active
+408,ACC-000408,Roberts-Sullivan,Enterprise,Technology,Sweden,Active
+409,ACC-000409,Jackson-Meza,Small Business,Manufacturing,Germany,Active
+410,ACC-000410,Collier-Gillespie,Enterprise,Automotive,United States,Active
+411,ACC-000411,Kim Inc,Enterprise,Manufacturing,Germany,Active
+412,ACC-000412,Graham Group,Enterprise,Retail,United States,Active
+413,ACC-000413,"Miller, Harrell and Reese",Enterprise,Automotive,Mexico,Inactive
+414,ACC-000414,Cook and Sons,Enterprise,Healthcare,Sweden,Active
+415,ACC-000415,Dixon Inc,Enterprise,Retail,Canada,Active
+416,ACC-000416,"Hicks, Bullock and Bailey",Small Business,Healthcare,Germany,Active
+417,ACC-000417,"Mullen, Brewer and Hernandez",Small Business,Healthcare,Sweden,Active
+418,ACC-000418,Thomas and Sons,Enterprise,Retail,Canada,Active
+419,ACC-000419,Morrison Ltd,Enterprise,Technology,Canada,Active
+420,ACC-000420,Thompson Ltd,Mid-Market,Retail,Germany,Inactive
+421,ACC-000421,Marshall-Elliott,Small Business,Technology,Canada,Active
+422,ACC-000422,"Cole, Glass and Cunningham",Small Business,Technology,Sweden,Active
+423,ACC-000423,"Downs, Morris and Maddox",Small Business,Retail,United States,Active
+424,ACC-000424,Hernandez-Jones,Mid-Market,Healthcare,Mexico,Active
+425,ACC-000425,Welch-Hogan,Mid-Market,Automotive,Canada,Active
+426,ACC-000426,"Brown, Romero and Collins",Enterprise,Technology,Germany,Active
+427,ACC-000427,Johnson-Wood,Small Business,Healthcare,United States,Active
+428,ACC-000428,Jones-Lin,Small Business,Technology,Canada,Active
+429,ACC-000429,Gilbert PLC,Enterprise,Automotive,Sweden,Active
+430,ACC-000430,Ford-Spencer,Small Business,Healthcare,Canada,Active
+431,ACC-000431,"Huang, Cole and Pacheco",Enterprise,Retail,United States,Active
+432,ACC-000432,"Lopez, Jacobs and Mason",Small Business,Manufacturing,Germany,Active
+433,ACC-000433,Hayes LLC,Small Business,Manufacturing,United States,Active
+434,ACC-000434,"Miller, Lucas and Williams",Enterprise,Retail,Canada,Active
+435,ACC-000435,"Kim, Gonzales and Mills",Mid-Market,Automotive,Germany,Active
+436,ACC-000436,Cox LLC,Enterprise,Manufacturing,Germany,Active
+437,ACC-000437,Ortiz-Morgan,Mid-Market,Retail,Sweden,Active
+438,ACC-000438,"Williams, Mccoy and Cook",Small Business,Healthcare,Sweden,Active
+439,ACC-000439,Davis-Gregory,Enterprise,Automotive,Mexico,Active
+440,ACC-000440,King-York,Mid-Market,Technology,United States,Active
+441,ACC-000441,"Marks, Cook and Aguilar",Small Business,Healthcare,Canada,Active
+442,ACC-000442,Rangel LLC,Enterprise,Retail,United States,Active
+443,ACC-000443,"Hale, Myers and Larson",Enterprise,Technology,United States,Active
+444,ACC-000444,Collins Group,Mid-Market,Retail,Canada,Active
+445,ACC-000445,"Conner, Li and Santiago",Mid-Market,Manufacturing,Germany,Active
+446,ACC-000446,"Osborn, Gaines and Davis",Mid-Market,Manufacturing,Mexico,Inactive
+447,ACC-000447,"Henderson, Cox and Cox",Enterprise,Technology,Sweden,Active
+448,ACC-000448,Bean LLC,Small Business,Technology,Sweden,Inactive
+449,ACC-000449,Lee-Cooke,Mid-Market,Healthcare,Sweden,Active
+450,ACC-000450,Jones Inc,Enterprise,Manufacturing,United States,Inactive
+451,ACC-000451,"Wise, Conley and Stephenson",Small Business,Automotive,Mexico,Inactive
+452,ACC-000452,Stanley PLC,Small Business,Manufacturing,Mexico,Active
+453,ACC-000453,Harper and Sons,Mid-Market,Manufacturing,United States,Active
+454,ACC-000454,White Ltd,Enterprise,Automotive,Germany,Inactive
+455,ACC-000455,"Lamb, Martin and Kim",Mid-Market,Retail,Mexico,Inactive
+456,ACC-000456,Diaz-Ball,Mid-Market,Manufacturing,Germany,Inactive
+457,ACC-000457,Bishop-Goodwin,Enterprise,Technology,Mexico,Active
+458,ACC-000458,Young-Allen,Mid-Market,Retail,Mexico,Active
+459,ACC-000459,Mckee-Lee,Small Business,Automotive,Germany,Active
+460,ACC-000460,"Valentine, Joyce and Murray",Enterprise,Retail,United States,Active
+461,ACC-000461,Strickland-Shaw,Small Business,Healthcare,Canada,Active
+462,ACC-000462,Burch-Montoya,Enterprise,Automotive,Canada,Active
+463,ACC-000463,"Taylor, Wright and Davidson",Small Business,Manufacturing,Germany,Active
+464,ACC-000464,Spencer-Garcia,Mid-Market,Manufacturing,Germany,Active
+465,ACC-000465,"Rosales, Mitchell and Hines",Enterprise,Technology,Germany,Active
+466,ACC-000466,Cole-Palmer,Small Business,Manufacturing,United States,Active
+467,ACC-000467,Davis-Lozano,Enterprise,Healthcare,Canada,Active
+468,ACC-000468,Wilkerson-Arias,Mid-Market,Automotive,Sweden,Active
+469,ACC-000469,Brown-Shaw,Enterprise,Healthcare,United States,Active
+470,ACC-000470,Hughes Inc,Small Business,Manufacturing,Canada,Active
+471,ACC-000471,Walker-Flores,Small Business,Technology,Mexico,Active
+472,ACC-000472,Combs Ltd,Small Business,Healthcare,United States,Inactive
+473,ACC-000473,Moody-Taylor,Mid-Market,Retail,Germany,Active
+474,ACC-000474,Lowery-Kennedy,Mid-Market,Automotive,Canada,Active
+475,ACC-000475,Blake Group,Mid-Market,Technology,United States,Active
+476,ACC-000476,Gilbert-Bullock,Small Business,Automotive,Germany,Active
+477,ACC-000477,Scott and Sons,Small Business,Retail,Germany,Active
+478,ACC-000478,"Bentley, Lynch and Henderson",Enterprise,Automotive,United States,Inactive
+479,ACC-000479,Young-Martinez,Mid-Market,Automotive,United States,Active
+480,ACC-000480,Barnes PLC,Enterprise,Retail,United States,Active
+481,ACC-000481,Brown-Copeland,Enterprise,Manufacturing,Sweden,Active
+482,ACC-000482,Carlson-Smith,Small Business,Manufacturing,Mexico,Active
+483,ACC-000483,"Andrews, Higgins and Carter",Enterprise,Automotive,United States,Active
+484,ACC-000484,Mendez and Sons,Small Business,Manufacturing,Canada,Active
+485,ACC-000485,"Butler, Beck and Miller",Mid-Market,Retail,Canada,Active
+486,ACC-000486,Jones-Fox,Enterprise,Technology,Canada,Inactive
+487,ACC-000487,"Hartman, Romero and Smith",Mid-Market,Manufacturing,Canada,Active
+488,ACC-000488,Williams-Hughes,Mid-Market,Manufacturing,United States,Active
+489,ACC-000489,King-Smith,Small Business,Manufacturing,Germany,Inactive
+490,ACC-000490,Cooper Ltd,Mid-Market,Retail,Canada,Active
+491,ACC-000491,"Fuller, Ingram and Moss",Small Business,Automotive,Canada,Active
+492,ACC-000492,Anderson-Bell,Small Business,Retail,Canada,Active
+493,ACC-000493,Li-Thompson,Small Business,Manufacturing,Mexico,Active
+494,ACC-000494,"Marshall, Dominguez and Welch",Mid-Market,Automotive,Sweden,Active
+495,ACC-000495,Brown Group,Enterprise,Retail,Germany,Active
+496,ACC-000496,Carter Inc,Mid-Market,Retail,Canada,Active
+497,ACC-000497,Blackwell LLC,Enterprise,Retail,Mexico,Active
+498,ACC-000498,Robertson-Hays,Mid-Market,Healthcare,Mexico,Active
+499,ACC-000499,"Kennedy, Johnson and Lucas",Small Business,Retail,United States,Active
+500,ACC-000500,Kelly-Norman,Mid-Market,Technology,Mexico,Active
+501,ACC-000501,"Rivera, Martinez and Richardson",Enterprise,Retail,Sweden,Active
+502,ACC-000502,Paul-Kline,Mid-Market,Automotive,United States,Active
+503,ACC-000503,Morgan-Lopez,Small Business,Automotive,Sweden,Inactive
+504,ACC-000504,"Jimenez, Glass and Stone",Small Business,Automotive,United States,Active
+505,ACC-000505,Acosta Inc,Enterprise,Retail,United States,Active
+506,ACC-000506,Morrison-Short,Mid-Market,Automotive,United States,Active
+507,ACC-000507,"Carter, Garcia and Murphy",Mid-Market,Technology,Germany,Active
+508,ACC-000508,Parker-Morrison,Enterprise,Retail,Sweden,Active
+509,ACC-000509,Jackson-Wallace,Enterprise,Technology,Germany,Active
+510,ACC-000510,Williams-Berg,Enterprise,Healthcare,United States,Active
+511,ACC-000511,Mendez-Graham,Small Business,Automotive,United States,Active
+512,ACC-000512,"Whitney, Gould and Jones",Small Business,Automotive,Mexico,Active
+513,ACC-000513,"Sullivan, Palmer and Brady",Small Business,Healthcare,Mexico,Active
+514,ACC-000514,Cisneros and Sons,Small Business,Automotive,Sweden,Active
+515,ACC-000515,"Gregory, Kim and Martinez",Small Business,Automotive,United States,Active
+516,ACC-000516,Osborne LLC,Enterprise,Technology,Mexico,Active
+517,ACC-000517,Reyes-Bradley,Small Business,Retail,Sweden,Active
+518,ACC-000518,"Hernandez, Cole and Watson",Enterprise,Manufacturing,Germany,Active
+519,ACC-000519,Hines-Berry,Mid-Market,Retail,United States,Active
+520,ACC-000520,"Richardson, Edwards and Ramirez",Mid-Market,Retail,Mexico,Active
+521,ACC-000521,Johnson and Sons,Mid-Market,Technology,Germany,Active
+522,ACC-000522,Holmes-Mcintyre,Enterprise,Healthcare,United States,Active
+523,ACC-000523,Green LLC,Enterprise,Manufacturing,Canada,Active
+524,ACC-000524,"Griffin, Davies and Mitchell",Small Business,Manufacturing,Germany,Active
+525,ACC-000525,Gonzalez-Taylor,Enterprise,Healthcare,United States,Active
+526,ACC-000526,Hayes Ltd,Enterprise,Manufacturing,Canada,Active
+527,ACC-000527,Osborn-Cochran,Small Business,Automotive,Germany,Active
+528,ACC-000528,Contreras-Mckinney,Enterprise,Manufacturing,Mexico,Active
+529,ACC-000529,"Daniels, Vance and York",Small Business,Manufacturing,United States,Active
+530,ACC-000530,"Mckinney, Graves and Thompson",Small Business,Technology,Germany,Active
+531,ACC-000531,Hicks-Martinez,Mid-Market,Manufacturing,Mexico,Active
+532,ACC-000532,Conner and Sons,Enterprise,Manufacturing,Mexico,Active
+533,ACC-000533,Johnson-Spencer,Enterprise,Technology,Mexico,Active
+534,ACC-000534,Mcdonald-Bird,Enterprise,Manufacturing,United States,Active
+535,ACC-000535,Salazar Inc,Mid-Market,Technology,Mexico,Active
+536,ACC-000536,Parker Ltd,Enterprise,Manufacturing,Mexico,Active
+537,ACC-000537,"Mendoza, Jenkins and Ortiz",Mid-Market,Manufacturing,Canada,Inactive
+538,ACC-000538,"Jones, Compton and Day",Enterprise,Manufacturing,Germany,Active
+539,ACC-000539,Owens-Holmes,Mid-Market,Healthcare,Germany,Active
+540,ACC-000540,Humphrey PLC,Enterprise,Healthcare,Germany,Active
+541,ACC-000541,"Matthews, Saunders and Anderson",Small Business,Retail,Canada,Active
+542,ACC-000542,"Bartlett, Brown and Martinez",Enterprise,Automotive,Mexico,Active
+543,ACC-000543,Torres and Sons,Enterprise,Manufacturing,Mexico,Active
+544,ACC-000544,Donovan-Perez,Enterprise,Retail,Canada,Inactive
+545,ACC-000545,"Jacobson, Singleton and King",Small Business,Automotive,Mexico,Inactive
+546,ACC-000546,"Huber, Hill and Weber",Enterprise,Retail,Canada,Active
+547,ACC-000547,"Ferguson, Shaw and Jackson",Mid-Market,Healthcare,Sweden,Active
+548,ACC-000548,"Moore, Hopkins and Le",Mid-Market,Technology,Germany,Active
+549,ACC-000549,"Morgan, Bradshaw and Williams",Mid-Market,Retail,Germany,Active
+550,ACC-000550,Miller Ltd,Small Business,Manufacturing,United States,Active
+551,ACC-000551,"Baker, Clark and Armstrong",Small Business,Automotive,Sweden,Inactive
+552,ACC-000552,"Fowler, Jimenez and Burton",Mid-Market,Technology,Canada,Active
+553,ACC-000553,May-Turner,Small Business,Retail,Canada,Active
+554,ACC-000554,Ballard Ltd,Enterprise,Healthcare,United States,Active
+555,ACC-000555,Evans-Jones,Small Business,Retail,Mexico,Active
+556,ACC-000556,Moore Group,Mid-Market,Manufacturing,United States,Active
+557,ACC-000557,Marshall-Peterson,Small Business,Technology,Sweden,Inactive
+558,ACC-000558,Edwards Ltd,Small Business,Healthcare,Mexico,Active
+559,ACC-000559,Gross-Valencia,Small Business,Technology,United States,Active
+560,ACC-000560,Anderson-Wood,Small Business,Technology,Germany,Active
+561,ACC-000561,"Rodriguez, Allen and Martinez",Mid-Market,Automotive,Germany,Inactive
+562,ACC-000562,Wright-Davis,Enterprise,Automotive,Canada,Active
+563,ACC-000563,Dougherty-Lin,Mid-Market,Automotive,Sweden,Active
+564,ACC-000564,Wright-Grimes,Enterprise,Technology,Germany,Active
+565,ACC-000565,Li PLC,Small Business,Retail,Germany,Active
+566,ACC-000566,"Edwards, Hines and Jimenez",Enterprise,Retail,Germany,Inactive
+567,ACC-000567,"Owens, Koch and Jimenez",Enterprise,Technology,Mexico,Active
+568,ACC-000568,Landry PLC,Enterprise,Healthcare,Sweden,Inactive
+569,ACC-000569,Levy-Lewis,Mid-Market,Technology,Canada,Active
+570,ACC-000570,Williams-Campbell,Mid-Market,Technology,Mexico,Active
+571,ACC-000571,"Khan, Pena and Ruiz",Small Business,Manufacturing,Mexico,Active
+572,ACC-000572,"Smith, Rodriguez and Anderson",Mid-Market,Automotive,Mexico,Active
+573,ACC-000573,Luna-Gallagher,Enterprise,Healthcare,Sweden,Active
+574,ACC-000574,Williams-Williams,Enterprise,Technology,Canada,Active
+575,ACC-000575,"Lee, Tran and Jones",Enterprise,Manufacturing,Sweden,Active
+576,ACC-000576,"Cole, Pierce and Bryan",Mid-Market,Automotive,Canada,Active
+577,ACC-000577,"Becker, Wilson and Hester",Small Business,Retail,Canada,Inactive
+578,ACC-000578,Brooks-Hatfield,Mid-Market,Healthcare,Germany,Active
+579,ACC-000579,"Mcmillan, Fischer and Gonzalez",Small Business,Manufacturing,Mexico,Active
+580,ACC-000580,"Morales, Williams and Williams",Enterprise,Healthcare,Germany,Active
+581,ACC-000581,"Cook, Wells and Bryant",Enterprise,Automotive,Canada,Active
+582,ACC-000582,"Barry, Taylor and Velazquez",Small Business,Automotive,Germany,Active
+583,ACC-000583,Martin-Ewing,Enterprise,Retail,Canada,Active
+584,ACC-000584,"Kirby, Wheeler and Romero",Enterprise,Retail,Sweden,Active
+585,ACC-000585,"Patel, Erickson and Evans",Mid-Market,Healthcare,Canada,Active
+586,ACC-000586,Richardson Ltd,Small Business,Automotive,Germany,Active
+587,ACC-000587,Whitney PLC,Small Business,Technology,Canada,Active
+588,ACC-000588,Robles-Swanson,Enterprise,Manufacturing,Canada,Active
+589,ACC-000589,"Soto, Carlson and Baker",Small Business,Technology,Mexico,Active
+590,ACC-000590,"Patton, Parsons and Lane",Small Business,Manufacturing,Canada,Active
+591,ACC-000591,"Williams, Castillo and Warren",Small Business,Healthcare,United States,Active
+592,ACC-000592,"Harvey, Randall and Hernandez",Small Business,Automotive,Canada,Active
+593,ACC-000593,"Allen, Armstrong and Graves",Enterprise,Automotive,Germany,Active
+594,ACC-000594,Smith LLC,Small Business,Manufacturing,United States,Active
+595,ACC-000595,Hernandez-Vaughn,Enterprise,Healthcare,Canada,Inactive
+596,ACC-000596,Shaw-Carr,Small Business,Manufacturing,United States,Active
+597,ACC-000597,Salas-Fitzgerald,Mid-Market,Healthcare,Germany,Active
+598,ACC-000598,Thornton PLC,Small Business,Healthcare,Sweden,Active
+599,ACC-000599,Hoffman Ltd,Mid-Market,Technology,Mexico,Active
+600,ACC-000600,Fox-Edwards,Mid-Market,Healthcare,Canada,Active
+601,ACC-000601,Stevens PLC,Mid-Market,Automotive,Mexico,Active
+602,ACC-000602,Payne-Lowe,Small Business,Healthcare,Canada,Active
+603,ACC-000603,"Becker, Lara and Baker",Small Business,Technology,Sweden,Active
+604,ACC-000604,Lee-Wright,Enterprise,Automotive,Germany,Inactive
+605,ACC-000605,"Evans, David and Hendrix",Small Business,Manufacturing,Sweden,Active
+606,ACC-000606,Bush-Vaughn,Mid-Market,Technology,Sweden,Active
+607,ACC-000607,Stewart-Bailey,Enterprise,Manufacturing,Germany,Active
+608,ACC-000608,"Hill, Martinez and Rhodes",Mid-Market,Retail,Canada,Inactive
+609,ACC-000609,Huang-Foster,Small Business,Automotive,Germany,Active
+610,ACC-000610,Blevins-Ballard,Small Business,Manufacturing,Mexico,Active
+611,ACC-000611,Williams-Moses,Small Business,Healthcare,Mexico,Active
+612,ACC-000612,Reed Group,Mid-Market,Manufacturing,Mexico,Active
+613,ACC-000613,"Scott, Mendoza and Harris",Small Business,Healthcare,United States,Active
+614,ACC-000614,"Nelson, Hoffman and Nelson",Mid-Market,Healthcare,Germany,Active
+615,ACC-000615,Gilbert PLC,Small Business,Manufacturing,United States,Active
+616,ACC-000616,Sanchez Ltd,Mid-Market,Manufacturing,Sweden,Inactive
+617,ACC-000617,"Perez, Hall and Garcia",Enterprise,Healthcare,Mexico,Active
+618,ACC-000618,Love-Garcia,Enterprise,Retail,United States,Active
+619,ACC-000619,Smith PLC,Enterprise,Manufacturing,Sweden,Active
+620,ACC-000620,Russell Group,Enterprise,Technology,Mexico,Active
+621,ACC-000621,Santos-Avila,Mid-Market,Automotive,Mexico,Active
+622,ACC-000622,Morris-Brewer,Mid-Market,Manufacturing,Canada,Active
+623,ACC-000623,Pearson and Sons,Enterprise,Technology,United States,Active
+624,ACC-000624,"Rodgers, Jefferson and Johnson",Mid-Market,Manufacturing,Mexico,Active
+625,ACC-000625,Butler and Sons,Mid-Market,Retail,Mexico,Active
+626,ACC-000626,Osborn Group,Enterprise,Technology,Germany,Active
+627,ACC-000627,Lopez-Curry,Mid-Market,Retail,Mexico,Active
+628,ACC-000628,Mcdowell-Smith,Mid-Market,Retail,United States,Active
+629,ACC-000629,"Morrison, Hebert and Rogers",Mid-Market,Automotive,Sweden,Active
+630,ACC-000630,Hays-Daniels,Mid-Market,Manufacturing,United States,Active
+631,ACC-000631,Small-Anderson,Small Business,Retail,Mexico,Active
+632,ACC-000632,"Mcdonald, Lee and Rodriguez",Enterprise,Technology,Sweden,Active
+633,ACC-000633,Simon Ltd,Mid-Market,Manufacturing,Mexico,Inactive
+634,ACC-000634,Higgins-Smith,Mid-Market,Technology,Germany,Inactive
+635,ACC-000635,Gibbs-Bradley,Enterprise,Retail,United States,Active
+636,ACC-000636,Thompson Ltd,Small Business,Retail,United States,Active
+637,ACC-000637,Wilcox-Robertson,Enterprise,Manufacturing,Canada,Active
+638,ACC-000638,Morales Inc,Enterprise,Healthcare,Sweden,Active
+639,ACC-000639,Holden Group,Small Business,Manufacturing,United States,Active
+640,ACC-000640,Boyle-Smith,Small Business,Automotive,Mexico,Active
+641,ACC-000641,Young-Molina,Small Business,Healthcare,Canada,Active
+642,ACC-000642,Turner-Sharp,Small Business,Manufacturing,Germany,Active
+643,ACC-000643,Green LLC,Small Business,Retail,Canada,Active
+644,ACC-000644,"Young, Contreras and Marshall",Mid-Market,Retail,Germany,Active
+645,ACC-000645,Sullivan PLC,Small Business,Manufacturing,Germany,Active
+646,ACC-000646,"Carrillo, Vaughn and Fowler",Enterprise,Automotive,United States,Inactive
+647,ACC-000647,Richardson-Walker,Mid-Market,Automotive,Germany,Active
+648,ACC-000648,Mendoza Group,Mid-Market,Healthcare,Sweden,Inactive
+649,ACC-000649,"Zhang, Brooks and Miles",Small Business,Technology,Mexico,Active
+650,ACC-000650,Todd-Pham,Small Business,Technology,Canada,Active
+651,ACC-000651,Gill Ltd,Mid-Market,Manufacturing,Mexico,Active
+652,ACC-000652,"Marks, Miller and Griffin",Mid-Market,Manufacturing,Mexico,Active
+653,ACC-000653,"Cox, Stark and Rodriguez",Enterprise,Manufacturing,Mexico,Active
+654,ACC-000654,"Leach, Harris and Herrera",Small Business,Retail,Canada,Active
+655,ACC-000655,Murphy PLC,Mid-Market,Manufacturing,Mexico,Active
+656,ACC-000656,Wilson-Harris,Mid-Market,Automotive,Germany,Active
+657,ACC-000657,"Burns, Nolan and Griffin",Small Business,Technology,United States,Active
+658,ACC-000658,Chavez PLC,Mid-Market,Technology,Canada,Active
+659,ACC-000659,Bryant-Brown,Enterprise,Technology,Sweden,Active
+660,ACC-000660,Chambers-Parker,Enterprise,Automotive,United States,Active
+661,ACC-000661,Foster Inc,Enterprise,Healthcare,Germany,Active
+662,ACC-000662,"Robinson, Jones and Henderson",Small Business,Healthcare,Sweden,Active
+663,ACC-000663,"Brown, Mcknight and Michael",Enterprise,Manufacturing,United States,Active
+664,ACC-000664,Andersen Group,Enterprise,Retail,Germany,Active
+665,ACC-000665,Mitchell and Sons,Mid-Market,Retail,Canada,Active
+666,ACC-000666,Cannon Ltd,Small Business,Automotive,Germany,Active
+667,ACC-000667,"Stuart, Brooks and Vance",Mid-Market,Healthcare,Canada,Active
+668,ACC-000668,Kane-Knox,Small Business,Healthcare,Mexico,Active
+669,ACC-000669,Miller-Brandt,Small Business,Retail,United States,Active
+670,ACC-000670,"Anderson, Dalton and Wilson",Enterprise,Healthcare,Mexico,Active
+671,ACC-000671,"Long, Anderson and Irwin",Small Business,Healthcare,Sweden,Active
+672,ACC-000672,Avila LLC,Mid-Market,Retail,Mexico,Active
+673,ACC-000673,Nunez-Stephens,Mid-Market,Automotive,Mexico,Active
+674,ACC-000674,"Gray, Hall and Murray",Enterprise,Healthcare,United States,Active
+675,ACC-000675,Hill Ltd,Mid-Market,Healthcare,Mexico,Active
+676,ACC-000676,Johnson Ltd,Small Business,Technology,Germany,Active
+677,ACC-000677,Mendez-Mayer,Mid-Market,Manufacturing,Mexico,Active
+678,ACC-000678,Allen Inc,Enterprise,Retail,Mexico,Active
+679,ACC-000679,Wheeler Group,Mid-Market,Technology,Germany,Active
+680,ACC-000680,"Powers, Brennan and Sanchez",Small Business,Retail,Canada,Inactive
+681,ACC-000681,Morales and Sons,Small Business,Technology,United States,Active
+682,ACC-000682,"Robinson, Shields and Brown",Enterprise,Manufacturing,United States,Inactive
+683,ACC-000683,"Holder, Young and Hendricks",Small Business,Manufacturing,Canada,Active
+684,ACC-000684,"Flores, Harper and Chambers",Small Business,Healthcare,Mexico,Active
+685,ACC-000685,Young-Walter,Enterprise,Automotive,Germany,Active
+686,ACC-000686,"Boyd, Gutierrez and Hill",Small Business,Retail,Germany,Active
+687,ACC-000687,"Fry, Hobbs and Buck",Mid-Market,Retail,Canada,Active
+688,ACC-000688,"Shelton, Peters and Williams",Mid-Market,Retail,Germany,Active
+689,ACC-000689,David-Powers,Mid-Market,Technology,Sweden,Active
+690,ACC-000690,"Flores, Butler and Hernandez",Small Business,Manufacturing,Mexico,Inactive
+691,ACC-000691,White-Medina,Small Business,Healthcare,Sweden,Active
+692,ACC-000692,Atkinson LLC,Small Business,Technology,Sweden,Active
+693,ACC-000693,"Thomas, Ford and Brown",Small Business,Healthcare,Mexico,Active
+694,ACC-000694,Faulkner-Grant,Small Business,Automotive,Germany,Active
+695,ACC-000695,Price LLC,Enterprise,Manufacturing,Mexico,Active
+696,ACC-000696,Rivera Inc,Enterprise,Healthcare,Canada,Active
+697,ACC-000697,Boone-Davis,Small Business,Retail,United States,Active
+698,ACC-000698,"Calderon, Williams and Bennett",Mid-Market,Manufacturing,Germany,Active
+699,ACC-000699,"Morrison, Russo and Lopez",Enterprise,Automotive,United States,Active
+700,ACC-000700,"Ramsey, Hansen and Mendoza",Enterprise,Technology,United States,Active
+701,ACC-000701,Turner-Stout,Mid-Market,Automotive,Mexico,Active
+702,ACC-000702,Giles Ltd,Mid-Market,Manufacturing,Sweden,Inactive
+703,ACC-000703,Burgess Group,Enterprise,Healthcare,Canada,Active
+704,ACC-000704,Dominguez Ltd,Enterprise,Manufacturing,Mexico,Active
+705,ACC-000705,Sanders and Sons,Enterprise,Technology,United States,Active
+706,ACC-000706,"Morris, Campbell and Owens",Mid-Market,Technology,Canada,Active
+707,ACC-000707,"Howard, Green and Hunt",Enterprise,Technology,Sweden,Active
+708,ACC-000708,Owens-Lang,Mid-Market,Technology,Canada,Active
+709,ACC-000709,"Harrison, Franco and Rocha",Mid-Market,Automotive,Sweden,Active
+710,ACC-000710,Edwards-Williams,Mid-Market,Automotive,Mexico,Active
+711,ACC-000711,Figueroa Inc,Small Business,Automotive,United States,Inactive
+712,ACC-000712,Tran-Silva,Mid-Market,Retail,United States,Active
+713,ACC-000713,"Butler, Hernandez and Rivera",Small Business,Technology,Mexico,Active
+714,ACC-000714,Hudson-Sanchez,Small Business,Healthcare,Germany,Active
+715,ACC-000715,"Pena, Cohen and Scott",Small Business,Healthcare,Germany,Inactive
+716,ACC-000716,Levy-May,Small Business,Technology,Germany,Active
+717,ACC-000717,Murray-Oconnor,Mid-Market,Healthcare,Germany,Active
+718,ACC-000718,Jackson-Cortez,Mid-Market,Automotive,Sweden,Inactive
+719,ACC-000719,White-Preston,Enterprise,Retail,Germany,Inactive
+720,ACC-000720,"Bernard, Warren and Combs",Mid-Market,Retail,United States,Active
+721,ACC-000721,Landry Ltd,Enterprise,Manufacturing,Sweden,Active
+722,ACC-000722,Duran Group,Small Business,Healthcare,Sweden,Active
+723,ACC-000723,Kirby and Sons,Small Business,Healthcare,United States,Active
+724,ACC-000724,Mann Inc,Enterprise,Healthcare,Canada,Active
+725,ACC-000725,Wagner LLC,Small Business,Retail,Sweden,Active
+726,ACC-000726,Williamson Ltd,Enterprise,Healthcare,Sweden,Active
+727,ACC-000727,"Durham, Hopkins and Smith",Small Business,Technology,United States,Active
+728,ACC-000728,"Arnold, Smith and Moreno",Enterprise,Retail,United States,Active
+729,ACC-000729,Nichols-Mitchell,Mid-Market,Retail,Germany,Active
+730,ACC-000730,"Li, Craig and Drake",Mid-Market,Manufacturing,Germany,Active
+731,ACC-000731,Rodriguez Inc,Small Business,Healthcare,Mexico,Active
+732,ACC-000732,"Hernandez, Lee and Fox",Mid-Market,Technology,Germany,Active
+733,ACC-000733,Adams-Sanders,Small Business,Healthcare,Mexico,Active
+734,ACC-000734,Chung-Stevens,Small Business,Technology,Canada,Inactive
+735,ACC-000735,Branch and Sons,Enterprise,Technology,Germany,Active
+736,ACC-000736,Sutton-Abbott,Small Business,Healthcare,United States,Active
+737,ACC-000737,"Frey, Santos and Johnson",Small Business,Retail,Germany,Active
+738,ACC-000738,Gray-Tran,Mid-Market,Manufacturing,United States,Active
+739,ACC-000739,Walsh Ltd,Small Business,Manufacturing,Germany,Active
+740,ACC-000740,Miller Group,Small Business,Automotive,Canada,Active
+741,ACC-000741,"Mueller, Knight and Hodge",Small Business,Retail,United States,Active
+742,ACC-000742,Jacobson Inc,Small Business,Healthcare,United States,Active
+743,ACC-000743,Lewis Ltd,Mid-Market,Retail,Germany,Active
+744,ACC-000744,"Alvarez, Williams and Jones",Enterprise,Manufacturing,Mexico,Active
+745,ACC-000745,Lam-Elliott,Small Business,Automotive,United States,Active
+746,ACC-000746,White LLC,Mid-Market,Technology,Germany,Active
+747,ACC-000747,Ali PLC,Mid-Market,Technology,Canada,Active
+748,ACC-000748,Goodwin Ltd,Enterprise,Automotive,Mexico,Active
+749,ACC-000749,Hickman-Evans,Enterprise,Technology,Germany,Active
+750,ACC-000750,"Allen, Davenport and Price",Enterprise,Healthcare,Mexico,Active
+751,ACC-000751,"Rivera, Campos and Taylor",Small Business,Technology,Canada,Active
+752,ACC-000752,"Ramsey, Mason and Mccann",Enterprise,Technology,United States,Active
+753,ACC-000753,Davis and Sons,Enterprise,Healthcare,Germany,Active
+754,ACC-000754,Peterson PLC,Small Business,Automotive,Sweden,Active
+755,ACC-000755,"Sanders, Ayala and Johnson",Mid-Market,Healthcare,Mexico,Inactive
+756,ACC-000756,Bowers-Hayes,Mid-Market,Automotive,Mexico,Active
+757,ACC-000757,Kelly Group,Small Business,Automotive,Mexico,Inactive
+758,ACC-000758,Lopez-Willis,Mid-Market,Healthcare,Sweden,Active
+759,ACC-000759,Miller-Montgomery,Enterprise,Retail,Canada,Active
+760,ACC-000760,Marquez Inc,Small Business,Retail,Germany,Active
+761,ACC-000761,Moore-Dawson,Enterprise,Automotive,United States,Active
+762,ACC-000762,"Moore, Price and Ward",Mid-Market,Retail,Germany,Inactive
+763,ACC-000763,Smith LLC,Small Business,Manufacturing,Canada,Active
+764,ACC-000764,Ward-Nelson,Small Business,Healthcare,United States,Active
+765,ACC-000765,Miller Group,Mid-Market,Retail,Canada,Active
+766,ACC-000766,Hawkins-Hunt,Small Business,Technology,Germany,Active
+767,ACC-000767,Johnson LLC,Mid-Market,Retail,Canada,Active
+768,ACC-000768,"Davis, George and Nguyen",Mid-Market,Retail,Mexico,Active
+769,ACC-000769,Smith-Gutierrez,Enterprise,Manufacturing,Germany,Active
+770,ACC-000770,Hardy PLC,Mid-Market,Manufacturing,Mexico,Active
+771,ACC-000771,Armstrong and Sons,Mid-Market,Automotive,Sweden,Active
+772,ACC-000772,"James, Taylor and Turner",Small Business,Automotive,United States,Active
+773,ACC-000773,Thomas-Jackson,Enterprise,Automotive,Canada,Active
+774,ACC-000774,Fisher-Washington,Small Business,Automotive,Sweden,Active
+775,ACC-000775,Ward and Sons,Small Business,Healthcare,Germany,Active
+776,ACC-000776,"Weber, Wheeler and Gonzalez",Small Business,Manufacturing,Canada,Active
+777,ACC-000777,Taylor Inc,Mid-Market,Automotive,Germany,Active
+778,ACC-000778,Cook-Oliver,Enterprise,Manufacturing,Mexico,Active
+779,ACC-000779,Alexander-Jordan,Enterprise,Automotive,Canada,Active
+780,ACC-000780,"Mccann, Taylor and Flores",Small Business,Healthcare,United States,Active
+781,ACC-000781,"Harris, Edwards and Oconnell",Small Business,Manufacturing,Canada,Active
+782,ACC-000782,Carter-Neal,Mid-Market,Automotive,Mexico,Active
+783,ACC-000783,Faulkner-Casey,Enterprise,Manufacturing,Sweden,Active
+784,ACC-000784,Bennett-Velasquez,Enterprise,Technology,Mexico,Active
+785,ACC-000785,Diaz-Frederick,Mid-Market,Healthcare,Mexico,Active
+786,ACC-000786,Vargas PLC,Mid-Market,Automotive,United States,Active
+787,ACC-000787,Maldonado PLC,Enterprise,Manufacturing,Canada,Active
+788,ACC-000788,Benton Group,Small Business,Manufacturing,United States,Active
+789,ACC-000789,"Clark, Salinas and Guerra",Mid-Market,Retail,United States,Active
+790,ACC-000790,Fuentes Group,Enterprise,Healthcare,Mexico,Active
+791,ACC-000791,"Porter, Schultz and Allen",Enterprise,Retail,Mexico,Inactive
+792,ACC-000792,"Moore, Henderson and Bennett",Mid-Market,Technology,United States,Active
+793,ACC-000793,Ewing-Mendoza,Small Business,Automotive,Sweden,Active
+794,ACC-000794,Ferguson-Mclean,Small Business,Automotive,Germany,Active
+795,ACC-000795,"Barnes, Johnson and Schmitt",Mid-Market,Retail,United States,Active
+796,ACC-000796,"Woodard, Herrera and Little",Enterprise,Automotive,Mexico,Active
+797,ACC-000797,Rodriguez and Sons,Small Business,Technology,Mexico,Active
+798,ACC-000798,"Ortega, Jackson and Salazar",Mid-Market,Manufacturing,Germany,Active
+799,ACC-000799,"Terrell, Byrd and Ross",Enterprise,Retail,Sweden,Active
+800,ACC-000800,Sheppard-Jordan,Mid-Market,Retail,Canada,Active
+801,ACC-000801,Garcia and Sons,Enterprise,Manufacturing,Sweden,Inactive
+802,ACC-000802,"Burgess, Grant and Watts",Enterprise,Retail,Germany,Active
+803,ACC-000803,Griffin Group,Mid-Market,Retail,Mexico,Active
+804,ACC-000804,Barton-Chapman,Small Business,Automotive,United States,Active
+805,ACC-000805,"Hernandez, Cuevas and Webb",Small Business,Manufacturing,United States,Active
+806,ACC-000806,Perry-Nixon,Small Business,Manufacturing,Mexico,Active
+807,ACC-000807,Guerra Ltd,Mid-Market,Manufacturing,Canada,Active
+808,ACC-000808,Bailey LLC,Enterprise,Retail,Canada,Active
+809,ACC-000809,Mueller-Boyd,Mid-Market,Manufacturing,Sweden,Active
+810,ACC-000810,Alvarez-Kim,Small Business,Technology,United States,Active
+811,ACC-000811,"Chavez, Jones and Williams",Enterprise,Automotive,Germany,Inactive
+812,ACC-000812,"Wilson, Sweeney and Wong",Small Business,Healthcare,Canada,Active
+813,ACC-000813,"Marsh, Spears and Yang",Small Business,Healthcare,United States,Active
+814,ACC-000814,"Thompson, Moore and Castro",Enterprise,Retail,Mexico,Active
+815,ACC-000815,Hall-Sullivan,Small Business,Technology,United States,Active
+816,ACC-000816,Lopez Ltd,Small Business,Manufacturing,United States,Active
+817,ACC-000817,Foster-Mclaughlin,Enterprise,Automotive,Sweden,Active
+818,ACC-000818,Cole Group,Enterprise,Automotive,Mexico,Active
+819,ACC-000819,Smith-Lewis,Mid-Market,Manufacturing,United States,Active
+820,ACC-000820,Goodwin-Stokes,Small Business,Automotive,Sweden,Inactive
+821,ACC-000821,Ray PLC,Enterprise,Automotive,Germany,Active
+822,ACC-000822,Diaz and Sons,Mid-Market,Healthcare,Mexico,Active
+823,ACC-000823,Wilson-Lambert,Enterprise,Automotive,United States,Active
+824,ACC-000824,Rose-Fowler,Mid-Market,Technology,Mexico,Active
+825,ACC-000825,"Price, Long and Wilson",Mid-Market,Healthcare,Sweden,Active
+826,ACC-000826,Bruce-Williamson,Enterprise,Technology,Mexico,Inactive
+827,ACC-000827,"Mccarthy, Evans and Mendez",Small Business,Manufacturing,Canada,Active
+828,ACC-000828,Powers LLC,Small Business,Technology,Mexico,Active
+829,ACC-000829,Allen Inc,Small Business,Healthcare,Sweden,Active
+830,ACC-000830,Brooks and Sons,Enterprise,Technology,United States,Active
+831,ACC-000831,"Price, Carlson and Andrews",Enterprise,Automotive,Mexico,Active
+832,ACC-000832,Lopez-Reid,Enterprise,Technology,Sweden,Active
+833,ACC-000833,"Ellison, Arias and Thompson",Mid-Market,Retail,Canada,Active
+834,ACC-000834,Burns and Sons,Enterprise,Manufacturing,Germany,Active
+835,ACC-000835,Edwards Group,Small Business,Retail,Canada,Active
+836,ACC-000836,"Brown, Howard and Smith",Small Business,Manufacturing,Germany,Active
+837,ACC-000837,Lee Group,Small Business,Technology,Mexico,Active
+838,ACC-000838,"Wagner, Simpson and Cohen",Enterprise,Automotive,Mexico,Active
+839,ACC-000839,Mckinney-Wallace,Enterprise,Automotive,Canada,Active
+840,ACC-000840,Miller Inc,Small Business,Retail,Mexico,Active
+841,ACC-000841,Carter LLC,Enterprise,Retail,Germany,Active
+842,ACC-000842,Medina and Sons,Mid-Market,Manufacturing,Sweden,Active
+843,ACC-000843,Cunningham-Barton,Small Business,Technology,Sweden,Active
+844,ACC-000844,Dunn-Wilson,Enterprise,Technology,Germany,Active
+845,ACC-000845,Adams PLC,Enterprise,Healthcare,Germany,Active
+846,ACC-000846,Weaver-Sherman,Enterprise,Healthcare,Germany,Active
+847,ACC-000847,"Alexander, Robinson and Coleman",Enterprise,Retail,Mexico,Active
+848,ACC-000848,"Greer, Potter and Evans",Enterprise,Retail,Canada,Active
+849,ACC-000849,Cole LLC,Small Business,Retail,Canada,Active
+850,ACC-000850,Gonzales Inc,Mid-Market,Manufacturing,Canada,Active
+851,ACC-000851,Clark Ltd,Small Business,Manufacturing,United States,Active
+852,ACC-000852,"Norris, Callahan and Bishop",Small Business,Automotive,Canada,Active
+853,ACC-000853,Martin-Taylor,Small Business,Retail,United States,Active
+854,ACC-000854,Li Inc,Enterprise,Manufacturing,United States,Active
+855,ACC-000855,"Bell, Campbell and Ryan",Enterprise,Manufacturing,Sweden,Active
+856,ACC-000856,Werner-Carter,Small Business,Technology,United States,Active
+857,ACC-000857,"Adams, Hodge and Duke",Enterprise,Automotive,Germany,Active
+858,ACC-000858,"Ochoa, Taylor and Brady",Enterprise,Retail,Sweden,Active
+859,ACC-000859,Sellers-Riddle,Small Business,Retail,Sweden,Inactive
+860,ACC-000860,"Martinez, Cline and Wright",Small Business,Healthcare,Germany,Active
+861,ACC-000861,"Morris, Wright and Bridges",Small Business,Healthcare,United States,Active
+862,ACC-000862,Burns-Ray,Small Business,Automotive,Mexico,Active
+863,ACC-000863,Burton-Brooks,Enterprise,Technology,Mexico,Active
+864,ACC-000864,Schultz Inc,Small Business,Automotive,Sweden,Active
+865,ACC-000865,Robertson-Ramirez,Small Business,Technology,United States,Active
+866,ACC-000866,Gibson-Freeman,Small Business,Retail,United States,Active
+867,ACC-000867,"Smith, Schroeder and Oconnor",Small Business,Manufacturing,Canada,Active
+868,ACC-000868,"Stanton, Reid and Terry",Small Business,Healthcare,United States,Active
+869,ACC-000869,Flynn Group,Mid-Market,Manufacturing,Mexico,Active
+870,ACC-000870,Donaldson and Sons,Enterprise,Healthcare,Canada,Active
+871,ACC-000871,Adams-Clayton,Mid-Market,Manufacturing,Canada,Active
+872,ACC-000872,Kelley-Anderson,Enterprise,Automotive,Mexico,Active
+873,ACC-000873,Kramer-Shannon,Enterprise,Healthcare,Mexico,Active
+874,ACC-000874,Williams Ltd,Enterprise,Technology,Canada,Active
+875,ACC-000875,Smith-Noble,Small Business,Retail,Canada,Active
+876,ACC-000876,Alexander Inc,Mid-Market,Manufacturing,Germany,Active
+877,ACC-000877,Harris-Barker,Mid-Market,Automotive,Sweden,Active
+878,ACC-000878,Khan LLC,Small Business,Technology,Mexico,Active
+879,ACC-000879,Baxter LLC,Mid-Market,Healthcare,Mexico,Active
+880,ACC-000880,Pena LLC,Mid-Market,Manufacturing,Mexico,Active
+881,ACC-000881,Watson Ltd,Enterprise,Automotive,United States,Active
+882,ACC-000882,Williams Ltd,Small Business,Automotive,Canada,Active
+883,ACC-000883,Barber-Fischer,Mid-Market,Manufacturing,Germany,Active
+884,ACC-000884,Rios-Padilla,Enterprise,Technology,United States,Active
+885,ACC-000885,Lewis Inc,Small Business,Healthcare,Canada,Active
+886,ACC-000886,Wheeler PLC,Small Business,Manufacturing,United States,Active
+887,ACC-000887,"Wallace, Smith and Cooper",Enterprise,Healthcare,Mexico,Inactive
+888,ACC-000888,Mcneil Group,Enterprise,Retail,United States,Active
+889,ACC-000889,"Anderson, Jones and Reyes",Enterprise,Manufacturing,United States,Active
+890,ACC-000890,"Shaffer, Garcia and Richardson",Enterprise,Retail,United States,Active
+891,ACC-000891,Taylor-Ayala,Enterprise,Manufacturing,United States,Active
+892,ACC-000892,May Ltd,Small Business,Automotive,Germany,Active
+893,ACC-000893,Jones PLC,Mid-Market,Technology,Canada,Active
+894,ACC-000894,Bishop and Sons,Small Business,Healthcare,Mexico,Active
+895,ACC-000895,Bell-Lewis,Small Business,Manufacturing,Canada,Active
+896,ACC-000896,"Hernandez, Jenkins and Parks",Mid-Market,Technology,Germany,Inactive
+897,ACC-000897,Miller Inc,Mid-Market,Retail,Sweden,Active
+898,ACC-000898,Goodwin PLC,Enterprise,Technology,Sweden,Active
+899,ACC-000899,"Cruz, Richmond and Edwards",Enterprise,Healthcare,Sweden,Active
+900,ACC-000900,Wright Ltd,Mid-Market,Automotive,Canada,Active
+901,ACC-000901,Wright PLC,Enterprise,Retail,Germany,Active
+902,ACC-000902,"Griffith, Mitchell and Pugh",Enterprise,Retail,Mexico,Active
+903,ACC-000903,Abbott Ltd,Enterprise,Healthcare,Mexico,Active
+904,ACC-000904,Harris-Lawson,Small Business,Automotive,Sweden,Active
+905,ACC-000905,Adkins LLC,Mid-Market,Automotive,Sweden,Active
+906,ACC-000906,"Brown, Hurst and Blevins",Small Business,Automotive,Mexico,Active
+907,ACC-000907,Cruz-Allen,Mid-Market,Automotive,Sweden,Active
+908,ACC-000908,"Wheeler, Rice and Levine",Enterprise,Manufacturing,Mexico,Active
+909,ACC-000909,Peck-Anderson,Mid-Market,Manufacturing,United States,Active
+910,ACC-000910,"Fisher, Payne and Thompson",Enterprise,Technology,Canada,Inactive
+911,ACC-000911,Best-Townsend,Small Business,Manufacturing,United States,Active
+912,ACC-000912,Matthews Inc,Enterprise,Technology,United States,Inactive
+913,ACC-000913,Lewis-Livingston,Mid-Market,Manufacturing,Germany,Active
+914,ACC-000914,Hunter-Fuller,Small Business,Healthcare,Canada,Active
+915,ACC-000915,"Wang, Henderson and Morales",Mid-Market,Automotive,Germany,Active
+916,ACC-000916,"Herrera, Jensen and Ramirez",Mid-Market,Retail,Germany,Active
+917,ACC-000917,Miller-Mccall,Mid-Market,Automotive,Sweden,Active
+918,ACC-000918,Herrera Group,Small Business,Retail,Mexico,Active
+919,ACC-000919,"Walters, Davenport and Becker",Enterprise,Retail,Mexico,Active
+920,ACC-000920,Collins Group,Mid-Market,Retail,Canada,Inactive
+921,ACC-000921,"Ashley, Allen and Sanchez",Small Business,Automotive,Canada,Active
+922,ACC-000922,Wilson-Salazar,Mid-Market,Retail,Sweden,Active
+923,ACC-000923,Parker Ltd,Mid-Market,Technology,United States,Active
+924,ACC-000924,"Yang, Wilson and Zimmerman",Enterprise,Retail,Germany,Active
+925,ACC-000925,"Smith, Crawford and Reed",Enterprise,Automotive,Germany,Inactive
+926,ACC-000926,"Logan, Le and Jackson",Small Business,Manufacturing,United States,Active
+927,ACC-000927,Brady LLC,Mid-Market,Automotive,Sweden,Active
+928,ACC-000928,"Tanner, Wise and Johnson",Enterprise,Manufacturing,Canada,Active
+929,ACC-000929,Nelson-Brown,Mid-Market,Manufacturing,United States,Active
+930,ACC-000930,"Proctor, Burton and Crawford",Mid-Market,Technology,Sweden,Active
+931,ACC-000931,"Ward, Porter and Bradley",Mid-Market,Manufacturing,United States,Active
+932,ACC-000932,Moore-Ayala,Small Business,Retail,Sweden,Active
+933,ACC-000933,"Craig, Wilson and Yang",Enterprise,Technology,United States,Active
+934,ACC-000934,Williams Inc,Mid-Market,Technology,Germany,Active
+935,ACC-000935,Williams LLC,Mid-Market,Manufacturing,Mexico,Active
+936,ACC-000936,Mora-White,Small Business,Manufacturing,Canada,Inactive
+937,ACC-000937,Tran Ltd,Enterprise,Automotive,Sweden,Active
+938,ACC-000938,"Rios, Walker and Wright",Enterprise,Retail,Sweden,Active
+939,ACC-000939,"Flores, Mckenzie and Duncan",Mid-Market,Technology,Mexico,Active
+940,ACC-000940,Shaw Inc,Mid-Market,Automotive,United States,Active
+941,ACC-000941,Walker PLC,Small Business,Manufacturing,Sweden,Inactive
+942,ACC-000942,Finley Inc,Mid-Market,Automotive,Mexico,Active
+943,ACC-000943,Cline-Ayala,Small Business,Technology,Sweden,Active
+944,ACC-000944,Murphy-Tran,Mid-Market,Manufacturing,United States,Active
+945,ACC-000945,Wood LLC,Enterprise,Automotive,Mexico,Active
+946,ACC-000946,"Mueller, Stevenson and Sanchez",Enterprise,Manufacturing,United States,Active
+947,ACC-000947,Vargas-Snyder,Small Business,Manufacturing,Germany,Active
+948,ACC-000948,Oconnor PLC,Enterprise,Technology,Germany,Active
+949,ACC-000949,Hernandez Group,Small Business,Manufacturing,Germany,Active
+950,ACC-000950,Hall LLC,Enterprise,Automotive,Germany,Active
+951,ACC-000951,"Franco, Wiley and Tapia",Enterprise,Technology,United States,Active
+952,ACC-000952,Blake Group,Enterprise,Healthcare,Germany,Active
+953,ACC-000953,"Acosta, Garcia and Moreno",Mid-Market,Manufacturing,Mexico,Active
+954,ACC-000954,Barnes Inc,Mid-Market,Retail,Germany,Active
+955,ACC-000955,Dawson Inc,Small Business,Technology,Canada,Active
+956,ACC-000956,Morse PLC,Mid-Market,Retail,Mexico,Active
+957,ACC-000957,Haynes-Watson,Mid-Market,Retail,United States,Active
+958,ACC-000958,"Miller, Davis and Anderson",Mid-Market,Retail,Germany,Active
+959,ACC-000959,Jones-Bradley,Small Business,Healthcare,Germany,Active
+960,ACC-000960,Bates-Anderson,Mid-Market,Manufacturing,Germany,Active
+961,ACC-000961,Green-Edwards,Enterprise,Technology,Mexico,Active
+962,ACC-000962,Haynes-Moss,Mid-Market,Technology,Germany,Active
+963,ACC-000963,Chavez-Hall,Small Business,Manufacturing,Mexico,Active
+964,ACC-000964,Taylor PLC,Enterprise,Technology,United States,Active
+965,ACC-000965,Moore and Sons,Small Business,Technology,Sweden,Active
+966,ACC-000966,Owens-Russell,Mid-Market,Healthcare,Germany,Active
+967,ACC-000967,"Howard, Townsend and Hayes",Mid-Market,Automotive,Canada,Active
+968,ACC-000968,Baker-Wilson,Enterprise,Retail,Canada,Active
+969,ACC-000969,Aguirre LLC,Small Business,Technology,Sweden,Active
+970,ACC-000970,"Terry, Williams and Huff",Enterprise,Manufacturing,Sweden,Active
+971,ACC-000971,Hernandez-Dawson,Enterprise,Technology,Sweden,Active
+972,ACC-000972,Foster-Williams,Mid-Market,Technology,United States,Active
+973,ACC-000973,Green-Ewing,Mid-Market,Healthcare,Germany,Active
+974,ACC-000974,Crane Group,Mid-Market,Automotive,Mexico,Active
+975,ACC-000975,"Adkins, Wright and Murray",Enterprise,Retail,United States,Active
+976,ACC-000976,Martinez Inc,Enterprise,Manufacturing,Germany,Active
+977,ACC-000977,Anderson Group,Enterprise,Technology,Germany,Active
+978,ACC-000978,Parks-Pace,Mid-Market,Automotive,Mexico,Active
+979,ACC-000979,Aguilar LLC,Mid-Market,Manufacturing,Canada,Active
+980,ACC-000980,Johnson Inc,Mid-Market,Healthcare,Germany,Inactive
+981,ACC-000981,Orr Group,Mid-Market,Healthcare,Sweden,Active
+982,ACC-000982,Davis LLC,Small Business,Healthcare,United States,Active
+983,ACC-000983,Williams Group,Mid-Market,Manufacturing,Mexico,Active
+984,ACC-000984,Jackson PLC,Mid-Market,Healthcare,Mexico,Active
+985,ACC-000985,Underwood-Foster,Mid-Market,Healthcare,Sweden,Active
+986,ACC-000986,Reyes Group,Mid-Market,Healthcare,Sweden,Active
+987,ACC-000987,Gomez and Sons,Mid-Market,Technology,Sweden,Active
+988,ACC-000988,Ramirez-Stephenson,Enterprise,Automotive,Sweden,Active
+989,ACC-000989,Mendez PLC,Enterprise,Automotive,Mexico,Active
+990,ACC-000990,Holland Group,Small Business,Technology,Germany,Active
+991,ACC-000991,Andrade-Mendoza,Mid-Market,Retail,Germany,Inactive
+992,ACC-000992,Ramirez and Sons,Mid-Market,Retail,Sweden,Active
+993,ACC-000993,Gonzalez-Wilkerson,Enterprise,Automotive,United States,Active
+994,ACC-000994,"Wright, Mcknight and Stephens",Mid-Market,Healthcare,Mexico,Inactive
+995,ACC-000995,Mayo Ltd,Mid-Market,Healthcare,Sweden,Active
+996,ACC-000996,Castillo-Harrington,Mid-Market,Manufacturing,Sweden,Active
+997,ACC-000997,Durham-Shaw,Mid-Market,Retail,Canada,Active
+998,ACC-000998,Nelson-Johnson,Mid-Market,Technology,Canada,Active
+999,ACC-000999,"Robinson, Huang and Osborne",Small Business,Automotive,Germany,Active
+1000,ACC-001000,Stokes Group,Mid-Market,Automotive,Sweden,Active
