@@ -403,7 +403,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 402,WST-000402,20200323,9,General,Landfill,80.388
 403,WST-000403,20200303,6,Plastic,Landfill,794.861
 404,WST-000404,20250429,25,Chemical,Reuse,920.695
-405,WST-000405,20200714,65,Metal,Reuse,708.044
+405,WST-000405,20200714,65,Metal,Reuse,-50.0
 406,WST-000406,20231225,68,Metal,Treatment,996.664
 407,WST-000407,20200719,76,Plastic,Treatment,353.174
 408,WST-000408,20200528,70,Paper,Recycling,587.602
@@ -1234,7 +1234,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 1233,WST-001233,20190903,39,Plastic,Reuse,753.222
 1234,WST-001234,20240306,77,Metal,Landfill,928.033
 1235,WST-001235,20240924,3,Plastic,Reuse,198.846
-1236,WST-001236,20210128,10,Metal,Recycling,20.641
+1236,WST-001236,20210128,10,Metal,Recycling,-50.0
 1237,WST-001237,20220526,41,Chemical,Reuse,556.207
 1238,WST-001238,20240305,26,Metal,Treatment,638.415
 1239,WST-001239,20230121,23,Plastic,Reuse,962.4
@@ -1694,7 +1694,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 1693,WST-001693,20210829,67,General,Treatment,345.487
 1694,WST-001694,20200702,29,Paper,Recycling,782.106
 1695,WST-001695,20251221,1,Metal,Reuse,20.633
-1696,WST-001696,20221107,47,Metal,Landfill,556.622
+1696,WST-001696,20221107,47,Metal,Landfill,-50.0
 1697,WST-001697,20201225,92,General,Landfill,382.866
 1698,WST-001698,20241028,63,Metal,Reuse,842.663
 1699,WST-001699,20200322,55,General,Landfill,714.037
@@ -1795,7 +1795,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 1794,WST-001794,20190926,84,Metal,Treatment,392.308
 1795,WST-001795,20250925,71,Plastic,Treatment,672.143
 1796,WST-001796,20220406,3,Chemical,Reuse,907.773
-1797,WST-001797,20211015,35,Chemical,Reuse,952.119
+1797,WST-001797,20211015,35,Chemical,Reuse,-50.0
 1798,WST-001798,20251112,41,Plastic,Recycling,13.883
 1799,WST-001799,20240222,24,Chemical,Recycling,807.56
 1800,WST-001800,20220415,37,Chemical,Recycling,190.717
@@ -3385,7 +3385,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 3384,WST-003384,20220419,71,Paper,Treatment,42.922
 3385,WST-003385,20250808,50,Metal,Treatment,940.499
 3386,WST-003386,20210105,34,Chemical,Recycling,638.519
-3387,WST-003387,20190321,83,Paper,Reuse,591.607
+3387,WST-003387,20190321,83,Paper,Reuse,-50.0
 3388,WST-003388,20200723,50,Plastic,Landfill,883.648
 3389,WST-003389,20230822,96,Metal,Treatment,591.372
 3390,WST-003390,20230401,95,General,Landfill,690.313
@@ -4426,7 +4426,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 4425,WST-004425,20210101,29,Chemical,Landfill,698.964
 4426,WST-004426,20220922,53,Chemical,Landfill,41.113
 4427,WST-004427,20220309,29,Chemical,Recycling,816.029
-4428,WST-004428,20210809,15,Metal,Treatment,621.959
+4428,WST-004428,20210809,15,Metal,Treatment,-50.0
 4429,WST-004429,20230605,82,General,Recycling,402.323
 4430,WST-004430,20251013,61,Paper,Reuse,92.28
 4431,WST-004431,20201024,80,General,Reuse,516.183
@@ -6155,7 +6155,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 6154,WST-006154,20200412,81,Metal,Landfill,361.854
 6155,WST-006155,20240611,85,Metal,Recycling,187.916
 6156,WST-006156,20240118,71,Paper,Treatment,335.65
-6157,WST-006157,20240925,26,General,Landfill,466.707
+6157,WST-006157,20240925,26,General,Landfill,-50.0
 6158,WST-006158,20210209,55,Paper,Landfill,594.165
 6159,WST-006159,20230516,12,Metal,Landfill,505.229
 6160,WST-006160,20220402,14,Plastic,Recycling,364.639
@@ -7973,7 +7973,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 7972,WST-007972,20230618,29,General,Recycling,391.243
 7973,WST-007973,20251130,71,Metal,Recycling,261.103
 7974,WST-007974,20210830,80,Chemical,Reuse,40.797
-7975,WST-007975,20200212,79,Chemical,Reuse,633.65
+7975,WST-007975,20200212,79,Chemical,Reuse,-50.0
 7976,WST-007976,20190107,32,Plastic,Recycling,473.129
 7977,WST-007977,20200823,14,Metal,Landfill,370.53
 7978,WST-007978,20250115,29,Plastic,Recycling,269.697
@@ -8776,7 +8776,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 8775,WST-008775,20251209,92,Plastic,Reuse,358.722
 8776,WST-008776,20211201,42,Metal,Landfill,424.012
 8777,WST-008777,20200112,91,General,Recycling,83.543
-8778,WST-008778,20190908,4,General,Treatment,33.511
+8778,WST-008778,20190908,4,General,Treatment,-50.0
 8779,WST-008779,20251122,87,General,Reuse,193.164
 8780,WST-008780,20220804,53,Paper,Treatment,242.568
 8781,WST-008781,20240215,58,Metal,Recycling,591.952
@@ -8935,7 +8935,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 8934,WST-008934,20251230,49,Paper,Landfill,402.429
 8935,WST-008935,20211225,41,General,Landfill,605.866
 8936,WST-008936,20211225,80,General,Recycling,211.276
-8937,WST-008937,20250304,75,Metal,Treatment,106.914
+8937,WST-008937,20250304,75,Metal,Treatment,-50.0
 8938,WST-008938,20200510,15,Chemical,Recycling,809.144
 8939,WST-008939,20230514,20,Chemical,Reuse,341.01
 8940,WST-008940,20250302,77,Metal,Treatment,753.243
@@ -9042,7 +9042,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 9041,WST-009041,20230723,3,Paper,Landfill,890.773
 9042,WST-009042,20200804,81,Plastic,Landfill,615.358
 9043,WST-009043,20220822,36,Chemical,Reuse,938.897
-9044,WST-009044,20220812,4,Chemical,Reuse,922.65
+9044,WST-009044,20220812,4,Chemical,Reuse,-50.0
 9045,WST-009045,20250826,96,Plastic,Landfill,781.696
 9046,WST-009046,20190829,14,Metal,Reuse,422.367
 9047,WST-009047,20251020,91,Plastic,Reuse,497.467
@@ -9796,7 +9796,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 9795,WST-009795,20191109,26,Plastic,Landfill,185.543
 9796,WST-009796,20190405,43,Plastic,Recycling,13.588
 9797,WST-009797,20250526,82,Chemical,Landfill,967.734
-9798,WST-009798,20200613,79,Chemical,Recycling,201.087
+9798,WST-009798,20200613,79,Chemical,Recycling,-50.0
 9799,WST-009799,20231001,77,Plastic,Reuse,480.344
 9800,WST-009800,20210129,45,Paper,Treatment,555.31
 9801,WST-009801,20200412,43,Plastic,Recycling,381.143
@@ -10624,7 +10624,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 10623,WST-010623,20210902,27,Paper,Recycling,38.355
 10624,WST-010624,20231212,65,Metal,Treatment,175.189
 10625,WST-010625,20200323,83,Chemical,Landfill,832.051
-10626,WST-010626,20190325,63,Chemical,Landfill,864.278
+10626,WST-010626,20190325,63,Chemical,Landfill,-50.0
 10627,WST-010627,20190409,44,Plastic,Reuse,133.697
 10628,WST-010628,20191031,22,Plastic,Treatment,241.117
 10629,WST-010629,20210404,96,Plastic,Landfill,350.552
@@ -12228,7 +12228,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 12227,WST-012227,20240924,9,Chemical,Treatment,608.598
 12228,WST-012228,20230503,91,Plastic,Landfill,546.226
 12229,WST-012229,20250827,47,Plastic,Landfill,171.476
-12230,WST-012230,20220602,95,Paper,Recycling,381.697
+12230,WST-012230,20220602,95,Paper,Recycling,-50.0
 12231,WST-012231,20231011,5,Paper,Treatment,459.602
 12232,WST-012232,20251022,66,General,Reuse,339.103
 12233,WST-012233,20250223,57,Chemical,Treatment,919.858
@@ -12475,7 +12475,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 12474,WST-012474,20251214,52,General,Landfill,397.466
 12475,WST-012475,20221011,28,Paper,Landfill,171.912
 12476,WST-012476,20240516,10,General,Treatment,913.36
-12477,WST-012477,20240530,71,Paper,Reuse,516.524
+12477,WST-012477,20240530,71,Paper,Reuse,-50.0
 12478,WST-012478,20201117,82,Metal,Treatment,733.372
 12479,WST-012479,20200124,46,Plastic,Reuse,693.61
 12480,WST-012480,20240829,77,Plastic,Treatment,299.838
@@ -12799,7 +12799,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 12798,WST-012798,20251214,87,Chemical,Recycling,454.65
 12799,WST-012799,20240331,78,Plastic,Reuse,705.259
 12800,WST-012800,20221113,43,Plastic,Treatment,850.949
-12801,WST-012801,20241228,21,Plastic,Landfill,658.298
+12801,WST-012801,20241228,21,Plastic,Landfill,-50.0
 12802,WST-012802,20220201,24,Chemical,Recycling,357.733
 12803,WST-012803,20200406,15,Paper,Reuse,434.196
 12804,WST-012804,20251116,26,Plastic,Recycling,621.656
@@ -17220,7 +17220,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 17219,WST-017219,20200103,79,Metal,Reuse,664.497
 17220,WST-017220,20251222,99,Chemical,Recycling,880.005
 17221,WST-017221,20250421,40,Chemical,Treatment,764.386
-17222,WST-017222,20190305,35,Metal,Recycling,154.404
+17222,WST-017222,20190305,35,Metal,Recycling,-50.0
 17223,WST-017223,20200105,69,Metal,Treatment,876.792
 17224,WST-017224,20210407,16,Chemical,Treatment,634.328
 17225,WST-017225,20200811,79,General,Reuse,886.519
@@ -18140,7 +18140,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 18139,WST-018139,20200314,22,Plastic,Landfill,57.915
 18140,WST-018140,20250204,26,Paper,Treatment,12.332
 18141,WST-018141,20190916,41,Plastic,Recycling,788.839
-18142,WST-018142,20240531,83,Chemical,Treatment,828.987
+18142,WST-018142,20240531,83,Chemical,Treatment,-50.0
 18143,WST-018143,20250215,25,Paper,Treatment,295.178
 18144,WST-018144,20250907,3,Chemical,Landfill,601.859
 18145,WST-018145,20250414,96,Chemical,Landfill,188.008
@@ -18372,7 +18372,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 18371,WST-018371,20231010,45,General,Reuse,937.595
 18372,WST-018372,20210304,63,Plastic,Landfill,698.6
 18373,WST-018373,20220326,16,General,Recycling,652.739
-18374,WST-018374,20231004,7,Paper,Reuse,775.051
+18374,WST-018374,20231004,7,Paper,Reuse,-50.0
 18375,WST-018375,20250219,12,Chemical,Treatment,986.377
 18376,WST-018376,20200218,3,General,Treatment,861.3
 18377,WST-018377,20200217,78,Chemical,Reuse,542.258
@@ -18765,7 +18765,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 18764,WST-018764,20241229,67,Paper,Landfill,85.317
 18765,WST-018765,20240916,95,Plastic,Reuse,666.165
 18766,WST-018766,20231218,63,General,Reuse,26.284
-18767,WST-018767,20190822,46,Metal,Treatment,48.594
+18767,WST-018767,20190822,46,Metal,Treatment,-50.0
 18768,WST-018768,20210818,48,General,Landfill,654.889
 18769,WST-018769,20220814,33,Chemical,Recycling,258.333
 18770,WST-018770,20220304,23,General,Treatment,93.782
@@ -19150,7 +19150,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 19149,WST-019149,20210827,61,Paper,Landfill,976.055
 19150,WST-019150,20201210,79,Paper,Recycling,629.668
 19151,WST-019151,20251228,27,Plastic,Recycling,162.654
-19152,WST-019152,20251119,98,Plastic,Treatment,936.825
+19152,WST-019152,20251119,98,Plastic,Treatment,-50.0
 19153,WST-019153,20220501,64,Chemical,Treatment,294.641
 19154,WST-019154,20191126,9,Chemical,Treatment,471.307
 19155,WST-019155,20190408,68,General,Landfill,935.433
@@ -20625,7 +20625,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 20624,WST-020624,20190913,46,Metal,Treatment,954.869
 20625,WST-020625,20200525,29,Metal,Landfill,596.371
 20626,WST-020626,20230814,33,Plastic,Reuse,884.911
-20627,WST-020627,20250422,68,Chemical,Landfill,34.909
+20627,WST-020627,20250422,68,Chemical,Landfill,-50.0
 20628,WST-020628,20251021,97,General,Treatment,415.735
 20629,WST-020629,20220825,52,Plastic,Landfill,451.417
 20630,WST-020630,20251104,1,Chemical,Landfill,763.938
@@ -20694,7 +20694,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 20693,WST-020693,20201203,71,Paper,Landfill,788.922
 20694,WST-020694,20230806,76,Paper,Treatment,689.511
 20695,WST-020695,20231126,79,Chemical,Recycling,87.658
-20696,WST-020696,20220117,1,Plastic,Landfill,425.202
+20696,WST-020696,20220117,1,Plastic,Landfill,-50.0
 20697,WST-020697,20250327,50,Paper,Landfill,269.272
 20698,WST-020698,20190319,39,Plastic,Reuse,161.342
 20699,WST-020699,20231219,94,Metal,Treatment,312.995
@@ -21106,7 +21106,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 21105,WST-021105,20200121,42,General,Reuse,462.118
 21106,WST-021106,20200308,29,Chemical,Reuse,415.368
 21107,WST-021107,20190817,57,General,Treatment,616.723
-21108,WST-021108,20241119,78,Chemical,Treatment,80.686
+21108,WST-021108,20241119,78,Chemical,Treatment,-50.0
 21109,WST-021109,20251111,48,Plastic,Treatment,871.738
 21110,WST-021110,20250804,1,Chemical,Recycling,599.643
 21111,WST-021111,20250324,94,Paper,Treatment,960.023
@@ -21251,7 +21251,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 21250,WST-021250,20250513,6,Chemical,Landfill,907.628
 21251,WST-021251,20220830,24,Metal,Reuse,145.501
 21252,WST-021252,20191020,19,General,Landfill,622.556
-21253,WST-021253,20211204,6,General,Reuse,420.55
+21253,WST-021253,20211204,6,General,Reuse,-50.0
 21254,WST-021254,20200105,35,General,Landfill,389.009
 21255,WST-021255,20200620,1,Paper,Landfill,710.267
 21256,WST-021256,20220611,67,Metal,Reuse,72.301
@@ -22163,7 +22163,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 22162,WST-022162,20251024,58,Metal,Recycling,8.821
 22163,WST-022163,20200323,99,General,Landfill,527.074
 22164,WST-022164,20200620,69,Metal,Reuse,913.262
-22165,WST-022165,20230115,44,Chemical,Recycling,799.479
+22165,WST-022165,20230115,44,Chemical,Recycling,-50.0
 22166,WST-022166,20251207,16,Metal,Treatment,876.971
 22167,WST-022167,20250419,98,Plastic,Landfill,588.372
 22168,WST-022168,20220305,80,Paper,Reuse,418.118
@@ -22536,7 +22536,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 22535,WST-022535,20230927,90,General,Reuse,241.033
 22536,WST-022536,20251214,4,Plastic,Recycling,437.249
 22537,WST-022537,20191221,64,Paper,Recycling,839.927
-22538,WST-022538,20211015,39,Metal,Treatment,977.664
+22538,WST-022538,20211015,39,Metal,Treatment,-50.0
 22539,WST-022539,20231004,54,Plastic,Treatment,351.733
 22540,WST-022540,20220101,11,General,Landfill,197.453
 22541,WST-022541,20210521,27,Plastic,Landfill,792.107
@@ -23862,7 +23862,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 23861,WST-023861,20210706,88,Plastic,Treatment,18.458
 23862,WST-023862,20251028,28,Chemical,Landfill,851.566
 23863,WST-023863,20200509,67,Metal,Landfill,984.73
-23864,WST-023864,20191119,88,General,Recycling,233.49
+23864,WST-023864,20191119,88,General,Recycling,-50.0
 23865,WST-023865,20190819,28,Metal,Landfill,4.327
 23866,WST-023866,20221031,22,Chemical,Reuse,48.674
 23867,WST-023867,20201028,72,Plastic,Recycling,558.33
@@ -27288,7 +27288,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 27287,WST-027287,20230731,71,Metal,Recycling,674.78
 27288,WST-027288,20210827,70,Metal,Landfill,915.629
 27289,WST-027289,20210423,22,Chemical,Reuse,354.044
-27290,WST-027290,20190209,10,Plastic,Reuse,903.364
+27290,WST-027290,20190209,10,Plastic,Reuse,-50.0
 27291,WST-027291,20211006,100,Plastic,Recycling,701.064
 27292,WST-027292,20190323,64,Paper,Landfill,581.234
 27293,WST-027293,20210611,76,Plastic,Reuse,209.112
@@ -27635,7 +27635,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 27634,WST-027634,20190508,10,General,Reuse,807.456
 27635,WST-027635,20191110,33,Chemical,Recycling,86.521
 27636,WST-027636,20220711,57,Paper,Landfill,814.307
-27637,WST-027637,20190810,47,Chemical,Treatment,456.077
+27637,WST-027637,20190810,47,Chemical,Treatment,-50.0
 27638,WST-027638,20201013,45,Paper,Recycling,791.555
 27639,WST-027639,20250312,21,Paper,Landfill,298.999
 27640,WST-027640,20210202,87,Chemical,Treatment,666.318
@@ -28337,7 +28337,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 28336,WST-028336,20231117,55,General,Reuse,686.094
 28337,WST-028337,20220621,91,Paper,Recycling,276.25
 28338,WST-028338,20220328,19,Chemical,Landfill,50.949
-28339,WST-028339,20230922,18,Chemical,Reuse,505.47
+28339,WST-028339,20230922,18,Chemical,Reuse,-50.0
 28340,WST-028340,20211102,43,General,Landfill,25.105
 28341,WST-028341,20240819,52,Plastic,Reuse,994.404
 28342,WST-028342,20241029,72,Paper,Recycling,512.858
@@ -30882,7 +30882,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 30881,WST-030881,20250703,48,General,Treatment,56.548
 30882,WST-030882,20231024,23,Metal,Landfill,162.425
 30883,WST-030883,20190217,34,General,Recycling,404.929
-30884,WST-030884,20210427,94,Metal,Recycling,496.134
+30884,WST-030884,20210427,94,Metal,Recycling,-50.0
 30885,WST-030885,20200605,16,General,Recycling,997.829
 30886,WST-030886,20230403,76,Metal,Reuse,112.169
 30887,WST-030887,20211227,21,General,Recycling,69.805
@@ -31506,7 +31506,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 31505,WST-031505,20200419,67,General,Reuse,405.394
 31506,WST-031506,20191105,66,Chemical,Landfill,518.889
 31507,WST-031507,20251024,2,General,Treatment,607.076
-31508,WST-031508,20200128,15,General,Recycling,900.484
+31508,WST-031508,20200128,15,General,Recycling,-50.0
 31509,WST-031509,20200917,52,Chemical,Recycling,80.318
 31510,WST-031510,20220531,42,General,Landfill,963.608
 31511,WST-031511,20211016,20,Chemical,Landfill,142.52
@@ -31681,7 +31681,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 31680,WST-031680,20240216,8,Chemical,Treatment,915.252
 31681,WST-031681,20191227,15,Plastic,Reuse,204.53
 31682,WST-031682,20241125,17,Metal,Reuse,119.272
-31683,WST-031683,20240727,58,Chemical,Recycling,545.2
+31683,WST-031683,20240727,58,Chemical,Recycling,-50.0
 31684,WST-031684,20231129,43,Plastic,Treatment,944.749
 31685,WST-031685,20241020,99,Paper,Treatment,68.729
 31686,WST-031686,20221218,75,Paper,Recycling,571.262
@@ -32511,7 +32511,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 32510,WST-032510,20211221,56,General,Reuse,474.497
 32511,WST-032511,20200214,77,Plastic,Recycling,194.61
 32512,WST-032512,20250615,64,Chemical,Treatment,632.374
-32513,WST-032513,20190816,68,Plastic,Reuse,899.815
+32513,WST-032513,20190816,68,Plastic,Reuse,-50.0
 32514,WST-032514,20240608,58,Metal,Landfill,136.891
 32515,WST-032515,20211021,97,Plastic,Reuse,924.197
 32516,WST-032516,20210809,52,General,Recycling,319.317
@@ -34699,7 +34699,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 34698,WST-034698,20230809,64,Paper,Treatment,718.343
 34699,WST-034699,20200920,17,Plastic,Recycling,985.585
 34700,WST-034700,20200111,44,Plastic,Recycling,769.483
-34701,WST-034701,20221116,26,Metal,Landfill,889.892
+34701,WST-034701,20221116,26,Metal,Landfill,-50.0
 34702,WST-034702,20190708,49,Chemical,Reuse,965.458
 34703,WST-034703,20210615,64,Paper,Recycling,167.463
 34704,WST-034704,20190714,67,Paper,Recycling,438.72
@@ -35905,7 +35905,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 35904,WST-035904,20250112,66,Metal,Treatment,478.643
 35905,WST-035905,20190410,70,General,Reuse,689.539
 35906,WST-035906,20250604,16,Paper,Reuse,317.145
-35907,WST-035907,20220422,42,Paper,Treatment,89.46
+35907,WST-035907,20220422,42,Paper,Treatment,-50.0
 35908,WST-035908,20250121,87,Paper,Reuse,913.823
 35909,WST-035909,20240428,8,Metal,Recycling,810.547
 35910,WST-035910,20241109,31,General,Recycling,875.333
@@ -36515,7 +36515,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 36514,WST-036514,20201019,54,General,Recycling,799.454
 36515,WST-036515,20200605,31,Metal,Reuse,31.749
 36516,WST-036516,20230211,24,General,Landfill,505.147
-36517,WST-036517,20211210,77,Plastic,Reuse,989.367
+36517,WST-036517,20211210,77,Plastic,Reuse,-50.0
 36518,WST-036518,20241117,88,Chemical,Landfill,412.199
 36519,WST-036519,20200222,99,Metal,Recycling,802.158
 36520,WST-036520,20211130,49,Chemical,Recycling,949.114
@@ -37460,7 +37460,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 37459,WST-037459,20210410,30,Paper,Reuse,135.616
 37460,WST-037460,20231006,86,Chemical,Recycling,369.55
 37461,WST-037461,20210720,65,Plastic,Landfill,29.799
-37462,WST-037462,20200625,1,General,Reuse,360.442
+37462,WST-037462,20200625,1,General,Reuse,-50.0
 37463,WST-037463,20250802,24,Plastic,Recycling,105.071
 37464,WST-037464,20220913,82,Paper,Reuse,549.59
 37465,WST-037465,20191125,33,Paper,Reuse,246.736
@@ -38876,7 +38876,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 38875,WST-038875,20250705,58,Paper,Landfill,369.863
 38876,WST-038876,20230211,61,Paper,Landfill,867.481
 38877,WST-038877,20211219,54,Paper,Recycling,634.311
-38878,WST-038878,20220901,61,Chemical,Reuse,636.513
+38878,WST-038878,20220901,61,Chemical,Reuse,-50.0
 38879,WST-038879,20201113,87,Chemical,Reuse,932.876
 38880,WST-038880,20191120,36,Chemical,Treatment,845.473
 38881,WST-038881,20230208,82,Plastic,Treatment,618.475
@@ -40362,7 +40362,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 40361,WST-040361,20210729,23,Plastic,Reuse,182.021
 40362,WST-040362,20240612,18,Metal,Recycling,16.067
 40363,WST-040363,20220110,48,General,Recycling,589.446
-40364,WST-040364,20240517,47,Paper,Recycling,3.728
+40364,WST-040364,20240517,47,Paper,Recycling,-50.0
 40365,WST-040365,20200910,62,Metal,Treatment,889.267
 40366,WST-040366,20210901,46,Metal,Landfill,665.346
 40367,WST-040367,20250811,48,Chemical,Treatment,681.449
@@ -42470,7 +42470,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 42469,WST-042469,20210819,18,Metal,Reuse,765.119
 42470,WST-042470,20210815,97,Metal,Reuse,716.243
 42471,WST-042471,20210405,9,Paper,Reuse,85.353
-42472,WST-042472,20221001,28,Paper,Reuse,574.923
+42472,WST-042472,20221001,28,Paper,Reuse,-50.0
 42473,WST-042473,20210705,15,Paper,Treatment,960.081
 42474,WST-042474,20210226,52,Plastic,Reuse,678.566
 42475,WST-042475,20220103,85,General,Treatment,614.042
@@ -42892,7 +42892,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 42891,WST-042891,20250622,61,Plastic,Recycling,404.613
 42892,WST-042892,20250427,41,Chemical,Landfill,664.902
 42893,WST-042893,20221227,50,Paper,Landfill,340.828
-42894,WST-042894,20240126,32,Plastic,Treatment,719.052
+42894,WST-042894,20240126,32,Plastic,Treatment,-50.0
 42895,WST-042895,20250308,75,Plastic,Treatment,945.522
 42896,WST-042896,20190529,26,Plastic,Treatment,990.89
 42897,WST-042897,20250321,46,Plastic,Landfill,831.632
@@ -45735,7 +45735,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 45734,WST-045734,20231124,47,Paper,Treatment,262.995
 45735,WST-045735,20210514,53,Paper,Treatment,876.647
 45736,WST-045736,20250814,43,General,Treatment,851.062
-45737,WST-045737,20250810,92,Chemical,Reuse,481.262
+45737,WST-045737,20250810,92,Chemical,Reuse,-50.0
 45738,WST-045738,20200922,100,Paper,Recycling,985.472
 45739,WST-045739,20190825,15,Chemical,Landfill,898.241
 45740,WST-045740,20250825,85,General,Recycling,259.487
@@ -45991,7 +45991,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 45990,WST-045990,20220719,52,Paper,Reuse,461.562
 45991,WST-045991,20231007,57,Metal,Recycling,942.879
 45992,WST-045992,20240130,59,General,Treatment,754.84
-45993,WST-045993,20220614,88,Chemical,Reuse,532.523
+45993,WST-045993,20220614,88,Chemical,Reuse,-50.0
 45994,WST-045994,20190725,17,Metal,Landfill,903.315
 45995,WST-045995,20220103,24,Paper,Recycling,500.524
 45996,WST-045996,20241101,3,Chemical,Landfill,458.891
@@ -51037,7 +51037,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 51036,WST-051036,20231223,4,Plastic,Recycling,970.783
 51037,WST-051037,20250523,55,Plastic,Treatment,87.305
 51038,WST-051038,20190426,27,Chemical,Reuse,228.733
-51039,WST-051039,20200319,75,General,Recycling,151.688
+51039,WST-051039,20200319,75,General,Recycling,-50.0
 51040,WST-051040,20250527,1,Paper,Landfill,465.525
 51041,WST-051041,20250824,12,General,Treatment,900.95
 51042,WST-051042,20200526,26,Plastic,Recycling,857.591
@@ -53742,7 +53742,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 53741,WST-053741,20211017,52,General,Reuse,971.03
 53742,WST-053742,20251018,83,Chemical,Landfill,300.206
 53743,WST-053743,20220825,29,Paper,Landfill,646.959
-53744,WST-053744,20190614,54,Plastic,Recycling,452.302
+53744,WST-053744,20190614,54,Plastic,Recycling,-50.0
 53745,WST-053745,20201023,70,Metal,Treatment,28.828
 53746,WST-053746,20220802,48,General,Treatment,524.924
 53747,WST-053747,20220102,35,Metal,Reuse,85.583
@@ -54709,7 +54709,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 54708,WST-054708,20230316,11,General,Treatment,828.662
 54709,WST-054709,20200117,83,Chemical,Treatment,903.776
 54710,WST-054710,20250213,88,Plastic,Recycling,833.223
-54711,WST-054711,20200219,15,General,Landfill,981.53
+54711,WST-054711,20200219,15,General,Landfill,-50.0
 54712,WST-054712,20240612,5,Plastic,Recycling,154.069
 54713,WST-054713,20190927,40,Paper,Recycling,716.427
 54714,WST-054714,20211117,63,Paper,Treatment,52.865
@@ -54725,7 +54725,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 54724,WST-054724,20200418,39,Paper,Reuse,967.076
 54725,WST-054725,20250129,89,Paper,Treatment,817.838
 54726,WST-054726,20250122,34,Paper,Reuse,389.795
-54727,WST-054727,20230220,49,Plastic,Recycling,285.872
+54727,WST-054727,20230220,49,Plastic,Recycling,-50.0
 54728,WST-054728,20220403,70,Chemical,Treatment,412.073
 54729,WST-054729,20250324,69,Plastic,Reuse,713.525
 54730,WST-054730,20190118,67,Chemical,Reuse,665.082
@@ -55398,7 +55398,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 55397,WST-055397,20220316,50,Metal,Landfill,138.256
 55398,WST-055398,20240904,11,Chemical,Treatment,720.046
 55399,WST-055399,20220331,64,Metal,Reuse,445.026
-55400,WST-055400,20221125,36,Chemical,Reuse,751.166
+55400,WST-055400,20221125,36,Chemical,Reuse,-50.0
 55401,WST-055401,20190629,57,Chemical,Treatment,648.161
 55402,WST-055402,20190520,21,Metal,Recycling,492.265
 55403,WST-055403,20230905,7,General,Landfill,487.788
@@ -57735,7 +57735,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 57734,WST-057734,20241030,78,Chemical,Landfill,303.081
 57735,WST-057735,20220909,53,General,Recycling,32.974
 57736,WST-057736,20200227,98,Paper,Recycling,849.828
-57737,WST-057737,20200222,14,Plastic,Treatment,734.797
+57737,WST-057737,20200222,14,Plastic,Treatment,-50.0
 57738,WST-057738,20251008,18,Metal,Landfill,351.186
 57739,WST-057739,20240211,3,Chemical,Reuse,603.199
 57740,WST-057740,20220426,49,Plastic,Reuse,445.339
@@ -58166,7 +58166,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 58165,WST-058165,20250114,52,General,Treatment,732.661
 58166,WST-058166,20191026,61,Chemical,Reuse,206.172
 58167,WST-058167,20240310,66,Chemical,Landfill,915.232
-58168,WST-058168,20240311,84,General,Landfill,739.645
+58168,WST-058168,20240311,84,General,Landfill,-50.0
 58169,WST-058169,20200704,92,Chemical,Reuse,94.863
 58170,WST-058170,20240320,98,Paper,Landfill,357.183
 58171,WST-058171,20200418,59,Metal,Landfill,751.574
@@ -58389,7 +58389,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 58388,WST-058388,20190527,6,Metal,Treatment,421.105
 58389,WST-058389,20250115,31,Metal,Treatment,956.22
 58390,WST-058390,20210418,18,Metal,Landfill,723.992
-58391,WST-058391,20201123,20,General,Reuse,85.982
+58391,WST-058391,20201123,20,General,Reuse,-50.0
 58392,WST-058392,20230615,28,Metal,Recycling,525.071
 58393,WST-058393,20190109,78,Plastic,Treatment,548.811
 58394,WST-058394,20220916,2,Chemical,Recycling,277.373
@@ -58731,7 +58731,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 58730,WST-058730,20210107,57,Metal,Reuse,72.866
 58731,WST-058731,20231231,16,Plastic,Reuse,901.711
 58732,WST-058732,20200305,25,Chemical,Reuse,185.358
-58733,WST-058733,20250804,61,Chemical,Treatment,188.618
+58733,WST-058733,20250804,61,Chemical,Treatment,-50.0
 58734,WST-058734,20190313,16,General,Landfill,396.235
 58735,WST-058735,20240814,64,General,Reuse,969.138
 58736,WST-058736,20190615,94,General,Recycling,604.124
@@ -59418,7 +59418,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 59417,WST-059417,20200723,38,Chemical,Landfill,722.948
 59418,WST-059418,20251204,76,Paper,Landfill,295.075
 59419,WST-059419,20211201,94,Chemical,Landfill,788.005
-59420,WST-059420,20231210,52,Metal,Reuse,725.531
+59420,WST-059420,20231210,52,Metal,Reuse,-50.0
 59421,WST-059421,20190203,49,Metal,Reuse,518.209
 59422,WST-059422,20201224,29,Metal,Landfill,592.46
 59423,WST-059423,20201219,85,Metal,Treatment,872.262
@@ -60764,7 +60764,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 60763,WST-060763,20200311,48,Plastic,Reuse,905.779
 60764,WST-060764,20200131,80,General,Reuse,386.338
 60765,WST-060765,20250802,97,Metal,Landfill,236.666
-60766,WST-060766,20190109,90,Paper,Landfill,722.24
+60766,WST-060766,20190109,90,Paper,Landfill,-50.0
 60767,WST-060767,20251119,9,Metal,Treatment,449.011
 60768,WST-060768,20231221,6,Metal,Landfill,24.438
 60769,WST-060769,20221014,36,General,Landfill,35.576
@@ -61019,7 +61019,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 61018,WST-061018,20230905,83,General,Recycling,505.801
 61019,WST-061019,20250211,35,General,Reuse,954.066
 61020,WST-061020,20230909,69,Plastic,Landfill,91.467
-61021,WST-061021,20200512,21,Plastic,Reuse,477.525
+61021,WST-061021,20200512,21,Plastic,Reuse,-50.0
 61022,WST-061022,20240429,38,Chemical,Recycling,17.733
 61023,WST-061023,20190708,68,Chemical,Recycling,918.118
 61024,WST-061024,20200618,93,Plastic,Treatment,882.662
@@ -61791,7 +61791,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 61790,WST-061790,20240803,26,Plastic,Reuse,647.463
 61791,WST-061791,20250130,29,General,Recycling,112.063
 61792,WST-061792,20220102,42,Plastic,Reuse,40.776
-61793,WST-061793,20240530,78,Metal,Reuse,591.23
+61793,WST-061793,20240530,78,Metal,Reuse,-50.0
 61794,WST-061794,20190112,57,General,Recycling,261.5
 61795,WST-061795,20201124,83,Paper,Landfill,938.487
 61796,WST-061796,20221120,88,Chemical,Reuse,706.999
@@ -62740,7 +62740,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 62739,WST-062739,20230202,100,Chemical,Reuse,550.422
 62740,WST-062740,20250525,76,Chemical,Treatment,814.401
 62741,WST-062741,20220523,46,Metal,Landfill,790.502
-62742,WST-062742,20190503,6,Plastic,Recycling,673.142
+62742,WST-062742,20190503,6,Plastic,Recycling,-50.0
 62743,WST-062743,20251223,60,Paper,Treatment,723.915
 62744,WST-062744,20200923,44,Paper,Landfill,892.514
 62745,WST-062745,20230209,19,Metal,Treatment,547.416
@@ -64612,7 +64612,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 64611,WST-064611,20190406,19,Metal,Recycling,600.292
 64612,WST-064612,20220523,6,Paper,Recycling,703.847
 64613,WST-064613,20241006,93,General,Treatment,480.466
-64614,WST-064614,20210206,72,Paper,Landfill,499.153
+64614,WST-064614,20210206,72,Paper,Landfill,-50.0
 64615,WST-064615,20210112,57,Chemical,Reuse,105.64
 64616,WST-064616,20220814,42,General,Recycling,44.83
 64617,WST-064617,20240224,37,Chemical,Treatment,661.698
@@ -64861,7 +64861,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 64860,WST-064860,20251204,30,Paper,Landfill,682.89
 64861,WST-064861,20200307,35,General,Recycling,127.351
 64862,WST-064862,20211005,84,Plastic,Landfill,938.622
-64863,WST-064863,20190402,24,Plastic,Recycling,567.739
+64863,WST-064863,20190402,24,Plastic,Recycling,-50.0
 64864,WST-064864,20200420,60,Paper,Reuse,353.612
 64865,WST-064865,20201117,74,Plastic,Treatment,968.197
 64866,WST-064866,20211030,35,General,Treatment,751.112
@@ -64964,7 +64964,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 64963,WST-064963,20251103,17,Metal,Recycling,437.043
 64964,WST-064964,20240804,10,Chemical,Reuse,592.489
 64965,WST-064965,20190713,33,Plastic,Treatment,665.74
-64966,WST-064966,20190626,7,Chemical,Recycling,994.998
+64966,WST-064966,20190626,7,Chemical,Recycling,-50.0
 64967,WST-064967,20200711,85,Chemical,Landfill,136.637
 64968,WST-064968,20240918,54,Metal,Reuse,107.407
 64969,WST-064969,20220313,57,Metal,Reuse,326.106
@@ -65038,7 +65038,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 65037,WST-065037,20230902,67,Plastic,Recycling,105.735
 65038,WST-065038,20230524,96,Plastic,Recycling,505.04
 65039,WST-065039,20190826,46,Plastic,Landfill,826.227
-65040,WST-065040,20251225,78,Paper,Treatment,638.153
+65040,WST-065040,20251225,78,Paper,Treatment,-50.0
 65041,WST-065041,20200130,8,Chemical,Treatment,383.429
 65042,WST-065042,20251114,94,General,Recycling,256.565
 65043,WST-065043,20230927,57,Paper,Landfill,169.379
@@ -65300,7 +65300,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 65299,WST-065299,20211216,87,Plastic,Treatment,999.193
 65300,WST-065300,20200502,93,Chemical,Reuse,698.196
 65301,WST-065301,20230130,81,General,Treatment,740.917
-65302,WST-065302,20190325,36,Plastic,Landfill,896.797
+65302,WST-065302,20190325,36,Plastic,Landfill,-50.0
 65303,WST-065303,20200504,17,Metal,Landfill,522.385
 65304,WST-065304,20210804,15,General,Recycling,715.836
 65305,WST-065305,20190310,63,General,Treatment,93.474
@@ -66133,7 +66133,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 66132,WST-066132,20231020,10,Paper,Recycling,682.811
 66133,WST-066133,20221209,41,Paper,Treatment,885.617
 66134,WST-066134,20240426,43,General,Recycling,733.999
-66135,WST-066135,20190320,34,Chemical,Reuse,462.289
+66135,WST-066135,20190320,34,Chemical,Reuse,-50.0
 66136,WST-066136,20190420,31,Plastic,Reuse,569.882
 66137,WST-066137,20221125,17,Metal,Recycling,529.295
 66138,WST-066138,20250403,53,Chemical,Recycling,905.465
@@ -67552,7 +67552,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 67551,WST-067551,20230918,40,Chemical,Landfill,682.151
 67552,WST-067552,20230417,29,Plastic,Treatment,557.898
 67553,WST-067553,20190723,96,Paper,Treatment,940.607
-67554,WST-067554,20231218,49,Paper,Treatment,881.059
+67554,WST-067554,20231218,49,Paper,Treatment,-50.0
 67555,WST-067555,20201101,53,Paper,Recycling,884.192
 67556,WST-067556,20221215,48,Chemical,Recycling,671.851
 67557,WST-067557,20230525,99,Plastic,Treatment,326.103
@@ -68862,7 +68862,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 68861,WST-068861,20200515,45,Plastic,Reuse,994.398
 68862,WST-068862,20220718,67,Chemical,Reuse,912.102
 68863,WST-068863,20210121,63,Plastic,Landfill,102.469
-68864,WST-068864,20251118,27,Plastic,Treatment,206.11
+68864,WST-068864,20251118,27,Plastic,Treatment,-50.0
 68865,WST-068865,20210713,13,Chemical,Treatment,297.437
 68866,WST-068866,20220102,58,Metal,Recycling,945.156
 68867,WST-068867,20200718,43,Metal,Treatment,963.071
@@ -69207,7 +69207,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 69206,WST-069206,20200902,78,Paper,Landfill,866.822
 69207,WST-069207,20210813,68,Chemical,Recycling,275.02
 69208,WST-069208,20191201,78,General,Treatment,481.987
-69209,WST-069209,20241121,87,General,Landfill,701.258
+69209,WST-069209,20241121,87,General,Landfill,-50.0
 69210,WST-069210,20250505,27,Paper,Reuse,42.831
 69211,WST-069211,20210322,30,Plastic,Reuse,545.074
 69212,WST-069212,20230207,27,Metal,Recycling,398.023
@@ -69502,7 +69502,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 69501,WST-069501,20230327,42,Plastic,Reuse,589.961
 69502,WST-069502,20231226,49,Metal,Landfill,307.364
 69503,WST-069503,20200427,63,General,Recycling,848.597
-69504,WST-069504,20201111,67,Metal,Reuse,567.174
+69504,WST-069504,20201111,67,Metal,Reuse,-50.0
 69505,WST-069505,20220720,40,Metal,Recycling,308.477
 69506,WST-069506,20210630,26,Plastic,Landfill,438.984
 69507,WST-069507,20231108,56,General,Recycling,116.175
@@ -70164,7 +70164,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 70163,WST-070163,20221225,2,Plastic,Recycling,161.659
 70164,WST-070164,20190801,94,Plastic,Reuse,97.635
 70165,WST-070165,20221024,37,Metal,Treatment,67.677
-70166,WST-070166,20221003,90,General,Treatment,159.246
+70166,WST-070166,20221003,90,General,Treatment,-50.0
 70167,WST-070167,20240527,29,General,Landfill,152.911
 70168,WST-070168,20250603,73,Paper,Landfill,5.593
 70169,WST-070169,20210422,52,Plastic,Recycling,345.365
@@ -70804,7 +70804,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 70803,WST-070803,20250709,97,General,Landfill,763.893
 70804,WST-070804,20201023,96,Chemical,Recycling,746.832
 70805,WST-070805,20190124,8,Paper,Landfill,485.696
-70806,WST-070806,20200603,29,Paper,Treatment,724.818
+70806,WST-070806,20200603,29,Paper,Treatment,-50.0
 70807,WST-070807,20240313,20,General,Recycling,593.853
 70808,WST-070808,20231106,58,Plastic,Landfill,498.882
 70809,WST-070809,20190205,90,Paper,Treatment,963.307
@@ -71567,7 +71567,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 71566,WST-071566,20220817,68,General,Treatment,14.49
 71567,WST-071567,20200430,52,Chemical,Landfill,590.937
 71568,WST-071568,20250630,41,Plastic,Recycling,482.61
-71569,WST-071569,20221107,50,Chemical,Landfill,924.887
+71569,WST-071569,20221107,50,Chemical,Landfill,-50.0
 71570,WST-071570,20220518,4,Paper,Reuse,872.921
 71571,WST-071571,20240419,80,Paper,Landfill,751.093
 71572,WST-071572,20220108,58,Chemical,Landfill,893.432
@@ -77370,7 +77370,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 77369,WST-077369,20190322,28,Plastic,Recycling,364.775
 77370,WST-077370,20190731,30,Paper,Reuse,33.833
 77371,WST-077371,20250118,36,Chemical,Landfill,644.287
-77372,WST-077372,20221130,91,General,Reuse,103.213
+77372,WST-077372,20221130,91,General,Reuse,-50.0
 77373,WST-077373,20190921,88,Plastic,Reuse,47.632
 77374,WST-077374,20240725,84,Metal,Reuse,297.109
 77375,WST-077375,20230212,74,General,Recycling,407.515
@@ -77486,7 +77486,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 77485,WST-077485,20230210,76,Metal,Landfill,853.873
 77486,WST-077486,20230307,65,Chemical,Treatment,602.349
 77487,WST-077487,20220411,92,Chemical,Reuse,283.68
-77488,WST-077488,20190810,90,General,Landfill,544.949
+77488,WST-077488,20190810,90,General,Landfill,-50.0
 77489,WST-077489,20200610,20,General,Treatment,952.717
 77490,WST-077490,20210906,7,Plastic,Reuse,101.694
 77491,WST-077491,20200118,33,Plastic,Recycling,149.043
@@ -78621,7 +78621,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 78620,WST-078620,20210914,32,Paper,Reuse,259.773
 78621,WST-078621,20230924,30,Metal,Treatment,632.258
 78622,WST-078622,20210217,87,Metal,Treatment,786.016
-78623,WST-078623,20231024,82,Metal,Landfill,131.868
+78623,WST-078623,20231024,82,Metal,Landfill,-50.0
 78624,WST-078624,20200617,10,Metal,Treatment,452.675
 78625,WST-078625,20191201,41,Chemical,Reuse,934.627
 78626,WST-078626,20230604,42,Paper,Landfill,218.24
@@ -81076,7 +81076,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 81075,WST-081075,20250628,77,Plastic,Recycling,96.476
 81076,WST-081076,20191218,60,Metal,Landfill,297.37
 81077,WST-081077,20231102,56,Metal,Treatment,61.012
-81078,WST-081078,20240107,15,General,Reuse,244.851
+81078,WST-081078,20240107,15,General,Reuse,-50.0
 81079,WST-081079,20230908,20,Paper,Reuse,48.762
 81080,WST-081080,20251017,45,Paper,Recycling,849.122
 81081,WST-081081,20191009,57,Metal,Recycling,174.713
@@ -81497,7 +81497,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 81496,WST-081496,20230418,75,Metal,Reuse,685.782
 81497,WST-081497,20210822,69,General,Landfill,89.642
 81498,WST-081498,20200801,12,Plastic,Recycling,721.584
-81499,WST-081499,20250821,28,Plastic,Reuse,929.472
+81499,WST-081499,20250821,28,Plastic,Reuse,-50.0
 81500,WST-081500,20210809,43,Plastic,Reuse,149.286
 81501,WST-081501,20250815,32,Chemical,Reuse,418.34
 81502,WST-081502,20201025,58,Metal,Reuse,706.034
@@ -82314,7 +82314,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 82313,WST-082313,20220709,69,Chemical,Recycling,749.88
 82314,WST-082314,20220922,94,Plastic,Reuse,895.379
 82315,WST-082315,20200720,22,Plastic,Treatment,729.61
-82316,WST-082316,20240115,67,Paper,Recycling,731.76
+82316,WST-082316,20240115,67,Paper,Recycling,-50.0
 82317,WST-082317,20230506,76,Paper,Landfill,645.469
 82318,WST-082318,20230621,23,Metal,Landfill,538.324
 82319,WST-082319,20200719,38,Plastic,Reuse,773.559
@@ -83183,7 +83183,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 83182,WST-083182,20241030,21,Chemical,Recycling,204.793
 83183,WST-083183,20190811,70,Paper,Landfill,66.656
 83184,WST-083184,20220502,9,General,Landfill,904.483
-83185,WST-083185,20220109,31,Chemical,Recycling,170.742
+83185,WST-083185,20220109,31,Chemical,Recycling,-50.0
 83186,WST-083186,20190113,27,General,Recycling,139.682
 83187,WST-083187,20231224,54,Paper,Reuse,456.051
 83188,WST-083188,20210312,99,General,Recycling,870.087
@@ -83405,7 +83405,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 83404,WST-083404,20241204,58,Plastic,Recycling,713.433
 83405,WST-083405,20250327,81,General,Recycling,335.842
 83406,WST-083406,20190211,16,Plastic,Reuse,393.211
-83407,WST-083407,20201001,36,General,Landfill,233.875
+83407,WST-083407,20201001,36,General,Landfill,-50.0
 83408,WST-083408,20210716,90,Paper,Reuse,673.72
 83409,WST-083409,20230404,64,Metal,Treatment,775.529
 83410,WST-083410,20191006,44,Metal,Landfill,359.229
@@ -83699,7 +83699,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 83698,WST-083698,20200225,75,General,Recycling,427.924
 83699,WST-083699,20210514,43,Chemical,Recycling,650.347
 83700,WST-083700,20220121,66,General,Reuse,347.329
-83701,WST-083701,20190722,51,Chemical,Treatment,142.129
+83701,WST-083701,20190722,51,Chemical,Treatment,-50.0
 83702,WST-083702,20190831,13,Plastic,Recycling,517.834
 83703,WST-083703,20251212,54,Chemical,Recycling,131.513
 83704,WST-083704,20190314,75,General,Treatment,155.698
@@ -84755,7 +84755,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 84754,WST-084754,20230220,69,Plastic,Reuse,511.02
 84755,WST-084755,20220728,53,Metal,Landfill,371.199
 84756,WST-084756,20210616,91,Chemical,Landfill,689.342
-84757,WST-084757,20201228,33,Metal,Recycling,856.87
+84757,WST-084757,20201228,33,Metal,Recycling,-50.0
 84758,WST-084758,20220610,69,Plastic,Landfill,862.467
 84759,WST-084759,20210121,96,Chemical,Landfill,30.924
 84760,WST-084760,20200321,25,Paper,Reuse,585.795
@@ -84824,7 +84824,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 84823,WST-084823,20220622,42,General,Recycling,861.822
 84824,WST-084824,20230117,47,Metal,Landfill,691.986
 84825,WST-084825,20190722,28,Metal,Recycling,966.396
-84826,WST-084826,20231125,83,Plastic,Reuse,347.738
+84826,WST-084826,20231125,83,Plastic,Reuse,-50.0
 84827,WST-084827,20220302,21,Metal,Landfill,536.827
 84828,WST-084828,20210711,20,Metal,Reuse,608.811
 84829,WST-084829,20210112,58,Plastic,Treatment,109.352
@@ -85377,7 +85377,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 85376,WST-085376,20210408,67,Chemical,Treatment,567.724
 85377,WST-085377,20211102,44,Metal,Recycling,839.73
 85378,WST-085378,20221213,71,Chemical,Recycling,963.453
-85379,WST-085379,20220513,62,Paper,Treatment,162.528
+85379,WST-085379,20220513,62,Paper,Treatment,-50.0
 85380,WST-085380,20190520,57,Chemical,Reuse,124.217
 85381,WST-085381,20240808,46,General,Landfill,714.047
 85382,WST-085382,20200808,44,Metal,Treatment,872.79
@@ -86436,7 +86436,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 86435,WST-086435,20191211,97,Chemical,Reuse,530.464
 86436,WST-086436,20200331,32,Metal,Landfill,889.316
 86437,WST-086437,20251012,86,Plastic,Treatment,893.031
-86438,WST-086438,20190702,51,Chemical,Landfill,275.138
+86438,WST-086438,20190702,51,Chemical,Landfill,-50.0
 86439,WST-086439,20190424,16,Paper,Recycling,268.346
 86440,WST-086440,20190531,26,Plastic,Recycling,753.437
 86441,WST-086441,20221219,15,General,Landfill,457.897
@@ -86586,7 +86586,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 86585,WST-086585,20250225,81,Chemical,Recycling,842.394
 86586,WST-086586,20220921,10,Paper,Reuse,304.333
 86587,WST-086587,20210725,26,Paper,Treatment,114.897
-86588,WST-086588,20190108,4,Metal,Landfill,813.305
+86588,WST-086588,20190108,4,Metal,Landfill,-50.0
 86589,WST-086589,20210718,28,Plastic,Recycling,316.889
 86590,WST-086590,20230113,71,General,Reuse,397.212
 86591,WST-086591,20210728,84,Paper,Landfill,808.217
@@ -87421,7 +87421,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 87420,WST-087420,20220911,57,General,Reuse,603.515
 87421,WST-087421,20241120,54,Plastic,Reuse,298.738
 87422,WST-087422,20251113,28,Metal,Landfill,16.192
-87423,WST-087423,20230205,66,Paper,Treatment,299.492
+87423,WST-087423,20230205,66,Paper,Treatment,-50.0
 87424,WST-087424,20220227,27,Chemical,Reuse,807.474
 87425,WST-087425,20230322,18,Plastic,Landfill,869.438
 87426,WST-087426,20190316,72,Plastic,Reuse,256.299
@@ -89571,7 +89571,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 89570,WST-089570,20200430,32,Plastic,Treatment,878.785
 89571,WST-089571,20210101,79,Metal,Reuse,388.624
 89572,WST-089572,20210706,53,Metal,Treatment,351.803
-89573,WST-089573,20251004,52,Plastic,Reuse,731.348
+89573,WST-089573,20251004,52,Plastic,Reuse,-50.0
 89574,WST-089574,20190112,47,Chemical,Reuse,454.921
 89575,WST-089575,20231019,53,Paper,Reuse,795.318
 89576,WST-089576,20210120,34,Chemical,Treatment,605.422
@@ -90916,7 +90916,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 90915,WST-090915,20230925,47,Paper,Recycling,810.268
 90916,WST-090916,20200820,43,Chemical,Landfill,304.553
 90917,WST-090917,20230126,65,General,Reuse,91.043
-90918,WST-090918,20200525,19,Paper,Reuse,733.641
+90918,WST-090918,20200525,19,Paper,Reuse,-50.0
 90919,WST-090919,20231114,14,Metal,Treatment,838.722
 90920,WST-090920,20241123,69,Metal,Recycling,44.743
 90921,WST-090921,20210825,51,General,Landfill,104.669
@@ -91644,7 +91644,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 91643,WST-091643,20210302,86,Paper,Recycling,642.417
 91644,WST-091644,20230131,84,Metal,Treatment,378.808
 91645,WST-091645,20230628,71,Chemical,Treatment,453.44
-91646,WST-091646,20190331,52,Paper,Landfill,740.195
+91646,WST-091646,20190331,52,Paper,Landfill,-50.0
 91647,WST-091647,20250302,58,Metal,Treatment,122.249
 91648,WST-091648,20191208,20,General,Treatment,649.284
 91649,WST-091649,20210603,62,Paper,Treatment,277.595
@@ -92379,7 +92379,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 92378,WST-092378,20250212,30,Metal,Recycling,568.919
 92379,WST-092379,20220313,25,General,Treatment,397.848
 92380,WST-092380,20240112,33,Metal,Reuse,855.822
-92381,WST-092381,20210620,7,General,Recycling,869.034
+92381,WST-092381,20210620,7,General,Recycling,-50.0
 92382,WST-092382,20240502,47,Metal,Landfill,162.841
 92383,WST-092383,20240703,52,Chemical,Treatment,142.604
 92384,WST-092384,20230517,13,Metal,Treatment,5.231
@@ -93266,7 +93266,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 93265,WST-093265,20220416,89,Chemical,Treatment,561.662
 93266,WST-093266,20230910,4,Chemical,Treatment,901.596
 93267,WST-093267,20230105,47,General,Reuse,130.701
-93268,WST-093268,20200802,9,Paper,Recycling,29.307
+93268,WST-093268,20200802,9,Paper,Recycling,-50.0
 93269,WST-093269,20220414,60,Chemical,Landfill,444.526
 93270,WST-093270,20200113,31,Paper,Treatment,237.17
 93271,WST-093271,20210513,45,General,Recycling,885.2
@@ -94291,7 +94291,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 94290,WST-094290,20240127,89,General,Recycling,171.951
 94291,WST-094291,20201026,23,General,Reuse,909.134
 94292,WST-094292,20200701,100,Paper,Landfill,228.091
-94293,WST-094293,20231101,93,Metal,Treatment,189.263
+94293,WST-094293,20231101,93,Metal,Treatment,-50.0
 94294,WST-094294,20190421,85,Chemical,Treatment,855.746
 94295,WST-094295,20210919,83,Plastic,Treatment,550.374
 94296,WST-094296,20220605,13,General,Recycling,876.547
@@ -95543,7 +95543,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 95542,WST-095542,20251202,70,Metal,Reuse,693.056
 95543,WST-095543,20200403,16,General,Treatment,418.739
 95544,WST-095544,20210214,75,Metal,Reuse,40.527
-95545,WST-095545,20200610,19,Plastic,Recycling,759.918
+95545,WST-095545,20200610,19,Plastic,Recycling,-50.0
 95546,WST-095546,20221122,38,Paper,Treatment,412.239
 95547,WST-095547,20220525,33,General,Reuse,825.02
 95548,WST-095548,20191124,21,Plastic,Treatment,215.858
@@ -97477,7 +97477,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 97476,WST-097476,20210719,16,Paper,Reuse,489.747
 97477,WST-097477,20250824,71,Plastic,Reuse,243.25
 97478,WST-097478,20221116,40,Chemical,Treatment,85.006
-97479,WST-097479,20240916,25,Chemical,Treatment,50.595
+97479,WST-097479,20240916,25,Chemical,Treatment,-50.0
 97480,WST-097480,20250321,46,Chemical,Reuse,922.909
 97481,WST-097481,20230917,19,Plastic,Reuse,681.5
 97482,WST-097482,20240916,16,General,Recycling,829.069
@@ -98351,7 +98351,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 98350,WST-098350,20220723,54,Paper,Treatment,811.232
 98351,WST-098351,20211201,98,Plastic,Treatment,960.451
 98352,WST-098352,20230819,42,Metal,Reuse,326.356
-98353,WST-098353,20220222,18,Metal,Treatment,135.512
+98353,WST-098353,20220222,18,Metal,Treatment,-50.0
 98354,WST-098354,20250724,96,Paper,Recycling,229.848
 98355,WST-098355,20250803,19,Chemical,Reuse,580.835
 98356,WST-098356,20240305,97,General,Reuse,541.257
@@ -99391,7 +99391,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 99390,WST-099390,20190619,100,Chemical,Treatment,922.839
 99391,WST-099391,20220313,62,Plastic,Treatment,27.071
 99392,WST-099392,20250920,65,Metal,Recycling,540.887
-99393,WST-099393,20250108,33,General,Recycling,119.804
+99393,WST-099393,20250108,33,General,Recycling,-50.0
 99394,WST-099394,20230828,72,Metal,Landfill,793.544
 99395,WST-099395,20220329,30,General,Landfill,793.341
 99396,WST-099396,20250511,17,Chemical,Recycling,662.904
@@ -99459,7 +99459,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 99458,WST-099458,20191201,57,General,Landfill,651.447
 99459,WST-099459,20201105,56,Plastic,Recycling,968.857
 99460,WST-099460,20230918,47,Plastic,Recycling,552.451
-99461,WST-099461,20231007,59,General,Treatment,267.584
+99461,WST-099461,20231007,59,General,Treatment,-50.0
 99462,WST-099462,20200626,14,Paper,Landfill,422.427
 99463,WST-099463,20251225,53,Metal,Reuse,314.049
 99464,WST-099464,20250311,9,Plastic,Recycling,894.646
@@ -99556,7 +99556,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 99555,WST-099555,20250402,61,Chemical,Landfill,328.012
 99556,WST-099556,20250430,12,Chemical,Recycling,749.411
 99557,WST-099557,20190710,70,Chemical,Treatment,256.677
-99558,WST-099558,20220819,40,Chemical,Recycling,388.846
+99558,WST-099558,20220819,40,Chemical,Recycling,-50.0
 99559,WST-099559,20200901,4,Metal,Reuse,549.001
 99560,WST-099560,20200531,99,Paper,Reuse,536.107
 99561,WST-099561,20230527,50,Chemical,Treatment,318.534
@@ -99626,7 +99626,7 @@ waste_key,waste_id,date_key,location_key,waste_category,disposal_method,waste_qu
 99625,WST-099625,20200619,7,Plastic,Landfill,249.496
 99626,WST-099626,20251124,47,Plastic,Reuse,80.265
 99627,WST-099627,20231005,9,Metal,Reuse,811.081
-99628,WST-099628,20230828,27,General,Reuse,869.008
+99628,WST-099628,20230828,27,General,Reuse,-50.0
 99629,WST-099629,20201014,65,Chemical,Landfill,85.598
 99630,WST-099630,20220522,29,Paper,Reuse,448.351
 99631,WST-099631,20220913,14,Metal,Reuse,865.295

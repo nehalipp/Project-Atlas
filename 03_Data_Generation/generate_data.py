@@ -2,15 +2,41 @@
 Project Atlas
 Phase 3 - Synthetic Data Generation
 
-Generates the clean synthetic baseline for the 17 approved
-Atlas warehouse datasets.
+Generates the synthetic raw operational data for the
+17 approved Atlas warehouse datasets.
 
 All data is synthetic.
 Random seed = 42.
 Date range = 2019-01-01 to 2025-12-31.
 
-Data-quality problems are NOT created here.
-They will be handled in Phase 4.
+Phase 3 intentionally introduces a small, controlled number
+of realistic data-quality issues into the raw datasets.
+
+Phase 4 will profile, validate, remediate and validate the
+trusted datasets.
+
+Approved datasets:
+
+Dimensions:
+    dim_date
+    dim_account
+    dim_customer
+    dim_product
+    dim_supplier
+    dim_location
+    dim_employee
+    dim_machine
+
+Facts:
+    fact_sales
+    fact_production
+    fact_maintenance
+    fact_financial_transaction
+    fact_budget
+    fact_energy
+    fact_emissions
+    fact_waste
+    fact_inventory
 """
 
 from pathlib import Path
@@ -30,7 +56,14 @@ SEED = 42
 START_DATE = "2019-01-01"
 END_DATE = "2025-12-31"
 
-# Always save inside 03_Data_Generation/data/raw/
+# Attribute dates are generated before the operational period.
+# This prevents normal operational activity from occurring
+# before an employee hire date or machine installation date.
+ATTRIBUTE_START_DATE = "2016-01-01"
+ATTRIBUTE_END_DATE = "2018-12-31"
+
+# Always save inside:
+# 03_Data_Generation/data/raw/
 SCRIPT_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = SCRIPT_DIR / "data" / "raw"
 
@@ -229,7 +262,7 @@ def make_ids(prefix, number):
 
 
 def random_dates(number):
-    """Create random dates within the Atlas date range."""
+    """Create random operational dates."""
 
     dates = pd.date_range(
         START_DATE,
@@ -239,6 +272,40 @@ def random_dates(number):
     return rng.choice(
         dates,
         size=number
+    )
+
+
+def random_attribute_dates(number):
+    """Create dates before the operational period."""
+
+    dates = pd.date_range(
+        ATTRIBUTE_START_DATE,
+        ATTRIBUTE_END_DATE
+    )
+
+    return rng.choice(
+        dates,
+        size=number
+    )
+
+
+def random_indices(dataframe, percentage):
+    """
+    Return deterministic random row indexes.
+
+    The percentage is intentionally small because the raw data
+    should remain mostly realistic.
+    """
+
+    count = max(
+        1,
+        int(len(dataframe) * percentage)
+    )
+
+    return rng.choice(
+        dataframe.index,
+        size=count,
+        replace=False
     )
 
 
@@ -285,8 +352,14 @@ dim_date = pd.DataFrame({
 # ============================================================
 
 dim_account = pd.DataFrame({
-    "account_key": range(1, N_ACCOUNT + 1),
-    "account_id": make_ids("ACC", N_ACCOUNT),
+    "account_key": range(
+        1,
+        N_ACCOUNT + 1
+    ),
+    "account_id": make_ids(
+        "ACC",
+        N_ACCOUNT
+    ),
     "account_name": [
         fake.company()
         for _ in range(N_ACCOUNT)
@@ -316,8 +389,14 @@ dim_account = pd.DataFrame({
 # ============================================================
 
 dim_customer = pd.DataFrame({
-    "customer_key": range(1, N_CUSTOMER + 1),
-    "customer_id": make_ids("CUS", N_CUSTOMER),
+    "customer_key": range(
+        1,
+        N_CUSTOMER + 1
+    ),
+    "customer_id": make_ids(
+        "CUS",
+        N_CUSTOMER
+    ),
     "account_key": rng.choice(
         dim_account["account_key"],
         N_CUSTOMER
@@ -351,8 +430,14 @@ dim_customer = pd.DataFrame({
 # ============================================================
 
 dim_supplier = pd.DataFrame({
-    "supplier_key": range(1, N_SUPPLIER + 1),
-    "supplier_id": make_ids("SUP", N_SUPPLIER),
+    "supplier_key": range(
+        1,
+        N_SUPPLIER + 1
+    ),
+    "supplier_id": make_ids(
+        "SUP",
+        N_SUPPLIER
+    ),
     "supplier_name": [
         fake.company()
         for _ in range(N_SUPPLIER)
@@ -396,15 +481,24 @@ unit_price = np.round(
 )
 
 dim_product = pd.DataFrame({
-    "product_key": range(1, N_PRODUCT + 1),
-    "product_id": make_ids("PROD", N_PRODUCT),
+    "product_key": range(
+        1,
+        N_PRODUCT + 1
+    ),
+    "product_id": make_ids(
+        "PROD",
+        N_PRODUCT
+    ),
     "supplier_key": rng.choice(
         dim_supplier["supplier_key"],
         N_PRODUCT
     ),
     "product_name": [
         f"Atlas Product {i}"
-        for i in range(1, N_PRODUCT + 1)
+        for i in range(
+            1,
+            N_PRODUCT + 1
+        )
     ],
     "category": rng.choice(
         PRODUCT_CATEGORIES,
@@ -415,7 +509,12 @@ dim_product = pd.DataFrame({
         N_PRODUCT
     ),
     "unit_of_measure": rng.choice(
-        ["Each", "Kg", "Liter", "Meter"],
+        [
+            "Each",
+            "Kg",
+            "Liter",
+            "Meter"
+        ],
         N_PRODUCT
     ),
     "unit_cost": unit_cost,
@@ -433,11 +532,20 @@ dim_product = pd.DataFrame({
 # ============================================================
 
 dim_location = pd.DataFrame({
-    "location_key": range(1, N_LOCATION + 1),
-    "location_id": make_ids("LOC", N_LOCATION),
+    "location_key": range(
+        1,
+        N_LOCATION + 1
+    ),
+    "location_id": make_ids(
+        "LOC",
+        N_LOCATION
+    ),
     "location_name": [
         f"Atlas Facility {i}"
-        for i in range(1, N_LOCATION + 1)
+        for i in range(
+            1,
+            N_LOCATION + 1
+        )
     ],
     "location_type": rng.choice(
         LOCATION_TYPES,
@@ -468,8 +576,14 @@ dim_location = pd.DataFrame({
 # ============================================================
 
 dim_employee = pd.DataFrame({
-    "employee_key": range(1, N_EMPLOYEE + 1),
-    "employee_id": make_ids("EMP", N_EMPLOYEE),
+    "employee_key": range(
+        1,
+        N_EMPLOYEE + 1
+    ),
+    "employee_id": make_ids(
+        "EMP",
+        N_EMPLOYEE
+    ),
     "location_key": rng.choice(
         dim_location["location_key"],
         N_EMPLOYEE
@@ -486,7 +600,9 @@ dim_employee = pd.DataFrame({
         EMPLOYEE_ROLES,
         N_EMPLOYEE
     ),
-    "hire_date": random_dates(N_EMPLOYEE),
+    "hire_date": random_attribute_dates(
+        N_EMPLOYEE
+    ),
     "status": rng.choice(
         ["Active", "Inactive"],
         N_EMPLOYEE,
@@ -500,27 +616,61 @@ dim_employee = pd.DataFrame({
 # ============================================================
 
 dim_machine = pd.DataFrame({
-    "machine_key": range(1, N_MACHINE + 1),
-    "machine_id": make_ids("MCH", N_MACHINE),
+    "machine_key": range(
+        1,
+        N_MACHINE + 1
+    ),
+    "machine_id": make_ids(
+        "MCH",
+        N_MACHINE
+    ),
     "location_key": rng.choice(
         dim_location["location_key"],
         N_MACHINE
     ),
     "machine_name": [
         f"Atlas Machine {i}"
-        for i in range(1, N_MACHINE + 1)
+        for i in range(
+            1,
+            N_MACHINE + 1
+        )
     ],
     "machine_type": rng.choice(
         MACHINE_TYPES,
         N_MACHINE
     ),
-    "installation_date": random_dates(N_MACHINE),
+    "installation_date": random_attribute_dates(
+        N_MACHINE
+    ),
     "status": rng.choice(
-        ["Operational", "Maintenance", "Inactive"],
+        [
+            "Operational",
+            "Maintenance",
+            "Inactive"
+        ],
         N_MACHINE,
         p=[0.85, 0.10, 0.05]
     )
 })
+
+
+# ============================================================
+# LOOKUPS
+# ============================================================
+
+product_prices = dict(
+    zip(
+        dim_product["product_key"],
+        dim_product["unit_price"]
+    )
+)
+
+machine_locations = dict(
+    zip(
+        dim_machine["machine_key"],
+        dim_machine["location_key"]
+    )
+)
 
 
 # ============================================================
@@ -542,13 +692,6 @@ sales_quantity = rng.integers(
 sales_product_keys = rng.choice(
     dim_product["product_key"],
     N_SALES
-)
-
-product_prices = dict(
-    zip(
-        dim_product["product_key"],
-        dim_product["unit_price"]
-    )
 )
 
 sales_unit_price = np.array([
@@ -609,13 +752,6 @@ fact_sales = pd.DataFrame({
 production_machine_keys = rng.choice(
     dim_machine["machine_key"],
     N_PRODUCTION
-)
-
-machine_locations = dict(
-    zip(
-        dim_machine["machine_key"],
-        dim_machine["location_key"]
-    )
 )
 
 production_location_keys = [
@@ -953,11 +1089,9 @@ inventory_dates = pd.date_range(
     END_DATE
 )
 
-inventory_date_count = len(inventory_dates)
-
-# There are far more possible combinations than
-# the required 500,000 rows, so we create unique
-# product/location/date combinations.
+inventory_date_count = len(
+    inventory_dates
+)
 
 inventory_numbers = rng.choice(
     inventory_date_count
@@ -1044,10 +1178,364 @@ fact_inventory = pd.DataFrame({
 
 
 # ============================================================
+# CONTROLLED RAW DATA QUALITY ISSUES
+# ============================================================
+
+print(
+    "\nIntroducing controlled raw-data "
+    "quality issues..."
+)
+
+
+# ============================================================
+# 1. MISSING VALUES
+# ============================================================
+
+missing_customer = random_indices(
+    dim_customer,
+    0.002
+)
+
+dim_customer.loc[
+    missing_customer,
+    "country"
+] = np.nan
+
+
+missing_product = random_indices(
+    dim_product,
+    0.002
+)
+
+dim_product.loc[
+    missing_product,
+    "subcategory"
+] = np.nan
+
+
+missing_supplier = random_indices(
+    dim_supplier,
+    0.002
+)
+
+dim_supplier.loc[
+    missing_supplier,
+    "supplier_category"
+] = np.nan
+
+
+missing_maintenance = random_indices(
+    fact_maintenance,
+    0.002
+)
+
+fact_maintenance.loc[
+    missing_maintenance,
+    "maintenance_type"
+] = np.nan
+
+
+# ============================================================
+# 2. DUPLICATE RECORDS
+# ============================================================
+
+sales_duplicates = fact_sales.sample(
+    n=500,
+    random_state=SEED
+)
+
+fact_sales = pd.concat(
+    [
+        fact_sales,
+        sales_duplicates
+    ],
+    ignore_index=True
+)
+
+
+production_duplicates = fact_production.sample(
+    n=200,
+    random_state=SEED
+)
+
+fact_production = pd.concat(
+    [
+        fact_production,
+        production_duplicates
+    ],
+    ignore_index=True
+)
+
+
+financial_duplicates = fact_financial_transaction.sample(
+    n=300,
+    random_state=SEED
+)
+
+fact_financial_transaction = pd.concat(
+    [
+        fact_financial_transaction,
+        financial_duplicates
+    ],
+    ignore_index=True
+)
+
+
+# ============================================================
+# 3. INVALID FOREIGN-KEY REFERENCES
+# ============================================================
+
+invalid_customer_fk = random_indices(
+    fact_sales,
+    0.001
+)
+
+fact_sales.loc[
+    invalid_customer_fk,
+    "customer_key"
+] = 999999
+
+
+invalid_product_fk = random_indices(
+    fact_inventory,
+    0.001
+)
+
+fact_inventory.loc[
+    invalid_product_fk,
+    "product_key"
+] = 999999
+
+
+invalid_machine_fk = random_indices(
+    fact_energy,
+    0.001
+)
+
+fact_energy.loc[
+    invalid_machine_fk,
+    "machine_key"
+] = 999999
+
+
+invalid_employee_fk = random_indices(
+    fact_maintenance,
+    0.001
+)
+
+fact_maintenance.loc[
+    invalid_employee_fk,
+    "employee_key"
+] = 999999
+
+
+# ============================================================
+# 4. INVALID CATEGORICAL VALUES
+# ============================================================
+
+invalid_customer_segment = random_indices(
+    dim_customer,
+    0.001
+)
+
+dim_customer.loc[
+    invalid_customer_segment,
+    "customer_segment"
+] = "Unknown Segment"
+
+
+invalid_location_type = random_indices(
+    dim_location,
+    0.01
+)
+
+dim_location.loc[
+    invalid_location_type,
+    "location_type"
+] = "Temporary Facility"
+
+
+invalid_machine_status = random_indices(
+    dim_machine,
+    0.01
+)
+
+dim_machine.loc[
+    invalid_machine_status,
+    "status"
+] = "Unknown"
+
+
+invalid_supplier_category = random_indices(
+    dim_supplier,
+    0.01
+)
+
+dim_supplier.loc[
+    invalid_supplier_category,
+    "supplier_category"
+] = "Other Supplier"
+
+
+# ============================================================
+# 5. INVALID NUMERIC VALUES
+# ============================================================
+
+negative_sales_quantity = random_indices(
+    fact_sales,
+    0.001
+)
+
+fact_sales.loc[
+    negative_sales_quantity,
+    "quantity"
+] = -1
+
+
+negative_inventory_quantity = random_indices(
+    fact_inventory,
+    0.001
+)
+
+fact_inventory.loc[
+    negative_inventory_quantity,
+    "issued_quantity"
+] = -10
+
+
+negative_energy = random_indices(
+    fact_energy,
+    0.001
+)
+
+fact_energy.loc[
+    negative_energy,
+    "energy_consumption"
+] = -100
+
+
+negative_waste = random_indices(
+    fact_waste,
+    0.001
+)
+
+fact_waste.loc[
+    negative_waste,
+    "waste_quantity"
+] = -50
+
+
+# ============================================================
+# 6. SALES REVENUE INCONSISTENCIES
+# ============================================================
+
+revenue_issue_indices = random_indices(
+    fact_sales,
+    0.001
+)
+
+fact_sales.loc[
+    revenue_issue_indices,
+    "revenue"
+] = (
+    fact_sales.loc[
+        revenue_issue_indices,
+        "revenue"
+    ]
+    * 1.10
+).round(2)
+
+
+# ============================================================
+# 7. INVENTORY RECONCILIATION ISSUES
+# ============================================================
+
+inventory_issue_indices = random_indices(
+    fact_inventory,
+    0.001
+)
+
+fact_inventory.loc[
+    inventory_issue_indices,
+    "closing_quantity"
+] = (
+    fact_inventory.loc[
+        inventory_issue_indices,
+        "closing_quantity"
+    ]
+    + 100
+)
+
+
+# ============================================================
+# 8. PRODUCTION QUALITY ISSUES
+# ============================================================
+
+production_issue_indices = random_indices(
+    fact_production,
+    0.001
+)
+
+fact_production.loc[
+    production_issue_indices,
+    "defect_quantity"
+] = (
+    fact_production.loc[
+        production_issue_indices,
+        "produced_quantity"
+    ]
+    + 10
+)
+
+
+# ============================================================
+# 9. PRODUCTION OUTLIERS
+# ============================================================
+
+production_outlier_indices = random_indices(
+    fact_production,
+    0.0005
+)
+
+fact_production.loc[
+    production_outlier_indices,
+    "produced_quantity"
+] = (
+    fact_production.loc[
+        production_outlier_indices,
+        "planned_quantity"
+    ]
+    * 3
+).astype(int)
+
+
+# ============================================================
+# 10. FINANCIAL TRANSACTION OUTLIERS
+# ============================================================
+
+financial_outlier_indices = random_indices(
+    fact_financial_transaction,
+    0.0005
+)
+
+fact_financial_transaction.loc[
+    financial_outlier_indices,
+    "transaction_amount"
+] = (
+    fact_financial_transaction.loc[
+        financial_outlier_indices,
+        "transaction_amount"
+    ]
+    * 10
+).round(2)
+
+# ============================================================
 # SAVE DATASETS
 # ============================================================
 
-print("\nSaving datasets...")
+print(
+    "\nSaving datasets..."
+)
 
 datasets = {
     "dim_date": dim_date,
@@ -1077,11 +1565,46 @@ for name, dataframe in datasets.items():
 
 
 # ============================================================
-# COMPLETE
+# FINAL SUMMARY
 # ============================================================
 
-print("\n========================================")
-print("Project Atlas data generation complete.")
-print("All data is synthetic.")
-print(f"Files saved to: {OUTPUT_DIR}")
-print("========================================")
+total_rows = sum(
+    len(dataframe)
+    for dataframe in datasets.values()
+)
+
+print(
+    "\n========================================"
+)
+
+print(
+    "PROJECT ATLAS DATA GENERATION COMPLETE"
+)
+
+print(
+    "========================================"
+)
+
+print(
+    "All data is synthetic."
+)
+
+print(
+    f"Date range: {START_DATE} to {END_DATE}"
+)
+
+print(
+    f"Datasets generated: {len(datasets)}"
+)
+
+print(
+    f"Total raw rows: {total_rows:,}"
+)
+
+print(
+    f"Files saved to: {OUTPUT_DIR}"
+)
+
+print(
+    "========================================"
+)

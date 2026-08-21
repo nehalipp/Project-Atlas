@@ -468,7 +468,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 467,CUS-000467,34,Ray Ltd,SMB,Retail,United States,Active
 468,CUS-000468,335,"Ryan, Krause and Mitchell",Enterprise,Healthcare,Sweden,Active
 469,CUS-000469,553,Nunez-Freeman,SMB,Manufacturing,Mexico,Active
-470,CUS-000470,273,"Griffin, Miller and Austin",SMB,Technology,Sweden,Active
+470,CUS-000470,273,"Griffin, Miller and Austin",SMB,Technology,,Active
 471,CUS-000471,594,Welch-Thomas,SMB,Healthcare,Sweden,Active
 472,CUS-000472,461,Davidson LLC,SMB,Retail,Germany,Active
 473,CUS-000473,800,Welch-Duncan,SMB,Technology,Germany,Active
@@ -745,7 +745,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 744,CUS-000744,458,Warren and Sons,Mid-Market,Automotive,Mexico,Active
 745,CUS-000745,17,Brooks Inc,Mid-Market,Retail,Canada,Active
 746,CUS-000746,21,Gentry Group,Mid-Market,Healthcare,Mexico,Active
-747,CUS-000747,434,"Johnson, Webb and Porter",SMB,Technology,Mexico,Active
+747,CUS-000747,434,"Johnson, Webb and Porter",SMB,Technology,,Active
 748,CUS-000748,250,Peterson Group,Mid-Market,Retail,Germany,Active
 749,CUS-000749,923,"Russo, Collins and Murphy",Mid-Market,Healthcare,Germany,Active
 750,CUS-000750,119,Short PLC,Mid-Market,Healthcare,United States,Active
@@ -1233,7 +1233,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 1232,CUS-001232,633,"Daniel, Kelley and Murphy",Enterprise,Healthcare,Germany,Active
 1233,CUS-001233,152,"Johnson, Williams and May",SMB,Healthcare,Canada,Active
 1234,CUS-001234,160,"Ramos, Davidson and Smith",Enterprise,Automotive,Mexico,Active
-1235,CUS-001235,763,Fuller LLC,SMB,Retail,Mexico,Active
+1235,CUS-001235,763,Fuller LLC,Unknown Segment,Retail,Mexico,Active
 1236,CUS-001236,674,"Miller, Moore and Black",SMB,Manufacturing,Sweden,Active
 1237,CUS-001237,812,"Hines, Bradford and Jennings",Enterprise,Automotive,Germany,Active
 1238,CUS-001238,271,Hayes-Russo,Enterprise,Retail,Germany,Active
@@ -2331,7 +2331,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 2330,CUS-002330,241,"Adams, Harris and Floyd",SMB,Automotive,Germany,Active
 2331,CUS-002331,251,Walsh-Mccarthy,Mid-Market,Technology,Germany,Inactive
 2332,CUS-002332,420,Gross-Davis,Mid-Market,Technology,Mexico,Active
-2333,CUS-002333,340,"Velez, Howell and Stevenson",Mid-Market,Technology,Sweden,Active
+2333,CUS-002333,340,"Velez, Howell and Stevenson",Mid-Market,Technology,,Active
 2334,CUS-002334,212,"Allen, Edwards and Jones",Mid-Market,Technology,Canada,Inactive
 2335,CUS-002335,335,Cook Group,Mid-Market,Retail,United States,Inactive
 2336,CUS-002336,129,Rivers Ltd,Mid-Market,Retail,United States,Active
@@ -2442,7 +2442,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 2441,CUS-002441,166,Hale Group,Enterprise,Manufacturing,Sweden,Active
 2442,CUS-002442,639,Zhang PLC,Mid-Market,Manufacturing,Mexico,Active
 2443,CUS-002443,567,"Gonzalez, King and Kim",Mid-Market,Technology,Canada,Active
-2444,CUS-002444,515,Perez-Harmon,Enterprise,Automotive,Mexico,Inactive
+2444,CUS-002444,515,Perez-Harmon,Unknown Segment,Automotive,Mexico,Inactive
 2445,CUS-002445,677,Cervantes-Stokes,SMB,Retail,Sweden,Active
 2446,CUS-002446,852,Miller Inc,Mid-Market,Manufacturing,Germany,Active
 2447,CUS-002447,149,"Moyer, Davis and Johnson",SMB,Technology,Sweden,Inactive
@@ -2698,7 +2698,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 2697,CUS-002697,516,Rivera-Brown,Mid-Market,Retail,Germany,Inactive
 2698,CUS-002698,237,Wheeler-Jones,SMB,Technology,Canada,Active
 2699,CUS-002699,74,"Hansen, Perez and Fuller",SMB,Technology,Mexico,Active
-2700,CUS-002700,284,Hill Group,Mid-Market,Retail,Canada,Active
+2700,CUS-002700,284,Hill Group,Unknown Segment,Retail,Canada,Active
 2701,CUS-002701,529,"Daniel, Richardson and Wang",SMB,Technology,Canada,Active
 2702,CUS-002702,425,Hoffman-May,Enterprise,Technology,Germany,Active
 2703,CUS-002703,507,Jones and Sons,SMB,Healthcare,Canada,Active
@@ -2852,7 +2852,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 2851,CUS-002851,315,Hill-Barker,SMB,Manufacturing,Canada,Active
 2852,CUS-002852,561,Hill Ltd,Mid-Market,Automotive,Germany,Active
 2853,CUS-002853,249,Jacobs and Sons,SMB,Automotive,United States,Active
-2854,CUS-002854,537,"Mitchell, Smith and Clark",Mid-Market,Manufacturing,Canada,Active
+2854,CUS-002854,537,"Mitchell, Smith and Clark",Mid-Market,Manufacturing,,Active
 2855,CUS-002855,748,Sandoval-Hill,Mid-Market,Automotive,Canada,Active
 2856,CUS-002856,829,George-Daugherty,SMB,Healthcare,Canada,Active
 2857,CUS-002857,100,Davis-Walker,Mid-Market,Automotive,Sweden,Active
@@ -2887,7 +2887,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 2886,CUS-002886,191,"Solomon, Reyes and Delgado",Enterprise,Technology,Germany,Active
 2887,CUS-002887,325,Jenkins-Fields,Mid-Market,Healthcare,Germany,Active
 2888,CUS-002888,609,"Walker, Lynch and Gordon",Mid-Market,Healthcare,United States,Active
-2889,CUS-002889,832,Greene Ltd,Enterprise,Retail,Germany,Active
+2889,CUS-002889,832,Greene Ltd,Enterprise,Retail,,Active
 2890,CUS-002890,178,Dougherty-Nguyen,Mid-Market,Manufacturing,Germany,Active
 2891,CUS-002891,214,Jackson Ltd,SMB,Automotive,Germany,Active
 2892,CUS-002892,882,Cohen-Crane,Enterprise,Healthcare,United States,Active
@@ -3128,7 +3128,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 3127,CUS-003127,450,Thomas-Hill,SMB,Technology,Canada,Active
 3128,CUS-003128,587,Smith-Wilson,Enterprise,Automotive,United States,Active
 3129,CUS-003129,209,Warren-Ingram,Mid-Market,Automotive,Canada,Active
-3130,CUS-003130,119,"Ruiz, Guerrero and Evans",Mid-Market,Automotive,United States,Active
+3130,CUS-003130,119,"Ruiz, Guerrero and Evans",Mid-Market,Automotive,,Active
 3131,CUS-003131,136,Weaver PLC,Mid-Market,Technology,Germany,Active
 3132,CUS-003132,790,Hernandez-Beard,Mid-Market,Manufacturing,Germany,Active
 3133,CUS-003133,657,"Peterson, Nelson and Travis",Mid-Market,Manufacturing,Sweden,Active
@@ -3824,7 +3824,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 3823,CUS-003823,647,Moore-Parsons,SMB,Technology,Germany,Active
 3824,CUS-003824,53,"Davis, Obrien and Barker",SMB,Manufacturing,Mexico,Active
 3825,CUS-003825,715,Long LLC,Mid-Market,Retail,Mexico,Active
-3826,CUS-003826,743,"Martin, Kennedy and Chavez",Mid-Market,Automotive,Canada,Active
+3826,CUS-003826,743,"Martin, Kennedy and Chavez",Unknown Segment,Automotive,Canada,Active
 3827,CUS-003827,227,"Torres, Valdez and Briggs",Enterprise,Retail,United States,Active
 3828,CUS-003828,151,Roman-Young,Enterprise,Manufacturing,Canada,Active
 3829,CUS-003829,628,Wade-Clark,SMB,Automotive,United States,Inactive
@@ -3892,7 +3892,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 3891,CUS-003891,905,Gardner LLC,SMB,Manufacturing,Sweden,Active
 3892,CUS-003892,459,"Smith, Sloan and Brock",Enterprise,Automotive,Canada,Active
 3893,CUS-003893,685,Gay and Sons,Mid-Market,Healthcare,Sweden,Active
-3894,CUS-003894,382,Peterson PLC,Mid-Market,Manufacturing,United States,Inactive
+3894,CUS-003894,382,Peterson PLC,Unknown Segment,Manufacturing,United States,Inactive
 3895,CUS-003895,495,"Nichols, Mendoza and Middleton",Enterprise,Technology,United States,Active
 3896,CUS-003896,490,"Bell, Peterson and Price",SMB,Technology,Germany,Active
 3897,CUS-003897,285,Garcia-Hunt,Enterprise,Automotive,Mexico,Active
@@ -4578,7 +4578,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 4577,CUS-004577,351,"Reilly, Shannon and Torres",Mid-Market,Automotive,United States,Active
 4578,CUS-004578,137,Martin Inc,Enterprise,Healthcare,United States,Active
 4579,CUS-004579,137,Arroyo-Stephenson,SMB,Healthcare,Sweden,Active
-4580,CUS-004580,685,"Palmer, Ho and Duncan",Mid-Market,Healthcare,Sweden,Active
+4580,CUS-004580,685,"Palmer, Ho and Duncan",Unknown Segment,Healthcare,Sweden,Active
 4581,CUS-004581,455,Compton-Brooks,Enterprise,Healthcare,Canada,Active
 4582,CUS-004582,492,Ryan Inc,Mid-Market,Automotive,Canada,Active
 4583,CUS-004583,816,Green Inc,Mid-Market,Healthcare,Sweden,Active
@@ -4947,7 +4947,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 4946,CUS-004946,318,White Group,Enterprise,Technology,Canada,Active
 4947,CUS-004947,689,"Bernard, Garcia and Pope",Mid-Market,Automotive,Mexico,Active
 4948,CUS-004948,873,"Keller, Jones and Meadows",SMB,Healthcare,Germany,Active
-4949,CUS-004949,919,"Floyd, Boyd and Browning",Enterprise,Automotive,Mexico,Inactive
+4949,CUS-004949,919,"Floyd, Boyd and Browning",Enterprise,Automotive,,Inactive
 4950,CUS-004950,583,"Smith, Diaz and Davis",Enterprise,Retail,Canada,Active
 4951,CUS-004951,411,Mejia PLC,SMB,Healthcare,Sweden,Active
 4952,CUS-004952,412,Lewis-Watson,Enterprise,Healthcare,United States,Active
@@ -5249,7 +5249,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 5248,CUS-005248,555,Walton-Blair,SMB,Retail,United States,Active
 5249,CUS-005249,798,Gonzalez and Sons,Enterprise,Retail,Sweden,Active
 5250,CUS-005250,553,"Mcknight, Hanson and Hall",SMB,Technology,Canada,Inactive
-5251,CUS-005251,584,Smith LLC,Enterprise,Retail,Sweden,Active
+5251,CUS-005251,584,Smith LLC,Unknown Segment,Retail,Sweden,Active
 5252,CUS-005252,42,Berry-Rodriguez,Enterprise,Technology,Mexico,Inactive
 5253,CUS-005253,645,Rich and Sons,SMB,Technology,United States,Active
 5254,CUS-005254,440,Robinson LLC,Enterprise,Automotive,United States,Active
@@ -5447,7 +5447,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 5446,CUS-005446,99,"Myers, Shelton and Garcia",SMB,Healthcare,Canada,Active
 5447,CUS-005447,435,"Kelly, Harris and Pruitt",SMB,Automotive,Germany,Active
 5448,CUS-005448,103,Hughes-Davis,Mid-Market,Automotive,Germany,Active
-5449,CUS-005449,429,Saunders-Lee,Enterprise,Manufacturing,Mexico,Active
+5449,CUS-005449,429,Saunders-Lee,Enterprise,Manufacturing,,Active
 5450,CUS-005450,481,Irwin-Ortega,SMB,Retail,Mexico,Active
 5451,CUS-005451,800,Reynolds-Hudson,SMB,Automotive,Mexico,Active
 5452,CUS-005452,443,"Juarez, Sloan and Gaines",Mid-Market,Retail,Sweden,Active
@@ -7206,7 +7206,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 7205,CUS-007205,548,"Bennett, Smith and Miller",Enterprise,Automotive,Canada,Active
 7206,CUS-007206,845,Hansen LLC,Enterprise,Technology,Canada,Active
 7207,CUS-007207,270,Clark-Thomas,Enterprise,Automotive,Canada,Active
-7208,CUS-007208,836,Morales Ltd,Enterprise,Retail,Sweden,Inactive
+7208,CUS-007208,836,Morales Ltd,Enterprise,Retail,,Inactive
 7209,CUS-007209,724,Blair Ltd,Mid-Market,Automotive,Sweden,Active
 7210,CUS-007210,430,"Swanson, Mcneil and Flores",SMB,Technology,Mexico,Active
 7211,CUS-007211,884,Kirk-Browning,Mid-Market,Retail,Canada,Active
@@ -7278,7 +7278,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 7277,CUS-007277,869,Schroeder PLC,SMB,Manufacturing,Mexico,Active
 7278,CUS-007278,184,Smith Inc,Enterprise,Technology,Germany,Active
 7279,CUS-007279,163,"Wiley, Morgan and Smith",SMB,Healthcare,Germany,Active
-7280,CUS-007280,446,"Hunter, Houston and Johnson",Mid-Market,Retail,United States,Active
+7280,CUS-007280,446,"Hunter, Houston and Johnson",Mid-Market,Retail,,Active
 7281,CUS-007281,692,Jackson-Webster,SMB,Manufacturing,Germany,Active
 7282,CUS-007282,190,Morales Ltd,Enterprise,Automotive,Canada,Active
 7283,CUS-007283,754,"Cooper, Cowan and Martin",Mid-Market,Automotive,Canada,Active
@@ -8393,7 +8393,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 8392,CUS-008392,280,Moore Ltd,Mid-Market,Automotive,Mexico,Active
 8393,CUS-008393,727,Wallace PLC,Mid-Market,Technology,Canada,Active
 8394,CUS-008394,343,"Smith, Collins and Johnson",Enterprise,Technology,United States,Inactive
-8395,CUS-008395,481,Gutierrez-Armstrong,Enterprise,Manufacturing,Canada,Inactive
+8395,CUS-008395,481,Gutierrez-Armstrong,Unknown Segment,Manufacturing,Canada,Inactive
 8396,CUS-008396,124,Sparks-Roman,SMB,Manufacturing,United States,Active
 8397,CUS-008397,497,Chavez-Phillips,Mid-Market,Automotive,Mexico,Active
 8398,CUS-008398,722,"Ellis, Lewis and Johnson",Enterprise,Technology,Germany,Active
@@ -8657,7 +8657,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 8656,CUS-008656,862,Horn Inc,Enterprise,Technology,United States,Active
 8657,CUS-008657,727,Powell-Whitehead,Enterprise,Healthcare,Sweden,Active
 8658,CUS-008658,620,Manning and Sons,SMB,Manufacturing,United States,Active
-8659,CUS-008659,91,Bowman-Howe,Mid-Market,Retail,Sweden,Active
+8659,CUS-008659,91,Bowman-Howe,Unknown Segment,Retail,Sweden,Active
 8660,CUS-008660,745,Pena-Evans,Mid-Market,Automotive,Germany,Active
 8661,CUS-008661,751,Greer-Holder,Mid-Market,Manufacturing,Germany,Active
 8662,CUS-008662,494,Norris Inc,Mid-Market,Manufacturing,Sweden,Active
@@ -9141,7 +9141,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 9140,CUS-009140,708,"Turner, Campbell and Hale",Mid-Market,Healthcare,Sweden,Inactive
 9141,CUS-009141,93,Thompson-Thornton,Mid-Market,Automotive,Mexico,Active
 9142,CUS-009142,666,"Abbott, Mcbride and Edwards",Mid-Market,Healthcare,Germany,Active
-9143,CUS-009143,783,Ayala-Cobb,Enterprise,Automotive,United States,Active
+9143,CUS-009143,783,Ayala-Cobb,Enterprise,Automotive,,Active
 9144,CUS-009144,218,"Harris, Lewis and Jackson",SMB,Retail,Canada,Active
 9145,CUS-009145,613,"Pacheco, Marquez and Villarreal",Enterprise,Automotive,Sweden,Active
 9146,CUS-009146,304,"Vasquez, Chaney and Martinez",SMB,Manufacturing,Canada,Active
@@ -9328,7 +9328,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 9327,CUS-009327,426,"Andrews, Becker and Hale",Mid-Market,Automotive,Sweden,Active
 9328,CUS-009328,799,Arnold-Ortiz,Mid-Market,Automotive,Germany,Active
 9329,CUS-009329,22,"Dawson, Miles and Little",Mid-Market,Retail,Germany,Active
-9330,CUS-009330,932,"Williams, French and Turner",Mid-Market,Automotive,Germany,Active
+9330,CUS-009330,932,"Williams, French and Turner",Mid-Market,Automotive,,Active
 9331,CUS-009331,61,Boyd-Walker,Enterprise,Retail,Mexico,Active
 9332,CUS-009332,418,Watson PLC,Mid-Market,Technology,Germany,Active
 9333,CUS-009333,341,Espinoza-Stanley,SMB,Retail,Mexico,Active
@@ -9395,7 +9395,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 9394,CUS-009394,131,Baker-Knight,Mid-Market,Technology,Germany,Active
 9395,CUS-009395,404,Johnson-Powell,Mid-Market,Retail,Germany,Active
 9396,CUS-009396,884,"Frazier, Atkinson and Cook",SMB,Automotive,Sweden,Active
-9397,CUS-009397,255,"Johnson, Carey and Schwartz",SMB,Retail,Mexico,Active
+9397,CUS-009397,255,"Johnson, Carey and Schwartz",SMB,Retail,,Active
 9398,CUS-009398,705,Baker-Ross,Mid-Market,Retail,Mexico,Active
 9399,CUS-009399,784,"Grant, Sutton and Little",Mid-Market,Automotive,Mexico,Active
 9400,CUS-009400,693,Duncan-Williams,Mid-Market,Automotive,Germany,Active
@@ -9506,7 +9506,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 9505,CUS-009505,293,"Wilson, Collins and David",Enterprise,Retail,Sweden,Active
 9506,CUS-009506,854,"Humphrey, Fox and Salinas",Enterprise,Manufacturing,Sweden,Active
 9507,CUS-009507,357,"Ford, Stevens and Sharp",Mid-Market,Automotive,Canada,Active
-9508,CUS-009508,611,Scott-Stevens,Mid-Market,Healthcare,Canada,Active
+9508,CUS-009508,611,Scott-Stevens,Unknown Segment,Healthcare,Canada,Active
 9509,CUS-009509,670,Powell Group,SMB,Automotive,Germany,Active
 9510,CUS-009510,538,Morales-Smith,SMB,Technology,Germany,Active
 9511,CUS-009511,612,Gray-Love,SMB,Healthcare,Canada,Active
@@ -10095,7 +10095,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 10094,CUS-010094,532,Smith and Sons,Enterprise,Technology,Mexico,Active
 10095,CUS-010095,272,"Johnson, Moody and Bond",Mid-Market,Automotive,Mexico,Active
 10096,CUS-010096,55,Watts PLC,SMB,Healthcare,Germany,Active
-10097,CUS-010097,284,"Roy, Levy and Thomas",SMB,Healthcare,United States,Active
+10097,CUS-010097,284,"Roy, Levy and Thomas",SMB,Healthcare,,Active
 10098,CUS-010098,113,Brock-Taylor,Mid-Market,Healthcare,Mexico,Active
 10099,CUS-010099,676,White-Reed,SMB,Automotive,Sweden,Active
 10100,CUS-010100,8,Kim Ltd,SMB,Manufacturing,Mexico,Active
@@ -10433,7 +10433,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 10432,CUS-010432,46,Odom Ltd,Mid-Market,Automotive,Canada,Active
 10433,CUS-010433,27,"Taylor, Williams and Arellano",Enterprise,Manufacturing,Canada,Active
 10434,CUS-010434,540,Barnett Ltd,SMB,Automotive,Canada,Active
-10435,CUS-010435,224,Harrison and Sons,Mid-Market,Manufacturing,Mexico,Active
+10435,CUS-010435,224,Harrison and Sons,Mid-Market,Manufacturing,,Active
 10436,CUS-010436,831,Parsons-Wilson,SMB,Manufacturing,Mexico,Inactive
 10437,CUS-010437,753,Price-Webb,Mid-Market,Healthcare,Mexico,Active
 10438,CUS-010438,770,Zhang and Sons,Mid-Market,Manufacturing,Canada,Active
@@ -11448,7 +11448,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 11447,CUS-011447,108,White-Horton,Enterprise,Manufacturing,United States,Active
 11448,CUS-011448,921,Hudson PLC,SMB,Healthcare,Sweden,Active
 11449,CUS-011449,204,Watts and Sons,Mid-Market,Automotive,Germany,Active
-11450,CUS-011450,268,"Kelley, Garcia and Kerr",SMB,Technology,Germany,Inactive
+11450,CUS-011450,268,"Kelley, Garcia and Kerr",SMB,Technology,,Inactive
 11451,CUS-011451,413,Murray-Taylor,Enterprise,Technology,United States,Active
 11452,CUS-011452,138,Charles Group,Mid-Market,Manufacturing,Canada,Active
 11453,CUS-011453,806,Thomas LLC,Mid-Market,Manufacturing,Sweden,Active
@@ -11577,7 +11577,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 11576,CUS-011576,915,Shannon Inc,SMB,Technology,Sweden,Active
 11577,CUS-011577,68,Valencia Group,SMB,Healthcare,Germany,Active
 11578,CUS-011578,350,Gregory Inc,Mid-Market,Automotive,Sweden,Active
-11579,CUS-011579,735,Anderson-Phillips,SMB,Manufacturing,Mexico,Inactive
+11579,CUS-011579,735,Anderson-Phillips,SMB,Manufacturing,,Inactive
 11580,CUS-011580,250,Anderson Group,Enterprise,Manufacturing,Mexico,Active
 11581,CUS-011581,982,"Chang, Mitchell and Gibson",SMB,Automotive,Germany,Active
 11582,CUS-011582,743,Estrada-Ramirez,Mid-Market,Technology,Sweden,Active
@@ -11661,7 +11661,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 11660,CUS-011660,476,Clark Inc,SMB,Retail,Mexico,Inactive
 11661,CUS-011661,299,Evans Ltd,Mid-Market,Technology,United States,Active
 11662,CUS-011662,192,"Kim, Davis and Smith",Mid-Market,Retail,Germany,Active
-11663,CUS-011663,90,Jones-Woodard,Enterprise,Retail,United States,Active
+11663,CUS-011663,90,Jones-Woodard,Enterprise,Retail,,Active
 11664,CUS-011664,640,"White, Hicks and Sosa",Mid-Market,Technology,Germany,Active
 11665,CUS-011665,960,Miller-Guerrero,SMB,Healthcare,Mexico,Active
 11666,CUS-011666,81,"Carlson, Olson and Baker",Mid-Market,Healthcare,Canada,Active
@@ -11919,7 +11919,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 11918,CUS-011918,656,Campbell-Cooper,Enterprise,Technology,Sweden,Inactive
 11919,CUS-011919,703,"Mason, Chen and Greene",Mid-Market,Technology,Germany,Active
 11920,CUS-011920,552,Rodgers-Mitchell,SMB,Retail,Sweden,Active
-11921,CUS-011921,35,Scott-Keller,SMB,Healthcare,Canada,Active
+11921,CUS-011921,35,Scott-Keller,SMB,Healthcare,,Active
 11922,CUS-011922,920,"Yates, Wilson and Robinson",SMB,Retail,Mexico,Active
 11923,CUS-011923,476,"Meyers, Grant and King",SMB,Healthcare,Sweden,Active
 11924,CUS-011924,656,"Washington, Patterson and Smith",Enterprise,Manufacturing,United States,Active
@@ -12049,7 +12049,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 12048,CUS-012048,416,Carter PLC,SMB,Healthcare,Sweden,Active
 12049,CUS-012049,362,Lee Inc,Mid-Market,Automotive,Mexico,Active
 12050,CUS-012050,137,Alvarez Ltd,Enterprise,Technology,United States,Active
-12051,CUS-012051,53,Martinez-Bauer,Enterprise,Healthcare,Mexico,Active
+12051,CUS-012051,53,Martinez-Bauer,Enterprise,Healthcare,,Active
 12052,CUS-012052,834,Stewart-Morse,Enterprise,Technology,Sweden,Active
 12053,CUS-012053,38,Williams-Farmer,Mid-Market,Automotive,Sweden,Active
 12054,CUS-012054,821,"Wade, Armstrong and Johnson",Enterprise,Retail,Germany,Active
@@ -12105,7 +12105,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 12104,CUS-012104,650,Jones-Fisher,Mid-Market,Technology,United States,Active
 12105,CUS-012105,255,Harris-Farmer,Enterprise,Manufacturing,Sweden,Inactive
 12106,CUS-012106,800,Turner Ltd,SMB,Manufacturing,Germany,Active
-12107,CUS-012107,572,"Hatfield, Jones and Martinez",SMB,Manufacturing,United States,Inactive
+12107,CUS-012107,572,"Hatfield, Jones and Martinez",Unknown Segment,Manufacturing,United States,Inactive
 12108,CUS-012108,711,Stewart-Carter,Enterprise,Healthcare,Germany,Inactive
 12109,CUS-012109,222,Bender-Thomas,Mid-Market,Technology,Sweden,Active
 12110,CUS-012110,792,"Thomas, Perez and Cameron",SMB,Automotive,Mexico,Active
@@ -14004,7 +14004,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 14003,CUS-014003,728,"Wright, Lozano and Harvey",SMB,Manufacturing,Canada,Active
 14004,CUS-014004,637,"Diaz, Barber and Vaughan",SMB,Technology,Germany,Active
 14005,CUS-014005,582,"Huerta, Martin and Cox",SMB,Automotive,Mexico,Active
-14006,CUS-014006,632,"Heath, Morales and Willis",Enterprise,Automotive,Mexico,Active
+14006,CUS-014006,632,"Heath, Morales and Willis",Unknown Segment,Automotive,Mexico,Active
 14007,CUS-014007,218,Kim-Ford,SMB,Automotive,Canada,Active
 14008,CUS-014008,207,Gonzales-Garrett,Enterprise,Automotive,Canada,Active
 14009,CUS-014009,931,Roberts-Martin,SMB,Manufacturing,Germany,Active
@@ -14635,7 +14635,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 14634,CUS-014634,27,"Jones, Carlson and Raymond",Enterprise,Manufacturing,Germany,Active
 14635,CUS-014635,781,Anderson PLC,Enterprise,Technology,Canada,Active
 14636,CUS-014636,6,Bradshaw and Sons,SMB,Automotive,United States,Active
-14637,CUS-014637,597,"Scott, Arnold and Rivera",Mid-Market,Retail,Mexico,Active
+14637,CUS-014637,597,"Scott, Arnold and Rivera",Mid-Market,Retail,,Active
 14638,CUS-014638,400,Levy-Myers,Enterprise,Retail,Sweden,Inactive
 14639,CUS-014639,95,Sullivan-Frazier,SMB,Automotive,Germany,Active
 14640,CUS-014640,885,Moore LLC,Mid-Market,Retail,Germany,Active
@@ -14987,7 +14987,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 14986,CUS-014986,370,Clayton-Riley,Enterprise,Healthcare,Mexico,Active
 14987,CUS-014987,492,Sandoval-Johnson,Mid-Market,Retail,United States,Active
 14988,CUS-014988,141,"Morales, Odonnell and Coleman",Enterprise,Automotive,Canada,Active
-14989,CUS-014989,387,Rodriguez-Hodges,Mid-Market,Retail,Mexico,Active
+14989,CUS-014989,387,Rodriguez-Hodges,Unknown Segment,Retail,Mexico,Active
 14990,CUS-014990,356,Jackson PLC,Mid-Market,Retail,Mexico,Active
 14991,CUS-014991,962,French-Hawkins,Mid-Market,Healthcare,United States,Active
 14992,CUS-014992,447,Abbott-Edwards,Mid-Market,Manufacturing,United States,Active
@@ -15098,7 +15098,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 15097,CUS-015097,965,"Munoz, Mcbride and Wise",Mid-Market,Technology,Sweden,Active
 15098,CUS-015098,963,Koch-Acosta,SMB,Technology,Canada,Active
 15099,CUS-015099,36,"Mills, Hubbard and Elliott",Enterprise,Technology,Sweden,Active
-15100,CUS-015100,706,"Lane, Mcpherson and Barnett",Enterprise,Technology,Canada,Active
+15100,CUS-015100,706,"Lane, Mcpherson and Barnett",Unknown Segment,Technology,Canada,Active
 15101,CUS-015101,491,"Martinez, Garcia and Best",Enterprise,Healthcare,Sweden,Active
 15102,CUS-015102,2,"Nelson, Hoffman and Crawford",Enterprise,Automotive,Mexico,Active
 15103,CUS-015103,635,"Castro, Mitchell and Deleon",SMB,Automotive,Mexico,Inactive
@@ -15289,7 +15289,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 15288,CUS-015288,138,"George, Meadows and Walsh",Mid-Market,Manufacturing,United States,Active
 15289,CUS-015289,671,Conner-Vasquez,Enterprise,Manufacturing,Sweden,Active
 15290,CUS-015290,519,Evans-Cuevas,Mid-Market,Technology,Germany,Active
-15291,CUS-015291,208,Hancock-Archer,Mid-Market,Retail,Mexico,Active
+15291,CUS-015291,208,Hancock-Archer,Unknown Segment,Retail,Mexico,Active
 15292,CUS-015292,921,Little-Allison,SMB,Technology,United States,Active
 15293,CUS-015293,766,"Torres, Russell and Mcdonald",SMB,Retail,Mexico,Active
 15294,CUS-015294,9,"Potts, Sanchez and Ochoa",Enterprise,Technology,Sweden,Inactive
@@ -15339,7 +15339,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 15338,CUS-015338,893,"Lopez, Smith and Chen",Enterprise,Retail,Germany,Active
 15339,CUS-015339,150,Reyes and Sons,Mid-Market,Healthcare,Mexico,Active
 15340,CUS-015340,147,Savage Group,Enterprise,Technology,Sweden,Active
-15341,CUS-015341,403,Doyle-Neal,SMB,Retail,Canada,Inactive
+15341,CUS-015341,403,Doyle-Neal,SMB,Retail,,Inactive
 15342,CUS-015342,504,Miller and Sons,Mid-Market,Technology,Sweden,Active
 15343,CUS-015343,959,Francis Group,Enterprise,Automotive,Sweden,Active
 15344,CUS-015344,318,Perez-Carlson,Mid-Market,Technology,United States,Active
@@ -16430,7 +16430,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 16429,CUS-016429,342,Hicks-Mitchell,Mid-Market,Retail,Sweden,Active
 16430,CUS-016430,615,Simmons LLC,Enterprise,Healthcare,Mexico,Active
 16431,CUS-016431,694,"Collins, Nelson and Fields",SMB,Technology,Canada,Inactive
-16432,CUS-016432,296,Frank and Sons,Enterprise,Manufacturing,United States,Active
+16432,CUS-016432,296,Frank and Sons,Enterprise,Manufacturing,,Active
 16433,CUS-016433,118,Robinson and Sons,SMB,Technology,Germany,Active
 16434,CUS-016434,508,"Huynh, Morton and Shepherd",SMB,Healthcare,Sweden,Active
 16435,CUS-016435,639,Griffin Group,Enterprise,Retail,Sweden,Active
@@ -16546,7 +16546,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 16545,CUS-016545,185,Williams-Harrison,Mid-Market,Retail,Germany,Active
 16546,CUS-016546,423,Wright-Randall,Enterprise,Technology,United States,Active
 16547,CUS-016547,869,Guerrero-Jones,SMB,Retail,United States,Inactive
-16548,CUS-016548,586,Ward-Morales,SMB,Manufacturing,Germany,Active
+16548,CUS-016548,586,Ward-Morales,SMB,Manufacturing,,Active
 16549,CUS-016549,728,Phillips-Ramsey,Mid-Market,Technology,Canada,Active
 16550,CUS-016550,150,"Tucker, White and Lane",Enterprise,Automotive,Germany,Active
 16551,CUS-016551,76,Sims PLC,Enterprise,Automotive,Germany,Active
@@ -16648,7 +16648,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 16647,CUS-016647,586,Cook-Walton,Mid-Market,Healthcare,Germany,Active
 16648,CUS-016648,431,Sanders-Sherman,Mid-Market,Automotive,Canada,Active
 16649,CUS-016649,746,Hunt PLC,SMB,Healthcare,Germany,Active
-16650,CUS-016650,283,Jimenez Ltd,Mid-Market,Automotive,Sweden,Active
+16650,CUS-016650,283,Jimenez Ltd,Unknown Segment,Automotive,Sweden,Active
 16651,CUS-016651,200,Gonzales Ltd,Enterprise,Manufacturing,Germany,Active
 16652,CUS-016652,650,"Swanson, Wall and Chambers",Enterprise,Manufacturing,Germany,Active
 16653,CUS-016653,618,"Smith, Anderson and Cohen",Mid-Market,Automotive,Germany,Active
@@ -16889,7 +16889,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 16888,CUS-016888,455,Holder-Bush,Mid-Market,Healthcare,Germany,Active
 16889,CUS-016889,426,"Allen, Brown and George",Mid-Market,Healthcare,Mexico,Active
 16890,CUS-016890,938,Fuller and Sons,SMB,Retail,Mexico,Active
-16891,CUS-016891,288,Henry PLC,Mid-Market,Healthcare,Sweden,Active
+16891,CUS-016891,288,Henry PLC,Mid-Market,Healthcare,,Active
 16892,CUS-016892,960,Marshall Group,Enterprise,Healthcare,Canada,Active
 16893,CUS-016893,651,Wright Ltd,SMB,Technology,Sweden,Active
 16894,CUS-016894,961,Murphy PLC,Enterprise,Technology,Canada,Active
@@ -16994,7 +16994,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 16993,CUS-016993,566,Johnson-Hoover,SMB,Retail,Mexico,Active
 16994,CUS-016994,350,Wong Inc,Enterprise,Manufacturing,Canada,Active
 16995,CUS-016995,115,Richards-Clayton,SMB,Retail,Canada,Active
-16996,CUS-016996,764,Nichols-Morales,Enterprise,Healthcare,Mexico,Active
+16996,CUS-016996,764,Nichols-Morales,Unknown Segment,Healthcare,Mexico,Active
 16997,CUS-016997,1,Davis-Gonzalez,SMB,Healthcare,Sweden,Active
 16998,CUS-016998,544,"Howard, Kennedy and Chen",SMB,Automotive,United States,Active
 16999,CUS-016999,163,Stevens Ltd,Enterprise,Retail,United States,Active
@@ -17288,7 +17288,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 17287,CUS-017287,91,"Russell, Marks and Scott",SMB,Automotive,Germany,Active
 17288,CUS-017288,26,Willis-Wilson,SMB,Technology,Canada,Active
 17289,CUS-017289,725,Miller-Rodriguez,Mid-Market,Manufacturing,Sweden,Active
-17290,CUS-017290,143,Caldwell-Alexander,Enterprise,Manufacturing,Sweden,Active
+17290,CUS-017290,143,Caldwell-Alexander,Enterprise,Manufacturing,,Active
 17291,CUS-017291,420,Morris Group,SMB,Technology,Sweden,Active
 17292,CUS-017292,683,Smith Inc,Mid-Market,Technology,Sweden,Active
 17293,CUS-017293,515,"Burgess, Fox and Taylor",Enterprise,Healthcare,United States,Active
@@ -17590,7 +17590,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 17589,CUS-017589,985,Gates-Kerr,Mid-Market,Healthcare,United States,Active
 17590,CUS-017590,490,"Huerta, Reed and Walsh",Enterprise,Manufacturing,United States,Active
 17591,CUS-017591,522,"Hudson, Robinson and Johnson",Enterprise,Manufacturing,Germany,Active
-17592,CUS-017592,851,Marquez PLC,SMB,Healthcare,Germany,Active
+17592,CUS-017592,851,Marquez PLC,SMB,Healthcare,,Active
 17593,CUS-017593,992,Key-Galvan,Mid-Market,Retail,Germany,Active
 17594,CUS-017594,730,Caldwell-Rhodes,Mid-Market,Technology,Mexico,Active
 17595,CUS-017595,699,"Collins, Lin and Blackburn",Enterprise,Healthcare,Mexico,Active
@@ -18167,7 +18167,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 18166,CUS-018166,334,Russell PLC,Mid-Market,Healthcare,United States,Active
 18167,CUS-018167,871,"Lamb, Wood and Kaufman",Enterprise,Retail,Mexico,Active
 18168,CUS-018168,383,Brown Ltd,Enterprise,Retail,Sweden,Active
-18169,CUS-018169,936,"Barber, Dawson and Garcia",Mid-Market,Automotive,United States,Active
+18169,CUS-018169,936,"Barber, Dawson and Garcia",Mid-Market,Automotive,,Active
 18170,CUS-018170,866,"Gonzalez, Smith and Garcia",Mid-Market,Manufacturing,Canada,Active
 18171,CUS-018171,165,Cain PLC,Mid-Market,Technology,United States,Active
 18172,CUS-018172,973,"Valentine, Pugh and Ray",Mid-Market,Technology,Canada,Active
@@ -18420,7 +18420,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 18419,CUS-018419,781,Parker-Brown,Enterprise,Healthcare,Canada,Active
 18420,CUS-018420,652,Dixon-Atkinson,SMB,Automotive,Germany,Inactive
 18421,CUS-018421,88,Johnson-Mejia,Mid-Market,Automotive,United States,Active
-18422,CUS-018422,615,Ruiz PLC,Enterprise,Technology,Mexico,Active
+18422,CUS-018422,615,Ruiz PLC,Enterprise,Technology,,Active
 18423,CUS-018423,903,Lowe PLC,Mid-Market,Retail,Canada,Inactive
 18424,CUS-018424,55,Castaneda-Glenn,Enterprise,Technology,Sweden,Active
 18425,CUS-018425,987,Curry-Ruiz,SMB,Automotive,Canada,Active
@@ -18606,7 +18606,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 18605,CUS-018605,828,Thompson Ltd,SMB,Manufacturing,Germany,Inactive
 18606,CUS-018606,703,"Delgado, Finley and Mcguire",Mid-Market,Automotive,United States,Active
 18607,CUS-018607,922,Smith PLC,Mid-Market,Technology,Germany,Active
-18608,CUS-018608,741,"Hernandez, Ochoa and Wallace",Mid-Market,Technology,Canada,Active
+18608,CUS-018608,741,"Hernandez, Ochoa and Wallace",Mid-Market,Technology,,Active
 18609,CUS-018609,551,Mcclain Ltd,Mid-Market,Retail,Germany,Inactive
 18610,CUS-018610,675,Hill-Nguyen,SMB,Automotive,Germany,Active
 18611,CUS-018611,318,Morgan Ltd,Mid-Market,Healthcare,Sweden,Active
@@ -18729,7 +18729,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 18728,CUS-018728,806,"Smith, Dodson and Hardin",Enterprise,Retail,United States,Active
 18729,CUS-018729,750,"Moore, Rodriguez and Perez",Mid-Market,Manufacturing,United States,Inactive
 18730,CUS-018730,367,"Garcia, Garcia and Davis",SMB,Technology,Mexico,Active
-18731,CUS-018731,726,Dean-Sellers,SMB,Retail,Mexico,Active
+18731,CUS-018731,726,Dean-Sellers,SMB,Retail,,Active
 18732,CUS-018732,580,Brown PLC,Mid-Market,Healthcare,United States,Active
 18733,CUS-018733,832,"Pratt, Rogers and Smith",Enterprise,Retail,Canada,Inactive
 18734,CUS-018734,352,Hughes-Wood,Enterprise,Automotive,Germany,Active
@@ -18862,7 +18862,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 18861,CUS-018861,409,Mccoy PLC,SMB,Retail,United States,Active
 18862,CUS-018862,789,Malone-Barnett,SMB,Manufacturing,Sweden,Active
 18863,CUS-018863,286,"Fuller, Lester and Greene",Mid-Market,Automotive,Germany,Active
-18864,CUS-018864,597,Chen Group,Mid-Market,Manufacturing,Germany,Active
+18864,CUS-018864,597,Chen Group,Unknown Segment,Manufacturing,Germany,Active
 18865,CUS-018865,589,Vaughn Ltd,Mid-Market,Automotive,United States,Active
 18866,CUS-018866,140,Hayes PLC,SMB,Manufacturing,Mexico,Active
 18867,CUS-018867,475,Miller-Bell,Mid-Market,Manufacturing,Sweden,Active
@@ -19383,7 +19383,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 19382,CUS-019382,655,Adkins-Campbell,SMB,Automotive,Mexico,Active
 19383,CUS-019383,290,Jackson-Johnson,Mid-Market,Automotive,Sweden,Active
 19384,CUS-019384,137,Cohen-Todd,SMB,Healthcare,Canada,Active
-19385,CUS-019385,573,"Carter, Roach and Sullivan",Enterprise,Healthcare,United States,Active
+19385,CUS-019385,573,"Carter, Roach and Sullivan",Enterprise,Healthcare,,Active
 19386,CUS-019386,86,Davis Ltd,Enterprise,Automotive,Sweden,Active
 19387,CUS-019387,738,"Moran, Potter and Tate",SMB,Retail,Sweden,Active
 19388,CUS-019388,383,Bridges-Tucker,Enterprise,Retail,United States,Active
@@ -19412,7 +19412,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 19411,CUS-019411,165,Mosley-French,Enterprise,Healthcare,United States,Active
 19412,CUS-019412,634,"Jackson, Rodriguez and Alexander",Enterprise,Technology,Germany,Active
 19413,CUS-019413,37,"Morrison, Phelps and Thomas",SMB,Healthcare,Sweden,Active
-19414,CUS-019414,412,Webb PLC,SMB,Technology,United States,Active
+19414,CUS-019414,412,Webb PLC,Unknown Segment,Technology,United States,Active
 19415,CUS-019415,10,Ruiz-Wade,Enterprise,Healthcare,Mexico,Active
 19416,CUS-019416,328,Wagner-Hodge,Mid-Market,Healthcare,United States,Active
 19417,CUS-019417,485,"Francis, Wells and Macias",SMB,Automotive,United States,Active
@@ -19571,7 +19571,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 19570,CUS-019570,629,Underwood Ltd,SMB,Manufacturing,Canada,Active
 19571,CUS-019571,145,Ford Ltd,Mid-Market,Retail,United States,Active
 19572,CUS-019572,202,Best-Moody,SMB,Retail,Canada,Active
-19573,CUS-019573,292,Hampton Inc,SMB,Healthcare,Canada,Active
+19573,CUS-019573,292,Hampton Inc,SMB,Healthcare,,Active
 19574,CUS-019574,548,"Nelson, Jackson and Medina",Enterprise,Manufacturing,Mexico,Active
 19575,CUS-019575,148,Owens Ltd,Mid-Market,Healthcare,Germany,Active
 19576,CUS-019576,771,Nelson PLC,SMB,Automotive,Sweden,Active
@@ -20027,7 +20027,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 20026,CUS-020026,258,"Duncan, Brown and Hanna",SMB,Healthcare,Mexico,Active
 20027,CUS-020027,145,Meyer and Sons,Enterprise,Retail,Sweden,Active
 20028,CUS-020028,703,Hall-Bishop,Enterprise,Manufacturing,Germany,Active
-20029,CUS-020029,483,Armstrong and Sons,Mid-Market,Healthcare,Sweden,Active
+20029,CUS-020029,483,Armstrong and Sons,Unknown Segment,Healthcare,Sweden,Active
 20030,CUS-020030,510,Stewart Ltd,SMB,Manufacturing,Sweden,Active
 20031,CUS-020031,484,"Patterson, Frost and Bush",Enterprise,Healthcare,Germany,Active
 20032,CUS-020032,748,"Schmidt, Walton and Elliott",SMB,Automotive,Mexico,Active
@@ -20121,7 +20121,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 20120,CUS-020120,257,Gray PLC,Enterprise,Manufacturing,Canada,Active
 20121,CUS-020121,507,Walls-Roberts,SMB,Retail,United States,Active
 20122,CUS-020122,269,"Mosley, Butler and Martin",Enterprise,Technology,Canada,Active
-20123,CUS-020123,498,Brown Inc,Enterprise,Automotive,Sweden,Active
+20123,CUS-020123,498,Brown Inc,Enterprise,Automotive,,Active
 20124,CUS-020124,340,Esparza Ltd,SMB,Automotive,Sweden,Active
 20125,CUS-020125,889,"Brooks, Boyer and Garner",SMB,Healthcare,Sweden,Active
 20126,CUS-020126,747,Taylor Group,Mid-Market,Technology,Canada,Active
@@ -20842,7 +20842,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 20841,CUS-020841,966,"Floyd, Klein and Brown",Enterprise,Automotive,Canada,Active
 20842,CUS-020842,557,"Palmer, King and Charles",Enterprise,Manufacturing,Germany,Active
 20843,CUS-020843,122,Thompson-Porter,Mid-Market,Technology,Germany,Active
-20844,CUS-020844,925,Turner Ltd,Mid-Market,Automotive,Mexico,Active
+20844,CUS-020844,925,Turner Ltd,Unknown Segment,Automotive,Mexico,Active
 20845,CUS-020845,513,Cantu-Lee,SMB,Healthcare,Canada,Active
 20846,CUS-020846,180,Palmer-Daniel,SMB,Retail,United States,Active
 20847,CUS-020847,191,Davis Inc,Enterprise,Manufacturing,Germany,Active
@@ -21018,7 +21018,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 21017,CUS-021017,305,Montes Ltd,Mid-Market,Technology,Germany,Active
 21018,CUS-021018,758,"Benjamin, Guerra and Gross",Enterprise,Healthcare,United States,Active
 21019,CUS-021019,613,Hill-Davis,Mid-Market,Manufacturing,Germany,Active
-21020,CUS-021020,400,Tucker PLC,Mid-Market,Technology,Germany,Active
+21020,CUS-021020,400,Tucker PLC,Mid-Market,Technology,,Active
 21021,CUS-021021,823,Garcia and Sons,SMB,Automotive,Mexico,Active
 21022,CUS-021022,453,Jones LLC,SMB,Manufacturing,Mexico,Active
 21023,CUS-021023,954,"Ferguson, Bautista and Perry",Enterprise,Automotive,Mexico,Active
@@ -21531,7 +21531,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 21530,CUS-021530,199,"Wilson, Khan and Taylor",SMB,Retail,United States,Inactive
 21531,CUS-021531,99,"Burns, Delgado and Sellers",Enterprise,Retail,Mexico,Active
 21532,CUS-021532,511,Mccoy Group,Enterprise,Healthcare,Sweden,Active
-21533,CUS-021533,866,Schneider Group,Enterprise,Manufacturing,Canada,Active
+21533,CUS-021533,866,Schneider Group,Enterprise,Manufacturing,,Active
 21534,CUS-021534,633,"Hines, Taylor and Meyer",SMB,Automotive,Canada,Active
 21535,CUS-021535,756,"Jackson, Riley and Simpson",Mid-Market,Manufacturing,Canada,Active
 21536,CUS-021536,434,King and Sons,Enterprise,Technology,Canada,Active
@@ -21763,8 +21763,8 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 21762,CUS-021762,260,"Miller, Santiago and Blair",SMB,Technology,Germany,Active
 21763,CUS-021763,348,"Jackson, Powell and Garcia",SMB,Technology,Germany,Active
 21764,CUS-021764,451,"Farley, Ryan and Dougherty",Mid-Market,Manufacturing,Canada,Active
-21765,CUS-021765,632,"Hogan, Buck and Warner",SMB,Technology,Mexico,Active
-21766,CUS-021766,222,Wong-Lynch,SMB,Automotive,Mexico,Active
+21765,CUS-021765,632,"Hogan, Buck and Warner",SMB,Technology,,Active
+21766,CUS-021766,222,Wong-Lynch,Unknown Segment,Automotive,Mexico,Active
 21767,CUS-021767,706,"White, Taylor and Lee",SMB,Automotive,Canada,Active
 21768,CUS-021768,25,Steele-Allen,Enterprise,Healthcare,United States,Active
 21769,CUS-021769,332,"Peterson, Scott and Crane",Mid-Market,Retail,Germany,Active
@@ -21829,7 +21829,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 21828,CUS-021828,274,Lucas-Martinez,SMB,Retail,Germany,Active
 21829,CUS-021829,640,"Barrera, Smith and Sherman",Enterprise,Automotive,Canada,Active
 21830,CUS-021830,236,"Frazier, Harris and Sanders",Enterprise,Retail,United States,Active
-21831,CUS-021831,918,"Wagner, Stephenson and Wyatt",Mid-Market,Retail,Canada,Active
+21831,CUS-021831,918,"Wagner, Stephenson and Wyatt",Unknown Segment,Retail,Canada,Active
 21832,CUS-021832,300,Le PLC,Mid-Market,Manufacturing,Mexico,Active
 21833,CUS-021833,97,"Newton, Sanchez and Espinoza",Mid-Market,Retail,Mexico,Active
 21834,CUS-021834,881,Frazier Inc,Enterprise,Technology,United States,Active
@@ -22283,7 +22283,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 22282,CUS-022282,131,Jenkins-Walker,Mid-Market,Technology,Germany,Active
 22283,CUS-022283,314,White PLC,Enterprise,Retail,Germany,Active
 22284,CUS-022284,740,Hernandez-Hernandez,Enterprise,Retail,Sweden,Active
-22285,CUS-022285,50,Williams LLC,Enterprise,Automotive,Mexico,Active
+22285,CUS-022285,50,Williams LLC,Enterprise,Automotive,,Active
 22286,CUS-022286,407,"Davis, Adams and Spencer",Mid-Market,Automotive,Germany,Active
 22287,CUS-022287,448,"Ward, Davis and Strong",Enterprise,Technology,Mexico,Active
 22288,CUS-022288,149,Bradley-Sullivan,SMB,Healthcare,United States,Active
@@ -22314,7 +22314,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 22313,CUS-022313,591,Franklin Inc,Enterprise,Automotive,Germany,Active
 22314,CUS-022314,954,"Moore, Johnson and Reid",SMB,Healthcare,Germany,Active
 22315,CUS-022315,316,Rangel-Brown,Mid-Market,Automotive,United States,Active
-22316,CUS-022316,484,"Cantrell, West and Brown",Enterprise,Automotive,Mexico,Active
+22316,CUS-022316,484,"Cantrell, West and Brown",Unknown Segment,Automotive,Mexico,Active
 22317,CUS-022317,963,Patterson LLC,Enterprise,Manufacturing,Mexico,Active
 22318,CUS-022318,609,"Brown, Gallagher and Frank",SMB,Healthcare,Germany,Active
 22319,CUS-022319,400,Arroyo Ltd,Enterprise,Manufacturing,United States,Active
@@ -22433,7 +22433,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 22432,CUS-022432,153,Smith and Sons,Mid-Market,Healthcare,Canada,Active
 22433,CUS-022433,119,Smith PLC,Enterprise,Technology,United States,Active
 22434,CUS-022434,642,"Mclaughlin, Wang and Johnson",Enterprise,Manufacturing,Canada,Inactive
-22435,CUS-022435,922,Martinez-Smith,SMB,Automotive,United States,Active
+22435,CUS-022435,922,Martinez-Smith,Unknown Segment,Automotive,United States,Active
 22436,CUS-022436,253,Robertson-Hunter,Enterprise,Manufacturing,United States,Active
 22437,CUS-022437,218,Hensley Group,Mid-Market,Automotive,Mexico,Active
 22438,CUS-022438,614,"Brown, Ayers and Allen",Mid-Market,Automotive,Canada,Active
@@ -22449,7 +22449,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 22448,CUS-022448,748,"Cuevas, Walters and Smith",SMB,Technology,United States,Active
 22449,CUS-022449,100,Johnson-Kemp,Enterprise,Healthcare,Mexico,Active
 22450,CUS-022450,849,"Acosta, Gillespie and Gill",Mid-Market,Automotive,Sweden,Active
-22451,CUS-022451,210,"Boone, Tran and Mann",SMB,Retail,Mexico,Active
+22451,CUS-022451,210,"Boone, Tran and Mann",SMB,Retail,,Active
 22452,CUS-022452,993,Allen and Sons,SMB,Retail,Mexico,Active
 22453,CUS-022453,872,Stewart-Shelton,Mid-Market,Manufacturing,United States,Active
 22454,CUS-022454,460,Marshall Inc,Enterprise,Automotive,Mexico,Active
@@ -22479,7 +22479,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 22478,CUS-022478,946,Hill Inc,Enterprise,Manufacturing,Germany,Active
 22479,CUS-022479,27,"Alexander, Meyer and Robinson",Mid-Market,Automotive,Sweden,Active
 22480,CUS-022480,635,Price-Garcia,SMB,Automotive,Canada,Active
-22481,CUS-022481,990,"Garner, Gonzalez and Maxwell",Enterprise,Retail,Mexico,Active
+22481,CUS-022481,990,"Garner, Gonzalez and Maxwell",Enterprise,Retail,,Active
 22482,CUS-022482,544,Shelton-Dixon,Enterprise,Manufacturing,Mexico,Active
 22483,CUS-022483,640,Sheppard Group,SMB,Technology,Sweden,Active
 22484,CUS-022484,599,"Kelly, Estrada and Hall",Mid-Market,Automotive,Mexico,Inactive
@@ -22973,7 +22973,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 22972,CUS-022972,378,"Spears, Smith and Alvarez",Mid-Market,Technology,Canada,Active
 22973,CUS-022973,477,Leonard Inc,Enterprise,Retail,Canada,Active
 22974,CUS-022974,59,Foster PLC,SMB,Retail,Mexico,Active
-22975,CUS-022975,137,Smith Ltd,Enterprise,Healthcare,United States,Active
+22975,CUS-022975,137,Smith Ltd,Enterprise,Healthcare,,Active
 22976,CUS-022976,999,Beck LLC,SMB,Healthcare,United States,Active
 22977,CUS-022977,816,"Mitchell, Reynolds and Adams",Mid-Market,Manufacturing,Germany,Active
 22978,CUS-022978,839,"Blanchard, Blevins and James",Mid-Market,Manufacturing,United States,Active
@@ -23084,7 +23084,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 23083,CUS-023083,513,Zuniga Ltd,Enterprise,Retail,Canada,Active
 23084,CUS-023084,829,Warner Ltd,Enterprise,Automotive,Sweden,Inactive
 23085,CUS-023085,749,Walker and Sons,Enterprise,Automotive,United States,Active
-23086,CUS-023086,724,Mooney and Sons,Mid-Market,Automotive,Canada,Active
+23086,CUS-023086,724,Mooney and Sons,Mid-Market,Automotive,,Active
 23087,CUS-023087,539,Kelly LLC,SMB,Retail,Germany,Active
 23088,CUS-023088,863,Gonzalez Group,Enterprise,Technology,United States,Active
 23089,CUS-023089,984,"Barr, Flores and Cardenas",Enterprise,Automotive,Mexico,Active
@@ -23670,7 +23670,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 23669,CUS-023669,844,Wilson-Weaver,SMB,Manufacturing,Sweden,Active
 23670,CUS-023670,65,"Perez, Castro and Chen",Enterprise,Manufacturing,Mexico,Active
 23671,CUS-023671,436,Sanchez-Montoya,SMB,Automotive,United States,Active
-23672,CUS-023672,124,Fritz and Sons,Enterprise,Automotive,Sweden,Inactive
+23672,CUS-023672,124,Fritz and Sons,Unknown Segment,Automotive,Sweden,Inactive
 23673,CUS-023673,413,Walker-Gardner,Enterprise,Technology,Germany,Active
 23674,CUS-023674,430,Roberts-Robinson,Mid-Market,Technology,Germany,Active
 23675,CUS-023675,540,Scott-Montgomery,Mid-Market,Retail,Mexico,Inactive
@@ -24176,7 +24176,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 24175,CUS-024175,141,Juarez PLC,Enterprise,Technology,Canada,Active
 24176,CUS-024176,287,Joseph-Powers,Mid-Market,Retail,Germany,Active
 24177,CUS-024177,312,Montes-Stevenson,Enterprise,Technology,Mexico,Inactive
-24178,CUS-024178,645,Armstrong-Glenn,Mid-Market,Automotive,Mexico,Active
+24178,CUS-024178,645,Armstrong-Glenn,Mid-Market,Automotive,,Active
 24179,CUS-024179,130,Banks-Love,SMB,Automotive,Germany,Active
 24180,CUS-024180,451,"Shepherd, Rivera and Mullins",Mid-Market,Manufacturing,Sweden,Active
 24181,CUS-024181,675,White-Holt,SMB,Healthcare,Sweden,Active
@@ -24403,7 +24403,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 24402,CUS-024402,972,"Rodriguez, Brandt and Garcia",SMB,Technology,Canada,Active
 24403,CUS-024403,113,Arnold LLC,Enterprise,Technology,Sweden,Active
 24404,CUS-024404,657,Rodriguez Inc,Mid-Market,Healthcare,Sweden,Active
-24405,CUS-024405,513,Cabrera-Campbell,Enterprise,Retail,Mexico,Active
+24405,CUS-024405,513,Cabrera-Campbell,Enterprise,Retail,,Active
 24406,CUS-024406,589,"Sexton, Tate and Harris",Mid-Market,Healthcare,United States,Active
 24407,CUS-024407,93,Salazar-Coleman,Enterprise,Healthcare,Germany,Active
 24408,CUS-024408,17,"Brown, Hobbs and Stevens",SMB,Manufacturing,United States,Active
@@ -24455,7 +24455,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 24454,CUS-024454,533,Ortiz Inc,SMB,Technology,Germany,Active
 24455,CUS-024455,428,Cooke LLC,SMB,Retail,United States,Active
 24456,CUS-024456,113,Thomas PLC,Mid-Market,Automotive,United States,Active
-24457,CUS-024457,782,"Luna, Herman and Cooper",SMB,Retail,Sweden,Active
+24457,CUS-024457,782,"Luna, Herman and Cooper",Unknown Segment,Retail,Sweden,Active
 24458,CUS-024458,950,Casey-Thompson,SMB,Automotive,United States,Active
 24459,CUS-024459,46,Palmer-Griffin,Mid-Market,Retail,United States,Active
 24460,CUS-024460,492,"Lloyd, Williams and Herrera",SMB,Technology,Mexico,Active
@@ -24499,7 +24499,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 24498,CUS-024498,958,"Dominguez, Jackson and Stewart",SMB,Healthcare,Sweden,Active
 24499,CUS-024499,876,"Guzman, Martinez and Stokes",SMB,Retail,Sweden,Active
 24500,CUS-024500,896,Smith-Weiss,SMB,Automotive,Germany,Active
-24501,CUS-024501,608,Ramirez Inc,Mid-Market,Technology,United States,Active
+24501,CUS-024501,608,Ramirez Inc,Mid-Market,Technology,,Active
 24502,CUS-024502,192,Stone Ltd,SMB,Manufacturing,Germany,Active
 24503,CUS-024503,144,Nguyen Inc,Mid-Market,Healthcare,Germany,Inactive
 24504,CUS-024504,275,"Elliott, Thompson and Frederick",Enterprise,Automotive,Sweden,Active
@@ -24518,7 +24518,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 24517,CUS-024517,571,"Murphy, Johnson and Williams",Mid-Market,Technology,Germany,Active
 24518,CUS-024518,33,Brown Ltd,Mid-Market,Retail,Germany,Active
 24519,CUS-024519,60,Davies-Robinson,Mid-Market,Technology,Sweden,Active
-24520,CUS-024520,423,Wilson-Sloan,Enterprise,Retail,Sweden,Active
+24520,CUS-024520,423,Wilson-Sloan,Enterprise,Retail,,Active
 24521,CUS-024521,899,Robbins Inc,Mid-Market,Retail,Canada,Active
 24522,CUS-024522,378,Logan and Sons,SMB,Automotive,United States,Active
 24523,CUS-024523,885,Harmon Inc,Enterprise,Technology,Germany,Active
@@ -24774,7 +24774,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 24773,CUS-024773,21,Cooley-Browning,Mid-Market,Retail,Canada,Active
 24774,CUS-024774,562,Little and Sons,Enterprise,Healthcare,Mexico,Active
 24775,CUS-024775,273,Gregory-Duncan,SMB,Technology,Canada,Active
-24776,CUS-024776,821,Salinas-Roberts,Mid-Market,Manufacturing,Canada,Active
+24776,CUS-024776,821,Salinas-Roberts,Mid-Market,Manufacturing,,Active
 24777,CUS-024777,489,Burgess Group,SMB,Automotive,Germany,Active
 24778,CUS-024778,852,Ray-Diaz,SMB,Retail,Canada,Active
 24779,CUS-024779,563,"Arnold, Hamilton and Beard",Mid-Market,Manufacturing,Canada,Active
@@ -24859,7 +24859,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 24858,CUS-024858,458,Watson Ltd,Enterprise,Healthcare,Canada,Active
 24859,CUS-024859,650,"Rodriguez, Williams and Clayton",SMB,Healthcare,Canada,Active
 24860,CUS-024860,415,Anderson-Hicks,SMB,Healthcare,Germany,Active
-24861,CUS-024861,443,"Johnson, Smith and Santos",Enterprise,Healthcare,United States,Active
+24861,CUS-024861,443,"Johnson, Smith and Santos",Enterprise,Healthcare,,Active
 24862,CUS-024862,299,Scott and Sons,Mid-Market,Automotive,Mexico,Active
 24863,CUS-024863,190,Hicks-Noble,SMB,Technology,Germany,Active
 24864,CUS-024864,200,Barker-Carter,Enterprise,Technology,United States,Active
@@ -25169,7 +25169,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 25168,CUS-025168,761,Cunningham-Robles,Enterprise,Manufacturing,United States,Active
 25169,CUS-025169,635,Simpson-Brown,Mid-Market,Manufacturing,Germany,Active
 25170,CUS-025170,318,Patel Group,Enterprise,Healthcare,United States,Active
-25171,CUS-025171,345,Simon-Perry,Mid-Market,Healthcare,Mexico,Active
+25171,CUS-025171,345,Simon-Perry,Mid-Market,Healthcare,,Active
 25172,CUS-025172,829,Buckley and Sons,Enterprise,Automotive,Canada,Active
 25173,CUS-025173,836,Silva PLC,Enterprise,Healthcare,Sweden,Active
 25174,CUS-025174,147,Williams-Adams,SMB,Automotive,Germany,Active
@@ -26174,7 +26174,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 26173,CUS-026173,579,"Meyer, Parks and Powell",SMB,Automotive,United States,Inactive
 26174,CUS-026174,101,"Bailey, Meza and Bell",Mid-Market,Healthcare,Mexico,Active
 26175,CUS-026175,553,Forbes-Johnson,Mid-Market,Technology,United States,Active
-26176,CUS-026176,287,"Hernandez, Webb and Smith",Enterprise,Technology,Canada,Active
+26176,CUS-026176,287,"Hernandez, Webb and Smith",Unknown Segment,Technology,Canada,Active
 26177,CUS-026177,515,Thomas PLC,Enterprise,Technology,Mexico,Active
 26178,CUS-026178,138,Bowman-Mcdonald,Mid-Market,Manufacturing,Germany,Active
 26179,CUS-026179,668,Adams-Adams,Enterprise,Healthcare,Canada,Active
@@ -26284,7 +26284,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 26283,CUS-026283,478,Martin Group,Mid-Market,Technology,United States,Inactive
 26284,CUS-026284,411,"Owens, Johnson and Watson",Enterprise,Automotive,Mexico,Active
 26285,CUS-026285,418,Herman and Sons,Enterprise,Healthcare,Germany,Active
-26286,CUS-026286,346,Davis-Nichols,Enterprise,Healthcare,Germany,Active
+26286,CUS-026286,346,Davis-Nichols,Enterprise,Healthcare,,Active
 26287,CUS-026287,410,"Soto, Larson and Thomas",SMB,Automotive,Mexico,Active
 26288,CUS-026288,4,"Kennedy, Russell and Stewart",SMB,Retail,Canada,Active
 26289,CUS-026289,479,"Smith, Berg and York",SMB,Retail,Sweden,Active
@@ -26498,7 +26498,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 26497,CUS-026497,281,Moore-King,Enterprise,Retail,Mexico,Active
 26498,CUS-026498,515,"Greer, Leon and Cohen",Mid-Market,Retail,Mexico,Active
 26499,CUS-026499,351,"Solis, Burns and Taylor",Mid-Market,Retail,Canada,Active
-26500,CUS-026500,356,"Burke, Garcia and Singleton",SMB,Retail,United States,Active
+26500,CUS-026500,356,"Burke, Garcia and Singleton",Unknown Segment,Retail,United States,Active
 26501,CUS-026501,394,"Massey, Martinez and Lee",Mid-Market,Automotive,United States,Active
 26502,CUS-026502,52,Cook LLC,Mid-Market,Technology,Mexico,Active
 26503,CUS-026503,196,Farmer Group,SMB,Technology,Sweden,Active
@@ -26606,7 +26606,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 26605,CUS-026605,257,Hill Ltd,Enterprise,Healthcare,Canada,Active
 26606,CUS-026606,429,"Heath, Martinez and Adams",SMB,Automotive,Sweden,Active
 26607,CUS-026607,545,Griffith-Mcguire,SMB,Healthcare,United States,Inactive
-26608,CUS-026608,989,"Rodriguez, Larsen and Cordova",Mid-Market,Technology,Sweden,Active
+26608,CUS-026608,989,"Rodriguez, Larsen and Cordova",Unknown Segment,Technology,Sweden,Active
 26609,CUS-026609,900,Stephens-Hall,Mid-Market,Healthcare,Germany,Active
 26610,CUS-026610,737,"Sanders, Hicks and Miller",Mid-Market,Healthcare,United States,Active
 26611,CUS-026611,814,Vargas-Rowland,Enterprise,Automotive,Canada,Active
@@ -26764,7 +26764,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 26763,CUS-026763,981,Rice-Scott,SMB,Automotive,Mexico,Active
 26764,CUS-026764,428,"Hughes, Burns and Harrison",Mid-Market,Healthcare,Canada,Active
 26765,CUS-026765,874,Bradley-Sanchez,Enterprise,Healthcare,United States,Active
-26766,CUS-026766,289,Parker-Arnold,Enterprise,Healthcare,Sweden,Active
+26766,CUS-026766,289,Parker-Arnold,Enterprise,Healthcare,,Active
 26767,CUS-026767,361,Meyer-Morrow,Mid-Market,Retail,Mexico,Active
 26768,CUS-026768,825,"Becker, Olson and Avila",Mid-Market,Healthcare,Sweden,Inactive
 26769,CUS-026769,526,Hunter and Sons,Enterprise,Automotive,Canada,Active
@@ -27263,7 +27263,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 27262,CUS-027262,27,Church-Vargas,Mid-Market,Technology,Germany,Active
 27263,CUS-027263,609,Maldonado-Bailey,SMB,Retail,Mexico,Active
 27264,CUS-027264,864,Medina and Sons,SMB,Manufacturing,Mexico,Active
-27265,CUS-027265,819,Cole Group,SMB,Technology,Sweden,Active
+27265,CUS-027265,819,Cole Group,SMB,Technology,,Active
 27266,CUS-027266,338,"Tyler, Taylor and Jones",SMB,Healthcare,Sweden,Active
 27267,CUS-027267,677,Smith Inc,SMB,Healthcare,Canada,Active
 27268,CUS-027268,200,Gibbs PLC,Mid-Market,Manufacturing,Germany,Active
@@ -28108,7 +28108,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 28107,CUS-028107,478,Mcmillan-Cox,Mid-Market,Retail,Sweden,Active
 28108,CUS-028108,970,Gordon-Christensen,SMB,Technology,Mexico,Active
 28109,CUS-028109,238,"Vasquez, Sawyer and Garcia",SMB,Healthcare,United States,Active
-28110,CUS-028110,843,Decker-Chan,Mid-Market,Retail,United States,Active
+28110,CUS-028110,843,Decker-Chan,Unknown Segment,Retail,United States,Active
 28111,CUS-028111,491,Rodriguez-Barton,SMB,Healthcare,Sweden,Active
 28112,CUS-028112,87,"Larson, Collins and Hess",SMB,Technology,Mexico,Active
 28113,CUS-028113,706,Smith PLC,Mid-Market,Manufacturing,Sweden,Active
@@ -28333,7 +28333,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 28332,CUS-028332,116,"Walsh, Clark and Jones",SMB,Technology,United States,Inactive
 28333,CUS-028333,465,Jackson LLC,SMB,Manufacturing,Germany,Active
 28334,CUS-028334,740,Velez Inc,Mid-Market,Manufacturing,United States,Active
-28335,CUS-028335,522,Little Ltd,Enterprise,Manufacturing,Germany,Active
+28335,CUS-028335,522,Little Ltd,Enterprise,Manufacturing,,Active
 28336,CUS-028336,649,Anderson LLC,Mid-Market,Retail,Sweden,Active
 28337,CUS-028337,238,"Holt, Butler and Clark",SMB,Technology,Germany,Active
 28338,CUS-028338,494,"Crane, Rogers and Adkins",SMB,Healthcare,Canada,Active
@@ -28440,7 +28440,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 28439,CUS-028439,146,Morgan Group,Enterprise,Manufacturing,Germany,Active
 28440,CUS-028440,373,Miller-Murray,Mid-Market,Retail,Canada,Active
 28441,CUS-028441,314,Bell Ltd,SMB,Retail,Sweden,Active
-28442,CUS-028442,221,Rasmussen Group,Mid-Market,Technology,Germany,Active
+28442,CUS-028442,221,Rasmussen Group,Unknown Segment,Technology,Germany,Active
 28443,CUS-028443,131,Buchanan-Allen,Mid-Market,Technology,Canada,Active
 28444,CUS-028444,657,Dodson Group,Mid-Market,Retail,Sweden,Active
 28445,CUS-028445,759,"Maldonado, Brady and Mcclure",Enterprise,Retail,Sweden,Active
@@ -29571,7 +29571,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 29570,CUS-029570,901,"Tucker, Torres and Fry",Mid-Market,Healthcare,United States,Active
 29571,CUS-029571,586,"Bradley, Hall and Klein",Mid-Market,Retail,United States,Active
 29572,CUS-029572,174,Carlson-Hogan,SMB,Healthcare,United States,Inactive
-29573,CUS-029573,954,"Murray, Martin and Chavez",Enterprise,Manufacturing,Mexico,Active
+29573,CUS-029573,954,"Murray, Martin and Chavez",Enterprise,Manufacturing,,Active
 29574,CUS-029574,562,Blake PLC,Mid-Market,Technology,Germany,Active
 29575,CUS-029575,636,"Dudley, Gonzalez and Bates",Enterprise,Healthcare,Germany,Active
 29576,CUS-029576,679,Allen and Sons,SMB,Technology,Germany,Active
@@ -30821,7 +30821,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 30820,CUS-030820,926,Perry and Sons,Mid-Market,Manufacturing,Mexico,Active
 30821,CUS-030821,368,Moore-Barnes,SMB,Healthcare,Germany,Active
 30822,CUS-030822,754,Hernandez-Lewis,SMB,Manufacturing,Canada,Active
-30823,CUS-030823,144,Bates Inc,SMB,Automotive,Germany,Active
+30823,CUS-030823,144,Bates Inc,SMB,Automotive,,Active
 30824,CUS-030824,733,"Lopez, Peters and Russell",SMB,Automotive,Germany,Active
 30825,CUS-030825,732,Sanchez-Davis,Enterprise,Manufacturing,United States,Active
 30826,CUS-030826,254,"Atkinson, Huynh and Aguilar",Enterprise,Manufacturing,Germany,Inactive
@@ -30892,7 +30892,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 30891,CUS-030891,320,Ayala-Griffin,SMB,Automotive,Germany,Active
 30892,CUS-030892,829,Herring Inc,Enterprise,Healthcare,Canada,Active
 30893,CUS-030893,138,Rowland and Sons,Mid-Market,Manufacturing,Mexico,Active
-30894,CUS-030894,342,Miller-Phillips,Mid-Market,Healthcare,Germany,Inactive
+30894,CUS-030894,342,Miller-Phillips,Mid-Market,Healthcare,,Inactive
 30895,CUS-030895,52,Weaver-Villarreal,Mid-Market,Manufacturing,United States,Active
 30896,CUS-030896,536,Perez Ltd,Mid-Market,Manufacturing,Sweden,Active
 30897,CUS-030897,125,Coleman Group,SMB,Automotive,Canada,Active
@@ -31140,7 +31140,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 31139,CUS-031139,460,Dillon-Hernandez,Mid-Market,Healthcare,United States,Active
 31140,CUS-031140,264,Lewis and Sons,SMB,Automotive,Mexico,Active
 31141,CUS-031141,896,"Sweeney, Dyer and Murray",Enterprise,Healthcare,Sweden,Active
-31142,CUS-031142,716,"Quinn, Rice and Peters",SMB,Healthcare,Sweden,Inactive
+31142,CUS-031142,716,"Quinn, Rice and Peters",SMB,Healthcare,,Inactive
 31143,CUS-031143,666,"Duran, Carroll and Morris",SMB,Automotive,Germany,Active
 31144,CUS-031144,959,Griffin-Harrell,Enterprise,Retail,Canada,Active
 31145,CUS-031145,247,Cruz-Munoz,Enterprise,Retail,Germany,Active
@@ -31363,7 +31363,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 31362,CUS-031362,405,Sanchez-Keller,SMB,Technology,Sweden,Active
 31363,CUS-031363,963,Murphy-Wood,Mid-Market,Technology,United States,Active
 31364,CUS-031364,302,Clay-Simon,Enterprise,Retail,Mexico,Active
-31365,CUS-031365,940,Gallagher-Thompson,SMB,Manufacturing,Sweden,Active
+31365,CUS-031365,940,Gallagher-Thompson,SMB,Manufacturing,,Active
 31366,CUS-031366,507,Hodges and Sons,Mid-Market,Technology,Mexico,Active
 31367,CUS-031367,14,Guzman-Pugh,Enterprise,Retail,Sweden,Active
 31368,CUS-031368,833,Wells-Reed,Mid-Market,Healthcare,United States,Inactive
@@ -31586,7 +31586,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 31585,CUS-031585,239,Lewis-Conrad,Mid-Market,Automotive,Germany,Active
 31586,CUS-031586,907,"Carrillo, Brewer and Miller",Enterprise,Technology,Germany,Active
 31587,CUS-031587,108,Brooks-Barrett,Mid-Market,Healthcare,United States,Active
-31588,CUS-031588,340,Webb PLC,Enterprise,Retail,Canada,Active
+31588,CUS-031588,340,Webb PLC,Enterprise,Retail,,Active
 31589,CUS-031589,481,Ortega Inc,Enterprise,Automotive,Sweden,Inactive
 31590,CUS-031590,978,Andrews-Thomas,Mid-Market,Manufacturing,Mexico,Active
 31591,CUS-031591,818,Oconnor-Morrison,Enterprise,Healthcare,Germany,Active
@@ -32163,7 +32163,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 32162,CUS-032162,225,Carey-Nguyen,Enterprise,Manufacturing,Canada,Active
 32163,CUS-032163,392,"Turner, Morales and Moore",Enterprise,Automotive,Germany,Active
 32164,CUS-032164,772,Williams PLC,Enterprise,Manufacturing,Canada,Inactive
-32165,CUS-032165,182,Bowers-Mays,SMB,Technology,Germany,Active
+32165,CUS-032165,182,Bowers-Mays,SMB,Technology,,Active
 32166,CUS-032166,232,"Clements, Logan and Martin",Mid-Market,Retail,United States,Inactive
 32167,CUS-032167,999,Alvarez and Sons,SMB,Manufacturing,Mexico,Active
 32168,CUS-032168,996,Gonzalez LLC,Mid-Market,Automotive,Germany,Active
@@ -32451,7 +32451,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 32450,CUS-032450,96,Leach Group,Enterprise,Manufacturing,United States,Active
 32451,CUS-032451,309,Rogers-Johnson,Mid-Market,Healthcare,United States,Active
 32452,CUS-032452,703,Thornton-Sanders,Enterprise,Manufacturing,United States,Active
-32453,CUS-032453,655,Bridges-Wilson,SMB,Manufacturing,Sweden,Active
+32453,CUS-032453,655,Bridges-Wilson,SMB,Manufacturing,,Active
 32454,CUS-032454,705,"Wong, Ortiz and Nguyen",Mid-Market,Technology,Mexico,Active
 32455,CUS-032455,994,Castro Ltd,SMB,Healthcare,Mexico,Inactive
 32456,CUS-032456,225,"Lynch, Harrison and Taylor",SMB,Automotive,Mexico,Inactive
@@ -32500,7 +32500,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 32499,CUS-032499,267,Bender and Sons,SMB,Retail,Mexico,Active
 32500,CUS-032500,359,Dickerson Ltd,Enterprise,Retail,United States,Active
 32501,CUS-032501,838,"Bauer, Joseph and Sheppard",SMB,Healthcare,Sweden,Active
-32502,CUS-032502,337,Smith Group,Mid-Market,Manufacturing,Germany,Active
+32502,CUS-032502,337,Smith Group,Mid-Market,Manufacturing,,Active
 32503,CUS-032503,162,Griffin-Baker,Enterprise,Automotive,Germany,Active
 32504,CUS-032504,847,Johnson Ltd,Enterprise,Technology,Canada,Active
 32505,CUS-032505,352,Brewer-Rivera,Mid-Market,Automotive,Mexico,Inactive
@@ -34165,7 +34165,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 34164,CUS-034164,406,Johnson-Schmidt,Mid-Market,Retail,Canada,Active
 34165,CUS-034165,897,"Guzman, Martinez and Sullivan",SMB,Retail,Germany,Active
 34166,CUS-034166,199,Rios PLC,SMB,Technology,Germany,Active
-34167,CUS-034167,605,Woodard-Garcia,SMB,Technology,Sweden,Active
+34167,CUS-034167,605,Woodard-Garcia,SMB,Technology,,Active
 34168,CUS-034168,275,"Bailey, Watson and Davis",Mid-Market,Manufacturing,Canada,Active
 34169,CUS-034169,499,Pierce and Sons,Enterprise,Retail,Germany,Active
 34170,CUS-034170,297,Giles-Keller,Enterprise,Automotive,Sweden,Active
@@ -34331,7 +34331,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 34330,CUS-034330,210,"Robinson, Shaffer and Camacho",Enterprise,Healthcare,Sweden,Active
 34331,CUS-034331,628,Rocha-Love,Mid-Market,Technology,Germany,Active
 34332,CUS-034332,311,Coleman LLC,Mid-Market,Retail,Germany,Active
-34333,CUS-034333,486,Hampton-King,Mid-Market,Automotive,Sweden,Active
+34333,CUS-034333,486,Hampton-King,Unknown Segment,Automotive,Sweden,Active
 34334,CUS-034334,937,Jensen-Waters,SMB,Automotive,United States,Active
 34335,CUS-034335,547,"Mitchell, Smith and Arnold",Enterprise,Healthcare,United States,Active
 34336,CUS-034336,303,Lopez Ltd,SMB,Automotive,Mexico,Active
@@ -34340,7 +34340,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 34339,CUS-034339,607,Garrison Group,Mid-Market,Healthcare,Mexico,Active
 34340,CUS-034340,43,Parker-Garcia,Enterprise,Technology,Germany,Active
 34341,CUS-034341,227,Lopez and Sons,SMB,Healthcare,Germany,Inactive
-34342,CUS-034342,129,Brooks-Bowman,SMB,Automotive,Canada,Active
+34342,CUS-034342,129,Brooks-Bowman,Unknown Segment,Automotive,Canada,Active
 34343,CUS-034343,956,Calderon PLC,Enterprise,Manufacturing,Sweden,Active
 34344,CUS-034344,312,"Atkinson, Morgan and Jimenez",Enterprise,Retail,Germany,Active
 34345,CUS-034345,475,"Miller, Davila and Rowland",Mid-Market,Automotive,Mexico,Inactive
@@ -34459,7 +34459,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 34458,CUS-034458,25,"Thompson, Parrish and Cruz",SMB,Retail,Mexico,Active
 34459,CUS-034459,295,"Morrow, Hartman and Callahan",Mid-Market,Technology,Germany,Active
 34460,CUS-034460,736,Jimenez-Ward,Mid-Market,Automotive,United States,Inactive
-34461,CUS-034461,546,"Delgado, Evans and Stewart",Enterprise,Retail,Mexico,Active
+34461,CUS-034461,546,"Delgado, Evans and Stewart",Unknown Segment,Retail,Mexico,Active
 34462,CUS-034462,617,"Boone, Douglas and Steele",Mid-Market,Automotive,Sweden,Active
 34463,CUS-034463,22,Howard-Wilson,Mid-Market,Automotive,Germany,Active
 34464,CUS-034464,219,Dodson Inc,Enterprise,Manufacturing,United States,Active
@@ -34485,7 +34485,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 34484,CUS-034484,801,Terry LLC,Mid-Market,Manufacturing,United States,Active
 34485,CUS-034485,666,Hernandez Inc,Mid-Market,Technology,United States,Active
 34486,CUS-034486,121,"Smith, Hernandez and Woodard",Mid-Market,Manufacturing,Canada,Active
-34487,CUS-034487,712,Calhoun and Sons,Enterprise,Manufacturing,Mexico,Active
+34487,CUS-034487,712,Calhoun and Sons,Enterprise,Manufacturing,,Active
 34488,CUS-034488,207,Hernandez Ltd,Enterprise,Healthcare,Mexico,Active
 34489,CUS-034489,553,Green Ltd,Mid-Market,Manufacturing,Canada,Active
 34490,CUS-034490,229,Ruiz-Galloway,SMB,Retail,Canada,Active
@@ -34554,7 +34554,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 34553,CUS-034553,856,"Smith, Smith and Stafford",SMB,Manufacturing,Mexico,Active
 34554,CUS-034554,303,"Murphy, Serrano and Hernandez",Enterprise,Healthcare,Germany,Inactive
 34555,CUS-034555,429,Perez and Sons,Mid-Market,Healthcare,United States,Active
-34556,CUS-034556,295,Mitchell and Sons,SMB,Technology,Germany,Inactive
+34556,CUS-034556,295,Mitchell and Sons,SMB,Technology,,Inactive
 34557,CUS-034557,434,Parker-Jones,Enterprise,Technology,Germany,Inactive
 34558,CUS-034558,98,"Garcia, Rodriguez and Perkins",Mid-Market,Automotive,Mexico,Active
 34559,CUS-034559,934,"Harris, Curtis and Klein",Mid-Market,Retail,Sweden,Active
@@ -34659,7 +34659,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 34658,CUS-034658,375,"Petty, Moore and Davis",Mid-Market,Technology,Sweden,Active
 34659,CUS-034659,742,Jones Inc,Mid-Market,Manufacturing,Mexico,Active
 34660,CUS-034660,868,"Pearson, Hill and Dyer",Mid-Market,Healthcare,Mexico,Active
-34661,CUS-034661,737,Burns-Cox,Enterprise,Technology,Canada,Active
+34661,CUS-034661,737,Burns-Cox,Enterprise,Technology,,Active
 34662,CUS-034662,650,Mendez Group,Mid-Market,Manufacturing,United States,Active
 34663,CUS-034663,271,Crawford-Nelson,Enterprise,Healthcare,Sweden,Active
 34664,CUS-034664,938,"Greene, Myers and Obrien",Enterprise,Retail,Germany,Active
@@ -34727,7 +34727,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 34726,CUS-034726,876,"Williams, Jackson and Clark",Mid-Market,Healthcare,Mexico,Inactive
 34727,CUS-034727,594,Davis Ltd,Mid-Market,Healthcare,Mexico,Active
 34728,CUS-034728,972,"Maxwell, Thompson and Allen",Mid-Market,Healthcare,Mexico,Active
-34729,CUS-034729,554,Green-Abbott,SMB,Automotive,Germany,Active
+34729,CUS-034729,554,Green-Abbott,Unknown Segment,Automotive,Germany,Active
 34730,CUS-034730,858,Hall and Sons,Mid-Market,Healthcare,Mexico,Active
 34731,CUS-034731,809,Adkins PLC,SMB,Manufacturing,Sweden,Active
 34732,CUS-034732,490,Newman PLC,Mid-Market,Technology,Mexico,Active
@@ -35441,7 +35441,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 35440,CUS-035440,944,Mejia-Donovan,Enterprise,Automotive,Canada,Inactive
 35441,CUS-035441,603,Cook Group,Mid-Market,Retail,Canada,Active
 35442,CUS-035442,40,Lozano-Ibarra,Enterprise,Retail,Canada,Active
-35443,CUS-035443,511,"Smith, Nguyen and Collins",Mid-Market,Retail,Canada,Inactive
+35443,CUS-035443,511,"Smith, Nguyen and Collins",Unknown Segment,Retail,Canada,Inactive
 35444,CUS-035444,775,Johnson-Rodriguez,Enterprise,Technology,Sweden,Active
 35445,CUS-035445,788,Perkins-Hicks,Mid-Market,Technology,Mexico,Active
 35446,CUS-035446,387,"Townsend, Simpson and Drake",SMB,Technology,Germany,Active
@@ -35800,7 +35800,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 35799,CUS-035799,75,Johnson-Patel,SMB,Technology,Mexico,Active
 35800,CUS-035800,537,Tran and Sons,Mid-Market,Healthcare,Mexico,Inactive
 35801,CUS-035801,595,Morris LLC,Mid-Market,Manufacturing,United States,Inactive
-35802,CUS-035802,247,Hammond PLC,Mid-Market,Manufacturing,Germany,Active
+35802,CUS-035802,247,Hammond PLC,Mid-Market,Manufacturing,,Active
 35803,CUS-035803,195,Crawford-Chandler,Mid-Market,Healthcare,Sweden,Active
 35804,CUS-035804,607,Pacheco PLC,Mid-Market,Retail,Canada,Active
 35805,CUS-035805,436,Williams Ltd,SMB,Technology,United States,Inactive
@@ -36217,7 +36217,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 36216,CUS-036216,261,"James, Crawford and Alexander",Enterprise,Healthcare,Mexico,Active
 36217,CUS-036217,854,"Hendricks, Bell and Fuller",Mid-Market,Retail,Mexico,Active
 36218,CUS-036218,67,Guzman-Montgomery,Mid-Market,Healthcare,Sweden,Active
-36219,CUS-036219,840,"Neal, Mitchell and Owen",Enterprise,Technology,Canada,Active
+36219,CUS-036219,840,"Neal, Mitchell and Owen",Unknown Segment,Technology,Canada,Active
 36220,CUS-036220,946,Woods-Scott,Mid-Market,Healthcare,Mexico,Active
 36221,CUS-036221,703,Peterson LLC,SMB,Automotive,Mexico,Active
 36222,CUS-036222,624,"Macdonald, Choi and Goodwin",Mid-Market,Healthcare,Sweden,Active
@@ -36352,7 +36352,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 36351,CUS-036351,425,"Wilson, Santiago and Randolph",Mid-Market,Technology,Canada,Active
 36352,CUS-036352,669,Navarro Ltd,Mid-Market,Healthcare,Sweden,Active
 36353,CUS-036353,427,Peters-Harrison,Enterprise,Technology,United States,Active
-36354,CUS-036354,915,"Thomas, Montes and Ray",Mid-Market,Retail,Sweden,Active
+36354,CUS-036354,915,"Thomas, Montes and Ray",Mid-Market,Retail,,Active
 36355,CUS-036355,908,Wilson and Sons,SMB,Technology,Germany,Inactive
 36356,CUS-036356,645,"Davis, Bell and Lopez",Enterprise,Manufacturing,United States,Active
 36357,CUS-036357,459,Ramirez LLC,Enterprise,Healthcare,United States,Active
@@ -36380,7 +36380,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 36379,CUS-036379,868,Hamilton Group,SMB,Retail,United States,Active
 36380,CUS-036380,520,Hernandez-Atkinson,Mid-Market,Automotive,Mexico,Active
 36381,CUS-036381,870,Greene Group,SMB,Manufacturing,Mexico,Active
-36382,CUS-036382,937,"Petersen, Gilbert and Boyd",SMB,Manufacturing,Germany,Active
+36382,CUS-036382,937,"Petersen, Gilbert and Boyd",SMB,Manufacturing,,Active
 36383,CUS-036383,873,Woodard-Lewis,Enterprise,Automotive,Sweden,Active
 36384,CUS-036384,163,"Andrade, Gordon and Love",Enterprise,Automotive,United States,Active
 36385,CUS-036385,207,Bernard-Hernandez,SMB,Automotive,Germany,Active
@@ -36530,7 +36530,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 36529,CUS-036529,956,Hernandez-Murray,Mid-Market,Retail,Mexico,Active
 36530,CUS-036530,121,"Soto, Taylor and Brown",Enterprise,Retail,Sweden,Active
 36531,CUS-036531,240,Solis and Sons,Enterprise,Retail,Germany,Active
-36532,CUS-036532,984,Coleman-Barrett,Mid-Market,Healthcare,Germany,Active
+36532,CUS-036532,984,Coleman-Barrett,Unknown Segment,Healthcare,Germany,Active
 36533,CUS-036533,506,Lopez LLC,Mid-Market,Manufacturing,Germany,Active
 36534,CUS-036534,834,"Mays, Ramirez and Berry",Enterprise,Manufacturing,United States,Active
 36535,CUS-036535,15,Hood PLC,Mid-Market,Manufacturing,Germany,Inactive
@@ -37305,7 +37305,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 37304,CUS-037304,976,"Thompson, Miller and Garza",SMB,Retail,Germany,Active
 37305,CUS-037305,239,Flores-Ross,Enterprise,Retail,Mexico,Active
 37306,CUS-037306,859,"Hall, Bowman and Gallagher",SMB,Healthcare,United States,Active
-37307,CUS-037307,117,Carr PLC,SMB,Technology,Mexico,Active
+37307,CUS-037307,117,Carr PLC,SMB,Technology,,Active
 37308,CUS-037308,233,Clark PLC,SMB,Retail,United States,Inactive
 37309,CUS-037309,529,"Moore, Norman and Walker",Enterprise,Retail,Sweden,Active
 37310,CUS-037310,529,"Ponce, Walker and Carrillo",SMB,Healthcare,Germany,Active
@@ -37508,7 +37508,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 37507,CUS-037507,161,"Villa, Ingram and Graham",Mid-Market,Technology,United States,Active
 37508,CUS-037508,404,"Johnson, Davis and Baker",Mid-Market,Manufacturing,Sweden,Active
 37509,CUS-037509,290,Torres-Mcdonald,Enterprise,Technology,Mexico,Active
-37510,CUS-037510,557,Morrison Inc,SMB,Automotive,Germany,Active
+37510,CUS-037510,557,Morrison Inc,SMB,Automotive,,Active
 37511,CUS-037511,158,"Aguilar, Clark and Harris",Mid-Market,Healthcare,Canada,Active
 37512,CUS-037512,120,Wade and Sons,SMB,Manufacturing,Mexico,Active
 37513,CUS-037513,697,Greer-Schmidt,Mid-Market,Healthcare,Mexico,Active
@@ -37983,7 +37983,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 37982,CUS-037982,167,"Knapp, King and Riddle",Mid-Market,Retail,Germany,Active
 37983,CUS-037983,847,Lee and Sons,SMB,Healthcare,Germany,Active
 37984,CUS-037984,566,"Singh, Gonzalez and Carpenter",SMB,Manufacturing,Mexico,Active
-37985,CUS-037985,48,Craig Ltd,Enterprise,Technology,United States,Active
+37985,CUS-037985,48,Craig Ltd,Enterprise,Technology,,Active
 37986,CUS-037986,921,Wood-Fleming,SMB,Retail,United States,Active
 37987,CUS-037987,526,Anderson-Jones,Mid-Market,Automotive,United States,Inactive
 37988,CUS-037988,913,Schultz PLC,Enterprise,Healthcare,Mexico,Active
@@ -38356,7 +38356,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 38355,CUS-038355,800,Love Inc,SMB,Retail,United States,Active
 38356,CUS-038356,102,Bailey-Horn,SMB,Technology,Canada,Active
 38357,CUS-038357,555,Ferrell-Combs,SMB,Manufacturing,Germany,Active
-38358,CUS-038358,88,"Miller, Burke and Fritz",Mid-Market,Technology,United States,Inactive
+38358,CUS-038358,88,"Miller, Burke and Fritz",Mid-Market,Technology,,Inactive
 38359,CUS-038359,301,Cunningham PLC,Enterprise,Automotive,United States,Active
 38360,CUS-038360,493,Tran Ltd,Mid-Market,Automotive,Sweden,Active
 38361,CUS-038361,682,Harrington-Baird,SMB,Manufacturing,United States,Active
@@ -38567,7 +38567,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 38566,CUS-038566,527,"Young, Collins and Young",Enterprise,Automotive,Germany,Active
 38567,CUS-038567,731,Forbes Inc,Mid-Market,Manufacturing,Canada,Active
 38568,CUS-038568,776,"Johnson, Wagner and Garcia",SMB,Healthcare,United States,Active
-38569,CUS-038569,180,Mueller Ltd,SMB,Technology,Sweden,Active
+38569,CUS-038569,180,Mueller Ltd,SMB,Technology,,Active
 38570,CUS-038570,804,"Sweeney, Hanson and Brown",Mid-Market,Manufacturing,Canada,Active
 38571,CUS-038571,895,Smith-Wright,SMB,Manufacturing,Germany,Active
 38572,CUS-038572,839,Rice-Rowe,Enterprise,Technology,Mexico,Active
@@ -38890,7 +38890,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 38889,CUS-038889,970,Smith Ltd,Mid-Market,Retail,United States,Active
 38890,CUS-038890,194,"Evans, Hampton and Green",Enterprise,Technology,Mexico,Active
 38891,CUS-038891,730,"Day, Jensen and Taylor",Enterprise,Manufacturing,Sweden,Active
-38892,CUS-038892,827,Cruz Ltd,Mid-Market,Retail,Germany,Active
+38892,CUS-038892,827,Cruz Ltd,Unknown Segment,Retail,Germany,Active
 38893,CUS-038893,719,Schmitt Ltd,SMB,Manufacturing,Sweden,Active
 38894,CUS-038894,981,Buchanan Inc,SMB,Automotive,United States,Active
 38895,CUS-038895,435,Perez Group,Mid-Market,Manufacturing,Germany,Active
@@ -38927,7 +38927,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 38926,CUS-038926,228,Howard-Burton,SMB,Healthcare,Sweden,Active
 38927,CUS-038927,584,Montoya and Sons,Mid-Market,Healthcare,Canada,Active
 38928,CUS-038928,18,Johnson and Sons,SMB,Manufacturing,Canada,Active
-38929,CUS-038929,490,Robinson-Munoz,Enterprise,Retail,Germany,Active
+38929,CUS-038929,490,Robinson-Munoz,Enterprise,Retail,,Active
 38930,CUS-038930,568,Lawrence-Stephens,SMB,Retail,Mexico,Active
 38931,CUS-038931,57,Madden-Wallace,Enterprise,Healthcare,Germany,Active
 38932,CUS-038932,203,Barker Group,SMB,Retail,United States,Active
@@ -39937,7 +39937,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 39936,CUS-039936,37,"Castillo, Turner and Ward",Mid-Market,Technology,Canada,Active
 39937,CUS-039937,799,"Lara, Rosales and George",Mid-Market,Retail,Germany,Active
 39938,CUS-039938,133,"Escobar, Rice and Crawford",Enterprise,Technology,Sweden,Inactive
-39939,CUS-039939,291,"Ruiz, Berg and Wilson",SMB,Healthcare,Germany,Active
+39939,CUS-039939,291,"Ruiz, Berg and Wilson",SMB,Healthcare,,Active
 39940,CUS-039940,548,Lopez LLC,SMB,Manufacturing,Mexico,Active
 39941,CUS-039941,681,"Williams, Rangel and Evans",SMB,Manufacturing,Canada,Active
 39942,CUS-039942,91,Mitchell-Schwartz,Mid-Market,Technology,Sweden,Active
@@ -40558,7 +40558,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 40557,CUS-040557,35,Krause-Neal,Enterprise,Healthcare,Sweden,Active
 40558,CUS-040558,168,Williams-Welch,Mid-Market,Healthcare,Sweden,Active
 40559,CUS-040559,638,Wilson-Williams,Enterprise,Technology,United States,Active
-40560,CUS-040560,674,Meza-Marshall,SMB,Retail,Germany,Inactive
+40560,CUS-040560,674,Meza-Marshall,SMB,Retail,,Inactive
 40561,CUS-040561,153,Cole and Sons,Mid-Market,Retail,Mexico,Inactive
 40562,CUS-040562,188,Smith-Wright,Mid-Market,Automotive,Mexico,Active
 40563,CUS-040563,859,Rodriguez LLC,SMB,Manufacturing,United States,Active
@@ -40854,7 +40854,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 40853,CUS-040853,501,"Robertson, Meadows and Montgomery",Mid-Market,Healthcare,Mexico,Active
 40854,CUS-040854,93,"Kelly, Olson and Parrish",Mid-Market,Manufacturing,Canada,Active
 40855,CUS-040855,404,Watts-Johnson,Enterprise,Automotive,Canada,Active
-40856,CUS-040856,711,Oconnor Group,SMB,Healthcare,Germany,Active
+40856,CUS-040856,711,Oconnor Group,SMB,Healthcare,,Active
 40857,CUS-040857,422,Guerrero PLC,Enterprise,Automotive,Canada,Active
 40858,CUS-040858,395,Mathews-Brown,SMB,Retail,Sweden,Active
 40859,CUS-040859,841,"Callahan, English and Reid",Mid-Market,Manufacturing,Canada,Active
@@ -41064,7 +41064,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 41063,CUS-041063,107,Lee Inc,Enterprise,Technology,Canada,Active
 41064,CUS-041064,811,"Moody, Romero and Crawford",Mid-Market,Manufacturing,Germany,Active
 41065,CUS-041065,699,Snyder LLC,SMB,Technology,Canada,Active
-41066,CUS-041066,127,"Ferguson, Jones and Ward",Enterprise,Retail,Mexico,Active
+41066,CUS-041066,127,"Ferguson, Jones and Ward",Unknown Segment,Retail,Mexico,Active
 41067,CUS-041067,916,Douglas-Good,SMB,Technology,Canada,Active
 41068,CUS-041068,163,"Gilbert, Graham and Hahn",Enterprise,Healthcare,Sweden,Inactive
 41069,CUS-041069,161,"Rogers, Johnson and Smith",Enterprise,Retail,Sweden,Active
@@ -41173,7 +41173,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 41172,CUS-041172,379,"Gonzales, Jones and Monroe",Mid-Market,Automotive,Canada,Active
 41173,CUS-041173,3,Black Inc,Mid-Market,Manufacturing,Canada,Active
 41174,CUS-041174,927,Scott PLC,Mid-Market,Retail,Germany,Active
-41175,CUS-041175,741,"Schmidt, Gutierrez and Klein",Enterprise,Manufacturing,Sweden,Active
+41175,CUS-041175,741,"Schmidt, Gutierrez and Klein",Unknown Segment,Manufacturing,Sweden,Active
 41176,CUS-041176,724,Walton-Evans,SMB,Healthcare,Mexico,Inactive
 41177,CUS-041177,548,"Duncan, Waters and Rice",Enterprise,Healthcare,Germany,Active
 41178,CUS-041178,761,Cuevas-Johnson,SMB,Automotive,United States,Inactive
@@ -41269,7 +41269,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 41268,CUS-041268,687,Ramos-Robinson,Mid-Market,Technology,Germany,Active
 41269,CUS-041269,575,Williams-Fuller,SMB,Manufacturing,Sweden,Active
 41270,CUS-041270,522,Garcia PLC,Mid-Market,Retail,Mexico,Active
-41271,CUS-041271,314,"Shah, Evans and Walters",Mid-Market,Automotive,Germany,Active
+41271,CUS-041271,314,"Shah, Evans and Walters",Mid-Market,Automotive,,Active
 41272,CUS-041272,351,Fritz-Golden,Mid-Market,Technology,United States,Active
 41273,CUS-041273,124,"Daniels, Fuentes and Middleton",SMB,Technology,Sweden,Active
 41274,CUS-041274,721,Aguirre-Pena,SMB,Retail,Canada,Active
@@ -41592,7 +41592,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 41591,CUS-041591,338,Ford Ltd,SMB,Manufacturing,Germany,Active
 41592,CUS-041592,760,Higgins Ltd,Mid-Market,Healthcare,Mexico,Active
 41593,CUS-041593,277,Brown PLC,SMB,Manufacturing,Germany,Inactive
-41594,CUS-041594,392,"James, Crosby and Werner",Enterprise,Automotive,Sweden,Active
+41594,CUS-041594,392,"James, Crosby and Werner",Enterprise,Automotive,,Active
 41595,CUS-041595,70,Wilson and Sons,SMB,Technology,Germany,Active
 41596,CUS-041596,252,"Rojas, Jones and Wilson",Mid-Market,Automotive,United States,Active
 41597,CUS-041597,69,Hamilton and Sons,Mid-Market,Automotive,Sweden,Active
@@ -42539,7 +42539,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 42538,CUS-042538,410,"Wood, Kennedy and Wright",SMB,Healthcare,United States,Active
 42539,CUS-042539,497,Rivera Group,Mid-Market,Manufacturing,Mexico,Active
 42540,CUS-042540,921,Gross-Scott,Enterprise,Automotive,Canada,Inactive
-42541,CUS-042541,808,Fields Group,SMB,Healthcare,Mexico,Active
+42541,CUS-042541,808,Fields Group,SMB,Healthcare,,Active
 42542,CUS-042542,181,"Cooper, Green and Chan",Mid-Market,Retail,Sweden,Active
 42543,CUS-042543,278,"Cunningham, Francis and Young",Enterprise,Healthcare,United States,Active
 42544,CUS-042544,186,"Atkins, Anderson and Johnson",Enterprise,Healthcare,Mexico,Active
@@ -42675,7 +42675,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 42674,CUS-042674,422,Chavez-Simpson,Enterprise,Technology,Germany,Active
 42675,CUS-042675,285,Davidson PLC,Enterprise,Automotive,Germany,Active
 42676,CUS-042676,785,Crawford-Nelson,Mid-Market,Automotive,Sweden,Active
-42677,CUS-042677,58,"Harris, Bailey and Ward",SMB,Manufacturing,Canada,Active
+42677,CUS-042677,58,"Harris, Bailey and Ward",Unknown Segment,Manufacturing,Canada,Active
 42678,CUS-042678,600,Clark-Roman,Enterprise,Automotive,Canada,Active
 42679,CUS-042679,794,Robertson-Smith,Mid-Market,Technology,Germany,Active
 42680,CUS-042680,2,"Shields, Kelley and Davis",Enterprise,Healthcare,Germany,Active
@@ -42780,7 +42780,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 42779,CUS-042779,621,"Oliver, Brewer and Valencia",Mid-Market,Automotive,United States,Active
 42780,CUS-042780,154,"Torres, Fuller and West",Mid-Market,Retail,Mexico,Active
 42781,CUS-042781,4,Lopez PLC,Mid-Market,Manufacturing,United States,Active
-42782,CUS-042782,521,Norris-Allen,Mid-Market,Technology,United States,Active
+42782,CUS-042782,521,Norris-Allen,Mid-Market,Technology,,Active
 42783,CUS-042783,149,Estrada Inc,Mid-Market,Automotive,Canada,Active
 42784,CUS-042784,186,"Roberts, Hodges and Daniels",Mid-Market,Automotive,Germany,Active
 42785,CUS-042785,309,Cunningham LLC,SMB,Manufacturing,Germany,Active
@@ -42880,7 +42880,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 42879,CUS-042879,628,Brooks PLC,SMB,Manufacturing,United States,Active
 42880,CUS-042880,355,Schaefer Ltd,Enterprise,Manufacturing,United States,Active
 42881,CUS-042881,273,Krueger Group,SMB,Manufacturing,United States,Active
-42882,CUS-042882,586,"Smith, Jones and Brown",SMB,Technology,Canada,Active
+42882,CUS-042882,586,"Smith, Jones and Brown",Unknown Segment,Technology,Canada,Active
 42883,CUS-042883,791,Sellers LLC,Mid-Market,Retail,Canada,Active
 42884,CUS-042884,838,Young Inc,Enterprise,Retail,Canada,Active
 42885,CUS-042885,778,Foster-Salazar,Enterprise,Healthcare,Germany,Active
@@ -43315,7 +43315,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 43314,CUS-043314,736,Lyons-Gray,Mid-Market,Retail,Mexico,Active
 43315,CUS-043315,852,"Gomez, Cowan and Moyer",Mid-Market,Automotive,Mexico,Active
 43316,CUS-043316,221,Moses-Barnett,SMB,Retail,Mexico,Active
-43317,CUS-043317,911,"Miller, Richmond and Hopkins",SMB,Technology,United States,Active
+43317,CUS-043317,911,"Miller, Richmond and Hopkins",SMB,Technology,,Active
 43318,CUS-043318,606,King-Cooper,Enterprise,Technology,Mexico,Inactive
 43319,CUS-043319,230,Arnold LLC,Mid-Market,Automotive,Canada,Active
 43320,CUS-043320,780,Martin-Martinez,SMB,Automotive,Germany,Inactive
@@ -43325,7 +43325,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 43324,CUS-043324,285,"Pratt, Sanchez and Gibson",SMB,Manufacturing,Sweden,Active
 43325,CUS-043325,757,"Campbell, Perez and Davis",SMB,Retail,Canada,Active
 43326,CUS-043326,62,Riley-Rogers,SMB,Automotive,Germany,Inactive
-43327,CUS-043327,290,"Obrien, Cowan and Nash",SMB,Technology,United States,Active
+43327,CUS-043327,290,"Obrien, Cowan and Nash",SMB,Technology,,Active
 43328,CUS-043328,320,Dorsey-Rosario,SMB,Automotive,United States,Active
 43329,CUS-043329,17,Werner-Hardy,Mid-Market,Automotive,Mexico,Active
 43330,CUS-043330,598,Marks Ltd,Mid-Market,Automotive,Mexico,Active
@@ -43353,7 +43353,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 43352,CUS-043352,150,"Montoya, Kidd and White",SMB,Technology,Sweden,Active
 43353,CUS-043353,948,Young Ltd,Mid-Market,Healthcare,Germany,Active
 43354,CUS-043354,174,"Walls, Bond and Henry",Mid-Market,Technology,Germany,Active
-43355,CUS-043355,125,Kelley Ltd,Mid-Market,Healthcare,United States,Active
+43355,CUS-043355,125,Kelley Ltd,Mid-Market,Healthcare,,Active
 43356,CUS-043356,656,"David, Allen and Jackson",Mid-Market,Healthcare,Germany,Active
 43357,CUS-043357,344,Olson and Sons,SMB,Healthcare,Canada,Active
 43358,CUS-043358,997,Moore PLC,SMB,Technology,Mexico,Active
@@ -44255,13 +44255,13 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 44254,CUS-044254,574,Cobb and Sons,Enterprise,Manufacturing,Sweden,Inactive
 44255,CUS-044255,160,Scott-Herrera,Enterprise,Technology,Sweden,Active
 44256,CUS-044256,450,Stokes Group,Mid-Market,Automotive,Mexico,Active
-44257,CUS-044257,52,"Roberts, Nichols and Perez",Mid-Market,Retail,United States,Active
+44257,CUS-044257,52,"Roberts, Nichols and Perez",Mid-Market,Retail,,Active
 44258,CUS-044258,612,"Butler, Owens and Taylor",SMB,Healthcare,Sweden,Active
 44259,CUS-044259,570,Perez and Sons,SMB,Technology,Canada,Active
 44260,CUS-044260,27,Anderson LLC,SMB,Manufacturing,United States,Active
 44261,CUS-044261,89,"Roberson, Steele and Sutton",Mid-Market,Manufacturing,Sweden,Active
 44262,CUS-044262,705,Villegas LLC,Mid-Market,Automotive,Mexico,Active
-44263,CUS-044263,900,Martin Inc,SMB,Retail,Canada,Active
+44263,CUS-044263,900,Martin Inc,SMB,Retail,,Active
 44264,CUS-044264,850,Mcdonald LLC,Mid-Market,Retail,Germany,Active
 44265,CUS-044265,568,Cain Inc,Enterprise,Manufacturing,Germany,Active
 44266,CUS-044266,525,Livingston Inc,SMB,Technology,Canada,Active
@@ -44469,7 +44469,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 44468,CUS-044468,568,"Estes, Soto and Reyes",SMB,Retail,Sweden,Active
 44469,CUS-044469,601,"Wells, Baker and Roberts",Mid-Market,Technology,Canada,Active
 44470,CUS-044470,306,Liu-Brown,Mid-Market,Automotive,Canada,Active
-44471,CUS-044471,334,Perry LLC,Enterprise,Technology,Sweden,Active
+44471,CUS-044471,334,Perry LLC,Unknown Segment,Technology,Sweden,Active
 44472,CUS-044472,541,Olson-Bailey,Mid-Market,Technology,Canada,Active
 44473,CUS-044473,199,Lane LLC,SMB,Manufacturing,Mexico,Active
 44474,CUS-044474,718,"Bryan, Martin and Harmon",Mid-Market,Technology,United States,Active
@@ -44647,7 +44647,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 44646,CUS-044646,753,Young Inc,Mid-Market,Technology,Mexico,Active
 44647,CUS-044647,365,Melendez Group,SMB,Manufacturing,Germany,Active
 44648,CUS-044648,130,"Fuentes, Frank and Williams",Mid-Market,Automotive,Germany,Active
-44649,CUS-044649,970,Taylor and Sons,Enterprise,Automotive,United States,Active
+44649,CUS-044649,970,Taylor and Sons,Enterprise,Automotive,,Active
 44650,CUS-044650,926,Cameron-Nash,Enterprise,Manufacturing,Canada,Active
 44651,CUS-044651,419,Bauer-Bowman,Enterprise,Retail,Germany,Inactive
 44652,CUS-044652,427,"Rhodes, Gonzales and Park",SMB,Manufacturing,Germany,Active
@@ -44747,7 +44747,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 44746,CUS-044746,740,Wilson and Sons,SMB,Retail,Canada,Active
 44747,CUS-044747,508,Owens-Watson,Enterprise,Retail,Sweden,Active
 44748,CUS-044748,458,Perkins Inc,SMB,Technology,Mexico,Active
-44749,CUS-044749,326,Davis Ltd,SMB,Manufacturing,Canada,Active
+44749,CUS-044749,326,Davis Ltd,Unknown Segment,Manufacturing,Canada,Active
 44750,CUS-044750,988,Black LLC,Mid-Market,Automotive,Germany,Inactive
 44751,CUS-044751,734,Ballard and Sons,SMB,Automotive,Mexico,Inactive
 44752,CUS-044752,892,"Carter, Francis and Wright",Enterprise,Manufacturing,Canada,Active
@@ -45072,7 +45072,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 45071,CUS-045071,529,"Ramos, Reed and Jackson",Mid-Market,Retail,United States,Inactive
 45072,CUS-045072,689,"Barrett, Robbins and King",Enterprise,Manufacturing,Germany,Active
 45073,CUS-045073,887,Thomas-Russell,Enterprise,Retail,Sweden,Active
-45074,CUS-045074,483,Snyder Group,Enterprise,Manufacturing,United States,Active
+45074,CUS-045074,483,Snyder Group,Enterprise,Manufacturing,,Active
 45075,CUS-045075,646,Hill LLC,Enterprise,Healthcare,Canada,Active
 45076,CUS-045076,861,Chan-Mills,SMB,Healthcare,Canada,Active
 45077,CUS-045077,432,Roberts-Choi,Enterprise,Technology,Mexico,Active
@@ -45940,7 +45940,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 45939,CUS-045939,82,Davis PLC,Mid-Market,Automotive,Mexico,Active
 45940,CUS-045940,792,"Spencer, Herman and Delacruz",Enterprise,Technology,Sweden,Active
 45941,CUS-045941,221,Mcknight-Weiss,SMB,Healthcare,Canada,Inactive
-45942,CUS-045942,899,"Ford, Keith and Sparks",Mid-Market,Technology,Germany,Active
+45942,CUS-045942,899,"Ford, Keith and Sparks",Mid-Market,Technology,,Active
 45943,CUS-045943,601,Wise Inc,Enterprise,Automotive,Canada,Active
 45944,CUS-045944,488,Douglas-Gaines,Mid-Market,Automotive,Sweden,Active
 45945,CUS-045945,930,Thomas and Sons,SMB,Healthcare,Mexico,Active
@@ -46272,7 +46272,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 46271,CUS-046271,270,Blackburn and Sons,SMB,Manufacturing,Germany,Active
 46272,CUS-046272,878,Keller-Mendoza,Enterprise,Retail,Sweden,Active
 46273,CUS-046273,140,Singh-Williams,Mid-Market,Healthcare,Mexico,Active
-46274,CUS-046274,517,Grant-Gomez,Enterprise,Manufacturing,Canada,Active
+46274,CUS-046274,517,Grant-Gomez,Unknown Segment,Manufacturing,Canada,Active
 46275,CUS-046275,401,Malone-Conway,Enterprise,Technology,Sweden,Active
 46276,CUS-046276,487,House-Kim,Enterprise,Technology,Canada,Active
 46277,CUS-046277,383,Bartlett-Acosta,Enterprise,Technology,Canada,Active
@@ -46336,7 +46336,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 46335,CUS-046335,126,Dunn-Reyes,SMB,Technology,Mexico,Active
 46336,CUS-046336,710,"Ramsey, Davis and Winters",Enterprise,Retail,Canada,Active
 46337,CUS-046337,56,Watson Inc,Mid-Market,Automotive,United States,Active
-46338,CUS-046338,845,Olson-Deleon,Mid-Market,Automotive,United States,Active
+46338,CUS-046338,845,Olson-Deleon,Mid-Market,Automotive,,Active
 46339,CUS-046339,326,Mckinney-Wagner,Enterprise,Technology,Germany,Active
 46340,CUS-046340,519,Rose-Vasquez,SMB,Automotive,Mexico,Active
 46341,CUS-046341,229,"Mason, Rivera and Baxter",Enterprise,Manufacturing,Canada,Active
@@ -46356,7 +46356,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 46355,CUS-046355,359,Brady Ltd,Enterprise,Healthcare,Mexico,Active
 46356,CUS-046356,677,Moore and Sons,Enterprise,Automotive,Canada,Active
 46357,CUS-046357,458,West and Sons,SMB,Retail,Canada,Active
-46358,CUS-046358,586,Farmer-Hardy,Enterprise,Manufacturing,Sweden,Active
+46358,CUS-046358,586,Farmer-Hardy,Enterprise,Manufacturing,,Active
 46359,CUS-046359,905,Mayo and Sons,Enterprise,Retail,Germany,Active
 46360,CUS-046360,326,Vincent Inc,Mid-Market,Manufacturing,Canada,Active
 46361,CUS-046361,815,Russo Group,Mid-Market,Retail,United States,Active
@@ -47076,7 +47076,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 47075,CUS-047075,807,Morris Group,Mid-Market,Healthcare,Mexico,Active
 47076,CUS-047076,325,Gilbert Group,Mid-Market,Manufacturing,Mexico,Active
 47077,CUS-047077,713,Jackson-Villarreal,Enterprise,Retail,Canada,Active
-47078,CUS-047078,333,Barry-Gaines,Mid-Market,Retail,Sweden,Active
+47078,CUS-047078,333,Barry-Gaines,Unknown Segment,Retail,Sweden,Active
 47079,CUS-047079,608,Collier LLC,Mid-Market,Automotive,Canada,Active
 47080,CUS-047080,954,Morgan-Mann,Mid-Market,Healthcare,Canada,Active
 47081,CUS-047081,754,George Group,Enterprise,Retail,Mexico,Active
@@ -47090,7 +47090,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 47089,CUS-047089,840,Bender and Sons,Enterprise,Technology,Mexico,Active
 47090,CUS-047090,469,Cole-Gibson,SMB,Manufacturing,United States,Active
 47091,CUS-047091,527,Nguyen-Tran,Mid-Market,Automotive,Canada,Active
-47092,CUS-047092,541,Mccann-Patterson,Mid-Market,Retail,Mexico,Active
+47092,CUS-047092,541,Mccann-Patterson,Mid-Market,Retail,,Active
 47093,CUS-047093,737,"Castillo, Booth and Lewis",SMB,Healthcare,Sweden,Active
 47094,CUS-047094,53,Church Ltd,SMB,Manufacturing,Sweden,Active
 47095,CUS-047095,827,"Padilla, Peterson and Perez",SMB,Automotive,United States,Active
@@ -47168,7 +47168,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 47167,CUS-047167,991,Ford-Dominguez,Mid-Market,Technology,Germany,Active
 47168,CUS-047168,248,"Jacobs, Rivera and Brown",Enterprise,Healthcare,Sweden,Active
 47169,CUS-047169,195,Harris LLC,Enterprise,Retail,Sweden,Active
-47170,CUS-047170,931,Sparks Group,SMB,Healthcare,Sweden,Active
+47170,CUS-047170,931,Sparks Group,SMB,Healthcare,,Active
 47171,CUS-047171,358,Wells Group,Mid-Market,Manufacturing,Sweden,Active
 47172,CUS-047172,296,Brown-Brennan,Mid-Market,Retail,Germany,Active
 47173,CUS-047173,720,Buckley Group,Mid-Market,Manufacturing,Canada,Active
@@ -47221,7 +47221,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 47220,CUS-047220,206,"Jones, Tran and Owens",Enterprise,Manufacturing,United States,Active
 47221,CUS-047221,818,Scott-Whitney,Enterprise,Healthcare,United States,Active
 47222,CUS-047222,261,Myers-Woods,Mid-Market,Healthcare,Canada,Active
-47223,CUS-047223,336,"Lee, Hoffman and Smith",Mid-Market,Retail,Mexico,Inactive
+47223,CUS-047223,336,"Lee, Hoffman and Smith",Mid-Market,Retail,,Inactive
 47224,CUS-047224,673,Hunter-Castillo,Enterprise,Retail,United States,Active
 47225,CUS-047225,747,Brown and Sons,Mid-Market,Manufacturing,Mexico,Active
 47226,CUS-047226,960,Cunningham Ltd,Mid-Market,Automotive,Mexico,Active
@@ -47751,7 +47751,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 47750,CUS-047750,755,"Eaton, Allen and Waller",Mid-Market,Healthcare,Mexico,Active
 47751,CUS-047751,496,Schaefer-Walker,SMB,Manufacturing,United States,Active
 47752,CUS-047752,315,"Johnson, Giles and Acevedo",Enterprise,Healthcare,Mexico,Active
-47753,CUS-047753,289,Lara-Jones,SMB,Retail,Canada,Active
+47753,CUS-047753,289,Lara-Jones,Unknown Segment,Retail,Canada,Active
 47754,CUS-047754,450,"Leblanc, Kelly and Williams",Enterprise,Automotive,Sweden,Active
 47755,CUS-047755,81,"Alexander, Wong and Smith",SMB,Automotive,Germany,Active
 47756,CUS-047756,651,Washington Group,SMB,Healthcare,United States,Active
@@ -47813,7 +47813,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 47812,CUS-047812,779,Kirby LLC,Mid-Market,Retail,Canada,Inactive
 47813,CUS-047813,837,"Hurley, Bryant and Ross",Mid-Market,Retail,Mexico,Active
 47814,CUS-047814,470,"Cox, Kelly and Larson",Mid-Market,Technology,Sweden,Active
-47815,CUS-047815,669,"Smith, Little and King",SMB,Technology,Canada,Active
+47815,CUS-047815,669,"Smith, Little and King",SMB,Technology,,Active
 47816,CUS-047816,580,Salazar-Willis,Mid-Market,Manufacturing,Germany,Active
 47817,CUS-047817,690,Anderson-Williams,Mid-Market,Automotive,Canada,Active
 47818,CUS-047818,686,Shaw Group,Mid-Market,Automotive,Germany,Inactive
@@ -47996,7 +47996,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 47995,CUS-047995,480,Gallagher LLC,Enterprise,Technology,Canada,Active
 47996,CUS-047996,991,Garza-Mcguire,Enterprise,Healthcare,Sweden,Active
 47997,CUS-047997,701,Dawson-Porter,SMB,Technology,United States,Active
-47998,CUS-047998,741,"Gutierrez, Johnson and Phillips",Enterprise,Technology,United States,Active
+47998,CUS-047998,741,"Gutierrez, Johnson and Phillips",Enterprise,Technology,,Active
 47999,CUS-047999,149,Ryan Inc,Enterprise,Retail,United States,Active
 48000,CUS-048000,568,Holder-Davis,Mid-Market,Healthcare,Canada,Active
 48001,CUS-048001,739,West-Torres,Enterprise,Retail,Mexico,Active
@@ -48294,7 +48294,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 48293,CUS-048293,174,Andrews LLC,Enterprise,Automotive,United States,Active
 48294,CUS-048294,154,Smith-Cox,SMB,Retail,Mexico,Inactive
 48295,CUS-048295,245,Robertson PLC,Enterprise,Technology,Sweden,Inactive
-48296,CUS-048296,756,Ray-Robertson,SMB,Technology,Canada,Active
+48296,CUS-048296,756,Ray-Robertson,SMB,Technology,,Active
 48297,CUS-048297,94,Campbell-Reid,Enterprise,Automotive,Mexico,Active
 48298,CUS-048298,668,Porter-Mejia,Mid-Market,Healthcare,Canada,Active
 48299,CUS-048299,382,"Morgan, Nichols and Johnson",Enterprise,Healthcare,Sweden,Active
@@ -48486,7 +48486,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 48485,CUS-048485,673,"Hampton, Meyers and Miller",Mid-Market,Technology,Mexico,Active
 48486,CUS-048486,1,Huff LLC,Mid-Market,Retail,Sweden,Active
 48487,CUS-048487,456,Benitez Ltd,Enterprise,Technology,Canada,Active
-48488,CUS-048488,546,"Andrews, Copeland and Kelley",Enterprise,Manufacturing,United States,Active
+48488,CUS-048488,546,"Andrews, Copeland and Kelley",Enterprise,Manufacturing,,Active
 48489,CUS-048489,981,"Haynes, Leonard and Johnston",SMB,Manufacturing,Mexico,Inactive
 48490,CUS-048490,660,"Cooper, Meyer and Farley",Mid-Market,Retail,United States,Active
 48491,CUS-048491,181,Anderson-Newton,SMB,Technology,Mexico,Active
@@ -48932,7 +48932,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 48931,CUS-048931,52,"Willis, Shaw and Obrien",Enterprise,Manufacturing,United States,Active
 48932,CUS-048932,395,Taylor Inc,Mid-Market,Retail,Canada,Active
 48933,CUS-048933,315,Taylor LLC,Enterprise,Manufacturing,Sweden,Active
-48934,CUS-048934,398,Shah-Lloyd,Mid-Market,Automotive,Mexico,Active
+48934,CUS-048934,398,Shah-Lloyd,Unknown Segment,Automotive,Mexico,Active
 48935,CUS-048935,383,Guzman LLC,Enterprise,Manufacturing,Germany,Active
 48936,CUS-048936,177,Thomas-West,Enterprise,Automotive,Mexico,Inactive
 48937,CUS-048937,965,"Berry, Evans and Roberts",SMB,Automotive,Germany,Active
@@ -49807,7 +49807,7 @@ customer_key,customer_id,account_key,customer_name,customer_segment,industry,cou
 49806,CUS-049806,692,Simmons-Davenport,Mid-Market,Manufacturing,Canada,Active
 49807,CUS-049807,379,"Logan, Gay and Gonzalez",SMB,Technology,Canada,Active
 49808,CUS-049808,711,Taylor PLC,Mid-Market,Automotive,United States,Active
-49809,CUS-049809,404,"Lin, Novak and Warren",SMB,Manufacturing,Sweden,Active
+49809,CUS-049809,404,"Lin, Novak and Warren",SMB,Manufacturing,,Active
 49810,CUS-049810,195,Barnes-Le,SMB,Manufacturing,United States,Active
 49811,CUS-049811,147,Finley-Barnett,Mid-Market,Automotive,Sweden,Active
 49812,CUS-049812,546,Brown-Flowers,Mid-Market,Healthcare,Mexico,Active

@@ -379,7 +379,7 @@ product_key,product_id,supplier_key,product_name,category,subcategory,unit_of_me
 378,PROD-000378,426,Atlas Product 378,Components,Standard,Kg,187.0,286.96,Active
 379,PROD-000379,963,Atlas Product 379,Industrial Equipment,Premium,Liter,485.18,686.33,Inactive
 380,PROD-000380,411,Atlas Product 380,Components,Premium,Liter,244.63,531.91,Active
-381,PROD-000381,412,Atlas Product 381,Raw Materials,Premium,Kg,467.62,1021.49,Active
+381,PROD-000381,412,Atlas Product 381,Raw Materials,,Kg,467.62,1021.49,Active
 382,PROD-000382,165,Atlas Product 382,Components,Standard,Each,211.16,280.24,Active
 383,PROD-000383,422,Atlas Product 383,Electronics,Standard,Each,203.95,482.19,Active
 384,PROD-000384,845,Atlas Product 384,Raw Materials,Standard,Each,147.63,338.04,Active
@@ -1877,8 +1877,8 @@ product_key,product_id,supplier_key,product_name,category,subcategory,unit_of_me
 1876,PROD-001876,540,Atlas Product 1876,Raw Materials,Standard,Each,299.32,690.5,Active
 1877,PROD-001877,598,Atlas Product 1877,Raw Materials,Premium,Kg,45.26,107.65,Inactive
 1878,PROD-001878,624,Atlas Product 1878,Packaging,Specialty,Liter,199.49,355.76,Active
-1879,PROD-001879,99,Atlas Product 1879,Electronics,Premium,Meter,352.39,735.65,Active
-1880,PROD-001880,463,Atlas Product 1880,Raw Materials,Premium,Liter,470.69,710.21,Inactive
+1879,PROD-001879,99,Atlas Product 1879,Electronics,,Meter,352.39,735.65,Active
+1880,PROD-001880,463,Atlas Product 1880,Raw Materials,,Liter,470.69,710.21,Inactive
 1881,PROD-001881,101,Atlas Product 1881,Components,Specialty,Liter,349.69,781.25,Active
 1882,PROD-001882,94,Atlas Product 1882,Packaging,Standard,Liter,123.74,299.47,Active
 1883,PROD-001883,563,Atlas Product 1883,Packaging,Standard,Liter,455.5,715.72,Active
@@ -1977,7 +1977,7 @@ product_key,product_id,supplier_key,product_name,category,subcategory,unit_of_me
 1976,PROD-001976,145,Atlas Product 1976,Components,Standard,Meter,127.29,159.3,Active
 1977,PROD-001977,720,Atlas Product 1977,Industrial Equipment,Premium,Liter,174.6,250.48,Active
 1978,PROD-001978,915,Atlas Product 1978,Components,Standard,Kg,309.35,475.24,Active
-1979,PROD-001979,642,Atlas Product 1979,Raw Materials,Standard,Meter,432.52,580.92,Active
+1979,PROD-001979,642,Atlas Product 1979,Raw Materials,,Meter,432.52,580.92,Active
 1980,PROD-001980,506,Atlas Product 1980,Industrial Equipment,Specialty,Kg,266.33,611.34,Inactive
 1981,PROD-001981,192,Atlas Product 1981,Raw Materials,Premium,Kg,468.93,966.23,Active
 1982,PROD-001982,190,Atlas Product 1982,Electronics,Standard,Meter,328.33,585.14,Active
@@ -2333,7 +2333,7 @@ product_key,product_id,supplier_key,product_name,category,subcategory,unit_of_me
 2332,PROD-002332,691,Atlas Product 2332,Components,Premium,Liter,403.32,719.0,Active
 2333,PROD-002333,409,Atlas Product 2333,Packaging,Standard,Kg,435.48,964.8,Inactive
 2334,PROD-002334,225,Atlas Product 2334,Electronics,Specialty,Each,323.78,674.01,Active
-2335,PROD-002335,540,Atlas Product 2335,Industrial Equipment,Specialty,Each,487.19,1216.64,Active
+2335,PROD-002335,540,Atlas Product 2335,Industrial Equipment,,Each,487.19,1216.64,Active
 2336,PROD-002336,163,Atlas Product 2336,Packaging,Standard,Kg,34.1,72.28,Active
 2337,PROD-002337,744,Atlas Product 2337,Raw Materials,Specialty,Meter,248.6,332.83,Active
 2338,PROD-002338,136,Atlas Product 2338,Electronics,Standard,Meter,204.91,338.32,Active
@@ -2564,7 +2564,7 @@ product_key,product_id,supplier_key,product_name,category,subcategory,unit_of_me
 2563,PROD-002563,514,Atlas Product 2563,Components,Specialty,Meter,457.24,846.86,Active
 2564,PROD-002564,776,Atlas Product 2564,Components,Premium,Meter,464.7,951.11,Active
 2565,PROD-002565,381,Atlas Product 2565,Electronics,Specialty,Liter,368.57,915.04,Active
-2566,PROD-002566,208,Atlas Product 2566,Electronics,Specialty,Meter,91.38,128.04,Active
+2566,PROD-002566,208,Atlas Product 2566,Electronics,,Meter,91.38,128.04,Active
 2567,PROD-002567,329,Atlas Product 2567,Raw Materials,Specialty,Meter,364.11,793.09,Active
 2568,PROD-002568,579,Atlas Product 2568,Packaging,Standard,Meter,356.48,780.55,Inactive
 2569,PROD-002569,834,Atlas Product 2569,Industrial Equipment,Standard,Kg,263.98,640.02,Active
@@ -3112,7 +3112,7 @@ product_key,product_id,supplier_key,product_name,category,subcategory,unit_of_me
 3111,PROD-003111,313,Atlas Product 3111,Packaging,Premium,Meter,475.56,628.78,Active
 3112,PROD-003112,584,Atlas Product 3112,Industrial Equipment,Standard,Each,130.21,275.99,Active
 3113,PROD-003113,279,Atlas Product 3113,Raw Materials,Premium,Kg,442.47,1096.3,Active
-3114,PROD-003114,781,Atlas Product 3114,Industrial Equipment,Specialty,Liter,116.27,213.85,Active
+3114,PROD-003114,781,Atlas Product 3114,Industrial Equipment,,Liter,116.27,213.85,Active
 3115,PROD-003115,496,Atlas Product 3115,Electronics,Premium,Each,434.54,1074.36,Active
 3116,PROD-003116,289,Atlas Product 3116,Electronics,Specialty,Meter,427.9,966.61,Active
 3117,PROD-003117,881,Atlas Product 3117,Raw Materials,Premium,Kg,494.99,639.02,Active
@@ -3903,7 +3903,7 @@ product_key,product_id,supplier_key,product_name,category,subcategory,unit_of_me
 3902,PROD-003902,650,Atlas Product 3902,Raw Materials,Specialty,Meter,394.51,959.32,Active
 3903,PROD-003903,571,Atlas Product 3903,Industrial Equipment,Standard,Kg,480.22,1085.89,Active
 3904,PROD-003904,72,Atlas Product 3904,Electronics,Standard,Each,479.66,752.73,Inactive
-3905,PROD-003905,375,Atlas Product 3905,Electronics,Specialty,Each,163.93,319.37,Active
+3905,PROD-003905,375,Atlas Product 3905,Electronics,,Each,163.93,319.37,Active
 3906,PROD-003906,428,Atlas Product 3906,Electronics,Premium,Meter,319.09,720.28,Active
 3907,PROD-003907,321,Atlas Product 3907,Industrial Equipment,Premium,Kg,297.37,496.08,Active
 3908,PROD-003908,353,Atlas Product 3908,Raw Materials,Premium,Each,65.59,163.78,Active
@@ -4417,7 +4417,7 @@ product_key,product_id,supplier_key,product_name,category,subcategory,unit_of_me
 4416,PROD-004416,296,Atlas Product 4416,Raw Materials,Specialty,Kg,80.19,166.43,Active
 4417,PROD-004417,899,Atlas Product 4417,Packaging,Premium,Kg,345.89,642.46,Active
 4418,PROD-004418,589,Atlas Product 4418,Packaging,Specialty,Liter,315.74,590.07,Active
-4419,PROD-004419,105,Atlas Product 4419,Raw Materials,Standard,Meter,316.98,773.87,Active
+4419,PROD-004419,105,Atlas Product 4419,Raw Materials,,Meter,316.98,773.87,Active
 4420,PROD-004420,847,Atlas Product 4420,Industrial Equipment,Premium,Each,21.84,33.49,Active
 4421,PROD-004421,445,Atlas Product 4421,Packaging,Specialty,Meter,116.14,230.0,Active
 4422,PROD-004422,904,Atlas Product 4422,Electronics,Premium,Meter,157.16,366.73,Active
@@ -4728,7 +4728,7 @@ product_key,product_id,supplier_key,product_name,category,subcategory,unit_of_me
 4727,PROD-004727,492,Atlas Product 4727,Electronics,Standard,Each,25.95,63.57,Active
 4728,PROD-004728,799,Atlas Product 4728,Industrial Equipment,Standard,Meter,356.63,823.18,Active
 4729,PROD-004729,597,Atlas Product 4729,Raw Materials,Specialty,Meter,214.69,505.79,Active
-4730,PROD-004730,592,Atlas Product 4730,Packaging,Premium,Each,164.42,362.03,Active
+4730,PROD-004730,592,Atlas Product 4730,Packaging,,Each,164.42,362.03,Active
 4731,PROD-004731,408,Atlas Product 4731,Industrial Equipment,Standard,Each,144.79,324.2,Active
 4732,PROD-004732,749,Atlas Product 4732,Electronics,Premium,Each,306.7,562.93,Active
 4733,PROD-004733,164,Atlas Product 4733,Components,Standard,Meter,273.46,510.15,Inactive

@@ -5,7 +5,7 @@ location_key,location_id,location_name,location_type,city,state_region,country,s
 4,LOC-000004,Atlas Facility 4,Plant,Christopherhaven,California,United States,Active
 5,LOC-000005,Atlas Facility 5,Distribution Center,South Paulton,Illinois,United States,Active
 6,LOC-000006,Atlas Facility 6,Office,Sandraview,Virginia,Sweden,Active
-7,LOC-000007,Atlas Facility 7,Plant,Tiffanytown,North Dakota,Sweden,Active
+7,LOC-000007,Atlas Facility 7,Temporary Facility,Tiffanytown,North Dakota,Sweden,Active
 8,LOC-000008,Atlas Facility 8,Distribution Center,Gordonview,Idaho,United States,Active
 9,LOC-000009,Atlas Facility 9,Warehouse,Rodneymouth,New York,Canada,Active
 10,LOC-000010,Atlas Facility 10,Plant,North Matthew,New York,Mexico,Active

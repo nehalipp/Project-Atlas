@@ -1,112 +1,137 @@
-# Phase 3 — Data Generation
+# Project Atlas — Data Generation
 
 ## Purpose
 
-This phase generates the clean synthetic baseline dataset for Project Atlas.
+Phase 3 creates the synthetic raw data used by Project Atlas.
 
-The data is generated with Python using:
+The data represents a commercial and industrial business covering sales,
+customers, products, suppliers, production, maintenance, finance,
+inventory, energy, emissions and waste.
+
+All data is synthetic and is intended for portfolio and analytical
+demonstration purposes.
+
+## Data Generation
+
+The datasets are generated using:
 
 - Python
 - Pandas
 - NumPy
 - Faker
 
-The generated data follows the approved Phase 2 data model and data dictionary.
+A fixed random seed (`42`) is used so the data can be reproduced.
 
-All data is synthetic and intended for portfolio, analytics, and BI development purposes.
+Date range:
 
----
+**2019-01-01 to 2025-12-31**
 
-## Files
+The generator creates 17 warehouse datasets:
+
+### Dimensions
+
+- dim_date
+- dim_account
+- dim_customer
+- dim_product
+- dim_supplier
+- dim_location
+- dim_employee
+- dim_machine
+
+### Facts
+
+- fact_sales
+- fact_production
+- fact_maintenance
+- fact_financial_transaction
+- fact_budget
+- fact_energy
+- fact_emissions
+- fact_waste
+- fact_inventory
+
+## Data Volumes
+
+The baseline generation contains approximately **1.94 million records**
+across the 17 datasets.
+
+The largest datasets include:
+
+- Sales — 500,000 baseline rows
+- Inventory — 500,000 rows
+- Financial Transactions — 300,000 baseline rows
+- Production — 200,000 baseline rows
+- Energy — 100,000 rows
+- Emissions — 100,000 rows
+- Waste — 100,000 rows
+
+## Raw Data Quality
+
+The raw layer intentionally contains controlled data-quality issues.
+
+Examples include:
+
+- Missing values
+- Duplicate records
+- Invalid references
+- Invalid domain values
+- Negative quantities or measurements
+- Revenue inconsistencies
+- Inventory reconciliation issues
+- Production rule violations
+- Outliers
+
+The issues are intentionally introduced to simulate the type of imperfect
+operational data that an analytics team may encounter before data is
+validated and prepared for reporting.
+
+The raw datasets are therefore **not trusted data**.
+
+The exact quality issues are intentionally not documented in the generation
+output. They are expected to be discovered during Phase 4 through data
+profiling and validation.
+
+## Reference Data
+
+`reference_data.xlsx` contains:
+
+- Approved categorical values
+- Business rules
+- Expected dataset volumes
+- Data-quality dimensions
+
+It provides the reference information used during data-quality validation.
+
+## Output
+
+Generated CSV files are saved to:
+
+```text
+03_Data_Generation/data/raw/
+````
+
+The raw layer is the starting point for the Phase 4 data-quality process.
+
+## Reproducibility
+
+Run:
+
+```bash
+python generate_data.py
+```
+
+The generator uses a fixed random seed (`42`) to produce reproducible
+synthetic data.
+
+## Phase 3 Deliverables
 
 ```text
 03_Data_Generation/
 ├── generate_data.py
 ├── reference_data.xlsx
-├── README.md
-└── data/
-    └── raw/
-````
-
-### generate_data.py
-
-Generates the synthetic Atlas datasets using a fixed random seed of `42`.
-
-### reference_data.xlsx
-
-Contains the controlled reference values used by the data generator, including categories, statuses, departments, product classifications, and other business values.
-
-### data/raw/
-
-Contains the generated CSV datasets.
-
----
-
-## Generated Datasets
-
-The script generates 17 datasets:
-
-### Dimensions
-
-* `dim_date.csv`
-* `dim_account.csv`
-* `dim_customer.csv`
-* `dim_product.csv`
-* `dim_supplier.csv`
-* `dim_location.csv`
-* `dim_employee.csv`
-* `dim_machine.csv`
-
-### Facts
-
-* `fact_sales.csv`
-* `fact_production.csv`
-* `fact_maintenance.csv`
-* `fact_financial_transaction.csv`
-* `fact_budget.csv`
-* `fact_energy.csv`
-* `fact_emissions.csv`
-* `fact_waste.csv`
-* `fact_inventory.csv`
-
----
-
-## Data Generation
-
-The generator uses:
-
-* Date range: `2019-01-01` to `2025-12-31`
-* Random seed: `42`
-* Reproducible synthetic data
-* Phase 2 column names and relationships
-* Approved fact-table grains
-
-The output is saved automatically to:
-
-```text
-03_Data_Generation/data/raw/
+└── README.md
 ```
 
----
-
-## How to Run
-
-From the Project Atlas repository root:
-
-```bash
-python3 03_Data_Generation/generate_data.py
-```
-
-The generated CSV files will be saved under:
-
-```text
-03_Data_Generation/data/raw/
-```
-
----
-
-## Data Quality
-
-This phase generates the clean synthetic baseline.
-
-Intentional data-quality issues are introduced and analyzed separately in **Phase 4 — Data Quality**.
+Phase 4 will profile, validate and remediate the raw datasets before they
+are used downstream.
