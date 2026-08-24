@@ -1,163 +1,132 @@
-# Project Atlas — Phase 4 Data Quality
+# Project Atlas — Data Quality Report
 
-## Purpose
+## 1. Overview
 
-Phase 4 evaluates the quality of the synthetic raw datasets generated in Phase 3 and creates trusted datasets for the downstream ETL process.
+Phase 4 validates and remediates the synthetic operational data generated in Phase 3.
 
-The assessment focuses on:
+The objective is to identify data-quality issues before the data enters the PostgreSQL warehouse and downstream analytics.
+
+The validation covers:
 
 - Completeness
 - Uniqueness
 - Validity
 - Consistency
 - Referential integrity
-- Business rules
+- Business-rule compliance
 
-The process uses simple Python and Pandas with deterministic remediation rules.
-
----
-
-## Quality Approach
-
-The raw datasets were intentionally created with a small number of controlled quality issues.
-
-The Phase 4 process:
-
-1. Loads the raw datasets.
-2. Applies data-quality rules.
-3. Remediates issues where a reliable correction is possible.
-4. Removes records that cannot be safely used.
-5. Retains unusual but potentially valid outliers for investigation.
-6. Validates the trusted datasets.
-7. Saves the trusted datasets and quality summary.
-
-The trusted datasets are the input for Phase 5 ETL.
+The process converts imperfect raw data into trusted datasets for the ETL and warehouse phases.
 
 ---
 
-## Main Quality Issues
+## 2. Data Quality Process
+
+The Phase 4 process follows:
+
+Raw Data
+↓
+Profiling
+↓
+Validation
+↓
+Remediation
+↓
+Trusted Data Validation
+↓
+Trusted Datasets
+
+The remediation rules are implemented in `data_quality.py` and are based on the Atlas data dictionary, approved business rules, and relationships defined in the data model.
+
+---
+
+## 3. Quality Checks
 
 ### Completeness
 
-Detected missing values in:
+Required fields were checked for missing values.
 
-- Customer country
-- Product subcategory
-- Supplier category
-- Maintenance type
+Blank text values in required fields were converted to NULL before validation. Required fields were then remediated using the defined business rule, such as replacing missing categorical/text values with `Unknown`.
 
-**Remediation:** Missing categorical values were replaced with `Unknown`.
+The following fields are intentionally nullable according to the Atlas data dictionary:
 
----
+- `dim_product.subcategory`
+- `fact_waste.disposal_method`
 
-### Whitespace
-
-Leading and trailing whitespace was intentionally introduced into selected text fields.
-
-Affected dimensions included:
-
-- Account name
-- Customer name
-- Employee name
-- Machine name
-- Product name
-- Supplier name
-
-**Remediation:** Leading and trailing whitespace was removed.
-
----
+NULL values in these fields are therefore treated as expected rather than as quality failures.
 
 ### Uniqueness
 
-Duplicate business records were introduced into:
+Primary keys and business identifiers were checked for duplicate values.
 
-- Sales
-- Production
-- Financial transactions
-
-**Remediation:** Duplicate records were removed using the appropriate business identifier.
-
----
-
-### Referential Integrity
-
-Invalid foreign-key references were introduced into:
-
-- Sales → Customer
-- Inventory → Product
-- Energy → Machine
-- Maintenance → Employee
-
-**Remediation:** Records containing invalid references were removed.
-
----
+Controlled duplicate records were introduced during data generation and removed during remediation.
 
 ### Validity
 
-Invalid categorical values were introduced into:
+Categorical values, dates, numeric fields, identifiers, and required text fields were validated against the approved data definitions and business rules.
 
-- Customer segment
-- Location type
-- Machine status
-- Supplier category
-
-Negative numeric values were introduced into:
-
-- Sales quantity
-- Inventory issued quantity
-- Energy consumption
-- Waste quantity
-
-**Remediation:**
-
-- Invalid categorical values were replaced with `Unknown`.
-- Records containing negative operational quantities were removed.
-
----
+Invalid categorical values were replaced with `Unknown` where an appropriate replacement was defined.
 
 ### Consistency
 
-Two reconciliation rules were applied.
+Business calculations and relationships were checked for internal consistency.
 
-#### Sales Revenue
+Examples include:
 
-Revenue was recalculated when it did not agree with the underlying sales quantity, price and discount.
+- Sales revenue reconciliation
+- Inventory closing quantity reconciliation
+- Production quantity relationships
+- Financial transaction rules
 
-#### Inventory
+Where a deterministic calculation could be corrected safely, the trusted value was recalculated.
 
-Closing inventory was recalculated using:
+### Referential Integrity
 
-`Opening Quantity + Received Quantity - Issued Quantity`
+Foreign-key relationships between dimensions and facts were validated.
 
----
+Records containing invalid foreign-key references were removed so that trusted datasets contain only valid relationships.
 
-### Production Business Rule
+### Business Rules
 
-Production defects cannot exceed production output.
+Operational business rules were applied to quantities and measures.
 
-Rule:
+Examples include:
 
-`Defect Quantity <= Produced Quantity`
+- Non-negative quantities
+- Production defect quantity cannot exceed produced quantity
+- Revenue must reconcile with transaction values
+- Inventory closing quantity must reconcile with inventory movements
 
-Records violating this rule were corrected by capping defect quantity at produced quantity.
-
----
-
-### Outliers
-
-Some unusually large production quantities and financial transaction amounts were intentionally retained.
-
-These records were not automatically removed because an outlier is not necessarily an error.
-
-**Action:** Retain for investigation.
-
-This distinction prevents potentially valid business events from being removed simply because they are unusual.
+Extreme production and financial transaction values were retained for investigation rather than automatically removed.
 
 ---
 
-## Trusted Data Result
+## 4. Main Issues Detected and Remediated
 
-| Dataset | Raw Rows | Trusted Rows | Rows Removed | Retained % |
+The generated dataset contained controlled quality issues across several domains.
+
+| Issue | Remediation |
+|---|---|
+| Leading/trailing whitespace | Trimmed text values |
+| Blank required text values | Converted blank values to NULL and filled with `Unknown` |
+| Duplicate primary keys | Removed duplicate records |
+| Invalid categorical values | Replaced with `Unknown` |
+| Negative quantities | Removed invalid records |
+| Invalid foreign keys | Removed records with invalid references |
+| Revenue reconciliation failures | Recalculated revenue |
+| Inventory reconciliation failures | Recalculated closing quantity |
+| Defect quantity greater than produced quantity | Capped defect quantity at produced quantity |
+| Production outliers | Retained for investigation |
+| Financial transaction outliers | Retained for investigation |
+
+Nullable fields were not incorrectly converted into required fields. In particular, NULL values in `dim_product.subcategory` remain valid because the field is explicitly defined as nullable in the Atlas data dictionary.
+
+---
+
+## 5. Trusted Dataset Results
+
+The final trusted datasets contain:
+
+| Dataset | Raw Rows | Trusted Rows | Rows Removed | Retained |
 |---|---:|---:|---:|---:|
 | dim_account | 1,000 | 1,000 | 0 | 100.0% |
 | dim_customer | 50,000 | 50,000 | 0 | 100.0% |
@@ -179,16 +148,37 @@ This distinction prevents potentially valid business events from being removed s
 
 ---
 
-## Quality Summary
+## 6. Final Validation
 
-The majority of the synthetic data was retained after remediation.
+The trusted datasets passed the final validation.
 
-The largest reduction occurred in `fact_sales`, where duplicate records, invalid customer references and negative quantities were removed.
+Results:
 
-The quality process also corrected data that could be safely reconciled rather than unnecessarily deleting it.
+- All expected datasets present
+- Unexpected NULL values: 0
+- Duplicate rows: 0
+- Invalid foreign-key references: 0
+- Required fields validated
+- Business rules validated
+- Expected nullable fields preserved
+- Trusted datasets successfully generated
 
-Outliers were retained separately for investigation because unusual values require business review rather than automatic deletion.
+---
 
-Detailed issue-level results are available in:
+## 7. Outcome
 
-`quality_summary.xlsx`
+Phase 4 produces trusted datasets that can be consumed by the ETL process.
+
+The trusted data is the controlled input for:
+
+```text
+Phase 4 Data Quality
+        ↓
+Phase 5 ETL
+        ↓
+Phase 6 PostgreSQL Warehouse
+        ↓
+Phase 7 Analytics
+````
+
+All quality decisions are implemented through reusable remediation rules so that the process can also handle similar data-quality issues if they occur in future generated or source data.
