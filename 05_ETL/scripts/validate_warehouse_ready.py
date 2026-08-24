@@ -287,4 +287,44 @@ for check in foreign_key_checks:
     check_foreign_key(*check)
 
 
+# --------------------------------------------------
+# 4. Nullable field validation
+# --------------------------------------------------
+
+nullable_columns = {
+    "dim_product.csv": [
+        "subcategory"
+    ],
+    "fact_waste.csv": [
+        "disposal_method"
+    ]
+}
+
+
+for file_name, allowed_columns in nullable_columns.items():
+
+    file_path = os.path.join(
+        WAREHOUSE_READY_FOLDER,
+        file_name
+    )
+
+    df = pd.read_csv(file_path)
+
+    for column in df.columns:
+
+        null_count = df[column].isna().sum()
+
+        if column in allowed_columns:
+            print(
+                f"NULL allowed - {file_name}.{column}: "
+                f"{null_count:,}"
+            )
+
+        elif null_count > 0:
+            raise ValueError(
+                f"{file_name}.{column}: "
+                f"{null_count:,} unexpected NULL values."
+            )
+
+
 print("\nWarehouse-ready validation completed successfully.")
