@@ -86,6 +86,25 @@ Total raw rows: approximately **1.94 million**.
 
 ---
 
+## Business Realism Controls
+
+The generator keeps the existing 17-table schema, keys, date range, approximate row volumes and controlled Phase 4 quality issues. The valid baseline data now includes modest business-driven variation across products, customers, locations and operational measures.
+
+Examples:
+- Location names are synthetic but business-readable rather than generic facility labels.
+- Sales demand varies by product category, customer segment, location type and month.
+- Production is generated from plant-based machines with controlled achievement and defect rates.
+- Maintenance cost and downtime vary by maintenance type and facility profile.
+- Energy, emissions and waste vary by location/business profile.
+- Financial and budget values vary by category and location type.
+- Inventory issuance and reorder points vary by product demand profile.
+
+These are distribution improvements, not schema changes. The existing downstream phases remain compatible as long as the same raw-to-warehouse column structure is retained.
+
+## Measurement Units
+
+The `reference_data.xlsx` workbook contains a `Measurement_Units` sheet. Atlas uses USD for financial measures, hours for time measures, kWh for energy consumption, kg CO2e for emissions, kg for waste, and the product-specific `unit_of_measure` for sales, production and inventory quantities.
+
 ## Controlled Raw-Data Quality Issues
 
 The raw datasets intentionally contain a small number of realistic quality problems.
