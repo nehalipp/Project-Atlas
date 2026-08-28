@@ -1,18 +1,25 @@
 -- Project Atlas
 -- Phase 7 - Financial Analysis
 
+-- ============================================================
+-- FINANCIAL PERFORMANCE BY TRANSACTION TYPE
+-- ============================================================
 
--- Financial performance by transaction type
 SELECT
     transaction_type,
     COUNT(*) AS transactions,
     SUM(transaction_amount) AS total_amount
 FROM fact_financial_transaction
-GROUP BY transaction_type
-ORDER BY total_amount DESC;
+GROUP BY
+    transaction_type
+ORDER BY
+    total_amount DESC;
 
 
--- Financial performance by category
+-- ============================================================
+-- FINANCIAL PERFORMANCE BY CATEGORY
+-- ============================================================
+
 SELECT
     transaction_type,
     transaction_category,
@@ -27,7 +34,10 @@ ORDER BY
     total_amount DESC;
 
 
--- Monthly financial trend
+-- ============================================================
+-- MONTHLY FINANCIAL TREND
+-- ============================================================
+
 SELECT
     d.year,
     d.month,
@@ -63,11 +73,16 @@ ORDER BY
     d.month;
 
 
--- Budget summary
+-- ============================================================
+-- BUDGET SUMMARY
+-- ============================================================
+
 SELECT
     budget_category,
     COUNT(*) AS budget_rows,
     SUM(budget_amount) AS budget_amount
 FROM fact_budget
-GROUP BY budget_category
-ORDER BY budget_amount DESC;
+GROUP BY
+    budget_category
+ORDER BY
+    budget_amount DESC;

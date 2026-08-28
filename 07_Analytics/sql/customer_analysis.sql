@@ -1,15 +1,22 @@
 -- Project Atlas
 -- Phase 7 - Customer Analysis
+--
+-- Customer performance analysis.
+-- Quantity metrics are analyzed by unit_of_measure.
 
--- Customer performance
+-- ============================================================
+-- CUSTOMER PERFORMANCE
+-- ============================================================
+
 SELECT
     c.customer_key,
     c.customer_id,
     c.customer_name,
     c.customer_segment,
     a.account_name,
+    s.unit_of_measure,
     COUNT(*) AS transactions,
-    SUM(s.quantity) AS units_sold,
+    SUM(s.quantity) AS quantity_sold,
     SUM(s.revenue) AS revenue,
     AVG(s.revenue) AS average_transaction_revenue
 FROM fact_sales s
@@ -22,32 +29,46 @@ GROUP BY
     c.customer_id,
     c.customer_name,
     c.customer_segment,
-    a.account_name
-ORDER BY revenue DESC;
+    a.account_name,
+    s.unit_of_measure
+ORDER BY
+    revenue DESC;
 
 
--- Customer segment performance
+-- ============================================================
+-- CUSTOMER SEGMENT PERFORMANCE
+-- ============================================================
+
 SELECT
     c.customer_segment,
+    s.unit_of_measure,
     COUNT(DISTINCT c.customer_key) AS customers,
     COUNT(*) AS transactions,
-    SUM(s.quantity) AS units_sold,
+    SUM(s.quantity) AS quantity_sold,
     SUM(s.revenue) AS revenue
 FROM fact_sales s
 JOIN dim_customer c
     ON s.customer_key = c.customer_key
-GROUP BY c.customer_segment
-ORDER BY revenue DESC;
+GROUP BY
+    c.customer_segment,
+    s.unit_of_measure
+ORDER BY
+    revenue DESC;
 
 
--- Account performance
+-- ============================================================
+-- ACCOUNT PERFORMANCE
+-- ============================================================
+
 SELECT
     a.account_key,
     a.account_id,
     a.account_name,
     a.account_type,
+    s.unit_of_measure,
     COUNT(DISTINCT c.customer_key) AS customers,
     COUNT(s.sales_key) AS transactions,
+    SUM(s.quantity) AS quantity_sold,
     SUM(s.revenue) AS revenue
 FROM dim_account a
 LEFT JOIN dim_customer c
@@ -58,5 +79,7 @@ GROUP BY
     a.account_key,
     a.account_id,
     a.account_name,
-    a.account_type
-ORDER BY revenue DESC;
+    a.account_type,
+    s.unit_of_measure
+ORDER BY
+    revenue DESC;
