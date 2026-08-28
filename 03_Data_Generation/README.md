@@ -25,7 +25,7 @@ Operational dates range from:
 
 `2019-01-01` to `2025-12-31`
 
-Reference attributes such as employee hire dates and machine installation dates are generated before the operational period.
+Reference attributes such as employee hire dates and machine installation dates are generated before the operational period. Product and machine names use business-realistic naming patterns rather than placeholder Atlas names.
 
 ---
 
@@ -82,28 +82,9 @@ The datasets follow the approved Phase 2 dimensional model.
 | fact_waste | 100,000 |
 | fact_inventory | 500,000 |
 
-Total raw rows: approximately **1.94 million**.
+Total raw rows: **1,937,657**.
 
 ---
-
-## Business Realism Controls
-
-The generator keeps the existing 17-table schema, keys, date range, approximate row volumes and controlled Phase 4 quality issues. The valid baseline data now includes modest business-driven variation across products, customers, locations and operational measures.
-
-Examples:
-- Location names are synthetic but business-readable rather than generic facility labels.
-- Sales demand varies by product category, customer segment, location type and month.
-- Production is generated from plant-based machines with controlled achievement and defect rates.
-- Maintenance cost and downtime vary by maintenance type and facility profile.
-- Energy, emissions and waste vary by location/business profile.
-- Financial and budget values vary by category and location type.
-- Inventory issuance and reorder points vary by product demand profile.
-
-These are distribution improvements, not schema changes. The existing downstream phases remain compatible as long as the same raw-to-warehouse column structure is retained.
-
-## Measurement Units
-
-The `reference_data.xlsx` workbook contains a `Measurement_Units` sheet. Atlas uses USD for financial measures, hours for time measures, kWh for energy consumption, kg CO2e for emissions, kg for waste, and the product-specific `unit_of_measure` for sales, production and inventory quantities.
 
 ## Controlled Raw-Data Quality Issues
 
@@ -142,6 +123,20 @@ Examples include:
 - Unusually large financial transactions
 
 These issues are intentional and are part of the project design.
+
+### Measurement Units
+
+Units are explicitly represented where they are required for interpreting quantitative measures:
+
+- `dim_product.unit_of_measure` — product measurement unit (`Each`, `Kg`, `Liter`, or `Meter`)
+- `fact_sales.unit_of_measure` — derived from the sold product
+- `fact_production.unit_of_measure` — derived from the produced product
+- `fact_inventory.unit_of_measure` — derived from the inventory product
+- `fact_energy.unit_of_measure` — `kWh`
+- `fact_emissions.unit_of_measure` — `kg` CO2-equivalent
+- `fact_waste.unit_of_measure` — `kg`
+
+Time-based measures such as maintenance and downtime are represented directly in hours, while financial amounts are represented as monetary amounts and do not use the generic unit-of-measure field.
 
 They simulate the type of imperfect operational data that a data analyst may encounter before data is prepared for reporting and analytics.
 

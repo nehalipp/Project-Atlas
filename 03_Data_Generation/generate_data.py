@@ -213,26 +213,6 @@ DISPOSAL_METHODS = [
     "Treatment"
 ]
 
-# ------------------------------------------------------------
-# Business realism controls
-# ------------------------------------------------------------
-# These controls change distributions without changing the Atlas
-# schema, keys, row counts, or downstream table structure.
-LOCATION_PROFILES = {
-    "Plant": {"activity": 1.35, "energy": 1.35, "emissions": 1.30, "waste": 1.20},
-    "Warehouse": {"activity": 0.85, "energy": 0.75, "emissions": 0.75, "waste": 0.75},
-    "Distribution Center": {"activity": 1.00, "energy": 0.90, "emissions": 0.90, "waste": 0.85},
-    "Office": {"activity": 0.45, "energy": 0.55, "emissions": 0.55, "waste": 0.45},
-}
-
-PRODUCT_CATEGORY_PROFILE = {
-    "Industrial Equipment": {"demand": 1.15, "complexity": 1.20, "energy": 1.25, "waste": 1.10},
-    "Components": {"demand": 1.30, "complexity": 0.95, "energy": 0.95, "waste": 0.90},
-    "Electronics": {"demand": 1.05, "complexity": 1.10, "energy": 1.15, "waste": 0.80},
-    "Packaging": {"demand": 1.25, "complexity": 0.80, "energy": 0.75, "waste": 1.25},
-    "Raw Materials": {"demand": 0.80, "complexity": 0.70, "energy": 0.90, "waste": 1.20},
-}
-
 
 # ============================================================
 # HELPER FUNCTIONS
@@ -265,6 +245,75 @@ def random_rows(dataframe, number):
         size=number,
         replace=False
     )
+
+
+# ============================================================
+# REALISTIC BUSINESS NAMING / UNITS
+# ============================================================
+
+PRODUCT_NAME_PREFIXES = {
+    "Industrial Equipment": [
+        "Hydraulic Power Unit", "Pneumatic Control Unit", "Industrial Drive System",
+        "Process Pump Assembly", "Material Handling Unit", "Thermal Processing Unit"
+    ],
+    "Components": [
+        "Precision Bearing Assembly", "Steel Coupling", "Aluminum Mounting Bracket",
+        "Drive Shaft Assembly", "Industrial Valve Assembly", "Conveyor Roller Assembly"
+    ],
+    "Electronics": [
+        "Industrial Control Module", "Variable Frequency Drive", "Proximity Sensor",
+        "Power Distribution Module", "Motor Control Panel", "Industrial Signal Converter"
+    ],
+    "Packaging": [
+        "Corrugated Shipping Carton", "Protective Packaging Insert", "Industrial Stretch Film",
+        "Pallet Wrap Assembly", "Heavy-Duty Packaging Sleeve", "Reusable Transport Crate"
+    ],
+    "Raw Materials": [
+        "Cold Rolled Steel Coil", "Aluminum Sheet Stock", "Polymer Resin",
+        "Industrial Copper Wire", "Stainless Steel Sheet", "Engineering Plastic Pellets"
+    ]
+}
+
+MACHINE_NAME_PREFIXES = {
+    "CNC Machine": [
+        "CNC Vertical Machining Center", "CNC Horizontal Machining Center",
+        "CNC Turning Center", "CNC Precision Mill"
+    ],
+    "Assembly Machine": [
+        "Automated Assembly Cell", "Servo Assembly Station",
+        "Robotic Assembly Cell", "Precision Assembly Line"
+    ],
+    "Packaging Machine": [
+        "Automated Carton Packer", "High-Speed Labeling Machine",
+        "Case Sealing System", "Flexible Packaging Line"
+    ],
+    "Press Machine": [
+        "Hydraulic Press", "Mechanical Stamping Press",
+        "Precision Forming Press", "Servo Press System"
+    ],
+    "Cutting Machine": [
+        "Laser Cutting System", "Precision Slitting Machine",
+        "Industrial Sawing Center", "CNC Plasma Cutting System"
+    ]
+}
+
+
+def make_product_names(categories, subcategories):
+    names = []
+    for i, (category, subcategory) in enumerate(zip(categories, subcategories), start=1):
+        prefix = PRODUCT_NAME_PREFIXES[category][(i - 1) % len(PRODUCT_NAME_PREFIXES[category])]
+        names.append(f"{prefix} {subcategory} Series {i:04d}")
+    return names
+
+
+def make_machine_names(machine_types):
+    names = []
+    type_counts = {}
+    for machine_type in machine_types:
+        type_counts[machine_type] = type_counts.get(machine_type, 0) + 1
+        prefix = MACHINE_NAME_PREFIXES[machine_type][(type_counts[machine_type] - 1) % len(MACHINE_NAME_PREFIXES[machine_type])]
+        names.append(f"{prefix} {type_counts[machine_type]:03d}")
+    return names
 
 
 def save_data(dataframe, name):
@@ -400,6 +449,9 @@ unit_price = np.round(
     2
 )
 
+product_categories = rng.choice(PRODUCT_CATEGORIES, N_PRODUCT)
+product_subcategories = rng.choice(PRODUCT_SUBCATEGORIES, N_PRODUCT)
+
 dim_product = pd.DataFrame({
     "product_key": range(1, N_PRODUCT + 1),
     "product_id": make_ids("PROD", N_PRODUCT),
@@ -407,18 +459,12 @@ dim_product = pd.DataFrame({
         dim_supplier["supplier_key"],
         N_PRODUCT
     ),
-    "product_name": [
-        f"Atlas Product {i}"
-        for i in range(1, N_PRODUCT + 1)
-    ],
-    "category": rng.choice(
-        PRODUCT_CATEGORIES,
-        N_PRODUCT
+    "product_name": make_product_names(
+        product_categories,
+        product_subcategories
     ),
-    "subcategory": rng.choice(
-        PRODUCT_SUBCATEGORIES,
-        N_PRODUCT
-    ),
+    "category": product_categories,
+    "subcategory": product_subcategories,
     "unit_of_measure": rng.choice(
         ["Each", "Kg", "Liter", "Meter"],
         N_PRODUCT
@@ -436,75 +482,27 @@ dim_product = pd.DataFrame({
 # -------------------------
 # dim_location
 # -------------------------
-# Synthetic, business-readable locations. We preserve the original
-# distribution of location types/countries so downstream dashboard
-# behavior does not change structurally.
-CITY_CATALOG = [
-    ("Harrisburg", "Pennsylvania", "United States"), ("York", "Pennsylvania", "United States"),
-    ("Pittsburgh", "Pennsylvania", "United States"), ("Columbus", "Ohio", "United States"),
-    ("Cleveland", "Ohio", "United States"), ("Detroit", "Michigan", "United States"),
-    ("Charlotte", "North Carolina", "United States"), ("Atlanta", "Georgia", "United States"),
-    ("Dallas", "Texas", "United States"), ("Denver", "Colorado", "United States"),
-    ("Toronto", "Ontario", "Canada"), ("Montreal", "Quebec", "Canada"),
-    ("Vancouver", "British Columbia", "Canada"), ("Calgary", "Alberta", "Canada"),
-    ("Ottawa", "Ontario", "Canada"), ("Berlin", "Berlin", "Germany"),
-    ("Hamburg", "Hamburg", "Germany"), ("Munich", "Bavaria", "Germany"),
-    ("Frankfurt", "Hesse", "Germany"), ("Stuttgart", "Baden-Württemberg", "Germany"),
-    ("Cologne", "North Rhine-Westphalia", "Germany"), ("Stockholm", "Stockholm", "Sweden"),
-    ("Gothenburg", "Västra Götaland", "Sweden"), ("Malmo", "Skane", "Sweden"),
-    ("Uppsala", "Uppsala", "Sweden"), ("Monterrey", "Nuevo Leon", "Mexico"),
-    ("Mexico City", "Mexico City", "Mexico"), ("Guadalajara", "Jalisco", "Mexico"),
-    ("Tijuana", "Baja California", "Mexico"), ("Queretaro", "Queretaro", "Mexico")
-]
-
-country_targets = {
-    "United States": 27,
-    "Canada": 15,
-    "Germany": 15,
-    "Sweden": 28,
-    "Mexico": 15
-}
-
-type_targets = {
-    "Plant": 21,
-    "Warehouse": 28,
-    "Distribution Center": 22,
-    "Office": 29
-}
-
-location_rows = []
-for country, count in country_targets.items():
-    candidates = [c for c in CITY_CATALOG if c[2] == country]
-    for i in range(count):
-        city, region, _ = candidates[i % len(candidates)]
-        location_rows.append((city, region, country))
-
-# Assign types deterministically after the city/country list is built.
-location_types = []
-for ltype, count in type_targets.items():
-    location_types.extend([ltype] * count)
-
-# Shuffle only the type assignment so location types are not aligned to countries.
-location_types = list(rng.permutation(location_types))
-
-location_names = []
-for i, ((city, region, country), ltype) in enumerate(zip(location_rows, location_types), start=1):
-    name_by_type = {
-        "Plant": "Manufacturing Plant",
-        "Warehouse": "Warehouse",
-        "Distribution Center": "Distribution Center",
-        "Office": "Regional Office"
-    }
-    location_names.append(f"{city} {name_by_type[ltype]} {i:02d}")
 
 dim_location = pd.DataFrame({
     "location_key": range(1, N_LOCATION + 1),
     "location_id": make_ids("LOC", N_LOCATION),
-    "location_name": location_names,
-    "location_type": location_types,
-    "city": [r[0] for r in location_rows],
-    "state_region": [r[1] for r in location_rows],
-    "country": [r[2] for r in location_rows],
+    "location_name": [
+        f"Atlas Facility {i}"
+        for i in range(1, N_LOCATION + 1)
+    ],
+    "location_type": rng.choice(
+        LOCATION_TYPES,
+        N_LOCATION
+    ),
+    "city": [fake.city() for _ in range(N_LOCATION)],
+    "state_region": [
+        fake.state()
+        for _ in range(N_LOCATION)
+    ],
+    "country": rng.choice(
+        COUNTRIES,
+        N_LOCATION
+    ),
     "status": rng.choice(
         ["Active", "Inactive"],
         N_LOCATION,
@@ -549,26 +547,17 @@ dim_employee = pd.DataFrame({
 # dim_machine
 # -------------------------
 
-machine_location_candidates = dim_location.loc[
-    dim_location["location_type"].isin(["Plant", "Warehouse", "Distribution Center"]),
-    "location_key"
-].to_numpy()
+machine_types = rng.choice(MACHINE_TYPES, N_MACHINE)
 
 dim_machine = pd.DataFrame({
     "machine_key": range(1, N_MACHINE + 1),
     "machine_id": make_ids("MCH", N_MACHINE),
     "location_key": rng.choice(
-        machine_location_candidates,
+        dim_location["location_key"],
         N_MACHINE
     ),
-    "machine_name": [
-        f"Atlas Machine {i}"
-        for i in range(1, N_MACHINE + 1)
-    ],
-    "machine_type": rng.choice(
-        MACHINE_TYPES,
-        N_MACHINE
-    ),
+    "machine_name": make_machine_names(machine_types),
+    "machine_type": machine_types,
     "installation_date": random_attribute_dates(
         N_MACHINE
     ),
@@ -588,6 +577,13 @@ product_prices = dict(
     zip(
         dim_product["product_key"],
         dim_product["unit_price"]
+    )
+)
+
+product_units = dict(
+    zip(
+        dim_product["product_key"],
+        dim_product["unit_of_measure"]
     )
 )
 
@@ -614,55 +610,28 @@ sales_dates = pd.to_datetime(
     random_dates(N_SALES)
 )
 
-# Product demand weights create meaningful differences in product performance.
-product_demand_weights = dim_product["category"].map(
-    {k: v["demand"] for k, v in PRODUCT_CATEGORY_PROFILE.items()}
-).to_numpy()
-product_demand_weights = product_demand_weights / product_demand_weights.sum()
+sales_quantity = rng.integers(
+    1,
+    101,
+    N_SALES
+)
 
 sales_product_keys = rng.choice(
     dim_product["product_key"],
-    N_SALES,
-    p=product_demand_weights
+    N_SALES
 )
 
-# Active customers and enterprise customers have greater transaction probability.
-customer_weights = np.ones(N_CUSTOMER)
-customer_weights *= np.where(dim_customer["status"].eq("Active"), 1.15, 0.35)
-customer_weights *= dim_customer["customer_segment"].map({"Enterprise": 1.35, "Mid-Market": 1.00, "SMB": 0.70}).to_numpy()
-customer_weights /= customer_weights.sum()
+sales_unit_price = np.array([
+    product_prices[key]
+    for key in sales_product_keys
+])
 
-sales_customer_keys = rng.choice(
-    dim_customer["customer_key"],
-    N_SALES,
-    p=customer_weights
+discount = np.round(
+    sales_quantity
+    * sales_unit_price
+    * rng.uniform(0, 0.15, N_SALES),
+    2
 )
-
-# Locations participate at different commercial activity levels.
-location_activity_weights = dim_location["location_type"].map(
-    {k: v["activity"] for k, v in LOCATION_PROFILES.items()}
-).to_numpy()
-location_activity_weights /= location_activity_weights.sum()
-
-sales_location_keys = rng.choice(
-    dim_location["location_key"],
-    N_SALES,
-    p=location_activity_weights
-)
-
-product_price_map = product_prices
-sales_unit_price = np.array([product_price_map[key] for key in sales_product_keys])
-
-# Quantity varies by product category and season.
-month_factor = pd.Series(sales_dates.month).map({1:0.95,2:0.97,3:1.00,4:1.02,5:1.04,6:1.00,7:0.96,8:0.98,9:1.01,10:1.05,11:1.10,12:1.18}).to_numpy()
-category_factor = dim_product.set_index("product_key")["category"].map(
-    {k: v["demand"] for k, v in PRODUCT_CATEGORY_PROFILE.items()}
-).loc[sales_product_keys].to_numpy()
-sales_quantity = np.maximum(1, np.round(rng.gamma(shape=2.5, scale=18, size=N_SALES) * month_factor * category_factor / 1.35).astype(int))
-sales_quantity = np.clip(sales_quantity, 1, 150)
-
-discount_rate = rng.beta(2, 18, N_SALES) * 0.20
-discount = np.round(sales_quantity * sales_unit_price * discount_rate, 2)
 
 revenue = np.round(
     sales_quantity * sales_unit_price - discount,
@@ -673,9 +642,16 @@ fact_sales = pd.DataFrame({
     "sales_key": range(1, N_SALES + 1),
     "transaction_id": make_ids("SAL", N_SALES),
     "date_key": sales_dates.strftime("%Y%m%d").astype(int),
-    "customer_key": sales_customer_keys,
+    "customer_key": rng.choice(
+        dim_customer["customer_key"],
+        N_SALES
+    ),
     "product_key": sales_product_keys,
-    "location_key": sales_location_keys,
+    "unit_of_measure": [product_units[key] for key in sales_product_keys],
+    "location_key": rng.choice(
+        dim_location["location_key"],
+        N_SALES
+    ),
     "quantity": sales_quantity,
     "unit_price": sales_unit_price,
     "discount_amount": discount,
@@ -687,82 +663,64 @@ fact_sales = pd.DataFrame({
 # fact_production
 # -------------------------
 
-production_machine_candidates = dim_machine.loc[
-    dim_machine["location_key"].isin(
-        dim_location.loc[dim_location["location_type"] == "Plant", "location_key"]
-    ),
-    "machine_key"
-].to_numpy()
-
 production_machine_keys = rng.choice(
-    production_machine_candidates,
+    dim_machine["machine_key"],
     N_PRODUCTION
 )
 
-production_location_keys = np.array([
+production_location_keys = [
     machine_locations[machine]
     for machine in production_machine_keys
+]
+
+planned_quantity = rng.integers(
+    50,
+    501,
+    N_PRODUCTION
+)
+
+# VALID BASELINE:
+# Produced quantity cannot exceed planned quantity.
+
+produced_quantity = np.round(
+    planned_quantity
+    * rng.uniform(0.80, 1.00, N_PRODUCTION)
+).astype(int)
+
+# VALID BASELINE:
+# Defects cannot exceed produced quantity.
+
+defect_quantity = np.array([
+    rng.integers(0, produced + 1)
+    for produced in produced_quantity
 ])
 
-production_dates = pd.to_datetime(random_dates(N_PRODUCTION))
 production_product_keys = rng.choice(
     dim_product["product_key"],
-    N_PRODUCTION,
-    p=product_demand_weights
+    N_PRODUCTION
 )
-
-planned_quantity = rng.integers(50, 501, N_PRODUCTION)
-
-location_type_map = dim_location.set_index("location_key")["location_type"]
-plant_factor = location_type_map.map({"Plant": 1.00, "Warehouse": 0.98, "Distribution Center": 0.96, "Office": 0.25}).loc[production_location_keys].to_numpy()
-category_complexity = dim_product.set_index("product_key")["category"].map(
-    {k: v["complexity"] for k, v in PRODUCT_CATEGORY_PROFILE.items()}
-).loc[production_product_keys].to_numpy()
-category_adjustment = 1 + (category_complexity - 1) * 0.35
-
-# Production performance varies modestly by facility and product complexity.
-achievement_ratio = np.clip(
-    rng.normal(0.93, 0.05, N_PRODUCTION) * plant_factor / category_adjustment,
-    0.82,
-    1.02
-)
-produced_quantity = np.minimum(
-    np.round(planned_quantity * achievement_ratio).astype(int),
-    planned_quantity
-)
-produced_quantity = np.maximum(produced_quantity, 1)
-
-# Realistic baseline defect rates are low single-digit percentages;
-# intentional Phase 4 violations are added later.
-defect_rate = np.clip(
-    rng.beta(2.5, 70, N_PRODUCTION)
-    * dim_product.set_index("product_key")["category"].map(
-        {k: v["waste"] for k, v in PRODUCT_CATEGORY_PROFILE.items()}
-    ).loc[production_product_keys].to_numpy(),
-    0.002,
-    0.12
-)
-defect_quantity = np.floor(produced_quantity * defect_rate).astype(int)
-
-# Production hours increase with output and product complexity.
-production_hours = np.round(
-    np.maximum(1, produced_quantity / rng.uniform(35, 65, N_PRODUCTION) * category_complexity),
-    2
-)
-production_hours = np.clip(production_hours, 1, 18)
 
 fact_production = pd.DataFrame({
     "production_key": range(1, N_PRODUCTION + 1),
     "production_id": make_ids("PRD", N_PRODUCTION),
-    "date_key": production_dates.strftime("%Y%m%d").astype(int),
+    "date_key": pd.to_datetime(
+        random_dates(N_PRODUCTION)
+    ).strftime("%Y%m%d").astype(int),
     "product_key": production_product_keys,
+    "unit_of_measure": [product_units[key] for key in production_product_keys],
     "location_key": production_location_keys,
     "machine_key": production_machine_keys,
-    "employee_key": rng.choice(dim_employee["employee_key"], N_PRODUCTION),
+    "employee_key": rng.choice(
+        dim_employee["employee_key"],
+        N_PRODUCTION
+    ),
     "planned_quantity": planned_quantity,
     "produced_quantity": produced_quantity,
     "defect_quantity": defect_quantity,
-    "production_hours": production_hours
+    "production_hours": np.round(
+        rng.uniform(1, 12, N_PRODUCTION),
+        2
+    )
 })
 
 
@@ -780,28 +738,34 @@ maintenance_location_keys = [
     for machine in maintenance_machine_keys
 ]
 
-maintenance_type_values = rng.choice(MAINTENANCE_TYPES, N_MAINTENANCE, p=[0.55, 0.30, 0.15])
-maintenance_location_factor = location_type_map.map({"Plant": 1.30, "Warehouse": 0.85, "Distribution Center": 0.95, "Office": 0.40}).loc[maintenance_location_keys].to_numpy()
-maintenance_type_factor = pd.Series(maintenance_type_values).map({"Preventive": 0.75, "Corrective": 1.60, "Inspection": 0.55}).to_numpy()
-maintenance_hours = np.clip(rng.gamma(2.5, 1.5, N_MAINTENANCE), 0.5, 10)
-downtime_hours = np.clip(maintenance_hours * rng.uniform(0.8, 3.5, N_MAINTENANCE) * np.where(maintenance_type_values == "Corrective", 1.35, 0.75), 0.5, 24)
-maintenance_cost = np.clip(
-    rng.gamma(2.2, 1200, N_MAINTENANCE) * maintenance_location_factor * maintenance_type_factor,
-    100,
-    20000
-)
-
 fact_maintenance = pd.DataFrame({
     "maintenance_key": range(1, N_MAINTENANCE + 1),
     "maintenance_id": make_ids("MNT", N_MAINTENANCE),
-    "date_key": pd.to_datetime(random_dates(N_MAINTENANCE)).strftime("%Y%m%d").astype(int),
+    "date_key": pd.to_datetime(
+        random_dates(N_MAINTENANCE)
+    ).strftime("%Y%m%d").astype(int),
     "location_key": maintenance_location_keys,
     "machine_key": maintenance_machine_keys,
-    "employee_key": rng.choice(dim_employee["employee_key"], N_MAINTENANCE),
-    "maintenance_type": maintenance_type_values,
-    "maintenance_hours": np.round(maintenance_hours, 2),
-    "downtime_hours": np.round(downtime_hours, 2),
-    "maintenance_cost": np.round(maintenance_cost, 2)
+    "employee_key": rng.choice(
+        dim_employee["employee_key"],
+        N_MAINTENANCE
+    ),
+    "maintenance_type": rng.choice(
+        MAINTENANCE_TYPES,
+        N_MAINTENANCE
+    ),
+    "maintenance_hours": np.round(
+        rng.uniform(0.5, 8, N_MAINTENANCE),
+        2
+    ),
+    "downtime_hours": np.round(
+        rng.uniform(0.5, 24, N_MAINTENANCE),
+        2
+    ),
+    "maintenance_cost": np.round(
+        rng.uniform(100, 10_000, N_MAINTENANCE),
+        2
+    )
 })
 
 
@@ -809,21 +773,35 @@ fact_maintenance = pd.DataFrame({
 # fact_financial_transaction
 # -------------------------
 
-financial_location_keys = rng.choice(dim_location["location_key"], N_FINANCIAL, p=location_activity_weights)
-financial_categories = rng.choice(TRANSACTION_CATEGORIES, N_FINANCIAL)
-financial_location_factor = location_type_map.map({"Plant": 1.35, "Warehouse": 0.85, "Distribution Center": 1.00, "Office": 0.55}).loc[financial_location_keys].to_numpy()
-financial_category_factor = pd.Series(financial_categories).map({"Sales Revenue": 1.50, "Operating Expense": 0.80, "Maintenance": 1.10, "Payroll": 0.90, "Utilities": 0.70, "Materials": 1.25}).to_numpy()
-financial_amount = np.clip(rng.gamma(2.2, 8500, N_FINANCIAL) * financial_location_factor * financial_category_factor, 100, 250000)
-
 fact_financial_transaction = pd.DataFrame({
-    "financial_transaction_key": range(1, N_FINANCIAL + 1),
+    "financial_transaction_key": range(
+        1,
+        N_FINANCIAL + 1
+    ),
     "transaction_id": make_ids("FIN", N_FINANCIAL),
-    "date_key": pd.to_datetime(random_dates(N_FINANCIAL)).strftime("%Y%m%d").astype(int),
-    "account_key": rng.choice(dim_account["account_key"], N_FINANCIAL),
-    "location_key": financial_location_keys,
-    "transaction_type": rng.choice(TRANSACTION_TYPES, N_FINANCIAL),
-    "transaction_category": financial_categories,
-    "transaction_amount": np.round(financial_amount, 2)
+    "date_key": pd.to_datetime(
+        random_dates(N_FINANCIAL)
+    ).strftime("%Y%m%d").astype(int),
+    "account_key": rng.choice(
+        dim_account["account_key"],
+        N_FINANCIAL
+    ),
+    "location_key": rng.choice(
+        dim_location["location_key"],
+        N_FINANCIAL
+    ),
+    "transaction_type": rng.choice(
+        TRANSACTION_TYPES,
+        N_FINANCIAL
+    ),
+    "transaction_category": rng.choice(
+        TRANSACTION_CATEGORIES,
+        N_FINANCIAL
+    ),
+    "transaction_amount": np.round(
+        rng.uniform(100, 50_000, N_FINANCIAL),
+        2
+    )
 })
 
 
@@ -831,20 +809,28 @@ fact_financial_transaction = pd.DataFrame({
 # fact_budget
 # -------------------------
 
-budget_location_keys = rng.choice(dim_location["location_key"], N_BUDGET, p=location_activity_weights)
-budget_categories = rng.choice(BUDGET_CATEGORIES, N_BUDGET)
-budget_location_factor = location_type_map.map({"Plant": 1.40, "Warehouse": 0.80, "Distribution Center": 1.00, "Office": 0.55}).loc[budget_location_keys].to_numpy()
-budget_category_factor = pd.Series(budget_categories).map({"Revenue": 1.45, "Operations": 1.15, "Maintenance": 0.80, "Payroll": 0.95, "Utilities": 0.70}).to_numpy()
-budget_amount = np.clip(rng.gamma(2.5, 70000, N_BUDGET) * budget_location_factor * budget_category_factor, 10000, 1000000)
-
 fact_budget = pd.DataFrame({
     "budget_key": range(1, N_BUDGET + 1),
     "budget_id": make_ids("BUD", N_BUDGET),
-    "date_key": pd.to_datetime(random_dates(N_BUDGET)).strftime("%Y%m%d").astype(int),
-    "account_key": rng.choice(dim_account["account_key"], N_BUDGET),
-    "location_key": budget_location_keys,
-    "budget_category": budget_categories,
-    "budget_amount": np.round(budget_amount, 2)
+    "date_key": pd.to_datetime(
+        random_dates(N_BUDGET)
+    ).strftime("%Y%m%d").astype(int),
+    "account_key": rng.choice(
+        dim_account["account_key"],
+        N_BUDGET
+    ),
+    "location_key": rng.choice(
+        dim_location["location_key"],
+        N_BUDGET
+    ),
+    "budget_category": rng.choice(
+        BUDGET_CATEGORIES,
+        N_BUDGET
+    ),
+    "budget_amount": np.round(
+        rng.uniform(10_000, 500_000, N_BUDGET),
+        2
+    )
 })
 
 
@@ -852,30 +838,33 @@ fact_budget = pd.DataFrame({
 # fact_energy
 # -------------------------
 
-energy_machine_keys = rng.choice(dim_machine["machine_key"], N_ENERGY)
-energy_location_keys = np.array([machine_locations[machine] for machine in energy_machine_keys])
-energy_dates = pd.to_datetime(random_dates(N_ENERGY))
-
-# Baseline consumption remains in the same general magnitude, but is driven
-# by machine/location characteristics rather than being purely uniform random.
-energy_location_factor = location_type_map.map(
-    {"Plant": 1.35, "Warehouse": 0.75, "Distribution Center": 0.90, "Office": 0.55}
-).loc[energy_location_keys].to_numpy()
-energy_source_factor = rng.choice([0.90, 1.00, 1.15], N_ENERGY, p=[0.55, 0.30, 0.15])
-energy_consumption = np.round(
-    rng.gamma(shape=4.5, scale=900, size=N_ENERGY) * energy_location_factor * energy_source_factor,
-    3
+energy_machine_keys = rng.choice(
+    dim_machine["machine_key"],
+    N_ENERGY
 )
-energy_consumption = np.clip(energy_consumption, 50, 15000)
+
+energy_location_keys = [
+    machine_locations[machine]
+    for machine in energy_machine_keys
+]
 
 fact_energy = pd.DataFrame({
     "energy_key": range(1, N_ENERGY + 1),
     "energy_id": make_ids("ENG", N_ENERGY),
-    "date_key": energy_dates.strftime("%Y%m%d").astype(int),
+    "date_key": pd.to_datetime(
+        random_dates(N_ENERGY)
+    ).strftime("%Y%m%d").astype(int),
     "location_key": energy_location_keys,
     "machine_key": energy_machine_keys,
-    "energy_source": rng.choice(ENERGY_SOURCES, N_ENERGY),
-    "energy_consumption": energy_consumption
+    "energy_source": rng.choice(
+        ENERGY_SOURCES,
+        N_ENERGY
+    ),
+    "unit_of_measure": ["kWh"] * N_ENERGY,
+    "energy_consumption": np.round(
+        rng.uniform(100, 10_000, N_ENERGY),
+        3
+    )
 })
 
 
@@ -883,25 +872,25 @@ fact_energy = pd.DataFrame({
 # fact_emissions
 # -------------------------
 
-emissions_dates = pd.to_datetime(random_dates(N_EMISSIONS))
-emissions_location_keys = rng.choice(dim_location["location_key"], N_EMISSIONS, p=location_activity_weights)
-emission_factor = rng.choice([0.28, 0.45, 0.65], N_EMISSIONS, p=[0.45, 0.35, 0.20])
-emissions_location_factor = location_type_map.map(
-    {"Plant": 1.30, "Warehouse": 0.75, "Distribution Center": 0.90, "Office": 0.55}
-).loc[emissions_location_keys].to_numpy()
-co2_emissions = np.round(
-    rng.gamma(shape=4.0, scale=120, size=N_EMISSIONS) * emissions_location_factor * emission_factor * 4.0,
-    3
-)
-co2_emissions = np.clip(co2_emissions, 5, 7500)
-
 fact_emissions = pd.DataFrame({
     "emissions_key": range(1, N_EMISSIONS + 1),
     "emissions_id": make_ids("EMS", N_EMISSIONS),
-    "date_key": emissions_dates.strftime("%Y%m%d").astype(int),
-    "location_key": emissions_location_keys,
-    "emissions_category": rng.choice(EMISSIONS_CATEGORIES, N_EMISSIONS),
-    "co2_emissions": co2_emissions
+    "date_key": pd.to_datetime(
+        random_dates(N_EMISSIONS)
+    ).strftime("%Y%m%d").astype(int),
+    "location_key": rng.choice(
+        dim_location["location_key"],
+        N_EMISSIONS
+    ),
+    "emissions_category": rng.choice(
+        EMISSIONS_CATEGORIES,
+        N_EMISSIONS
+    ),
+    "unit_of_measure": ["kg"] * N_EMISSIONS,
+    "co2_emissions": np.round(
+        rng.uniform(10, 5_000, N_EMISSIONS),
+        3
+    )
 })
 
 
@@ -909,26 +898,29 @@ fact_emissions = pd.DataFrame({
 # fact_waste
 # -------------------------
 
-waste_dates = pd.to_datetime(random_dates(N_WASTE))
-waste_location_keys = rng.choice(dim_location["location_key"], N_WASTE, p=location_activity_weights)
-waste_location_factor = location_type_map.map(
-    {"Plant": 1.25, "Warehouse": 0.70, "Distribution Center": 0.85, "Office": 0.45}
-).loc[waste_location_keys].to_numpy()
-waste_category_factor = rng.choice([0.75, 1.0, 1.25], N_WASTE, p=[0.35, 0.45, 0.20])
-waste_quantity = np.round(
-    rng.gamma(shape=2.5, scale=55, size=N_WASTE) * waste_location_factor * waste_category_factor,
-    3
-)
-waste_quantity = np.clip(waste_quantity, 0.5, 3000)
-
 fact_waste = pd.DataFrame({
     "waste_key": range(1, N_WASTE + 1),
     "waste_id": make_ids("WST", N_WASTE),
-    "date_key": waste_dates.strftime("%Y%m%d").astype(int),
-    "location_key": waste_location_keys,
-    "waste_category": rng.choice(WASTE_CATEGORIES, N_WASTE),
-    "disposal_method": rng.choice(DISPOSAL_METHODS, N_WASTE),
-    "waste_quantity": waste_quantity
+    "date_key": pd.to_datetime(
+        random_dates(N_WASTE)
+    ).strftime("%Y%m%d").astype(int),
+    "location_key": rng.choice(
+        dim_location["location_key"],
+        N_WASTE
+    ),
+    "waste_category": rng.choice(
+        WASTE_CATEGORIES,
+        N_WASTE
+    ),
+    "disposal_method": rng.choice(
+        DISPOSAL_METHODS,
+        N_WASTE
+    ),
+    "unit_of_measure": ["kg"] * N_WASTE,
+    "waste_quantity": np.round(
+        rng.uniform(1, 1_000, N_WASTE),
+        3
+    )
 })
 
 
@@ -936,7 +928,11 @@ fact_waste = pd.DataFrame({
 # fact_inventory
 # -------------------------
 
-inventory_dates = pd.date_range(START_DATE, END_DATE)
+inventory_dates = pd.date_range(
+    START_DATE,
+    END_DATE
+)
+
 date_count = len(inventory_dates)
 
 random_numbers = rng.choice(
@@ -945,43 +941,68 @@ random_numbers = rng.choice(
     replace=False
 )
 
-date_index = random_numbers // (N_PRODUCT * N_LOCATION)
-remaining = random_numbers % (N_PRODUCT * N_LOCATION)
-inventory_product_keys = (remaining // N_LOCATION) + 1
-inventory_location_keys = (remaining % N_LOCATION) + 1
+date_index = random_numbers // (
+    N_PRODUCT * N_LOCATION
+)
 
-product_category_factor = dim_product.set_index("product_key")["category"].map(
-    {k: v["demand"] for k, v in PRODUCT_CATEGORY_PROFILE.items()}
-).loc[inventory_product_keys].to_numpy()
-location_factor = location_type_map.map(
-    {"Plant": 1.15, "Warehouse": 1.35, "Distribution Center": 1.10, "Office": 0.35}
-).loc[inventory_location_keys].to_numpy()
+remaining = random_numbers % (
+    N_PRODUCT * N_LOCATION
+)
 
-opening_quantity = np.maximum(0, np.round(rng.gamma(3.0, 550, N_INVENTORY) * product_category_factor * location_factor)).astype(int)
-received_quantity = np.maximum(0, np.round(rng.gamma(2.2, 250, N_INVENTORY) * product_category_factor * location_factor)).astype(int)
+inventory_product_keys = (
+    remaining // N_LOCATION
+) + 1
 
-# Issuance is related to demand and available stock, producing meaningful
-# low-stock and excess-stock cases while preserving the accounting identity.
-available_quantity = opening_quantity + received_quantity
-issue_rate = np.clip(rng.beta(2.5, 3.0, N_INVENTORY) * product_category_factor, 0.02, 0.95)
-issued_quantity = np.minimum(np.round(available_quantity * issue_rate).astype(int), available_quantity)
-closing_quantity = available_quantity - issued_quantity
+inventory_location_keys = (
+    remaining % N_LOCATION
+) + 1
 
-reorder_point = np.maximum(50, np.round(
-    rng.gamma(2.2, 180, N_INVENTORY) * product_category_factor
-).astype(int))
+opening_quantity = rng.integers(
+    0,
+    5_000,
+    N_INVENTORY
+)
+
+received_quantity = rng.integers(
+    0,
+    2_000,
+    N_INVENTORY
+)
+
+available_quantity = (
+    opening_quantity
+    + received_quantity
+)
+
+issued_quantity = np.minimum(
+    rng.integers(0, 2_000, N_INVENTORY),
+    available_quantity
+)
+
+closing_quantity = (
+    opening_quantity
+    + received_quantity
+    - issued_quantity
+)
 
 fact_inventory = pd.DataFrame({
     "inventory_key": range(1, N_INVENTORY + 1),
     "inventory_id": make_ids("INV", N_INVENTORY),
-    "date_key": inventory_dates[date_index].strftime("%Y%m%d").astype(int),
+    "date_key": inventory_dates[
+        date_index
+    ].strftime("%Y%m%d").astype(int),
     "product_key": inventory_product_keys,
+    "unit_of_measure": [product_units[key] for key in inventory_product_keys],
     "location_key": inventory_location_keys,
     "opening_quantity": opening_quantity,
     "received_quantity": received_quantity,
     "issued_quantity": issued_quantity,
     "closing_quantity": closing_quantity,
-    "reorder_point": reorder_point
+    "reorder_point": rng.integers(
+        100,
+        1_500,
+        N_INVENTORY
+    )
 })
 
 
@@ -1142,15 +1163,8 @@ dim_customer.loc[
     "customer_segment"
 ] = "Unknown Segment"
 
-# Keep the intentional invalid location-type issue, but avoid changing a
-# location that currently hosts a machine so operational relationships
-# remain realistic before Phase 4 remediation.
-locations_without_machines = dim_location.loc[
-    ~dim_location["location_key"].isin(dim_machine["location_key"]),
-    "location_key"
-].to_numpy()
 dim_location.loc[
-    rng.choice(locations_without_machines, 5, replace=False) - 1,
+    random_rows(dim_location, 5),
     "location_type"
 ] = "Temporary Facility"
 
