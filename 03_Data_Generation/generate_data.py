@@ -483,30 +483,48 @@ dim_product = pd.DataFrame({
 # dim_location
 # -------------------------
 
+location_types = rng.choice(
+    LOCATION_TYPES,
+    N_LOCATION
+)
+
+location_cities = [
+    fake.city()
+    for _ in range(N_LOCATION)
+]
+
 dim_location = pd.DataFrame({
+
     "location_key": range(1, N_LOCATION + 1),
+
     "location_id": make_ids("LOC", N_LOCATION),
+
     "location_name": [
-        f"Atlas Facility {i}"
-        for i in range(1, N_LOCATION + 1)
+        f"{city} {location_type} Facility"
+        for city, location_type in zip(
+            location_cities,
+            location_types
+        )
     ],
-    "location_type": rng.choice(
-        LOCATION_TYPES,
-        N_LOCATION
-    ),
-    "city": [fake.city() for _ in range(N_LOCATION)],
+
+    "location_type": location_types,
+
+    "city": location_cities,
+
     "state_region": [
         fake.state()
         for _ in range(N_LOCATION)
     ],
+
     "country": rng.choice(
         COUNTRIES,
         N_LOCATION
     ),
+
     "status": rng.choice(
         ["Active", "Inactive"],
         N_LOCATION,
-        p=[0.95, 0.05]
+        p=[0.90, 0.10]
     )
 })
 
