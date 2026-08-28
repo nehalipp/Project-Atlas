@@ -1,10 +1,15 @@
 import os
+from pathlib import Path
+
 import pandas as pd
 
 
-RAW_FOLDER = "05_ETL/data/raw"
-STAGING_FOLDER = "05_ETL/data/staging"
+# Project Atlas repository root
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
+RAW_FOLDER = PROJECT_ROOT / "04_Data_Quality" / "data" / "trusted"
+
+STAGING_FOLDER = PROJECT_ROOT / "05_ETL" / "data" / "staging"
 
 # Create staging folder if it does not exist
 os.makedirs(STAGING_FOLDER, exist_ok=True)

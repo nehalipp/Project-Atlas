@@ -65,12 +65,13 @@ EXPECTED_COLUMNS = {
         "location_key", "budget_category", "budget_amount"
     ],
     "fact_emissions.csv": [
-        "emissions_key", "emissions_id", "date_key", "location_key",
-        "emissions_category", "co2_emissions"
-    ],
+    "emissions_key", "emissions_id", "date_key", "location_key",
+    "emissions_category", "unit_of_measure", "co2_emissions"
+    ],  
     "fact_energy.csv": [
-        "energy_key", "energy_id", "date_key", "location_key",
-        "machine_key", "energy_source", "energy_consumption"
+    "energy_key", "energy_id", "date_key", "location_key",
+    "machine_key", "energy_source", "unit_of_measure",
+    "energy_consumption"
     ],
     "fact_financial_transaction.csv": [
         "financial_transaction_key", "transaction_id", "date_key",
@@ -78,9 +79,10 @@ EXPECTED_COLUMNS = {
         "transaction_category", "transaction_amount"
     ],
     "fact_inventory.csv": [
-        "inventory_key", "inventory_id", "date_key", "product_key",
-        "location_key", "opening_quantity", "received_quantity",
-        "issued_quantity", "closing_quantity", "reorder_point"
+    "inventory_key", "inventory_id", "date_key", "product_key",
+    "unit_of_measure", "location_key", "opening_quantity",
+    "received_quantity", "issued_quantity", "closing_quantity",
+    "reorder_point"
     ],
     "fact_maintenance.csv": [
         "maintenance_key", "maintenance_id", "date_key", "location_key",
@@ -88,19 +90,20 @@ EXPECTED_COLUMNS = {
         "maintenance_hours", "downtime_hours", "maintenance_cost"
     ],
     "fact_production.csv": [
-        "production_key", "production_id", "date_key", "product_key",
-        "location_key", "machine_key", "employee_key",
-        "planned_quantity", "produced_quantity", "defect_quantity",
-        "production_hours"
+    "production_key", "production_id", "date_key", "product_key",
+    "unit_of_measure", "location_key", "machine_key", "employee_key",
+    "planned_quantity", "produced_quantity", "defect_quantity",
+    "production_hours"
     ],
     "fact_sales.csv": [
-        "sales_key", "transaction_id", "date_key", "customer_key",
-        "product_key", "location_key", "quantity", "unit_price",
-        "discount_amount", "revenue"
+    "sales_key", "transaction_id", "date_key", "customer_key",
+    "product_key", "unit_of_measure", "location_key", "quantity",
+    "unit_price", "discount_amount", "revenue"
     ],
     "fact_waste.csv": [
-        "waste_key", "waste_id", "date_key", "location_key",
-        "waste_category", "disposal_method", "waste_quantity"
+    "waste_key", "waste_id", "date_key", "location_key",
+    "waste_category", "disposal_method", "unit_of_measure",
+    "waste_quantity"
     ]
 }
 

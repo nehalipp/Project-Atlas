@@ -12,6 +12,30 @@
 BEGIN;
 
 -- ============================================================
+-- CLEAR EXISTING WAREHOUSE DATA
+-- ============================================================
+
+TRUNCATE TABLE
+    public.fact_sales,
+    public.fact_production,
+    public.fact_maintenance,
+    public.fact_financial_transaction,
+    public.fact_budget,
+    public.fact_energy,
+    public.fact_emissions,
+    public.fact_waste,
+    public.fact_inventory,
+    public.dim_customer,
+    public.dim_product,
+    public.dim_employee,
+    public.dim_machine,
+    public.dim_supplier,
+    public.dim_location,
+    public.dim_account,
+    public.dim_date
+CASCADE;
+
+-- ============================================================
 -- DIMENSIONS
 -- ============================================================
 
