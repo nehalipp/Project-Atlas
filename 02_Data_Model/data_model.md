@@ -51,7 +51,7 @@ Every fact table has an explicitly defined grain.
 | `fact_sales`                  | Transactional     | One sales transaction for one customer, product, location and date            |
 | `fact_production`             | Operational Event | One production activity for one product, machine, employee, location and date |
 | `fact_maintenance`            | Operational Event | One maintenance event for one machine, employee, location and date            |
-| `fact_financial_transactions` | Transactional     | One financial transaction for one account, location, category/type and date   |
+| `fact_financial_transaction` | Transactional     | One financial transaction for one account, location, category/type and date   |
 | `fact_budget`                 | Planning          | One budget allocation for one account, location, category and date/period     |
 | `fact_energy`                 | Measurement       | One energy consumption record for one machine, location and date              |
 | `fact_emissions`              | Measurement       | One emissions record for one location, emissions category and date            |
@@ -115,9 +115,9 @@ The warehouse uses one-to-many relationships from dimensions to their related fa
 
 **Financial Transactions**
 
-* `dim_date` → `fact_financial_transactions`
-* `dim_account` → `fact_financial_transactions`
-* `dim_location` → `fact_financial_transactions`
+* `dim_date` → `fact_financial_transaction`
+* `dim_account` → `fact_financial_transaction`
+* `dim_location` → `fact_financial_transaction`
 
 **Budget**
 
