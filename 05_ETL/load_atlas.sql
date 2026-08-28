@@ -58,10 +58,9 @@ CASCADE;
 -- ============================================================
 -- FACTS
 -- ============================================================
+\copy fact_sales (sales_key, transaction_id, date_key, customer_key, product_key, unit_of_measure, location_key, quantity, unit_price, discount_amount, revenue) FROM '05_ETL/data/warehouse_ready/fact_sales.csv' WITH (FORMAT csv, HEADER true);
 
-\copy fact_sales (sales_key, transaction_id, date_key, customer_key, product_key, location_key, quantity, unit_price, discount_amount, revenue) FROM '05_ETL/data/warehouse_ready/fact_sales.csv' WITH (FORMAT csv, HEADER true);
-
-\copy fact_production (production_key, production_id, date_key, product_key, location_key, machine_key, employee_key, planned_quantity, produced_quantity, defect_quantity, production_hours) FROM '05_ETL/data/warehouse_ready/fact_production.csv' WITH (FORMAT csv, HEADER true);
+\copy fact_production (production_key, production_id, date_key, product_key, unit_of_measure, location_key, machine_key, employee_key, planned_quantity, produced_quantity, defect_quantity, production_hours) FROM '05_ETL/data/warehouse_ready/fact_production.csv' WITH (FORMAT csv, HEADER true);
 
 \copy fact_maintenance (maintenance_key, maintenance_id, date_key, location_key, machine_key, employee_key, maintenance_type, maintenance_hours, downtime_hours, maintenance_cost) FROM '05_ETL/data/warehouse_ready/fact_maintenance.csv' WITH (FORMAT csv, HEADER true);
 
@@ -69,12 +68,12 @@ CASCADE;
 
 \copy fact_budget (budget_key, budget_id, date_key, account_key, location_key, budget_category, budget_amount) FROM '05_ETL/data/warehouse_ready/fact_budget.csv' WITH (FORMAT csv, HEADER true);
 
-\copy fact_energy (energy_key, energy_id, date_key, location_key, machine_key, energy_source, energy_consumption) FROM '05_ETL/data/warehouse_ready/fact_energy.csv' WITH (FORMAT csv, HEADER true);
+\copy fact_energy (energy_key, energy_id, date_key, location_key, machine_key, energy_source, unit_of_measure, energy_consumption) FROM '05_ETL/data/warehouse_ready/fact_energy.csv' WITH (FORMAT csv, HEADER true);
 
-\copy fact_emissions (emissions_key, emissions_id, date_key, location_key, emissions_category, co2_emissions) FROM '05_ETL/data/warehouse_ready/fact_emissions.csv' WITH (FORMAT csv, HEADER true);
+\copy fact_emissions (emissions_key, emissions_id, date_key, location_key, emissions_category, unit_of_measure, co2_emissions) FROM '05_ETL/data/warehouse_ready/fact_emissions.csv' WITH (FORMAT csv, HEADER true);
 
-\copy fact_waste (waste_key, waste_id, date_key, location_key, waste_category, disposal_method, waste_quantity) FROM '05_ETL/data/warehouse_ready/fact_waste.csv' WITH (FORMAT csv, HEADER true);
+\copy fact_waste (waste_key, waste_id, date_key, location_key, waste_category, disposal_method, unit_of_measure, waste_quantity) FROM '05_ETL/data/warehouse_ready/fact_waste.csv' WITH (FORMAT csv, HEADER true);
 
-\copy fact_inventory (inventory_key, inventory_id, date_key, product_key, location_key, opening_quantity, received_quantity, issued_quantity, closing_quantity, reorder_point) FROM '05_ETL/data/warehouse_ready/fact_inventory.csv' WITH (FORMAT csv, HEADER true);
+\copy fact_inventory (inventory_key, inventory_id, date_key, product_key, unit_of_measure, location_key, opening_quantity, received_quantity, issued_quantity, closing_quantity, reorder_point) FROM '05_ETL/data/warehouse_ready/fact_inventory.csv' WITH (FORMAT csv, HEADER true);
 
 COMMIT;

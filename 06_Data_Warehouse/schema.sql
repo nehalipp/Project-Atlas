@@ -131,6 +131,7 @@ CREATE TABLE fact_sales (
     date_key INTEGER NOT NULL,
     customer_key BIGINT NOT NULL,
     product_key BIGINT NOT NULL,
+    unit_of_measure VARCHAR(30) NOT NULL,
     location_key BIGINT NOT NULL,
     quantity INTEGER NOT NULL,
     unit_price NUMERIC(14,2) NOT NULL,
@@ -159,6 +160,7 @@ CREATE TABLE fact_production (
     production_id VARCHAR(40) NOT NULL UNIQUE,
     date_key INTEGER NOT NULL,
     product_key BIGINT NOT NULL,
+    unit_of_measure VARCHAR(30) NOT NULL,
     location_key BIGINT NOT NULL,
     machine_key BIGINT NOT NULL,
     employee_key BIGINT NOT NULL,
@@ -269,6 +271,7 @@ CREATE TABLE fact_energy (
     location_key BIGINT NOT NULL,
     machine_key BIGINT NOT NULL,
     energy_source VARCHAR(50) NOT NULL,
+    unit_of_measure VARCHAR(30) NOT NULL,
     energy_consumption NUMERIC(16,3) NOT NULL,
 
     CONSTRAINT fk_energy_date
@@ -290,6 +293,7 @@ CREATE TABLE fact_emissions (
     date_key INTEGER NOT NULL,
     location_key BIGINT NOT NULL,
     emissions_category VARCHAR(100) NOT NULL,
+    unit_of_measure VARCHAR(30) NOT NULL,
     co2_emissions NUMERIC(16,3) NOT NULL,
 
     CONSTRAINT fk_emissions_date
@@ -308,6 +312,7 @@ CREATE TABLE fact_waste (
     location_key BIGINT NOT NULL,
     waste_category VARCHAR(100) NOT NULL,
     disposal_method VARCHAR(100),
+    unit_of_measure VARCHAR(30) NOT NULL,
     waste_quantity NUMERIC(16,3) NOT NULL,
 
     CONSTRAINT fk_waste_date
@@ -324,6 +329,7 @@ CREATE TABLE fact_inventory (
     inventory_id VARCHAR(40) NOT NULL UNIQUE,
     date_key INTEGER NOT NULL,
     product_key BIGINT NOT NULL,
+    unit_of_measure VARCHAR(30) NOT NULL,
     location_key BIGINT NOT NULL,
     opening_quantity INTEGER NOT NULL,
     received_quantity INTEGER NOT NULL,
