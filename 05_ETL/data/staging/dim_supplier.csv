@@ -61,13 +61,13 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 60,SUP-000060,Hodges LLC,Service Provider,United States,Inactive
 61,SUP-000061,"Stout, Smith and Blair",Distributor,United States,Active
 62,SUP-000062,Scott PLC,Raw Material Supplier,Canada,Active
-63,SUP-000063,"Freeman, Thompson and Nelson",Service Provider,Germany,Active
+63,SUP-000063,"Freeman, Thompson and Nelson",Unknown,Germany,Active
 64,SUP-000064,Ortiz-Vasquez,Manufacturer,Canada,Active
 65,SUP-000065,Baldwin LLC,Service Provider,Sweden,Active
 66,SUP-000066,"Moody, Foster and Hunt",Manufacturer,United States,Active
 67,SUP-000067,"Little, Dixon and Carlson",Service Provider,Mexico,Active
 68,SUP-000068,Hall-Murray,Service Provider,United States,Active
-69,SUP-000069,Baird-Garcia,Distributor,Canada,Active
+69,SUP-000069,Baird-Garcia,Unknown,Canada,Active
 70,SUP-000070,"Bryan, Gibson and Johnson",Manufacturer,Mexico,Active
 71,SUP-000071,Moore-George,Manufacturer,Canada,Active
 72,SUP-000072,Young-Russell,Distributor,Canada,Active
@@ -85,7 +85,7 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 84,SUP-000084,Murphy-Hinton,Service Provider,United States,Active
 85,SUP-000085,Willis-Hawkins,Distributor,Mexico,Active
 86,SUP-000086,Todd-Wagner,Raw Material Supplier,United States,Inactive
-87,SUP-000087,Bennett-Vasquez,Unknown,United States,Active
+87,SUP-000087,Bennett-Vasquez,Raw Material Supplier,United States,Active
 88,SUP-000088,"Hudson, Fox and Lynch",Raw Material Supplier,Germany,Active
 89,SUP-000089,"Blankenship, Weaver and Davidson",Service Provider,Sweden,Active
 90,SUP-000090,Ayala-Green,Manufacturer,Mexico,Active
@@ -131,8 +131,8 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 130,SUP-000130,"Ayers, Gordon and Dominguez",Distributor,Sweden,Active
 131,SUP-000131,"Cherry, Carroll and Olson",Raw Material Supplier,Sweden,Active
 132,SUP-000132,Evans-Ortiz,Manufacturer,United States,Active
-133,SUP-000133,Gibbs Group,Service Provider,United States,Active
-134,SUP-000134,"Carr, Baldwin and Colon",Distributor,Germany,Active
+133,SUP-000133,Gibbs Group,Unknown,United States,Active
+134,SUP-000134,"Carr, Baldwin and Colon",Unknown,Germany,Active
 135,SUP-000135,Hawkins-Stone,Distributor,Mexico,Active
 136,SUP-000136,Williams Inc,Service Provider,Mexico,Active
 137,SUP-000137,"Johnson, Perry and Fowler",Service Provider,Canada,Active
@@ -249,7 +249,7 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 248,SUP-000248,Burns-Cobb,Service Provider,United States,Active
 249,SUP-000249,Day LLC,Raw Material Supplier,Mexico,Active
 250,SUP-000250,"Sherman, Johnson and Sweeney",Raw Material Supplier,Canada,Active
-251,SUP-000251,Cox Inc,Unknown,Germany,Active
+251,SUP-000251,Cox Inc,Distributor,Germany,Active
 252,SUP-000252,Washington-Cole,Distributor,United States,Active
 253,SUP-000253,Gonzales-York,Distributor,Mexico,Active
 254,SUP-000254,Carey PLC,Service Provider,Mexico,Active
@@ -265,7 +265,7 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 264,SUP-000264,Jones-Oliver,Manufacturer,Canada,Active
 265,SUP-000265,Gordon-Smith,Manufacturer,Sweden,Active
 266,SUP-000266,Horn Ltd,Manufacturer,Canada,Active
-267,SUP-000267,Roberts-Porter,Unknown,Canada,Active
+267,SUP-000267,Roberts-Porter,Manufacturer,Canada,Active
 268,SUP-000268,"Johnson, Lopez and Marquez",Service Provider,United States,Inactive
 269,SUP-000269,Henry PLC,Raw Material Supplier,Sweden,Active
 270,SUP-000270,"Lee, Mcdonald and Garcia",Manufacturer,Canada,Active
@@ -294,7 +294,7 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 293,SUP-000293,Roman-Martinez,Service Provider,Sweden,Active
 294,SUP-000294,Miller LLC,Service Provider,Canada,Active
 295,SUP-000295,"Barnes, Howe and Beck",Service Provider,Canada,Active
-296,SUP-000296,Simmons-Kent,Unknown,Mexico,Inactive
+296,SUP-000296,Simmons-Kent,Service Provider,Mexico,Inactive
 297,SUP-000297,"Powell, Yoder and Norris",Service Provider,Sweden,Active
 298,SUP-000298,Grimes-Kent,Distributor,Canada,Active
 299,SUP-000299,"Garcia, Evans and Hoover",Service Provider,Canada,Active
@@ -355,10 +355,10 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 354,SUP-000354,Coleman Ltd,Distributor,Sweden,Active
 355,SUP-000355,Myers Group,Manufacturer,Germany,Active
 356,SUP-000356,"Rocha, Garza and Hodge",Distributor,Canada,Active
-357,SUP-000357,Walker Inc,Service Provider,Canada,Active
+357,SUP-000357,Walker Inc,Unknown,Canada,Active
 358,SUP-000358,Schroeder Ltd,Service Provider,Mexico,Active
 359,SUP-000359,Middleton LLC,Raw Material Supplier,Sweden,Active
-360,SUP-000360,Pittman PLC,Distributor,Sweden,Active
+360,SUP-000360,Pittman PLC,Unknown,Sweden,Active
 361,SUP-000361,"Mitchell, Francis and Stewart",Distributor,Sweden,Active
 362,SUP-000362,Adkins-Wagner,Service Provider,Germany,Active
 363,SUP-000363,Campbell-Lewis,Service Provider,Canada,Active
@@ -384,7 +384,7 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 383,SUP-000383,"Newman, Cross and Armstrong",Raw Material Supplier,Sweden,Active
 384,SUP-000384,Hancock-Roberts,Service Provider,Germany,Active
 385,SUP-000385,Cooper-Oconnor,Service Provider,Canada,Active
-386,SUP-000386,Benton-Williams,Unknown,Mexico,Active
+386,SUP-000386,Benton-Williams,Manufacturer,Mexico,Active
 387,SUP-000387,"Farley, Johnson and Powell",Raw Material Supplier,Sweden,Active
 388,SUP-000388,Edwards-Glass,Manufacturer,Sweden,Inactive
 389,SUP-000389,Chandler-Lawrence,Distributor,United States,Active
@@ -440,12 +440,12 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 439,SUP-000439,Robinson Group,Manufacturer,Germany,Active
 440,SUP-000440,Jones-Simpson,Raw Material Supplier,Mexico,Active
 441,SUP-000441,Turner-Hunter,Manufacturer,Canada,Inactive
-442,SUP-000442,Walter-Herrera,Manufacturer,Mexico,Active
+442,SUP-000442,Walter-Herrera,Unknown,Mexico,Active
 443,SUP-000443,Case-Harris,Service Provider,Mexico,Active
 444,SUP-000444,White PLC,Manufacturer,Germany,Active
 445,SUP-000445,"Smith, Moss and Rogers",Service Provider,Mexico,Inactive
 446,SUP-000446,"Cole, Marquez and Davis",Service Provider,Canada,Inactive
-447,SUP-000447,Anderson-Branch,Service Provider,Germany,Active
+447,SUP-000447,Anderson-Branch,Unknown,Germany,Active
 448,SUP-000448,Johnson-Leon,Raw Material Supplier,Mexico,Inactive
 449,SUP-000449,"Baker, Bryant and Santiago",Manufacturer,Germany,Active
 450,SUP-000450,Becker Inc,Service Provider,Sweden,Active
@@ -475,7 +475,7 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 474,SUP-000474,Smith and Sons,Service Provider,United States,Active
 475,SUP-000475,Moody-Boyer,Distributor,United States,Active
 476,SUP-000476,Scott-Mullen,Service Provider,Mexico,Active
-477,SUP-000477,Butler LLC,Unknown,Germany,Active
+477,SUP-000477,Butler LLC,Distributor,Germany,Active
 478,SUP-000478,Torres PLC,Raw Material Supplier,United States,Active
 479,SUP-000479,Martin Ltd,Distributor,Canada,Inactive
 480,SUP-000480,"Clark, Smith and Bradford",Manufacturer,Canada,Active
@@ -527,7 +527,7 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 526,SUP-000526,"Ellison, Williams and Martin",Distributor,Canada,Active
 527,SUP-000527,"Brooks, Franco and Morrow",Manufacturer,Sweden,Active
 528,SUP-000528,"Harmon, Henderson and Hodges",Raw Material Supplier,Germany,Active
-529,SUP-000529,"Hall, Sanchez and Price",Raw Material Supplier,Canada,Active
+529,SUP-000529,"Hall, Sanchez and Price",Unknown,Canada,Active
 530,SUP-000530,Goodman-Elliott,Service Provider,Canada,Active
 531,SUP-000531,"Richard, Harris and Gomez",Distributor,United States,Active
 532,SUP-000532,"Mendoza, Perez and Nguyen",Manufacturer,Sweden,Active
@@ -556,8 +556,8 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 555,SUP-000555,"Stanton, Allison and Knapp",Distributor,Mexico,Active
 556,SUP-000556,Bishop-Young,Manufacturer,United States,Active
 557,SUP-000557,Reyes and Sons,Raw Material Supplier,United States,Active
-558,SUP-000558,"Patrick, White and Mcgee",Manufacturer,Germany,Active
-559,SUP-000559,"Hall, Brown and Lopez",Service Provider,Germany,Active
+558,SUP-000558,"Patrick, White and Mcgee",Unknown,Germany,Active
+559,SUP-000559,"Hall, Brown and Lopez",Unknown,Germany,Active
 560,SUP-000560,"Morgan, Reed and Gray",Manufacturer,United States,Active
 561,SUP-000561,Roberts PLC,Service Provider,Canada,Active
 562,SUP-000562,Nash Inc,Raw Material Supplier,United States,Active
@@ -565,7 +565,7 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 564,SUP-000564,"Anthony, Cruz and Bailey",Distributor,Sweden,Active
 565,SUP-000565,Perez-Schneider,Service Provider,Canada,Active
 566,SUP-000566,Johnson Ltd,Manufacturer,Germany,Active
-567,SUP-000567,Fleming LLC,Service Provider,Canada,Active
+567,SUP-000567,Fleming LLC,Unknown,Canada,Active
 568,SUP-000568,Francis Ltd,Manufacturer,Canada,Active
 569,SUP-000569,Reyes-Carr,Distributor,Mexico,Active
 570,SUP-000570,Smith-Mason,Manufacturer,Mexico,Active
@@ -579,7 +579,7 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 578,SUP-000578,Hogan-Perez,Distributor,United States,Active
 579,SUP-000579,Larsen-Craig,Service Provider,Mexico,Active
 580,SUP-000580,Simon Ltd,Manufacturer,Mexico,Active
-581,SUP-000581,Murphy PLC,Unknown,Canada,Active
+581,SUP-000581,Murphy PLC,Manufacturer,Canada,Active
 582,SUP-000582,Wolfe-Larson,Manufacturer,Sweden,Active
 583,SUP-000583,Snyder-Leonard,Manufacturer,Germany,Active
 584,SUP-000584,Bennett-Nguyen,Service Provider,Sweden,Inactive
@@ -658,7 +658,7 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 657,SUP-000657,Hernandez-Henry,Manufacturer,Germany,Active
 658,SUP-000658,Wood Inc,Manufacturer,Germany,Active
 659,SUP-000659,Hardin LLC,Raw Material Supplier,United States,Inactive
-660,SUP-000660,Nixon LLC,Service Provider,Mexico,Active
+660,SUP-000660,Nixon LLC,Unknown,Mexico,Active
 661,SUP-000661,Jacobs Inc,Manufacturer,Mexico,Active
 662,SUP-000662,"Marshall, Ford and Jones",Raw Material Supplier,Mexico,Active
 663,SUP-000663,Merritt Inc,Manufacturer,Canada,Active
@@ -689,15 +689,15 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 688,SUP-000688,Callahan-Houston,Distributor,Canada,Active
 689,SUP-000689,Thomas Inc,Service Provider,Mexico,Active
 690,SUP-000690,Thompson PLC,Raw Material Supplier,Sweden,Active
-691,SUP-000691,Johnson and Sons,Unknown,Sweden,Active
+691,SUP-000691,Johnson and Sons,Manufacturer,Sweden,Active
 692,SUP-000692,"Vazquez, Collins and Miller",Distributor,Canada,Inactive
 693,SUP-000693,Taylor Inc,Raw Material Supplier,Germany,Inactive
 694,SUP-000694,Lopez Group,Manufacturer,Mexico,Active
-695,SUP-000695,"Alvarez, Nichols and Snyder",Unknown,Sweden,Active
+695,SUP-000695,"Alvarez, Nichols and Snyder",Distributor,Sweden,Active
 696,SUP-000696,"Kelly, Lopez and Hamilton",Service Provider,Mexico,Active
 697,SUP-000697,Mcdaniel Ltd,Distributor,Mexico,Active
 698,SUP-000698,"Estrada, Vazquez and Greene",Raw Material Supplier,Mexico,Active
-699,SUP-000699,Davenport-Johnson,Unknown,Germany,Active
+699,SUP-000699,Davenport-Johnson,Distributor,Germany,Active
 700,SUP-000700,Pennington Inc,Distributor,Canada,Active
 701,SUP-000701,Mitchell-Miller,Service Provider,Canada,Active
 702,SUP-000702,"Diaz, Savage and Bryant",Distributor,Germany,Active
@@ -735,7 +735,7 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 734,SUP-000734,Bell-Russell,Raw Material Supplier,Sweden,Active
 735,SUP-000735,Strong-Walker,Service Provider,Germany,Active
 736,SUP-000736,Burgess-Hobbs,Manufacturer,Germany,Active
-737,SUP-000737,Beasley and Sons,Unknown,Germany,Active
+737,SUP-000737,Beasley and Sons,Service Provider,Germany,Active
 738,SUP-000738,Mcknight and Sons,Raw Material Supplier,Mexico,Active
 739,SUP-000739,Young Inc,Service Provider,Sweden,Active
 740,SUP-000740,"Atkins, Johnson and Gross",Raw Material Supplier,Germany,Active
@@ -747,14 +747,14 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 746,SUP-000746,Morris-Martinez,Service Provider,Sweden,Active
 747,SUP-000747,Evans-Cole,Distributor,Germany,Active
 748,SUP-000748,"Kennedy, Becker and Morrow",Distributor,Sweden,Inactive
-749,SUP-000749,"Newman, King and Gomez",Unknown,United States,Active
-750,SUP-000750,Myers-Thompson,Manufacturer,Germany,Active
+749,SUP-000749,"Newman, King and Gomez",Manufacturer,United States,Active
+750,SUP-000750,Myers-Thompson,Unknown,Germany,Active
 751,SUP-000751,Smith and Sons,Raw Material Supplier,United States,Active
 752,SUP-000752,"Burton, Kent and Hart",Distributor,Canada,Active
 753,SUP-000753,Rich Group,Raw Material Supplier,United States,Active
 754,SUP-000754,Martin-Nelson,Service Provider,United States,Active
 755,SUP-000755,"Gomez, West and Smith",Service Provider,Germany,Active
-756,SUP-000756,"Esparza, Davis and Bell",Raw Material Supplier,Mexico,Active
+756,SUP-000756,"Esparza, Davis and Bell",Unknown,Mexico,Active
 757,SUP-000757,Peck and Sons,Service Provider,Mexico,Active
 758,SUP-000758,"Anderson, Molina and Wilson",Manufacturer,United States,Active
 759,SUP-000759,"Blake, Jenkins and Lang",Raw Material Supplier,United States,Active
@@ -785,7 +785,7 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 784,SUP-000784,"Baker, Farmer and Lee",Manufacturer,Germany,Active
 785,SUP-000785,Rogers Ltd,Distributor,United States,Active
 786,SUP-000786,"Smith, Rogers and Hoffman",Service Provider,Canada,Active
-787,SUP-000787,"Serrano, Reid and Stewart",Unknown,Mexico,Active
+787,SUP-000787,"Serrano, Reid and Stewart",Manufacturer,Mexico,Active
 788,SUP-000788,Miranda Ltd,Distributor,Germany,Active
 789,SUP-000789,Woodward PLC,Service Provider,Mexico,Active
 790,SUP-000790,"Lawson, Rios and Mercado",Raw Material Supplier,United States,Inactive
@@ -809,7 +809,7 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 808,SUP-000808,"Huerta, Davis and Wright",Distributor,Germany,Active
 809,SUP-000809,"Vang, Bates and Rice",Service Provider,United States,Inactive
 810,SUP-000810,Harris Inc,Service Provider,Germany,Active
-811,SUP-000811,Mills-Hawkins,Unknown,Mexico,Active
+811,SUP-000811,Mills-Hawkins,Distributor,Mexico,Active
 812,SUP-000812,Johnson LLC,Raw Material Supplier,Canada,Active
 813,SUP-000813,Alexander-Horton,Raw Material Supplier,Germany,Active
 814,SUP-000814,Wood Ltd,Manufacturer,Germany,Active
@@ -944,7 +944,7 @@ supplier_key,supplier_id,supplier_name,supplier_category,country,status
 943,SUP-000943,"Wilson, Scott and Walls",Manufacturer,Sweden,Active
 944,SUP-000944,Kim and Sons,Distributor,Canada,Active
 945,SUP-000945,Sanchez Ltd,Manufacturer,Canada,Active
-946,SUP-000946,Ramirez-Mata,Unknown,United States,Active
+946,SUP-000946,Ramirez-Mata,Raw Material Supplier,United States,Active
 947,SUP-000947,Manning Ltd,Raw Material Supplier,Sweden,Active
 948,SUP-000948,"Simpson, Wagner and Cohen",Distributor,Sweden,Active
 949,SUP-000949,Pacheco Inc,Manufacturer,United States,Active

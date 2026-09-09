@@ -2,9 +2,9 @@
 
 ## Purpose
 
-Phase 5 prepares the trusted datasets from Phase 4 for loading into the PostgreSQL dimensional warehouse.
+Phase 5 prepares the trusted Phase 4 datasets for loading into the PostgreSQL dimensional warehouse.
 
-The ETL pipeline is:
+The ETL flow is:
 
 ```text
 Phase 4 Trusted Data
@@ -28,82 +28,92 @@ Warehouse-Ready Data
 
 ### Extract
 
-The 17 trusted datasets produced by Phase 4 are copied into the ETL raw layer.
+The 17 trusted datasets from Phase 4 are copied into the ETL raw layer.
 
-The datasets include:
+The current trusted input contains **1,934,309 records** across:
 
 * 8 dimensions
 * 9 fact tables
 
-The Phase 4 trusted data contains **1,842,059 records** across the 17 datasets.
-
 ### Staging
 
-The raw CSV files are prepared using simple Python/Pandas processing.
+Python/Pandas is used for straightforward staging preparation, including:
 
-Staging focuses on:
-
-* Consistent data types
+* Data-type handling
 * Date preparation
 * Numeric preparation
-* Preserving existing warehouse keys
+* Preserving warehouse keys
+* Preserving business identifiers
 * Preserving fact-table grain
 * Preserving measurement units
 
-Data-quality remediation is not repeated here because it was completed in Phase 4.
+Data-quality remediation is not repeated because it was completed in Phase 4.
 
 ### Transform
 
-The staging datasets are prepared for the PostgreSQL warehouse.
+The staging datasets are prepared for PostgreSQL loading.
 
-Transformations include:
+Transformations focus on:
 
-* Standardizing actual date fields
-* Validating the expected warehouse column structure
+* Standardizing date fields
+* Validating the expected warehouse structure
 * Preserving dimensional keys and business identifiers
-* Preserving fact-table row counts and grain
-* Preserving `unit_of_measure` where applicable
-
-Measurement units are carried through the warehouse-ready layer for applicable datasets. Current standardized units include:
-
-* Energy: **kWh**
-* CO₂ emissions: **kg**
-* Waste: **kg**
-* Product-related quantities: units defined by the applicable product or inventory record
+* Preserving fact-table grain
+* Preserving applicable measurement units
 
 No unnecessary aggregation or fact-to-fact transformation is performed.
 
 ### Validate
 
-The warehouse-ready layer is validated for:
+The warehouse-ready datasets were validated for:
 
 * Dataset existence
-* Expected columns
+* Expected structure
 * Row counts
 * Foreign-key relationships
 
-Validation passed successfully for **all 17 datasets**.
+All 17 datasets passed the Phase 5 validation and were prepared for warehouse loading.
 
-All expected foreign-key relationships were validated successfully.
+## Warehouse-Ready Results
 
-The warehouse-ready validation confirms that the datasets conform to the expected Phase 6 warehouse loading structure.
+| Dataset                      | Warehouse-Ready Rows |
+| ---------------------------- | -------------------: |
+| `dim_account`                |                1,000 |
+| `dim_customer`               |               50,000 |
+| `dim_date`                   |                2,557 |
+| `dim_employee`               |                5,000 |
+| `dim_location`               |                  100 |
+| `dim_machine`                |                2,000 |
+| `dim_product`                |                5,000 |
+| `dim_supplier`               |                1,000 |
+| `fact_budget`                |               20,000 |
+| `fact_emissions`             |              100,000 |
+| `fact_energy`                |               99,801 |
+| `fact_financial_transaction` |              300,000 |
+| `fact_inventory`             |              499,001 |
+| `fact_maintenance`           |               49,950 |
+| `fact_production`            |              200,000 |
+| `fact_sales`                 |              499,000 |
+| `fact_waste`                 |               99,900 |
+
+**Total warehouse-ready rows: 1,934,309**
 
 ## Loading
 
 `load_atlas.sql` loads the warehouse-ready CSV files into PostgreSQL.
 
-Dimensions are loaded before facts so that foreign-key relationships can be established correctly.
+Dimensions are loaded before facts so that the approved dimensional relationships can be established.
 
-The PostgreSQL table definitions and constraints are maintained in Phase 6.
+The PostgreSQL schema and constraints are maintained in Phase 6.
 
 ## Python and SQL
 
-Python/Pandas supports extraction, staging, transformation and validation.
+Python/Pandas supports the preparation and validation steps of the ETL process.
 
-SQL is used for the PostgreSQL loading process and becomes the primary language for warehouse and analytical processing in later phases.
+SQL is used for PostgreSQL loading and becomes the primary language for warehouse and analytical processing in later phases.
 
 ## Result
 
-Phase 5 produces a validated, warehouse-ready dataset that can be loaded into the PostgreSQL dimensional warehouse without changing the approved data model or fact grains.
+Phase 5 produces validated warehouse-ready datasets without changing the approved Atlas data model or fact grains.
 
-The Phase 5 warehouse-ready layer has passed validation across all **17 datasets** and is ready for Phase 6 warehouse loading.
+The current Phase 5 output contains **1,934,309 records across all 17 datasets** and has been successfully loaded into the PostgreSQL warehouse.

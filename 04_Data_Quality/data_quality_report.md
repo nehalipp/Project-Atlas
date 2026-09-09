@@ -6,36 +6,36 @@ Phase 4 validates and remediates the synthetic operational data generated in Pha
 
 The objective is to identify data-quality issues before the data enters the PostgreSQL warehouse and downstream analytics.
 
-The validation covers:
+Validation covers:
 
-- Completeness
-- Uniqueness
-- Validity
-- Consistency
-- Referential integrity
-- Business-rule compliance
+* Completeness
+* Uniqueness
+* Validity
+* Consistency
+* Referential integrity
+* Business rules
 
-The process converts imperfect raw data into trusted datasets for the ETL and warehouse phases.
+The process converts imperfect raw data into trusted datasets for Phase 5 ETL.
 
 ---
 
 ## 2. Data Quality Process
 
-The Phase 4 process follows:
-
+```text
 Raw Data
-↓
+   ↓
 Profiling
-↓
+   ↓
 Validation
-↓
+   ↓
 Remediation
-↓
+   ↓
 Trusted Data Validation
-↓
-Trusted Datasets
+   ↓
+Trusted Data
+```
 
-The remediation rules are implemented in `data_quality.py` and are based on the Atlas data dictionary, approved business rules, and relationships defined in the data model.
+Remediation rules are based on the Atlas data dictionary, approved business rules and relationships defined in the data model.
 
 ---
 
@@ -43,142 +43,139 @@ The remediation rules are implemented in `data_quality.py` and are based on the 
 
 ### Completeness
 
-Required fields were checked for missing values.
+Required fields were checked for missing and blank values.
 
-Blank text values in required fields were converted to NULL before validation. Required fields were then remediated using the defined business rule, such as replacing missing categorical/text values with `Unknown`.
+Blank text values were converted to NULL before validation. Where an approved replacement existed, missing categorical/text values were replaced with `Unknown`.
 
-The following fields are intentionally nullable according to the Atlas data dictionary:
+The following fields remain intentionally nullable:
 
-- `dim_product.subcategory`
-- `fact_waste.disposal_method`
+* `dim_product.subcategory`
+* `fact_waste.disposal_method`
 
-NULL values in these fields are therefore treated as expected rather than as quality failures.
+These NULL values are therefore treated as valid.
 
 ### Uniqueness
 
-Primary keys and business identifiers were checked for duplicate values.
+Primary keys and business identifiers were checked for duplicates.
 
-Controlled duplicate records were introduced during data generation and removed during remediation.
+Controlled duplicate records were removed during remediation.
 
 ### Validity
 
-Categorical values, dates, numeric fields, identifiers, and required text fields were validated against the approved data definitions and business rules.
+Categorical values, dates, numeric values and identifiers were checked against the approved data definitions and business rules.
 
-Invalid categorical values were replaced with `Unknown` where an appropriate replacement was defined.
+Invalid categorical values were replaced with `Unknown` where appropriate.
 
 ### Consistency
 
-Business calculations and relationships were checked for internal consistency.
+Business calculations and relationships were checked for internal consistency, including:
 
-Examples include:
+* Sales revenue reconciliation
+* Inventory closing quantity reconciliation
+* Production quantity relationships
+* Financial transaction rules
 
-- Sales revenue reconciliation
-- Inventory closing quantity reconciliation
-- Production quantity relationships
-- Financial transaction rules
-
-Where a deterministic calculation could be corrected safely, the trusted value was recalculated.
+Where a deterministic correction was possible, the trusted value was recalculated.
 
 ### Referential Integrity
 
 Foreign-key relationships between dimensions and facts were validated.
 
-Records containing invalid foreign-key references were removed so that trusted datasets contain only valid relationships.
+Records containing invalid references were removed so that trusted datasets contain valid relationships.
 
 ### Business Rules
 
-Operational business rules were applied to quantities and measures.
+Operational rules were applied to quantitative measures, including:
 
-Examples include:
-
-- Non-negative quantities
-- Production defect quantity cannot exceed produced quantity
-- Revenue must reconcile with transaction values
-- Inventory closing quantity must reconcile with inventory movements
+* Non-negative quantities
+* Defect quantity cannot exceed produced quantity
+* Revenue reconciliation
+* Inventory closing-balance reconciliation
 
 Extreme production and financial transaction values were retained for investigation rather than automatically removed.
 
 ---
 
-## 4. Main Issues Detected and Remediated
+## 4. Main Issues and Remediation
 
-The generated dataset contained controlled quality issues across several domains.
+| Issue                           | Remediation                                 |
+| ------------------------------- | ------------------------------------------- |
+| Leading/trailing whitespace     | Trimmed text values                         |
+| Blank required text values      | Converted to NULL and filled with `Unknown` |
+| Duplicate records               | Removed                                     |
+| Invalid categorical values      | Replaced with `Unknown`                     |
+| Negative quantities             | Removed                                     |
+| Invalid foreign keys            | Removed                                     |
+| Revenue inconsistencies         | Recalculated revenue                        |
+| Inventory inconsistencies       | Recalculated closing quantity               |
+| Defects greater than production | Capped defects at produced quantity         |
+| Production outliers             | Retained for investigation                  |
+| Financial outliers              | Retained for investigation                  |
 
-| Issue | Remediation |
-|---|---|
-| Leading/trailing whitespace | Trimmed text values |
-| Blank required text values | Converted blank values to NULL and filled with `Unknown` |
-| Duplicate primary keys | Removed duplicate records |
-| Invalid categorical values | Replaced with `Unknown` |
-| Negative quantities | Removed invalid records |
-| Invalid foreign keys | Removed records with invalid references |
-| Revenue reconciliation failures | Recalculated revenue |
-| Inventory reconciliation failures | Recalculated closing quantity |
-| Defect quantity greater than produced quantity | Capped defect quantity at produced quantity |
-| Production outliers | Retained for investigation |
-| Financial transaction outliers | Retained for investigation |
-
-Nullable fields were not incorrectly converted into required fields. In particular, NULL values in `dim_product.subcategory` remain valid because the field is explicitly defined as nullable in the Atlas data dictionary.
+Nullable fields were preserved according to the Atlas data dictionary.
 
 ---
 
 ## 5. Trusted Dataset Results
 
-The final trusted datasets contain:
+| Dataset                      | Raw Rows | Trusted Rows | Rows Removed |
+| ---------------------------- | -------: | -----------: | -----------: |
+| `dim_account`                |    1,000 |        1,000 |            0 |
+| `dim_customer`               |   50,000 |       50,000 |            0 |
+| `dim_date`                   |    2,557 |        2,557 |            0 |
+| `dim_employee`               |    5,000 |        5,000 |            0 |
+| `dim_location`               |      100 |          100 |            0 |
+| `dim_machine`                |    2,000 |        2,000 |            0 |
+| `dim_product`                |    5,000 |        5,000 |            0 |
+| `dim_supplier`               |    1,000 |        1,000 |            0 |
+| `fact_budget`                |   20,000 |       20,000 |            0 |
+| `fact_emissions`             |  100,000 |      100,000 |            0 |
+| `fact_energy`                |  100,000 |       99,801 |          199 |
+| `fact_financial_transaction` |  300,300 |      300,000 |          300 |
+| `fact_inventory`             |  500,000 |      499,001 |          999 |
+| `fact_maintenance`           |   50,000 |       49,950 |           50 |
+| `fact_production`            |  200,200 |      200,000 |          200 |
+| `fact_sales`                 |  500,500 |      499,000 |        1,500 |
+| `fact_waste`                 |  100,000 |       99,900 |          100 |
 
-| Dataset | Raw Rows | Trusted Rows | Rows Removed | Retained |
-|---|---:|---:|---:|---:|
-| dim_account | 1,000 | 1,000 | 0 | 100.0% |
-| dim_customer | 50,000 | 50,000 | 0 | 100.0% |
-| dim_date | 2,557 | 2,557 | 0 | 100.0% |
-| dim_employee | 5,000 | 5,000 | 0 | 100.0% |
-| dim_location | 100 | 100 | 0 | 100.0% |
-| dim_machine | 2,000 | 2,000 | 0 | 100.0% |
-| dim_product | 5,000 | 5,000 | 0 | 100.0% |
-| dim_supplier | 1,000 | 1,000 | 0 | 100.0% |
-| fact_budget | 20,000 | 20,000 | 0 | 100.0% |
-| fact_emissions | 100,000 | 100,000 | 0 | 100.0% |
-| fact_energy | 100,000 | 99,800 | 200 | 99.8% |
-| fact_financial_transaction | 300,300 | 300,000 | 300 | 99.9% |
-| fact_inventory | 500,000 | 499,000 | 1,000 | 99.8% |
-| fact_maintenance | 50,000 | 49,950 | 50 | 99.9% |
-| fact_production | 200,200 | 200,000 | 200 | 99.9% |
-| fact_sales | 500,500 | 499,002 | 1,498 | 99.7% |
-| fact_waste | 100,000 | 99,900 | 100 | 99.9% |
+**Total raw rows: 1,937,657**
+
+**Total trusted rows: 1,934,309**
+
+**Total rows removed: 3,348**
 
 ---
 
 ## 6. Final Validation
 
-The trusted datasets passed the final validation.
+The trusted datasets were validated before entering the ETL process.
 
-Results:
+The current trusted baseline contains:
 
-- All expected datasets present
-- Unexpected NULL values: 0
-- Duplicate rows: 0
-- Invalid foreign-key references: 0
-- Required fields validated
-- Business rules validated
-- Expected nullable fields preserved
-- Trusted datasets successfully generated
+* All 17 expected datasets
+* 1,934,309 trusted records
+* No duplicate records in the trusted output
+* Validated foreign-key relationships
+* Required fields validated
+* Approved nullable fields preserved
+* Business-rule remediation applied
 
 ---
 
 ## 7. Outcome
 
-Phase 4 produces trusted datasets that can be consumed by the ETL process.
-
-The trusted data is the controlled input for:
+Phase 4 produces the trusted datasets consumed by Phase 5.
 
 ```text
+Phase 3 Raw Data
+       ↓
 Phase 4 Data Quality
-        ↓
+       ↓
+Trusted Data
+       ↓
 Phase 5 ETL
-        ↓
+       ↓
 Phase 6 PostgreSQL Warehouse
-        ↓
-Phase 7 Analytics
-````
+```
 
-All quality decisions are implemented through reusable remediation rules so that the process can also handle similar data-quality issues if they occur in future generated or source data.
+The trusted data provides the controlled foundation for downstream warehouse, analytics and BI development.

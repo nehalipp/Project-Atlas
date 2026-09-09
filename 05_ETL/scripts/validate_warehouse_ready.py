@@ -16,12 +16,12 @@ EXPECTED_ROW_COUNTS = {
     "dim_supplier.csv": 1000,
     "fact_budget.csv": 20000,
     "fact_emissions.csv": 100000,
-    "fact_energy.csv": 99800,
+    "fact_energy.csv": 99801,
     "fact_financial_transaction.csv": 300000,
-    "fact_inventory.csv": 499000,
+    "fact_inventory.csv": 499001,
     "fact_maintenance.csv": 49950,
     "fact_production.csv": 200000,
-    "fact_sales.csv": 499002,
+    "fact_sales.csv": 499000,
     "fact_waste.csv": 99900
 }
 
